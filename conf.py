@@ -38,7 +38,7 @@ release = ''
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-html_show_sourcelink = True
+html_show_sourcelink = False
 html_context = {
     'display_github': False,
     'github_user': 'vlomonaco',
