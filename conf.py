@@ -19,9 +19,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'sasqa'
-copyright = '2019, sasa'
-author = 'sasa'
+project = 'ContinualAI Wiki'
+copyright = '2018, ContinualAI'
+author = ''
 
 # The short X.Y version
 version = ''
@@ -38,8 +38,13 @@ release = ''
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-]
+html_show_sourcelink = True
+html_context = {
+    'display_github': False,
+    'github_user': 'vlomonaco',
+    'github_repo': 'wiki',
+    'github_version': 'master'
+}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -48,7 +53,7 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = ['.rst', '.md']
 
 # The master toctree document.
 master_doc = 'index'
@@ -80,7 +85,9 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+# html_theme_options = {
+#	"vcs_pageview_mode": ''
+#}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -97,12 +104,10 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
-
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'sasqadoc'
-
+htmlhelp_basename = 'continualai_wiki'
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -128,8 +133,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'sasqa.tex', 'sasqa Documentation',
-     'sasa', 'manual'),
+    (master_doc, 'continualai_wiki.tex', 'ContinualAI Wiki',
+     'continualai_wiki', 'manual'),
 ]
 
 
@@ -138,7 +143,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sasqa', 'sasqa Documentation',
+    (master_doc, 'ContinualAI Wiki', 'ContinualAI Wiki',
      [author], 1)
 ]
 
@@ -149,8 +154,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'sasqa', 'sasqa Documentation',
-     author, 'sasqa', 'One line description of project.',
+    (master_doc, 'ContinualAI Wiki', 'ContinualAI Wiki',
+     author, 'ContinualAI Wiki', 'An collaborative wiki for Continual/Lifelong Learning.',
      'Miscellaneous'),
 ]
 

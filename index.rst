@@ -3,19 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to sasqa's documentation!
+Welcome to ContinualAI Wiki!
 =================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   prova/prova
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   introduction/index
+   research/index
+   industry/index
+   software_and_data/index
+   tutorials/index
+   news_and_media/index
+   about_us/index
