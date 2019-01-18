@@ -10,6 +10,7 @@ Welcome to sasqa's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   prova/prova
 
 
 Indices and tables
