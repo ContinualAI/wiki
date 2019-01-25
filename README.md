@@ -29,7 +29,7 @@ The aim of the project is to create an open-source, collaborative wiki to provid
 
 8. open you browser and check if everything is correct:
 
-  `firefox _build/html/index.html`
+	`firefox _build/html/index.html`
 
 9. Make a Pull Request (with only the \*.rst files), Travid CI will take care of the build! :D
 
