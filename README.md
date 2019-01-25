@@ -1,8 +1,9 @@
 # ContinualAI Wiki: a collaborative wiki on Continual/Lifelong Machine Learning
-<img src="https://continualai.herokuapp.com/badge.svg"
+<img src="https://continualai.herokuapp.com/badge.svg">
 
 The aim of the project is to create an open-source, collaborative wiki to provide a starting point for researchers, developers and AI enthusiasts who share an interest in Continual Learning and are willing to learn more or contribute to this field. Join us now and help us improving it and keeping it up to date! :D
 
+---------------------------------------------------
 
 ### How to contribute
 
@@ -33,6 +34,7 @@ The aim of the project is to create an open-source, collaborative wiki to provid
 
 9. Make a Pull Request (with only the \*.rst files), Travid CI will take care of the build! :D
 
+----------------------------
 
 ### About ContinualAI
 
