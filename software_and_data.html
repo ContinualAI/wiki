@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>&lt;no title&gt; &mdash; ContinualAI Wiki  documentation</title>
+  <title>Software and Data &mdash; ContinualAI Wiki  documentation</title>
   
 
   
@@ -27,7 +27,9 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tutorials" href="tutorials.html" />
+    <link rel="prev" title="Industry" href="industry.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -77,14 +79,18 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction/index.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="research/index.html">Research</a></li>
-<li class="toctree-l1"><a class="reference internal" href="industry/index.html">Industry</a></li>
-<li class="toctree-l1"><a class="reference internal" href="software_and_data/index.html">Software and Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorials/index.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="news_and_media/index.html">News and Media</a></li>
-<li class="toctree-l1"><a class="reference internal" href="about_us/index.html">About Us</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="research.html">Research</a></li>
+<li class="toctree-l1"><a class="reference internal" href="industry.html">Industry</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Software and Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#software">Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#datasets-and-benchmarks">Datasets and Benchmarks</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="news_and_media.html">News and Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about_us.html">About Us</a></li>
 </ul>
 
             
@@ -130,7 +136,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>Software and Data</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -147,53 +153,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p># ContinualAI Wiki: a collaborative wiki on Continual/Lifelong Machine Learning
-&lt;img src=”<a class="reference external" href="https://continualai.herokuapp.com/badge.svg">https://continualai.herokuapp.com/badge.svg</a>”&gt;</p>
-<p>The aim of the project is to create an open-source, collaborative wiki to provide a starting point for researchers, developers and AI enthusiasts who share an interest in Continual Learning and are willing to learn more or contribute to this field. Join us now and help us improving it and keeping it up to date! :D</p>
-<hr class="docutils" />
-<p>### How to contribute</p>
-<ol class="arabic">
-<li><p class="first">Star the project :-)</p>
-</li>
-<li><p class="first">Join our community on Slack: <a class="reference external" href="https://continualai.herokuapp.com/">https://continualai.herokuapp.com/</a></p>
-</li>
-<li><p class="first">[Fork the repo on GitHub and clone it locally](<a class="reference external" href="https://help.github.com/articles/fork-a-repo/">https://help.github.com/articles/fork-a-repo/</a>)</p>
-</li>
-<li><p class="first">Enter the folder:</p>
-<blockquote>
-<div><p><cite>cd website-wiki</cite></p>
-</div></blockquote>
-</li>
-<li><p class="first">If you don’t have sphinx installed run:</p>
-<blockquote>
-<div><p><cite>pip install sphinx</cite><cite>pip install sphinx_rtd_theme</cite></p>
-</div></blockquote>
-</li>
-<li><p class="first">Make your changes to the *.rst files</p>
-</li>
-<li><p class="first">Build the html with the command:</p>
-<blockquote>
-<div><p><cite>make html</cite></p>
-</div></blockquote>
-</li>
-<li><p class="first">open you browser and check if everything is correct:</p>
-<blockquote>
-<div><p><cite>firefox _build/html/index.html</cite></p>
-</div></blockquote>
-</li>
-<li><p class="first">Make a Pull Request (with only the *.rst files), Travid CI will take care of the build! :D</p>
-</li>
-</ol>
-<hr class="docutils" />
-<p>### About ContinualAI</p>
-<p><strong>[ContinualAI](https://continualai.org)</strong> is an open research community on the topic of Continual Learning and AI! :-)
-We are a community of CL researchers and enthusiasts! Join us today <strong>[on slack](https://continualai.herokuapp.com)</strong>! :D</p>
+  <div class="section" id="software-and-data">
+<h1>Software and Data<a class="headerlink" href="#software-and-data" title="Permalink to this headline">¶</a></h1>
+<p>One of the most important objective of the Continual AI project is to provide an easy access to Continual Learning both in terms of didactic materials and open software/datasets for business/research. In this page we will try to collect every open-source project related to Continual Learning.</p>
+<div class="section" id="software">
+<h2>Software<a class="headerlink" href="#software" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>NORB sequencer: Java application (with GUI) to make small videos out of the NORB dataset.</li>
+<li>GEM implementation: Implementation of the CL strategy “Gradient Episodic Memory”.</li>
+<li>OpenAI Gym: Open source interface that provides a ready-to-use suite of reinforcement learning tasks for evaluating performance of your algorithm.</li>
+<li>DeepMind Lab: 3D learning environment that provides a suite of challenging 3D navigation and puzzle-solving tasks for learning agents.</li>
+<li>DEN: TensorFlow implementation of the CL strategy “Dynamically Expandable Networks”.</li>
+</ul>
+</div>
+<div class="section" id="datasets-and-benchmarks">
+<h2>Datasets and Benchmarks<a class="headerlink" href="#datasets-and-benchmarks" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>CORe50 benchmark: Continual Learning benchmark for object recognition and robotics.</li>
+<li>Visual Domain Decathlon: Ten image classification problems representative of very different visual domains.</li>
+</ul>
+</div>
+</div>
 
 
            </div>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tutorials.html" class="btn btn-neutral float-right" title="Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="industry.html" class="btn btn-neutral" title="Industry" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

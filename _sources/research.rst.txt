@@ -35,11 +35,34 @@ In this section we highlight some papers the Continual AI community value as mus
 Dissertations and Theses
 ----------------------------------
 
+- Explanation-Based Neural Network Learning: A Lifelong Learning Approach by Sebastian Thrun. Kluwer Academic Publishers, Boston, MA, 1996.
+
+- Continual Learning in Reinforcement Environments by Mark Ring. The University of Texas at Austin,1994.
+
+
 Books
 ----------------------------------
+
+- Lifelong Machine Learning by Zhiyuan Chen and Bing Liu, Morgan & Claypool Publishers, November 2016.
 
 Research Programs
 ----------------------------------
 
-Continual Learning Papers Database 
+In this section we keep track of all the current and past projects on Lifelong/Continual Learning.:
+
+- DARPA Lifelong Learning Machines (L2M) program
+- European H2020 DREAM project
+
+
+Papers Database 
 ----------------------------------
+
+Waiting for better AI tools for papers reccomendation the Continual AI community is mantaining a database of CL papers which we plan to realease soon. It would be very rich of metadata so that we can better navigate the incredible number of papers published each year (query example: give me the papers employing reharsal and evaluated on CORe50).
+
+Please add your own paper below so that we can advertise it and insert in our CL database!
+
+.. raw:: html
+
+	<div style="margin-top: 30px; margin-bottom:30px">
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDXxXTt_rMbGkVRRBif6EUXBNm0VXdh1Kcbk94ckHYnkPNkg/viewform?embedded=true" marginheight="0" marginwidth="0" width="100%" height="520" frameborder="0">Charging...</iframe>
+	</div>
