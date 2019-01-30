@@ -9,11 +9,11 @@ The aim of **ContinualAI Wiki** is to create an open-source, collaborative wiki 
    :maxdepth: 2
    :caption: Contents:
 
-   introduction/index
-   research/index
-   industry/index
-   software_and_data/index
-   tutorials/index
-   news_and_media/index
-   about_us/index
+   introduction
+   research
+   industry
+   software_and_data
+   tutorials
+   news_and_media
+   about_us
 
