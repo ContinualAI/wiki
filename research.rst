@@ -55,14 +55,6 @@ Please add your own paper below so that we can advertise it and insert in our CL
 	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScDXxXTt_rMbGkVRRBif6EUXBNm0VXdh1Kcbk94ckHYnkPNkg/viewform?embedded=true" marginheight="0" marginwidth="0" width="100%" height="520" frameborder="0">Charging...</iframe>
 	</div>
 
-
-.. _linkedin: https://www.linkedin.com/in/vincenzo
-.. _raia: http://raiahadsell.com/index.html
-.. _pascanu: https://scholar.google.ca/citations?user=eSPY8LwAAAAJ&hl=en
-.. _eaton: https://www.seas.upenn.edu/~eeaton/
-.. _liu: https://www.cs.uic.edu/~liub/
-.. _lomonaco: vincenzolomonaco.com
-.. _maltoni: https://www.unibo.it/sitoweb/davide.maltoni/
 .. _`"CORe50: a new Dataset and Benchmark for Continuous Object Recognition"`: http://proceedings.mlr.press/v78/lomonaco17a.html
 .. _`"Overcoming catastrophic forgetting in neural networks"`: http://www.pnas.org/content/114/13/3521.abstract
 .. _`"Learning without forgetting"`: http://www.pnas.org/content/114/13/3521.abstract
