@@ -85,9 +85,12 @@ html_theme = 'sphinx_rtd_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {
-#	"vcs_pageview_mode": ''
-#}
+html_theme_options = {
+	#"vcs_pageview_mode": ''
+	'logo_only': True
+}
+
+html_logo = "_static/logo_inline_wiki.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
