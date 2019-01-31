@@ -11,15 +11,15 @@ Current Solutions
 
 In this section we provide a list of companies that exploit Continual Learning approaches:
 
-- Neurala uses deep learning neural network software that makes smart products (drones) more autonomous and useful. In particular, Neurala Lifelong Deep Neural Networks (Lifelong-DNN™) enable incremental learning of new objects on the fly, without the power of a server located in the cloud. Neurala accomplishes this by combining different neural network architectures).
+- `Neurala <https://www.neurala.com/>`_ uses deep learning neural network software that makes smart products (drones) more autonomous and useful. In particular, Neurala Lifelong Deep Neural Networks (Lifelong-DNN™) enable incremental learning of new objects on the fly, without the power of a server located in the cloud. Neurala accomplishes this by `combining different neural network architectures <https://www.neurala.com/press-releases/edge-deep-learning-without-cloud>`_).
 
-- Amazon-Comprehend analyzes text and tells you what it finds, starting with the language, from Afrikans to Yoruba, with 98 more in between. It can identify different types of entities (people, places, brands, products, and so forth), key phrases, sentiment (positive, negative, mixed, or neutral), and extract key phrases, all from text in English or Spanish. Finally, Comprehend‘s topic modeling service extracts topics from large sets of documents for analysis or topic-based grouping
+- `Amazon-Comprehend <https://aws.amazon.com/comprehend/>`_ analyzes text and tells you what it finds, starting with the language, from Afrikans to Yoruba, with 98 more in between. It can identify different types of entities (people, places, brands, products, and so forth), key phrases, sentiment (positive, negative, mixed, or neutral), and extract key phrases, all from text in English or Spanish. Finally, Comprehend‘s topic modeling service extracts topics from large sets of documents for analysis or topic-based grouping
 
-- IBM-Watson has embraced the phylosophy of Continual Learning by providing automated monitoring of model performance, retraining, and redeployment to ensure prediction quality. IBM Watson allow data scientists and analysts to quickly build and prototype models, to monitor deployments, and to learn over time as more data become available.
+- `IBM-Watson <https://datascience.ibm.com/docs/content/analyze-data/ml-continuous-learning.html>`_ has embraced the phylosophy of Continual Learning by providing automated monitoring of model performance, retraining, and redeployment to ensure prediction quality. IBM Watson allow data scientists and analysts to quickly build and prototype models, to monitor deployments, and to learn over time as more data become available.
 
-- Cogitai is concerned about building artificial intelligences (AIs) that learn continually from interaction with the real world. Commerical applications and solutions are designed for learning knowledge and actions from experience by relying on continual-learning AI approaches.
+- `Cogitai <https://www.cogitai.com/>`_ is concerned about building artificial intelligences (AIs) that learn continually from interaction with the real world. Commerical applications and solutions are designed for learning knowledge and actions from experience by relying on continual-learning AI approaches.
 
-- DeepMind is one of the world leader in artificial intelligence research. DeepMind reasearch has recently showed how to develop programs that can learn to solve complex problem without needing to be taught how. In this context, continual learning approaches have been applied to Reinforcement Learning methods.
+- `DeepMind <https://deepmind.com/>`_ is one of the world leader in artificial intelligence research. DeepMind reasearch has recently showed how to develop programs that can learn to solve complex problem without needing to be taught how. In this context, continual learning approaches have been applied to Reinforcement Learning methods.
 
 
 Future Applications
