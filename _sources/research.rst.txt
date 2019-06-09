@@ -1,7 +1,29 @@
 Research
 ================================
 
-In the last few years we have witnessed a renewed and steadily growing interest in the ability to learn continuously from high-dimensional data. In this page, we will try to keep track of recent **Continual/Lifelong** Learning developments in a pure research context.
+In the last few years we have witnessed a renewed and steadily growing interest in the ability to learn continuously from high-dimensional data. In this page, we will keep track of recent **Continual/Lifelong** Learning developments in the research community.
+
+Review Papers and Books
+----------------------------------
+
+- `Continual Lifelong Learning with Neural Networks: A Review <https://www.sciencedirect.com/science/article/pii/S0893608019300231>`_ by German I. Parisi, Ronald Kemker, Jose L. Part, Christopher Kanan, and Stefan Wermter. *Neural Networks, 113:54–71*, 2019.
+
+- `Born to learn: the inspiration, progress, and future of evolved plastic artificial neural networks <https://www.sciencedirect.com/science/article/pii/S0893608018302120>`_ by Andrea Soltoggio, Kenneth Stanley, and Sebastian Risi. *Neural Networks, 108:48–67*, 2018.
+
+- `Lifelong Machine Learning (2nd Edition) <https://www.cs.uic.edu/~liub/lifelong-machine-learning.html>`_ by Zhiyuan Chen and Bing Liu. Morgan & Claypool Publishers, August 2018.
+
+Empirical Studies and Comparisons
+----------------------------------
+
+- `"Continuous Learning in Single-Incremental-Task Scenarios" <https://arxiv.org/abs/1806.08568>`_ by Davide Maltoni and Vincenzo Lomonaco. *Neural Networks, 116:56–73*, 2019.
+
+- `"CORe50: a new Dataset and Benchmark for Continuous Object Recognition"`_ by Vincenzo Lomonaco and Davide Maltoni. *Proceedings of the 1st Annual Conference on Robot Learning*, PMLR 78:17-26, 2017.
+
+- `"CORe50: a new Dataset and Benchmark for Continuous Object Recognition"`_ by Vincenzo Lomonaco and Davide Maltoni. *Proceedings of the 1st Annual Conference on Robot Learning*, PMLR 78:17-26, 2017.
+
+- `"Measuring catastrophic forgetting in neural networks" <https://arxiv.org/abs/1708.02072>`_ by Ronald Kemker, Marc McClure, Angelina Abitino, Tyler L. Hayes, and Christopher Kanan. *The Thirty-Second AAAI Conference on Artificial Intelligence (AAAI-18)*, 2018.
+
+- `"An empirical investigation of catastrophic forgetting in gradient-based neural networks" <https://arxiv.org/abs/1312.6211>`_ by Ian J. Goodfellow, Mehdi Mirza, Da Xiao, Aaron Courville, Yoshua Bengio. *arXiv:1312.6211*, 2013.
 
 Community Selected Papers
 ----------------------------------
@@ -19,19 +41,13 @@ In this section we highlight some papers the Continual AI community value as mus
 - Rebuffi Sylvestre-Alvise, Alexander Kolesnikov and Christoph H. Lampert. `"iCaRL: Incremental classifier and representation learning."`_ *arXiv preprint arXiv:1611.07725*, 2016.
 - Zenke, Friedemann, Ben Poole, and Surya Ganguli. `"Continual learning through synaptic intelligence"`_. *International Conference on Machine Learning*, 2017.
 - Rusu Andrei et al. `"Progressive neural networks."`_ *arXiv preprint arXiv:1606.04671*, 2016.
-- Davide Maltoni and Vincenzo Lomonaco. `"Continuous Learning in Single-Incremental-Task Scenarios" <https://arxiv.org/abs/1806.08568>`_. *arXiv preprint arXiv:1606.04671*, 2018.
+- German I. Parisi, Jun Tani, Cornelius Weber and Stefan Wermter. `"Lifelong Learning of Spatiotemporal Representations with Dual-Memory Recurrent Self-Organization" <https://www.frontiersin.org/articles/10.3389/fnbot.2018.00078/full>`_. *Frontiers in Neurorobotics, 28*, 2018.
 
 Dissertations and Theses
 ----------------------------------
 
 - `"Explanation-Based Neural Network Learning: A Lifelong Learning Approach" <http://robots.stanford.edu/papers/thrun.book.html>`_ by Sebastian Thrun. Kluwer Academic Publishers, Boston, MA, 1996.  
 - `"Continual Learning in Reinforcement Environments" <http://people.idsia.ch/~ring/Ring-dissertation.pdf>`_ by Mark Ring. The University of Texas at Austin, 1994. 
-
-
-Books
-----------------------------------
-
-- `Lifelong Machine Learning <https://www.cs.uic.edu/~liub/lifelong-machine-learning.html>`_ by Zhiyuan Chen and Bing Liu, Morgan & Claypool Publishers, November 2016.
 
 Research Programs
 ----------------------------------
