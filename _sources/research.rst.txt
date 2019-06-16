@@ -19,8 +19,6 @@ Empirical Studies and Comparisons
 
 - `"CORe50: a new Dataset and Benchmark for Continuous Object Recognition"`_ by Vincenzo Lomonaco and Davide Maltoni. *Proceedings of the 1st Annual Conference on Robot Learning*, PMLR 78:17-26, 2017.
 
-- `"CORe50: a new Dataset and Benchmark for Continuous Object Recognition"`_ by Vincenzo Lomonaco and Davide Maltoni. *Proceedings of the 1st Annual Conference on Robot Learning*, PMLR 78:17-26, 2017.
-
 - `"Measuring catastrophic forgetting in neural networks" <https://arxiv.org/abs/1708.02072>`_ by Ronald Kemker, Marc McClure, Angelina Abitino, Tyler L. Hayes, and Christopher Kanan. *The Thirty-Second AAAI Conference on Artificial Intelligence (AAAI-18)*, 2018.
 
 - `"An empirical investigation of catastrophic forgetting in gradient-based neural networks" <https://arxiv.org/abs/1312.6211>`_ by Ian J. Goodfellow, Mehdi Mirza, Da Xiao, Aaron Courville, Yoshua Bengio. *arXiv:1312.6211*, 2013.
