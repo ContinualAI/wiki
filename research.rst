@@ -21,7 +21,24 @@ Empirical Studies and Comparisons
 
 - `"Measuring catastrophic forgetting in neural networks" <https://arxiv.org/abs/1708.02072>`_ by Ronald Kemker, Marc McClure, Angelina Abitino, Tyler L. Hayes, and Christopher Kanan. *The Thirty-Second AAAI Conference on Artificial Intelligence (AAAI-18)*, 2018.
 
+- `"Generative Models from the perspective of Continual Learning" <https://arxiv.org/abs/1812.09111>`_ by Timothée Lesort, Hugo Caselles-Dupré, Michael Garcia-Ortiz, Andrei Stoian, David Filliat. *International Joint Conference on Neural Networks (IJCNN-19)*, 2019.
+
 - `"An empirical investigation of catastrophic forgetting in gradient-based neural networks" <https://arxiv.org/abs/1312.6211>`_ by Ian J. Goodfellow, Mehdi Mirza, Da Xiao, Aaron Courville, Yoshua Bengio. *arXiv:1312.6211*, 2013.
+
+
+Metrics and Evaluations
+----------------------------------
+
+- `"New Metrics and Experimental Paradigms for Continual Learning" <http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html>`_ by Tyler L. Hayes, Ronald Kemker, Nathan D. Cahill, Christopher Kanan. *The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, pp. 2031-2034*, 2018. 
+
+- `"Don't forget, there is more than forgetting: new metrics for Continual Learning" <https://arxiv.org/abs/1810.13166>`_ by Natalia Díaz-Rodríguez, Vincenzo Lomonaco, David Filliat, Davide Maltoni. *Advances in Neural Information Processing Systems, Continual Learning Workshop*, 2018.
+
+
+- `"Towards Robust Evaluations of Continual Learning" <https://arxiv.org/abs/1805.09733>`_ by Sebastian Farquhar, Yarin Gal. *arXiv:1805.09733*, 2018.
+
+
+- `"Measuring Catastrophic Forgetting in Neural Networks" <https://arxiv.org/abs/1708.02072>`_ by Ronald Kemker, Marc McClure, Angelina Abitino, Tyler Hayes, Christopher Kanan. *Thirty-second AAAI conference on artificial intelligence*, 2018.
+
 
 Community Selected Papers
 ----------------------------------
@@ -43,6 +60,8 @@ In this section we highlight some papers the Continual AI community value as mus
 
 Dissertations and Theses
 ----------------------------------
+
+- `"Continual Learning with Deep Architectures" <http://amsdottorato.unibo.it/9073/>`_ by Lomonaco, Vincenzo. Alma Mater Studiorum Università di Bologna, 2019.  
 
 - `"Explanation-Based Neural Network Learning: A Lifelong Learning Approach" <http://robots.stanford.edu/papers/thrun.book.html>`_ by Sebastian Thrun. Kluwer Academic Publishers, Boston, MA, 1996.  
 - `"Continual Learning in Reinforcement Environments" <http://people.idsia.ch/~ring/Ring-dissertation.pdf>`_ by Mark Ring. The University of Texas at Austin, 1994. 
