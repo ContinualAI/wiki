@@ -1,36 +1,7 @@
-News and Media
+Media Articles
 ================================
 
-While not yet in its peak of media attention, Continual Learning has repeatedly appeared in multiple sources. In this page we try to cover all the news and the most relevant press articles on the subject.
-
-
-
-News
--------------------------------
-
-- **[ Aug 11, 2018 ]** It’s official! There will be a `2018 Continual Learning Workshop <https://sites.google.com/view/continual2018>`_ at NIPS!
-
-- **[ Jul 9, 2018 ]** `Postdoc positions in computational neuroscience <https://research.shanghai.nyu.edu/centers-and-institutes/brain/people/sukbin-lim>`_ at NYU-Shanghai (Sukbin Lim’s Lab)!
-
-- **[ Jun 28, 2018 ]** `PostDoc available in Neuromorphic Computing within the Human Brain Project <http://www.sussex.ac.uk/about/jobs/research-fellow-in-neuromorphic-computing-3436>`_ (Thomas Nowotny)!
-
-- **[ Jun 26, 2018 ]** 1 research associate and 2 funded PhD. `Postions on the evolution of neural learning and plasticity <http://www.lboro.ac.uk/departments/compsci/staff/academic-teaching/andrea-soltoggio/>`_ (Andrea Soltoggio’s Lab)!
-
-- **[ Jun 5, 2018 ]** The Third AutoML Challenge: `AutoML for Lifelong Machine Learning <https://www.4paradigm.com/competition/nips2018>`_, NIPS 2018 Challenge is open!
-
-- **[ May 30, 2018 ]** `Lifelong Learning: A Reinforcement Learning Approach Workshop <https://sites.google.com/view/llarla2018/home>`_ at FAIM 2018!
-
-- **[ May 2, 2018 ]** `Postdoc position in Computational Neuroscience and Synaptic Plasticity <http://www.bg.ic.ac.uk/research/c.clopath/hiring/>`_ - in the Clopath lab!
-
-- **[ March 21, 2018 ]** `Multiple Postdocs in Lifelong Machine Learning, Service Robotics, and Social Network Analysis <https://www.seas.upenn.edu/~eeaton/openpositions.html>`_ - Eric Eaton’s Lab!
-
-- **[ March 4, 2018 ]** `Postdoctoral Research Position Available in Deep Reinforcement Learning for Continual Learning <http://www.evolvingai.org/join>`_ - Jeff Clune’s Lab!
-
-- **[ July 21, 2017 ]** `ERC-funded Postdoc Position: Transfer Learning/Lifelong Learning <http://www.pamitc.org/jobs/index.php?action=view&job_id=312>`_ - Christoph Lampert’s Lab!
-
-
-Media Articles
------------------------------
+While not yet in its peak of media attention, Continual Learning has repeatedly appeared in multiple sources. In this page we try to cover the most relevant press articles on the subject.
 
 - `Why Continual Learning is the key towards Machine Intelligence <https://medium.com/@vlomonaco/why-continuous-learning-is-the-key-towards-machine-intelligence-1851cb57c308>`_
 - `Why continuous learning is key to AI <https://www.oreilly.com/ideas/why-continuous-learning-is-key-to-ai>`_
