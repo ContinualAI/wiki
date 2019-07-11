@@ -39,6 +39,23 @@ Metrics and Evaluations
 
 - `"Measuring Catastrophic Forgetting in Neural Networks" <https://arxiv.org/abs/1708.02072>`_ by Ronald Kemker, Marc McClure, Angelina Abitino, Tyler Hayes, Christopher Kanan. *Thirty-second AAAI conference on artificial intelligence*, 2018.
 
+Conference Workshops
+----------------------------------
+
+- `Cosyne 2019 Continual Learning <http://www.cosyne.org/c/index.php?title=Workshops2019_learning>`_
+- `ICML 2019 Workshop on Multi-Task and Lifelong Reinforcement Learning <https://sites.google.com/corp/view/mtlrl/home>`_
+- `ICML 2019 Adaptive and Multitask Learning: Algorithms & Systems <https://www.amtl-workshop.org/>`_
+- `ICML 2018 Lifelong RL workshop <https://sites.google.com/corp/view/llarla2018/home>`_
+- `NeurIPS 2018 Workshop on Meta-Learning <http://metalearning.ml/2018/>`_
+- `NeurIPS 2018 Workshop on Continual Learning <https://sites.google.com/view/continual2018/home>`_
+
+Research Programs
+----------------------------------
+
+In this section we keep track of all the current and past projects on Lifelong/Continual Learning.:
+
+- `DARPA Lifelong Learning Machines (L2M) program <http://www.darpa.mil/news-events/2017-03-16>`_
+- `European H2020 DREAM project <http://www.robotsthatdream.eu/>`_
 
 Community Selected Papers
 ----------------------------------
@@ -64,16 +81,7 @@ Dissertations and Theses
 - `"Continual Learning with Deep Architectures" <http://amsdottorato.unibo.it/9073/>`_ by Lomonaco, Vincenzo. Alma Mater Studiorum Università di Bologna, 2019.  
 
 - `"Explanation-Based Neural Network Learning: A Lifelong Learning Approach" <http://robots.stanford.edu/papers/thrun.book.html>`_ by Sebastian Thrun. Kluwer Academic Publishers, Boston, MA, 1996.  
-- `"Continual Learning in Reinforcement Environments" <http://people.idsia.ch/~ring/Ring-dissertation.pdf>`_ by Mark Ring. The University of Texas at Austin, 1994. 
-
-Research Programs
-----------------------------------
-
-In this section we keep track of all the current and past projects on Lifelong/Continual Learning.:
-
-- `DARPA Lifelong Learning Machines (L2M) program <http://www.darpa.mil/news-events/2017-03-16>`_
-- `European H2020 DREAM project <http://www.robotsthatdream.eu/>`_
-
+- `"Continual Learning in Reinforcement Environments" <http://people.idsia.ch/~ring/Ring-dissertation.pdf>`_ by Mark Ring. The University of Texas at Austin, 1994.
 
 Papers Database 
 ----------------------------------
