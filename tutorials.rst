@@ -1,8 +1,6 @@
 Tutorials
 ================================
 
-In this page we will try to collect every tutorial related to Continual Learning:
-
 - | `Continual Learning with Neural Networks <https://docs.google.com/presentation/d/1Ukatz11S8sjC40VH293uY91rC3wQLPxiT0R-lOpju7k/edit?usp=sharing>`_
   | Tutorial @ INNS Big Data and Deep Learning 2019 [German I. Parisi and Vincenzo Lomonaco]
 
