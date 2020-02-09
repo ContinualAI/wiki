@@ -14,6 +14,18 @@ Review Papers and Books
 
 - `Lifelong Machine Learning (2nd Edition) <https://www.cs.uic.edu/~liub/lifelong-machine-learning.html>`_ by Zhiyuan Chen and Bing Liu. Morgan & Claypool Publishers, August 2018.
 
+
+Dissertations and Theses
+----------------------------------
+
+- `"Continual Learning in Neural Networks" <https://arxiv.org/abs/1910.02718>`_ by  Aljundi, Rahaf. KU Leuven – Faculty of Engineering Science, 2019.  
+
+- `"Continual Learning with Deep Architectures" <http://amsdottorato.unibo.it/9073/>`_ by Lomonaco, Vincenzo. Alma Mater Studiorum Università di Bologna, 2019.  
+
+- `"Explanation-Based Neural Network Learning: A Lifelong Learning Approach" <http://robots.stanford.edu/papers/thrun.book.html>`_ by Sebastian Thrun. Kluwer Academic Publishers, Boston, MA, 1996.  
+
+- `"Continual Learning in Reinforcement Environments" <http://people.idsia.ch/~ring/Ring-dissertation.pdf>`_ by Mark Ring. The University of Texas at Austin, 1994.
+
 Empirical Studies and Comparisons
 ----------------------------------
 
@@ -77,17 +89,13 @@ In this section we highlight some papers the Continual AI community value as mus
 - Rusu Andrei et al. `"Progressive neural networks."`_ *arXiv preprint arXiv:1606.04671*, 2016.
 - German I. Parisi, Jun Tani, Cornelius Weber and Stefan Wermter. `"Lifelong Learning of Spatiotemporal Representations with Dual-Memory Recurrent Self-Organization" <https://www.frontiersin.org/articles/10.3389/fnbot.2018.00078/full>`_. *Frontiers in Neurorobotics, 28*, 2018.
 
-Dissertations and Theses
+
+Bibliography Github Repositories
 ----------------------------------
 
-- `"Continual Learning in Neural Networks" <https://arxiv.org/abs/1910.02718>`_ by  Aljundi, Rahaf. KU Leuven – Faculty of Engineering Science, 2019.  
-
-- `"Continual Learning with Deep Architectures" <http://amsdottorato.unibo.it/9073/>`_ by Lomonaco, Vincenzo. Alma Mater Studiorum Università di Bologna, 2019.  
-
-- `"Explanation-Based Neural Network Learning: A Lifelong Learning Approach" <http://robots.stanford.edu/papers/thrun.book.html>`_ by Sebastian Thrun. Kluwer Academic Publishers, Boston, MA, 1996.  
-
-- `"Continual Learning in Reinforcement Environments" <http://people.idsia.ch/~ring/Ring-dissertation.pdf>`_ by Mark Ring. The University of Texas at Austin, 1994.
-
+- `continual_learning_papers <https://github.com/optimass/continual_learning_papers>`_
+- `Awesome-Incremental-Learning <https://github.com/xialeiliu/Awesome-Incremental-Learning>`_
+- `awesome-lifelong-continual-learning <https://github.com/prprbr/awesome-lifelong-continual-learning>`_
 
 Papers Database 
 ----------------------------------
