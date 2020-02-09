@@ -6,11 +6,25 @@ In the last few years we have witnessed a renewed and steadily growing interest 
 Review Papers and Books
 ----------------------------------
 
-- `Continual Lifelong Learning with Neural Networks: A Review <https://www.sciencedirect.com/science/article/pii/S0893608019300231>`_ by German I. Parisi, Ronald Kemker, Jose L. Part, Christopher Kanan, and Stefan Wermter. *Neural Networks, 113:54–71*, 2019.
+- `Continual learning for robotics: Definition, framework, learning strategies, opportunities and challenges <http://www.sciencedirect.com/science/article/pii/S1566253519307377>`_ by Timothée Lesort, Vincenzo Lomonaco, Andrei Stoian, Davide Maltoni, David Filliat and Natalia Díaz-Rodríguez. *Neural Networks, 113:54–71*, 2019.
+
+- `Continual Lifelong Learning with Neural Networks: A Review <https://www.sciencedirect.com/science/article/pii/S0893608019300231>`_ by German I. Parisi, Ronald Kemker, Jose L. Part, Christopher Kanan, and Stefan Wermter. *Information Fusion, 58:52–68*, 2020.
 
 - `Born to learn: the inspiration, progress, and future of evolved plastic artificial neural networks <https://www.sciencedirect.com/science/article/pii/S0893608018302120>`_ by Andrea Soltoggio, Kenneth Stanley, and Sebastian Risi. *Neural Networks, 108:48–67*, 2018.
 
 - `Lifelong Machine Learning (2nd Edition) <https://www.cs.uic.edu/~liub/lifelong-machine-learning.html>`_ by Zhiyuan Chen and Bing Liu. Morgan & Claypool Publishers, August 2018.
+
+
+Dissertations and Theses
+----------------------------------
+
+- `"Continual Learning in Neural Networks" <https://arxiv.org/abs/1910.02718>`_ by  Aljundi, Rahaf. KU Leuven – Faculty of Engineering Science, 2019.  
+
+- `"Continual Learning with Deep Architectures" <http://amsdottorato.unibo.it/9073/>`_ by Lomonaco, Vincenzo. Alma Mater Studiorum Università di Bologna, 2019.  
+
+- `"Explanation-Based Neural Network Learning: A Lifelong Learning Approach" <http://robots.stanford.edu/papers/thrun.book.html>`_ by Sebastian Thrun. Kluwer Academic Publishers, Boston, MA, 1996.  
+
+- `"Continual Learning in Reinforcement Environments" <http://people.idsia.ch/~ring/Ring-dissertation.pdf>`_ by Mark Ring. The University of Texas at Austin, 1994.
 
 Empirical Studies and Comparisons
 ----------------------------------
@@ -75,13 +89,13 @@ In this section we highlight some papers the Continual AI community value as mus
 - Rusu Andrei et al. `"Progressive neural networks."`_ *arXiv preprint arXiv:1606.04671*, 2016.
 - German I. Parisi, Jun Tani, Cornelius Weber and Stefan Wermter. `"Lifelong Learning of Spatiotemporal Representations with Dual-Memory Recurrent Self-Organization" <https://www.frontiersin.org/articles/10.3389/fnbot.2018.00078/full>`_. *Frontiers in Neurorobotics, 28*, 2018.
 
-Dissertations and Theses
+
+Bibliography Github Repositories
 ----------------------------------
 
-- `"Continual Learning with Deep Architectures" <http://amsdottorato.unibo.it/9073/>`_ by Lomonaco, Vincenzo. Alma Mater Studiorum Università di Bologna, 2019.  
-
-- `"Explanation-Based Neural Network Learning: A Lifelong Learning Approach" <http://robots.stanford.edu/papers/thrun.book.html>`_ by Sebastian Thrun. Kluwer Academic Publishers, Boston, MA, 1996.  
-- `"Continual Learning in Reinforcement Environments" <http://people.idsia.ch/~ring/Ring-dissertation.pdf>`_ by Mark Ring. The University of Texas at Austin, 1994.
+- `continual_learning_papers <https://github.com/optimass/continual_learning_papers>`_
+- `Awesome-Incremental-Learning <https://github.com/xialeiliu/Awesome-Incremental-Learning>`_
+- `awesome-lifelong-continual-learning <https://github.com/prprbr/awesome-lifelong-continual-learning>`_
 
 Papers Database 
 ----------------------------------
