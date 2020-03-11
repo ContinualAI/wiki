@@ -17,3 +17,9 @@ While not yet in its peak of media attention, Continual Learning has repeatedly 
 - `Lifelong (machine) learning: how automation can help your models get smarter over time <https://www.ibm.com/blogs/bluemix/2017/10/lifelong-machine-learning-automation-can-help-models-get-smarter-time/>`_
 - `The Next-Generation AI Brain: How AI Is Becoming More Human <https://www.forbes.com/sites/forbestechcouncil/2018/04/09/the-next-generation-ai-brain-how-ai-is-becoming-more-human/2/>`_
 - `AI Edges to Factory Floor (“…incremental learning by 2022”) <https://www.eetimes.com/document.asp?doc_id=1333973>`_
+- `Variational Continual Learning with Generative Replay <https://towardsdatascience.com/variational-continual-learning-with-generative-replay-bfd43464d250>`_
+- `Guiding Forgetful Machines <https://towardsdatascience.com/guiding-forgetful-machines-72d1b8949138>`_
+- `IBM’s Quest to Solve the Continual Learning Problem and Build Neural Networks Without Amnesia <https://towardsdatascience.com/ibms-quest-to-solve-the-continual-learning-problem-and-build-neural-networks-without-amnesia-7ca70a41d07f>`_
+
+
+
