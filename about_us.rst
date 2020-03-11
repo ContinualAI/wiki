@@ -1,9 +1,9 @@
 About Us
 ================================
 
-Continual AI is a collaborative wiki and an open community of Continual/Lifelong Learning enthusiasts started in January 2018 by Vincenzo Lomonaco and made possible with the early contribution of Keiland Cooper and Martin Cimmino. Continual AI is supported by the Italian Association of Machine Learning.
-
-We are always happy to add new members and get some help for improving our wiki or simply discuss about about CL, so join us today on slack! :-)
+**ContinualAI** is non-profit research organization and an open community of Continual/Lifelong Learning researchers and enthusiasts started in January 2018 by `Vincenzo Lomonaco
+<http://vincenzolomonaco.com>`_ and made possible with the early contribution of `Keiland Cooper
+<http://kwcooper.xyz>`_.
 
 .. raw:: html
 
@@ -15,3 +15,12 @@ We are always happy to add new members and get some help for improving our wiki 
 		<strong>Socials:</strong> <a href="https://www.facebook.com/ContinualAI">Facebook</a> | <a href="https://twitter.com/ContinualAI">Twitter</a> | <a href="https://www.instagram.com/continual_ai/">Instagram</a><br />
 		<strong style="float:left">Slack:</strong> <span style="margin-top: 3px; margin-left: 10px; float:left"><script async="" defer="" src="https://continualai.herokuapp.com/slackin.js"></script></span>
 	</p>
+
+Wiki Contributors
+--------------------------------
+We are always happy to add new members and get some help for improving our wiki or simply discuss about about CL, so join us today on `slack <https://join.slack.com/t/continualai/shared_invite/enQtNjQxNDYwMzkxNzk0LTBhYjg2MjM0YTM2OWRkNDYzOGE0ZTIzNDQ0ZGMzNDE3ZGUxNTZmNmM1YzJiYzgwMTkyZDQxYTlkMTI3NzZkNjU>`_! Here we list the main contributors based on the GitHub ranking so far:
+
+- `Vincenzo Lomonaco <http://vincenzolomonaco.com>`_
+- `German I. Parisi <https://sites.google.com/view/giparisi/home>`_
+- `Timothee Lesort <https://tlesort.github.io>`_
+- `Lorenzo Pellegrini <https://www.unibo.it/sitoweb/l.pellegrini>`_

@@ -1,5 +1,7 @@
 # ContinualAI Wiki: a collaborative wiki on Continual/Lifelong Machine Learning
-<img src="https://www.continualai.org/images/continualai_logo_name_black.png">
+<div style="text-align:center">
+	<img src="https://www.continualai.org/images/continualai_logo_name_black.png" style="width: 200px">
+</div>
 
 The aim of the project is to create an open-source, collaborative wiki to provide a starting point for researchers, developers and AI enthusiasts who share an interest in Continual Learning and are willing to learn more or contribute to this field. Join us now and help us improving it and keeping it up to date! :D
 
@@ -15,9 +17,9 @@ The aim of the project is to create an open-source, collaborative wiki to provid
 
 4. Enter the folder: 
 
-	`cd website-wiki`
+	`cd wiki`
 
-5. If you don't have sphinx installed run:
+5. If you don't have sphinx installed run (make sure you're using Python 2.7):
 
 	`pip install sphinx`\
 	`pip install sphinx_rtd_theme`
