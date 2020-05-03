@@ -87,7 +87,8 @@ html_theme = 'sphinx_rtd_theme'
 #
 html_theme_options = {
 	#"vcs_pageview_mode": ''
-	'logo_only': True
+	'logo_only': True,
+    'analytics_id': 'UA-165355374-1'
 }
 
 html_logo = "_static/logo_inline_wiki.png"
