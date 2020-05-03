@@ -18,6 +18,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
+  fqdn: wiki.continualai.org
   github_token: $GH_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: true
   on:
