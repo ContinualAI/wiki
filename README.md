@@ -34,7 +34,7 @@ The aim of the project is to create an open-source, collaborative wiki to provid
 
 	`firefox _build/html/index.html`
 
-9. Make a Pull Request (with only the \*.rst files), Travid CI will take care of the build! :D
+9. Make a Pull Request (with only the \*.rst files), Travis CI will take care of the build! :D
 
 ----------------------------
 
