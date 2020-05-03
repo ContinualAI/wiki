@@ -5,18 +5,6 @@ Humans have the extraordinary ability to *learn continually* from experience. No
 
 The aim of **ContinualAI Wiki** is to create an open-source, collaborative wiki to provide a starting point for researchers, developers and AI enthusiasts who share an interest in Continual Learning and are willing to learn more or contribute to this field. Join us now and help us improving it and keeping it up to date!
 
-.. raw:: html
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-F43ZYJNWCQ"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-F43ZYJNWCQ');
-	</script>
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
