@@ -182,9 +182,9 @@ epub_title = project
 epub_exclude_files = ['search.html']
 
 
-def setup(app):
-    """Insert Google Analytics tracker
-    Based on this Stackoverflow suggestion: https://stackoverflow.com/a/41885884
-    """
-    app.add_javascript("https://www.googletagmanager.com/gtag/js?id=UA-165355374-1")
-    app.add_javascript("google_analytics_tracker.js")
+# def setup(app):
+#     """Insert Google Analytics tracker
+#     Based on this Stackoverflow suggestion: https://stackoverflow.com/a/41885884
+#     """
+#     app.add_javascript("https://www.googletagmanager.com/gtag/js?id=UA-165355374-1")
+#     app.add_javascript("google_analytics_tracker.js")
