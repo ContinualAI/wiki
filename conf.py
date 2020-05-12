@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'ContinualAI Wiki'
-copyright = '2018, ContinualAI'
+copyright = '2018-2021, ContinualAI'
 author = ''
 
 # The short X.Y version
