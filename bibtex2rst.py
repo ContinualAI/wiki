@@ -30,9 +30,14 @@ from pprint import pprint
 showbib_template = """
 .. |[PAPERID][SECTION]| raw:: html
 
-    <button onclick="[PAPERID][SECTION]Function()" id="[PAPERID][SECTION]_btt">Show Bib</button>
-    <p style="background-color: #2980b929;"><span id="[PAPERID][SECTION]_more" style="display: none">
+    <button style="font-size:75%; line-height:19px" onclick="[PAPERID][SECTION]Function()" id="[PAPERID][SECTION]_btt">Show Bib</button>
+    <button style="font-size:75%; line-height:19px" onclick="[PAPERID][SECTION]Function2()" id="[PAPERID][SECTION]_btt2">Show Abstract</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="[PAPERID][SECTION]_more" style="display: none">
         [BIBTEX]
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="[PAPERID][SECTION]_more2" style="display: none">
+        [ABSTRACT]
     </span></p>
     <script>
         function [PAPERID][SECTION]Function() {
@@ -44,6 +49,20 @@ showbib_template = """
             moreText.style.display = "inline";
           } else {
             btnText.innerHTML = "Show Bib";
+            moreText.style.display = "none";
+          }
+        }
+    </script>
+    <script>
+        function [PAPERID][SECTION]Function2() {
+          var moreText = document.getElementById("[PAPERID][SECTION]_more2");
+          var btnText = document.getElementById("[PAPERID][SECTION]_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Hide Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Show Abstract";
             moreText.style.display = "none";
           }
         }
@@ -150,6 +169,71 @@ full_bib_db = "Continual Learning Papers.bib"
 template_file_path = "research_template.rst"
 tag2fill = "<TAG>"
 output_filename = "research.rst"
+# this respect also the order of the sections
+bib_files = [
+    "Continual Learning Papers-Classics.bib",
+    "Continual Learning Papers-Review Papers and Books.bib",
+    "Continual Learning Papers-Catastrophic Forgetting Studies.bib",
+    "Continual Learning Papers-Architectural Methods.bib",
+    "Continual Learning Papers-Regularization Methods.bib",
+    "Continual Learning Papers-Rehearsal Methods.bib",
+    "Continual Learning Papers-Generative Replay Methods.bib",
+    "Continual Learning Papers-Hybrid Methods.bib",
+    "Continual Learning Papers-Metrics and Evaluations.bib",
+    "Continual Learning Papers-Bioinspired Methods.bib",
+    "Continual Learning Papers-Meta Continual Learning.bib",
+    "Continual Learning Papers-Continual Meta Learning.bib",
+    "Continual Learning Papers-Continual Reinforcement Learning.bib",
+    "Continual Learning Papers-Continual Sequential Learning.bib",
+    "Continual Learning Papers-Dissertation and Theses.bib",
+    "Continual Learning Papers-Applications.bib",
+    "Continual Learning Papers-Neuroscience.bib",
+    "Continual Learning Papers-Robotics.bib",
+    "Continual Learning Papers-Others.bib"
+]
+sec_descriptions = [
+    "In this section you'll find pioneering and classic continual learning "
+    "papers. We recommend to read all the papers in this section for a "
+    "good background on current continual deep learning developments.",
+    "In this section we collect all the main review papers and books on the "
+    "subject. These may constitute a solid starting point for "
+    "continual learning newcomers.",
+    "In this section we list all the major contributions trying to understand "
+    "catastrophic forgetting and its implication in machines that learn "
+    "continually.",
+    "In this section we collect all the papers introducing a continual "
+    "learning strategy employing some architectural methods.",
+    "In this section we collect all the papers introducing a continual "
+    "learning strategy employing some regularization methods.",
+    "In this section we collect all the papers introducing a continual "
+    "learning strategy employing some rehearsal methods.",
+    "In this section we collect all the papers introducing a continual "
+    "learning strategy employing some generative replay methods.",
+    "In this section we collect all the papers introducing a continual "
+    "learning strategy employing some hybrid methods.",
+    "In this section we list all the papers related to the continual learning "
+    "evalution protocols and metrics.",
+    "In this section we list all the papers related to bio-inspired continual "
+    "learning approaches.",
+    "In this section we list all the papers related to the meta-continual "
+    "learning.",
+    "In this section we list all the papers related to the continual "
+    "meta-learning.",
+    "In this section we list all the papers related to the continual "
+    "Reinforcement Learning.",
+    "Here we maintain a list of all the papers related to the continual "
+    "learning at the intersection with sequential learning.",
+    "In this section we maintain a list of all the dissertation and thesis "
+    "produced on continual learning and related topics.",
+    "In this section we maintain a list of all applicative papers "
+    "produced on continual learning and related topics.",
+    "In this section we maintain a list of all Neuroscience papers "
+    "that can be related (and useful) for continual machine learning.",
+    "In this section we maintain a list of all Robotics papers "
+    "that can be related to continual learning.",
+    "In this section we list all the other papers not appearing in at least "
+    "one of the above sections."
+]
 # ------------------------------------------------------------------------------
 
 remove_mendeley_notice_from_files(os.path.join(bibtex_path, full_bib_db))
@@ -161,9 +245,7 @@ with open(os.path.join(bibtex_path, full_bib_db)) as bibtex_file:
 
 str2injcet = ""
 rst_end_str = ""
-for i, bibfile in enumerate(os.listdir(bibtex_path)):
-    if bibfile == "Continual Learning Papers.bib":
-        continue
+for i, bibfile in enumerate(bib_files):
 
     sec_title = bibfile.split("-")[1][:-4]
     with open(os.path.join(bibtex_path, bibfile)) as bibtex_file:
@@ -177,7 +259,8 @@ for i, bibfile in enumerate(os.listdir(bibtex_path)):
     pprint(bib_database.entries[0])
 
     str2injcet += sec_title + \
-                 "\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n"
+                 "\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n" + \
+                  sec_descriptions[i] + "\n\n"
     for item in bib_database.entries:
         print(item)
 
@@ -196,6 +279,10 @@ for i, bibfile in enumerate(os.listdir(bibtex_path)):
             )
         )
         bib_str = bib_str.replace("[PAPERID]", item["ID"])
+        if "abstract" in item.keys():
+            bib_str = bib_str.replace("[ABSTRACT]", item["abstract"])
+        else:
+            bib_str = bib_str.replace("[ABSTRACT]", "N.A.")
         bib_str = bib_str.replace("[SECTION]", sec_title.replace(" ", "_"))
 
         rst_end_str += bib_str
