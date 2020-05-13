@@ -45,7 +45,7 @@ Catastrophic Forgetting Studies
 In this section we list all the major contributions trying to understand catastrophic forgetting and its implication in machines that learn continually.
 
 - `A comprehensive, application-oriented study of catastrophic forgetting in DNNs <https://gitlab.informatik.hs-fulda.de/ML-Projects/CF_in_DNNs>`__ by B Pfülb and A Gepperth. *ICLR*, 2018. |Pfulb2018aCatastrophic_Forgetting_Studies|
-- `Don't forget, there is more than forgetting: new metrics for Continual Learning <http://arxiv.org/abs/1810.13166>`__ by Natalia Díaz-Rodr\ǵuez, Vincenzo Lomonaco, David Filliat and Davide Maltoni. *arXiv: 1810.13166 [cs]*, 2018. |Diaz-Rodriguez2018aCatastrophic_Forgetting_Studies|
+- `Don't forget, there is more than forgetting: new metrics for Continual Learning <http://arxiv.org/abs/1810.13166>`__ by Natalia Díaz-Rodr\ǵuez, Vincenzo Lomonaco, David Filliat and Davide Maltoni. *arXiv: 1810.13166 [cs]*, 2018. |DiazRodriguez2018aCatastrophic_Forgetting_Studies|
 - `Measuring Catastrophic Forgetting in Neural Networks <https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410>`__ by Ronald Kemker, Marc McClure, Angelina Abitino, Tyler L Hayes and Christopher Kanan. *Thirty-Second AAAI Conference on Artificial Intelligence*, 2018. |Kemker2018aCatastrophic_Forgetting_Studies|
 - `An Empirical Study of Example Forgetting during Deep Neural Network Learning <https://openreview.net/forum?id=BJlxm30cKm>`__ by Mariya Toneva, Alessandro Sordoni, Remi Tachet des Combes, Adam Trischler, Yoshua Bengio and Geoffrey J Gordon. *International Conference on Learning Representations*, 2019. |Toneva2018aCatastrophic_Forgetting_Studies|
 - `Catastrophic forgetting in connectionist networks <https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(99)01294-2>`__ by  and Robert French. *Trends in Cognitive Sciences*, 128--135, 1999. |French1999aCatastrophic_Forgetting_Studies|
@@ -156,7 +156,7 @@ Continual Sequential Learning
 
 Here we maintain a list of all the papers related to the continual learning at the intersection with sequential learning.
 
-- `Gradient Episodic Memory for Continual Learning <http://arxiv.org/abs/1706.08840>`__ by David Lopez-Paz and Marc'Aurelio Ranzato. *NIPS*, 2017. |Lopez-Paz2017aContinual_Sequential_Learning|
+- `Gradient Episodic Memory for Continual Learning <http://arxiv.org/abs/1706.08840>`__ by David Lopez-Paz and Marc'Aurelio Ranzato. *NIPS*, 2017. |LopezPaz2017aContinual_Sequential_Learning|
 - `Task Agnostic Continual Learning via Meta Learning <http://arxiv.org/abs/1906.05201>`__ by Xu He, Jakub Sygnowski, Alexandre Galashov, Andrei A Rusu, Yee Whye Teh and Razvan Pascanu. *arXiv:1906.05201 [cs, stat]*, 2019. |He2019aContinual_Sequential_Learning|
 - `Online Continual Learning on Sequences <http://arxiv.org/abs/2003.09114>`__ by German I Parisi and Vincenzo Lomonaco. *arXiv:2003.09114 [cs]*, 2020. |Parisi2020aContinual_Sequential_Learning|
 - `Online Continual Learning with Maximal Interfered Retrieval <http://papers.nips.cc/paper/9357-online-continual-learning-with-maximal-interfered-retrieval.pdf>`__ by Rahaf Aljundi, Eugene Belilovsky, Tinne Tuytelaars, Laurent Charlin, Massimo Caccia, Min Lin and Lucas Page-Caccia. *Advances in Neural Information Processing Systems 32*, 11849--11860, 2019. |Aljundi2019aContinual_Sequential_Learning|
@@ -674,21 +674,21 @@ Lifelong/Continual Learning.:
     </script>
     
 
-.. |Diaz-Rodriguez2018aCatastrophic_Forgetting_Studies| raw:: html
+.. |DiazRodriguez2018aCatastrophic_Forgetting_Studies| raw:: html
 
-    <button style="font-size:75%; line-height:19px" onclick="Diaz-Rodriguez2018aCatastrophic_Forgetting_StudiesFunction()" id="Diaz-Rodriguez2018aCatastrophic_Forgetting_Studies_btt">Show Bib</button>
-    <button style="font-size:75%; line-height:19px" onclick="Diaz-Rodriguez2018aCatastrophic_Forgetting_StudiesFunction2()" id="Diaz-Rodriguez2018aCatastrophic_Forgetting_Studies_btt2">Show Abstract</button>
+    <button style="font-size:75%; line-height:19px" onclick="DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction()" id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt">Show Bib</button>
+    <button style="font-size:75%; line-height:19px" onclick="DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction2()" id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt2">Show Abstract</button>
     
-    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="Diaz-Rodriguez2018aCatastrophic_Forgetting_Studies_more" style="display: none">
+    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_more" style="display: none">
         @misc{Diaz-Rodriguez2018a,<br> annote = {arXiv: 1810.13166},<br> author = {Díaz-Rodr\ǵuez, Natalia and Lomonaco, Vincenzo and Filliat, David and Maltoni, Davide},<br> booktitle = {arXiv: 1810.13166 [cs]},<br> keywords = {68T05,Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,cifar,cs.AI,cs.CV,cs.LG,cs.NE,framework,stat.ML},<br> mendeley-tags = {cifar,framework},<br> month = {oct},<br> shorttitle = {Don't forget, there is more than forgetting},<br> title = {Don't forget, there is more than forgetting: new metrics for Continual Learning},<br> url = {http://arxiv.org/abs/1810.13166},<br> year = {2018}<br>}<br>
     </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="Diaz-Rodriguez2018aCatastrophic_Forgetting_Studies_more2" style="display: none">
+    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_more2" style="display: none">
         Continual learning consists of algorithms that learn from a stream of data/tasks continuously and adaptively thought time, enabling the incremental development of ever more complex knowledge and skills. The lack of consensus in evaluating continual learning algorithms and the almost exclusive focus on forgetting motivate us to propose a more comprehensive set of implementation independent metrics accounting for several factors we believe have practical implications worth considering in the deployment of real AI systems that learn continually: accuracy or performance over time, backward and forward knowledge transfer, memory overhead as well as computational efficiency. Drawing inspiration from the standard Multi-Attribute Value Theory (MAVT) we further propose to fuse these metrics into a single score for ranking purposes and we evaluate our proposal with five continual learning strategies on the iCIFAR-100 continual learning benchmark.
     </span></p>
     <script>
-        function Diaz-Rodriguez2018aCatastrophic_Forgetting_StudiesFunction() {
-          var moreText = document.getElementById("Diaz-Rodriguez2018aCatastrophic_Forgetting_Studies_more");
-          var btnText = document.getElementById("Diaz-Rodriguez2018aCatastrophic_Forgetting_Studies_btt");
+        function DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction() {
+          var moreText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more");
+          var btnText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Hide Bib";
@@ -700,9 +700,9 @@ Lifelong/Continual Learning.:
         }
     </script>
     <script>
-        function Diaz-Rodriguez2018aCatastrophic_Forgetting_StudiesFunction2() {
-          var moreText = document.getElementById("Diaz-Rodriguez2018aCatastrophic_Forgetting_Studies_more2");
-          var btnText = document.getElementById("Diaz-Rodriguez2018aCatastrophic_Forgetting_Studies_btt2");
+        function DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction2() {
+          var moreText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more2");
+          var btnText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt2");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Hide Abstract";
@@ -2519,21 +2519,21 @@ Lifelong/Continual Learning.:
     </script>
     
 
-.. |Lopez-Paz2017aContinual_Sequential_Learning| raw:: html
+.. |LopezPaz2017aContinual_Sequential_Learning| raw:: html
 
-    <button style="font-size:75%; line-height:19px" onclick="Lopez-Paz2017aContinual_Sequential_LearningFunction()" id="Lopez-Paz2017aContinual_Sequential_Learning_btt">Show Bib</button>
-    <button style="font-size:75%; line-height:19px" onclick="Lopez-Paz2017aContinual_Sequential_LearningFunction2()" id="Lopez-Paz2017aContinual_Sequential_Learning_btt2">Show Abstract</button>
+    <button style="font-size:75%; line-height:19px" onclick="LopezPaz2017aContinual_Sequential_LearningFunction()" id="LopezPaz2017aContinual_Sequential_Learning_btt">Show Bib</button>
+    <button style="font-size:75%; line-height:19px" onclick="LopezPaz2017aContinual_Sequential_LearningFunction2()" id="LopezPaz2017aContinual_Sequential_Learning_btt2">Show Abstract</button>
     
-    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="Lopez-Paz2017aContinual_Sequential_Learning_more" style="display: none">
+    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="LopezPaz2017aContinual_Sequential_Learning_more" style="display: none">
         @article{Lopez-Paz2017a,<br> annote = {Comment: Published at NIPS 2017<br>arXiv: 1706.08840},<br> author = {Lopez-Paz, David and Ranzato, Marc'Aurelio},<br> journal = {NIPS},<br> keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,gem},<br> title = {Gradient Episodic Memory for Continual Learning},<br> url = {http://arxiv.org/abs/1706.08840},<br> year = {2017}<br>}<br>
     </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="Lopez-Paz2017aContinual_Sequential_Learning_more2" style="display: none">
+    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="LopezPaz2017aContinual_Sequential_Learning_more2" style="display: none">
         One major obstacle towards AI is the poor ability of models to solve new problems quicker, and without forgetting previously acquired knowledge. To better understand this issue, we study the problem of continual learning, where the model observes, once and one by one, examples concerning a sequence of tasks. First, we propose a set of metrics to evaluate models learning over a continuum of data. These metrics characterize models not only by their test accuracy, but also in terms of their ability to transfer knowledge across tasks. Second, we propose a model for continual learning, called Gradient Episodic Memory (GEM) that alleviates forgetting, while allowing beneficial transfer of knowledge to previous tasks. Our experiments on variants of the MNIST and CIFAR-100 datasets demonstrate the strong performance of GEM when compared to the state-of-the-art.
     </span></p>
     <script>
-        function Lopez-Paz2017aContinual_Sequential_LearningFunction() {
-          var moreText = document.getElementById("Lopez-Paz2017aContinual_Sequential_Learning_more");
-          var btnText = document.getElementById("Lopez-Paz2017aContinual_Sequential_Learning_btt");
+        function LopezPaz2017aContinual_Sequential_LearningFunction() {
+          var moreText = document.getElementById("LopezPaz2017aContinual_Sequential_Learning_more");
+          var btnText = document.getElementById("LopezPaz2017aContinual_Sequential_Learning_btt");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Hide Bib";
@@ -2545,9 +2545,9 @@ Lifelong/Continual Learning.:
         }
     </script>
     <script>
-        function Lopez-Paz2017aContinual_Sequential_LearningFunction2() {
-          var moreText = document.getElementById("Lopez-Paz2017aContinual_Sequential_Learning_more2");
-          var btnText = document.getElementById("Lopez-Paz2017aContinual_Sequential_Learning_btt2");
+        function LopezPaz2017aContinual_Sequential_LearningFunction2() {
+          var moreText = document.getElementById("LopezPaz2017aContinual_Sequential_Learning_more2");
+          var btnText = document.getElementById("LopezPaz2017aContinual_Sequential_Learning_btt2");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Hide Abstract";

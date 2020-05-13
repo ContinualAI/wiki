@@ -264,13 +264,14 @@ for i, bibfile in enumerate(bib_files):
     for item in bib_database.entries:
         print(item)
 
+
         str2injcet += "- " + get_title(item) + \
                       " by " + get_author(item) + \
                       ". "+ journal_or_booktitle(item) + \
                       pages_or_void(item) + \
                       ", " + item['year'] + "." + \
-                      " |" + item["ID"] + sec_title.replace(" ", "_") + "|" + \
-                      "\n"
+                      " |" + item["ID"].replace("-","")\
+                      + sec_title.replace(" ", "_") + "|" + "\n"
 
         # Add bib file button
         bib_str = showbib_template.replace(
@@ -278,7 +279,7 @@ for i, bibfile in enumerate(bib_files):
                 extract_bibtex(full_bib_db, item["ID"])
             )
         )
-        bib_str = bib_str.replace("[PAPERID]", item["ID"])
+        bib_str = bib_str.replace("[PAPERID]", item["ID"].replace("-",""))
         if "abstract" in item.keys():
             bib_str = bib_str.replace("[ABSTRACT]", item["abstract"])
         else:
