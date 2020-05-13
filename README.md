@@ -58,7 +58,7 @@ How? With few, simple steps!
 
 	3.1. Check the list of existing tags in this [shared document](https://docs.google.com/spreadsheets/d/16jXX51HJ1dk0iTrKTPtZQND3jvQU0IjeVV6r2sQRul4/edit?usp=sharing). If you use a new tag, please add it in there.
 
-	3.2. Add the appropriate tags in the `Tags` field of paper details.
+	3.2. Add the appropriate tags in the `Tags` field of paper details. Please, remember to write the tag in square brackets e.g. `[mytag]`
 
 	3.3. Add your notes in the `Notes` tab 
 
