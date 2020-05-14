@@ -32,6 +32,7 @@ showbib_template = """
 
     <button style="font-size:75%; line-height:19px" onclick="[PAPERID][SECTION]Function()" id="[PAPERID][SECTION]_btt">Show Bib</button>
     <button style="font-size:75%; line-height:19px" onclick="[PAPERID][SECTION]Function2()" id="[PAPERID][SECTION]_btt2">Show Abstract</button>
+    <button style="font-size:75%; line-height:19px" onclick="[PAPERID][SECTION]Function3()" id="[PAPERID][SECTION]_btt3">Show Notes</button>
     
     <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="[PAPERID][SECTION]_more" style="display: none">
         [BIBTEX]
@@ -39,9 +40,14 @@ showbib_template = """
     <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="[PAPERID][SECTION]_more2" style="display: none">
         [ABSTRACT]
     </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="[PAPERID][SECTION]_more3" style="display: none">
+        [NOTE]
+    </span></p>
     <script>
         function [PAPERID][SECTION]Function() {
           var moreText = document.getElementById("[PAPERID][SECTION]_more");
+          var moreText2 = document.getElementById("[PAPERID][SECTION]_more2");
+          var moreText3 = document.getElementById("[PAPERID][SECTION]_more3");
           var btnText = document.getElementById("[PAPERID][SECTION]_btt");
 
           if (moreText.style.display === "none") {
@@ -51,11 +57,15 @@ showbib_template = """
             btnText.innerHTML = "Show Bib";
             moreText.style.display = "none";
           }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
         }
     </script>
     <script>
         function [PAPERID][SECTION]Function2() {
           var moreText = document.getElementById("[PAPERID][SECTION]_more2");
+          var moreText1 = document.getElementById("[PAPERID][SECTION]_more");
+          var moreText3 = document.getElementById("[PAPERID][SECTION]_more3");
           var btnText = document.getElementById("[PAPERID][SECTION]_btt2");
 
           if (moreText.style.display === "none") {
@@ -65,6 +75,26 @@ showbib_template = """
             btnText.innerHTML = "Show Abstract";
             moreText.style.display = "none";
           }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function [PAPERID][SECTION]Function3() {
+          var moreText = document.getElementById("[PAPERID][SECTION]_more3");
+          var moreText1 = document.getElementById("[PAPERID][SECTION]_more");
+          var moreText2 = document.getElementById("[PAPERID][SECTION]_more2");
+          var btnText = document.getElementById("[PAPERID][SECTION]_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Hide Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Show Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
         }
     </script>
     
@@ -100,7 +130,7 @@ def bibtex_string2html(str, remove_abstract=True):
     lines = str.split("\n")
     n = len(lines)
     final_str = ""
-    print(lines)
+    # print(lines)
     for i, line in enumerate(lines):
 
         if remove_abstract and line.strip().startswith("abstract"):
@@ -256,13 +286,13 @@ for i, bibfile in enumerate(bib_files):
     with open(template_file_path) as rf:
         template_str = rf.read()
 
-    pprint(bib_database.entries[0])
+    # pprint(bib_database.entries[0])
 
     str2injcet += sec_title + \
                  "\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n" + \
                   sec_descriptions[i] + "\n\n"
     for item in bib_database.entries:
-        print(item)
+        # print(item)
 
 
         str2injcet += "- " + get_title(item) + \
@@ -284,6 +314,12 @@ for i, bibfile in enumerate(bib_files):
             bib_str = bib_str.replace("[ABSTRACT]", item["abstract"])
         else:
             bib_str = bib_str.replace("[ABSTRACT]", "N.A.")
+        if "annote" in item.keys():
+            bib_str = bib_str.replace("[NOTE]", item["annote"].replace(
+                "\n", "\n\t\t"))
+            # pprint(item)
+        else:
+            bib_str = bib_str.replace("[NOTE]", "N.A.")
         bib_str = bib_str.replace("[SECTION]", sec_title.replace(" ", "_"))
 
         rst_end_str += bib_str
