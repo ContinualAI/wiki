@@ -8,6 +8,8 @@ install:
 #   - sudo apt-get install python3-sphinx
 
 script:
+  # Update paper list 
+  - python bibtex2rst.py
   # Use Sphinx to make the html docs
   - make html
   # Tell GitHub not to use jekyll to compile the docs
