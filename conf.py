@@ -180,3 +180,23 @@ epub_title = project
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
+
+# this below is useful to have hmtl inline in rsts
+from docutils import nodes
+
+def generate_rawrole(format):
+    def role(typ, rawtext, text, lineno, inliner, options={}, content=[]):
+        return [nodes.raw('', text, format=format)], []
+
+    return role
+
+
+def on_builder_inited(app):
+    for format in app.config.rawrole_formats:
+        name = 'raw:%s' % format
+        app.add_role(name, generate_rawrole(format))
+
+
+def setup(app):
+    app.add_config_value('rawrole_formats', ['html', 'latex'], 'env')
+    app.connect('builder-inited', on_builder_inited)

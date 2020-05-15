@@ -30,17 +30,17 @@ from pprint import pprint
 showbib_template = """
 .. |[PAPERID][SECTION]| raw:: html
 
-    <button style="font-size:75%; line-height:19px" onclick="[PAPERID][SECTION]Function()" id="[PAPERID][SECTION]_btt">Show Bib</button>
-    <button style="font-size:75%; line-height:19px" onclick="[PAPERID][SECTION]Function2()" id="[PAPERID][SECTION]_btt2">Show Abstract</button>
-    <button style="font-size:75%; line-height:19px" onclick="[PAPERID][SECTION]Function3()" id="[PAPERID][SECTION]_btt3">Show Notes</button>
+    <button style="font-size:75%; line-height:15px" onclick="[PAPERID][SECTION]Function()" id="[PAPERID][SECTION]_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="[PAPERID][SECTION]Function2()" id="[PAPERID][SECTION]_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="[PAPERID][SECTION]Function3()" id="[PAPERID][SECTION]_btt3">Notes</button>
     
-    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="[PAPERID][SECTION]_more" style="display: none">
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="[PAPERID][SECTION]_more" style="display: none">
         [BIBTEX]
     </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="[PAPERID][SECTION]_more2" style="display: none">
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="[PAPERID][SECTION]_more2" style="display: none">
         [ABSTRACT]
     </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:19px"><span id="[PAPERID][SECTION]_more3" style="display: none">
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="[PAPERID][SECTION]_more3" style="display: none">
         [NOTE]
     </span></p>
     <script>
@@ -51,10 +51,10 @@ showbib_template = """
           var btnText = document.getElementById("[PAPERID][SECTION]_btt");
 
           if (moreText.style.display === "none") {
-            btnText.innerHTML = "Hide Bib";
+            btnText.innerHTML = "Bib";
             moreText.style.display = "inline";
           } else {
-            btnText.innerHTML = "Show Bib";
+            btnText.innerHTML = "Bib";
             moreText.style.display = "none";
           }
           moreText2.style.display = "none";
@@ -69,10 +69,10 @@ showbib_template = """
           var btnText = document.getElementById("[PAPERID][SECTION]_btt2");
 
           if (moreText.style.display === "none") {
-            btnText.innerHTML = "Hide Abstract";
+            btnText.innerHTML = "Abstract";
             moreText.style.display = "inline";
           } else {
-            btnText.innerHTML = "Show Abstract";
+            btnText.innerHTML = "Abstract";
             moreText.style.display = "none";
           }
           moreText1.style.display = "none";
@@ -87,10 +87,10 @@ showbib_template = """
           var btnText = document.getElementById("[PAPERID][SECTION]_btt3");
 
           if (moreText.style.display === "none") {
-            btnText.innerHTML = "Hide Notes";
+            btnText.innerHTML = "Notes";
             moreText.style.display = "inline";
           } else {
-            btnText.innerHTML = "Show Notes";
+            btnText.innerHTML = "Notes";
             moreText.style.display = "none";
           }
           moreText1.style.display = "none";
@@ -204,6 +204,7 @@ bib_files = [
     "Continual Learning Papers-Classics.bib",
     "Continual Learning Papers-Review Papers and Books.bib",
     "Continual Learning Papers-Catastrophic Forgetting Studies.bib",
+    "Continual Learning Papers-Benchmarks.bib",
     "Continual Learning Papers-Architectural Methods.bib",
     "Continual Learning Papers-Regularization Methods.bib",
     "Continual Learning Papers-Rehearsal Methods.bib",
@@ -231,6 +232,8 @@ sec_descriptions = [
     "In this section we list all the major contributions trying to understand "
     "catastrophic forgetting and its implication in machines that learn "
     "continually.",
+    "In this section we list all the papers related to new benchmarks "
+    "proposals for continual learning and related topics. ",
     "In this section we collect all the papers introducing a continual "
     "learning strategy employing some architectural methods.",
     "In this section we collect all the papers introducing a continual "
@@ -264,6 +267,21 @@ sec_descriptions = [
     "In this section we list all the other papers not appearing in at least "
     "one of the above sections."
 ]
+
+tags2color = {
+    "framework": "Tomato",
+    "som": "Cornsilk",
+    "sparsity": "DarkSalmon",
+    "dual": "green",
+    "spiking": "yellow",
+    "rnn": "AliceBlue",
+    "nlp": "BlueViolet",
+    "mnist": "MediumAquaMarine",
+    "fashion": "LightGray",
+    "cifar": "DarkCyan",
+    "core50": "Chartreuse",
+    "imagenet": "DeepPink"
+}
 # ------------------------------------------------------------------------------
 
 remove_mendeley_notice_from_files(os.path.join(bibtex_path, full_bib_db))
@@ -294,12 +312,27 @@ for i, bibfile in enumerate(bib_files):
     for item in bib_database.entries:
         # print(item)
 
+        str2injcet_tags = ""
+        if "mendeley-tags" in item.keys():
+            print(item["mendeley-tags"])
+            str_tags = item["mendeley-tags"].replace(";", "").replace("[", "")
+            str_tags = str_tags.replace(",", "")
+            cur_tags = str_tags.replace(" ", "").split("]")
+            del cur_tags[-1]
+            print(cur_tags)
+
+            for tag in cur_tags:
+                str2injcet_tags += ":raw:html:`<span " \
+                                   "style='background-color:{}; padding: " \
+                                   "2px; border-radius:4px;'>{}" \
+                                   "</span>` ".format(tags2color[tag], tag)
 
         str2injcet += "- " + get_title(item) + \
                       " by " + get_author(item) + \
                       ". "+ journal_or_booktitle(item) + \
                       pages_or_void(item) + \
-                      ", " + item['year'] + "." + \
+                      ", " + item['year'] + ". " + \
+                      str2injcet_tags + \
                       " |" + item["ID"].replace("-","")\
                       + sec_title.replace(" ", "_") + "|" + "\n"
 
