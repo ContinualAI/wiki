@@ -5,6 +5,8 @@ install:
 #  - export PATH=$HOME/.local/bin:$PATH
    - pip install sphinx
    - pip install sphinx_rtd_theme
+   - pip install bibtexparser
+   - pip install pprint
 #   - sudo apt-get install python3-sphinx
 
 script:

@@ -280,7 +280,11 @@ tags2color = {
     "fashion": "LightGray",
     "cifar": "DarkCyan",
     "core50": "Chartreuse",
-    "imagenet": "DeepPink"
+    "imagenet": "DeepPink",
+    "vision": "#E5E4E2",
+    "audio": "#50EBEC",
+    "hebbian": "#99C68E",
+    "omniglot": "#FDD017"
 }
 # ------------------------------------------------------------------------------
 
