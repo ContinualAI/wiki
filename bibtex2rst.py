@@ -30,6 +30,7 @@ from pprint import pprint
 showbib_template = """
 .. |[PAPERID][SECTION]| raw:: html
 
+    <br>
     <button style="font-size:75%; line-height:15px" onclick="[PAPERID][SECTION]Function()" id="[PAPERID][SECTION]_btt">Bib</button>
     <button style="font-size:75%; line-height:15px" onclick="[PAPERID][SECTION]Function2()" id="[PAPERID][SECTION]_btt2">Abstract</button>
     <button style="font-size:75%; line-height:15px" onclick="[PAPERID][SECTION]Function3()" id="[PAPERID][SECTION]_btt3">Notes</button>
@@ -328,7 +329,8 @@ for i, bibfile in enumerate(bib_files):
             for tag in cur_tags:
                 str2injcet_tags += ":raw:html:`<span " \
                                    "style='background-color:{}; padding: " \
-                                   "2px; border-radius:4px;'>{}" \
+                                   "2px; border-radius:4px; border: 1px " \
+                                   "solid black;'>[{}]" \
                                    "</span>` ".format(tags2color[tag], tag)
 
         str2injcet += "- " + get_title(item) + \
