@@ -309,22 +309,21 @@ for i, bibfile in enumerate(bib_files):
     with open(template_file_path) as rf:
         template_str = rf.read()
 
-    # pprint(bib_database.entries[0])
-
     str2injcet += sec_title + \
                  "\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n" + \
                   sec_descriptions[i] + "\n\n"
-    for item in bib_database.entries:
+    for item in sorted(
+            bib_database.entries, key=lambda j: j['year'], reverse=True):
         # print(item)
 
         str2injcet_tags = ""
         if "mendeley-tags" in item.keys():
-            print(item["mendeley-tags"])
+            # print(item["mendeley-tags"])
             str_tags = item["mendeley-tags"].replace(";", "").replace("[", "")
             str_tags = str_tags.replace(",", "")
             cur_tags = str_tags.replace(" ", "").split("]")
             del cur_tags[-1]
-            print(cur_tags)
+            # print(cur_tags)
 
             for tag in cur_tags:
                 str2injcet_tags += ":raw:html:`<span " \
