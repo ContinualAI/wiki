@@ -11,6 +11,8 @@ Current Solutions
 
 In this section we provide a list of companies that exploit Continual Learning approaches:
 
+- `Heuritech <https://www.heuritech.com/>`_ is a French startup that applies state-of-the-art deep learning models for fashion. They recognize fine-grained garments and fashion trends on the internet. They regularly have to add novel clothing (shoes, dress, etc.) to their knowledge base, therefore they are currently doing research with a partnership with Sorbonne Université to develop novel Continual Learning methods.
+
 - `Neurala <https://www.neurala.com/>`_ uses deep learning neural network software that makes smart products (drones) more autonomous and useful. In particular, Neurala Lifelong Deep Neural Networks (Lifelong-DNN™) enable incremental learning of new objects on the fly, without the power of a server located in the cloud. Neurala accomplishes this by `combining different neural network architectures <https://www.neurala.com/press-releases/edge-deep-learning-without-cloud>`_).
 
 - `Amazon-Comprehend <https://aws.amazon.com/comprehend/>`_ analyzes text and tells you what it finds, starting with the language, from Afrikans to Yoruba, with 98 more in between. It can identify different types of entities (people, places, brands, products, and so forth), key phrases, sentiment (positive, negative, mixed, or neutral), and extract key phrases, all from text in English or Spanish. Finally, Comprehend‘s topic modeling service extracts topics from large sets of documents for analysis or topic-based grouping
