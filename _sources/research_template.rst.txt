@@ -23,6 +23,7 @@ to the reference to your paper!
 Conference Workshops
 ----------------------------------
 
+- `CVPR 2020 Workshop on Continual Learning in Computer Vision <https://sites.google.com/view/clvision2020>`_
 - `Cosyne 2019 Continual Learning <http://www.cosyne.org/c/index.php?title=Workshops2019_learning>`_
 - `ICML 2019 Workshop on Multi-Task and Lifelong Reinforcement Learning <https://sites.google.com/corp/view/mtlrl/home>`_
 - `ICML 2019 Adaptive and Multitask Learning: Algorithms & Systems <https://www.amtl-workshop.org/>`_
