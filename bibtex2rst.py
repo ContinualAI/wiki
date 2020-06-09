@@ -285,7 +285,8 @@ tags2color = {
     "vision": "#E5E4E2",
     "audio": "#50EBEC",
     "hebbian": "#99C68E",
-    "omniglot": "#FDD017"
+    "omniglot": "#FDD017",
+    "bayes": "Violet"
 }
 # ------------------------------------------------------------------------------
 
