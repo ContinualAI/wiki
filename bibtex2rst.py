@@ -286,7 +286,8 @@ tags2color = {
     "audio": "#50EBEC",
     "hebbian": "#99C68E",
     "omniglot": "#FDD017",
-    "bayes": "Violet"
+    "bayes": "Violet",
+    "generative": "Maroon"
 }
 # ------------------------------------------------------------------------------
 
