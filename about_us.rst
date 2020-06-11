@@ -25,7 +25,7 @@ We are always happy to add new members and get some help for improving our wiki 
 Principal Maintainer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- `Andrea Cossu <https://andreacossu.github.io/>`_:  *He is a first-year PhD Student in Data Science at Scuola Normale Superiore and University of Pisa, working under the supervision of Davide Bacciu. He is a member of the Computational Intelligence and Machine Learning (CIML) group at University of Pisa. His research is currently focused on the study of Continual Learning and on the development of Recurrent Neural Networks models able to continually learn in sequential data processing environments. Andrea received both my B.Sc in Computer Science and M.Sc in Computer Science (AI curriculum) from the University of Pisa.*
+- `Andrea Cossu <https://andreacossu.github.io/>`_:  *He is a PhD Student in Data Science at Scuola Normale Superiore and University of Pisa, working under the supervision of Davide Bacciu. He is a member of the Computational Intelligence and Machine Learning (CIML) group at University of Pisa. His research is currently focused on the study of Continual Learning and on the development of Recurrent Neural Networks models able to continually learn in sequential data processing environments. Andrea received both his B.Sc in Computer Science and M.Sc in Computer Science (AI curriculum) from the University of Pisa.*
 
 Other Contributors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
