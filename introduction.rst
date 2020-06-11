@@ -35,8 +35,10 @@ Organisms may not have these events structured in such a way where the reward is
 
 Associative pairs require repeated reinforcement to persist. If an organism learns that an area may be unsafe, but repeatedly sees it as safe afterwards, then the prior pairing will fade. However, if the stimulus reappears, then the organism will learn much more quickly than the first pairing, hinting that pairings never fully fade.
 
-Neural Mechanisms
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Stay tuned!
+.. 
+    Neural Mechanisms
+..
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..
+    Stay tuned!
 
