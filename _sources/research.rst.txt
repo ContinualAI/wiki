@@ -35,6 +35,7 @@ Review Papers and Books
 In this section we collect all the main review papers and books on the subject. These may constitute a solid starting point for continual learning newcomers.
 
 - `Continual learning for robotics: Definition, framework, learning strategies, opportunities and challenges <http://www.sciencedirect.com/science/article/pii/S1566253519307377>`__ by Timothée Lesort, Vincenzo Lomonaco, Andrei Stoian, Davide Maltoni, David Filliat and Natalia Díaz-Rodr\ǵuez. *Information Fusion*, 52--68, 2020. :raw:html:`<span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>`  |Lesort2020aReview_Papers_and_Books|
+- A continual learning survey: Defying forgetting in classification tasks by Matthias De Lange, Rahaf Aljundi, Marc Masana, Sarah Parisot, Xu Jia, Aleš Leonardis, Gregory Slabaugh and Tinne Tuytelaars. , 2020. :raw:html:`<span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>`  |DeLange2020aReview_Papers_and_Books|
 - `Continual lifelong learning with neural networks: A review <http://www.sciencedirect.com/science/article/pii/S0893608019300231>`__ by German I Parisi, Ronald Kemker, Jose L Part, Christopher Kanan and Stefan Wermter. *Neural Networks*, 54--71, 2019. :raw:html:`<span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>`  |Parisi2019aReview_Papers_and_Books|
 - `Measuring Catastrophic Forgetting in Neural Networks <https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410>`__ by Ronald Kemker, Marc McClure, Angelina Abitino, Tyler L Hayes and Christopher Kanan. *Thirty-Second AAAI Conference on Artificial Intelligence*, 2018. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Kemker2018aReview_Papers_and_Books|
 - `A comprehensive, application-oriented study of catastrophic forgetting in DNNs <https://gitlab.informatik.hs-fulda.de/ML-Projects/CF_in_DNNs>`__ by B Pfülb and A Gepperth. *ICLR*, 2018. :raw:html:`<span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Pfulb2018aReview_Papers_and_Books|
@@ -47,8 +48,8 @@ Catastrophic Forgetting Studies
 In this section we list all the major contributions trying to understand catastrophic forgetting and its implication in machines that learn continually.
 
 - `An Empirical Study of Example Forgetting during Deep Neural Network Learning <https://openreview.net/forum?id=BJlxm30cKm>`__ by Mariya Toneva, Alessandro Sordoni, Remi Tachet des Combes, Adam Trischler, Yoshua Bengio and Geoffrey J Gordon. *International Conference on Learning Representations*, 2019. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Toneva2018aCatastrophic_Forgetting_Studies|
-- `Don't forget, there is more than forgetting: new metrics for Continual Learning <http://arxiv.org/abs/1810.13166>`__ by Natalia Díaz-Rodr\ǵuez, Vincenzo Lomonaco, David Filliat and Davide Maltoni. *arXiv: 1810.13166 [cs]*, 2018. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>`  |DiazRodriguez2018aCatastrophic_Forgetting_Studies|
 - `Measuring Catastrophic Forgetting in Neural Networks <https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410>`__ by Ronald Kemker, Marc McClure, Angelina Abitino, Tyler L Hayes and Christopher Kanan. *Thirty-Second AAAI Conference on Artificial Intelligence*, 2018. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Kemker2018aCatastrophic_Forgetting_Studies|
+- `Don't forget, there is more than forgetting: new metrics for Continual Learning <http://arxiv.org/abs/1810.13166>`__ by Natalia Díaz-Rodr\ǵuez, Vincenzo Lomonaco, David Filliat and Davide Maltoni. *arXiv: 1810.13166 [cs]*, 2018. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>`  |DiazRodriguez2018aCatastrophic_Forgetting_Studies|
 - `A comprehensive, application-oriented study of catastrophic forgetting in DNNs <https://gitlab.informatik.hs-fulda.de/ML-Projects/CF_in_DNNs>`__ by B Pfülb and A Gepperth. *ICLR*, 2018. :raw:html:`<span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Pfulb2018aCatastrophic_Forgetting_Studies|
 - `Catastrophic forgetting in connectionist networks <https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(99)01294-2>`__ by  and Robert French. *Trends in Cognitive Sciences*, 128--135, 1999. :raw:html:`<span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>`  |French1999aCatastrophic_Forgetting_Studies|
 - `Catastrophic Forgetting; Catastrophic Interference; Stability; Plasticity; Rehearsal. <http://www.tandfonline.com/doi/abs/10.1080/09540099550039318>`__ by  and Anthony Robins. *Connection Science*, 123--146, 1995. :raw:html:`<span style='background-color:green; padding: 2px; border-radius:4px; border: 1px solid black;'>[dual]</span>`  |Robins1995aCatastrophic_Forgetting_Studies|
@@ -65,12 +66,15 @@ Architectural Methods
 
 In this section we collect all the papers introducing a continual learning strategy employing some architectural methods.
 
+- `Bayesian Nonparametric Weight Factorization for Continual Learning <http://arxiv.org/abs/2004.10098>`__ by Nikhil Mehta, Kevin J Liang and Lawrence Carin. , 1--17, 2020. :raw:html:`<span style='background-color:Violet; padding: 2px; border-radius:4px; border: 1px solid black;'>[bayes]</span>` :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>` :raw:html:`<span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>`  |Mehta2020aArchitectural_Methods|
 - `Continual Learning with Gated Incremental Memories for sequential data processing <http://arxiv.org/abs/2004.04077>`__ by Andrea Cossu, Antonio Carta and Davide Bacciu. *Proceedings of the 2020 International Joint Conference on Neural Networks (IJCNN 2020)*, 2020. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>` :raw:html:`<span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>`  |Cossu2020aArchitectural_Methods|
 - `Progressive Memory Banks for Incremental Domain Adaptation <https://openreview.net/forum?id=BkepbpNFwr>`__ by Nabiha Asghar, Lili Mou, Kira A Selby, Kevin D Pantasdo, Pascal Poupart and Xin Jiang. *International Conference on Learning Representations*, 2019. :raw:html:`<span style='background-color:BlueViolet; padding: 2px; border-radius:4px; border: 1px solid black;'>[nlp]</span>` :raw:html:`<span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>`  |Asghar2019aArchitectural_Methods|
 - `Continual Learning via Neural Pruning <http://arxiv.org/abs/1903.04476>`__ by Siavash Golkar, Michael Kagan and Kyunghyun Cho. *arXiv:1903.04476 [cs, q-bio, stat]*, 2019. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>` :raw:html:`<span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>`  |Golkar2019aArchitectural_Methods|
+- `Towards AutoML in the presence of Drift: first results <http://arxiv.org/abs/1907.10772>`__ by Jorge G. Madrid, Hugo Jair Escalante, Eduardo F. Morales, Wei-Wei Tu, Yang Yu, Lisheng Sun-Hosoya, Isabelle Guyon and Michele Sebag. , 2019.  |Madrid2018aArchitectural_Methods|
 - Lifelong Learning With Dynamically Expandable Networks by Jaehong Yoon, Eunho Yang, Jeongtae Lee and Sung Ju Hwang. *ICLR*, 11, 2018. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>` :raw:html:`<span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>`  |Yoon2018Architectural_Methods|
 - `Neurogenesis Deep Learning <https://www.osti.gov/biblio/1424868>`__ by Timothy John Draelos, Nadine E Miner, Christopher Lamb, Jonathan A Cox, Craig Michael Vineyard, Kristofor David Carlson, William Mark Severa, Conrad D James and James Bradley Aimone. *IJCNN*, 2017. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Draelos2017aArchitectural_Methods|
 - `Progressive Neural Networks <http://arxiv.org/abs/1606.04671>`__ by Andrei A Rusu, Neil C Rabinowitz, Guillaume Desjardins, Hubert Soyer, James Kirkpatrick, Koray Kavukcuoglu, Razvan Pascanu and Raia Hadsell. *arXiv: 1606.04671 [cs]*, 2016. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Rusu2016aArchitectural_Methods|
+- A self-organising network that grows when required by Stephen Marsland, Jonathan Shapiro and Ulrich Nehmzow. *Neural Networks*, 1041--1058, 2002. :raw:html:`<span style='background-color:Cornsilk; padding: 2px; border-radius:4px; border: 1px solid black;'>[som]</span>`  |marsland2002aArchitectural_Methods|
 
 Regularization Methods
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -80,10 +84,11 @@ In this section we collect all the papers introducing a continual learning strat
 - `Continual learning with hypernetworks <https://openreview.net/forum?id=SJgwNerKvB>`__ by Johannes von Oswald, Christian Henning, João Sacramento and Benjamin F Grewe. *International Conference on Learning Representations*, 2020. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Oswal2019aRegularization_Methods|
 - `Efficient continual learning in neural networks with embedding regularization <http://www.sciencedirect.com/science/article/pii/S092523122030151X>`__ by Jary Pomponi, Simone Scardapane, Vincenzo Lomonaco and Aurelio Uncini. *Neurocomputing*, 2020. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Pomponi2020aRegularization_Methods|
 - Memory Aware Synapses: Learning what (not) to forget by Rahaf Aljundi, Francesca Babiloni, Mohamed Elhoseiny, Marcus Rohrbach and Tinne Tuytelaars. *The European Conference on Computer Vision (ECCV)*, 2018. :raw:html:`<span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>`  |Aljundi2018aRegularization_Methods|
-- Rotate your Networks: Better Weight Consolidation and Less Catastrophic Forgetting by Xialei Liu, Marc Masana, Luis Herranz, Joost de Weijer, Antonio M López and Andrew D Bagdanov. *2018 24th International Conference on Pattern Recognition (ICPR)*, 2262--2268, 2018. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Liu2018aRegularization_Methods|
 - `Overcoming Catastrophic Forgetting with Hard Attention to the Task <https://github.com/joansj/hat>`__ by Joan Serrà, D\d́ac Surís, Marius Miron and Alexandros Karatzoglou. *ICML*, 2018. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Serra2018aRegularization_Methods|
+- Rotate your Networks: Better Weight Consolidation and Less Catastrophic Forgetting by Xialei Liu, Marc Masana, Luis Herranz, Joost de Weijer, Antonio M López and Andrew D Bagdanov. *2018 24th International Conference on Pattern Recognition (ICPR)*, 2262--2268, 2018. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Liu2018aRegularization_Methods|
 - `Continual Learning Through Synaptic Intelligence <http://proceedings.mlr.press/v70/zenke17a.html>`__ by Friedemann Zenke, Ben Poole and Surya Ganguli. *International Conference on Machine Learning*, 3987--3995, 2017. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Zenke2017aRegularization_Methods|
 - `Overcoming catastrophic forgetting in neural networks <http://arxiv.org/abs/1612.00796>`__ by James Kirkpatrick, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume Desjardins, Andrei A Rusu, Kieran Milan, John Quan, Tiago Ramalho, Agnieszka Grabska-Barwinska, Demis Hassabis, Claudia Clopath, Dharshan Kumaran and Raia Hadsell. *PNAS*, 3521--3526, 2017. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Kirkpatrick2017aRegularization_Methods|
+- `Lifelong Generative Modeling <http://arxiv.org/abs/1705.09847>`__ by Jason Ramapuram, Magda Gregorova and Alexandros Kalousis. , 1--14, 2017. :raw:html:`<span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span>` :raw:html:`<span style='background-color:Maroon; padding: 2px; border-radius:4px; border: 1px solid black;'>[generative]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Ramapuram2017aRegularization_Methods|
 - `Learning without Forgetting <http://arxiv.org/abs/1606.09282>`__ by Zhizhong Li and Derek Hoiem. *European Conference on Computer Vision*, 614--629, 2016. :raw:html:`<span style='background-color:DeepPink; padding: 2px; border-radius:4px; border: 1px solid black;'>[imagenet]</span>`  |Li2016aRegularization_Methods|
 
 Rehearsal Methods
@@ -109,8 +114,8 @@ Hybrid Methods
 In this section we collect all the papers introducing a continual learning strategy employing some hybrid methods.
 
 - `Continual Learning of New Sound Classes using Generative Replay <http://arxiv.org/abs/1906.00654>`__ by Zhepei Wang, Cem Subakan, Efthymios Tzinis, Paris Smaragdis and Laurent Charlin. *arXiv: 1906.00654 [cs, eess, stat]*, 2019. :raw:html:`<span style='background-color:#50EBEC; padding: 2px; border-radius:4px; border: 1px solid black;'>[audio]</span>`  |Wang2019aHybrid_Methods|
-- `Progress & Compress: A scalable framework for continual learning <http://proceedings.mlr.press/v80/schwarz18a.html>`__ by Jonathan Schwarz, Wojciech Czarnecki, Jelena Luketina, Agnieszka Grabska-Barwinska, Yee Whye Teh, Razvan Pascanu and Raia Hadsell. *International Conference on Machine Learning*, 4528--4537, 2018. :raw:html:`<span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>`  |Schwarz2018aHybrid_Methods|
 - `Continuous Learning in Single-Incremental-Task Scenarios <http://arxiv.org/abs/1806.08568>`__ by Davide Maltoni and Vincenzo Lomonaco. *arXiv:1806.08568 [cs, stat]*, 2018. :raw:html:`<span style='background-color:Chartreuse; padding: 2px; border-radius:4px; border: 1px solid black;'>[core50]</span>` :raw:html:`<span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>`  |Maltoni2018aHybrid_Methods|
+- `Progress & Compress: A scalable framework for continual learning <http://proceedings.mlr.press/v80/schwarz18a.html>`__ by Jonathan Schwarz, Wojciech Czarnecki, Jelena Luketina, Agnieszka Grabska-Barwinska, Yee Whye Teh, Razvan Pascanu and Raia Hadsell. *International Conference on Machine Learning*, 4528--4537, 2018. :raw:html:`<span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>`  |Schwarz2018aHybrid_Methods|
 
 Metrics and Evaluations
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -120,6 +125,7 @@ In this section we list all the papers related to the continual learning evaluti
 - `Online Fast Adaptation and Knowledge Accumulation: a New Approach to Continual Learning <http://arxiv.org/abs/2003.05856>`__ by Massimo Caccia, Pau Rodriguez, Oleksiy Ostapenko, Fabrice Normandin, Min Lin, Lucas Caccia, Issam Laradji, Irina Rish, Alexande Lacoste, David Vazquez and Laurent Charlin. *arXiv:2003.05856 [cs]*, 2020. :raw:html:`<span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span>` :raw:html:`<span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Caccia2020aMetrics_and_Evaluations|
 - `Continual learning for robotics: Definition, framework, learning strategies, opportunities and challenges <http://www.sciencedirect.com/science/article/pii/S1566253519307377>`__ by Timothée Lesort, Vincenzo Lomonaco, Andrei Stoian, Davide Maltoni, David Filliat and Natalia Díaz-Rodr\ǵuez. *Information Fusion*, 52--68, 2020. :raw:html:`<span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>`  |Lesort2020aMetrics_and_Evaluations|
 - `Regularization Shortcomings for Continual Learning <http://arxiv.org/abs/1912.03049>`__ by Timothée Lesort, Andrei Stoian and David Filliat. *arXiv:1912.03049 [cs, stat]*, 2020. :raw:html:`<span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Lesort2020bMetrics_and_Evaluations|
+- Strategies for improving single-head continual learning performance by Alaa El Khatib and Fakhri Karray. *Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)*, 452--460, 2019. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |khatib2019aMetrics_and_Evaluations|
 - `Continual lifelong learning with neural networks: A review <http://www.sciencedirect.com/science/article/pii/S0893608019300231>`__ by German I Parisi, Ronald Kemker, Jose L Part, Christopher Kanan and Stefan Wermter. *Neural Networks*, 54--71, 2019. :raw:html:`<span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>`  |Parisi2019aMetrics_and_Evaluations|
 - `Towards Robust Evaluations of Continual Learning <http://arxiv.org/abs/1805.09733>`__ by Sebastian Farquhar and Yarin Gal. *Privacy in Machine Learning and Artificial Intelligence workshop, ICML*, 2019. :raw:html:`<span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span>` :raw:html:`<span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>`  |Farquhar2019aMetrics_and_Evaluations|
 - `Three scenarios for continual learning <http://arxiv.org/abs/1904.07734>`__ by Gido M van de Ven and Andreas S Tolias. *Continual Learning Workshop NeurIPS*, 2018. :raw:html:`<span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |VanDeVen2018aMetrics_and_Evaluations|
@@ -130,10 +136,12 @@ Bioinspired Methods
 In this section we list all the papers related to bio-inspired continual learning approaches.
 
 - `Spiking Neural Predictive Coding for Continual Learning from Data Streams <http://arxiv.org/abs/1908.08655>`__ by  and Alexander Ororbia. *arXiv:1908.08655 [cs, q-bio]*, 2020. :raw:html:`<span style='background-color:yellow; padding: 2px; border-radius:4px; border: 1px solid black;'>[spiking]</span>`  |Ororbia2020aBioinspired_Methods|
+- `Controlled Forgetting: Targeted Stimulation and Dopaminergic Plasticity Modulation for Unsupervised Lifelong Learning in Spiking Neural Networks <https://www.frontiersin.org/article/10.3389/fnins.2020.00007/full>`__ by Jason M. Allred and Kaushik Roy. *Frontiers in Neuroscience*, 7, 2020. :raw:html:`<span style='background-color:yellow; padding: 2px; border-radius:4px; border: 1px solid black;'>[spiking]</span>`  |Allred2020aBioinspired_Methods|
 - `Selfless Sequential Learning <https://openreview.net/forum?id=Bkxbrn0cYX>`__ by Rahaf Aljundi, Marcus Rohrbach and Tinne Tuytelaars. *ICLR*, 2019. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>` :raw:html:`<span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>`  |Aljundi2019cBioinspired_Methods|
 - `Continual Learning of Recurrent Neural Networks by Locally Aligning Distributed Representations <http://arxiv.org/abs/1810.07411>`__ by Alexander Ororbia, Ankur Mali, C Lee Giles and Daniel Kifer. *arXiv:1810.07411 [cs]*, 2019. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>` :raw:html:`<span style='background-color:yellow; padding: 2px; border-radius:4px; border: 1px solid black;'>[spiking]</span>`  |Ororbia2019aBioinspired_Methods|
 - `Lifelong Learning of Spatiotemporal Representations With Dual-Memory Recurrent Self-Organization <https://www.frontiersin.org/articles/10.3389/fnbot.2018.00078/full>`__ by German I Parisi, Jun Tani, Cornelius Weber and Stefan Wermter. *Frontiers in Neurorobotics*, 2018. :raw:html:`<span style='background-color:Chartreuse; padding: 2px; border-radius:4px; border: 1px solid black;'>[core50]</span>` :raw:html:`<span style='background-color:green; padding: 2px; border-radius:4px; border: 1px solid black;'>[dual]</span>` :raw:html:`<span style='background-color:Cornsilk; padding: 2px; border-radius:4px; border: 1px solid black;'>[som]</span>`  |Parisi2018aBioinspired_Methods|
 - `Continuous Online Sequence Learning with an Unsupervised Neural Network Model <https://doi.org/10.1162/NECO_a_00893>`__ by Yuwei Cui, Subutai Ahmad and Jeff Hawkins. *Neural Computation*, 2474--2504, 2016. :raw:html:`<span style='background-color:yellow; padding: 2px; border-radius:4px; border: 1px solid black;'>[spiking]</span>`  |Cui2016aBioinspired_Methods|
+- Compete to Compute by Rupesh Kumar Srivastava, Jonathan Masci, Sohrob Kazerounian, Faustino Gomez and Jürgen Schmidhuber. *Advances in Neural Information Processing Systems 26*, 2013. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>` :raw:html:`<span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>`  |srivastava2013aBioinspired_Methods|
 - `Mitigation of catastrophic forgetting in recurrent neural networks using a Fixed Expansion Layer <http://ieeexplore.ieee.org/document/6707047/>`__ by Robert Coop and Itamar Arel. *The 2013 International Joint Conference on Neural Networks (IJCNN)*, 1--7, 2013. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>` :raw:html:`<span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>` :raw:html:`<span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>`  |Coop2013aBioinspired_Methods|
 - Mitigation of catastrophic interference in neural networks using a fixed expansion layer by Robert Coop and Itamar Arel. *2012 IEEE 55th International Midwest Symposium on Circuits and Systems (MWSCAS)*, 726--729, 2012. :raw:html:`<span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>`  |Coop2012aBioinspired_Methods|
 - `Synaptic plasticity: taming the beast <https://www.nature.com/articles/nn1100_1178>`__ by L F Abbott and Sacha B Nelson. *Nature Neuroscience*, 1178--1183, 2000. :raw:html:`<span style='background-color:#99C68E; padding: 2px; border-radius:4px; border: 1px solid black;'>[hebbian]</span>`  |Abbott2000aBioinspired_Methods|
@@ -144,8 +152,8 @@ Meta Continual Learning
 In this section we list all the papers related to the meta-continual learning.
 
 - `Learning to Continually Learn <http://arxiv.org/abs/2002.09571>`__ by Shawn Beaulieu, Lapo Frati, Thomas Miconi, Joel Lehman, Kenneth O. Stanley, Jeff Clune and Nick Cheney. *ECAI*, 2020. :raw:html:`<span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>`  |beaulieu2020aMeta_Continual_Learning|
-- Learning to learn without forgetting by maximizing transfer and minimizing interference by Matthew Riemer, Ignacio Cases, Robert Ajemian, Miao Liu, Irina Rish, Yuhai Tu and Gerald Tesauro. *ICLR*, 2019. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |riemer2019aMeta_Continual_Learning|
 - `Meta-Learning Representations for Continual Learning <https://github.com/khurramjaved96/mrcl>`__ by Khurram Javed and Martha White. *NeurIPS*, 2019. :raw:html:`<span style='background-color:#FDD017; padding: 2px; border-radius:4px; border: 1px solid black;'>[omniglot]</span>`  |khurram2019aMeta_Continual_Learning|
+- Learning to learn without forgetting by maximizing transfer and minimizing interference by Matthew Riemer, Ignacio Cases, Robert Ajemian, Miao Liu, Irina Rish, Yuhai Tu and Gerald Tesauro. *ICLR*, 2019. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |riemer2019aMeta_Continual_Learning|
 
 Continual Meta Learning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -160,8 +168,8 @@ Continual Reinforcement Learning
 
 In this section we list all the papers related to the continual Reinforcement Learning.
 
-- Learning to learn without forgetting by maximizing transfer and minimizing interference by Matthew Riemer, Ignacio Cases, Robert Ajemian, Miao Liu, Irina Rish, Yuhai Tu and Gerald Tesauro. *ICLR*, 2019. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |riemer2019aContinual_Reinforcement_Learning|
 - `Continual Learning Exploiting Structure of Fractal Reservoir Computing <http://link.springer.com/10.1007/978-3-030-30493-5_4>`__ by Taisuke Kobayashi and Toshiki Sugino. *Artificial Neural Networks and Machine Learning – ICANN 2019: Workshop and Special Sessions*, 35--47, 2019. :raw:html:`<span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>`  |Kobayashi2019aContinual_Reinforcement_Learning|
+- Learning to learn without forgetting by maximizing transfer and minimizing interference by Matthew Riemer, Ignacio Cases, Robert Ajemian, Miao Liu, Irina Rish, Yuhai Tu and Gerald Tesauro. *ICLR*, 2019. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |riemer2019aContinual_Reinforcement_Learning|
 - `Progress & Compress: A scalable framework for continual learning <http://proceedings.mlr.press/v80/schwarz18a.html>`__ by Jonathan Schwarz, Wojciech Czarnecki, Jelena Luketina, Agnieszka Grabska-Barwinska, Yee Whye Teh, Razvan Pascanu and Raia Hadsell. *International Conference on Machine Learning*, 4528--4537, 2018. :raw:html:`<span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>`  |Schwarz2018aContinual_Reinforcement_Learning|
 - `Overcoming catastrophic forgetting in neural networks <http://arxiv.org/abs/1612.00796>`__ by James Kirkpatrick, Razvan Pascanu, Neil Rabinowitz, Joel Veness, Guillaume Desjardins, Andrei A Rusu, Kieran Milan, John Quan, Tiago Ramalho, Agnieszka Grabska-Barwinska, Demis Hassabis, Claudia Clopath, Dharshan Kumaran and Raia Hadsell. *PNAS*, 3521--3526, 2017. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Kirkpatrick2017aContinual_Reinforcement_Learning|
 - `Progressive Neural Networks <http://arxiv.org/abs/1606.04671>`__ by Andrei A Rusu, Neil C Rabinowitz, Guillaume Desjardins, Hubert Soyer, James Kirkpatrick, Koray Kavukcuoglu, Razvan Pascanu and Raia Hadsell. *arXiv: 1606.04671 [cs]*, 2016. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Rusu2016aContinual_Reinforcement_Learning|
@@ -173,11 +181,12 @@ Continual Sequential Learning
 Here we maintain a list of all the papers related to the continual learning at the intersection with sequential learning.
 
 - `Online Continual Learning on Sequences <http://arxiv.org/abs/2003.09114>`__ by German I Parisi and Vincenzo Lomonaco. *arXiv:2003.09114 [cs]*, 2020. :raw:html:`<span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>`  |Parisi2020aContinual_Sequential_Learning|
-- Task-Free Continual Learning by Rahaf Aljundi, Klaas Kelchtermans and Tinne Tuytelaars. *The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*, 2019. :raw:html:`<span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>`  |Aljundi2019Continual_Sequential_Learning|
+- `Efficient Lifelong Learning with A-GEM <http://arxiv.org/abs/1812.00420>`__ by Arslan Chaudhry, Marc'Aurelio Ranzato, Marcus Rohrbach and Mohamed Elhoseiny. *ICLR*, 2019. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Chaudhry2019aContinual_Sequential_Learning|
 - `Online Continual Learning with Maximal Interfered Retrieval <http://papers.nips.cc/paper/9357-online-continual-learning-with-maximal-interfered-retrieval.pdf>`__ by Rahaf Aljundi, Eugene Belilovsky, Tinne Tuytelaars, Laurent Charlin, Massimo Caccia, Min Lin and Lucas Page-Caccia. *Advances in Neural Information Processing Systems 32*, 11849--11860, 2019. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Aljundi2019aContinual_Sequential_Learning|
 - `Gradient based sample selection for online continual learning <http://papers.nips.cc/paper/9354-gradient-based-sample-selection-for-online-continual-learning.pdf>`__ by Rahaf Aljundi, Min Lin, Baptiste Goujaud and Yoshua Bengio. *Advances in Neural Information Processing Systems 32*, 11816--11825, 2019. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Aljundi2019dContinual_Sequential_Learning|
-- `Efficient Lifelong Learning with A-GEM <http://arxiv.org/abs/1812.00420>`__ by Arslan Chaudhry, Marc'Aurelio Ranzato, Marcus Rohrbach and Mohamed Elhoseiny. *ICLR*, 2019. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Chaudhry2019aContinual_Sequential_Learning|
 - `Task Agnostic Continual Learning via Meta Learning <http://arxiv.org/abs/1906.05201>`__ by Xu He, Jakub Sygnowski, Alexandre Galashov, Andrei A Rusu, Yee Whye Teh and Razvan Pascanu. *arXiv:1906.05201 [cs, stat]*, 2019. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |He2019aContinual_Sequential_Learning|
+- Task-Free Continual Learning by Rahaf Aljundi, Klaas Kelchtermans and Tinne Tuytelaars. *The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*, 2019. :raw:html:`<span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>`  |Aljundi2019Continual_Sequential_Learning|
+- Overcoming Catastrophic interference using conceptor-aided backpropagation by Xu He and Herbert Jaeger. *ICLR*, 2018. :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>` :raw:html:`<span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>`  |xu2018aContinual_Sequential_Learning|
 - `Riemannian Walk for Incremental Learning: Understanding Forgetting and Intransigence <http://openaccess.thecvf.com/content_ECCV_2018/html/Arslan_Chaudhry__Riemannian_Walk_ECCV_2018_paper.html>`__ by Arslan Chaudhry, Puneet K Dokania, Thalaiyasingam Ajanthan and Philip H.S. Torr. *Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)*, 556--572, 2018. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Chaudhry2018aContinual_Sequential_Learning|
 - `Gradient Episodic Memory for Continual Learning <http://arxiv.org/abs/1706.08840>`__ by David Lopez-Paz and Marc'Aurelio Ranzato. *NIPS*, 2017. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |LopezPaz2017aContinual_Sequential_Learning|
 - iCaRL: Incremental Classifier and Representation Learning by Sylvestre-Alvise Rebuffi, Alexander Kolesnikov, Georg Sperl and Christoph H Lampert. *The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*, 2017. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>`  |Rebuffi2017aContinual_Sequential_Learning|
@@ -194,8 +203,11 @@ Applications
 
 In this section we maintain a list of all applicative papers produced on continual learning and related topics.
 
+- `Continual Learning of Predictive Models in Video Sequences via Variational Autoencoders <http://arxiv.org/abs/2006.01945>`__ by Damian Campo, Giulia Slavic, Mohamad Baydoun, Lucio Marcenaro and Carlo Regazzoni. , 2020. :raw:html:`<span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>`  |Campo2020aApplications|
+- Incremental Learning for End-to-End Automatic Speech Recognition by Li Fu, Xiaoxiao Li and Libo Zi. , 2020. :raw:html:`<span style='background-color:#50EBEC; padding: 2px; border-radius:4px; border: 1px solid black;'>[audio]</span>`  |Fu2020aApplications|
 - `LAMOL: LAnguage MOdeling for Lifelong Language Learning <https://openreview.net/forum?id=Skgxcn4YDS>`__ by Fan-Keng Sun, Cheng-Hao Ho and Hung-Yi Lee. *ICLR*, 2020. :raw:html:`<span style='background-color:BlueViolet; padding: 2px; border-radius:4px; border: 1px solid black;'>[nlp]</span>`  |sun2019aApplications|
 - `Class-Agnostic Continual Learning of Alternating Languages and Domains <http://arxiv.org/abs/2004.03340>`__ by Germán Kruszewski, Ionut-Teodor Sorodoc and Tomas Mikolov. *arXiv:2004.03340 [cs]*, 2020. :raw:html:`<span style='background-color:BlueViolet; padding: 2px; border-radius:4px; border: 1px solid black;'>[nlp]</span>`  |kruszewski2020aApplications|
+- `A Multi-Task Learning Framework for Overcoming the Catastrophic Forgetting in Automatic Speech Recognition <http://arxiv.org/abs/1904.08039>`__ by Jiabin Xue, Jiqing Han, Tieran Zheng, Xiang Gao and Jiaxing Guo. , 2019. :raw:html:`<span style='background-color:#50EBEC; padding: 2px; border-radius:4px; border: 1px solid black;'>[audio]</span>` :raw:html:`<span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>`  |Xue2019aApplications|
 - `Toward Continual Learning for Conversational Agents <http://arxiv.org/abs/1712.09943>`__ by  and Sungjin Lee. *arXiv:1712.09943 [cs]*, 2018. :raw:html:`<span style='background-color:BlueViolet; padding: 2px; border-radius:4px; border: 1px solid black;'>[nlp]</span>`  |lee2018aApplications|
 
 Neuroscience
@@ -217,6 +229,7 @@ Others
 
 In this section we list all the other papers not appearing in at least one of the above sections.
 
+- `Continual Learning Using Task Conditional Neural Networks <http://arxiv.org/abs/2005.05080>`__ by Honglin Li, Payam Barnaghi, Shirin Enshaeifar and Frieder Ganz. , 2020. :raw:html:`<span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>` :raw:html:`<span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>`  |Li2020aOthers|
 - A Study on Catastrophic Forgetting in Deep LSTM Networks by Monika Schak and Alexander Gepperth. *Artificial Neural Networks and Machine Learning – ICANN 2019: Deep Learning*, 714--728, 2019. :raw:html:`<span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>`  |Schak2019aOthers|
 - The Organization of Behavior: A Neuropsychological Theory by  and D O Hebb. *Psychology Press*, 2005. :raw:html:`<span style='background-color:#99C68E; padding: 2px; border-radius:4px; border: 1px solid black;'>[hebbian]</span>`  |Hebb2005aOthers|
 
@@ -722,6 +735,78 @@ Lifelong/Continual Learning.:
     </script>
     
 
+.. |DeLange2020aReview_Papers_and_Books| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="DeLange2020aReview_Papers_and_BooksFunction()" id="DeLange2020aReview_Papers_and_Books_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="DeLange2020aReview_Papers_and_BooksFunction2()" id="DeLange2020aReview_Papers_and_Books_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="DeLange2020aReview_Papers_and_BooksFunction3()" id="DeLange2020aReview_Papers_and_Books_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DeLange2020aReview_Papers_and_Books_more" style="display: none">
+        @misc{DeLange2020a,<br> archiveprefix = {arXiv},<br> arxivid = {1909.08383v2},<br> author = {De Lange, Matthias and Aljundi, Rahaf and Masana, Marc and Parisot, Sarah and Jia, Xu and Leonardis, Aleš and Slabaugh, Gregory and Tuytelaars, Tinne},<br> eprint = {1909.08383v2},<br> file = {::},<br> keywords = {Index Terms-Continual Learning,[framework],catastrophic forgetting,classification,lifelong learning,neural networks ✦,task incremental learning},<br> mendeley-tags = {[framework]},<br> title = {A continual learning survey: Defying forgetting in classification tasks},<br> year = {2020}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DeLange2020aReview_Papers_and_Books_more2" style="display: none">
+        Artificial neural networks thrive in solving the classification problem for a particular rigid task, acquiring knowledge through generalized learning behaviour from a distinct training phase. The resulting network resembles a static entity of knowledge, with endeavours to extend this knowledge without targeting the original task resulting in a catastrophic forgetting. Continual learning shifts this paradigm towards networks that can continually accumulate knowledge over different tasks without the need to retrain from scratch. We focus on task incremental classification, where tasks arrive sequentially and are delineated by clear boundaries. Our main contributions concern 1) a taxonomy and extensive overview of the state-of-the-art, 2) a novel framework to continually determine the stability-plasticity trade-off of the continual learner, 3) a comprehensive experimental comparison of 11 state-of-the-art continual learning methods and 4 baselines. We empirically scrutinize method strengths and weaknesses on three benchmarks, considering Tiny Imagenet and large-scale unbalanced iNaturalist and a sequence of recognition datasets. We study the influence of model capacity, weight decay and dropout regularization, and the order in which the tasks are presented, and qualitatively compare methods in terms of required memory, computation time and storage. Code will be made publicly available upon acceptance of this paper.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DeLange2020aReview_Papers_and_Books_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function DeLange2020aReview_Papers_and_BooksFunction() {
+          var moreText = document.getElementById("DeLange2020aReview_Papers_and_Books_more");
+          var moreText2 = document.getElementById("DeLange2020aReview_Papers_and_Books_more2");
+          var moreText3 = document.getElementById("DeLange2020aReview_Papers_and_Books_more3");
+          var btnText = document.getElementById("DeLange2020aReview_Papers_and_Books_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function DeLange2020aReview_Papers_and_BooksFunction2() {
+          var moreText = document.getElementById("DeLange2020aReview_Papers_and_Books_more2");
+          var moreText1 = document.getElementById("DeLange2020aReview_Papers_and_Books_more");
+          var moreText3 = document.getElementById("DeLange2020aReview_Papers_and_Books_more3");
+          var btnText = document.getElementById("DeLange2020aReview_Papers_and_Books_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function DeLange2020aReview_Papers_and_BooksFunction3() {
+          var moreText = document.getElementById("DeLange2020aReview_Papers_and_Books_more3");
+          var moreText1 = document.getElementById("DeLange2020aReview_Papers_and_Books_more");
+          var moreText2 = document.getElementById("DeLange2020aReview_Papers_and_Books_more2");
+          var btnText = document.getElementById("DeLange2020aReview_Papers_and_Books_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
 .. |Parisi2019aReview_Papers_and_Books| raw:: html
 
     <br>
@@ -1154,78 +1239,6 @@ Lifelong/Continual Learning.:
     </script>
     
 
-.. |DiazRodriguez2018aCatastrophic_Forgetting_Studies| raw:: html
-
-    <br>
-    <button style="font-size:75%; line-height:15px" onclick="DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction()" id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt">Bib</button>
-    <button style="font-size:75%; line-height:15px" onclick="DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction2()" id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt2">Abstract</button>
-    <button style="font-size:75%; line-height:15px" onclick="DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction3()" id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt3">Notes</button>
-    
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_more" style="display: none">
-        @misc{Diaz-Rodriguez2018a,<br> annote = {arXiv: 1810.13166},<br> author = {Díaz-Rodr\ǵuez, Natalia and Lomonaco, Vincenzo and Filliat, David and Maltoni, Davide},<br> booktitle = {arXiv: 1810.13166 [cs]},<br> keywords = {68T05,Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,[cifar],[framework],cs.AI,cs.CV,cs.LG,cs.NE,stat.ML},<br> mendeley-tags = {[cifar],[framework]},<br> month = {oct},<br> shorttitle = {Don't forget, there is more than forgetting},<br> title = {Don't forget, there is more than forgetting: new metrics for Continual Learning},<br> url = {http://arxiv.org/abs/1810.13166},<br> year = {2018}<br>}<br>
-    </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_more2" style="display: none">
-        Continual learning consists of algorithms that learn from a stream of data/tasks continuously and adaptively thought time, enabling the incremental development of ever more complex knowledge and skills. The lack of consensus in evaluating continual learning algorithms and the almost exclusive focus on forgetting motivate us to propose a more comprehensive set of implementation independent metrics accounting for several factors we believe have practical implications worth considering in the deployment of real AI systems that learn continually: accuracy or performance over time, backward and forward knowledge transfer, memory overhead as well as computational efficiency. Drawing inspiration from the standard Multi-Attribute Value Theory (MAVT) we further propose to fuse these metrics into a single score for ranking purposes and we evaluate our proposal with five continual learning strategies on the iCIFAR-100 continual learning benchmark.
-    </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_more3" style="display: none">
-        arXiv: 1810.13166
-    </span></p>
-    <script>
-        function DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction() {
-          var moreText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more");
-          var moreText2 = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more2");
-          var moreText3 = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more3");
-          var btnText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Bib";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Bib";
-            moreText.style.display = "none";
-          }
-          moreText2.style.display = "none";
-          moreText3.style.display = "none";
-        }
-    </script>
-    <script>
-        function DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction2() {
-          var moreText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more2");
-          var moreText1 = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more");
-          var moreText3 = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more3");
-          var btnText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt2");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Abstract";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Abstract";
-            moreText.style.display = "none";
-          }
-          moreText1.style.display = "none";
-          moreText3.style.display = "none";
-        }
-    </script>
-    <script>
-        function DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction3() {
-          var moreText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more3");
-          var moreText1 = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more");
-          var moreText2 = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more2");
-          var btnText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt3");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Notes";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Notes";
-            moreText.style.display = "none";
-          }
-          moreText1.style.display = "none";
-          moreText2.style.display = "none";
-        }
-    </script>
-    
-
 .. |Kemker2018aCatastrophic_Forgetting_Studies| raw:: html
 
     <br>
@@ -1284,6 +1297,78 @@ Lifelong/Continual Learning.:
           var moreText1 = document.getElementById("Kemker2018aCatastrophic_Forgetting_Studies_more");
           var moreText2 = document.getElementById("Kemker2018aCatastrophic_Forgetting_Studies_more2");
           var btnText = document.getElementById("Kemker2018aCatastrophic_Forgetting_Studies_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
+.. |DiazRodriguez2018aCatastrophic_Forgetting_Studies| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction()" id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction2()" id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction3()" id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_more" style="display: none">
+        @misc{Diaz-Rodriguez2018a,<br> annote = {arXiv: 1810.13166},<br> author = {Díaz-Rodr\ǵuez, Natalia and Lomonaco, Vincenzo and Filliat, David and Maltoni, Davide},<br> booktitle = {arXiv: 1810.13166 [cs]},<br> keywords = {68T05,Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,[cifar],[framework],cs.AI,cs.CV,cs.LG,cs.NE,stat.ML},<br> mendeley-tags = {[cifar],[framework]},<br> month = {oct},<br> shorttitle = {Don't forget, there is more than forgetting},<br> title = {Don't forget, there is more than forgetting: new metrics for Continual Learning},<br> url = {http://arxiv.org/abs/1810.13166},<br> year = {2018}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_more2" style="display: none">
+        Continual learning consists of algorithms that learn from a stream of data/tasks continuously and adaptively thought time, enabling the incremental development of ever more complex knowledge and skills. The lack of consensus in evaluating continual learning algorithms and the almost exclusive focus on forgetting motivate us to propose a more comprehensive set of implementation independent metrics accounting for several factors we believe have practical implications worth considering in the deployment of real AI systems that learn continually: accuracy or performance over time, backward and forward knowledge transfer, memory overhead as well as computational efficiency. Drawing inspiration from the standard Multi-Attribute Value Theory (MAVT) we further propose to fuse these metrics into a single score for ranking purposes and we evaluate our proposal with five continual learning strategies on the iCIFAR-100 continual learning benchmark.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_more3" style="display: none">
+        arXiv: 1810.13166
+    </span></p>
+    <script>
+        function DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction() {
+          var moreText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more");
+          var moreText2 = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more2");
+          var moreText3 = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more3");
+          var btnText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction2() {
+          var moreText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more2");
+          var moreText1 = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more");
+          var moreText3 = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more3");
+          var btnText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction3() {
+          var moreText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more3");
+          var moreText1 = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more");
+          var moreText2 = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more2");
+          var btnText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_btt3");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Notes";
@@ -1586,6 +1671,78 @@ Lifelong/Continual Learning.:
     </script>
     
 
+.. |Mehta2020aArchitectural_Methods| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="Mehta2020aArchitectural_MethodsFunction()" id="Mehta2020aArchitectural_Methods_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="Mehta2020aArchitectural_MethodsFunction2()" id="Mehta2020aArchitectural_Methods_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="Mehta2020aArchitectural_MethodsFunction3()" id="Mehta2020aArchitectural_Methods_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mehta2020aArchitectural_Methods_more" style="display: none">
+        @article{Mehta2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2004.10098},<br> author = {Mehta, Nikhil and Liang, Kevin J and Carin, Lawrence},<br> eprint = {2004.10098},<br> keywords = {[bayes],[cifar],[mnist],[sparsity]},<br> mendeley-tags = {[bayes],[cifar],[mnist],[sparsity]},<br> pages = {1--17},<br> title = {Bayesian Nonparametric Weight Factorization for Continual Learning},<br> url = {http://arxiv.org/abs/2004.10098},<br> year = {2020}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mehta2020aArchitectural_Methods_more2" style="display: none">
+        Naively trained neural networks tend to experience catastrophic forgetting in sequential task settings, where data from previous tasks are unavailable. A number of methods, using various model expansion strategies, have been proposed recently as possible solutions. However, determining how much to expand the model is left to the practitioner, and typically a constant schedule is chosen for simplicity, regardless of how complex the incoming task is. Instead, we propose a principled Bayesian nonparametric approach based on the Indian Buffet Process (IBP) prior, letting the data determine how much to expand the model complexity. We pair this with a factorization of the neural network's weight matrices. Such an approach allows us to scale the number of factors of each weight matrix to the complexity of the task, while the IBP prior imposes weight factor sparsity and encourages factor reuse, promoting positive knowledge transfer between tasks. We demonstrate the effectiveness of our method on a number of continual learning benchmarks and analyze how weight factors are allocated and reused throughout the training.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mehta2020aArchitectural_Methods_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function Mehta2020aArchitectural_MethodsFunction() {
+          var moreText = document.getElementById("Mehta2020aArchitectural_Methods_more");
+          var moreText2 = document.getElementById("Mehta2020aArchitectural_Methods_more2");
+          var moreText3 = document.getElementById("Mehta2020aArchitectural_Methods_more3");
+          var btnText = document.getElementById("Mehta2020aArchitectural_Methods_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Mehta2020aArchitectural_MethodsFunction2() {
+          var moreText = document.getElementById("Mehta2020aArchitectural_Methods_more2");
+          var moreText1 = document.getElementById("Mehta2020aArchitectural_Methods_more");
+          var moreText3 = document.getElementById("Mehta2020aArchitectural_Methods_more3");
+          var btnText = document.getElementById("Mehta2020aArchitectural_Methods_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Mehta2020aArchitectural_MethodsFunction3() {
+          var moreText = document.getElementById("Mehta2020aArchitectural_Methods_more3");
+          var moreText1 = document.getElementById("Mehta2020aArchitectural_Methods_more");
+          var moreText2 = document.getElementById("Mehta2020aArchitectural_Methods_more2");
+          var btnText = document.getElementById("Mehta2020aArchitectural_Methods_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
 .. |Cossu2020aArchitectural_Methods| raw:: html
 
     <br>
@@ -1789,6 +1946,78 @@ Lifelong/Continual Learning.:
           var moreText1 = document.getElementById("Golkar2019aArchitectural_Methods_more");
           var moreText2 = document.getElementById("Golkar2019aArchitectural_Methods_more2");
           var btnText = document.getElementById("Golkar2019aArchitectural_Methods_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
+.. |Madrid2018aArchitectural_Methods| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="Madrid2018aArchitectural_MethodsFunction()" id="Madrid2018aArchitectural_Methods_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="Madrid2018aArchitectural_MethodsFunction2()" id="Madrid2018aArchitectural_Methods_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="Madrid2018aArchitectural_MethodsFunction3()" id="Madrid2018aArchitectural_Methods_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Madrid2018aArchitectural_Methods_more" style="display: none">
+        @misc{Madrid2018a,<br> archiveprefix = {arXiv},<br> arxivid = {1907.10772},<br> author = {Madrid, Jorge G. and Escalante, Hugo Jair and Morales, Eduardo F. and Tu, Wei-Wei and Yu, Yang and Sun-Hosoya, Lisheng and Guyon, Isabelle and Sebag, Michele},<br> eprint = {1907.10772},<br> file = {::},<br> month = {jul},<br> title = {Towards AutoML in the presence of Drift: first results},<br> url = {http://arxiv.org/abs/1907.10772},<br> year = {2019}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Madrid2018aArchitectural_Methods_more2" style="display: none">
+        Research progress in AutoML has lead to state of the art solutions that can cope quite wellwith supervised learning task, e.g., classification with AutoSklearn. However, so far thesesystems do not take into account the changing nature of evolving data over time (i.e., theystill assume i.i.d. data); even when this sort of domains are increasingly available in realapplications (e.g., spam filtering, user preferences, etc.). We describe a first attempt to de-velop an AutoML solution for scenarios in which data distribution changes relatively slowlyover time and in which the problem is approached in a lifelong learning setting. We extendAuto-Sklearn with sound and intuitive mechanisms that allow it to cope with this sort ofproblems. The extended Auto-Sklearn is combined with concept drift detection techniquesthat allow it to automatically determine when the initial models have to be adapted. Wereport experimental results in benchmark data from AutoML competitions that adhere tothis scenario. Results demonstrate the effectiveness of the proposed methodology.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Madrid2018aArchitectural_Methods_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function Madrid2018aArchitectural_MethodsFunction() {
+          var moreText = document.getElementById("Madrid2018aArchitectural_Methods_more");
+          var moreText2 = document.getElementById("Madrid2018aArchitectural_Methods_more2");
+          var moreText3 = document.getElementById("Madrid2018aArchitectural_Methods_more3");
+          var btnText = document.getElementById("Madrid2018aArchitectural_Methods_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Madrid2018aArchitectural_MethodsFunction2() {
+          var moreText = document.getElementById("Madrid2018aArchitectural_Methods_more2");
+          var moreText1 = document.getElementById("Madrid2018aArchitectural_Methods_more");
+          var moreText3 = document.getElementById("Madrid2018aArchitectural_Methods_more3");
+          var btnText = document.getElementById("Madrid2018aArchitectural_Methods_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Madrid2018aArchitectural_MethodsFunction3() {
+          var moreText = document.getElementById("Madrid2018aArchitectural_Methods_more3");
+          var moreText1 = document.getElementById("Madrid2018aArchitectural_Methods_more");
+          var moreText2 = document.getElementById("Madrid2018aArchitectural_Methods_more2");
+          var btnText = document.getElementById("Madrid2018aArchitectural_Methods_btt3");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Notes";
@@ -2019,6 +2248,78 @@ Lifelong/Continual Learning.:
     </script>
     
 
+.. |marsland2002aArchitectural_Methods| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="marsland2002aArchitectural_MethodsFunction()" id="marsland2002aArchitectural_Methods_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="marsland2002aArchitectural_MethodsFunction2()" id="marsland2002aArchitectural_Methods_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="marsland2002aArchitectural_MethodsFunction3()" id="marsland2002aArchitectural_Methods_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="marsland2002aArchitectural_Methods_more" style="display: none">
+        @article{marsland2002a,<br> author = {Marsland, Stephen and Shapiro, Jonathan and Nehmzow, Ulrich},<br> doi = {10.1016/S0893-6080(02)00078-3},<br> issn = {08936080},<br> journal = {Neural Networks},<br> keywords = {Dimensionality reduction,Growing networks,Inspection,Mobile robotics,Novelty detection,Self-organisation,Topology preservation,Unsupervised learning,[som]},<br> mendeley-tags = {[som]},<br> month = {oct},<br> number = {8-9},<br> pages = {1041--1058},<br> publisher = {Pergamon},<br> title = {A self-organising network that grows when required},<br> volume = {15},<br> year = {2002}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="marsland2002aArchitectural_Methods_more2" style="display: none">
+        The ability to grow extra nodes is a potentially useful facility for a self-organising neural network. A network that can add nodes into its map space can approximate the input space more accurately, and often more parsimoniously, than a network with predefined structure and size, such as the Self-Organising Map. In addition, a growing network can deal with dynamic input distributions. Most of the growing networks that have been proposed in the literature add new nodes to support the node that has accumulated the highest error during previous iterations or to support topological structures. This usually means that new nodes are added only when the number of iterations is an integer multiple of some pre-defined constant, $łambda$. This paper suggests a way in which the learning algorithm can add nodes whenever the network in its current state does not sufficiently match the input. In this way the network grows very quickly when new data is presented, but stops growing once the network has matched the data. This is particularly important when we consider dynamic data sets, where the distribution of inputs can change to a new regime after some time. We also demonstrate the preservation of neighbourhood relations in the data by the network. The new network is compared to an existing growing network, the Growing Neural Gas (GNG), on a artificial dataset, showing how the network deals with a change in input distribution after some time. Finally, the new network is applied to several novelty detection tasks and is compared with both the GNG and an unsupervised form of the Reduced Coulomb Energy network on a robotic inspection task and with a Support Vector Machine on two benchmark novelty detection tasks. © 2002 Elsevier Science Ltd. All rights reserved.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="marsland2002aArchitectural_Methods_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function marsland2002aArchitectural_MethodsFunction() {
+          var moreText = document.getElementById("marsland2002aArchitectural_Methods_more");
+          var moreText2 = document.getElementById("marsland2002aArchitectural_Methods_more2");
+          var moreText3 = document.getElementById("marsland2002aArchitectural_Methods_more3");
+          var btnText = document.getElementById("marsland2002aArchitectural_Methods_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function marsland2002aArchitectural_MethodsFunction2() {
+          var moreText = document.getElementById("marsland2002aArchitectural_Methods_more2");
+          var moreText1 = document.getElementById("marsland2002aArchitectural_Methods_more");
+          var moreText3 = document.getElementById("marsland2002aArchitectural_Methods_more3");
+          var btnText = document.getElementById("marsland2002aArchitectural_Methods_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function marsland2002aArchitectural_MethodsFunction3() {
+          var moreText = document.getElementById("marsland2002aArchitectural_Methods_more3");
+          var moreText1 = document.getElementById("marsland2002aArchitectural_Methods_more");
+          var moreText2 = document.getElementById("marsland2002aArchitectural_Methods_more2");
+          var btnText = document.getElementById("marsland2002aArchitectural_Methods_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
 .. |Oswal2019aRegularization_Methods| raw:: html
 
     <br>
@@ -2235,78 +2536,6 @@ Lifelong/Continual Learning.:
     </script>
     
 
-.. |Liu2018aRegularization_Methods| raw:: html
-
-    <br>
-    <button style="font-size:75%; line-height:15px" onclick="Liu2018aRegularization_MethodsFunction()" id="Liu2018aRegularization_Methods_btt">Bib</button>
-    <button style="font-size:75%; line-height:15px" onclick="Liu2018aRegularization_MethodsFunction2()" id="Liu2018aRegularization_Methods_btt2">Abstract</button>
-    <button style="font-size:75%; line-height:15px" onclick="Liu2018aRegularization_MethodsFunction3()" id="Liu2018aRegularization_Methods_btt3">Notes</button>
-    
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Liu2018aRegularization_Methods_more" style="display: none">
-        @inproceedings{Liu2018a,<br> annote = {ISSN: 1051-4651},<br> author = {Liu, Xialei and Masana, Marc and Herranz, Luis and de Weijer, Joost and López, Antonio M and Bagdanov, Andrew D},<br> booktitle = {2018 24th International Conference on Pattern Recognition (ICPR)},<br> doi = {10.1109/ICPR.2018.8545895},<br> keywords = {Computer vision,Data models,Fisher Information Matrix,Neural networks,Standards,Stanford-40 datasets,Task analysis,Training,Training data,[cifar],[mnist],ewc,fisher,image classification,learning (artificial intelligence),matrix algebra,network parameters,network reparameterization,sequential tasks,standard elastic weight consolidation},<br> mendeley-tags = {[cifar],[mnist]},<br> month = {aug},<br> pages = {2262--2268},<br> shorttitle = {Rotate your Networks},<br> title = {Rotate your Networks: Better Weight Consolidation and Less Catastrophic Forgetting},<br> year = {2018}<br>}<br>
-    </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Liu2018aRegularization_Methods_more2" style="display: none">
-        In this paper we propose an approach to avoiding catastrophic forgetting in sequential task learning scenarios. Our technique is based on a network reparameterization that approximately diagonalizes the Fisher Information Matrix of the network parameters. This reparameterization takes the form of a factorized rotation of parameter space which, when used in conjunction with Elastic Weight Consolidation (which assumes a diagonal Fisher Information Matrix), leads to significantly better performance on lifelong learning of sequential tasks. Experimental results on the MNIST, CIFAR-100, CUB-200 and Stanford-40 datasets demonstrate that we significantly improve the results of standard elastic weight consolidation, and that we obtain competitive results when compared to the state-of-the-art in lifelong learning without forgetting.
-    </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Liu2018aRegularization_Methods_more3" style="display: none">
-        ISSN: 1051-4651
-    </span></p>
-    <script>
-        function Liu2018aRegularization_MethodsFunction() {
-          var moreText = document.getElementById("Liu2018aRegularization_Methods_more");
-          var moreText2 = document.getElementById("Liu2018aRegularization_Methods_more2");
-          var moreText3 = document.getElementById("Liu2018aRegularization_Methods_more3");
-          var btnText = document.getElementById("Liu2018aRegularization_Methods_btt");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Bib";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Bib";
-            moreText.style.display = "none";
-          }
-          moreText2.style.display = "none";
-          moreText3.style.display = "none";
-        }
-    </script>
-    <script>
-        function Liu2018aRegularization_MethodsFunction2() {
-          var moreText = document.getElementById("Liu2018aRegularization_Methods_more2");
-          var moreText1 = document.getElementById("Liu2018aRegularization_Methods_more");
-          var moreText3 = document.getElementById("Liu2018aRegularization_Methods_more3");
-          var btnText = document.getElementById("Liu2018aRegularization_Methods_btt2");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Abstract";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Abstract";
-            moreText.style.display = "none";
-          }
-          moreText1.style.display = "none";
-          moreText3.style.display = "none";
-        }
-    </script>
-    <script>
-        function Liu2018aRegularization_MethodsFunction3() {
-          var moreText = document.getElementById("Liu2018aRegularization_Methods_more3");
-          var moreText1 = document.getElementById("Liu2018aRegularization_Methods_more");
-          var moreText2 = document.getElementById("Liu2018aRegularization_Methods_more2");
-          var btnText = document.getElementById("Liu2018aRegularization_Methods_btt3");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Notes";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Notes";
-            moreText.style.display = "none";
-          }
-          moreText1.style.display = "none";
-          moreText2.style.display = "none";
-        }
-    </script>
-    
-
 .. |Serra2018aRegularization_Methods| raw:: html
 
     <br>
@@ -2365,6 +2594,78 @@ Lifelong/Continual Learning.:
           var moreText1 = document.getElementById("Serra2018aRegularization_Methods_more");
           var moreText2 = document.getElementById("Serra2018aRegularization_Methods_more2");
           var btnText = document.getElementById("Serra2018aRegularization_Methods_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
+.. |Liu2018aRegularization_Methods| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="Liu2018aRegularization_MethodsFunction()" id="Liu2018aRegularization_Methods_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="Liu2018aRegularization_MethodsFunction2()" id="Liu2018aRegularization_Methods_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="Liu2018aRegularization_MethodsFunction3()" id="Liu2018aRegularization_Methods_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Liu2018aRegularization_Methods_more" style="display: none">
+        @inproceedings{Liu2018a,<br> annote = {ISSN: 1051-4651},<br> author = {Liu, Xialei and Masana, Marc and Herranz, Luis and de Weijer, Joost and López, Antonio M and Bagdanov, Andrew D},<br> booktitle = {2018 24th International Conference on Pattern Recognition (ICPR)},<br> doi = {10.1109/ICPR.2018.8545895},<br> keywords = {Computer vision,Data models,Fisher Information Matrix,Neural networks,Standards,Stanford-40 datasets,Task analysis,Training,Training data,[cifar],[mnist],ewc,fisher,image classification,learning (artificial intelligence),matrix algebra,network parameters,network reparameterization,sequential tasks,standard elastic weight consolidation},<br> mendeley-tags = {[cifar],[mnist]},<br> month = {aug},<br> pages = {2262--2268},<br> shorttitle = {Rotate your Networks},<br> title = {Rotate your Networks: Better Weight Consolidation and Less Catastrophic Forgetting},<br> year = {2018}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Liu2018aRegularization_Methods_more2" style="display: none">
+        In this paper we propose an approach to avoiding catastrophic forgetting in sequential task learning scenarios. Our technique is based on a network reparameterization that approximately diagonalizes the Fisher Information Matrix of the network parameters. This reparameterization takes the form of a factorized rotation of parameter space which, when used in conjunction with Elastic Weight Consolidation (which assumes a diagonal Fisher Information Matrix), leads to significantly better performance on lifelong learning of sequential tasks. Experimental results on the MNIST, CIFAR-100, CUB-200 and Stanford-40 datasets demonstrate that we significantly improve the results of standard elastic weight consolidation, and that we obtain competitive results when compared to the state-of-the-art in lifelong learning without forgetting.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Liu2018aRegularization_Methods_more3" style="display: none">
+        ISSN: 1051-4651
+    </span></p>
+    <script>
+        function Liu2018aRegularization_MethodsFunction() {
+          var moreText = document.getElementById("Liu2018aRegularization_Methods_more");
+          var moreText2 = document.getElementById("Liu2018aRegularization_Methods_more2");
+          var moreText3 = document.getElementById("Liu2018aRegularization_Methods_more3");
+          var btnText = document.getElementById("Liu2018aRegularization_Methods_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Liu2018aRegularization_MethodsFunction2() {
+          var moreText = document.getElementById("Liu2018aRegularization_Methods_more2");
+          var moreText1 = document.getElementById("Liu2018aRegularization_Methods_more");
+          var moreText3 = document.getElementById("Liu2018aRegularization_Methods_more3");
+          var btnText = document.getElementById("Liu2018aRegularization_Methods_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Liu2018aRegularization_MethodsFunction3() {
+          var moreText = document.getElementById("Liu2018aRegularization_Methods_more3");
+          var moreText1 = document.getElementById("Liu2018aRegularization_Methods_more");
+          var moreText2 = document.getElementById("Liu2018aRegularization_Methods_more2");
+          var btnText = document.getElementById("Liu2018aRegularization_Methods_btt3");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Notes";
@@ -2509,6 +2810,78 @@ Lifelong/Continual Learning.:
           var moreText1 = document.getElementById("Kirkpatrick2017aRegularization_Methods_more");
           var moreText2 = document.getElementById("Kirkpatrick2017aRegularization_Methods_more2");
           var btnText = document.getElementById("Kirkpatrick2017aRegularization_Methods_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
+.. |Ramapuram2017aRegularization_Methods| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="Ramapuram2017aRegularization_MethodsFunction()" id="Ramapuram2017aRegularization_Methods_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="Ramapuram2017aRegularization_MethodsFunction2()" id="Ramapuram2017aRegularization_Methods_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="Ramapuram2017aRegularization_MethodsFunction3()" id="Ramapuram2017aRegularization_Methods_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ramapuram2017aRegularization_Methods_more" style="display: none">
+        @article{Ramapuram2017a,<br> archiveprefix = {arXiv},<br> arxivid = {1705.09847},<br> author = {Ramapuram, Jason and Gregorova, Magda and Kalousis, Alexandros},<br> eprint = {1705.09847},<br> keywords = {[fashion],[generative],[mnist]},<br> mendeley-tags = {[fashion],[generative],[mnist]},<br> number = {2010},<br> pages = {1--14},<br> title = {Lifelong Generative Modeling},<br> url = {http://arxiv.org/abs/1705.09847},<br> year = {2017}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ramapuram2017aRegularization_Methods_more2" style="display: none">
+        Lifelong learning is the problem of learning multiple consecutive tasks in an online manner and is essential towards the development of intelligent machines that can adapt to their surroundings. In this work we focus on learning a lifelong approach to generative modeling whereby we continuously incorporate newly observed distributions into our model representation. We utilize two models, aptly named the student and the teacher, in order to aggregate information about all past distributions without the preservation of any of the past data or previous models. The teacher is utilized as a form of compressed memory in order to allow for the student model to learn over the past as well as present data. We demonstrate why a naive approach to lifelong generative modeling fails and introduce a regularizer with which we demonstrate learning across a long range of distributions.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ramapuram2017aRegularization_Methods_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function Ramapuram2017aRegularization_MethodsFunction() {
+          var moreText = document.getElementById("Ramapuram2017aRegularization_Methods_more");
+          var moreText2 = document.getElementById("Ramapuram2017aRegularization_Methods_more2");
+          var moreText3 = document.getElementById("Ramapuram2017aRegularization_Methods_more3");
+          var btnText = document.getElementById("Ramapuram2017aRegularization_Methods_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Ramapuram2017aRegularization_MethodsFunction2() {
+          var moreText = document.getElementById("Ramapuram2017aRegularization_Methods_more2");
+          var moreText1 = document.getElementById("Ramapuram2017aRegularization_Methods_more");
+          var moreText3 = document.getElementById("Ramapuram2017aRegularization_Methods_more3");
+          var btnText = document.getElementById("Ramapuram2017aRegularization_Methods_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Ramapuram2017aRegularization_MethodsFunction3() {
+          var moreText = document.getElementById("Ramapuram2017aRegularization_Methods_more3");
+          var moreText1 = document.getElementById("Ramapuram2017aRegularization_Methods_more");
+          var moreText2 = document.getElementById("Ramapuram2017aRegularization_Methods_more2");
+          var btnText = document.getElementById("Ramapuram2017aRegularization_Methods_btt3");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Notes";
@@ -3028,78 +3401,6 @@ Lifelong/Continual Learning.:
     </script>
     
 
-.. |Schwarz2018aHybrid_Methods| raw:: html
-
-    <br>
-    <button style="font-size:75%; line-height:15px" onclick="Schwarz2018aHybrid_MethodsFunction()" id="Schwarz2018aHybrid_Methods_btt">Bib</button>
-    <button style="font-size:75%; line-height:15px" onclick="Schwarz2018aHybrid_MethodsFunction2()" id="Schwarz2018aHybrid_Methods_btt2">Abstract</button>
-    <button style="font-size:75%; line-height:15px" onclick="Schwarz2018aHybrid_MethodsFunction3()" id="Schwarz2018aHybrid_Methods_btt3">Notes</button>
-    
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Schwarz2018aHybrid_Methods_more" style="display: none">
-        @inproceedings{Schwarz2018a,<br> author = {Schwarz, Jonathan and Czarnecki, Wojciech and Luketina, Jelena and Grabska-Barwinska, Agnieszka and Teh, Yee Whye and Pascanu, Razvan and Hadsell, Raia},<br> booktitle = {International Conference on Machine Learning},<br> keywords = {[vision],ewc,normalized ewc,online ewc},<br> language = {en},<br> mendeley-tags = {[vision]},<br> month = {jul},<br> pages = {4528--4537},<br> shorttitle = {Progress & Compress},<br> title = {Progress & Compress: A scalable framework for continual learning},<br> url = {http://proceedings.mlr.press/v80/schwarz18a.html},<br> year = {2018}<br>}<br>
-    </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Schwarz2018aHybrid_Methods_more2" style="display: none">
-        We introduce a conceptually simple and scalable framework for continual learning domains where tasks are learned sequentially. Our method is constant in the number of parameters and is designed to ...
-    </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Schwarz2018aHybrid_Methods_more3" style="display: none">
-        N.A.
-    </span></p>
-    <script>
-        function Schwarz2018aHybrid_MethodsFunction() {
-          var moreText = document.getElementById("Schwarz2018aHybrid_Methods_more");
-          var moreText2 = document.getElementById("Schwarz2018aHybrid_Methods_more2");
-          var moreText3 = document.getElementById("Schwarz2018aHybrid_Methods_more3");
-          var btnText = document.getElementById("Schwarz2018aHybrid_Methods_btt");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Bib";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Bib";
-            moreText.style.display = "none";
-          }
-          moreText2.style.display = "none";
-          moreText3.style.display = "none";
-        }
-    </script>
-    <script>
-        function Schwarz2018aHybrid_MethodsFunction2() {
-          var moreText = document.getElementById("Schwarz2018aHybrid_Methods_more2");
-          var moreText1 = document.getElementById("Schwarz2018aHybrid_Methods_more");
-          var moreText3 = document.getElementById("Schwarz2018aHybrid_Methods_more3");
-          var btnText = document.getElementById("Schwarz2018aHybrid_Methods_btt2");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Abstract";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Abstract";
-            moreText.style.display = "none";
-          }
-          moreText1.style.display = "none";
-          moreText3.style.display = "none";
-        }
-    </script>
-    <script>
-        function Schwarz2018aHybrid_MethodsFunction3() {
-          var moreText = document.getElementById("Schwarz2018aHybrid_Methods_more3");
-          var moreText1 = document.getElementById("Schwarz2018aHybrid_Methods_more");
-          var moreText2 = document.getElementById("Schwarz2018aHybrid_Methods_more2");
-          var btnText = document.getElementById("Schwarz2018aHybrid_Methods_btt3");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Notes";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Notes";
-            moreText.style.display = "none";
-          }
-          moreText1.style.display = "none";
-          moreText2.style.display = "none";
-        }
-    </script>
-    
-
 .. |Maltoni2018aHybrid_Methods| raw:: html
 
     <br>
@@ -3159,6 +3460,78 @@ Lifelong/Continual Learning.:
           var moreText1 = document.getElementById("Maltoni2018aHybrid_Methods_more");
           var moreText2 = document.getElementById("Maltoni2018aHybrid_Methods_more2");
           var btnText = document.getElementById("Maltoni2018aHybrid_Methods_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
+.. |Schwarz2018aHybrid_Methods| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="Schwarz2018aHybrid_MethodsFunction()" id="Schwarz2018aHybrid_Methods_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="Schwarz2018aHybrid_MethodsFunction2()" id="Schwarz2018aHybrid_Methods_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="Schwarz2018aHybrid_MethodsFunction3()" id="Schwarz2018aHybrid_Methods_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Schwarz2018aHybrid_Methods_more" style="display: none">
+        @inproceedings{Schwarz2018a,<br> author = {Schwarz, Jonathan and Czarnecki, Wojciech and Luketina, Jelena and Grabska-Barwinska, Agnieszka and Teh, Yee Whye and Pascanu, Razvan and Hadsell, Raia},<br> booktitle = {International Conference on Machine Learning},<br> keywords = {[vision],ewc,normalized ewc,online ewc},<br> language = {en},<br> mendeley-tags = {[vision]},<br> month = {jul},<br> pages = {4528--4537},<br> shorttitle = {Progress & Compress},<br> title = {Progress & Compress: A scalable framework for continual learning},<br> url = {http://proceedings.mlr.press/v80/schwarz18a.html},<br> year = {2018}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Schwarz2018aHybrid_Methods_more2" style="display: none">
+        We introduce a conceptually simple and scalable framework for continual learning domains where tasks are learned sequentially. Our method is constant in the number of parameters and is designed to ...
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Schwarz2018aHybrid_Methods_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function Schwarz2018aHybrid_MethodsFunction() {
+          var moreText = document.getElementById("Schwarz2018aHybrid_Methods_more");
+          var moreText2 = document.getElementById("Schwarz2018aHybrid_Methods_more2");
+          var moreText3 = document.getElementById("Schwarz2018aHybrid_Methods_more3");
+          var btnText = document.getElementById("Schwarz2018aHybrid_Methods_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Schwarz2018aHybrid_MethodsFunction2() {
+          var moreText = document.getElementById("Schwarz2018aHybrid_Methods_more2");
+          var moreText1 = document.getElementById("Schwarz2018aHybrid_Methods_more");
+          var moreText3 = document.getElementById("Schwarz2018aHybrid_Methods_more3");
+          var btnText = document.getElementById("Schwarz2018aHybrid_Methods_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Schwarz2018aHybrid_MethodsFunction3() {
+          var moreText = document.getElementById("Schwarz2018aHybrid_Methods_more3");
+          var moreText1 = document.getElementById("Schwarz2018aHybrid_Methods_more");
+          var moreText2 = document.getElementById("Schwarz2018aHybrid_Methods_more2");
+          var btnText = document.getElementById("Schwarz2018aHybrid_Methods_btt3");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Notes";
@@ -3375,6 +3748,78 @@ Lifelong/Continual Learning.:
           var moreText1 = document.getElementById("Lesort2020bMetrics_and_Evaluations_more");
           var moreText2 = document.getElementById("Lesort2020bMetrics_and_Evaluations_more2");
           var btnText = document.getElementById("Lesort2020bMetrics_and_Evaluations_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
+.. |khatib2019aMetrics_and_Evaluations| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="khatib2019aMetrics_and_EvaluationsFunction()" id="khatib2019aMetrics_and_Evaluations_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="khatib2019aMetrics_and_EvaluationsFunction2()" id="khatib2019aMetrics_and_Evaluations_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="khatib2019aMetrics_and_EvaluationsFunction3()" id="khatib2019aMetrics_and_Evaluations_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="khatib2019aMetrics_and_Evaluations_more" style="display: none">
+        @inproceedings{khatib2019a,<br> author = {El Khatib, Alaa and Karray, Fakhri},<br> booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},<br> doi = {10.1007/978-3-030-27202-9_41},<br> file = {::},<br> isbn = {9783030272012},<br> issn = {16113349},<br> keywords = {Catastrophic forgetting,Continual learning,[cifar],[mnist]},<br> mendeley-tags = {[cifar],[mnist]},<br> month = {aug},<br> pages = {452--460},<br> publisher = {Springer Verlag},<br> title = {Strategies for improving single-head continual learning performance},<br> volume = {11662 LNCS},<br> year = {2019}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="khatib2019aMetrics_and_Evaluations_more2" style="display: none">
+        Catastrophic forgetting has long been seen as the main obstacle to building continual learning models. We argue in this paper that an equally challenging characteristic of the continual learning framework is that data are never completely available at the same time, making it difficult to learn joint conditional distributions over them. This is most evident in the usually large gap between single-head and multi-head performance of continual learning models. We propose in this paper two strategies to improve performance of continual learning models, particularly in the single-head framework and for image classification tasks. First, we argue that learning multiple binary classifiers, rather than a single multi-class classifier, for each presentation of data is more consistent with the single-head framework. Moreover, we argue that auxiliary, unlabelled data can be used in tandem with this approach to slow the decay in performance of these binary classifiers over time.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="khatib2019aMetrics_and_Evaluations_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function khatib2019aMetrics_and_EvaluationsFunction() {
+          var moreText = document.getElementById("khatib2019aMetrics_and_Evaluations_more");
+          var moreText2 = document.getElementById("khatib2019aMetrics_and_Evaluations_more2");
+          var moreText3 = document.getElementById("khatib2019aMetrics_and_Evaluations_more3");
+          var btnText = document.getElementById("khatib2019aMetrics_and_Evaluations_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function khatib2019aMetrics_and_EvaluationsFunction2() {
+          var moreText = document.getElementById("khatib2019aMetrics_and_Evaluations_more2");
+          var moreText1 = document.getElementById("khatib2019aMetrics_and_Evaluations_more");
+          var moreText3 = document.getElementById("khatib2019aMetrics_and_Evaluations_more3");
+          var btnText = document.getElementById("khatib2019aMetrics_and_Evaluations_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function khatib2019aMetrics_and_EvaluationsFunction3() {
+          var moreText = document.getElementById("khatib2019aMetrics_and_Evaluations_more3");
+          var moreText1 = document.getElementById("khatib2019aMetrics_and_Evaluations_more");
+          var moreText2 = document.getElementById("khatib2019aMetrics_and_Evaluations_more2");
+          var btnText = document.getElementById("khatib2019aMetrics_and_Evaluations_btt3");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Notes";
@@ -3679,6 +4124,78 @@ Lifelong/Continual Learning.:
     </script>
     
 
+.. |Allred2020aBioinspired_Methods| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="Allred2020aBioinspired_MethodsFunction()" id="Allred2020aBioinspired_Methods_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="Allred2020aBioinspired_MethodsFunction2()" id="Allred2020aBioinspired_Methods_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="Allred2020aBioinspired_MethodsFunction3()" id="Allred2020aBioinspired_Methods_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Allred2020aBioinspired_Methods_more" style="display: none">
+        @article{Allred2020a,<br> author = {Allred, Jason M. and Roy, Kaushik},<br> doi = {10.3389/fnins.2020.00007},<br> file = {::},<br> issn = {1662-453X},<br> journal = {Frontiers in Neuroscience},<br> keywords = {Spike Timing Dependent Plasticity,Spiking Neural Networks,[spiking],catastrophic forgetting,continual learning,controlled forgetting,dopaminergic learning,lifelong learning,stability-plasticity dilemma},<br> mendeley-tags = {[spiking]},<br> month = {jan},<br> pages = {7},<br> publisher = {Frontiers Media S.A.},<br> title = {Controlled Forgetting: Targeted Stimulation and Dopaminergic Plasticity Modulation for Unsupervised Lifelong Learning in Spiking Neural Networks},<br> url = {https://www.frontiersin.org/article/10.3389/fnins.2020.00007/full},<br> volume = {14},<br> year = {2020}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Allred2020aBioinspired_Methods_more2" style="display: none">
+        Stochastic gradient descent requires that training samples be drawn from a uniformly random distribution of the data. For a deployed system that must learn online from an uncontrolled and unknown environment, the ordering of input samples often fails to meet this criterion, making lifelong learning a difficult challenge. We exploit the locality of the unsupervised Spike Timing Dependent Plasticity (STDP) learning rule to target local representations in a Spiking Neural Network (SNN) to adapt to novel information while protecting essential information in the remainder of the SNN from catastrophic forgetting. In our Controlled Forgetting Networks (CFNs), novel information triggers stimulated firing and heterogeneously modulated plasticity, inspired by biological dopamine signals, to cause rapid and isolated adaptation in the synapses of neurons associated with outlier information. This targeting controls the forgetting process in a way that reduces the degradation of accuracy for older tasks while learning new tasks. Our experimental results on the MNIST dataset validate the capability of CFNs to learn successfully over time from an unknown, changing environment, achieving 95.24% accuracy, which we believe is the best unsupervised accuracy ever achieved by a fixed-size, single-layer SNN on a completely disjoint MNIST dataset.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Allred2020aBioinspired_Methods_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function Allred2020aBioinspired_MethodsFunction() {
+          var moreText = document.getElementById("Allred2020aBioinspired_Methods_more");
+          var moreText2 = document.getElementById("Allred2020aBioinspired_Methods_more2");
+          var moreText3 = document.getElementById("Allred2020aBioinspired_Methods_more3");
+          var btnText = document.getElementById("Allred2020aBioinspired_Methods_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Allred2020aBioinspired_MethodsFunction2() {
+          var moreText = document.getElementById("Allred2020aBioinspired_Methods_more2");
+          var moreText1 = document.getElementById("Allred2020aBioinspired_Methods_more");
+          var moreText3 = document.getElementById("Allred2020aBioinspired_Methods_more3");
+          var btnText = document.getElementById("Allred2020aBioinspired_Methods_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Allred2020aBioinspired_MethodsFunction3() {
+          var moreText = document.getElementById("Allred2020aBioinspired_Methods_more3");
+          var moreText1 = document.getElementById("Allred2020aBioinspired_Methods_more");
+          var moreText2 = document.getElementById("Allred2020aBioinspired_Methods_more2");
+          var btnText = document.getElementById("Allred2020aBioinspired_Methods_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
 .. |Aljundi2019cBioinspired_Methods| raw:: html
 
     <br>
@@ -3968,6 +4485,78 @@ Lifelong/Continual Learning.:
     </script>
     
 
+.. |srivastava2013aBioinspired_Methods| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="srivastava2013aBioinspired_MethodsFunction()" id="srivastava2013aBioinspired_Methods_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="srivastava2013aBioinspired_MethodsFunction2()" id="srivastava2013aBioinspired_Methods_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="srivastava2013aBioinspired_MethodsFunction3()" id="srivastava2013aBioinspired_Methods_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="srivastava2013aBioinspired_Methods_more" style="display: none">
+        @inproceedings{srivastava2013a,<br> author = {Srivastava, Rupesh Kumar and Masci, Jonathan and Kazerounian, Sohrob and Gomez, Faustino and Schmidhuber, Jürgen},<br> booktitle = {Advances in Neural Information Processing Systems 26},<br> file = {::},<br> keywords = {[mnist],[sparsity]},<br> mendeley-tags = {[mnist],[sparsity]},<br> title = {Compete to Compute},<br> year = {2013}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="srivastava2013aBioinspired_Methods_more2" style="display: none">
+        Local competition among neighboring neurons is common in biological neu-ral networks (NNs). In this paper, we apply the concept to gradient-based, backprop-trained artificial multilayer NNs. NNs with competing linear units tend to outperform those with non-competing nonlinear units, and avoid catastrophic forgetting when training sets change over time.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="srivastava2013aBioinspired_Methods_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function srivastava2013aBioinspired_MethodsFunction() {
+          var moreText = document.getElementById("srivastava2013aBioinspired_Methods_more");
+          var moreText2 = document.getElementById("srivastava2013aBioinspired_Methods_more2");
+          var moreText3 = document.getElementById("srivastava2013aBioinspired_Methods_more3");
+          var btnText = document.getElementById("srivastava2013aBioinspired_Methods_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function srivastava2013aBioinspired_MethodsFunction2() {
+          var moreText = document.getElementById("srivastava2013aBioinspired_Methods_more2");
+          var moreText1 = document.getElementById("srivastava2013aBioinspired_Methods_more");
+          var moreText3 = document.getElementById("srivastava2013aBioinspired_Methods_more3");
+          var btnText = document.getElementById("srivastava2013aBioinspired_Methods_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function srivastava2013aBioinspired_MethodsFunction3() {
+          var moreText = document.getElementById("srivastava2013aBioinspired_Methods_more3");
+          var moreText1 = document.getElementById("srivastava2013aBioinspired_Methods_more");
+          var moreText2 = document.getElementById("srivastava2013aBioinspired_Methods_more2");
+          var btnText = document.getElementById("srivastava2013aBioinspired_Methods_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
 .. |Coop2013aBioinspired_Methods| raw:: html
 
     <br>
@@ -4192,7 +4781,7 @@ Lifelong/Continual Learning.:
     <button style="font-size:75%; line-height:15px" onclick="beaulieu2020aMeta_Continual_LearningFunction3()" id="beaulieu2020aMeta_Continual_Learning_btt3">Notes</button>
     
     <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="beaulieu2020aMeta_Continual_Learning_more" style="display: none">
-        @inproceedings{beaulieu2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2002.09571},<br> author = {Beaulieu, Shawn and Frati, Lapo and Miconi, Thomas and Lehman, Joel and Stanley, Kenneth O. and Clune, Jeff and Cheney, Nick},<br> booktitle = {ECAI},<br> eprint = {2002.09571},<br> file = {::},<br> keywords = {[vision]},<br> mendeley-tags = {[vision]},<br> month = {feb},<br> title = {Learning to Continually Learn},<br> url = {http://arxiv.org/abs/2002.09571},<br> year = {2020}<br>}<br>
+        @inproceedings{beaulieu2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2002.09571},<br> author = {Beaulieu, Shawn and Frati, Lapo and Miconi, Thomas and Lehman, Joel and Stanley, Kenneth O. and Clune, Jeff and Cheney, Nick},<br> booktitle = {ECAI},<br> eprint = {2002.09571},<br> file = {:home/andrea/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Beaulieu et al. - 2020 - Learning to Continually Learn(3).pdf:pdf},<br> keywords = {[vision]},<br> mendeley-tags = {[vision]},<br> month = {feb},<br> title = {Learning to Continually Learn},<br> url = {http://arxiv.org/abs/2002.09571},<br> year = {2020}<br>}<br>
     </span></p>
     <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="beaulieu2020aMeta_Continual_Learning_more2" style="display: none">
         Continual lifelong learning requires an agent or model to learn many sequentially ordered tasks, building on previous knowledge without catastrophically forgetting it. Much work has gone towards preventing the default tendency of machine learning models to catastrophically forget, yet virtually all such work involves manually-designed solutions to the problem. We instead advocate meta-learning a solution to catastrophic forgetting, allowing AI to learn to continually learn. Inspired by neuromodulatory processes in the brain, we propose A Neuromodulated Meta-Learning Algorithm (ANML). It differentiates through a sequential learning process to meta-learn an activation-gating function that enables context-dependent selective activation within a deep neural network. Specifically, a neuromodulatory (NM) neural network gates the forward pass of another (otherwise normal) neural network called the prediction learning network (PLN). The NM network also thus indirectly controls selective plasticity (i.e. the backward pass of) the PLN. ANML enables continual learning without catastrophic forgetting at scale: it produces state-of-the-art continual learning performance, sequentially learning as many as 600 classes (over 9,000 SGD updates).
@@ -4256,78 +4845,6 @@ Lifelong/Continual Learning.:
     </script>
     
 
-.. |riemer2019aMeta_Continual_Learning| raw:: html
-
-    <br>
-    <button style="font-size:75%; line-height:15px" onclick="riemer2019aMeta_Continual_LearningFunction()" id="riemer2019aMeta_Continual_Learning_btt">Bib</button>
-    <button style="font-size:75%; line-height:15px" onclick="riemer2019aMeta_Continual_LearningFunction2()" id="riemer2019aMeta_Continual_Learning_btt2">Abstract</button>
-    <button style="font-size:75%; line-height:15px" onclick="riemer2019aMeta_Continual_LearningFunction3()" id="riemer2019aMeta_Continual_Learning_btt3">Notes</button>
-    
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aMeta_Continual_Learning_more" style="display: none">
-        @inproceedings{riemer2019a,<br> author = {Riemer, Matthew and Cases, Ignacio and Ajemian, Robert and Liu, Miao and Rish, Irina and Tu, Yuhai and Tesauro, Gerald},<br> booktitle = {ICLR},<br> file = {::},<br> month = {sep},<br> title = {Learning to learn without forgetting by maximizing transfer and minimizing interference},<br> year = {2019}<br>}<br>
-    </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aMeta_Continual_Learning_more2" style="display: none">
-        Lack of performance when it comes to continual learning over non-stationary distributions of data remains a major challenge in scaling neural network learning to more human realistic settings. In this work we propose a new conceptualization of the continual learning problem in terms of a temporally symmetric trade-off between transfer and interference that can be optimized by enforcing gradient alignment across examples. We then propose a new algorithm, Meta-Experience Replay (MER), that directly exploits this view by combining experience replay with optimization based meta-learning. This method learns parameters that make interference based on future gradients less likely and transfer based on future gradients more likely. 1 We conduct experiments across continual lifelong supervised learning benchmarks and non-stationary reinforcement learning environments demonstrating that our approach consistently outperforms recently proposed baselines for continual learning. Our experiments show that the gap between the performance of MER and baseline algorithms grows both as the environment gets more non-stationary and as the fraction of the total experiences stored gets smaller.
-    </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aMeta_Continual_Learning_more3" style="display: none">
-        N.A.
-    </span></p>
-    <script>
-        function riemer2019aMeta_Continual_LearningFunction() {
-          var moreText = document.getElementById("riemer2019aMeta_Continual_Learning_more");
-          var moreText2 = document.getElementById("riemer2019aMeta_Continual_Learning_more2");
-          var moreText3 = document.getElementById("riemer2019aMeta_Continual_Learning_more3");
-          var btnText = document.getElementById("riemer2019aMeta_Continual_Learning_btt");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Bib";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Bib";
-            moreText.style.display = "none";
-          }
-          moreText2.style.display = "none";
-          moreText3.style.display = "none";
-        }
-    </script>
-    <script>
-        function riemer2019aMeta_Continual_LearningFunction2() {
-          var moreText = document.getElementById("riemer2019aMeta_Continual_Learning_more2");
-          var moreText1 = document.getElementById("riemer2019aMeta_Continual_Learning_more");
-          var moreText3 = document.getElementById("riemer2019aMeta_Continual_Learning_more3");
-          var btnText = document.getElementById("riemer2019aMeta_Continual_Learning_btt2");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Abstract";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Abstract";
-            moreText.style.display = "none";
-          }
-          moreText1.style.display = "none";
-          moreText3.style.display = "none";
-        }
-    </script>
-    <script>
-        function riemer2019aMeta_Continual_LearningFunction3() {
-          var moreText = document.getElementById("riemer2019aMeta_Continual_Learning_more3");
-          var moreText1 = document.getElementById("riemer2019aMeta_Continual_Learning_more");
-          var moreText2 = document.getElementById("riemer2019aMeta_Continual_Learning_more2");
-          var btnText = document.getElementById("riemer2019aMeta_Continual_Learning_btt3");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Notes";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Notes";
-            moreText.style.display = "none";
-          }
-          moreText1.style.display = "none";
-          moreText2.style.display = "none";
-        }
-    </script>
-    
-
 .. |khurram2019aMeta_Continual_Learning| raw:: html
 
     <br>
@@ -4336,7 +4853,7 @@ Lifelong/Continual Learning.:
     <button style="font-size:75%; line-height:15px" onclick="khurram2019aMeta_Continual_LearningFunction3()" id="khurram2019aMeta_Continual_Learning_btt3">Notes</button>
     
     <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="khurram2019aMeta_Continual_Learning_more" style="display: none">
-        @inproceedings{khurram2019a,<br> author = {Javed, Khurram and White, Martha},<br> booktitle = {NeurIPS},<br> file = {::},<br> title = {Meta-Learning Representations for Continual Learning},<br> url = {https://github.com/khurramjaved96/mrcl},<br> year = {2019}<br>}<br>
+        @inproceedings{khurram2019a,<br> author = {Javed, Khurram and White, Martha},<br> booktitle = {NeurIPS},<br> file = {:home/andrea/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Javed, White - 2019 - Meta-Learning Representations for Continual Learning(2).pdf:pdf},<br> keywords = {[omniglot]},<br> mendeley-tags = {[omniglot]},<br> title = {Meta-Learning Representations for Continual Learning},<br> url = {https://github.com/khurramjaved96/mrcl},<br> year = {2019}<br>}<br>
     </span></p>
     <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="khurram2019aMeta_Continual_Learning_more2" style="display: none">
         A continual learning agent should be able to build on top of existing knowledge to learn on new data quickly while minimizing forgetting. Current intelligent systems based on neural network function approximators arguably do the opposite-they are highly prone to forgetting and rarely trained to facilitate future learning. One reason for this poor behavior is that they learn from a representation that is not explicitly trained for these two goals. In this paper, we propose OML, an objective that directly minimizes catastrophic interference by learning representations that accelerate future learning and are robust to forgetting under online updates in continual learning. We show that it is possible to learn naturally sparse representations that are more effective for online updating. Moreover, our algorithm is complementary to existing continual learning strategies, such as MER and GEM. Finally, we demonstrate that a basic online updating strategy on representations learned by OML is competitive with rehearsal based methods for continual learning. 1
@@ -4400,6 +4917,78 @@ Lifelong/Continual Learning.:
     </script>
     
 
+.. |riemer2019aMeta_Continual_Learning| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="riemer2019aMeta_Continual_LearningFunction()" id="riemer2019aMeta_Continual_Learning_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="riemer2019aMeta_Continual_LearningFunction2()" id="riemer2019aMeta_Continual_Learning_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="riemer2019aMeta_Continual_LearningFunction3()" id="riemer2019aMeta_Continual_Learning_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aMeta_Continual_Learning_more" style="display: none">
+        @inproceedings{riemer2019a,<br> author = {Riemer, Matthew and Cases, Ignacio and Ajemian, Robert and Liu, Miao and Rish, Irina and Tu, Yuhai and Tesauro, Gerald},<br> booktitle = {ICLR},<br> file = {:home/andrea/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Riemer et al. - 2019 - Learning to learn without forgetting by maximizing transfer and minimizing interference(2).pdf:pdf},<br> month = {sep},<br> title = {Learning to learn without forgetting by maximizing transfer and minimizing interference},<br> year = {2019}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aMeta_Continual_Learning_more2" style="display: none">
+        Lack of performance when it comes to continual learning over non-stationary distributions of data remains a major challenge in scaling neural network learning to more human realistic settings. In this work we propose a new conceptualization of the continual learning problem in terms of a temporally symmetric trade-off between transfer and interference that can be optimized by enforcing gradient alignment across examples. We then propose a new algorithm, Meta-Experience Replay (MER), that directly exploits this view by combining experience replay with optimization based meta-learning. This method learns parameters that make interference based on future gradients less likely and transfer based on future gradients more likely. 1 We conduct experiments across continual lifelong supervised learning benchmarks and non-stationary reinforcement learning environments demonstrating that our approach consistently outperforms recently proposed baselines for continual learning. Our experiments show that the gap between the performance of MER and baseline algorithms grows both as the environment gets more non-stationary and as the fraction of the total experiences stored gets smaller.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aMeta_Continual_Learning_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function riemer2019aMeta_Continual_LearningFunction() {
+          var moreText = document.getElementById("riemer2019aMeta_Continual_Learning_more");
+          var moreText2 = document.getElementById("riemer2019aMeta_Continual_Learning_more2");
+          var moreText3 = document.getElementById("riemer2019aMeta_Continual_Learning_more3");
+          var btnText = document.getElementById("riemer2019aMeta_Continual_Learning_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function riemer2019aMeta_Continual_LearningFunction2() {
+          var moreText = document.getElementById("riemer2019aMeta_Continual_Learning_more2");
+          var moreText1 = document.getElementById("riemer2019aMeta_Continual_Learning_more");
+          var moreText3 = document.getElementById("riemer2019aMeta_Continual_Learning_more3");
+          var btnText = document.getElementById("riemer2019aMeta_Continual_Learning_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function riemer2019aMeta_Continual_LearningFunction3() {
+          var moreText = document.getElementById("riemer2019aMeta_Continual_Learning_more3");
+          var moreText1 = document.getElementById("riemer2019aMeta_Continual_Learning_more");
+          var moreText2 = document.getElementById("riemer2019aMeta_Continual_Learning_more2");
+          var btnText = document.getElementById("riemer2019aMeta_Continual_Learning_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
 .. |caccia2020aContinual_Meta_Learning| raw:: html
 
     <br>
@@ -4408,7 +4997,7 @@ Lifelong/Continual Learning.:
     <button style="font-size:75%; line-height:15px" onclick="caccia2020aContinual_Meta_LearningFunction3()" id="caccia2020aContinual_Meta_Learning_btt3">Notes</button>
     
     <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="caccia2020aContinual_Meta_Learning_more" style="display: none">
-        @misc{caccia2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2003.05856},<br> author = {Caccia, Massimo and Rodriguez, Pau and Ostapenko, Oleksiy and Normandin, Fabrice and Lin, Min and Caccia, Lucas and Laradji, Issam and Rish, Irina and Lacoste, Alexande and Vazquez, David and Charlin, Laurent},<br> eprint = {2003.05856},<br> file = {::},<br> keywords = {[fashion],[framework],[mnist]},<br> mendeley-tags = {[fashion],[framework],[mnist]},<br> month = {mar},<br> title = {Online Fast Adaptation and Knowledge Accumulation: a New Approach to Continual Learning},<br> url = {http://arxiv.org/abs/2003.05856},<br> year = {2020}<br>}<br>
+        @misc{caccia2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2003.05856},<br> author = {Caccia, Massimo and Rodriguez, Pau and Ostapenko, Oleksiy and Normandin, Fabrice and Lin, Min and Caccia, Lucas and Laradji, Issam and Rish, Irina and Lacoste, Alexande and Vazquez, David and Charlin, Laurent},<br> eprint = {2003.05856},<br> file = {:home/andrea/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Caccia et al. - 2020 - Online Fast Adaptation and Knowledge Accumulation a New Approach to Continual Learning(2).pdf:pdf},<br> keywords = {[fashion],[framework],[mnist]},<br> mendeley-tags = {[fashion],[framework],[mnist]},<br> month = {mar},<br> title = {Online Fast Adaptation and Knowledge Accumulation: a New Approach to Continual Learning},<br> url = {http://arxiv.org/abs/2003.05856},<br> year = {2020}<br>}<br>
     </span></p>
     <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="caccia2020aContinual_Meta_Learning_more2" style="display: none">
         Learning from non-stationary data remains a great challenge for machine learning. Continual learning addresses this problem in scenarios where the learning agent faces a stream of changing tasks. In these scenarios, the agent is expected to retain its highest performance on previous tasks without revisiting them while adapting well to the new tasks. Two new recent continual-learning scenarios have been proposed. In meta-continual learning, the model is pre-trained to minimize catastrophic forgetting when trained on a sequence of tasks. In continual-meta learning, the goal is faster remembering, i.e., focusing on how quickly the agent recovers performance rather than measuring the agent's performance without any adaptation. Both scenarios have the potential to propel the field forward. Yet in their original formulations, they each have limitations. As a remedy, we propose a more general scenario where an agent must quickly solve (new) out-of-distribution tasks, while also requiring fast remembering. We show that current continual learning, meta learning, meta-continual learning, and continual-meta learning techniques fail in this new scenario. Accordingly, we propose a strong baseline: Continual-MAML, an online extension of the popular MAML algorithm. In our empirical experiments, we show that our method is better suited to the new scenario than the methodologies mentioned above, as well as standard continual learning and meta learning approaches.
@@ -4544,78 +5133,6 @@ Lifelong/Continual Learning.:
     </script>
     
 
-.. |riemer2019aContinual_Reinforcement_Learning| raw:: html
-
-    <br>
-    <button style="font-size:75%; line-height:15px" onclick="riemer2019aContinual_Reinforcement_LearningFunction()" id="riemer2019aContinual_Reinforcement_Learning_btt">Bib</button>
-    <button style="font-size:75%; line-height:15px" onclick="riemer2019aContinual_Reinforcement_LearningFunction2()" id="riemer2019aContinual_Reinforcement_Learning_btt2">Abstract</button>
-    <button style="font-size:75%; line-height:15px" onclick="riemer2019aContinual_Reinforcement_LearningFunction3()" id="riemer2019aContinual_Reinforcement_Learning_btt3">Notes</button>
-    
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aContinual_Reinforcement_Learning_more" style="display: none">
-        @inproceedings{riemer2019a,<br> author = {Riemer, Matthew and Cases, Ignacio and Ajemian, Robert and Liu, Miao and Rish, Irina and Tu, Yuhai and Tesauro, Gerald},<br> booktitle = {ICLR},<br> file = {::},<br> month = {sep},<br> title = {Learning to learn without forgetting by maximizing transfer and minimizing interference},<br> year = {2019}<br>}<br>
-    </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aContinual_Reinforcement_Learning_more2" style="display: none">
-        Lack of performance when it comes to continual learning over non-stationary distributions of data remains a major challenge in scaling neural network learning to more human realistic settings. In this work we propose a new conceptualization of the continual learning problem in terms of a temporally symmetric trade-off between transfer and interference that can be optimized by enforcing gradient alignment across examples. We then propose a new algorithm, Meta-Experience Replay (MER), that directly exploits this view by combining experience replay with optimization based meta-learning. This method learns parameters that make interference based on future gradients less likely and transfer based on future gradients more likely. 1 We conduct experiments across continual lifelong supervised learning benchmarks and non-stationary reinforcement learning environments demonstrating that our approach consistently outperforms recently proposed baselines for continual learning. Our experiments show that the gap between the performance of MER and baseline algorithms grows both as the environment gets more non-stationary and as the fraction of the total experiences stored gets smaller.
-    </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aContinual_Reinforcement_Learning_more3" style="display: none">
-        N.A.
-    </span></p>
-    <script>
-        function riemer2019aContinual_Reinforcement_LearningFunction() {
-          var moreText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more");
-          var moreText2 = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more2");
-          var moreText3 = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more3");
-          var btnText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_btt");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Bib";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Bib";
-            moreText.style.display = "none";
-          }
-          moreText2.style.display = "none";
-          moreText3.style.display = "none";
-        }
-    </script>
-    <script>
-        function riemer2019aContinual_Reinforcement_LearningFunction2() {
-          var moreText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more2");
-          var moreText1 = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more");
-          var moreText3 = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more3");
-          var btnText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_btt2");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Abstract";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Abstract";
-            moreText.style.display = "none";
-          }
-          moreText1.style.display = "none";
-          moreText3.style.display = "none";
-        }
-    </script>
-    <script>
-        function riemer2019aContinual_Reinforcement_LearningFunction3() {
-          var moreText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more3");
-          var moreText1 = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more");
-          var moreText2 = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more2");
-          var btnText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_btt3");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Notes";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Notes";
-            moreText.style.display = "none";
-          }
-          moreText1.style.display = "none";
-          moreText2.style.display = "none";
-        }
-    </script>
-    
-
 .. |Kobayashi2019aContinual_Reinforcement_Learning| raw:: html
 
     <br>
@@ -4674,6 +5191,78 @@ Lifelong/Continual Learning.:
           var moreText1 = document.getElementById("Kobayashi2019aContinual_Reinforcement_Learning_more");
           var moreText2 = document.getElementById("Kobayashi2019aContinual_Reinforcement_Learning_more2");
           var btnText = document.getElementById("Kobayashi2019aContinual_Reinforcement_Learning_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
+.. |riemer2019aContinual_Reinforcement_Learning| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="riemer2019aContinual_Reinforcement_LearningFunction()" id="riemer2019aContinual_Reinforcement_Learning_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="riemer2019aContinual_Reinforcement_LearningFunction2()" id="riemer2019aContinual_Reinforcement_Learning_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="riemer2019aContinual_Reinforcement_LearningFunction3()" id="riemer2019aContinual_Reinforcement_Learning_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aContinual_Reinforcement_Learning_more" style="display: none">
+        @inproceedings{riemer2019a,<br> author = {Riemer, Matthew and Cases, Ignacio and Ajemian, Robert and Liu, Miao and Rish, Irina and Tu, Yuhai and Tesauro, Gerald},<br> booktitle = {ICLR},<br> file = {:home/andrea/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Riemer et al. - 2019 - Learning to learn without forgetting by maximizing transfer and minimizing interference(2).pdf:pdf},<br> month = {sep},<br> title = {Learning to learn without forgetting by maximizing transfer and minimizing interference},<br> year = {2019}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aContinual_Reinforcement_Learning_more2" style="display: none">
+        Lack of performance when it comes to continual learning over non-stationary distributions of data remains a major challenge in scaling neural network learning to more human realistic settings. In this work we propose a new conceptualization of the continual learning problem in terms of a temporally symmetric trade-off between transfer and interference that can be optimized by enforcing gradient alignment across examples. We then propose a new algorithm, Meta-Experience Replay (MER), that directly exploits this view by combining experience replay with optimization based meta-learning. This method learns parameters that make interference based on future gradients less likely and transfer based on future gradients more likely. 1 We conduct experiments across continual lifelong supervised learning benchmarks and non-stationary reinforcement learning environments demonstrating that our approach consistently outperforms recently proposed baselines for continual learning. Our experiments show that the gap between the performance of MER and baseline algorithms grows both as the environment gets more non-stationary and as the fraction of the total experiences stored gets smaller.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aContinual_Reinforcement_Learning_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function riemer2019aContinual_Reinforcement_LearningFunction() {
+          var moreText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more");
+          var moreText2 = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more2");
+          var moreText3 = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more3");
+          var btnText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function riemer2019aContinual_Reinforcement_LearningFunction2() {
+          var moreText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more2");
+          var moreText1 = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more");
+          var moreText3 = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more3");
+          var btnText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function riemer2019aContinual_Reinforcement_LearningFunction3() {
+          var moreText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more3");
+          var moreText1 = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more");
+          var moreText2 = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more2");
+          var btnText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_btt3");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Notes";
@@ -5049,28 +5638,29 @@ Lifelong/Continual Learning.:
     </script>
     
 
-.. |Aljundi2019Continual_Sequential_Learning| raw:: html
+.. |Chaudhry2019aContinual_Sequential_Learning| raw:: html
 
     <br>
-    <button style="font-size:75%; line-height:15px" onclick="Aljundi2019Continual_Sequential_LearningFunction()" id="Aljundi2019Continual_Sequential_Learning_btt">Bib</button>
-    <button style="font-size:75%; line-height:15px" onclick="Aljundi2019Continual_Sequential_LearningFunction2()" id="Aljundi2019Continual_Sequential_Learning_btt2">Abstract</button>
-    <button style="font-size:75%; line-height:15px" onclick="Aljundi2019Continual_Sequential_LearningFunction3()" id="Aljundi2019Continual_Sequential_Learning_btt3">Notes</button>
+    <button style="font-size:75%; line-height:15px" onclick="Chaudhry2019aContinual_Sequential_LearningFunction()" id="Chaudhry2019aContinual_Sequential_Learning_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="Chaudhry2019aContinual_Sequential_LearningFunction2()" id="Chaudhry2019aContinual_Sequential_Learning_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="Chaudhry2019aContinual_Sequential_LearningFunction3()" id="Chaudhry2019aContinual_Sequential_Learning_btt3">Notes</button>
     
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019Continual_Sequential_Learning_more" style="display: none">
-        @inproceedings{Aljundi2019,<br> author = {Aljundi, Rahaf and Kelchtermans, Klaas and Tuytelaars, Tinne},<br> booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br> keywords = {[vision]},<br> mendeley-tags = {[vision]},<br> month = {jun},<br> publisher = {Aljundi2019b},<br> title = {Task-Free Continual Learning},<br> year = {2019}<br>}<br>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Chaudhry2019aContinual_Sequential_Learning_more" style="display: none">
+        @inproceedings{Chaudhry2019a,<br> annote = {Comment: Published as a conference paper at ICLR 2019<br>arXiv: 1812.00420},<br> author = {Chaudhry, Arslan and Ranzato, Marc'Aurelio and Rohrbach, Marcus and Elhoseiny, Mohamed},<br> booktitle = {ICLR},<br> keywords = {Computer Science - Machine Learning,Statistics - Machine Learning,[cifar],[mnist]},<br> language = {en},<br> mendeley-tags = {[cifar],[mnist]},<br> title = {Efficient Lifelong Learning with A-GEM},<br> url = {http://arxiv.org/abs/1812.00420},<br> year = {2019}<br>}<br>
     </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019Continual_Sequential_Learning_more2" style="display: none">
-        N.A.
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Chaudhry2019aContinual_Sequential_Learning_more2" style="display: none">
+        In lifelong learning, the learner is presented with a sequence of tasks, incrementally building a data-driven prior which may be leveraged to speed up learning of a new task. In this work, we investigate the efficiency of current lifelong approaches, in terms of sample complexity, computational and memory cost. Towards this end, we first introduce a new and a more realistic evaluation protocol, whereby learners observe each example only once and hyper-parameter selection is done on a small and disjoint set of tasks, which is not used for the actual learning experience and evaluation. Second, we introduce a new metric measuring how quickly a learner acquires a new skill. Third, we propose an improved version of GEM (Lopez-Paz & Ranzato, 2017), dubbed Averaged GEM (A-GEM), which enjoys the same or even better performance as GEM, while being almost as computationally and memory efficient as EWC (Kirkpatrick et al., 2016) and other regularization-based methods. Finally, we show that all algorithms including A-GEM can learn even more quickly if they are provided with task descriptors specifying the classification tasks under consideration. Our experiments on several standard lifelong learning benchmarks demonstrate that A-GEM has the best trade-off between accuracy and efficiency.
     </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019Continual_Sequential_Learning_more3" style="display: none">
-        N.A.
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Chaudhry2019aContinual_Sequential_Learning_more3" style="display: none">
+        Comment: Published as a conference paper at ICLR 2019
+		arXiv: 1812.00420
     </span></p>
     <script>
-        function Aljundi2019Continual_Sequential_LearningFunction() {
-          var moreText = document.getElementById("Aljundi2019Continual_Sequential_Learning_more");
-          var moreText2 = document.getElementById("Aljundi2019Continual_Sequential_Learning_more2");
-          var moreText3 = document.getElementById("Aljundi2019Continual_Sequential_Learning_more3");
-          var btnText = document.getElementById("Aljundi2019Continual_Sequential_Learning_btt");
+        function Chaudhry2019aContinual_Sequential_LearningFunction() {
+          var moreText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more");
+          var moreText2 = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more2");
+          var moreText3 = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more3");
+          var btnText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_btt");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Bib";
@@ -5084,11 +5674,11 @@ Lifelong/Continual Learning.:
         }
     </script>
     <script>
-        function Aljundi2019Continual_Sequential_LearningFunction2() {
-          var moreText = document.getElementById("Aljundi2019Continual_Sequential_Learning_more2");
-          var moreText1 = document.getElementById("Aljundi2019Continual_Sequential_Learning_more");
-          var moreText3 = document.getElementById("Aljundi2019Continual_Sequential_Learning_more3");
-          var btnText = document.getElementById("Aljundi2019Continual_Sequential_Learning_btt2");
+        function Chaudhry2019aContinual_Sequential_LearningFunction2() {
+          var moreText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more2");
+          var moreText1 = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more");
+          var moreText3 = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more3");
+          var btnText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_btt2");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Abstract";
@@ -5102,11 +5692,11 @@ Lifelong/Continual Learning.:
         }
     </script>
     <script>
-        function Aljundi2019Continual_Sequential_LearningFunction3() {
-          var moreText = document.getElementById("Aljundi2019Continual_Sequential_Learning_more3");
-          var moreText1 = document.getElementById("Aljundi2019Continual_Sequential_Learning_more");
-          var moreText2 = document.getElementById("Aljundi2019Continual_Sequential_Learning_more2");
-          var btnText = document.getElementById("Aljundi2019Continual_Sequential_Learning_btt3");
+        function Chaudhry2019aContinual_Sequential_LearningFunction3() {
+          var moreText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more3");
+          var moreText1 = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more");
+          var moreText2 = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more2");
+          var btnText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_btt3");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Notes";
@@ -5265,79 +5855,6 @@ Lifelong/Continual Learning.:
     </script>
     
 
-.. |Chaudhry2019aContinual_Sequential_Learning| raw:: html
-
-    <br>
-    <button style="font-size:75%; line-height:15px" onclick="Chaudhry2019aContinual_Sequential_LearningFunction()" id="Chaudhry2019aContinual_Sequential_Learning_btt">Bib</button>
-    <button style="font-size:75%; line-height:15px" onclick="Chaudhry2019aContinual_Sequential_LearningFunction2()" id="Chaudhry2019aContinual_Sequential_Learning_btt2">Abstract</button>
-    <button style="font-size:75%; line-height:15px" onclick="Chaudhry2019aContinual_Sequential_LearningFunction3()" id="Chaudhry2019aContinual_Sequential_Learning_btt3">Notes</button>
-    
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Chaudhry2019aContinual_Sequential_Learning_more" style="display: none">
-        @inproceedings{Chaudhry2019a,<br> annote = {Comment: Published as a conference paper at ICLR 2019<br>arXiv: 1812.00420},<br> author = {Chaudhry, Arslan and Ranzato, Marc'Aurelio and Rohrbach, Marcus and Elhoseiny, Mohamed},<br> booktitle = {ICLR},<br> keywords = {Computer Science - Machine Learning,Statistics - Machine Learning,[cifar],[mnist]},<br> language = {en},<br> mendeley-tags = {[cifar],[mnist]},<br> title = {Efficient Lifelong Learning with A-GEM},<br> url = {http://arxiv.org/abs/1812.00420},<br> year = {2019}<br>}<br>
-    </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Chaudhry2019aContinual_Sequential_Learning_more2" style="display: none">
-        In lifelong learning, the learner is presented with a sequence of tasks, incrementally building a data-driven prior which may be leveraged to speed up learning of a new task. In this work, we investigate the efficiency of current lifelong approaches, in terms of sample complexity, computational and memory cost. Towards this end, we first introduce a new and a more realistic evaluation protocol, whereby learners observe each example only once and hyper-parameter selection is done on a small and disjoint set of tasks, which is not used for the actual learning experience and evaluation. Second, we introduce a new metric measuring how quickly a learner acquires a new skill. Third, we propose an improved version of GEM (Lopez-Paz & Ranzato, 2017), dubbed Averaged GEM (A-GEM), which enjoys the same or even better performance as GEM, while being almost as computationally and memory efficient as EWC (Kirkpatrick et al., 2016) and other regularization-based methods. Finally, we show that all algorithms including A-GEM can learn even more quickly if they are provided with task descriptors specifying the classification tasks under consideration. Our experiments on several standard lifelong learning benchmarks demonstrate that A-GEM has the best trade-off between accuracy and efficiency.
-    </span></p>
-    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Chaudhry2019aContinual_Sequential_Learning_more3" style="display: none">
-        Comment: Published as a conference paper at ICLR 2019
-		arXiv: 1812.00420
-    </span></p>
-    <script>
-        function Chaudhry2019aContinual_Sequential_LearningFunction() {
-          var moreText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more");
-          var moreText2 = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more2");
-          var moreText3 = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more3");
-          var btnText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_btt");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Bib";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Bib";
-            moreText.style.display = "none";
-          }
-          moreText2.style.display = "none";
-          moreText3.style.display = "none";
-        }
-    </script>
-    <script>
-        function Chaudhry2019aContinual_Sequential_LearningFunction2() {
-          var moreText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more2");
-          var moreText1 = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more");
-          var moreText3 = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more3");
-          var btnText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_btt2");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Abstract";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Abstract";
-            moreText.style.display = "none";
-          }
-          moreText1.style.display = "none";
-          moreText3.style.display = "none";
-        }
-    </script>
-    <script>
-        function Chaudhry2019aContinual_Sequential_LearningFunction3() {
-          var moreText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more3");
-          var moreText1 = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more");
-          var moreText2 = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more2");
-          var btnText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_btt3");
-
-          if (moreText.style.display === "none") {
-            btnText.innerHTML = "Notes";
-            moreText.style.display = "inline";
-          } else {
-            btnText.innerHTML = "Notes";
-            moreText.style.display = "none";
-          }
-          moreText1.style.display = "none";
-          moreText2.style.display = "none";
-        }
-    </script>
-    
-
 .. |He2019aContinual_Sequential_Learning| raw:: html
 
     <br>
@@ -5396,6 +5913,150 @@ Lifelong/Continual Learning.:
           var moreText1 = document.getElementById("He2019aContinual_Sequential_Learning_more");
           var moreText2 = document.getElementById("He2019aContinual_Sequential_Learning_more2");
           var btnText = document.getElementById("He2019aContinual_Sequential_Learning_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
+.. |Aljundi2019Continual_Sequential_Learning| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="Aljundi2019Continual_Sequential_LearningFunction()" id="Aljundi2019Continual_Sequential_Learning_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="Aljundi2019Continual_Sequential_LearningFunction2()" id="Aljundi2019Continual_Sequential_Learning_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="Aljundi2019Continual_Sequential_LearningFunction3()" id="Aljundi2019Continual_Sequential_Learning_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019Continual_Sequential_Learning_more" style="display: none">
+        @inproceedings{Aljundi2019,<br> author = {Aljundi, Rahaf and Kelchtermans, Klaas and Tuytelaars, Tinne},<br> booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br> keywords = {[vision]},<br> mendeley-tags = {[vision]},<br> month = {jun},<br> publisher = {Aljundi2019b},<br> title = {Task-Free Continual Learning},<br> year = {2019}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019Continual_Sequential_Learning_more2" style="display: none">
+        N.A.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019Continual_Sequential_Learning_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function Aljundi2019Continual_Sequential_LearningFunction() {
+          var moreText = document.getElementById("Aljundi2019Continual_Sequential_Learning_more");
+          var moreText2 = document.getElementById("Aljundi2019Continual_Sequential_Learning_more2");
+          var moreText3 = document.getElementById("Aljundi2019Continual_Sequential_Learning_more3");
+          var btnText = document.getElementById("Aljundi2019Continual_Sequential_Learning_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Aljundi2019Continual_Sequential_LearningFunction2() {
+          var moreText = document.getElementById("Aljundi2019Continual_Sequential_Learning_more2");
+          var moreText1 = document.getElementById("Aljundi2019Continual_Sequential_Learning_more");
+          var moreText3 = document.getElementById("Aljundi2019Continual_Sequential_Learning_more3");
+          var btnText = document.getElementById("Aljundi2019Continual_Sequential_Learning_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Aljundi2019Continual_Sequential_LearningFunction3() {
+          var moreText = document.getElementById("Aljundi2019Continual_Sequential_Learning_more3");
+          var moreText1 = document.getElementById("Aljundi2019Continual_Sequential_Learning_more");
+          var moreText2 = document.getElementById("Aljundi2019Continual_Sequential_Learning_more2");
+          var btnText = document.getElementById("Aljundi2019Continual_Sequential_Learning_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
+.. |xu2018aContinual_Sequential_Learning| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="xu2018aContinual_Sequential_LearningFunction()" id="xu2018aContinual_Sequential_Learning_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="xu2018aContinual_Sequential_LearningFunction2()" id="xu2018aContinual_Sequential_Learning_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="xu2018aContinual_Sequential_LearningFunction3()" id="xu2018aContinual_Sequential_Learning_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="xu2018aContinual_Sequential_Learning_more" style="display: none">
+        @inproceedings{xu2018a,<br> author = {He, Xu and Jaeger, Herbert},<br> booktitle = {ICLR},<br> file = {::},<br> keywords = {[mnist],[rnn]},<br> mendeley-tags = {[mnist],[rnn]},<br> title = {Overcoming Catastrophic interference using conceptor-aided backpropagation},<br> year = {2018}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="xu2018aContinual_Sequential_Learning_more2" style="display: none">
+        Catastrophic interference has been a major roadblock in the research of continual learning. Here we propose a variant of the back-propagation algorithm, "conceptor-aided backprop" (CAB), in which gradients are shielded by concep-tors against degradation of previously learned tasks. Conceptors have their origin in reservoir computing, where they have been previously shown to overcome catastrophic forgetting. CAB extends these results to deep feedforward networks. On the disjoint and permuted MNIST tasks, CAB outperforms two other methods for coping with catastrophic interference that have recently been proposed.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="xu2018aContinual_Sequential_Learning_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function xu2018aContinual_Sequential_LearningFunction() {
+          var moreText = document.getElementById("xu2018aContinual_Sequential_Learning_more");
+          var moreText2 = document.getElementById("xu2018aContinual_Sequential_Learning_more2");
+          var moreText3 = document.getElementById("xu2018aContinual_Sequential_Learning_more3");
+          var btnText = document.getElementById("xu2018aContinual_Sequential_Learning_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function xu2018aContinual_Sequential_LearningFunction2() {
+          var moreText = document.getElementById("xu2018aContinual_Sequential_Learning_more2");
+          var moreText1 = document.getElementById("xu2018aContinual_Sequential_Learning_more");
+          var moreText3 = document.getElementById("xu2018aContinual_Sequential_Learning_more3");
+          var btnText = document.getElementById("xu2018aContinual_Sequential_Learning_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function xu2018aContinual_Sequential_LearningFunction3() {
+          var moreText = document.getElementById("xu2018aContinual_Sequential_Learning_more3");
+          var moreText1 = document.getElementById("xu2018aContinual_Sequential_Learning_more");
+          var moreText2 = document.getElementById("xu2018aContinual_Sequential_Learning_more2");
+          var btnText = document.getElementById("xu2018aContinual_Sequential_Learning_btt3");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Notes";
@@ -5699,6 +6360,150 @@ Lifelong/Continual Learning.:
     </script>
     
 
+.. |Campo2020aApplications| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="Campo2020aApplicationsFunction()" id="Campo2020aApplications_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="Campo2020aApplicationsFunction2()" id="Campo2020aApplications_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="Campo2020aApplicationsFunction3()" id="Campo2020aApplications_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Campo2020aApplications_more" style="display: none">
+        @misc{Campo2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2006.01945},<br> author = {Campo, Damian and Slavic, Giulia and Baydoun, Mohamad and Marcenaro, Lucio and Regazzoni, Carlo},<br> eprint = {2006.01945},<br> file = {::},<br> keywords = {[vision]},<br> mendeley-tags = {[vision]},<br> month = {jun},<br> title = {Continual Learning of Predictive Models in Video Sequences via Variational Autoencoders},<br> url = {http://arxiv.org/abs/2006.01945},<br> year = {2020}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Campo2020aApplications_more2" style="display: none">
+        This paper proposes a method for performing continual learning of predictive models that facilitate the inference of future frames in video sequences. For a first given experience, an initial Variational Autoencoder, together with a set of fully connected neural networks are utilized to respectively learn the appearance of video frames and their dynamics at the latent space level. By employing an adapted Markov Jump Particle Filter, the proposed method recognizes new situations and integrates them as predictive models avoiding catastrophic forgetting of previously learned tasks. For evaluating the proposed method, this article uses video sequences from a vehicle that performs different tasks in a controlled environment.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Campo2020aApplications_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function Campo2020aApplicationsFunction() {
+          var moreText = document.getElementById("Campo2020aApplications_more");
+          var moreText2 = document.getElementById("Campo2020aApplications_more2");
+          var moreText3 = document.getElementById("Campo2020aApplications_more3");
+          var btnText = document.getElementById("Campo2020aApplications_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Campo2020aApplicationsFunction2() {
+          var moreText = document.getElementById("Campo2020aApplications_more2");
+          var moreText1 = document.getElementById("Campo2020aApplications_more");
+          var moreText3 = document.getElementById("Campo2020aApplications_more3");
+          var btnText = document.getElementById("Campo2020aApplications_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Campo2020aApplicationsFunction3() {
+          var moreText = document.getElementById("Campo2020aApplications_more3");
+          var moreText1 = document.getElementById("Campo2020aApplications_more");
+          var moreText2 = document.getElementById("Campo2020aApplications_more2");
+          var btnText = document.getElementById("Campo2020aApplications_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
+.. |Fu2020aApplications| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="Fu2020aApplicationsFunction()" id="Fu2020aApplications_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="Fu2020aApplicationsFunction2()" id="Fu2020aApplications_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="Fu2020aApplicationsFunction3()" id="Fu2020aApplications_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Fu2020aApplications_more" style="display: none">
+        @misc{Fu2020a,<br> author = {Fu, Li and Li, Xiaoxiao and Zi, Libo},<br> file = {::},<br> keywords = {Index Terms: automatic speech recognition,[audio],end-to-end,incremental learning,knowledge distillation},<br> mendeley-tags = {[audio]},<br> title = {Incremental Learning for End-to-End Automatic Speech Recognition},<br> year = {2020}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Fu2020aApplications_more2" style="display: none">
+        † We propose an incremental learning for end-to-end Automatic Speech Recognition (ASR) to extend the model's capacity on a new task while retaining the performance on existing ones. The proposed method is effective without accessing to the old dataset to address the issues of high training cost and old dataset unavailability. To achieve this, knowledge distillation is applied as a guidance to retain the recognition ability from the previous model, which is then combined with the new ASR task for model optimization. With an ASR model pre-trained on 12,000h Mandarin speech, we test our proposed method on 300h new scenario task and 1h new named entities task. Experiments show that our method yields 3.25% and 0.88% absolute Character Error Rate (CER) reduction on the new scenario, when compared with the pre-trained model and the full-data retraining baseline, respectively. It even yields a surprising 0.37% absolute CER reduction on the new scenario than the fine-tuning. For the new named entities task, our method significantly improves the accuracy compared with the pre-trained model, i.e. 16.95% absolute CER reduction. For both of the new task adaptions, the new models still maintain a same accuracy with the baseline on the old tasks.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Fu2020aApplications_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function Fu2020aApplicationsFunction() {
+          var moreText = document.getElementById("Fu2020aApplications_more");
+          var moreText2 = document.getElementById("Fu2020aApplications_more2");
+          var moreText3 = document.getElementById("Fu2020aApplications_more3");
+          var btnText = document.getElementById("Fu2020aApplications_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Fu2020aApplicationsFunction2() {
+          var moreText = document.getElementById("Fu2020aApplications_more2");
+          var moreText1 = document.getElementById("Fu2020aApplications_more");
+          var moreText3 = document.getElementById("Fu2020aApplications_more3");
+          var btnText = document.getElementById("Fu2020aApplications_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Fu2020aApplicationsFunction3() {
+          var moreText = document.getElementById("Fu2020aApplications_more3");
+          var moreText1 = document.getElementById("Fu2020aApplications_more");
+          var moreText2 = document.getElementById("Fu2020aApplications_more2");
+          var btnText = document.getElementById("Fu2020aApplications_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
 .. |sun2019aApplications| raw:: html
 
     <br>
@@ -5829,6 +6634,78 @@ Lifelong/Continual Learning.:
           var moreText1 = document.getElementById("kruszewski2020aApplications_more");
           var moreText2 = document.getElementById("kruszewski2020aApplications_more2");
           var btnText = document.getElementById("kruszewski2020aApplications_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
+.. |Xue2019aApplications| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="Xue2019aApplicationsFunction()" id="Xue2019aApplications_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="Xue2019aApplicationsFunction2()" id="Xue2019aApplications_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="Xue2019aApplicationsFunction3()" id="Xue2019aApplications_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Xue2019aApplications_more" style="display: none">
+        @article{Xue2019a,<br> archiveprefix = {arXiv},<br> arxivid = {1904.08039},<br> author = {Xue, Jiabin and Han, Jiqing and Zheng, Tieran and Gao, Xiang and Guo, Jiaxing},<br> eprint = {1904.08039},<br> keywords = {[audio],[rnn]},<br> mendeley-tags = {[audio],[rnn]},<br> title = {A Multi-Task Learning Framework for Overcoming the Catastrophic Forgetting in Automatic Speech Recognition},<br> url = {http://arxiv.org/abs/1904.08039},<br> year = {2019}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Xue2019aApplications_more2" style="display: none">
+        Recently, data-driven based Automatic Speech Recognition (ASR) systems have achieved state-of-the-art results. And transfer learning is often used when those existing systems are adapted to the target domain, e.g., fine-tuning, retraining. However, in the processes, the system parameters may well deviate too much from the previously learned parameters. Thus, it is difficult for the system training process to learn knowledge from target domains meanwhile not forgetting knowledge from the previous learning process, which is called as catastrophic forgetting (CF). In this paper, we attempt to solve the CF problem with the lifelong learning and propose a novel multi-task learning (MTL) training framework for ASR. It considers reserving original knowledge and learning new knowledge as two independent tasks, respectively. On the one hand, we constrain the new parameters not to deviate too far from the original parameters and punish the new system when forgetting original knowledge. On the other hand, we force the new system to solve new knowledge quickly. Then, a MTL mechanism is employed to get the balance between the two tasks. We applied our method to an End2End ASR task and obtained the best performance in both target and original datasets.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Xue2019aApplications_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function Xue2019aApplicationsFunction() {
+          var moreText = document.getElementById("Xue2019aApplications_more");
+          var moreText2 = document.getElementById("Xue2019aApplications_more2");
+          var moreText3 = document.getElementById("Xue2019aApplications_more3");
+          var btnText = document.getElementById("Xue2019aApplications_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Xue2019aApplicationsFunction2() {
+          var moreText = document.getElementById("Xue2019aApplications_more2");
+          var moreText1 = document.getElementById("Xue2019aApplications_more");
+          var moreText3 = document.getElementById("Xue2019aApplications_more3");
+          var btnText = document.getElementById("Xue2019aApplications_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Xue2019aApplicationsFunction3() {
+          var moreText = document.getElementById("Xue2019aApplications_more3");
+          var moreText1 = document.getElementById("Xue2019aApplications_more");
+          var moreText2 = document.getElementById("Xue2019aApplications_more2");
+          var btnText = document.getElementById("Xue2019aApplications_btt3");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Notes";
@@ -6045,6 +6922,78 @@ Lifelong/Continual Learning.:
           var moreText1 = document.getElementById("Lesort2020aRobotics_more");
           var moreText2 = document.getElementById("Lesort2020aRobotics_more2");
           var btnText = document.getElementById("Lesort2020aRobotics_btt3");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Notes";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText2.style.display = "none";
+        }
+    </script>
+    
+
+.. |Li2020aOthers| raw:: html
+
+    <br>
+    <button style="font-size:75%; line-height:15px" onclick="Li2020aOthersFunction()" id="Li2020aOthers_btt">Bib</button>
+    <button style="font-size:75%; line-height:15px" onclick="Li2020aOthersFunction2()" id="Li2020aOthers_btt2">Abstract</button>
+    <button style="font-size:75%; line-height:15px" onclick="Li2020aOthersFunction3()" id="Li2020aOthers_btt3">Notes</button>
+    
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Li2020aOthers_more" style="display: none">
+        @misc{Li2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2005.05080},<br> author = {Li, Honglin and Barnaghi, Payam and Enshaeifar, Shirin and Ganz, Frieder},<br> eprint = {2005.05080},<br> file = {::},<br> keywords = {[cifar],[mnist]},<br> mendeley-tags = {[cifar],[mnist]},<br> month = {may},<br> title = {Continual Learning Using Task Conditional Neural Networks},<br> url = {http://arxiv.org/abs/2005.05080},<br> year = {2020}<br>}<br>
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Li2020aOthers_more2" style="display: none">
+        Conventional deep learning models have limited capacity in learning multiple tasks sequentially. The issue of forgetting the previously learned tasks in continual learning is known as catastrophic forgetting or interference. When the input data or the goal of learning change, a continual model will learn and adapt to the new status. However, the model will not remember or recognise any revisits to the previous states. This causes performance reduction and re-training curves in dealing with periodic or irregularly reoccurring changes in the data or goals. The changes in goals or data are referred to as new tasks in a continual learning model. Most of the continual learning methods have a task-known setup in which the task identities are known in advance to the learning model. We propose Task Conditional Neural Networks (TCNN) that does not require to known the reoccurring tasks in advance. We evaluate our model on standard datasets using MNIST and CIFAR10, and also a real-world dataset that we have collected in a remote healthcare monitoring study (i.e. TIHM dataset). The proposed model outperforms the state-of-the-art solutions in continual learning and adapting to new tasks that are not defined in advance.
+    </span></p>
+    <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Li2020aOthers_more3" style="display: none">
+        N.A.
+    </span></p>
+    <script>
+        function Li2020aOthersFunction() {
+          var moreText = document.getElementById("Li2020aOthers_more");
+          var moreText2 = document.getElementById("Li2020aOthers_more2");
+          var moreText3 = document.getElementById("Li2020aOthers_more3");
+          var btnText = document.getElementById("Li2020aOthers_btt");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Bib";
+            moreText.style.display = "none";
+          }
+          moreText2.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Li2020aOthersFunction2() {
+          var moreText = document.getElementById("Li2020aOthers_more2");
+          var moreText1 = document.getElementById("Li2020aOthers_more");
+          var moreText3 = document.getElementById("Li2020aOthers_more3");
+          var btnText = document.getElementById("Li2020aOthers_btt2");
+
+          if (moreText.style.display === "none") {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "inline";
+          } else {
+            btnText.innerHTML = "Abstract";
+            moreText.style.display = "none";
+          }
+          moreText1.style.display = "none";
+          moreText3.style.display = "none";
+        }
+    </script>
+    <script>
+        function Li2020aOthersFunction3() {
+          var moreText = document.getElementById("Li2020aOthers_more3");
+          var moreText1 = document.getElementById("Li2020aOthers_more");
+          var moreText2 = document.getElementById("Li2020aOthers_more2");
+          var btnText = document.getElementById("Li2020aOthers_btt3");
 
           if (moreText.style.display === "none") {
             btnText.innerHTML = "Notes";
