@@ -25,7 +25,6 @@ from bibtexparser.customization import convert_to_unicode
 from bibtexparser.bparser import BibTexParser
 import copy
 import os
-from pprint import pprint
 
 showbib_template = """
 .. |[PAPERID][SECTION]| raw:: html
@@ -129,7 +128,6 @@ def extract_bibtex(bib_database, id):
 def bibtex_string2html(str, remove_abstract=True):
 
     lines = str.split("\n")
-    n = len(lines)
     final_str = ""
     # print(lines)
     for i, line in enumerate(lines):
