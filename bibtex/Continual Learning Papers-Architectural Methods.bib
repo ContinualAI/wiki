@@ -72,19 +72,18 @@ title = {{Progressive Neural Networks}},
 url = {http://arxiv.org/abs/1606.04671},
 year = {2016}
 }
-@article{Madrid2018,
-abstract = {Research progress in AutoML has lead to state of the art solutions that can cope quite well with supervised learning task, e.g., classification with AutoSklearn. However, so far this sort of systems do not take into account the changing nature of evolving data over time (i.e., they still assume i.i.d. data); even when this sort of domains are increasingly available in real applications (e.g., spam filtering, user preferences, etc.). This article presents a first attempt to develop an AutoML solution for scenarios in which data distribution changes relatively slowly over time and in which the problem is approached in a lifelong setting. We extend the Auto-Sklearn method with sound and intuitive mechanisms that allow it to cope with this sort of problems. The extended Auto-Sklearn is combined with concept drift detection techniques that allow it to automatically determine when the initial models have to be adapted. We report experimental results in benchmark data from AutoML competitions that adhere to this scenario. Results demonstrate the effectiveness of the proposed methodology.},
-archivePrefix = {arXiv},
-arxivId = {arXiv:1907.10772v1},
-author = {Madrid, Jorge G and {Hugo Jair Escalante hugojair}, Mexico and inaoepmx Inaoe and {Eduardo Morales emorales}, Mexico and {Wei-Wei Tu}, Mexico and Guyon, Isabelle and Sebag, Michele},
-eprint = {arXiv:1907.10772v1},
-journal = {Journal of Machine Learning Research},
-keywords = {AutoML,AutoSKLearn,Concept Drift,Life Long Machine Learning},
-number = {1},
-pages = {1--13},
-title = {{Towards AutoML in the presence of Drift: first results Lisheng Sun-Hosoya}},
-volume = {1},
-year = {2018}
+@misc{Golkar2019a,
+abstract = {We introduce Continual Learning via Neural Pruning (CLNP), a new method aimed at lifelong learning in fixed capacity models based on neuronal model sparsification. In this method, subsequent tasks are trained using the inactive neurons and filters of the sparsified network and cause zero deterioration to the performance of previous tasks. In order to deal with the possible compromise between model sparsity and performance, we formalize and incorporate the concept of graceful forgetting: the idea that it is preferable to suffer a small amount of forgetting in a controlled manner if it helps regain network capacity and prevents uncontrolled loss of performance during the training of future tasks. CLNP also provides simple continual learning diagnostic tools in terms of the number of free neurons left for the training of future tasks as well as the number of neurons that are being reused. In particular, we see in experiments that CLNP verifies and automatically takes advantage of the fact that the features of earlier layers are more transferable. We show empirically that CLNP leads to significantly improved results over current weight elasticity based methods.},
+annote = {Comment: 12 pages, 5 figures, 3 tables
+arXiv: 1903.04476},
+author = {Golkar, Siavash and Kagan, Michael and Cho, Kyunghyun},
+booktitle = {arXiv:1903.04476 [cs, q-bio, stat]},
+keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Quantitative Biology - Neurons and Cognition,Statistics - Machine Learning,[cifar],[mnist],[sparsity]},
+mendeley-tags = {[cifar],[mnist],[sparsity]},
+month = {mar},
+title = {{Continual Learning via Neural Pruning}},
+url = {http://arxiv.org/abs/1903.04476},
+year = {2019}
 }
 @article{marsland2002a,
 abstract = {The ability to grow extra nodes is a potentially useful facility for a self-organising neural network. A network that can add nodes into its map space can approximate the input space more accurately, and often more parsimoniously, than a network with predefined structure and size, such as the Self-Organising Map. In addition, a growing network can deal with dynamic input distributions. Most of the growing networks that have been proposed in the literature add new nodes to support the node that has accumulated the highest error during previous iterations or to support topological structures. This usually means that new nodes are added only when the number of iterations is an integer multiple of some pre-defined constant, $\lambda$. This paper suggests a way in which the learning algorithm can add nodes whenever the network in its current state does not sufficiently match the input. In this way the network grows very quickly when new data is presented, but stops growing once the network has matched the data. This is particularly important when we consider dynamic data sets, where the distribution of inputs can change to a new regime after some time. We also demonstrate the preservation of neighbourhood relations in the data by the network. The new network is compared to an existing growing network, the Growing Neural Gas (GNG), on a artificial dataset, showing how the network deals with a change in input distribution after some time. Finally, the new network is applied to several novelty detection tasks and is compared with both the GNG and an unsupervised form of the Reduced Coulomb Energy network on a robotic inspection task and with a Support Vector Machine on two benchmark novelty detection tasks. {\textcopyright} 2002 Elsevier Science Ltd. All rights reserved.},
@@ -102,16 +101,15 @@ title = {{A self-organising network that grows when required}},
 volume = {15},
 year = {2002}
 }
-@misc{Golkar2019a,
-abstract = {We introduce Continual Learning via Neural Pruning (CLNP), a new method aimed at lifelong learning in fixed capacity models based on neuronal model sparsification. In this method, subsequent tasks are trained using the inactive neurons and filters of the sparsified network and cause zero deterioration to the performance of previous tasks. In order to deal with the possible compromise between model sparsity and performance, we formalize and incorporate the concept of graceful forgetting: the idea that it is preferable to suffer a small amount of forgetting in a controlled manner if it helps regain network capacity and prevents uncontrolled loss of performance during the training of future tasks. CLNP also provides simple continual learning diagnostic tools in terms of the number of free neurons left for the training of future tasks as well as the number of neurons that are being reused. In particular, we see in experiments that CLNP verifies and automatically takes advantage of the fact that the features of earlier layers are more transferable. We show empirically that CLNP leads to significantly improved results over current weight elasticity based methods.},
-annote = {Comment: 12 pages, 5 figures, 3 tables
-arXiv: 1903.04476},
-author = {Golkar, Siavash and Kagan, Michael and Cho, Kyunghyun},
-booktitle = {arXiv:1903.04476 [cs, q-bio, stat]},
-keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Quantitative Biology - Neurons and Cognition,Statistics - Machine Learning,[cifar],[mnist],[sparsity]},
-mendeley-tags = {[cifar],[mnist],[sparsity]},
-month = {mar},
-title = {{Continual Learning via Neural Pruning}},
-url = {http://arxiv.org/abs/1903.04476},
+@misc{Madrid2018a,
+abstract = {Research progress in AutoML has lead to state of the art solutions that can cope quite wellwith supervised learning task, e.g., classification with AutoSklearn. However, so far thesesystems do not take into account the changing nature of evolving data over time (i.e., theystill assume i.i.d. data); even when this sort of domains are increasingly available in realapplications (e.g., spam filtering, user preferences, etc.). We describe a first attempt to de-velop an AutoML solution for scenarios in which data distribution changes relatively slowlyover time and in which the problem is approached in a lifelong learning setting. We extendAuto-Sklearn with sound and intuitive mechanisms that allow it to cope with this sort ofproblems. The extended Auto-Sklearn is combined with concept drift detection techniquesthat allow it to automatically determine when the initial models have to be adapted. Wereport experimental results in benchmark data from AutoML competitions that adhere tothis scenario. Results demonstrate the effectiveness of the proposed methodology.},
+archivePrefix = {arXiv},
+arxivId = {1907.10772},
+author = {Madrid, Jorge G. and Escalante, Hugo Jair and Morales, Eduardo F. and Tu, Wei-Wei and Yu, Yang and Sun-Hosoya, Lisheng and Guyon, Isabelle and Sebag, Michele},
+eprint = {1907.10772},
+file = {::},
+month = {jul},
+title = {{Towards AutoML in the presence of Drift: first results}},
+url = {http://arxiv.org/abs/1907.10772},
 year = {2019}
 }

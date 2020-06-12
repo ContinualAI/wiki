@@ -25,7 +25,6 @@ from bibtexparser.customization import convert_to_unicode
 from bibtexparser.bparser import BibTexParser
 import copy
 import os
-from pprint import pprint
 
 showbib_template = """
 .. |[PAPERID][SECTION]| raw:: html
@@ -129,7 +128,6 @@ def extract_bibtex(bib_database, id):
 def bibtex_string2html(str, remove_abstract=True):
 
     lines = str.split("\n")
-    n = len(lines)
     final_str = ""
     # print(lines)
     for i, line in enumerate(lines):
@@ -158,7 +156,7 @@ def journal_or_booktitle(item):
     elif item["ENTRYTYPE"] == "book":
         return "*" + item["publisher"] + "*"
     else:
-        print("WARNING: venue missing!!!")
+        print("WARNING: venue missing in '" + str(item["title"]) + "'!!!")
         return ""
 
 def pages_or_void(item):
@@ -174,7 +172,12 @@ def get_author(item):
     str = ""
     for i, aut in enumerate(authors_list):
         # print(aut)
-        surname, name = aut.split(", ")
+        try:
+            surname, name = aut.split(", ")
+        except ValueError:
+            surname, name = aut.split(" ")
+
+
         authors_list[i] = name + " " + surname
         if i == len(authors_list) -1:
             str += " and " + name + " " + surname
