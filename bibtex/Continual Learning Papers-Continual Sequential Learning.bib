@@ -102,6 +102,23 @@ month = {jul},
 title = {{iCaRL: Incremental Classifier and Representation Learning}},
 year = {2017}
 }
+@inproceedings{Schak2019a,
+abstract = {We present a systematic study of Catastrophic Forgetting (CF), i.e., the abrupt loss of previously acquired knowledge, when retraining deep recurrent LSTM networks with new samples. CF has recently received renewed attention in the case of feed-forward DNNs, and this article is the first work that aims to rigorously establish whether deep LSTM networks are afflicted by CF as well, and to what degree. In order to test this fully, training is conducted using a wide variety of high-dimensional image-based sequence classification tasks derived from established visual classification benchmarks (MNIST, Devanagari, FashionMNIST and EMNIST). We find that the CF effect occurs universally, without exception, for deep LSTM-based sequence classifiers, regardless of the construction and provenance of sequences. This leads us to conclude that LSTMs, just like DNNs, are fully affected by CF, and that further research work needs to be conducted in order to determine how to avoid this effect (which is not a goal of this study).},
+address = {Cham},
+author = {Schak, Monika and Gepperth, Alexander},
+booktitle = {Artificial Neural Networks and Machine Learning – ICANN 2019: Deep Learning},
+doi = {10.1007/978-3-030-30484-3_56},
+editor = {Tetko, Igor V and Kůrkov{\'{a}}, V{\v{e}}ra and Karpov, Pavel and Theis, Fabian},
+isbn = {978-3-030-30484-3},
+keywords = {Catastrophic Forgetting,LSTM,[rnn],sequential},
+language = {en},
+mendeley-tags = {[rnn]},
+pages = {714--728},
+publisher = {Springer International Publishing},
+series = {Lecture Notes in Computer Science},
+title = {{A Study on Catastrophic Forgetting in Deep LSTM Networks}},
+year = {2019}
+}
 @unpublished{Chaudhry2018a,
 abstract = {Incremental learning (il) has received a lot of attention recently, however, the literature lacks a precise problem definition, proper evaluation settings, and metrics tailored specifically for the il problem. One of the main objectives of this work is to fill these gaps so as to provide a common ground for better understanding of il. The main challenge for an il algorithm is to update the classifier whilst preserving existing knowledge. We observe that, in addition to forgetting, a known issue while preserving knowledge, il also suffers from a problem we call intransigence, its inability to update knowledge. We introduce two metrics to quantify forgetting and intransigence that allow us to understand, analyse, and gain better insights into the behaviour of il algorithms. Furthermore, we present RWalk, a generalization of ewc++ (our efficient version of ewc [6]) and Path Integral [25] with a theoretically grounded KL-divergence based perspective. We provide a thorough analysis of various il algorithms on MNIST and CIFAR-100 datasets. In these experiments, RWalk obtains superior results in terms of accuracy, and also provides a better trade-off for forgetting and intransigence.},
 archivePrefix = {arXiv},
@@ -120,4 +137,18 @@ title = {{Riemannian Walk for Incremental Learning: Understanding Forgetting and
 url = {http://openaccess.thecvf.com/content_ECCV_2018/html/Arslan_Chaudhry__Riemannian_Walk_ECCV_2018_paper.html},
 volume = {11215 LNCS},
 year = {2018}
+}
+@article{Hayes2019b,
+abstract = {When a robot acquires new information, ideally it would immediately be capable of using that information to understand its environment. While deep neural networks are now widely used by robots for inferring semantic information, conventional neural networks suffer from catastrophic forgetting when they are incrementally updated, with new knowledge overwriting established representations. While a variety of approaches have been developed that attempt to mitigate catastrophic forgetting in the incremental batch learning scenario, in which an agent learns a large collection of labeled samples at once, streaming learning has been much less studied in the robotics and deep learning communities. In streaming learning, an agent learns instances one-by-one and can be tested at any time. Here, we revisit streaming linear discriminant analysis, which has been widely used in the data mining research community. By combining streaming linear discriminant analysis with deep learning, we are able to outperform both incremental batch learning and streaming learning algorithms on both ImageNet-1K and CORe50.},
+archivePrefix = {arXiv},
+arxivId = {1909.01520},
+author = {Hayes, Tyler L and Kanan, Christopher},
+eprint = {1909.01520},
+journal = {CLVision Workshop at CVPR 2020},
+keywords = {[core50],[imagenet],deep learning,streaming learning},
+mendeley-tags = {[core50],[imagenet]},
+pages = {1--15},
+title = {{Lifelong Machine Learning with Deep Streaming Linear Discriminant Analysis}},
+url = {http://arxiv.org/abs/1909.01520},
+year = {2020}
 }
