@@ -1,28 +1,66 @@
 Introduction
 ================================
 
-In this page you’ll find a brief background on Continual/Lifelong Learning from both a Computer Science and Biological prospective.
+Here, you will find an *informal* introduction to Continual Learning. For a comprehensive overview of the field, have a look at our `research section <https://wiki.continualai.org/research.html#publications>`_, in which you can find in-depth surveys on the topic together with specific approaches and techniques to address the Continual Learning challenge.
 
 What is Continual/Lifelong Learning?
 ---------------------------------------
 
-Continual Learning (CL) is built on the idea of learning continuously and adaptively about the external world and enabling the autonomous incremental development of ever more complex skills and knowledge.
+Continual Learning (CL), also known as Lifelong learning, is built on the idea of learning continuously about the external world in order to enable the autonomous, incremental development of ever more complex skills and knowledge.
 
-In the context of Machine Learning it means being able to smoothly update the prediction model to take into account different tasks and data distributions but still being able to re-use and retain useful knowledge and skills during time.
+A Continual learning system can be defined as *an adaptive algorithm capable of learning from a continuous stream of information, with such information becoming progressively available over time and where the number of tasks to be learned (e.g. membership classes in a classification task) are not predefined. Critically, the accommodation of new information should occur without catastrophic forgetting or interference* [#f1]_ .
 
-Hence, CL is the only paradigm which force us to deal with an higher and realistic time-scale where data (and tasks) becomes available only during time, we have no access to previous perception data and it’s imperative to build on top of previously learned knowledge.
+Hence, in the CL scenario, a learning model is required to incrementally build and dynamically update internal representations as the distribution of tasks dynamically changes across its lifetime. Ideally, part of such internal representations will be general and invariant enough to be reusable across similar tasks, while another part should preserve and encode task-specific representations.
 
-Biological Prospective
+
+The Deep Learning approach to learning
+---------------------------------------
+Deep Learning (DL) is a subset of Machine Learning (ML) in which models - artificial neural networks, in most of the cases - learn to map input to output by building an adaptive, internal hierarchical representation. Artificial neural networks are made by units linked together by weighted connections. The learning process is defined by changing the value of the weights in order to minimize a cost function which measures how much the output produced by the model differs from the expected outcome. 
+
+Such learning process is adaptive, meaning that it only requires a (possibly large) set of data from which to learn and a suitable cost function to specify the type of task to be performed. 
+
+Decades of research showed that DL models are able to accomplish a range of different tasks, often surpassing human-level performance. They are widespread in several fields like language translation, self-driving cars, bio-medical applications, stock prediction in finance``...`` just to name a few! 
+
+The astonishing accomplishments made by DL are confined to a specific task: without additional training, a DL neural network which is able to beat the (human) world champion at the game of Go will not be able to drive a car or to translate from English to French. However, nothing prevents us from continuing to train the network on new tasks.
+ 
+What will be the behavior of the network at the end of the new learning phase?
+This question is at the heart of the Continual Learning field.
+
+
+The Catastrophic Forgetting phenomenon
+---------------------------------------
+When learning in a CL environment, the model is exposed to a streaming of inputs coming from different distributions, representing different tasks. At each learning step, the model will have to adapt in order to meet the expected behavior.
+
+A well-known problem in learning multiple tasks sequentially is the *catastrophic forgetting* (CF) phenomenon, which can be concisely summarized in one sentence: * the process of learning new knowledge quickly disrupts previously acquired information*.
+The catastrophic forgetting (or simply forgetting) is the main problem faced by CL strategies.
+
+Unfortunately, *all* connectionist models are subject to CF. The consequence being that neural networks are not suitable to learning in CL environments, since their performance on previous tasks will degrade very quickly.
+
+CF can be characterized by looking at the *stability-plasticity* dilemma: a learning model has to be plastic enough to learn new information, but it has also to be stable to preserve internal knowledge. 
+This tradeoff is never satisfied for traditional neural networks, where the plasticity easily overpowers the stability.
+
+
+Beyond forgetting
+---------------------------------------
+Even if CF is the main focus of CL, there are other aspects that need to be considered when learning continuously.
+
+Preserving old knowledge is important not only to perform well on previous tasks. It can also be used to perform better on incoming tasks. This feature, called *transfer learning*, enables CL algorithm to require only few examples of a new tasks to master it.
+
+Another interesting opportunity when learning sequentially is the benefit that a previously learned task can receive from subsequently learning new knowledge. Such *backward transfer* can positively affect the performance of a CL algorithm on previuos tasks, without seeing any further examples from it.
+It is needless to say that, without a method that properly mitigate forgetting, no backward transfer is possible.
+
+
+Biological Perspective
 ---------------------------------------
 
-The main evolutionary advantage of learning is to rapidly change an organism’s behavior to succeed in a dynamic environment. These experience driven alterations occur in much shorter timescales than genetic evolution can adapt to, allowing a single organism to percist in more situations than those whose behavior is fixed. Because of this, experience driven alterations are pervasive throughout the animal kingdom, from complex vertebrates to single celled organisms to a degree. The reason for this is simple, learned responses or acquired information from experiences helps the chances of an organism’s success as opposed to a randomly selected behavior.
+The main evolutionary advantage of learning is to rapidly change an organism’s behavior to succeed in a dynamic environment. These experience-driven alterations occur in much shorter timescales than genetic evolution can adapt to, allowing a single organism to persist in more situations than those whose behavior is fixed. Because of this, experience driven alterations are pervasive throughout the animal kingdom, from complex vertebrates to single celled organisms. The reason for this is simple: learned responses or acquired information from experiences help the chances of an organism’s success as opposed to a randomly selected behavior.
 
 While some learning occurs only once, such as imprinting in ducklings, a majority occurs continuously throughout an organism’s lifespan. As the climate, ecological niche, food supply, or other factors alter, an organism may alter its response as well. Moreover, this may occur multiple times throughout an organism’s life. For example, a scavenging animal may learn the location to a food supply, returning multiple times to that location. When the source is exhausted, then the animal must learn to not only to refrain from returning to the location, but also to learn a new source. This sequence may happen multiple times throughout an animals life, a reality of the scarcity of food.
 
 Simple learning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Throughout the long studies of animal learning since the late 18th century, a large literature of general rules have been revealed. These universal laws include multiple scales and degrees of complexity, and may be pervasive throughout species of localized to only a few. For example, a quite common form of learning is sensitization and habituation, among the most basic forms. These result in the animals increased or reduced response to a given stimulus after repeated exposures. These occur throughout the animal kingdom, from humans to single cells. For example, if you’re walking in a dark room and someone startles you, your reaction is likely to be more exaggerated than if you were startled in a well lit room. This is an example of sensitization, as the dark room exaggerates your response. The reciprocal of this can be observed in Prairie dogs. Upon hearing the sound of approaching human footsteps, the animals retreat into their holes. As this occurs multiple times, the prairie dogs learn the footsteps are no longer a threat, thus no longer retreating once heard again. These phenomena can be observed at the single cell level as well. Differentiated PC12 cells secrete decreasing amounts of norepinephrine as they are repetitively stimulated by concentrations of a potassium ion. These simple learning rules persist throughout an organism’s lifespan, as it experiences different types and degrees of stimuli. Alone, these simple rules can produce an astounding degree of complex behavior, but they are even more impressive when coupled with other mechanisms.
+Throughout the long studies of animal learning since the late 18th century, a large literature of general rules have been revealed. These universal laws include multiple scales and degrees of complexity, and may be pervasive throughout species of localized to only a few. For example, a quite common form of learning is sensitization and habituation, among the most basic forms. This results in the animals increased or reduced response to a given stimulus after repeated exposures. This occurs throughout the animal kingdom, from humans to single cells. For example, if you’re walking in a dark room and someone startles you, your reaction is likely to be more exaggerated than if you were startled in a well lit room. This is an example of sensitization, as the dark room exaggerates your response. The reciprocal of this can be observed in Prairie dogs. Upon hearing the sound of approaching human footsteps, the animals retreat into their holes. As this occurs multiple times, the prairie dogs learn the footsteps are no longer a threat, thus no longer retreating once heard again. These phenomena can be observed at the single cell level as well. Differentiated PC12 cells secrete decreasing amounts of norepinephrine as they are repetitively stimulated by concentrations of a potassium ion. These simple learning rules persist throughout an organism’s lifespan, as it experiences different types and degrees of stimuli. Alone, these simple rules can produce an astounding degree of complex behavior, but they are even more impressive when coupled with other mechanisms.
 
 Associative learning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -35,10 +73,6 @@ Organisms may not have these events structured in such a way where the reward is
 
 Associative pairs require repeated reinforcement to persist. If an organism learns that an area may be unsafe, but repeatedly sees it as safe afterwards, then the prior pairing will fade. However, if the stimulus reappears, then the organism will learn much more quickly than the first pairing, hinting that pairings never fully fade.
 
-.. 
-    Neural Mechanisms
-..
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-..
-    Stay tuned!
+.. rubric:: References
 
+.. [#f1] G. I. Parisi, R. Kemker, J. L. Part, C. Kanan, and S. Wermter, “Continual lifelong learning with neural networks: A review” Neural Networks, vol. 113, pp. 54–71, 2019.
