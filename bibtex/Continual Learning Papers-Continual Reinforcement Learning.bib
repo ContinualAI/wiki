@@ -1,14 +1,3 @@
-@article{nagabandi2019a,
-abstract = {Humans and animals can learn complex predictive models that allow them to accurately and reliably reason about real-world phenomena, and they can adapt such models extremely quickly in the face of unexpected changes. Deep neural network models allow us to represent very complex functions, but lack this capacity for rapid online adaptation. The goal in this paper is to develop a method for continual online learning from an incoming stream of data, using deep neural network models. We formulate an online learning procedure that uses stochastic gradient descent to update model parameters, and an expectation maximization algorithm with a Chinese restaurant process prior to develop and maintain a mixture of models to handle non-stationary task distributions. This allows for all models to be adapted as necessary, with new models instantiated for task changes and old models recalled when previously seen tasks are encountered again. Furthermore, we observe that meta-learning can be used to meta-train a model such that this direct online adaptation with SGD is effective, which is otherwise not the case for large function approximators. In this work, we apply our meta-learning for online learning (MOLe) approach to model-based reinforcement learning, where adapting the predictive model is critical for control; we demonstrate that MOLe outperforms alternative prior methods, and enables effective continuous adaptation in non-stationary task distributions such as varying terrains, motor failures, and unexpected disturbances. Videos available at: https://sites.google.com/Berkeley.edu/onlineviameta.},
-archivePrefix = {arXiv},
-arxivId = {1812.07671},
-author = {Nagabandi, Anusha and Finn, Chelsea and Levine, Sergey},
-eprint = {1812.07671},
-journal = {7th International Conference on Learning Representations, ICLR 2019},
-title = {{Deep online learning via meta-learning: Continual adaptation for model-based RL}},
-url = {https://arxiv.org/abs/1812.07671},
-year = {2019}
-}
 @article{Pan2019a,
 abstract = {Interference is a known problem when learning in online settings, such as continual learning or reinforcement learning. Interference occurs when updates, to improve performance for some inputs, degrades performance for others. Recent work has shown that sparse representations---where only a small percentage of units are active---can significantly reduce interference. Those works, however, relied on relatively complex regularization or meta-learning approaches, that have only been used offline in a pre-training phase. In our approach, we design an activation function that naturally produces sparse representations, and so is much more amenable to online training. The idea relies on the simple approach of binning, but overcomes the two key limitations of binning: zero gradients for the flat regions almost everywhere, and lost precision---reduced discrimination---due to coarse aggregation. We introduce a Leaky Tiling Activation (LTA) that provides non-negligible gradients and produces overlap between bins that improves discrimination. We empirically investigate both value-based and policy gradient reinforcement learning algorithms that use neural networks with LTAs, in classic discrete-action control environments and Mujoco continuous-action environments. We show that, with LTAs, learning is faster, with more stable policies, without needing target networks.},
 archivePrefix = {arXiv},
@@ -43,11 +32,11 @@ title = {{Progress & Compress: A scalable framework for continual learning}},
 url = {http://proceedings.mlr.press/v80/schwarz18a.html},
 year = {2018}
 }
-@misc{Rusu2016a,
+@article{Rusu2016a,
 abstract = {Learning to solve complex sequences of tasks—while both leveraging transfer and avoiding catastrophic forgetting—remains a key obstacle to achieving human-level intelligence. The progressive networks approach represents a step forward in this direction: they are immune to forgetting and can leverage prior knowledge via lateral connections to previously learned features. We evaluate this architecture extensively on a wide variety of reinforcement learning tasks (Atari and 3D maze games), and show that it outperforms common baselines based on pretraining and ﬁnetuning. Using a novel sensitivity measure, we demonstrate that transfer occurs at both low-level sensory and high-level control layers of the learned policy.},
 annote = {The authors rely on a separate feedforward network (column) for each task the model is trained on. Each column is connected through adaptive connections to all the previous ones. The weights of previous columns are frozen once trained. At inference time, given a known task label, the network choose the appropriate column to produce the output, thus preventing forgetting by design.},
 author = {Rusu, Andrei A and Rabinowitz, Neil C and Desjardins, Guillaume and Soyer, Hubert and Kirkpatrick, James and Kavukcuoglu, Koray and Pascanu, Razvan and Hadsell, Raia},
-booktitle = {arXiv: 1606.04671 [cs]},
+journal = {arXiv},
 keywords = {Computer Science - Machine Learning,[mnist],lifelong learning,modular,progressive},
 language = {en},
 mendeley-tags = {[mnist]},
@@ -125,4 +114,15 @@ booktitle = {Continual Learning and Deep Networks workshop at the Neural Informa
 title = {{Stable predictive representations with general value functions for continual learning}},
 url = {https://sites.ualberta.ca/$\sim$amw8/cldl.pdf},
 year = {2017}
+}
+@article{nagabandi2019a,
+abstract = {Humans and animals can learn complex predictive models that allow them to accurately and reliably reason about real-world phenomena, and they can adapt such models extremely quickly in the face of unexpected changes. Deep neural network models allow us to represent very complex functions, but lack this capacity for rapid online adaptation. The goal in this paper is to develop a method for continual online learning from an incoming stream of data, using deep neural network models. We formulate an online learning procedure that uses stochastic gradient descent to update model parameters, and an expectation maximization algorithm with a Chinese restaurant process prior to develop and maintain a mixture of models to handle non-stationary task distributions. This allows for all models to be adapted as necessary, with new models instantiated for task changes and old models recalled when previously seen tasks are encountered again. Furthermore, we observe that meta-learning can be used to meta-train a model such that this direct online adaptation with SGD is effective, which is otherwise not the case for large function approximators. In this work, we apply our meta-learning for online learning (MOLe) approach to model-based reinforcement learning, where adapting the predictive model is critical for control; we demonstrate that MOLe outperforms alternative prior methods, and enables effective continuous adaptation in non-stationary task distributions such as varying terrains, motor failures, and unexpected disturbances. Videos available at: https://sites.google.com/Berkeley.edu/onlineviameta.},
+archivePrefix = {arXiv},
+arxivId = {1812.07671},
+author = {Nagabandi, Anusha and Finn, Chelsea and Levine, Sergey},
+eprint = {1812.07671},
+journal = {7th International Conference on Learning Representations, ICLR 2019},
+title = {{Deep online learning via meta-learning: Continual adaptation for model-based RL}},
+url = {https://arxiv.org/abs/1812.07671},
+year = {2019}
 }
