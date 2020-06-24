@@ -22,7 +22,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) `
 
 Conference Workshops
 ----------------------------------
-
+- `Ro-man 2020 Workshop on Lifelong Learning for Long-term Human-Robot Interaction (LL4LHRI) <https://sites.google.com/view/ll4lhri2020/objectives-and-challenges>`_
 - `ICML 2020 Workshop on Lifelong Learning <https://lifelongml.github.io/>`_
 - `CVPR 2020 Workshop on Continual Learning in Computer Vision <https://sites.google.com/view/clvision2020>`_
 - `Cosyne 2019 Continual Learning <http://www.cosyne.org/c/index.php?title=Workshops2019_learning>`_
