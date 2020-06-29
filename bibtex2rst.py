@@ -100,6 +100,12 @@ showbib_template = """
     
 """
 
+def count_current_papers(main_bib_path):
+    with open(main_bib_path, 'r') as f:
+        papers = bibtexparser.load(f)
+    return len(papers.entries)
+
+
 def remove_mendeley_notice_from_files(filename):
     with open(filename, 'r') as fin:
         data = fin.read().splitlines(True)
@@ -202,6 +208,7 @@ bibtex_path = "bibtex"
 full_bib_db = "Continual Learning Papers.bib"
 template_file_path = "research_template.rst"
 tag2fill = "<TAG>"
+papercount2fill = "<PAPER_COUNT>"
 output_filename = "research.rst"
 # this respect also the order of the sections
 bib_files = [
@@ -372,7 +379,9 @@ for i, bibfile in enumerate(bib_files):
     else:
         str2injcet = str2injcet[:-1]
 
+template_str = template_str.replace(papercount2fill, "**Search among " + str(count_current_papers(full_bib_db)) + " papers!**")
 template_str = template_str.replace(tag2fill, str2injcet) + rst_end_str
+
 
 with open(output_filename, "w") as wf:
     wf.write(template_str)
