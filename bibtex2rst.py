@@ -100,8 +100,8 @@ showbib_template = """
     
 """
 
-def count_current_papers(main_bib_path):
-    with open(main_bib_path, 'r') as f:
+def count_current_papers(bibtex_path, main_bib_path):
+    with open(os.path.join(bibtex_path, main_bib_path), 'r') as f:
         papers = bibtexparser.load(f)
     return len(papers.entries)
 
@@ -206,6 +206,7 @@ def get_title(item):
 # settings ---------------------------------------------------------------------
 bibtex_path = "bibtex"
 full_bib_db = "Continual Learning Papers.bib"
+full_bib_db_path = full_bib_db
 template_file_path = "research_template.rst"
 tag2fill = "<TAG>"
 papercount2fill = "<PAPER_COUNT>"
@@ -303,6 +304,7 @@ tags2color = {
 
 remove_mendeley_notice_from_files(os.path.join(bibtex_path, full_bib_db))
 
+
 with open(os.path.join(bibtex_path, full_bib_db)) as bibtex_file:
     parser = BibTexParser()
     parser.customization = convert_to_unicode
@@ -379,7 +381,11 @@ for i, bibfile in enumerate(bib_files):
     else:
         str2injcet = str2injcet[:-1]
 
-template_str = template_str.replace(papercount2fill, "**Search among " + str(count_current_papers(full_bib_db)) + " papers!**")
+
+template_str = template_str.replace(papercount2fill, \
+        "**Search among " + str(count_current_papers(bibtex_path, full_bib_db_path)) + " papers!**"
+)
+
 template_str = template_str.replace(tag2fill, str2injcet) + rst_end_str
 
 
