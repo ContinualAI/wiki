@@ -1,15 +1,3 @@
-@article{Wang2019a,
-abstract = {Continual learning consists in incrementally training a model on a sequence of datasets and testing on the union of all datasets. In this paper, we examine continual learning for the problem of sound classification, in which we wish to refine already trained models to learn new sound classes. In practice one does not want to maintain all past training data and retrain from scratch, but naively updating a model with new data(sets) results in a degradation of already learned tasks, which is referred to as "catastrophic forgetting." We develop a generative replay procedure for generating training audio spectrogram data, in place of keeping older training datasets. We show that by incrementally refining a classifier with generative replay a generator that is 4% of the size of all previous training data matches the performance of refining the classifier keeping 20% of all previous training data. We thus conclude that we can extend a trained sound classifier to learn new classes without having to keep previously used datasets.},
-annote = {arXiv: 1906.00654},
-author = {Wang, Zhepei and Subakan, Cem and Tzinis, Efthymios and Smaragdis, Paris and Charlin, Laurent},
-journal = {arXiv},
-keywords = {Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio,Statistics - Machine Learning,[audio],audio,sequence,sequences,time series},
-mendeley-tags = {[audio]},
-month = {jun},
-title = {{Continual Learning of New Sound Classes using Generative Replay}},
-url = {http://arxiv.org/abs/1906.00654},
-year = {2019}
-}
 @article{Maltoni2018a,
 abstract = {It was recently shown that architectural, regularization and rehearsal strategies can be used to train deep models sequentially on a number of disjoint tasks without forgetting previously acquired knowledge. However, these strategies are still unsatisfactory if the tasks are not disjoint but constitute a single incremental task (e.g., class-incremental learning). In this paper we point out the differences between multi-task and single-incremental-task scenarios and show that well-known approaches such as LWF, EWC and SI are not ideal for incremental task scenarios. A new approach, denoted as AR1, combining architectural and regularization strategies is then speciﬁcally proposed. AR1 overhead (in terms of memory and computation) is very small thus making it suitable for online learning. When tested on CORe50 and iCIFAR-100, AR1 outperformed existing regularization strategies by a good margin.},
 annote = {Comment: 26 pages, 13 figures; v3: major revision (e.g. added Sec. 4.4), several typos and minor mistakes corrected
@@ -23,6 +11,18 @@ month = {jun},
 title = {{Continuous Learning in Single-Incremental-Task Scenarios}},
 url = {http://arxiv.org/abs/1806.08568},
 year = {2018}
+}
+@article{Wang2019a,
+abstract = {Continual learning consists in incrementally training a model on a sequence of datasets and testing on the union of all datasets. In this paper, we examine continual learning for the problem of sound classification, in which we wish to refine already trained models to learn new sound classes. In practice one does not want to maintain all past training data and retrain from scratch, but naively updating a model with new data(sets) results in a degradation of already learned tasks, which is referred to as "catastrophic forgetting." We develop a generative replay procedure for generating training audio spectrogram data, in place of keeping older training datasets. We show that by incrementally refining a classifier with generative replay a generator that is 4% of the size of all previous training data matches the performance of refining the classifier keeping 20% of all previous training data. We thus conclude that we can extend a trained sound classifier to learn new classes without having to keep previously used datasets.},
+annote = {arXiv: 1906.00654},
+author = {Wang, Zhepei and Subakan, Cem and Tzinis, Efthymios and Smaragdis, Paris and Charlin, Laurent},
+journal = {arXiv},
+keywords = {Computer Science - Machine Learning,Computer Science - Sound,Electrical Engineering and Systems Science - Audio,Statistics - Machine Learning,[audio],audio,sequence,sequences,time series},
+mendeley-tags = {[audio]},
+month = {jun},
+title = {{Continual Learning of New Sound Classes using Generative Replay}},
+url = {http://arxiv.org/abs/1906.00654},
+year = {2019}
 }
 @inproceedings{Schwarz2018a,
 abstract = {We introduce a conceptually simple and scalable framework for continual learning domains where tasks are learned sequentially. Our method is constant in the number of parameters and is designed to ...},
