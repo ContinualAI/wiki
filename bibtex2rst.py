@@ -318,7 +318,7 @@ str2injcet = ""
 rst_end_str = ""
 for i, bibfile in enumerate(bib_files):
 
-    sec_title = bibfile.split("-")[1][:-4] + " - " + papers_count[bibfile]
+    sec_title = bibfile.split("-")[1][:-4]
     with open(os.path.join(bibtex_path, bibfile)) as bibtex_file:
         parser = BibTexParser()
         parser.customization = convert_to_unicode
@@ -328,8 +328,10 @@ for i, bibfile in enumerate(bib_files):
         template_str = rf.read()
 
     str2injcet += sec_title + \
-                 "\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n" + \
+                 "\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n" + \
+                  "**" + papers_count[bibfile] + " papers" + "**\n\n" + \
                   sec_descriptions[i] + "\n\n"
+
     for item in sorted(
             bib_database.entries, key=lambda j: j['year'], reverse=True):
         # print(item)
