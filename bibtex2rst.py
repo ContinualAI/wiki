@@ -304,6 +304,10 @@ tags2color = {
 
 remove_mendeley_notice_from_files(os.path.join(bibtex_path, full_bib_db))
 
+papers_count = {}
+for bib_f in bib_files:
+    papers_count[bib_f] = str(count_current_papers(bibtex_path, bib_f))
+
 
 with open(os.path.join(bibtex_path, full_bib_db)) as bibtex_file:
     parser = BibTexParser()
@@ -314,7 +318,7 @@ str2injcet = ""
 rst_end_str = ""
 for i, bibfile in enumerate(bib_files):
 
-    sec_title = bibfile.split("-")[1][:-4]
+    sec_title = bibfile.split("-")[1][:-4] + " - " + papers_count[bibfile]
     with open(os.path.join(bibtex_path, bibfile)) as bibtex_file:
         parser = BibTexParser()
         parser.customization = convert_to_unicode
