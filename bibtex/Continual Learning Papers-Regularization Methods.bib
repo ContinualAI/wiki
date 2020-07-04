@@ -169,3 +169,27 @@ title = {{Learning without Memorizing}},
 url = {https://openaccess.thecvf.com/content_CVPR_2019/papers/Dhar_Learning_Without_Memorizing_CVPR_2019_paper.pdf},
 year = {2019}
 }
+@inproceedings{ahn2019a,
+abstract = {We introduce a new neural network-based continual learning algorithm, dubbed as Uncertainty-regularized Continual Learning (UCL), which builds on traditional Bayesian online learning framework with variational inference. We focus on two significant drawbacks of the recently proposed regularization-based methods: a) considerable additional memory cost for determining the per-weight regularization strengths and b) the absence of gracefully forgetting scheme, which can prevent performance degradation in learning new tasks. In this paper, we show UCL can solve these two problems by introducing a fresh interpretation on the Kullback-Leibler (KL) divergence term of the variational lower bound for Gaussian mean-field approximation. Based on the interpretation, we propose the notion of node-wise uncertainty, which drastically reduces the number of additional parameters for implementing per-weight regularization. Moreover, we devise two additional regularization terms that enforce stability by freezing important parameters for past tasks and allow plasticity by controlling the actively learning parameters for a new task. Through extensive experiments, we show UCL convincingly outperforms most of recent state-of-the-art baselines not only on popular supervised learning benchmarks, but also on challenging lifelong reinforcement learning tasks. The source code of our algorithm is available at https://github.com/csm9493/UCL.},
+author = {Ahn, Hongjoon and Cha, Sungmin and Lee, Donggyu and Moon, Taesup},
+booktitle = {NeurIPS},
+file = {::},
+keywords = {[bayes],[cifar],[mnist]},
+mendeley-tags = {[bayes],[cifar],[mnist]},
+pages = {4392--4402},
+title = {{Uncertainty-based Continual Learning with Adaptive Regularization}},
+year = {2019}
+}
+@article{Titsias2019a,
+abstract = {We introduce a novel approach for supervised continual learning based on approximate Bayesian inference over function space rather than the parameters of a deep neural network. We use a Gaussian process obtained by treating the weights of the last layer of a neural network as random and Gaussian distributed. Functional regularisation for continual learning naturally arises by applying the variational sparse GP inference method in a sequential fashion as new tasks are encountered. At each step of the process, a summary is constructed for the current task that consists of (i) inducing inputs and (ii) a posterior distribution over the function values at these inputs. This summary then regularises learning of future tasks, through Kullback-Leibler regularisation terms that appear in the variational lower bound, and reduces the effects of catastrophic forgetting. We fully develop the theory of the method and we demonstrate its effectiveness in classification datasets, such as Split-MNIST, Permuted-MNIST and Omniglot.},
+archivePrefix = {arXiv},
+arxivId = {1901.11356},
+author = {Titsias, Michalis K and Schwarz, Jonathan and Matthews, Alexander G de G and Pascanu, Razvan and Teh, Yee Whye},
+eprint = {1901.11356},
+journal = {arXiv},
+keywords = {[mnist],[omniglot]},
+mendeley-tags = {[mnist],[omniglot]},
+title = {{Functional Regularisation for Continual Learning using Gaussian Processes}},
+url = {http://arxiv.org/abs/1901.11356},
+year = {2019}
+}

@@ -1,3 +1,15 @@
+@inproceedings{Cossu2020a,
+abstract = {The ability to learn in dynamic, nonstationary environments without forgetting previous knowledge, also known as Continual Learning (CL), is a key enabler for scalable and trustworthy deployments of adaptive solutions. While the importance of continual learning is largely acknowledged in machine vision and reinforcement learning problems, this is mostly under-documented for sequence processing tasks. This work proposes a Recurrent Neural Network (RNN) model for CL that is able to deal with concept drift in input distribution without forgetting previously acquired knowledge. We also implement and test a popular CL approach, Elastic Weight Consolidation (EWC), on top of two different types of RNNs. Finally, we compare the performances of our enhanced architecture against EWC and RNNs on a set of standard CL benchmarks, adapted to the sequential data processing scenario. Results show the superior performance of our architecture and highlight the need for special solutions designed to address CL in RNNs.},
+annote = {An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading to the Gated Incremental Memory approach to overcome catastrophic forgetting.},
+author = {Cossu, Andrea and Carta, Antonio and Bacciu, Davide},
+booktitle = {Proceedings of the 2020 International Joint Conference on Neural Networks (IJCNN 2020)},
+keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Statistics - Machine Learning,[mnist],[rnn]},
+mendeley-tags = {[mnist],[rnn]},
+month = {apr},
+title = {{Continual Learning with Gated Incremental Memories for sequential data processing}},
+url = {http://arxiv.org/abs/2004.04077},
+year = {2020}
+}
 @inproceedings{Shen2019a,
 abstract = {Semantic slot filling is one of the major tasks in spoken language understanding (SLU). After a slot filling model is trained on pre-collected data, it is crucial to continually improve the model after deployment to learn users' new expressions. As the data amount grows, it becomes infeasible to either store such huge data and repeatedly retrain the model on all data or fine tune the model only on new data without forgetting old expressions. In this paper, we introduce a novel progressive slot filling model, ProgModel. ProgModel consists of a novel context gate that transfers previously learned knowledge to a small size expanded component; and meanwhile enables this new component to be fast trained to learn from new data. As such, ProgModel learns the new knowledge by only using new data at each time and meanwhile preserves the previously learned expressions. Our experiments show that ProgModel needs much less training time and smaller model size to outperform various model fine tuning competitors by up to 4.24% and 3.03% on two benchmark datasets.},
 author = {Shen, Yilin and Zeng, Xiangyu and Jin, Hongxia},
@@ -55,18 +67,6 @@ pages = {899--908},
 title = {{Reinforced continual learning}},
 url = {http://papers.nips.cc/paper/7369-reinforced-continual-learning},
 year = {2018}
-}
-@inproceedings{Cossu2020a,
-abstract = {The ability to learn in dynamic, nonstationary environments without forgetting previous knowledge, also known as Continual Learning (CL), is a key enabler for scalable and trustworthy deployments of adaptive solutions. While the importance of continual learning is largely acknowledged in machine vision and reinforcement learning problems, this is mostly under-documented for sequence processing tasks. This work proposes a Recurrent Neural Network (RNN) model for CL that is able to deal with concept drift in input distribution without forgetting previously acquired knowledge. We also implement and test a popular CL approach, Elastic Weight Consolidation (EWC), on top of two different types of RNNs. Finally, we compare the performances of our enhanced architecture against EWC and RNNs on a set of standard CL benchmarks, adapted to the sequential data processing scenario. Results show the superior performance of our architecture and highlight the need for special solutions designed to address CL in RNNs.},
-annote = {An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading to the Gated Incremental Memory approach to overcome catastrophic forgetting.},
-author = {Cossu, Andrea and Carta, Antonio and Bacciu, Davide},
-booktitle = {Proceedings of the 2020 International Joint Conference on Neural Networks (IJCNN 2020)},
-keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Statistics - Machine Learning,[mnist],[rnn]},
-mendeley-tags = {[mnist],[rnn]},
-month = {apr},
-title = {{Continual Learning with Gated Incremental Memories for sequential data processing}},
-url = {http://arxiv.org/abs/2004.04077},
-year = {2020}
 }
 @inproceedings{Luders2016a,
 abstract = {Continual learning, i.e. the ability to sequentially learn tasks without catastrophicforgetting of previously learned ones, is an important open challenge in machinelearning. In this paper we take a step in this direction by showing that the recentlyproposedEvolving Neural Turing Machine(ENTM) approach is able to performone-shot learningin a reinforcement learning task without catastrophic forgettingof previously stored associations.},
@@ -212,4 +212,26 @@ pages = {1696--1702},
 title = {{Neurogenesis-inspired dictionary learning: Online model adaption in a changing world}},
 url = {https://arxiv.org/abs/1701.06106},
 year = {2017}
+}
+@inproceedings{Hung2019a,
+abstract = {Continual lifelong learning is essential to many applications. In this paper, we propose a simple but effective approach to continual deep learning. Our approach leverages the principles of deep model compression, critical weights selection, and progressive networks expansion. By enforcing their integration in an iterative manner, we introduce an incremental learning method that is scalable to the number of sequential tasks in a continual learning process. Our approach is easy to implement and owns several favorable characteristics. First, it can avoid forgetting (i.e., learn new tasks while remembering all previous tasks). Second, it allows model expansion but can maintain the model compactness when handling sequential tasks. Besides, through our compaction and selection/expansion mechanism, we show that the knowledge accumulated through learning previous tasks is helpful to build a better model for the new tasks compared to training the models independently with tasks. Experimental results show that our approach can incrementally learn a deep model tackling multiple tasks without forgetting, while the model compactness is maintained with the performance more satisfiable than individual task training.},
+author = {Hung, Steven C Y and Tu, Cheng-Hao and Wu, Cheng-En and Chen, Chien-Hung and Chan, Yi-Ming and Chen, Chu-Song},
+booktitle = {NeurIPS},
+file = {::},
+keywords = {[cifar],[imagenet]},
+mendeley-tags = {[cifar],[imagenet]},
+pages = {13669--13679},
+title = {{Compacting, Picking and Growing for Unforgetting Continual Learning}},
+url = {http://papers.nips.cc/paper/9518-compacting-picking-and-growing-for-unforgetting-continual-learning.pdf},
+year = {2019}
+}
+@inproceedings{Valkov2018a,
+abstract = {We present a neurosymbolic framework for the lifelong learning of algorithmic tasks that mix perception and procedural reasoning. Reusing high-level concepts across domains and learning complex procedures are key challenges in lifelong learning. We show that a program synthesis approach that combines gradient descent with combinatorial search over programs can be a more effective response to these challenges than purely neural methods. Our framework, called HOUDINI, represents neural networks as strongly typed, differentiable functional programs that use symbolic higher-order combinators to compose a library of neural functions. Our learning algorithm consists of: (1) a symbolic program synthesizer that performs a type-directed search over parameterized programs, and decides on the library functions to reuse, and the architectures to combine them, while learning a sequence of tasks; and (2) a neural module that trains these programs using stochas-tic gradient descent. We evaluate HOUDINI on three benchmarks that combine perception with the algorithmic tasks of counting, summing, and shortest-path computation. Our experiments show that HOUDINI transfers high-level concepts more effectively than traditional transfer learning and progressive neural networks, and that the typed representation of networks significantly accelerates the search.},
+author = {Valkov, Lazar and Chaudhari, Dipak and Srivastava, Akash and Sutton, Charles and Chaudhuri, Swarat},
+booktitle = {NeurIPS},
+file = {::},
+pages = {8687--8698},
+title = {{HOUDINI: Lifelong Learning as Program Synthesis}},
+url = {http://papers.nips.cc/paper/8086-houdini-lifelong-learning-as-program-synthesis.pdf},
+year = {2018}
 }
