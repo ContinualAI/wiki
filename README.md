@@ -71,7 +71,9 @@ Wiki admins will periodically export the bibtex to keep the list updated. In cas
 * Don't forget to add the publication venue (Journal, Proceedings...). Use `Journal = arXiv` if the paper is a preprint.
 
 * CLAI Wiki uses a system based on categories. This can sometimes be limiting. In general, please consider to add the paper in the category which you consider the most relevant one. You can add the paper in at most **2** categories, if you believe that both are equally relevant.
- 
+
+* Please, do not add new tags if a similar category already exists.
+
 ----------------------------
 
 ### About ContinualAI
