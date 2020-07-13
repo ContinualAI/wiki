@@ -228,6 +228,7 @@ bib_files = [
     "Continual Learning Papers-Continual Meta Learning.bib",
     "Continual Learning Papers-Continual Reinforcement Learning.bib",
     "Continual Learning Papers-Continual Sequential Learning.bib",
+    "Continual Learning Papers-Continual Few-Shot Learning.bib",
     "Continual Learning Papers-Dissertation and Theses.bib",
     "Continual Learning Papers-Applications.bib",
     "Continual Learning Papers-Neuroscience.bib",
@@ -268,6 +269,7 @@ sec_descriptions = [
     "Reinforcement Learning.",
     "Here we maintain a list of all the papers related to the continual "
     "learning at the intersection with sequential learning.",
+    "Here we list the papers related to Few-Shot continual and incremental learning.",
     "In this section we maintain a list of all the dissertation and thesis "
     "produced on continual learning and related topics.",
     "In this section we maintain a list of all applicative papers "
@@ -280,6 +282,7 @@ sec_descriptions = [
     "one of the above sections."
 ]
 
+# 
 tags2color = {
     "framework": "Tomato",
     "som": "Cornsilk",
@@ -298,7 +301,8 @@ tags2color = {
     "hebbian": "#99C68E",
     "omniglot": "#FDD017",
     "bayes": "Violet",
-    "generative": "Maroon"
+    "generative": "Maroon",
+    "cubs": "#990099"
 }
 # ------------------------------------------------------------------------------
 
