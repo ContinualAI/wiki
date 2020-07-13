@@ -213,73 +213,74 @@ papercount2fill = "<PAPER_COUNT>"
 output_filename = "research.rst"
 # this respect also the order of the sections
 bib_files = [
-    "Continual Learning Papers-Classics.bib",
-    "Continual Learning Papers-Review Papers and Books.bib",
-    "Continual Learning Papers-Catastrophic Forgetting Studies.bib",
-    "Continual Learning Papers-Benchmarks.bib",
+    "Continual Learning Papers-Applications.bib",
     "Continual Learning Papers-Architectural Methods.bib",
-    "Continual Learning Papers-Regularization Methods.bib",
-    "Continual Learning Papers-Rehearsal Methods.bib",
-    "Continual Learning Papers-Generative Replay Methods.bib",
-    "Continual Learning Papers-Hybrid Methods.bib",
-    "Continual Learning Papers-Metrics and Evaluations.bib",
+    "Continual Learning Papers-Benchmarks.bib",
     "Continual Learning Papers-Bioinspired Methods.bib",
-    "Continual Learning Papers-Meta Continual Learning.bib",
+    "Continual Learning Papers-Catastrophic Forgetting Studies.bib",
+    "Continual Learning Papers-Classics.bib",
+    "Continual Learning Papers-Continual Few Shot Learning.bib",
     "Continual Learning Papers-Continual Meta Learning.bib",
     "Continual Learning Papers-Continual Reinforcement Learning.bib",
     "Continual Learning Papers-Continual Sequential Learning.bib",
-    "Continual Learning Papers-Continual Few-Shot Learning.bib",
     "Continual Learning Papers-Dissertation and Theses.bib",
-    "Continual Learning Papers-Applications.bib",
+    "Continual Learning Papers-Generative Replay Methods.bib",
+    "Continual Learning Papers-Hybrid Methods.bib",
+    "Continual Learning Papers-Meta Continual Learning.bib",
+    "Continual Learning Papers-Metrics and Evaluations.bib",
     "Continual Learning Papers-Neuroscience.bib",
-    "Continual Learning Papers-Robotics.bib",
-    "Continual Learning Papers-Others.bib"
+    "Continual Learning Papers-Others.bib",
+    "Continual Learning Papers-Regularization Methods.bib",
+    "Continual Learning Papers-Rehearsal Methods.bib",
+    "Continual Learning Papers-Review Papers and Books.bib",
+    "Continual Learning Papers-Robotics.bib"
+
 ]
 sec_descriptions = [
-    "In this section you'll find pioneering and classic continual learning "
-    "papers. We recommend to read all the papers in this section for a "
-    "good background on current continual deep learning developments.",
-    "In this section we collect all the main review papers and books on the "
-    "subject. These may constitute a solid starting point for "
-    "continual learning newcomers.",
+    "In this section we maintain a list of all applicative papers "
+    "produced on continual learning and related topics.",
+    "In this section we collect all the papers introducing a continual "
+    "learning strategy employing some architectural methods.",
+    "In this section we list all the papers related to new benchmarks "
+    "proposals for continual learning and related topics. ",
+    "In this section we list all the papers related to bioinspired continual "
+    "learning approaches.",
     "In this section we list all the major contributions trying to understand "
     "catastrophic forgetting and its implication in machines that learn "
     "continually.",
-    "In this section we list all the papers related to new benchmarks "
-    "proposals for continual learning and related topics. ",
-    "In this section we collect all the papers introducing a continual "
-    "learning strategy employing some architectural methods.",
-    "In this section we collect all the papers introducing a continual "
-    "learning strategy employing some regularization methods.",
-    "In this section we collect all the papers introducing a continual "
-    "learning strategy employing some rehearsal methods.",
-    "In this section we collect all the papers introducing a continual "
-    "learning strategy employing some generative replay methods.",
-    "In this section we collect all the papers introducing a continual "
-    "learning strategy employing some hybrid methods.",
-    "In this section we list all the papers related to the continual learning "
-    "evalution protocols and metrics.",
-    "In this section we list all the papers related to bio-inspired continual "
-    "learning approaches.",
-    "In this section we list all the papers related to the meta-continual "
-    "learning.",
+    "In this section you'll find pioneering and classic continual learning "
+    "papers. We recommend to read all the papers in this section for a "
+    "good background on current continual deep learning developments.",
+    "Here we list the papers related to Few-Shot continual and incremental learning.",
     "In this section we list all the papers related to the continual "
     "meta-learning.",
     "In this section we list all the papers related to the continual "
     "Reinforcement Learning.",
     "Here we maintain a list of all the papers related to the continual "
     "learning at the intersection with sequential learning.",
-    "Here we list the papers related to Few-Shot continual and incremental learning.",
     "In this section we maintain a list of all the dissertation and thesis "
     "produced on continual learning and related topics.",
-    "In this section we maintain a list of all applicative papers "
-    "produced on continual learning and related topics.",
+    "In this section we collect all the papers introducing a continual "
+    "learning strategy employing some generative replay methods.",
+    "In this section we collect all the papers introducing a continual "
+    "learning strategy employing some hybrid methods, mixing different strategies.",
+    "In this section we list all the papers related to the meta-continual "
+    "learning.",
+    "In this section we list all the papers related to the continual learning "
+    "evalution protocols and metrics.",
     "In this section we maintain a list of all Neuroscience papers "
     "that can be related (and useful) for continual machine learning.",
-    "In this section we maintain a list of all Robotics papers "
-    "that can be related to continual learning.",
     "In this section we list all the other papers not appearing in at least "
-    "one of the above sections."
+    "one of the above sections.",
+    "In this section we collect all the papers introducing a continual "
+    "learning strategy employing some regularization methods.",
+    "In this section we collect all the papers introducing a continual "
+    "learning strategy employing some rehearsal methods.",
+    "In this section we collect all the main review papers and books on "
+    "continual learning and related subjects. These may constitute a solid "
+    "starting point for continual learning newcomers.",
+    "In this section we maintain a list of all Robotics papers "
+    "that can be related to continual learning."
 ]
 
 # 
