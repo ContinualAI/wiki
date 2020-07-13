@@ -30,9 +30,8 @@ Principal Maintainer
 Other Contributors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Here we list the main contributors based on the GitHub ranking so far:
-
+Here we list the main contributors:
+- Ali Ayub
+- Fabio Cermelli
 - `Vincenzo Lomonaco <http://vincenzolomonaco.com>`_
-- `German I. Parisi <https://sites.google.com/view/giparisi/home>`_
-- `Timothee Lesort <https://tlesort.github.io>`_
-- `Lorenzo Pellegrini <https://www.unibo.it/sitoweb/l.pellegrini>`_
+- Simon Ouellette
