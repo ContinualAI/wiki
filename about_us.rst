@@ -33,5 +33,8 @@ Other Contributors
 Here we list the main contributors:
 - Ali Ayub
 - Fabio Cermelli
-- `Vincenzo Lomonaco <http://vincenzolomonaco.com>`_
+- Timothée Lesort
+- Vincenzo Lomonaco
 - Simon Ouellette
+- German Parisi
+- Lorenzo Pellegrini
