@@ -30,7 +30,8 @@ Principal Maintainer
 Other Contributors
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Here we list the main contributors:
+Here we list the main contributors (alphabetical order):
+
 - Ali Ayub
 - Fabio Cermelli
 - Timothée Lesort
@@ -38,3 +39,4 @@ Here we list the main contributors:
 - Simon Ouellette
 - German Parisi
 - Lorenzo Pellegrini
+
