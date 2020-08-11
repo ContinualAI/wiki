@@ -1,14 +1,16 @@
 @article{ehret2020a,
 abstract = {The last decade has seen a surge of interest in continual learning (CL), and a variety of methods have been developed to alleviate catastrophic forgetting. However, most prior work has focused on tasks with static data, while CL on sequential data has remained largely unexplored. Here we address this gap in two ways. First, we evaluate the performance of established CL methods when applied to recurrent neural networks (RNNs). We primarily focus on elastic weight consolidation, which is limited by a stability-plasticity trade-off, and explore the particularities of this trade-off when using sequential data. We show that high working memory requirements, but not necessarily sequence length, lead to an increased need for stability at the cost of decreased performance on subsequent tasks. Second, to overcome this limitation we employ a recent method based on hypernetworks and apply it to RNNs to address catastrophic forgetting on sequential data. By generating the weights of a main RNN in a task-dependent manner, our approach disentangles stability and plasticity, and outperforms alternative methods in a range of experiments. Overall, our work provides several key insights on the differences between CL in feedforward networks and in RNNs, while offering a novel solution to effectively tackle CL on sequential data.},
 archivePrefix = {arXiv},
-arxivId = {2006.12109v1},
-author = {Ehret, Benjamin and Henning, Christian and Cervera, Maria R and Meulemans, Alexander and {Von Oswald}, Johannes and Grewe, Benjamin F},
-eprint = {2006.12109v1},
+arxivId = {2006.12109},
+author = {Ehret, Benjamin and Henning, Christian and Cervera, Maria R and Meulemans, Alexander and von Oswald, Johannes and Grewe, Benjamin F},
+eprint = {2006.12109},
 file = {::},
 journal = {arXiv},
 keywords = {[audio],[rnn]},
 mendeley-tags = {[audio],[rnn]},
+month = {jun},
 title = {{Continual Learning in Recurrent Neural Networks with Hypernetworks}},
+url = {http://arxiv.org/abs/2006.12109},
 year = {2020}
 }
 @article{smith2020a,
@@ -60,6 +62,7 @@ file = {::},
 keywords = {[mnist],[rnn]},
 mendeley-tags = {[mnist],[rnn]},
 title = {{Overcoming Catastrophic interference using conceptor-aided backpropagation}},
+url = {https://openreview.net/pdf?id=B1al7jg0b},
 year = {2018}
 }
 @inproceedings{Aljundi2019,
@@ -68,21 +71,9 @@ booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVP
 keywords = {[vision]},
 mendeley-tags = {[vision]},
 month = {jun},
-publisher = {Aljundi2019b},
 title = {{Task-Free Continual Learning}},
+url = {https://openaccess.thecvf.com/content{\_}CVPR{\_}2019/papers/Aljundi{\_}Task-Free{\_}Continual{\_}Learning{\_}CVPR{\_}2019{\_}paper.pdf},
 year = {2019}
-}
-@inproceedings{Lopez-Paz2017a,
-abstract = {One major obstacle towards AI is the poor ability of models to solve new problems quicker, and without forgetting previously acquired knowledge. To better understand this issue, we study the problem of continual learning, where the model observes, once and one by one, examples concerning a sequence of tasks. First, we propose a set of metrics to evaluate models learning over a continuum of data. These metrics characterize models not only by their test accuracy, but also in terms of their ability to transfer knowledge across tasks. Second, we propose a model for continual learning, called Gradient Episodic Memory (GEM) that alleviates forgetting, while allowing beneficial transfer of knowledge to previous tasks. Our experiments on variants of the MNIST and CIFAR-100 datasets demonstrate the strong performance of GEM when compared to the state-of-the-art.},
-annote = {Comment: Published at NIPS 2017
-arXiv: 1706.08840},
-author = {Lopez-Paz, David and Ranzato, Marc'Aurelio},
-booktitle = {NIPS},
-keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,[cifar],[mnist],gem},
-mendeley-tags = {[cifar],[mnist]},
-title = {{Gradient Episodic Memory for Continual Learning}},
-url = {http://arxiv.org/abs/1706.08840},
-year = {2017}
 }
 @inproceedings{Chaudhry2019a,
 abstract = {In lifelong learning, the learner is presented with a sequence of tasks, incrementally building a data-driven prior which may be leveraged to speed up learning of a new task. In this work, we investigate the efficiency of current lifelong approaches, in terms of sample complexity, computational and memory cost. Towards this end, we first introduce a new and a more realistic evaluation protocol, whereby learners observe each example only once and hyper-parameter selection is done on a small and disjoint set of tasks, which is not used for the actual learning experience and evaluation. Second, we introduce a new metric measuring how quickly a learner acquires a new skill. Third, we propose an improved version of GEM (Lopez-Paz {\&} Ranzato, 2017), dubbed Averaged GEM (A-GEM), which enjoys the same or even better performance as GEM, while being almost as computationally and memory efficient as EWC (Kirkpatrick et al., 2016) and other regularization-based methods. Finally, we show that all algorithms including A-GEM can learn even more quickly if they are provided with task descriptors specifying the classification tasks under consideration. Our experiments on several standard lifelong learning benchmarks demonstrate that A-GEM has the best trade-off between accuracy and efficiency.},
@@ -97,6 +88,18 @@ title = {{Efficient Lifelong Learning with A-GEM}},
 url = {http://arxiv.org/abs/1812.00420},
 year = {2019}
 }
+@inproceedings{Lopez-Paz2017a,
+abstract = {One major obstacle towards AI is the poor ability of models to solve new problems quicker, and without forgetting previously acquired knowledge. To better understand this issue, we study the problem of continual learning, where the model observes, once and one by one, examples concerning a sequence of tasks. First, we propose a set of metrics to evaluate models learning over a continuum of data. These metrics characterize models not only by their test accuracy, but also in terms of their ability to transfer knowledge across tasks. Second, we propose a model for continual learning, called Gradient Episodic Memory (GEM) that alleviates forgetting, while allowing beneficial transfer of knowledge to previous tasks. Our experiments on variants of the MNIST and CIFAR-100 datasets demonstrate the strong performance of GEM when compared to the state-of-the-art.},
+annote = {Comment: Published at NIPS 2017
+arXiv: 1706.08840},
+author = {Lopez-Paz, David and Ranzato, Marc'Aurelio},
+booktitle = {NIPS},
+keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,[cifar],[mnist],gem},
+mendeley-tags = {[cifar],[mnist]},
+title = {{Gradient Episodic Memory for Continual Learning}},
+url = {http://arxiv.org/abs/1706.08840},
+year = {2017}
+}
 @inproceedings{Rebuffi2017a,
 author = {Rebuffi, Sylvestre-Alvise and Kolesnikov, Alexander and Sperl, Georg and Lampert, Christoph H},
 booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
@@ -104,6 +107,7 @@ keywords = {[cifar]},
 mendeley-tags = {[cifar]},
 month = {jul},
 title = {{iCaRL: Incremental Classifier and Representation Learning}},
+url = {http://openaccess.thecvf.com/content{\_}cvpr{\_}2017/papers/Rebuffi{\_}iCaRL{\_}Incremental{\_}Classifier{\_}CVPR{\_}2017{\_}paper.pdf},
 year = {2017}
 }
 @inproceedings{Aljundi2019d,
@@ -175,7 +179,7 @@ title = {{Online Continual Learning on Sequences}},
 url = {http://arxiv.org/abs/2003.09114},
 year = {2020}
 }
-@inproceedings{Schak2019a,
+@incollection{Schak2019a,
 abstract = {We present a systematic study of Catastrophic Forgetting (CF), i.e., the abrupt loss of previously acquired knowledge, when retraining deep recurrent LSTM networks with new samples. CF has recently received renewed attention in the case of feed-forward DNNs, and this article is the first work that aims to rigorously establish whether deep LSTM networks are afflicted by CF as well, and to what degree. In order to test this fully, training is conducted using a wide variety of high-dimensional image-based sequence classification tasks derived from established visual classification benchmarks (MNIST, Devanagari, FashionMNIST and EMNIST). We find that the CF effect occurs universally, without exception, for deep LSTM-based sequence classifiers, regardless of the construction and provenance of sequences. This leads us to conclude that LSTMs, just like DNNs, are fully affected by CF, and that further research work needs to be conducted in order to determine how to avoid this effect (which is not a goal of this study).},
 address = {Cham},
 author = {Schak, Monika and Gepperth, Alexander},
@@ -190,6 +194,7 @@ pages = {714--728},
 publisher = {Springer International Publishing},
 series = {Lecture Notes in Computer Science},
 title = {{A Study on Catastrophic Forgetting in Deep LSTM Networks}},
+url = {http://link.springer.com/10.1007/978-3-030-30484-3{\_}56},
 year = {2019}
 }
 @inproceedings{Cossu2020a,
