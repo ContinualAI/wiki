@@ -1569,9 +1569,77 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 </div>
 <div class="section" id="architectural-methods">
 <h3>Architectural Methods<a class="headerlink" href="#architectural-methods" title="Permalink to this headline">¶</a></h3>
-<p><strong>23 papers</strong></p>
+<p><strong>24 papers</strong></p>
 <p>In this section we collect all the papers introducing a continual learning strategy employing some architectural methods.</p>
 <ul class="simple">
+<li><p><a class="reference external" href="https://arxiv.org/abs/2007.07617">SpaceNet: Make Free Space For Continual Learning</a> by Ghada Sokar, Decebal Constantin Mocanu and Mykola Pechenizkiy. <em>arXiv</em>, 2020.  <br>
+<button style="font-size:75%; line-height:15px" onclick="sokar2020aArchitectural_MethodsFunction()" id="sokar2020aArchitectural_Methods_btt">Bib</button>
+<button style="font-size:75%; line-height:15px" onclick="sokar2020aArchitectural_MethodsFunction2()" id="sokar2020aArchitectural_Methods_btt2">Abstract</button>
+<button style="font-size:75%; line-height:15px" onclick="sokar2020aArchitectural_MethodsFunction3()" id="sokar2020aArchitectural_Methods_btt3">Notes</button>
+
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="sokar2020aArchitectural_Methods_more" style="display: none">
+    @article{sokar2020a,<br> author = {Sokar, Ghada and Mocanu, Decebal Constantin and Pechenizkiy, Mykola},<br> journal = {arXiv},<br> title = {SpaceNet: Make Free Space For Continual Learning},<br> url = {https://arxiv.org/abs/2007.07617},<br> year = {2020}<br>}<br>
+</span></p>
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="sokar2020aArchitectural_Methods_more2" style="display: none">
+    The continual learning (CL) paradigm aims to enable neural networks to learn tasks continually in a sequential fashion. The fundamental challenge in this learning paradigm is catastrophic forgetting previously learned tasks when the model is optimized for a new task, especially when their data is not accessible. Current architectural-based methods aim at alleviating the catastrophic forgetting problem but at the expense of expanding the capacity of the model. Regularization-based methods maintain a fixed model capacity; however, previous studies showed the huge performance degradation of these methods when the task identity is not available during inference (e.g. class incremental learning scenario). In this work, we propose a novel architectural-based method referred as SpaceNet for class incremental learning scenario where we utilize the available fixed capacity of the model intelligently. SpaceNet trains sparse deep neural networks from scratch in an adaptive way that compresses the sparse connections of each task in a compact number of neurons. The adaptive training of the sparse connections results in sparse representations that reduce the interference between the tasks. Experimental results show the robustness of our proposed method against catastrophic forgetting old tasks and the efficiency of SpaceNet in utilizing the available capacity of the model, leaving space for more tasks to be learned. In particular, when SpaceNet is tested on the well-known benchmarks for CL: split MNIST, split Fashion-MNIST, and CIFAR-10/100, it outperforms regularization-based methods by a big performance gap. Moreover, it achieves better performance than architectural-based methods without model expansion and achieved comparable results with rehearsal-based methods, while offering a huge memory reduction.
+</span></p>
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="sokar2020aArchitectural_Methods_more3" style="display: none">
+    N.A.
+</span></p>
+<script>
+    function sokar2020aArchitectural_MethodsFunction() {
+      var moreText = document.getElementById("sokar2020aArchitectural_Methods_more");
+      var moreText2 = document.getElementById("sokar2020aArchitectural_Methods_more2");
+      var moreText3 = document.getElementById("sokar2020aArchitectural_Methods_more3");
+      var btnText = document.getElementById("sokar2020aArchitectural_Methods_btt");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Bib";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Bib";
+        moreText.style.display = "none";
+      }
+      moreText2.style.display = "none";
+      moreText3.style.display = "none";
+    }
+</script>
+<script>
+    function sokar2020aArchitectural_MethodsFunction2() {
+      var moreText = document.getElementById("sokar2020aArchitectural_Methods_more2");
+      var moreText1 = document.getElementById("sokar2020aArchitectural_Methods_more");
+      var moreText3 = document.getElementById("sokar2020aArchitectural_Methods_more3");
+      var btnText = document.getElementById("sokar2020aArchitectural_Methods_btt2");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Abstract";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Abstract";
+        moreText.style.display = "none";
+      }
+      moreText1.style.display = "none";
+      moreText3.style.display = "none";
+    }
+</script>
+<script>
+    function sokar2020aArchitectural_MethodsFunction3() {
+      var moreText = document.getElementById("sokar2020aArchitectural_Methods_more3");
+      var moreText1 = document.getElementById("sokar2020aArchitectural_Methods_more");
+      var moreText2 = document.getElementById("sokar2020aArchitectural_Methods_more2");
+      var btnText = document.getElementById("sokar2020aArchitectural_Methods_btt3");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Notes";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Notes";
+        moreText.style.display = "none";
+      }
+      moreText1.style.display = "none";
+      moreText2.style.display = "none";
+    }
+</script></p></li>
 <li><p><a class="reference external" href="https://openreview.net/forum?id=Hklso24Kwr">Continual Learning with Adaptive Weights (CLAW)</a> by Tameem Adel, Han Zhao and Richard E Turner. <em>International Conference on Learning Representations</em>, 2020. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span> <span style='background-color:#FDD017; padding: 2px; border-radius:4px; border: 1px solid black;'>[omniglot]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="adel2020aArchitectural_MethodsFunction()" id="adel2020aArchitectural_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="adel2020aArchitectural_MethodsFunction2()" id="adel2020aArchitectural_Methods_btt2">Abstract</button>
@@ -2048,13 +2116,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Continual Unsupervised Representation Learning by Dushyant Rao, Francesco Visin, Andrei A Rusu, Yee Whye Teh, Razvan Pascanu and Raia Hadsell. <em>NeurIPS</em>, 2019. <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span> <span style='background-color:#FDD017; padding: 2px; border-radius:4px; border: 1px solid black;'>[omniglot]</span>  <br>
+<li><p><a class="reference external" href="https://papers.nips.cc/paper/8981-continual-unsupervised-representation-learning.pdf">Continual Unsupervised Representation Learning</a> by Dushyant Rao, Francesco Visin, Andrei A Rusu, Yee Whye Teh, Razvan Pascanu and Raia Hadsell. <em>NeurIPS</em>, 2019. <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span> <span style='background-color:#FDD017; padding: 2px; border-radius:4px; border: 1px solid black;'>[omniglot]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="rao2019aArchitectural_MethodsFunction()" id="rao2019aArchitectural_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="rao2019aArchitectural_MethodsFunction2()" id="rao2019aArchitectural_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="rao2019aArchitectural_MethodsFunction3()" id="rao2019aArchitectural_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="rao2019aArchitectural_Methods_more" style="display: none">
-    @inproceedings{rao2019a,<br> author = {Rao, Dushyant and Visin, Francesco and Rusu, Andrei A and Teh, Yee Whye and Pascanu, Razvan and Hadsell, Raia},<br> booktitle = {NeurIPS},<br> file = {::},<br> keywords = {[mnist],[omniglot]},<br> mendeley-tags = {[mnist],[omniglot]},<br> title = {Continual Unsupervised Representation Learning},<br> year = {2019}<br>}<br>
+    @inproceedings{rao2019a,<br> author = {Rao, Dushyant and Visin, Francesco and Rusu, Andrei A and Teh, Yee Whye and Pascanu, Razvan and Hadsell, Raia},<br> booktitle = {NeurIPS},<br> file = {::},<br> keywords = {[mnist],[omniglot]},<br> mendeley-tags = {[mnist],[omniglot]},<br> title = {Continual Unsupervised Representation Learning},<br> url = {https://papers.nips.cc/paper/8981-continual-unsupervised-representation-learning.pdf},<br> year = {2019}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="rao2019aArchitectural_Methods_more2" style="display: none">
     Continual learning aims to improve the ability of modern learning systems to deal with non-stationary distributions, typically by attempting to learn a series of tasks sequentially. Prior art in the field has largely considered supervised or reinforcement learning tasks, and often assumes full knowledge of task labels and boundaries. In this work, we propose an approach (CURL) to tackle a more general problem that we will refer to as unsupervised continual learning. The focus is on learning representations without any knowledge about task identity, and we explore scenarios when there are abrupt changes between tasks, smooth transitions from one task to another, or even when the data is shuffled. The proposed approach performs task inference directly within the model, is able to dynamically expand to capture new concepts over its lifetime, and incorporates additional rehearsal-based techniques to deal with catastrophic forgetting. We demonstrate the efficacy of CURL in an unsupervised learning setting with MNIST and Omniglot, where the lack of labels ensures no information is leaked about the task. Further, we demonstrate strong performance compared to prior art in an i.i.d setting, or when adapting the technique to supervised tasks such as incremental class learning.
@@ -2184,13 +2252,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>A Progressive Model to Enable Continual Learning for Semantic Slot Filling by Yilin Shen, Xiangyu Zeng and Hongxia Jin. <em>Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing</em>, 1279–1284, 2019. <span style='background-color:BlueViolet; padding: 2px; border-radius:4px; border: 1px solid black;'>[nlp]</span>  <br>
+<li><p><a class="reference external" href="https://www.aclweb.org/anthology/D19-1126.pdf">A Progressive Model to Enable Continual Learning for Semantic Slot Filling</a> by Yilin Shen, Xiangyu Zeng and Hongxia Jin. <em>Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing</em>, 1279–1284, 2019. <span style='background-color:BlueViolet; padding: 2px; border-radius:4px; border: 1px solid black;'>[nlp]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Shen2019aArchitectural_MethodsFunction()" id="Shen2019aArchitectural_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Shen2019aArchitectural_MethodsFunction2()" id="Shen2019aArchitectural_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Shen2019aArchitectural_MethodsFunction3()" id="Shen2019aArchitectural_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Shen2019aArchitectural_Methods_more" style="display: none">
-    @inproceedings{Shen2019a,<br> author = {Shen, Yilin and Zeng, Xiangyu and Jin, Hongxia},<br> booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing},<br> file = {::},<br> keywords = {[nlp]},<br> mendeley-tags = {[nlp]},<br> pages = {1279--1284},<br> publisher = {Association for Computational Linguistics},<br> title = {A Progressive Model to Enable Continual Learning for Semantic Slot Filling},<br> year = {2019}<br>}<br>
+    @inproceedings{Shen2019a,<br> author = {Shen, Yilin and Zeng, Xiangyu and Jin, Hongxia},<br> booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing},<br> file = {::},<br> keywords = {[nlp]},<br> mendeley-tags = {[nlp]},<br> pages = {1279--1284},<br> publisher = {Association for Computational Linguistics},<br> title = {A Progressive Model to Enable Continual Learning for Semantic Slot Filling},<br> url = {https://www.aclweb.org/anthology/D19-1126.pdf},<br> year = {2019}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Shen2019aArchitectural_Methods_more2" style="display: none">
     Semantic slot filling is one of the major tasks in spoken language understanding (SLU). After a slot filling model is trained on pre-collected data, it is crucial to continually improve the model after deployment to learn users' new expressions. As the data amount grows, it becomes infeasible to either store such huge data and repeatedly retrain the model on all data or fine tune the model only on new data without forgetting old expressions. In this paper, we introduce a novel progressive slot filling model, ProgModel. ProgModel consists of a novel context gate that transfers previously learned knowledge to a small size expanded component; and meanwhile enables this new component to be fast trained to learn from new data. As such, ProgModel learns the new knowledge by only using new data at each time and meanwhile preserves the previously learned expressions. Our experiments show that ProgModel needs much less training time and smaller model size to outperform various model fine tuning competitors by up to 4.24% and 3.03% on two benchmark datasets.
@@ -2531,7 +2599,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <button style="font-size:75%; line-height:15px" onclick="xu2018aArchitectural_MethodsFunction3()" id="xu2018aArchitectural_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="xu2018aArchitectural_Methods_more" style="display: none">
-    @inproceedings{xu2018a,<br> author = {He, Xu and Jaeger, Herbert},<br> booktitle = {ICLR},<br> file = {::},<br> keywords = {[mnist],[rnn]},<br> mendeley-tags = {[mnist],[rnn]},<br> title = {Overcoming Catastrophic interference using conceptor-aided backpropagation},<br> year = {2018}<br>}<br>
+    @inproceedings{xu2018a,<br> author = {He, Xu and Jaeger, Herbert},<br> booktitle = {ICLR},<br> file = {::},<br> keywords = {[mnist],[rnn]},<br> mendeley-tags = {[mnist],[rnn]},<br> title = {Overcoming Catastrophic interference using conceptor-aided backpropagation},<br> url = {https://openreview.net/pdf?id=B1al7jg0b},<br> year = {2018}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="xu2018aArchitectural_Methods_more2" style="display: none">
     Most artificial intelligence models are limited in their ability to solve new tasks faster, without forgetting previously acquired knowledge. The recently emerging paradigm of continual learning aims to solve this issue, in which the model learns various tasks in a sequential fashion. In this work, a novel approach for continual learning is proposed, which searches for the best neural architecture for each coming task via sophisticatedly designed reinforcement learning strategies. We name it as Reinforced Continual Learning. Our method not only has good performance on preventing catastrophic forgetting but also fits new tasks well. The experiments on sequential classification tasks for variants of MNIST and CIFAR-100 datasets demonstrate that the proposed approach outperforms existing continual learning alternatives for deep networks.
@@ -2661,13 +2729,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Lifelong Learning With Dynamically Expandable Networks by Jaehong Yoon, Eunho Yang, Jeongtae Lee and Sung Ju Hwang. <em>ICLR</em>, 11, 2018. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span> <span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>  <br>
+<li><p><a class="reference external" href="https://arxiv.org/abs/1708.01547">Lifelong Learning With Dynamically Expandable Networks</a> by Jaehong Yoon, Eunho Yang, Jeongtae Lee and Sung Ju Hwang. <em>ICLR</em>, 11, 2018. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span> <span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Yoon2018Architectural_MethodsFunction()" id="Yoon2018Architectural_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Yoon2018Architectural_MethodsFunction2()" id="Yoon2018Architectural_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Yoon2018Architectural_MethodsFunction3()" id="Yoon2018Architectural_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Yoon2018Architectural_Methods_more" style="display: none">
-    @inproceedings{Yoon2018,<br> annote = {The authors propose a method to evaluate the importance of each neuron in the network through the use of sparse connections. The network is then expanded based on the neuron importance for each task.},<br> author = {Yoon, Jaehong and Yang, Eunho and Lee, Jeongtae and Hwang, Sung Ju},<br> booktitle = {ICLR},<br> keywords = {[cifar],[mnist],[sparsity],disadvantages,lifelong learning,modular,progressive},<br> language = {en},<br> mendeley-tags = {[cifar],[mnist],[sparsity]},<br> pages = {11},<br> title = {Lifelong Learning With Dynamically Expandable Networks},<br> year = {2018}<br>}<br>
+    @inproceedings{Yoon2018,<br> annote = {The authors propose a method to evaluate the importance of each neuron in the network through the use of sparse connections. The network is then expanded based on the neuron importance for each task.},<br> author = {Yoon, Jaehong and Yang, Eunho and Lee, Jeongtae and Hwang, Sung Ju},<br> booktitle = {ICLR},<br> keywords = {[cifar],[mnist],[sparsity],disadvantages,lifelong learning,modular,progressive},<br> language = {en},<br> mendeley-tags = {[cifar],[mnist],[sparsity]},<br> pages = {11},<br> title = {Lifelong Learning With Dynamically Expandable Networks},<br> url = {https://arxiv.org/abs/1708.01547},<br> year = {2018}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Yoon2018Architectural_Methods_more2" style="display: none">
     We propose a novel deep network architecture for lifelong learning which we refer to as Dynamically Expandable Network (DEN), that can dynamically decide its network capacity as it trains on a sequence of tasks, to learn a compact overlapping knowledge sharing structure among tasks. DEN is efﬁciently trained in an online manner by performing selective retraining, dynamically expands network capacity upon arrival of each task with only the necessary number of units, and effectively prevents semantic drift by splitting/duplicating units and timestamping them. We validate DEN on multiple public datasets under lifelong learning scenarios, on which it not only signiﬁcantly outperforms existing lifelong learning methods for deep networks, but also achieves the same level of performance as the batch counterparts with substantially fewer number of parameters. Further, the obtained network ﬁne-tuned on all tasks obtained siginﬁcantly better performance over the batch models, which shows that it can be used to estimate the optimal network structure even when all tasks are available in the ﬁrst place.
@@ -3069,13 +3137,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>A self-organising network that grows when required by Stephen Marsland, Jonathan Shapiro and Ulrich Nehmzow. <em>Neural Networks</em>, 1041–1058, 2002. <span style='background-color:Cornsilk; padding: 2px; border-radius:4px; border: 1px solid black;'>[som]</span>  <br>
+<li><p><a class="reference external" href="https://linkinghub.elsevier.com/retrieve/pii/S0893608002000783">A self-organising network that grows when required</a> by Stephen Marsland, Jonathan Shapiro and Ulrich Nehmzow. <em>Neural Networks</em>, 1041–1058, 2002. <span style='background-color:Cornsilk; padding: 2px; border-radius:4px; border: 1px solid black;'>[som]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="marsland2002aArchitectural_MethodsFunction()" id="marsland2002aArchitectural_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="marsland2002aArchitectural_MethodsFunction2()" id="marsland2002aArchitectural_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="marsland2002aArchitectural_MethodsFunction3()" id="marsland2002aArchitectural_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="marsland2002aArchitectural_Methods_more" style="display: none">
-    @article{marsland2002a,<br> author = {Marsland, Stephen and Shapiro, Jonathan and Nehmzow, Ulrich},<br> doi = {10.1016/S0893-6080(02)00078-3},<br> issn = {08936080},<br> journal = {Neural Networks},<br> keywords = {Dimensionality reduction,Growing networks,Inspection,Mobile robotics,Novelty detection,Self-organisation,Topology preservation,Unsupervised learning,[som]},<br> mendeley-tags = {[som]},<br> month = {oct},<br> number = {8-9},<br> pages = {1041--1058},<br> publisher = {Pergamon},<br> title = {A self-organising network that grows when required},<br> volume = {15},<br> year = {2002}<br>}<br>
+    @article{marsland2002a,<br> author = {Marsland, Stephen and Shapiro, Jonathan and Nehmzow, Ulrich},<br> doi = {10.1016/S0893-6080(02)00078-3},<br> issn = {08936080},<br> journal = {Neural Networks},<br> keywords = {Dimensionality reduction,Growing networks,Inspection,Mobile robotics,Novelty detection,Self-organisation,Topology preservation,Unsupervised learning,[som]},<br> mendeley-tags = {[som]},<br> month = {oct},<br> number = {8-9},<br> pages = {1041--1058},<br> publisher = {Pergamon},<br> title = {A self-organising network that grows when required},<br> url = {https://linkinghub.elsevier.com/retrieve/pii/S0893608002000783},<br> volume = {15},<br> year = {2002}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="marsland2002aArchitectural_Methods_more2" style="display: none">
     The ability to grow extra nodes is a potentially useful facility for a self-organising neural network. A network that can add nodes into its map space can approximate the input space more accurately, and often more parsimoniously, than a network with predefined structure and size, such as the Self-Organising Map. In addition, a growing network can deal with dynamic input distributions. Most of the growing networks that have been proposed in the literature add new nodes to support the node that has accumulated the highest error during previous iterations or to support topological structures. This usually means that new nodes are added only when the number of iterations is an integer multiple of some pre-defined constant, $łambda$. This paper suggests a way in which the learning algorithm can add nodes whenever the network in its current state does not sufficiently match the input. In this way the network grows very quickly when new data is presented, but stops growing once the network has matched the data. This is particularly important when we consider dynamic data sets, where the distribution of inputs can change to a new regime after some time. We also demonstrate the preservation of neighbourhood relations in the data by the network. The new network is compared to an existing growing network, the Growing Neural Gas (GNG), on a artificial dataset, showing how the network deals with a change in input distribution after some time. Finally, the new network is applied to several novelty detection tasks and is compared with both the GNG and an unsupervised form of the Reduced Coulomb Energy network on a robotic inspection task and with a Support Vector Machine on two benchmark novelty detection tasks. © 2002 Elsevier Science Ltd. All rights reserved.
@@ -3420,9 +3488,77 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 </div>
 <div class="section" id="bioinspired-methods">
 <h3>Bioinspired Methods<a class="headerlink" href="#bioinspired-methods" title="Permalink to this headline">¶</a></h3>
-<p><strong>17 papers</strong></p>
+<p><strong>18 papers</strong></p>
 <p>In this section we list all the papers related to bioinspired continual learning approaches.</p>
 <ul class="simple">
+<li><p><a class="reference external" href="https://arxiv.org/abs/2007.06637http://arxiv.org/abs/2007.06637">Storing Encoded Episodes as Concepts for Continual Learning</a> by Ali Ayub and Alan R. Wagner. <em>arXiv</em>, 2020. <span style='background-color:Maroon; padding: 2px; border-radius:4px; border: 1px solid black;'>[generative]</span> <span style='background-color:DeepPink; padding: 2px; border-radius:4px; border: 1px solid black;'>[imagenet]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
+<button style="font-size:75%; line-height:15px" onclick="ayub2020bBioinspired_MethodsFunction()" id="ayub2020bBioinspired_Methods_btt">Bib</button>
+<button style="font-size:75%; line-height:15px" onclick="ayub2020bBioinspired_MethodsFunction2()" id="ayub2020bBioinspired_Methods_btt2">Abstract</button>
+<button style="font-size:75%; line-height:15px" onclick="ayub2020bBioinspired_MethodsFunction3()" id="ayub2020bBioinspired_Methods_btt3">Notes</button>
+
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020bBioinspired_Methods_more" style="display: none">
+    @article{ayub2020b,<br> archiveprefix = {arXiv},<br> arxivid = {2007.06637},<br> author = {Ayub, Ali and Wagner, Alan R.},<br> eprint = {2007.06637},<br> journal = {arXiv},<br> keywords = {[generative],[imagenet],[mnist],catastrophic forgetting,continual learning},<br> mendeley-tags = {[generative],[imagenet],[mnist]},<br> month = {jun},<br> title = {Storing Encoded Episodes as Concepts for Continual Learning},<br> url = {https://arxiv.org/abs/2007.06637 http://arxiv.org/abs/2007.06637},<br> year = {2020}<br>}<br>
+</span></p>
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020bBioinspired_Methods_more2" style="display: none">
+    The two main challenges faced by continual learning approaches are catastrophic forgetting and memory limitations on the storage of data. To cope with these challenges, we propose a novel, cognitively-inspired approach which trains autoencoders with Neural Style Transfer to encode and store images. Reconstructed images from encoded episodes are replayed when training the classifier model on a new task to avoid catastrophic forgetting. The loss function for the reconstructed images is weighted to reduce its effect during classifier training to cope with image degradation. When the system runs out of memory the encoded episodes are converted into centroids and covariance matrices, which are used to generate pseudo-images during classifier training, keeping classifier performance stable with less memory. Our approach increases classification accuracy by 13-17% over state-of-the-art methods on benchmark datasets, while requiring 78% less storage space.
+</span></p>
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020bBioinspired_Methods_more3" style="display: none">
+    N.A.
+</span></p>
+<script>
+    function ayub2020bBioinspired_MethodsFunction() {
+      var moreText = document.getElementById("ayub2020bBioinspired_Methods_more");
+      var moreText2 = document.getElementById("ayub2020bBioinspired_Methods_more2");
+      var moreText3 = document.getElementById("ayub2020bBioinspired_Methods_more3");
+      var btnText = document.getElementById("ayub2020bBioinspired_Methods_btt");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Bib";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Bib";
+        moreText.style.display = "none";
+      }
+      moreText2.style.display = "none";
+      moreText3.style.display = "none";
+    }
+</script>
+<script>
+    function ayub2020bBioinspired_MethodsFunction2() {
+      var moreText = document.getElementById("ayub2020bBioinspired_Methods_more2");
+      var moreText1 = document.getElementById("ayub2020bBioinspired_Methods_more");
+      var moreText3 = document.getElementById("ayub2020bBioinspired_Methods_more3");
+      var btnText = document.getElementById("ayub2020bBioinspired_Methods_btt2");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Abstract";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Abstract";
+        moreText.style.display = "none";
+      }
+      moreText1.style.display = "none";
+      moreText3.style.display = "none";
+    }
+</script>
+<script>
+    function ayub2020bBioinspired_MethodsFunction3() {
+      var moreText = document.getElementById("ayub2020bBioinspired_Methods_more3");
+      var moreText1 = document.getElementById("ayub2020bBioinspired_Methods_more");
+      var moreText2 = document.getElementById("ayub2020bBioinspired_Methods_more2");
+      var btnText = document.getElementById("ayub2020bBioinspired_Methods_btt3");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Notes";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Notes";
+        moreText.style.display = "none";
+      }
+      moreText1.style.display = "none";
+      moreText2.style.display = "none";
+    }
+</script></p></li>
 <li><p><a class="reference external" href="https://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Ayub_Cognitively-Inspired_Model_for_Incremental_Learning_Using_a_Few_Examples_CVPRW_2020_paper.html">Cognitively-Inspired Model for Incremental Learning Using a Few Examples</a> by A. Ayub and A. R. Wagner. <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops</em>, 2020. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:#990099; padding: 2px; border-radius:4px; border: 1px solid black;'>[cubs]</span> <span style='background-color:green; padding: 2px; border-radius:4px; border: 1px solid black;'>[dual]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="ayub2020aBioinspired_MethodsFunction()" id="ayub2020aBioinspired_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="ayub2020aBioinspired_MethodsFunction2()" id="ayub2020aBioinspired_Methods_btt2">Abstract</button>
@@ -4037,13 +4173,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Diffusion-based neuromodulation can eliminate catastrophic forgetting in simple neural networks by Roby Velez and Jeff Clune. <em>PLoS ONE</em>, 1–31, 2017.  <br>
+<li><p><a class="reference external" href="http://arxiv.org/abs/1705.07241http://dx.doi.org/10.1371/journal.pone.0187736">Diffusion-based neuromodulation can eliminate catastrophic forgetting in simple neural networks</a> by Roby Velez and Jeff Clune. <em>PLoS ONE</em>, 1–31, 2017.  <br>
 <button style="font-size:75%; line-height:15px" onclick="Velez2017aBioinspired_MethodsFunction()" id="Velez2017aBioinspired_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Velez2017aBioinspired_MethodsFunction2()" id="Velez2017aBioinspired_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Velez2017aBioinspired_MethodsFunction3()" id="Velez2017aBioinspired_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Velez2017aBioinspired_Methods_more" style="display: none">
-    @article{Velez2017a,<br> archiveprefix = {arXiv},<br> arxivid = {1705.07241},<br> author = {Velez, Roby and Clune, Jeff},<br> doi = {10.1371/journal.pone.0187736},<br> eprint = {1705.07241},<br> isbn = {1111111111},<br> issn = {19326203},<br> journal = {PLoS ONE},<br> number = {11},<br> pages = {1--31},<br> title = {Diffusion-based neuromodulation can eliminate catastrophic forgetting in simple neural networks},<br> volume = {12},<br> year = {2017}<br>}<br>
+    @article{Velez2017a,<br> archiveprefix = {arXiv},<br> arxivid = {1705.07241},<br> author = {Velez, Roby and Clune, Jeff},<br> doi = {10.1371/journal.pone.0187736},<br> eprint = {1705.07241},<br> isbn = {1111111111},<br> issn = {19326203},<br> journal = {PLoS ONE},<br> month = {may},<br> number = {11},<br> pages = {1--31},<br> title = {Diffusion-based neuromodulation can eliminate catastrophic forgetting in simple neural networks},<br> url = {http://arxiv.org/abs/1705.07241 http://dx.doi.org/10.1371/journal.pone.0187736},<br> volume = {12},<br> year = {2017}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Velez2017aBioinspired_Methods_more2" style="display: none">
     A long-term goal of AI is to produce agents that can learn a diversity of skills throughout their lifetimes and continuously improve those skills via experience. A longstanding obstacle towards that goal is catastrophic forgetting, which is when learning new information erases previously learned information. Catastrophic forgetting occurs in artificial neural networks (ANNs), which have fueled most recent advances in AI. A recent paper proposed that catastrophic forgetting in ANNs can be reduced by promoting modularity, which can limit forgetting by isolating task information to specific clusters of nodes and connections (functional modules). While the prior work did show that modular ANNs suffered less from catastrophic forgetting, it was not able to produce ANNs that possessed task-specific functional modules, thereby leaving the main theory regarding modularity and forgetting untested. We introduce diffusion-based neuromodulation, which simulates the release of diffusing, neuromodulatory chemicals within an ANN that can modulate (i.e. up or down regulate) learning in a spatial region. On the simple diagnostic problem from the prior work, diffusion-based neuromodulation 1) induces task-specific learning in groups of nodes and connections (task-specific localized learning), which 2) produces functional modules for each subtask, and 3) yields higher performance by eliminating catastrophic forgetting. Overall, our results suggest that diffusion-based neuromodulation promotes task-specific localized learning and functional modularity, which can help solve the challenging, but important problem of catastrophic forgetting.
@@ -4309,13 +4445,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Compete to Compute by Rupesh Kumar Srivastava, Jonathan Masci, Sohrob Kazerounian, Faustino Gomez and Jürgen Schmidhuber. <em>Advances in Neural Information Processing Systems 26</em>, 2013. <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span> <span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>  <br>
+<li><p><a class="reference external" href="http://papers.nips.cc/paper/5059-compete-to-compute.pdf">Compete to Compute</a> by Rupesh Kumar Srivastava, Jonathan Masci, Sohrob Kazerounian, Faustino Gomez and Jürgen Schmidhuber. <em>Advances in Neural Information Processing Systems 26</em>, 2013. <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span> <span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="srivastava2013aBioinspired_MethodsFunction()" id="srivastava2013aBioinspired_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="srivastava2013aBioinspired_MethodsFunction2()" id="srivastava2013aBioinspired_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="srivastava2013aBioinspired_MethodsFunction3()" id="srivastava2013aBioinspired_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="srivastava2013aBioinspired_Methods_more" style="display: none">
-    @inproceedings{srivastava2013a,<br> author = {Srivastava, Rupesh Kumar and Masci, Jonathan and Kazerounian, Sohrob and Gomez, Faustino and Schmidhuber, Jürgen},<br> booktitle = {Advances in Neural Information Processing Systems 26},<br> file = {::},<br> keywords = {[mnist],[sparsity]},<br> mendeley-tags = {[mnist],[sparsity]},<br> title = {Compete to Compute},<br> year = {2013}<br>}<br>
+    @inproceedings{srivastava2013a,<br> author = {Srivastava, Rupesh Kumar and Masci, Jonathan and Kazerounian, Sohrob and Gomez, Faustino and Schmidhuber, Jürgen},<br> booktitle = {Advances in Neural Information Processing Systems 26},<br> file = {::},<br> keywords = {[mnist],[sparsity]},<br> mendeley-tags = {[mnist],[sparsity]},<br> title = {Compete to Compute},<br> url = {http://papers.nips.cc/paper/5059-compete-to-compute.pdf},<br> year = {2013}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="srivastava2013aBioinspired_Methods_more2" style="display: none">
     Local competition among neighboring neurons is common in biological neu-ral networks (NNs). In this paper, we apply the concept to gradient-based, backprop-trained artificial multilayer NNs. NNs with competing linear units tend to outperform those with non-competing nonlinear units, and avoid catastrophic forgetting when training sets change over time.
@@ -4445,13 +4581,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Mitigation of catastrophic interference in neural networks using a fixed expansion layer by Robert Coop and Itamar Arel. <em>2012 IEEE 55th International Midwest Symposium on Circuits and Systems (MWSCAS)</em>, 726–729, 2012. <span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>  <br>
+<li><p><a class="reference external" href="http://ieeexplore.ieee.org/document/6292123/">Mitigation of catastrophic interference in neural networks using a fixed expansion layer</a> by Robert Coop and Itamar Arel. <em>2012 IEEE 55th International Midwest Symposium on Circuits and Systems (MWSCAS)</em>, 726–729, 2012. <span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Coop2012aBioinspired_MethodsFunction()" id="Coop2012aBioinspired_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Coop2012aBioinspired_MethodsFunction2()" id="Coop2012aBioinspired_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Coop2012aBioinspired_MethodsFunction3()" id="Coop2012aBioinspired_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Coop2012aBioinspired_Methods_more" style="display: none">
-    @inproceedings{Coop2012a,<br> annote = {ISSN: 1548-3746},<br> author = {Coop, Robert and Arel, Itamar},<br> booktitle = {2012 IEEE 55th International Midwest Symposium on Circuits and Systems (MWSCAS)},<br> doi = {10.1109/MWSCAS.2012.6292123},<br> keywords = {Accuracy,Biological neural networks,Feedforward neural networks,Interference,Neurons,Training,[sparsity],binary activations,catastrophic forgetting,catastrophic interference,fixed expansion layer feedforward neural network,multilayer perceptron,multilayer perceptrons,non-stationary inputs,sparse neurons},<br> mendeley-tags = {[sparsity]},<br> month = {aug},<br> pages = {726--729},<br> title = {Mitigation of catastrophic interference in neural networks using a fixed expansion layer},<br> year = {2012}<br>}<br>
+    @inproceedings{Coop2012a,<br> annote = {ISSN: 1548-3746},<br> author = {Coop, Robert and Arel, Itamar},<br> booktitle = {2012 IEEE 55th International Midwest Symposium on Circuits and Systems (MWSCAS)},<br> doi = {10.1109/MWSCAS.2012.6292123},<br> isbn = {978-1-4673-2527-1},<br> keywords = {Accuracy,Biological neural networks,Feedforward neural networks,Interference,Neurons,Training,[sparsity],binary activations,catastrophic forgetting,catastrophic interference,fixed expansion layer feedforward neural network,multilayer perceptron,multilayer perceptrons,non-stationary inputs,sparse neurons},<br> mendeley-tags = {[sparsity]},<br> month = {aug},<br> pages = {726--729},<br> publisher = {IEEE},<br> title = {Mitigation of catastrophic interference in neural networks using a fixed expansion layer},<br> url = {http://ieeexplore.ieee.org/document/6292123/},<br> year = {2012}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Coop2012aBioinspired_Methods_more2" style="display: none">
     In this paper we present the fixed expansion layer (FEL) feedforward neural network designed for balancing plasticity and stability in the presence of non-stationary inputs. Catastrophic interference (or catastrophic forgetting) refers to the drastic loss of previously learned information when a neural network is trained on new or different information. The goal of the FEL network is to reduce the effect of catastrophic interference by augmenting a multilayer perceptron with a layer of sparse neurons with binary activations. We compare the FEL network's performance to that of other algorithms designed to combat the effects of catastrophic interference and demonstrate that the FEL network is able to retain information for significantly longer periods of time with substantially lower computational requirements.
@@ -4928,13 +5064,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p><a class="reference external" href="https://gitlab.informatik.hs-fulda.de/ML-Projects/CF_in_DNNs">A comprehensive, application-oriented study of catastrophic forgetting in DNNs</a> by B Pfülb and A Gepperth. <em>ICLR</em>, 2018. <span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
+<li><p><a class="reference external" href="https://openreview.net/pdf?id=BkloRs0qK7">A comprehensive, application-oriented study of catastrophic forgetting in DNNs</a> by B Pfülb and A Gepperth. <em>ICLR</em>, 2018. <span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Pfulb2018aCatastrophic_Forgetting_StudiesFunction()" id="Pfulb2018aCatastrophic_Forgetting_Studies_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Pfulb2018aCatastrophic_Forgetting_StudiesFunction2()" id="Pfulb2018aCatastrophic_Forgetting_Studies_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Pfulb2018aCatastrophic_Forgetting_StudiesFunction3()" id="Pfulb2018aCatastrophic_Forgetting_Studies_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Pfulb2018aCatastrophic_Forgetting_Studies_more" style="display: none">
-    @inproceedings{Pfulb2018a,<br> author = {Pfülb, B and Gepperth, A},<br> booktitle = {ICLR},<br> file = {::},<br> keywords = {[fashion],[mnist]},<br> mendeley-tags = {[fashion],[mnist]},<br> month = {sep},<br> title = {A comprehensive, application-oriented study of catastrophic forgetting in DNNs},<br> url = {https://gitlab.informatik.hs-fulda.de/ML-Projects/CF_in_DNNs},<br> year = {2018}<br>}<br>
+    @inproceedings{Pfulb2018a,<br> author = {Pfülb, B and Gepperth, A},<br> booktitle = {ICLR},<br> file = {::},<br> keywords = {[fashion],[mnist]},<br> mendeley-tags = {[fashion],[mnist]},<br> month = {sep},<br> title = {A comprehensive, application-oriented study of catastrophic forgetting in DNNs},<br> url = {https://openreview.net/pdf?id=BkloRs0qK7},<br> year = {2018}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Pfulb2018aCatastrophic_Forgetting_Studies_more2" style="display: none">
     We present a large-scale empirical study of catastrophic forgetting (CF) in modern Deep Neural Network (DNN) models that perform sequential (or: incremen-tal) learning. A new experimental protocol is proposed that enforces typical constraints encountered in application scenarios. As the investigation is empirical, we evaluate CF behavior on the hitherto largest number of visual classification datasets, from each of which we construct a representative number of Sequential Learning Tasks (SLTs) in close alignment to previous works on CF. Our results clearly indicate that there is no model that avoids CF for all investigated datasets and SLTs under application conditions. We conclude with a discussion of potential solutions and workarounds to CF, notably for the EWC and IMM models.
@@ -5343,13 +5479,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p><strong>7 papers</strong></p>
 <p>In this section you’ll find pioneering and classic continual learning papers. We recommend to read all the papers in this section for a good background on current continual deep learning developments.</p>
 <ul class="simple">
-<li><p>The Organization of Behavior: A Neuropsychological Theory by  and D O Hebb. <em>Lawrence Erlbaum</em>, 2002. <span style='background-color:#99C68E; padding: 2px; border-radius:4px; border: 1px solid black;'>[hebbian]</span>  <br>
+<li><p><a class="reference external" href="https://www.amazon.com/Organization-Behavior-Neuropsychological-Theory/dp/0805843000https://books.google.it/books/about/The_Organization_of_Behavior.html?id=ddB4AgAAQBAJ&amp;printsec=frontcover&amp;source=kp_read_button&amp;redir_esc=y#v=onepage&amp;q&amp;f=false">The Organization of Behavior: A Neuropsychological Theory</a> by  and D O Hebb. <em>Lawrence Erlbaum</em>, 2002. <span style='background-color:#99C68E; padding: 2px; border-radius:4px; border: 1px solid black;'>[hebbian]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Hebb2005aClassicsFunction()" id="Hebb2005aClassics_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Hebb2005aClassicsFunction2()" id="Hebb2005aClassics_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Hebb2005aClassicsFunction3()" id="Hebb2005aClassics_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hebb2005aClassics_more" style="display: none">
-    @book{Hebb2005a,<br> author = {Hebb, D O},<br> booktitle = {Lawrence Erlbaum},<br> isbn = {978-1-135-63191-8},<br> keywords = {Psychology / Cognitive Psychology & Cognition,Psychology / General,Psychology / Neuropsychology,Psychology / Physiological Psychology,[hebbian]},<br> language = {en},<br> mendeley-tags = {[hebbian]},<br> month = {apr},<br> publisher = {Psychology Press},<br> shorttitle = {The Organization of Behavior},<br> title = {The Organization of Behavior: A Neuropsychological Theory},<br> year = {2002}<br>}<br>
+    @book{Hebb2005a,<br> author = {Hebb, D O},<br> booktitle = {Lawrence Erlbaum},<br> isbn = {978-1-135-63191-8},<br> keywords = {Psychology / Cognitive Psychology & Cognition,Psychology / General,Psychology / Neuropsychology,Psychology / Physiological Psychology,[hebbian]},<br> language = {en},<br> mendeley-tags = {[hebbian]},<br> month = {apr},<br> publisher = {Psychology Press},<br> shorttitle = {The Organization of Behavior},<br> title = {The Organization of Behavior: A Neuropsychological Theory},<br> url = {https://www.amazon.com/Organization-Behavior-Neuropsychological-Theory/dp/0805843000 https://books.google.it/books/about/The_Organization_of_Behavior.html?id=ddB4AgAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false},<br> year = {2002}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hebb2005aClassics_more2" style="display: none">
     Since its publication in 1949, D.O. Hebb's, The Organization of Behavior has been one of the most influential books in the fields of psychology and neuroscience. However, the original edition has been unavailable since 1966, ensuring that Hebb's comment that a classic normally means "cited but not read" is true in his case. This new edition rectifies a long-standing problem for behavioral neuroscientists–the inability to obtain one of the most cited publications in the field. The Organization of Behavior played a significant part in stimulating the investigation of the neural foundations of behavior and continues to be inspiring because it provides a general framework for relating behavior to synaptic organization through the dynamics of neural networks. D.O. Hebb was also the first to examine the mechanisms by which environment and experience can influence brain structure and function, and his ideas formed the basis for work on enriched environments as stimulants for behavioral development. References to Hebb, the Hebbian cell assembly, the Hebb synapse, and the Hebb rule increase each year. These forceful ideas of 1949 are now applied in engineering, robotics, and computer science, as well as neurophysiology, neuroscience, and psychology–a tribute to Hebb's foresight in developing a foundational neuropsychological theory of the organization of behavior.
@@ -5751,13 +5887,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Using Semi-Distributed Representations to Overcome Catastrophic Forgetting in Connectionist Networks by  and Robert M French. <em>In Proceedings of the 13th Annual Cognitive Science Society Conference</em>, 173–178, 1991. <span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>  <br>
+<li><p><a class="reference external" href="https://www.aaai.org/Papers/Symposia/Spring/1993/SS-93-06/SS93-06-007.pdf">Using Semi-Distributed Representations to Overcome Catastrophic Forgetting in Connectionist Networks</a> by  and Robert M French. <em>In Proceedings of the 13th Annual Cognitive Science Society Conference</em>, 173–178, 1991. <span style='background-color:DarkSalmon; padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="French1991aClassicsFunction()" id="French1991aClassics_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="French1991aClassicsFunction2()" id="French1991aClassics_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="French1991aClassicsFunction3()" id="French1991aClassics_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="French1991aClassics_more" style="display: none">
-    @inproceedings{French1991a,<br> author = {French, Robert M},<br> booktitle = {In Proceedings of the 13th Annual Cognitive Science Society Conference},<br> keywords = {[sparsity],activation sharpening},<br> mendeley-tags = {[sparsity]},<br> pages = {173--178},<br> publisher = {Erlbaum},<br> title = {Using Semi-Distributed Representations to Overcome Catastrophic Forgetting in Connectionist Networks},<br> year = {1991}<br>}<br>
+    @inproceedings{French1991a,<br> author = {French, Robert M},<br> booktitle = {In Proceedings of the 13th Annual Cognitive Science Society Conference},<br> keywords = {[sparsity],activation sharpening},<br> mendeley-tags = {[sparsity]},<br> pages = {173--178},<br> publisher = {Erlbaum},<br> title = {Using Semi-Distributed Representations to Overcome Catastrophic Forgetting in Connectionist Networks},<br> url = {https://www.aaai.org/Papers/Symposia/Spring/1993/SS-93-06/SS93-06-007.pdf},<br> year = {1991}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="French1991aClassics_more2" style="display: none">
     In connectionist networks, newly-learned information destroys previously-learned information unless the network is continually retrained on the old information. This behavior, known as catastrophic forgetting, is unacceptable both for practical purposes and as a model of mind. This paper advances the claim that catastrophic forgetting is a direct consequence of the overlap of the system's distributed representations and can be reduced by reducing this overlap. A simple algorithm is presented that allows a standard feedforward backpropagation network to develop semi-distributed representations, thereby significantly reducing the problem of catastrophic forgetting. 1 Introduction Catastrophic forgetting is the inability of a neural network to retain old information in the presence of new. New information destroys old unless the old information is continually relearned by the net. McCloskey & Cohen [1990] and Ratcliff [1989] have demonstrated that this is a serious problem with c...
@@ -5823,9 +5959,77 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 </div>
 <div class="section" id="continual-few-shot-learning">
 <h3>Continual Few Shot Learning<a class="headerlink" href="#continual-few-shot-learning" title="Permalink to this headline">¶</a></h3>
-<p><strong>4 papers</strong></p>
+<p><strong>5 papers</strong></p>
 <p>Here we list the papers related to Few-Shot continual and incremental learning.</p>
 <ul class="simple">
+<li><p><a class="reference external" href="http://arxiv.org/abs/2008.00819">Tell me what this is: Few-Shot Incremental Object Learning by a Robot</a> by Ali Ayub and Alan R. Wagner. <em>arXiv</em>, 2020.  <br>
+<button style="font-size:75%; line-height:15px" onclick="ayub2020cContinual_Few_Shot_LearningFunction()" id="ayub2020cContinual_Few_Shot_Learning_btt">Bib</button>
+<button style="font-size:75%; line-height:15px" onclick="ayub2020cContinual_Few_Shot_LearningFunction2()" id="ayub2020cContinual_Few_Shot_Learning_btt2">Abstract</button>
+<button style="font-size:75%; line-height:15px" onclick="ayub2020cContinual_Few_Shot_LearningFunction3()" id="ayub2020cContinual_Few_Shot_Learning_btt3">Notes</button>
+
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020cContinual_Few_Shot_Learning_more" style="display: none">
+    @article{ayub2020c,<br> archiveprefix = {arXiv},<br> arxivid = {2008.00819},<br> author = {Ayub, Ali and Wagner, Alan R.},<br> eprint = {2008.00819},<br> journal = {arXiv},<br> keywords = {catastrophic forgetting,continual learning,few-shot incremenatl learning,robotics},<br> month = {jul},<br> title = {Tell me what this is: Few-Shot Incremental Object Learning by a Robot},<br> url = {http://arxiv.org/abs/2008.00819},<br> year = {2020}<br>}<br>
+</span></p>
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020cContinual_Few_Shot_Learning_more2" style="display: none">
+    For many applications, robots will need to be incrementally trained to recognize the specific objects needed for an application. This paper presents a practical system for incrementally training a robot to recognize different object categories using only a small set of visual examples provided by a human. The paper uses a recently developed state-of-the-art method for few-shot incremental learning of objects. After learning the object classes incrementally, the robot performs a table cleaning task organizing objects into categories specified by the human. We also demonstrate the system's ability to learn arrangements of objects and predict missing or incorrectly placed objects. Experimental evaluations demonstrate that our approach achieves nearly the same performance as a system trained with all examples at one time (batch training), which constitutes a theoretical upper bound.
+</span></p>
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020cContinual_Few_Shot_Learning_more3" style="display: none">
+    N.A.
+</span></p>
+<script>
+    function ayub2020cContinual_Few_Shot_LearningFunction() {
+      var moreText = document.getElementById("ayub2020cContinual_Few_Shot_Learning_more");
+      var moreText2 = document.getElementById("ayub2020cContinual_Few_Shot_Learning_more2");
+      var moreText3 = document.getElementById("ayub2020cContinual_Few_Shot_Learning_more3");
+      var btnText = document.getElementById("ayub2020cContinual_Few_Shot_Learning_btt");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Bib";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Bib";
+        moreText.style.display = "none";
+      }
+      moreText2.style.display = "none";
+      moreText3.style.display = "none";
+    }
+</script>
+<script>
+    function ayub2020cContinual_Few_Shot_LearningFunction2() {
+      var moreText = document.getElementById("ayub2020cContinual_Few_Shot_Learning_more2");
+      var moreText1 = document.getElementById("ayub2020cContinual_Few_Shot_Learning_more");
+      var moreText3 = document.getElementById("ayub2020cContinual_Few_Shot_Learning_more3");
+      var btnText = document.getElementById("ayub2020cContinual_Few_Shot_Learning_btt2");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Abstract";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Abstract";
+        moreText.style.display = "none";
+      }
+      moreText1.style.display = "none";
+      moreText3.style.display = "none";
+    }
+</script>
+<script>
+    function ayub2020cContinual_Few_Shot_LearningFunction3() {
+      var moreText = document.getElementById("ayub2020cContinual_Few_Shot_Learning_more3");
+      var moreText1 = document.getElementById("ayub2020cContinual_Few_Shot_Learning_more");
+      var moreText2 = document.getElementById("ayub2020cContinual_Few_Shot_Learning_more2");
+      var btnText = document.getElementById("ayub2020cContinual_Few_Shot_Learning_btt3");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Notes";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Notes";
+        moreText.style.display = "none";
+      }
+      moreText1.style.display = "none";
+      moreText2.style.display = "none";
+    }
+</script></p></li>
 <li><p><a class="reference external" href="https://arxiv.org/abs/2006.15524">Few-Shot Class-Incremental Learning via Feature Space Composition</a> by H. Zhao, Y. Fu, X. Li, S. Li, B. Omar and X. Li. <em>arXiv</em>, 2020. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:#990099; padding: 2px; border-radius:4px; border: 1px solid black;'>[cubs]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="zhao2020aContinual_Few_Shot_LearningFunction()" id="zhao2020aContinual_Few_Shot_Learning_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="zhao2020aContinual_Few_Shot_LearningFunction2()" id="zhao2020aContinual_Few_Shot_Learning_btt2">Abstract</button>
@@ -6520,13 +6724,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>A Meta-MDP Approach to Exploration for Lifelong Reinforcement Learning by Francisco M Garcia and Philip S Thomas. <em>NeurIPS</em>, 5691–5700, 2019.  <br>
+<li><p><a class="reference external" href="https://papers.nips.cc/paper/8806-a-meta-mdp-approach-to-exploration-for-lifelong-reinforcement-learning.pdf">A Meta-MDP Approach to Exploration for Lifelong Reinforcement Learning</a> by Francisco M Garcia and Philip S Thomas. <em>NeurIPS</em>, 5691–5700, 2019.  <br>
 <button style="font-size:75%; line-height:15px" onclick="garcia2019aContinual_Reinforcement_LearningFunction()" id="garcia2019aContinual_Reinforcement_Learning_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="garcia2019aContinual_Reinforcement_LearningFunction2()" id="garcia2019aContinual_Reinforcement_Learning_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="garcia2019aContinual_Reinforcement_LearningFunction3()" id="garcia2019aContinual_Reinforcement_Learning_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="garcia2019aContinual_Reinforcement_Learning_more" style="display: none">
-    @inproceedings{garcia2019a,<br> author = {Garcia, Francisco M and Thomas, Philip S},<br> booktitle = {NeurIPS},<br> file = {::},<br> pages = {5691--5700},<br> title = {A Meta-MDP Approach to Exploration for Lifelong Reinforcement Learning},<br> year = {2019}<br>}<br>
+    @inproceedings{garcia2019a,<br> author = {Garcia, Francisco M and Thomas, Philip S},<br> booktitle = {NeurIPS},<br> file = {::},<br> pages = {5691--5700},<br> title = {A Meta-MDP Approach to Exploration for Lifelong Reinforcement Learning},<br> url = {https://papers.nips.cc/paper/8806-a-meta-mdp-approach-to-exploration-for-lifelong-reinforcement-learning.pdf},<br> year = {2019}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="garcia2019aContinual_Reinforcement_Learning_more2" style="display: none">
     In this paper we consider the problem of how a reinforcement learning agent that is tasked with solving a sequence of reinforcement learning problems (a sequence of Markov decision processes) can use knowledge acquired early in its lifetime to improve its ability to solve new problems. We argue that previous experience with similar problems can provide an agent with information about how it should explore when facing a new but related problem. We show that the search for an optimal exploration strategy can be formulated as a reinforcement learning problem itself and demonstrate that such strategy can leverage patterns found in the structure of related problems. We conclude with experiments that show the benefits of optimizing an exploration strategy using our proposed framework.
@@ -6656,16 +6860,16 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Policy Consolidation for Continual Reinforcement Learning by Christos Kaplanis, Murray Shanahan and Claudia Clopath. <em>ICML</em>, 2019.  <br>
+<li><p><a class="reference external" href="http://arxiv.org/abs/1902.00255">Policy Consolidation for Continual Reinforcement Learning</a> by Christos Kaplanis, Murray Shanahan and Claudia Clopath. <em>ICML</em>, 2019.  <br>
 <button style="font-size:75%; line-height:15px" onclick="kaplanis2019aContinual_Reinforcement_LearningFunction()" id="kaplanis2019aContinual_Reinforcement_Learning_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="kaplanis2019aContinual_Reinforcement_LearningFunction2()" id="kaplanis2019aContinual_Reinforcement_Learning_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="kaplanis2019aContinual_Reinforcement_LearningFunction3()" id="kaplanis2019aContinual_Reinforcement_Learning_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="kaplanis2019aContinual_Reinforcement_Learning_more" style="display: none">
-    @inproceedings{kaplanis2019a,<br> archiveprefix = {arXiv},<br> arxivid = {1902.00255v2},<br> author = {Kaplanis, Christos and Shanahan, Murray and Clopath, Claudia},<br> booktitle = {ICML},<br> eprint = {1902.00255v2},<br> file = {::},<br> title = {Policy Consolidation for Continual Reinforcement Learning},<br> year = {2019}<br>}<br>
+    @article{kaplanis2019a,<br> archiveprefix = {arXiv},<br> arxivid = {1902.00255},<br> author = {Kaplanis, Christos and Shanahan, Murray and Clopath, Claudia},<br> eprint = {1902.00255},<br> file = {::},<br> journal = {ICML},<br> month = {feb},<br> title = {Policy Consolidation for Continual Reinforcement Learning},<br> url = {http://arxiv.org/abs/1902.00255},<br> year = {2019}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="kaplanis2019aContinual_Reinforcement_Learning_more2" style="display: none">
-    We propose a method for tackling catastrophic forgetting in deep reinforcement learning that is agnostic to the timescale of changes in the distribution of experiences, does not require knowledge of task boundaries, and can adapt in continuously changing environments. In our policy consolidation model, the policy network interacts with a cascade of hidden networks that simultaneously remember the agent's policy at a range of timescales and regularise the current policy by its own history, thereby improving its ability to learn without forgetting. We find that the model improves continual learning relative to baselines on a number of continuous control tasks in single-task, alternating two-task, and multi-agent competitive self-play settings.
+    We propose a method for tackling catastrophic forgetting in deep reinforcement learning that is $\backslash$textit\agnostic\ to the timescale of changes in the distribution of experiences, does not require knowledge of task boundaries, and can adapt in $\backslash$textito̧ntinuously\ changing environments. In our $\backslash$textit\policy consolidation\ model, the policy network interacts with a cascade of hidden networks that simultaneously remember the agent's policy at a range of timescales and regularise the current policy by its own history, thereby improving its ability to learn without forgetting. We find that the model improves continual learning relative to baselines on a number of continuous control tasks in single-task, alternating two-task, and multi-agent competitive self-play settings.
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="kaplanis2019aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
@@ -6860,13 +7064,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Learning to learn without forgetting by maximizing transfer and minimizing interference by Matthew Riemer, Ignacio Cases, Robert Ajemian, Miao Liu, Irina Rish, Yuhai Tu and Gerald Tesauro. <em>ICLR</em>, 2019. <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
+<li><p><a class="reference external" href="https://openreview.net/pdf?id=B1gTShAct7">Learning to learn without forgetting by maximizing transfer and minimizing interference</a> by Matthew Riemer, Ignacio Cases, Robert Ajemian, Miao Liu, Irina Rish, Yuhai Tu and Gerald Tesauro. <em>ICLR</em>, 2019. <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="riemer2019aContinual_Reinforcement_LearningFunction()" id="riemer2019aContinual_Reinforcement_Learning_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="riemer2019aContinual_Reinforcement_LearningFunction2()" id="riemer2019aContinual_Reinforcement_Learning_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="riemer2019aContinual_Reinforcement_LearningFunction3()" id="riemer2019aContinual_Reinforcement_Learning_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aContinual_Reinforcement_Learning_more" style="display: none">
-    @inproceedings{riemer2019a,<br> author = {Riemer, Matthew and Cases, Ignacio and Ajemian, Robert and Liu, Miao and Rish, Irina and Tu, Yuhai and Tesauro, Gerald},<br> booktitle = {ICLR},<br> month = {sep},<br> title = {Learning to learn without forgetting by maximizing transfer and minimizing interference},<br> year = {2019}<br>}<br>
+    @inproceedings{riemer2019a,<br> author = {Riemer, Matthew and Cases, Ignacio and Ajemian, Robert and Liu, Miao and Rish, Irina and Tu, Yuhai and Tesauro, Gerald},<br> booktitle = {ICLR},<br> file = {::},<br> keywords = {[mnist]},<br> mendeley-tags = {[mnist]},<br> month = {sep},<br> title = {Learning to learn without forgetting by maximizing transfer and minimizing interference},<br> url = {https://openreview.net/pdf?id=B1gTShAct7},<br> year = {2019}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aContinual_Reinforcement_Learning_more2" style="display: none">
     Lack of performance when it comes to continual learning over non-stationary distributions of data remains a major challenge in scaling neural network learning to more human realistic settings. In this work we propose a new conceptualization of the continual learning problem in terms of a temporally symmetric trade-off between transfer and interference that can be optimized by enforcing gradient alignment across examples. We then propose a new algorithm, Meta-Experience Replay (MER), that directly exploits this view by combining experience replay with optimization based meta-learning. This method learns parameters that make interference based on future gradients less likely and transfer based on future gradients more likely. 1 We conduct experiments across continual lifelong supervised learning benchmarks and non-stationary reinforcement learning environments demonstrating that our approach consistently outperforms recently proposed baselines for continual learning. Our experiments show that the gap between the performance of MER and baseline algorithms grows both as the environment gets more non-stationary and as the fraction of the total experiences stored gets smaller.
@@ -7751,13 +7955,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p><strong>16 papers</strong></p>
 <p>Here we maintain a list of all the papers related to the continual learning at the intersection with sequential learning.</p>
 <ul class="simple">
-<li><p>Continual Learning in Recurrent Neural Networks with Hypernetworks by Benjamin Ehret, Christian Henning, Maria R Cervera, Alexander Meulemans, Johannes Von Oswald and Benjamin F Grewe. <em>arXiv</em>, 2020. <span style='background-color:#50EBEC; padding: 2px; border-radius:4px; border: 1px solid black;'>[audio]</span> <span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>  <br>
+<li><p><a class="reference external" href="http://arxiv.org/abs/2006.12109">Continual Learning in Recurrent Neural Networks with Hypernetworks</a> by Benjamin Ehret, Christian Henning, Maria R Cervera, Alexander Meulemans, Johannes von Oswald and Benjamin F Grewe. <em>arXiv</em>, 2020. <span style='background-color:#50EBEC; padding: 2px; border-radius:4px; border: 1px solid black;'>[audio]</span> <span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="ehret2020aContinual_Sequential_LearningFunction()" id="ehret2020aContinual_Sequential_Learning_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="ehret2020aContinual_Sequential_LearningFunction2()" id="ehret2020aContinual_Sequential_Learning_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="ehret2020aContinual_Sequential_LearningFunction3()" id="ehret2020aContinual_Sequential_Learning_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ehret2020aContinual_Sequential_Learning_more" style="display: none">
-    @article{ehret2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2006.12109v1},<br> author = {Ehret, Benjamin and Henning, Christian and Cervera, Maria R and Meulemans, Alexander and Von Oswald, Johannes and Grewe, Benjamin F},<br> eprint = {2006.12109v1},<br> file = {::},<br> journal = {arXiv},<br> keywords = {[audio],[rnn]},<br> mendeley-tags = {[audio],[rnn]},<br> title = {Continual Learning in Recurrent Neural Networks with Hypernetworks},<br> year = {2020}<br>}<br>
+    @article{ehret2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2006.12109},<br> author = {Ehret, Benjamin and Henning, Christian and Cervera, Maria R and Meulemans, Alexander and von Oswald, Johannes and Grewe, Benjamin F},<br> eprint = {2006.12109},<br> file = {::},<br> journal = {arXiv},<br> keywords = {[audio],[rnn]},<br> mendeley-tags = {[audio],[rnn]},<br> month = {jun},<br> title = {Continual Learning in Recurrent Neural Networks with Hypernetworks},<br> url = {http://arxiv.org/abs/2006.12109},<br> year = {2020}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ehret2020aContinual_Sequential_Learning_more2" style="display: none">
     The last decade has seen a surge of interest in continual learning (CL), and a variety of methods have been developed to alleviate catastrophic forgetting. However, most prior work has focused on tasks with static data, while CL on sequential data has remained largely unexplored. Here we address this gap in two ways. First, we evaluate the performance of established CL methods when applied to recurrent neural networks (RNNs). We primarily focus on elastic weight consolidation, which is limited by a stability-plasticity trade-off, and explore the particularities of this trade-off when using sequential data. We show that high working memory requirements, but not necessarily sequence length, lead to an increased need for stability at the cost of decreased performance on subsequent tasks. Second, to overcome this limitation we employ a recent method based on hypernetworks and apply it to RNNs to address catastrophic forgetting on sequential data. By generating the weights of a main RNN in a task-dependent manner, our approach disentangles stability and plasticity, and outperforms alternative methods in a range of experiments. Overall, our work provides several key insights on the differences between CL in feedforward networks and in RNNs, while offering a novel solution to effectively tackle CL on sequential data.
@@ -8092,13 +8296,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Task-Free Continual Learning by Rahaf Aljundi, Klaas Kelchtermans and Tinne Tuytelaars. <em>The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2019. <span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>  <br>
+<li><p><a class="reference external" href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Aljundi_Task-Free_Continual_Learning_CVPR_2019_paper.pdf">Task-Free Continual Learning</a> by Rahaf Aljundi, Klaas Kelchtermans and Tinne Tuytelaars. <em>The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2019. <span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Aljundi2019Continual_Sequential_LearningFunction()" id="Aljundi2019Continual_Sequential_Learning_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Aljundi2019Continual_Sequential_LearningFunction2()" id="Aljundi2019Continual_Sequential_Learning_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Aljundi2019Continual_Sequential_LearningFunction3()" id="Aljundi2019Continual_Sequential_Learning_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019Continual_Sequential_Learning_more" style="display: none">
-    @inproceedings{Aljundi2019,<br> author = {Aljundi, Rahaf and Kelchtermans, Klaas and Tuytelaars, Tinne},<br> booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br> keywords = {[vision]},<br> mendeley-tags = {[vision]},<br> month = {jun},<br> publisher = {Aljundi2019b},<br> title = {Task-Free Continual Learning},<br> year = {2019}<br>}<br>
+    @inproceedings{Aljundi2019,<br> author = {Aljundi, Rahaf and Kelchtermans, Klaas and Tuytelaars, Tinne},<br> booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br> keywords = {[vision]},<br> mendeley-tags = {[vision]},<br> month = {jun},<br> title = {Task-Free Continual Learning},<br> url = {https://openaccess.thecvf.com/content_CVPR_2019/papers/Aljundi_Task-Free_Continual_Learning_CVPR_2019_paper.pdf},<br> year = {2019}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019Continual_Sequential_Learning_more2" style="display: none">
     N.A.
@@ -8433,13 +8637,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>A Study on Catastrophic Forgetting in Deep LSTM Networks by Monika Schak and Alexander Gepperth. <em>Artificial Neural Networks and Machine Learning – ICANN 2019: Deep Learning</em>, 714–728, 2019. <span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>  <br>
+<li><p><a class="reference external" href="http://link.springer.com/10.1007/978-3-030-30484-3_56">A Study on Catastrophic Forgetting in Deep LSTM Networks</a> by Monika Schak and Alexander Gepperth. <em>Artificial Neural Networks and Machine Learning – ICANN 2019: Deep Learning</em>, 714–728, 2019. <span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Schak2019aContinual_Sequential_LearningFunction()" id="Schak2019aContinual_Sequential_Learning_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Schak2019aContinual_Sequential_LearningFunction2()" id="Schak2019aContinual_Sequential_Learning_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Schak2019aContinual_Sequential_LearningFunction3()" id="Schak2019aContinual_Sequential_Learning_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Schak2019aContinual_Sequential_Learning_more" style="display: none">
-    @inproceedings{Schak2019a,<br> address = {Cham},<br> author = {Schak, Monika and Gepperth, Alexander},<br> booktitle = {Artificial Neural Networks and Machine Learning – ICANN 2019: Deep Learning},<br> doi = {10.1007/978-3-030-30484-3_56},<br> editor = {Tetko, Igor V and Kůrková, Věra and Karpov, Pavel and Theis, Fabian},<br> isbn = {978-3-030-30484-3},<br> keywords = {Catastrophic Forgetting,LSTM,[rnn],sequential},<br> language = {en},<br> mendeley-tags = {[rnn]},<br> pages = {714--728},<br> publisher = {Springer International Publishing},<br> series = {Lecture Notes in Computer Science},<br> title = {A Study on Catastrophic Forgetting in Deep LSTM Networks},<br> year = {2019}<br>}<br>
+    @incollection{Schak2019a,<br> address = {Cham},<br> author = {Schak, Monika and Gepperth, Alexander},<br> booktitle = {Artificial Neural Networks and Machine Learning – ICANN 2019: Deep Learning},<br> doi = {10.1007/978-3-030-30484-3_56},<br> editor = {Tetko, Igor V and Kůrková, Věra and Karpov, Pavel and Theis, Fabian},<br> isbn = {978-3-030-30484-3},<br> keywords = {Catastrophic Forgetting,LSTM,[rnn],sequential},<br> language = {en},<br> mendeley-tags = {[rnn]},<br> pages = {714--728},<br> publisher = {Springer International Publishing},<br> series = {Lecture Notes in Computer Science},<br> title = {A Study on Catastrophic Forgetting in Deep LSTM Networks},<br> url = {http://link.springer.com/10.1007/978-3-030-30484-3_56},<br> year = {2019}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Schak2019aContinual_Sequential_Learning_more2" style="display: none">
     We present a systematic study of Catastrophic Forgetting (CF), i.e., the abrupt loss of previously acquired knowledge, when retraining deep recurrent LSTM networks with new samples. CF has recently received renewed attention in the case of feed-forward DNNs, and this article is the first work that aims to rigorously establish whether deep LSTM networks are afflicted by CF as well, and to what degree. In order to test this fully, training is conducted using a wide variety of high-dimensional image-based sequence classification tasks derived from established visual classification benchmarks (MNIST, Devanagari, FashionMNIST and EMNIST). We find that the CF effect occurs universally, without exception, for deep LSTM-based sequence classifiers, regardless of the construction and provenance of sequences. This leads us to conclude that LSTMs, just like DNNs, are fully affected by CF, and that further research work needs to be conducted in order to determine how to avoid this effect (which is not a goal of this study).
@@ -8569,13 +8773,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Overcoming Catastrophic interference using conceptor-aided backpropagation by Xu He and Herbert Jaeger. <em>ICLR</em>, 2018. <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span> <span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>  <br>
+<li><p><a class="reference external" href="https://openreview.net/pdf?id=B1al7jg0b">Overcoming Catastrophic interference using conceptor-aided backpropagation</a> by Xu He and Herbert Jaeger. <em>ICLR</em>, 2018. <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span> <span style='background-color:AliceBlue; padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="xu2018aContinual_Sequential_LearningFunction()" id="xu2018aContinual_Sequential_Learning_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="xu2018aContinual_Sequential_LearningFunction2()" id="xu2018aContinual_Sequential_Learning_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="xu2018aContinual_Sequential_LearningFunction3()" id="xu2018aContinual_Sequential_Learning_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="xu2018aContinual_Sequential_Learning_more" style="display: none">
-    @inproceedings{xu2018a,<br> author = {He, Xu and Jaeger, Herbert},<br> booktitle = {ICLR},<br> file = {::},<br> keywords = {[mnist],[rnn]},<br> mendeley-tags = {[mnist],[rnn]},<br> title = {Overcoming Catastrophic interference using conceptor-aided backpropagation},<br> year = {2018}<br>}<br>
+    @inproceedings{xu2018a,<br> author = {He, Xu and Jaeger, Herbert},<br> booktitle = {ICLR},<br> file = {::},<br> keywords = {[mnist],[rnn]},<br> mendeley-tags = {[mnist],[rnn]},<br> title = {Overcoming Catastrophic interference using conceptor-aided backpropagation},<br> url = {https://openreview.net/pdf?id=B1al7jg0b},<br> year = {2018}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="xu2018aContinual_Sequential_Learning_more2" style="display: none">
     Catastrophic interference has been a major roadblock in the research of continual learning. Here we propose a variant of the back-propagation algorithm, "conceptor-aided backprop" (CAB), in which gradients are shielded by concep-tors against degradation of previously learned tasks. Conceptors have their origin in reservoir computing, where they have been previously shown to overcome catastrophic forgetting. CAB extends these results to deep feedforward networks. On the disjoint and permuted MNIST tasks, CAB outperforms two other methods for coping with catastrophic interference that have recently been proposed.
@@ -8774,13 +8978,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>iCaRL: Incremental Classifier and Representation Learning by Sylvestre-Alvise Rebuffi, Alexander Kolesnikov, Georg Sperl and Christoph H Lampert. <em>The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2017. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>  <br>
+<li><p><a class="reference external" href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Rebuffi_iCaRL_Incremental_Classifier_CVPR_2017_paper.pdf">iCaRL: Incremental Classifier and Representation Learning</a> by Sylvestre-Alvise Rebuffi, Alexander Kolesnikov, Georg Sperl and Christoph H Lampert. <em>The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2017. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Rebuffi2017aContinual_Sequential_LearningFunction()" id="Rebuffi2017aContinual_Sequential_Learning_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Rebuffi2017aContinual_Sequential_LearningFunction2()" id="Rebuffi2017aContinual_Sequential_Learning_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Rebuffi2017aContinual_Sequential_LearningFunction3()" id="Rebuffi2017aContinual_Sequential_Learning_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Rebuffi2017aContinual_Sequential_Learning_more" style="display: none">
-    @inproceedings{Rebuffi2017a,<br> author = {Rebuffi, Sylvestre-Alvise and Kolesnikov, Alexander and Sperl, Georg and Lampert, Christoph H},<br> booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br> keywords = {[cifar]},<br> mendeley-tags = {[cifar]},<br> month = {jul},<br> title = {iCaRL: Incremental Classifier and Representation Learning},<br> year = {2017}<br>}<br>
+    @inproceedings{Rebuffi2017a,<br> author = {Rebuffi, Sylvestre-Alvise and Kolesnikov, Alexander and Sperl, Georg and Lampert, Christoph H},<br> booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},<br> keywords = {[cifar]},<br> mendeley-tags = {[cifar]},<br> month = {jul},<br> title = {iCaRL: Incremental Classifier and Representation Learning},<br> url = {http://openaccess.thecvf.com/content_cvpr_2017/papers/Rebuffi_iCaRL_Incremental_Classifier_CVPR_2017_paper.pdf},<br> year = {2017}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Rebuffi2017aContinual_Sequential_Learning_more2" style="display: none">
     N.A.
@@ -9261,9 +9465,77 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 </div>
 <div class="section" id="generative-replay-methods">
 <h3>Generative Replay Methods<a class="headerlink" href="#generative-replay-methods" title="Permalink to this headline">¶</a></h3>
-<p><strong>4 papers</strong></p>
+<p><strong>5 papers</strong></p>
 <p>In this section we collect all the papers introducing a continual learning strategy employing some generative replay methods.</p>
 <ul class="simple">
+<li><p><a class="reference external" href="https://arxiv.org/abs/2007.06637http://arxiv.org/abs/2007.06637">Storing Encoded Episodes as Concepts for Continual Learning</a> by Ali Ayub and Alan R. Wagner. <em>arXiv</em>, 2020. <span style='background-color:Maroon; padding: 2px; border-radius:4px; border: 1px solid black;'>[generative]</span> <span style='background-color:DeepPink; padding: 2px; border-radius:4px; border: 1px solid black;'>[imagenet]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
+<button style="font-size:75%; line-height:15px" onclick="ayub2020bGenerative_Replay_MethodsFunction()" id="ayub2020bGenerative_Replay_Methods_btt">Bib</button>
+<button style="font-size:75%; line-height:15px" onclick="ayub2020bGenerative_Replay_MethodsFunction2()" id="ayub2020bGenerative_Replay_Methods_btt2">Abstract</button>
+<button style="font-size:75%; line-height:15px" onclick="ayub2020bGenerative_Replay_MethodsFunction3()" id="ayub2020bGenerative_Replay_Methods_btt3">Notes</button>
+
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020bGenerative_Replay_Methods_more" style="display: none">
+    @article{ayub2020b,<br> archiveprefix = {arXiv},<br> arxivid = {2007.06637},<br> author = {Ayub, Ali and Wagner, Alan R.},<br> eprint = {2007.06637},<br> journal = {arXiv},<br> keywords = {[generative],[imagenet],[mnist],catastrophic forgetting,continual learning},<br> mendeley-tags = {[generative],[imagenet],[mnist]},<br> month = {jun},<br> title = {Storing Encoded Episodes as Concepts for Continual Learning},<br> url = {https://arxiv.org/abs/2007.06637 http://arxiv.org/abs/2007.06637},<br> year = {2020}<br>}<br>
+</span></p>
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020bGenerative_Replay_Methods_more2" style="display: none">
+    The two main challenges faced by continual learning approaches are catastrophic forgetting and memory limitations on the storage of data. To cope with these challenges, we propose a novel, cognitively-inspired approach which trains autoencoders with Neural Style Transfer to encode and store images. Reconstructed images from encoded episodes are replayed when training the classifier model on a new task to avoid catastrophic forgetting. The loss function for the reconstructed images is weighted to reduce its effect during classifier training to cope with image degradation. When the system runs out of memory the encoded episodes are converted into centroids and covariance matrices, which are used to generate pseudo-images during classifier training, keeping classifier performance stable with less memory. Our approach increases classification accuracy by 13-17% over state-of-the-art methods on benchmark datasets, while requiring 78% less storage space.
+</span></p>
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020bGenerative_Replay_Methods_more3" style="display: none">
+    N.A.
+</span></p>
+<script>
+    function ayub2020bGenerative_Replay_MethodsFunction() {
+      var moreText = document.getElementById("ayub2020bGenerative_Replay_Methods_more");
+      var moreText2 = document.getElementById("ayub2020bGenerative_Replay_Methods_more2");
+      var moreText3 = document.getElementById("ayub2020bGenerative_Replay_Methods_more3");
+      var btnText = document.getElementById("ayub2020bGenerative_Replay_Methods_btt");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Bib";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Bib";
+        moreText.style.display = "none";
+      }
+      moreText2.style.display = "none";
+      moreText3.style.display = "none";
+    }
+</script>
+<script>
+    function ayub2020bGenerative_Replay_MethodsFunction2() {
+      var moreText = document.getElementById("ayub2020bGenerative_Replay_Methods_more2");
+      var moreText1 = document.getElementById("ayub2020bGenerative_Replay_Methods_more");
+      var moreText3 = document.getElementById("ayub2020bGenerative_Replay_Methods_more3");
+      var btnText = document.getElementById("ayub2020bGenerative_Replay_Methods_btt2");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Abstract";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Abstract";
+        moreText.style.display = "none";
+      }
+      moreText1.style.display = "none";
+      moreText3.style.display = "none";
+    }
+</script>
+<script>
+    function ayub2020bGenerative_Replay_MethodsFunction3() {
+      var moreText = document.getElementById("ayub2020bGenerative_Replay_Methods_more3");
+      var moreText1 = document.getElementById("ayub2020bGenerative_Replay_Methods_more");
+      var moreText2 = document.getElementById("ayub2020bGenerative_Replay_Methods_more2");
+      var btnText = document.getElementById("ayub2020bGenerative_Replay_Methods_btt3");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Notes";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Notes";
+        moreText.style.display = "none";
+      }
+      moreText1.style.display = "none";
+      moreText2.style.display = "none";
+    }
+</script></p></li>
 <li><p><a class="reference external" href="http://arxiv.org/abs/1903.04566">Complementary Learning for Overcoming Catastrophic Forgetting Using Experience Replay</a> by Mohammad Rostami, Soheil Kolouri and Praveen K Pilly. <em>arXiv</em>, 2019.  <br>
 <button style="font-size:75%; line-height:15px" onclick="Rostami2019aGenerative_Replay_MethodsFunction()" id="Rostami2019aGenerative_Replay_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Rostami2019aGenerative_Replay_MethodsFunction2()" id="Rostami2019aGenerative_Replay_Methods_btt2">Abstract</button>
@@ -9965,7 +10237,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <button style="font-size:75%; line-height:15px" onclick="beaulieu2020aMeta_Continual_LearningFunction3()" id="beaulieu2020aMeta_Continual_Learning_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="beaulieu2020aMeta_Continual_Learning_more" style="display: none">
-    @inproceedings{beaulieu2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2002.09571},<br> author = {Beaulieu, Shawn and Frati, Lapo and Miconi, Thomas and Lehman, Joel and Stanley, Kenneth O. and Clune, Jeff and Cheney, Nick},<br> booktitle = {ECAI},<br> eprint = {2002.09571},<br> month = {feb},<br> title = {Learning to Continually Learn},<br> url = {http://arxiv.org/abs/2002.09571},<br> year = {2020}<br>}<br>
+    @inproceedings{beaulieu2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2002.09571},<br> author = {Beaulieu, Shawn and Frati, Lapo and Miconi, Thomas and Lehman, Joel and Stanley, Kenneth O. and Clune, Jeff and Cheney, Nick},<br> booktitle = {ECAI},<br> eprint = {2002.09571},<br> file = {::},<br> keywords = {[vision]},<br> mendeley-tags = {[vision]},<br> month = {feb},<br> title = {Learning to Continually Learn},<br> url = {http://arxiv.org/abs/2002.09571},<br> year = {2020}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="beaulieu2020aMeta_Continual_Learning_more2" style="display: none">
     Continual lifelong learning requires an agent or model to learn many sequentially ordered tasks, building on previous knowledge without catastrophically forgetting it. Much work has gone towards preventing the default tendency of machine learning models to catastrophically forget, yet virtually all such work involves manually-designed solutions to the problem. We instead advocate meta-learning a solution to catastrophic forgetting, allowing AI to learn to continually learn. Inspired by neuromodulatory processes in the brain, we propose A Neuromodulated Meta-Learning Algorithm (ANML). It differentiates through a sequential learning process to meta-learn an activation-gating function that enables context-dependent selective activation within a deep neural network. Specifically, a neuromodulatory (NM) neural network gates the forward pass of another (otherwise normal) neural network called the prediction learning network (PLN). The NM network also thus indirectly controls selective plasticity (i.e. the backward pass of) the PLN. ANML enables continual learning without catastrophic forgetting at scale: it produces state-of-the-art continual learning performance, sequentially learning as many as 600 classes (over 9,000 SGD updates).
@@ -10027,13 +10299,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Learning to learn without forgetting by maximizing transfer and minimizing interference by Matthew Riemer, Ignacio Cases, Robert Ajemian, Miao Liu, Irina Rish, Yuhai Tu and Gerald Tesauro. <em>ICLR</em>, 2019. <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
+<li><p><a class="reference external" href="https://openreview.net/pdf?id=B1gTShAct7">Learning to learn without forgetting by maximizing transfer and minimizing interference</a> by Matthew Riemer, Ignacio Cases, Robert Ajemian, Miao Liu, Irina Rish, Yuhai Tu and Gerald Tesauro. <em>ICLR</em>, 2019. <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="riemer2019aMeta_Continual_LearningFunction()" id="riemer2019aMeta_Continual_Learning_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="riemer2019aMeta_Continual_LearningFunction2()" id="riemer2019aMeta_Continual_Learning_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="riemer2019aMeta_Continual_LearningFunction3()" id="riemer2019aMeta_Continual_Learning_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aMeta_Continual_Learning_more" style="display: none">
-    @inproceedings{riemer2019a,<br> author = {Riemer, Matthew and Cases, Ignacio and Ajemian, Robert and Liu, Miao and Rish, Irina and Tu, Yuhai and Tesauro, Gerald},<br> booktitle = {ICLR},<br> month = {sep},<br> title = {Learning to learn without forgetting by maximizing transfer and minimizing interference},<br> year = {2019}<br>}<br>
+    @inproceedings{riemer2019a,<br> author = {Riemer, Matthew and Cases, Ignacio and Ajemian, Robert and Liu, Miao and Rish, Irina and Tu, Yuhai and Tesauro, Gerald},<br> booktitle = {ICLR},<br> file = {::},<br> keywords = {[mnist]},<br> mendeley-tags = {[mnist]},<br> month = {sep},<br> title = {Learning to learn without forgetting by maximizing transfer and minimizing interference},<br> url = {https://openreview.net/pdf?id=B1gTShAct7},<br> year = {2019}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aMeta_Continual_Learning_more2" style="display: none">
     Lack of performance when it comes to continual learning over non-stationary distributions of data remains a major challenge in scaling neural network learning to more human realistic settings. In this work we propose a new conceptualization of the continual learning problem in terms of a temporally symmetric trade-off between transfer and interference that can be optimized by enforcing gradient alignment across examples. We then propose a new algorithm, Meta-Experience Replay (MER), that directly exploits this view by combining experience replay with optimization based meta-learning. This method learns parameters that make interference based on future gradients less likely and transfer based on future gradients more likely. 1 We conduct experiments across continual lifelong supervised learning benchmarks and non-stationary reinforcement learning environments demonstrating that our approach consistently outperforms recently proposed baselines for continual learning. Our experiments show that the gap between the performance of MER and baseline algorithms grows both as the environment gets more non-stationary and as the fraction of the total experiences stored gets smaller.
@@ -10095,13 +10367,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p><a class="reference external" href="https://github.com/khurramjaved96/mrcl">Meta-Learning Representations for Continual Learning</a> by Khurram Javed and Martha White. <em>NeurIPS</em>, 2019. <span style='background-color:#FDD017; padding: 2px; border-radius:4px; border: 1px solid black;'>[omniglot]</span>  <br>
+<li><p><a class="reference external" href="http://papers.nips.cc/paper/8458-meta-learning-representations-for-continual-learning">Meta-Learning Representations for Continual Learning</a> by Khurram Javed and Martha White. <em>NeurIPS</em>, 2019. <span style='background-color:#FDD017; padding: 2px; border-radius:4px; border: 1px solid black;'>[omniglot]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="khurram2019aMeta_Continual_LearningFunction()" id="khurram2019aMeta_Continual_Learning_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="khurram2019aMeta_Continual_LearningFunction2()" id="khurram2019aMeta_Continual_Learning_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="khurram2019aMeta_Continual_LearningFunction3()" id="khurram2019aMeta_Continual_Learning_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="khurram2019aMeta_Continual_Learning_more" style="display: none">
-    @inproceedings{khurram2019a,<br> author = {Javed, Khurram and White, Martha},<br> booktitle = {NeurIPS},<br> title = {Meta-Learning Representations for Continual Learning},<br> url = {https://github.com/khurramjaved96/mrcl},<br> year = {2019}<br>}<br>
+    @inproceedings{khurram2019a,<br> author = {Javed, Khurram and White, Martha},<br> booktitle = {NeurIPS},<br> file = {:home/andrea/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Javed, White - 2019 - Meta-Learning Representations for Continual Learning(3).pdf:pdf},<br> keywords = {[omniglot]},<br> mendeley-tags = {[omniglot]},<br> title = {Meta-Learning Representations for Continual Learning},<br> url = {http://papers.nips.cc/paper/8458-meta-learning-representations-for-continual-learning},<br> year = {2019}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="khurram2019aMeta_Continual_Learning_more2" style="display: none">
     A continual learning agent should be able to build on top of existing knowledge to learn on new data quickly while minimizing forgetting. Current intelligent systems based on neural network function approximators arguably do the opposite-they are highly prone to forgetting and rarely trained to facilitate future learning. One reason for this poor behavior is that they learn from a representation that is not explicitly trained for these two goals. In this paper, we propose OML, an objective that directly minimizes catastrophic interference by learning representations that accelerate future learning and are robust to forgetting under online updates in continual learning. We show that it is possible to learn naturally sparse representations that are more effective for online updating. Moreover, our algorithm is complementary to existing continual learning strategies, such as MER and GEM. Finally, we demonstrate that a basic online updating strategy on representations learned by OML is competitive with rehearsal based methods for continual learning. 1
@@ -10442,13 +10714,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Strategies for improving single-head continual learning performance by Alaa El Khatib and Fakhri Karray. <em>Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)</em>, 452–460, 2019. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
+<li><p><a class="reference external" href="http://link.springer.com/10.1007/978-3-030-27202-9_41">Strategies for Improving Single-Head Continual Learning Performance</a> by Alaa El Khatib and Fakhri Karray. <em>Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)</em>, 452–460, 2019. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="khatib2019aMetrics_and_EvaluationsFunction()" id="khatib2019aMetrics_and_Evaluations_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="khatib2019aMetrics_and_EvaluationsFunction2()" id="khatib2019aMetrics_and_Evaluations_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="khatib2019aMetrics_and_EvaluationsFunction3()" id="khatib2019aMetrics_and_Evaluations_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="khatib2019aMetrics_and_Evaluations_more" style="display: none">
-    @inproceedings{khatib2019a,<br> author = {El Khatib, Alaa and Karray, Fakhri},<br> booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},<br> doi = {10.1007/978-3-030-27202-9_41},<br> file = {::},<br> isbn = {9783030272012},<br> issn = {16113349},<br> keywords = {Catastrophic forgetting,Continual learning,[cifar],[mnist]},<br> mendeley-tags = {[cifar],[mnist]},<br> month = {aug},<br> pages = {452--460},<br> publisher = {Springer Verlag},<br> title = {Strategies for improving single-head continual learning performance},<br> volume = {11662 LNCS},<br> year = {2019}<br>}<br>
+    @incollection{khatib2019a,<br> author = {El Khatib, Alaa and Karray, Fakhri},<br> booktitle = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},<br> doi = {10.1007/978-3-030-27202-9_41},<br> file = {::},<br> isbn = {9783030272012},<br> issn = {16113349},<br> keywords = {Catastrophic forgetting,Continual learning,[cifar],[mnist]},<br> mendeley-tags = {[cifar],[mnist]},<br> month = {aug},<br> pages = {452--460},<br> publisher = {Springer Verlag},<br> title = {Strategies for Improving Single-Head Continual Learning Performance},<br> url = {http://link.springer.com/10.1007/978-3-030-27202-9_41},<br> volume = {11662 LNCS},<br> year = {2019}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="khatib2019aMetrics_and_Evaluations_more2" style="display: none">
     Catastrophic forgetting has long been seen as the main obstacle to building continual learning models. We argue in this paper that an equally challenging characteristic of the continual learning framework is that data are never completely available at the same time, making it difficult to learn joint conditional distributions over them. This is most evident in the usually large gap between single-head and multi-head performance of continual learning models. We propose in this paper two strategies to improve performance of continual learning models, particularly in the single-head framework and for image classification tasks. First, we argue that learning multiple binary classifiers, rather than a single multi-class classifier, for each presentation of data is more consistent with the single-head framework. Moreover, we argue that auxiliary, unlabelled data can be used in tandem with this approach to slow the decay in performance of these binary classifiers over time.
@@ -10790,13 +11062,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Avoiding Catastrophic Forgetting by  and Michael E. Hasselmo. <em>Trends in Cognitive Sciences</em>, 407–408, 2017.  <br>
+<li><p><a class="reference external" href="https://linkinghub.elsevier.com/retrieve/pii/S1364661317300736">Avoiding Catastrophic Forgetting</a> by  and Michael E. Hasselmo. <em>Trends in Cognitive Sciences</em>, 407–408, 2017.  <br>
 <button style="font-size:75%; line-height:15px" onclick="Hasselmo2017NeuroscienceFunction()" id="Hasselmo2017Neuroscience_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Hasselmo2017NeuroscienceFunction2()" id="Hasselmo2017Neuroscience_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Hasselmo2017NeuroscienceFunction3()" id="Hasselmo2017Neuroscience_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hasselmo2017Neuroscience_more" style="display: none">
-    @article{Hasselmo2017,<br> author = {Hasselmo, Michael E.},<br> doi = {10.1016/j.tics.2017.04.001},<br> file = {::},<br> issn = {1879307X},<br> journal = {Trends in Cognitive Sciences},<br> keywords = {hasselmo2017a},<br> month = {jun},<br> number = {6},<br> pages = {407--408},<br> publisher = {Elsevier Ltd},<br> title = {Avoiding Catastrophic Forgetting},<br> volume = {21},<br> year = {2017}<br>}<br>
+    @article{Hasselmo2017,<br> author = {Hasselmo, Michael E.},<br> doi = {10.1016/j.tics.2017.04.001},<br> file = {::},<br> issn = {13646613},<br> journal = {Trends in Cognitive Sciences},<br> keywords = {hasselmo2017a},<br> month = {jun},<br> number = {6},<br> pages = {407--408},<br> publisher = {Elsevier Ltd},<br> title = {Avoiding Catastrophic Forgetting},<br> url = {https://linkinghub.elsevier.com/retrieve/pii/S1364661317300736},<br> volume = {21},<br> year = {2017}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hasselmo2017Neuroscience_more2" style="display: none">
     Humans regularly perform new learning without losing memory for previous information, but neural network models suffer from the phenomenon of catastrophic forgetting in which new learning impairs prior function. A recent article presents an algorithm that spares learning at synapses important for previously learned function, reducing catastrophic forgetting.
@@ -10858,13 +11130,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Synaptic consolidation: An approach to long-term learning by  and Claudia Clopath. <em>Cognitive Neurodynamics</em>, 251–257, 2012. <span style='background-color:#99C68E; padding: 2px; border-radius:4px; border: 1px solid black;'>[hebbian]</span>  <br>
+<li><p><a class="reference external" href="http://link.springer.com/10.1007/s11571-011-9177-6">Synaptic consolidation: an approach to long-term learning</a> by  and Claudia Clopath. <em>Cognitive Neurodynamics</em>, 251–257, 2012. <span style='background-color:#99C68E; padding: 2px; border-radius:4px; border: 1px solid black;'>[hebbian]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Clopath2012aNeuroscienceFunction()" id="Clopath2012aNeuroscience_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Clopath2012aNeuroscienceFunction2()" id="Clopath2012aNeuroscience_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Clopath2012aNeuroscienceFunction3()" id="Clopath2012aNeuroscience_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Clopath2012aNeuroscience_more" style="display: none">
-    @article{Clopath2012a,<br> author = {Clopath, Claudia},<br> doi = {10.1007/s11571-011-9177-6},<br> isbn = {1871-4080 (Print)},<br> issn = {18714080},<br> journal = {Cognitive Neurodynamics},<br> keywords = {Behavior,Electrophysiology,Model,Review,Synaptic consolidation,Synaptic plasticity,Synaptic tagging,[hebbian]},<br> mendeley-tags = {[hebbian]},<br> number = {3},<br> pages = {251--257},<br> pmid = {23730356},<br> title = {Synaptic consolidation: An approach to long-term learning},<br> volume = {6},<br> year = {2012}<br>}<br>
+    @article{Clopath2012a,<br> author = {Clopath, Claudia},<br> doi = {10.1007/s11571-011-9177-6},<br> isbn = {1871-4080 (Print)},<br> issn = {1871-4080},<br> journal = {Cognitive Neurodynamics},<br> keywords = {Behavior,Electrophysiology,Model,Review,Synaptic consolidation,Synaptic plasticity,Synaptic tagging,[hebbian]},<br> mendeley-tags = {[hebbian]},<br> month = {jun},<br> number = {3},<br> pages = {251--257},<br> pmid = {23730356},<br> title = {Synaptic consolidation: an approach to long-term learning},<br> url = {http://link.springer.com/10.1007/s11571-011-9177-6},<br> volume = {6},<br> year = {2012}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Clopath2012aNeuroscience_more2" style="display: none">
     Synaptic plasticity is thought to be the basis of learning and memory, but it is mostly studied on the timescale of mere minutes. This review discusses synaptic consolidation, a process that enables synapses to retain their strength for a much longer time (days to years), instead of returning to their original value. The process involves specific plasticity-related proteins, and depends on the dopamine D1/D5 receptors. Here, we review the research on synaptic consolidation, describing electrophysiology experiments, recent modeling work, as well as behavioral correlates.
@@ -10926,13 +11198,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>The Organization of Behavior: A Neuropsychological Theory by  and D O Hebb. <em>Lawrence Erlbaum</em>, 2002. <span style='background-color:#99C68E; padding: 2px; border-radius:4px; border: 1px solid black;'>[hebbian]</span>  <br>
+<li><p><a class="reference external" href="https://www.amazon.com/Organization-Behavior-Neuropsychological-Theory/dp/0805843000https://books.google.it/books/about/The_Organization_of_Behavior.html?id=ddB4AgAAQBAJ&amp;printsec=frontcover&amp;source=kp_read_button&amp;redir_esc=y#v=onepage&amp;q&amp;f=false">The Organization of Behavior: A Neuropsychological Theory</a> by  and D O Hebb. <em>Lawrence Erlbaum</em>, 2002. <span style='background-color:#99C68E; padding: 2px; border-radius:4px; border: 1px solid black;'>[hebbian]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Hebb2005aNeuroscienceFunction()" id="Hebb2005aNeuroscience_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Hebb2005aNeuroscienceFunction2()" id="Hebb2005aNeuroscience_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Hebb2005aNeuroscienceFunction3()" id="Hebb2005aNeuroscience_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hebb2005aNeuroscience_more" style="display: none">
-    @book{Hebb2005a,<br> author = {Hebb, D O},<br> booktitle = {Lawrence Erlbaum},<br> isbn = {978-1-135-63191-8},<br> keywords = {Psychology / Cognitive Psychology & Cognition,Psychology / General,Psychology / Neuropsychology,Psychology / Physiological Psychology,[hebbian]},<br> language = {en},<br> mendeley-tags = {[hebbian]},<br> month = {apr},<br> publisher = {Psychology Press},<br> shorttitle = {The Organization of Behavior},<br> title = {The Organization of Behavior: A Neuropsychological Theory},<br> year = {2002}<br>}<br>
+    @book{Hebb2005a,<br> author = {Hebb, D O},<br> booktitle = {Lawrence Erlbaum},<br> isbn = {978-1-135-63191-8},<br> keywords = {Psychology / Cognitive Psychology & Cognition,Psychology / General,Psychology / Neuropsychology,Psychology / Physiological Psychology,[hebbian]},<br> language = {en},<br> mendeley-tags = {[hebbian]},<br> month = {apr},<br> publisher = {Psychology Press},<br> shorttitle = {The Organization of Behavior},<br> title = {The Organization of Behavior: A Neuropsychological Theory},<br> url = {https://www.amazon.com/Organization-Behavior-Neuropsychological-Theory/dp/0805843000 https://books.google.it/books/about/The_Organization_of_Behavior.html?id=ddB4AgAAQBAJ&printsec=frontcover&source=kp_read_button&redir_esc=y#v=onepage&q&f=false},<br> year = {2002}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hebb2005aNeuroscience_more2" style="display: none">
     Since its publication in 1949, D.O. Hebb's, The Organization of Behavior has been one of the most influential books in the fields of psychology and neuroscience. However, the original edition has been unavailable since 1966, ensuring that Hebb's comment that a classic normally means "cited but not read" is true in his case. This new edition rectifies a long-standing problem for behavioral neuroscientists–the inability to obtain one of the most cited publications in the field. The Organization of Behavior played a significant part in stimulating the investigation of the neural foundations of behavior and continues to be inspiring because it provides a general framework for relating behavior to synaptic organization through the dynamics of neural networks. D.O. Hebb was also the first to examine the mechanisms by which environment and experience can influence brain structure and function, and his ideas formed the basis for work on enriched environments as stimulants for behavioral development. References to Hebb, the Hebbian cell assembly, the Hebb synapse, and the Hebb rule increase each year. These forceful ideas of 1949 are now applied in engineering, robotics, and computer science, as well as neurophysiology, neuroscience, and psychology–a tribute to Hebb's foresight in developing a foundational neuropsychological theory of the organization of behavior.
@@ -10994,13 +11266,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Negative transfer errors in sequential cognitive skills: strong-but-wrong sequence application by Woltz Dan, Gardner Michael and Bell Brian. <em>Journal of Experimental Psychology. Learning, Memory, and Cognition</em>, 601–625, 2000.  <br>
+<li><p><a class="reference external" href="http://doi.apa.org/getdoi.cfm?doi=10.1037/0278-7393.26.3.601">Negative transfer errors in sequential cognitive skills: Strong-but-wrong sequence application.</a> by Dan J. Woltz, Michael K. Gardner and Brian G. Bell. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>, 601–625, 2000.  <br>
 <button style="font-size:75%; line-height:15px" onclick="Dan2000aNeuroscienceFunction()" id="Dan2000aNeuroscience_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Dan2000aNeuroscienceFunction2()" id="Dan2000aNeuroscience_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Dan2000aNeuroscienceFunction3()" id="Dan2000aNeuroscience_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Dan2000aNeuroscience_more" style="display: none">
-    @article{Dan2000a,<br> author = {Dan, Woltz and Michael, Gardner and Brian, Bell},<br> issn = {0278-7393},<br> journal = {Journal of Experimental Psychology. Learning, Memory, and Cognition},<br> language = {eng},<br> month = {may},<br> number = {3},<br> pages = {601--625},<br> shorttitle = {Negative transfer errors in sequential cognitive s},<br> title = {Negative transfer errors in sequential cognitive skills: strong-but-wrong sequence application},<br> volume = {26},<br> year = {2000}<br>}<br>
+    @article{Dan2000a,<br> author = {Woltz, Dan J. and Gardner, Michael K. and Bell, Brian G.},<br> doi = {10.1037/0278-7393.26.3.601},<br> issn = {1939-1285},<br> journal = {Journal of Experimental Psychology: Learning, Memory, and Cognition},<br> language = {eng},<br> month = {may},<br> number = {3},<br> pages = {601--625},<br> shorttitle = {Negative transfer errors in sequential cognitive s},<br> title = {Negative transfer errors in sequential cognitive skills: Strong-but-wrong sequence application.},<br> url = {http://doi.apa.org/getdoi.cfm?doi=10.1037/0278-7393.26.3.601},<br> volume = {26},<br> year = {2000}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Dan2000aNeuroscience_more2" style="display: none">
     Three experiments investigated the role of processing sequence knowledge in negative transfer within multistep cognitive skills. In Experiments 1 and 2, more training resulted in higher error rates when new processing sequences that resembled familiar ones were introduced in transfer. Transfer error responses were executed with the same speed as correct responses to familiar sequence trials, and the errors appeared to be undetected by the performers. Experiment 3 tested whether the effects of sequence learning were attributable to explicit or implicit knowledge of processing sequences. Evidence favored the implicit learning interpretation. Findings are discussed in relationship to earlier demonstrations of the einstellung effect and to current taxonomic theories of human error.
@@ -11953,13 +12225,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Class-Incremental Learning Based on Feature Extraction of CNN with Optimized Softmax and One-Class Classifiers by Xin Ye and Qiuyu Zhu. <em>IEEE Access</em>, 42024–42031, 2019. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
+<li><p><a class="reference external" href="https://ieeexplore.ieee.org/document/8666123/">Class-Incremental Learning Based on Feature Extraction of CNN With Optimized Softmax and One-Class Classifiers</a> by Xin Ye and Qiuyu Zhu. <em>IEEE Access</em>, 42024–42031, 2019. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Ye2019aOthersFunction()" id="Ye2019aOthers_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Ye2019aOthersFunction2()" id="Ye2019aOthers_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Ye2019aOthersFunction3()" id="Ye2019aOthers_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ye2019aOthers_more" style="display: none">
-    @article{Ye2019a,<br> author = {Ye, Xin and Zhu, Qiuyu},<br> doi = {10.1109/ACCESS.2019.2904614},<br> file = {::},<br> issn = {21693536},<br> journal = {IEEE Access},<br> keywords = {One-class classifier,[cifar],[mnist],feature extraction,incremental learning,loss function},<br> mendeley-tags = {[cifar],[mnist]},<br> pages = {42024--42031},<br> publisher = {Institute of Electrical and Electronics Engineers Inc.},<br> title = {Class-Incremental Learning Based on Feature Extraction of CNN with Optimized Softmax and One-Class Classifiers},<br> volume = {7},<br> year = {2019}<br>}<br>
+    @article{Ye2019a,<br> author = {Ye, Xin and Zhu, Qiuyu},<br> doi = {10.1109/ACCESS.2019.2904614},<br> file = {::},<br> issn = {2169-3536},<br> journal = {IEEE Access},<br> keywords = {One-class classifier,[cifar],[mnist],feature extraction,incremental learning,loss function},<br> mendeley-tags = {[cifar],[mnist]},<br> pages = {42024--42031},<br> publisher = {Institute of Electrical and Electronics Engineers Inc.},<br> title = {Class-Incremental Learning Based on Feature Extraction of CNN With Optimized Softmax and One-Class Classifiers},<br> url = {https://ieeexplore.ieee.org/document/8666123/},<br> volume = {7},<br> year = {2019}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ye2019aOthers_more2" style="display: none">
     With the development of deep convolutional neural networks in recent years, the network structure has become more and more complicated and varied, and there are very good results in pattern recognition, image classification, scene classification, and target tracking. This end-to-end learning model relies on the initial large dataset. However, many data are gradually obtained in practical situations, which contradict the deep learning of one-time batch learning. There is an urgent need for an incremental learning approach that can continuously learn new knowledge from new data while retaining what has already been learned. This paper proposes an incremental learning algorithm based on convolutional neural network and support vector data description. CNN and AM-Softmax loss function are used to represent and continuously learn image features. Support vector data description is used to construct multiple hyperspheres for new and old classes of images. Class-incremental learning is achieved by the increment of hyperspheres. The experimental results show that the incremental learning method proposed in this paper can effectively extract the latent features of the image and adapt it to the learning situation of the class-increment. The recognition accuracy is close to batch learning.
@@ -12293,16 +12565,16 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Encoder Based Lifelong Learning by Amal Rannen, Rahaf Aljundi, Matthew B. Blaschko and Tinne Tuytelaars. <em>Proceedings of the IEEE International Conference on Computer Vision</em>, 1329–1337, 2017. <span style='background-color:DeepPink; padding: 2px; border-radius:4px; border: 1px solid black;'>[imagenet]</span> <span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>  <br>
+<li><p><a class="reference external" href="http://arxiv.org/abs/1704.01920http://dx.doi.org/10.1109/ICCV.2017.148">Encoder Based Lifelong Learning</a> by Amal Rannen Triki, Rahaf Aljundi, Mathew B. Blaschko and Tinne Tuytelaars. <em>Proceedings of the IEEE International Conference on Computer Vision</em>, 1329–1337, 2017. <span style='background-color:DeepPink; padding: 2px; border-radius:4px; border: 1px solid black;'>[imagenet]</span> <span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="amal2017aOthersFunction()" id="amal2017aOthers_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="amal2017aOthersFunction2()" id="amal2017aOthers_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="amal2017aOthersFunction3()" id="amal2017aOthers_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="amal2017aOthers_more" style="display: none">
-    @inproceedings{amal2017a,<br> archiveprefix = {arXiv},<br> arxivid = {1704.01920},<br> author = {Rannen, Amal and Aljundi, Rahaf and Blaschko, Matthew B. and Tuytelaars, Tinne},<br> booktitle = {Proceedings of the IEEE International Conference on Computer Vision},<br> doi = {10.1109/ICCV.2017.148},<br> eprint = {1704.01920},<br> file = {::},<br> isbn = {9781538610329},<br> issn = {15505499},<br> keywords = {[imagenet],[vision]},<br> mendeley-tags = {[imagenet],[vision]},<br> month = {dec},<br> pages = {1329--1337},<br> publisher = {Institute of Electrical and Electronics Engineers Inc.},<br> title = {Encoder Based Lifelong Learning},<br> volume = {2017-Octob},<br> year = {2017}<br>}<br>
+    @article{amal2017a,<br> archiveprefix = {arXiv},<br> arxivid = {1704.01920},<br> author = {Triki, Amal Rannen and Aljundi, Rahaf and Blaschko, Mathew B. and Tuytelaars, Tinne},<br> doi = {10.1109/ICCV.2017.148},<br> eprint = {1704.01920},<br> file = {::},<br> isbn = {9781538610329},<br> issn = {15505499},<br> journal = {Proceedings of the IEEE International Conference on Computer Vision},<br> keywords = {[imagenet],[vision]},<br> mendeley-tags = {[imagenet],[vision]},<br> month = {apr},<br> pages = {1329--1337},<br> publisher = {Institute of Electrical and Electronics Engineers Inc.},<br> title = {Encoder Based Lifelong Learning},<br> url = {http://arxiv.org/abs/1704.01920 http://dx.doi.org/10.1109/ICCV.2017.148},<br> volume = {2017-Octob},<br> year = {2017}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="amal2017aOthers_more2" style="display: none">
-    This paper introduces a new lifelong learning solution where a single model is trained for a sequence of tasks. The main challenge that vision systems face in this context is catastrophic forgetting: as they tend to adapt to the most recently seen task, they lose performance on the tasks that were learned previously. Our method aims at preserving the knowledge of the previous tasks while learning a new one by using autoencoders. For each task, an under-complete autoencoder is learned, capturing the features that are crucial for its achievement. When a new task is presented to the system, we prevent the reconstructions of the features with these autoencoders from changing, which has the effect of preserving the information on which the previous tasks are mainly relying. At the same time, the features are given space to adjust to the most recent environment as only their projection into a low dimension submanifold is controlled. The proposed system is evaluated on image classification tasks and shows a reduction of forgetting over the state-ofthe-art.
+    This paper introduces a new lifelong learning solution where a single model is trained for a sequence of tasks. The main challenge that vision systems face in this context is catastrophic forgetting: as they tend to adapt to the most recently seen task, they lose performance on the tasks that were learned previously. Our method aims at preserving the knowledge of the previous tasks while learning a new one by using autoencoders. For each task, an under-complete autoencoder is learned, capturing the features that are crucial for its achievement. When a new task is presented to the system, we prevent the reconstructions of the features with these autoencoders from changing, which has the effect of preserving the information on which the previous tasks are mainly relying. At the same time, the features are given space to adjust to the most recent environment as only their projection into a low dimension submanifold is controlled. The proposed system is evaluated on image classification tasks and shows a reduction of forgetting over the state-of-the-art
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="amal2017aOthers_more3" style="display: none">
     N.A.
@@ -12436,16 +12708,16 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p><strong>19 papers</strong></p>
 <p>In this section we collect all the papers introducing a continual learning strategy employing some regularization methods.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/fcdl94/MiB.">Modeling the Background for Incremental Learning in Semantic Segmentation</a> by Fabio Cermelli, Massimiliano Mancini, Samuel Rota Bulo’, Elisa Ricci and Barbara Caputo. <em>CVPR</em>, 9233–9242, 2020.  <br>
+<li><p><a class="reference external" href="http://arxiv.org/abs/2002.00718">Modeling the Background for Incremental Learning in Semantic Segmentation</a> by Fabio Cermelli, Massimiliano Mancini, Samuel Rota Bulò, Elisa Ricci and Barbara Caputo. <em>CVPR</em>, 9233–9242, 2020.  <br>
 <button style="font-size:75%; line-height:15px" onclick="cermelli2020aRegularization_MethodsFunction()" id="cermelli2020aRegularization_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="cermelli2020aRegularization_MethodsFunction2()" id="cermelli2020aRegularization_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="cermelli2020aRegularization_MethodsFunction3()" id="cermelli2020aRegularization_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="cermelli2020aRegularization_Methods_more" style="display: none">
-    @inproceedings{cermelli2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2002.00718},<br> author = {Cermelli, Fabio and Mancini, Massimiliano and Rota Bulo', Samuel and Ricci, Elisa and Caputo, Barbara},<br> booktitle = {CVPR},<br> eprint = {2002.00718},<br> pages = {9233--9242},<br> title = {Modeling the Background for Incremental Learning in Semantic Segmentation},<br> url = {https://github.com/fcdl94/MiB.},<br> year = {2020}<br>}<br>
+    @article{cermelli2020a,<br> archiveprefix = {arXiv},<br> arxivid = {2002.00718},<br> author = {Cermelli, Fabio and Mancini, Massimiliano and Bulò, Samuel Rota and Ricci, Elisa and Caputo, Barbara},<br> eprint = {2002.00718},<br> journal = {CVPR},<br> month = {feb},<br> pages = {9233--9242},<br> title = {Modeling the Background for Incremental Learning in Semantic Segmentation},<br> url = {http://arxiv.org/abs/2002.00718},<br> year = {2020}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="cermelli2020aRegularization_Methods_more2" style="display: none">
-    Despite their effectiveness in a wide range of tasks, deep architectures suffer from some important limitations. In particular, they are vulnerable to catastrophic forgetting, i.e. they perform poorly when they are required to update their model as new classes are available but the original training set is not retained. This paper addresses this problem in the context of semantic segmentation. Current strategies fail on this task because they do not consider a peculiar aspect of semantic segmentation: since each training step provides annotation only for a subset of all possible classes, pixels of the background class (i.e. pixels that do not belong to any other classes) exhibit a semantic distribution shift. In this work we revisit classical incremental learning methods , proposing a new distillation-based framework which explicitly accounts for this shift. Furthermore, we introduce a novel strategy to initialize classifier's parameters, thus preventing biased predictions toward the background class. We demonstrate the effectiveness of our approach with an extensive evaluation on the Pascal-VOC 2012 and ADE20K datasets, significantly outperforming state of the art incremental learning methods. Code can be found at https://github.com/fcdl94/MiB.
+    Despite their effectiveness in a wide range of tasks, deep architectures suffer from some important limitations. In particular, they are vulnerable to catastrophic forgetting, i.e. they perform poorly when they are required to update their model as new classes are available but the original training set is not retained. This paper addresses this problem in the context of semantic segmentation. Current strategies fail on this task because they do not consider a peculiar aspect of semantic segmentation: since each training step provides annotation only for a subset of all possible classes, pixels of the background class (i.e. pixels that do not belong to any other classes) exhibit a semantic distribution shift. In this work we revisit classical incremental learning methods, proposing a new distillation-based framework which explicitly accounts for this shift. Furthermore, we introduce a novel strategy to initialize classifier's parameters, thus preventing biased predictions toward the background class. We demonstrate the effectiveness of our approach with an extensive evaluation on the Pascal-VOC 2012 and ADE20K datasets, significantly outperforming state of the art incremental learning methods.
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="cermelli2020aRegularization_Methods_more3" style="display: none">
     N.A.
@@ -12844,13 +13116,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Uncertainty-based Continual Learning with Adaptive Regularization by Hongjoon Ahn, Sungmin Cha, Donggyu Lee and Taesup Moon. <em>NeurIPS</em>, 4392–4402, 2019. <span style='background-color:Violet; padding: 2px; border-radius:4px; border: 1px solid black;'>[bayes]</span> <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
+<li><p><a class="reference external" href="https://papers.nips.cc/paper/8690-uncertainty-based-continual-learning-with-adaptive-regularization.pdf">Uncertainty-based Continual Learning with Adaptive Regularization</a> by Hongjoon Ahn, Sungmin Cha, Donggyu Lee and Taesup Moon. <em>NeurIPS</em>, 4392–4402, 2019. <span style='background-color:Violet; padding: 2px; border-radius:4px; border: 1px solid black;'>[bayes]</span> <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="ahn2019aRegularization_MethodsFunction()" id="ahn2019aRegularization_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="ahn2019aRegularization_MethodsFunction2()" id="ahn2019aRegularization_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="ahn2019aRegularization_MethodsFunction3()" id="ahn2019aRegularization_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ahn2019aRegularization_Methods_more" style="display: none">
-    @inproceedings{ahn2019a,<br> author = {Ahn, Hongjoon and Cha, Sungmin and Lee, Donggyu and Moon, Taesup},<br> booktitle = {NeurIPS},<br> file = {::},<br> keywords = {[bayes],[cifar],[mnist]},<br> mendeley-tags = {[bayes],[cifar],[mnist]},<br> pages = {4392--4402},<br> title = {Uncertainty-based Continual Learning with Adaptive Regularization},<br> year = {2019}<br>}<br>
+    @inproceedings{ahn2019a,<br> author = {Ahn, Hongjoon and Cha, Sungmin and Lee, Donggyu and Moon, Taesup},<br> booktitle = {NeurIPS},<br> file = {::},<br> keywords = {[bayes],[cifar],[mnist]},<br> mendeley-tags = {[bayes],[cifar],[mnist]},<br> pages = {4392--4402},<br> title = {Uncertainty-based Continual Learning with Adaptive Regularization},<br> url = {https://papers.nips.cc/paper/8690-uncertainty-based-continual-learning-with-adaptive-regularization.pdf},<br> year = {2019}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ahn2019aRegularization_Methods_more2" style="display: none">
     We introduce a new neural network-based continual learning algorithm, dubbed as Uncertainty-regularized Continual Learning (UCL), which builds on traditional Bayesian online learning framework with variational inference. We focus on two significant drawbacks of the recently proposed regularization-based methods: a) considerable additional memory cost for determining the per-weight regularization strengths and b) the absence of gracefully forgetting scheme, which can prevent performance degradation in learning new tasks. In this paper, we show UCL can solve these two problems by introducing a fresh interpretation on the Kullback-Leibler (KL) divergence term of the variational lower bound for Gaussian mean-field approximation. Based on the interpretation, we propose the notion of node-wise uncertainty, which drastically reduces the number of additional parameters for implementing per-weight regularization. Moreover, we devise two additional regularization terms that enforce stability by freezing important parameters for past tasks and allow plasticity by controlling the actively learning parameters for a new task. Through extensive experiments, we show UCL convincingly outperforms most of recent state-of-the-art baselines not only on popular supervised learning benchmarks, but also on challenging lifelong reinforcement learning tasks. The source code of our algorithm is available at https://github.com/csm9493/UCL.
@@ -13048,13 +13320,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p><a class="reference external" href="https://github.com/joansj/hat">Overcoming Catastrophic Forgetting with Hard Attention to the Task</a> by Joan Serrà, Dd́ac Surís, Marius Miron and Alexandros Karatzoglou. <em>ICML</em>, 2018. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
+<li><p><a class="reference external" href="https://arxiv.org/pdf/1801.01423.pdf">Overcoming Catastrophic Forgetting with Hard Attention to the Task</a> by Joan Serrà, Dd́ac Surís, Marius Miron and Alexandros Karatzoglou. <em>ICML</em>, 2018. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Serra2018aRegularization_MethodsFunction()" id="Serra2018aRegularization_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Serra2018aRegularization_MethodsFunction2()" id="Serra2018aRegularization_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Serra2018aRegularization_MethodsFunction3()" id="Serra2018aRegularization_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Serra2018aRegularization_Methods_more" style="display: none">
-    @inproceedings{Serra2018a,<br> author = {Serrà, Joan and Surís, D\d́ac and Miron, Marius and Karatzoglou, Alexandros},<br> booktitle = {ICML},<br> file = {::},<br> keywords = {[cifar],[fashion],[mnist],serra2018a},<br> mendeley-tags = {[cifar],[fashion],[mnist]},<br> title = {Overcoming Catastrophic Forgetting with Hard Attention to the Task},<br> url = {https://github.com/joansj/hat},<br> year = {2018}<br>}<br>
+    @inproceedings{Serra2018a,<br> author = {Serrà, Joan and Surís, D\d́ac and Miron, Marius and Karatzoglou, Alexandros},<br> booktitle = {ICML},<br> file = {::},<br> keywords = {[cifar],[fashion],[mnist],serra2018a},<br> mendeley-tags = {[cifar],[fashion],[mnist]},<br> title = {Overcoming Catastrophic Forgetting with Hard Attention to the Task},<br> url = {https://arxiv.org/pdf/1801.01423.pdf},<br> year = {2018}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Serra2018aRegularization_Methods_more2" style="display: none">
     Catastrophic forgetting occurs when a neural network loses the information learned in a previous task after training on subsequent tasks. This problem remains a hurdle for artificial intelligence systems with sequential learning capabilities. In this paper, we propose a task-based hard attention mechanism that preserves previous tasks' information without affecting the current task's learning. A hard attention mask is learned concurrently to every task, through stochastic gradient descent, and previous masks are exploited to condition such learning. We show that the proposed mechanism is effective for reducing catastrophic forgetting , cutting current rates by 45 to 80%. We also show that it is robust to different hyperparameter choices, and that it offers a number of monitoring capabilities. The approach features the possibility to control both the stability and compactness of the learned knowledge, which we believe makes it also attractive for online learning or network compression applications.
@@ -13116,13 +13388,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Memory Aware Synapses: Learning what (not) to forget by Rahaf Aljundi, Francesca Babiloni, Mohamed Elhoseiny, Marcus Rohrbach and Tinne Tuytelaars. <em>The European Conference on Computer Vision (ECCV)</em>, 2018. <span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>  <br>
+<li><p><a class="reference external" href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Rahaf_Aljundi_Memory_Aware_Synapses_ECCV_2018_paper.pdf">Memory Aware Synapses: Learning what (not) to forget</a> by Rahaf Aljundi, Francesca Babiloni, Mohamed Elhoseiny, Marcus Rohrbach and Tinne Tuytelaars. <em>The European Conference on Computer Vision (ECCV)</em>, 2018. <span style='background-color:#E5E4E2; padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Aljundi2018aRegularization_MethodsFunction()" id="Aljundi2018aRegularization_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Aljundi2018aRegularization_MethodsFunction2()" id="Aljundi2018aRegularization_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Aljundi2018aRegularization_MethodsFunction3()" id="Aljundi2018aRegularization_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2018aRegularization_Methods_more" style="display: none">
-    @inproceedings{Aljundi2018a,<br> author = {Aljundi, Rahaf and Babiloni, Francesca and Elhoseiny, Mohamed and Rohrbach, Marcus and Tuytelaars, Tinne},<br> booktitle = {The European Conference on Computer Vision (ECCV)},<br> keywords = {[vision]},<br> mendeley-tags = {[vision]},<br> month = {sep},<br> title = {Memory Aware Synapses: Learning what (not) to forget},<br> year = {2018}<br>}<br>
+    @inproceedings{Aljundi2018a,<br> author = {Aljundi, Rahaf and Babiloni, Francesca and Elhoseiny, Mohamed and Rohrbach, Marcus and Tuytelaars, Tinne},<br> booktitle = {The European Conference on Computer Vision (ECCV)},<br> keywords = {[vision]},<br> mendeley-tags = {[vision]},<br> month = {sep},<br> title = {Memory Aware Synapses: Learning what (not) to forget},<br> url = {https://openaccess.thecvf.com/content_ECCV_2018/papers/Rahaf_Aljundi_Memory_Aware_Synapses_ECCV_2018_paper.pdf},<br> year = {2018}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2018aRegularization_Methods_more2" style="display: none">
     N.A.
@@ -13184,13 +13456,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Rotate your Networks: Better Weight Consolidation and Less Catastrophic Forgetting by Xialei Liu, Marc Masana, Luis Herranz, Joost de Weijer, Antonio M López and Andrew D Bagdanov. <em>2018 24th International Conference on Pattern Recognition (ICPR)</em>, 2262–2268, 2018. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
+<li><p><a class="reference external" href="https://ieeexplore.ieee.org/document/8545895/">Rotate your Networks: Better Weight Consolidation and Less Catastrophic Forgetting</a> by Xialei Liu, Marc Masana, Luis Herranz, Joost Van de Weijer, Antonio M. Lopez and Andrew D Bagdanov. <em>2018 24th International Conference on Pattern Recognition (ICPR)</em>, 2262–2268, 2018. <span style='background-color:DarkCyan; padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Liu2018aRegularization_MethodsFunction()" id="Liu2018aRegularization_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Liu2018aRegularization_MethodsFunction2()" id="Liu2018aRegularization_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Liu2018aRegularization_MethodsFunction3()" id="Liu2018aRegularization_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Liu2018aRegularization_Methods_more" style="display: none">
-    @inproceedings{Liu2018a,<br> annote = {ISSN: 1051-4651},<br> author = {Liu, Xialei and Masana, Marc and Herranz, Luis and de Weijer, Joost and López, Antonio M and Bagdanov, Andrew D},<br> booktitle = {2018 24th International Conference on Pattern Recognition (ICPR)},<br> doi = {10.1109/ICPR.2018.8545895},<br> keywords = {Computer vision,Data models,Fisher Information Matrix,Neural networks,Standards,Stanford-40 datasets,Task analysis,Training,Training data,[cifar],[mnist],ewc,fisher,image classification,learning (artificial intelligence),matrix algebra,network parameters,network reparameterization,sequential tasks,standard elastic weight consolidation},<br> mendeley-tags = {[cifar],[mnist]},<br> month = {aug},<br> pages = {2262--2268},<br> shorttitle = {Rotate your Networks},<br> title = {Rotate your Networks: Better Weight Consolidation and Less Catastrophic Forgetting},<br> year = {2018}<br>}<br>
+    @inproceedings{Liu2018a,<br> annote = {ISSN: 1051-4651},<br> author = {Liu, Xialei and Masana, Marc and Herranz, Luis and Van de Weijer, Joost and Lopez, Antonio M. and Bagdanov, Andrew D},<br> booktitle = {2018 24th International Conference on Pattern Recognition (ICPR)},<br> doi = {10.1109/ICPR.2018.8545895},<br> isbn = {978-1-5386-3788-3},<br> keywords = {Computer vision,Data models,Fisher Information Matrix,Neural networks,Standards,Stanford-40 datasets,Task analysis,Training,Training data,[cifar],[mnist],ewc,fisher,image classification,learning (artificial intelligence),matrix algebra,network parameters,network reparameterization,sequential tasks,standard elastic weight consolidation},<br> mendeley-tags = {[cifar],[mnist]},<br> month = {aug},<br> pages = {2262--2268},<br> publisher = {IEEE},<br> shorttitle = {Rotate your Networks},<br> title = {Rotate your Networks: Better Weight Consolidation and Less Catastrophic Forgetting},<br> url = {https://ieeexplore.ieee.org/document/8545895/},<br> year = {2018}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Liu2018aRegularization_Methods_more2" style="display: none">
     In this paper we propose an approach to avoiding catastrophic forgetting in sequential task learning scenarios. Our technique is based on a network reparameterization that approximately diagonalizes the Fisher Information Matrix of the network parameters. This reparameterization takes the form of a factorized rotation of parameter space which, when used in conjunction with Elastic Weight Consolidation (which assumes a diagonal Fisher Information Matrix), leads to significantly better performance on lifelong learning of sequential tasks. Experimental results on the MNIST, CIFAR-100, CUB-200 and Stanford-40 datasets demonstrate that we significantly improve the results of standard elastic weight consolidation, and that we obtain competitive results when compared to the state-of-the-art in lifelong learning without forgetting.
@@ -13252,16 +13524,16 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Incremental Learning of Object Detectors without Catastrophic Forgetting by Konstantin Shmelkov, Cordelia Schmid and Karteek Alahari. <em>Proceedings of the IEEE International Conference on Computer Vision</em>, 3420–3429, 2017.  <br>
+<li><p><a class="reference external" href="http://arxiv.org/abs/1708.06977">Incremental Learning of Object Detectors without Catastrophic Forgetting</a> by Konstantin Shmelkov, Cordelia Schmid and Karteek Alahari. <em>Proceedings of the IEEE International Conference on Computer Vision</em>, 3420–3429, 2017.  <br>
 <button style="font-size:75%; line-height:15px" onclick="Shmelkov2017aRegularization_MethodsFunction()" id="Shmelkov2017aRegularization_Methods_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Shmelkov2017aRegularization_MethodsFunction2()" id="Shmelkov2017aRegularization_Methods_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Shmelkov2017aRegularization_MethodsFunction3()" id="Shmelkov2017aRegularization_Methods_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Shmelkov2017aRegularization_Methods_more" style="display: none">
-    @inproceedings{Shmelkov2017a,<br> archiveprefix = {arXiv},<br> arxivid = {1708.06977},<br> author = {Shmelkov, Konstantin and Schmid, Cordelia and Alahari, Karteek},<br> booktitle = {Proceedings of the IEEE International Conference on Computer Vision},<br> doi = {10.1109/ICCV.2017.368},<br> eprint = {1708.06977},<br> isbn = {9781538610329},<br> issn = {15505499},<br> month = {dec},<br> pages = {3420--3429},<br> publisher = {Institute of Electrical and Electronics Engineers Inc.},<br> title = {Incremental Learning of Object Detectors without Catastrophic Forgetting},<br> volume = {2017-Octob},<br> year = {2017}<br>}<br>
+    @article{Shmelkov2017a,<br> archiveprefix = {arXiv},<br> arxivid = {1708.06977},<br> author = {Shmelkov, Konstantin and Schmid, Cordelia and Alahari, Karteek},<br> doi = {10.1109/ICCV.2017.368},<br> eprint = {1708.06977},<br> isbn = {9781538610329},<br> issn = {15505499},<br> journal = {Proceedings of the IEEE International Conference on Computer Vision},<br> month = {aug},<br> pages = {3420--3429},<br> publisher = {Institute of Electrical and Electronics Engineers Inc.},<br> title = {Incremental Learning of Object Detectors without Catastrophic Forgetting},<br> url = {http://arxiv.org/abs/1708.06977},<br> volume = {2017-Octob},<br> year = {2017}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Shmelkov2017aRegularization_Methods_more2" style="display: none">
-    Despite their success for object detection, convolutional neural networks are ill-equipped for incremental learning, i.e., adapting the original model trained on a set of classes to additionally detect objects of new classes, in the absence of the initial training data. They suffer from 'catastrophic forgetting'-an abrupt degradation of performance on the original set of classes, when the training objective is adapted to the new classes. We present a method to address this issue, and learn object detectors incrementally, when neither the original training data nor annotations for the original classes in the new training set are available. The core of our proposed solution is a loss function to balance the interplay between predictions on the new classes and a new distillation loss which minimizes the discrepancy between responses for old classes from the original and the updated networks. This incremental learning can be performed multiple times, for a new set of classes in each step, with a moderate drop in performance compared to the baseline network trained on the ensemble of data. We present object detection results on the PASCAL VOC 2007 and COCO datasets, along with a detailed empirical analysis of the approach.
+    Despite their success for object detection, convolutional neural networks are ill-equipped for incremental learning, i.e., adapting the original model trained on a set of classes to additionally detect objects of new classes, in the absence of the initial training data. They suffer from "catastrophic forgetting" - an abrupt degradation of performance on the original set of classes, when the training objective is adapted to the new classes. We present a method to address this issue, and learn object detectors incrementally, when neither the original training data nor annotations for the original classes in the new training set are available. The core of our proposed solution is a loss function to balance the interplay between predictions on the new classes and a new distillation loss which minimizes the discrepancy between responses for old classes from the original and the updated networks. This incremental learning can be performed multiple times, for a new set of classes in each step, with a moderate drop in performance compared to the baseline network trained on the ensemble of data. We present object detection results on the PASCAL VOC 2007 and COCO datasets, along with a detailed empirical analysis of the approach.
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Shmelkov2017aRegularization_Methods_more3" style="display: none">
     N.A.
@@ -14287,74 +14559,6 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p><strong>13 papers</strong></p>
 <p>In this section we collect all the main review papers and books on continual learning and related subjects. These may constitute a solid starting point for continual learning newcomers.</p>
 <ul class="simple">
-<li><p>A continual learning survey: Defying forgetting in classification tasks by Matthias De Lange, Rahaf Aljundi, Marc Masana, Sarah Parisot, Xu Jia, Aleš Leonardis, Gregory Slabaugh and Tinne Tuytelaars. <em>arXiv</em>, 2020. <span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>  <br>
-<button style="font-size:75%; line-height:15px" onclick="DeLange2020aReview_Papers_and_BooksFunction()" id="DeLange2020aReview_Papers_and_Books_btt">Bib</button>
-<button style="font-size:75%; line-height:15px" onclick="DeLange2020aReview_Papers_and_BooksFunction2()" id="DeLange2020aReview_Papers_and_Books_btt2">Abstract</button>
-<button style="font-size:75%; line-height:15px" onclick="DeLange2020aReview_Papers_and_BooksFunction3()" id="DeLange2020aReview_Papers_and_Books_btt3">Notes</button>
-
-<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DeLange2020aReview_Papers_and_Books_more" style="display: none">
-    @article{DeLange2020a,<br> archiveprefix = {arXiv},<br> arxivid = {1909.08383v2},<br> author = {De Lange, Matthias and Aljundi, Rahaf and Masana, Marc and Parisot, Sarah and Jia, Xu and Leonardis, Aleš and Slabaugh, Gregory and Tuytelaars, Tinne},<br> eprint = {1909.08383v2},<br> file = {::},<br> journal = {arXiv},<br> keywords = {Index Terms-Continual Learning,[framework],catastrophic forgetting,classification,lifelong learning,neural networks ✦,task incremental learning},<br> mendeley-tags = {[framework]},<br> title = {A continual learning survey: Defying forgetting in classification tasks},<br> year = {2020}<br>}<br>
-</span></p>
-<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DeLange2020aReview_Papers_and_Books_more2" style="display: none">
-    Artificial neural networks thrive in solving the classification problem for a particular rigid task, acquiring knowledge through generalized learning behaviour from a distinct training phase. The resulting network resembles a static entity of knowledge, with endeavours to extend this knowledge without targeting the original task resulting in a catastrophic forgetting. Continual learning shifts this paradigm towards networks that can continually accumulate knowledge over different tasks without the need to retrain from scratch. We focus on task incremental classification, where tasks arrive sequentially and are delineated by clear boundaries. Our main contributions concern 1) a taxonomy and extensive overview of the state-of-the-art, 2) a novel framework to continually determine the stability-plasticity trade-off of the continual learner, 3) a comprehensive experimental comparison of 11 state-of-the-art continual learning methods and 4 baselines. We empirically scrutinize method strengths and weaknesses on three benchmarks, considering Tiny Imagenet and large-scale unbalanced iNaturalist and a sequence of recognition datasets. We study the influence of model capacity, weight decay and dropout regularization, and the order in which the tasks are presented, and qualitatively compare methods in terms of required memory, computation time and storage. Code will be made publicly available upon acceptance of this paper.
-</span></p>
-<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DeLange2020aReview_Papers_and_Books_more3" style="display: none">
-    N.A.
-</span></p>
-<script>
-    function DeLange2020aReview_Papers_and_BooksFunction() {
-      var moreText = document.getElementById("DeLange2020aReview_Papers_and_Books_more");
-      var moreText2 = document.getElementById("DeLange2020aReview_Papers_and_Books_more2");
-      var moreText3 = document.getElementById("DeLange2020aReview_Papers_and_Books_more3");
-      var btnText = document.getElementById("DeLange2020aReview_Papers_and_Books_btt");
-
-      if (moreText.style.display === "none") {
-        btnText.innerHTML = "Bib";
-        moreText.style.display = "inline";
-      } else {
-        btnText.innerHTML = "Bib";
-        moreText.style.display = "none";
-      }
-      moreText2.style.display = "none";
-      moreText3.style.display = "none";
-    }
-</script>
-<script>
-    function DeLange2020aReview_Papers_and_BooksFunction2() {
-      var moreText = document.getElementById("DeLange2020aReview_Papers_and_Books_more2");
-      var moreText1 = document.getElementById("DeLange2020aReview_Papers_and_Books_more");
-      var moreText3 = document.getElementById("DeLange2020aReview_Papers_and_Books_more3");
-      var btnText = document.getElementById("DeLange2020aReview_Papers_and_Books_btt2");
-
-      if (moreText.style.display === "none") {
-        btnText.innerHTML = "Abstract";
-        moreText.style.display = "inline";
-      } else {
-        btnText.innerHTML = "Abstract";
-        moreText.style.display = "none";
-      }
-      moreText1.style.display = "none";
-      moreText3.style.display = "none";
-    }
-</script>
-<script>
-    function DeLange2020aReview_Papers_and_BooksFunction3() {
-      var moreText = document.getElementById("DeLange2020aReview_Papers_and_Books_more3");
-      var moreText1 = document.getElementById("DeLange2020aReview_Papers_and_Books_more");
-      var moreText2 = document.getElementById("DeLange2020aReview_Papers_and_Books_more2");
-      var btnText = document.getElementById("DeLange2020aReview_Papers_and_Books_btt3");
-
-      if (moreText.style.display === "none") {
-        btnText.innerHTML = "Notes";
-        moreText.style.display = "inline";
-      } else {
-        btnText.innerHTML = "Notes";
-        moreText.style.display = "none";
-      }
-      moreText1.style.display = "none";
-      moreText2.style.display = "none";
-    }
-</script></p></li>
 <li><p><a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S1566253519307377">Continual learning for robotics: Definition, framework, learning strategies, opportunities and challenges</a> by Timothée Lesort, Vincenzo Lomonaco, Andrei Stoian, Davide Maltoni, David Filliat and Natalia Díaz-Rodrǵuez. <em>Information Fusion</em>, 52–68, 2020. <span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Lesort2020cReview_Papers_and_BooksFunction()" id="Lesort2020cReview_Papers_and_Books_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Lesort2020cReview_Papers_and_BooksFunction2()" id="Lesort2020cReview_Papers_and_Books_btt2">Abstract</button>
@@ -14479,6 +14683,74 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       var moreText1 = document.getElementById("awasthi2019aReview_Papers_and_Books_more");
       var moreText2 = document.getElementById("awasthi2019aReview_Papers_and_Books_more2");
       var btnText = document.getElementById("awasthi2019aReview_Papers_and_Books_btt3");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Notes";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Notes";
+        moreText.style.display = "none";
+      }
+      moreText1.style.display = "none";
+      moreText2.style.display = "none";
+    }
+</script></p></li>
+<li><p><a class="reference external" href="http://arxiv.org/abs/1909.08383">A continual learning survey: Defying forgetting in classification tasks</a> by Matthias De Lange, Rahaf Aljundi, Marc Masana, Sarah Parisot, Xu Jia, Ales Leonardis, Gregory Slabaugh and Tinne Tuytelaars. <em>arXiv</em>, 2019. <span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>  <br>
+<button style="font-size:75%; line-height:15px" onclick="DeLange2020aReview_Papers_and_BooksFunction()" id="DeLange2020aReview_Papers_and_Books_btt">Bib</button>
+<button style="font-size:75%; line-height:15px" onclick="DeLange2020aReview_Papers_and_BooksFunction2()" id="DeLange2020aReview_Papers_and_Books_btt2">Abstract</button>
+<button style="font-size:75%; line-height:15px" onclick="DeLange2020aReview_Papers_and_BooksFunction3()" id="DeLange2020aReview_Papers_and_Books_btt3">Notes</button>
+
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DeLange2020aReview_Papers_and_Books_more" style="display: none">
+    @article{DeLange2020a,<br> archiveprefix = {arXiv},<br> arxivid = {1909.08383},<br> author = {De Lange, Matthias and Aljundi, Rahaf and Masana, Marc and Parisot, Sarah and Jia, Xu and Leonardis, Ales and Slabaugh, Gregory and Tuytelaars, Tinne},<br> eprint = {1909.08383},<br> file = {::},<br> journal = {arXiv},<br> keywords = {Index Terms-Continual Learning,[framework],catastrophic forgetting,classification,lifelong learning,neural networks ✦,task incremental learning},<br> mendeley-tags = {[framework]},<br> month = {sep},<br> title = {A continual learning survey: Defying forgetting in classification tasks},<br> url = {http://arxiv.org/abs/1909.08383},<br> year = {2019}<br>}<br>
+</span></p>
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DeLange2020aReview_Papers_and_Books_more2" style="display: none">
+    Artificial neural networks thrive in solving the classification problem for a particular rigid task, acquiring knowledge through generalized learning behaviour from a distinct training phase. The resulting network resembles a static entity of knowledge, with endeavours to extend this knowledge without targeting the original task resulting in a catastrophic forgetting. Continual learning shifts this paradigm towards networks that can continually accumulate knowledge over different tasks without the need to retrain from scratch. We focus on task incremental classification, where tasks arrive sequentially and are delineated by clear boundaries. Our main contributions concern 1) a taxonomy and extensive overview of the state-of-the-art, 2) a novel framework to continually determine the stability-plasticity trade-off of the continual learner, 3) a comprehensive experimental comparison of 11 state-of-the-art continual learning methods and 4 baselines. We empirically scrutinize method strengths and weaknesses on three benchmarks, considering Tiny Imagenet and large-scale unbalanced iNaturalist and a sequence of recognition datasets. We study the influence of model capacity, weight decay and dropout regularization, and the order in which the tasks are presented, and qualitatively compare methods in terms of required memory, computation time, and storage.
+</span></p>
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DeLange2020aReview_Papers_and_Books_more3" style="display: none">
+    N.A.
+</span></p>
+<script>
+    function DeLange2020aReview_Papers_and_BooksFunction() {
+      var moreText = document.getElementById("DeLange2020aReview_Papers_and_Books_more");
+      var moreText2 = document.getElementById("DeLange2020aReview_Papers_and_Books_more2");
+      var moreText3 = document.getElementById("DeLange2020aReview_Papers_and_Books_more3");
+      var btnText = document.getElementById("DeLange2020aReview_Papers_and_Books_btt");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Bib";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Bib";
+        moreText.style.display = "none";
+      }
+      moreText2.style.display = "none";
+      moreText3.style.display = "none";
+    }
+</script>
+<script>
+    function DeLange2020aReview_Papers_and_BooksFunction2() {
+      var moreText = document.getElementById("DeLange2020aReview_Papers_and_Books_more2");
+      var moreText1 = document.getElementById("DeLange2020aReview_Papers_and_Books_more");
+      var moreText3 = document.getElementById("DeLange2020aReview_Papers_and_Books_more3");
+      var btnText = document.getElementById("DeLange2020aReview_Papers_and_Books_btt2");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Abstract";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Abstract";
+        moreText.style.display = "none";
+      }
+      moreText1.style.display = "none";
+      moreText3.style.display = "none";
+    }
+</script>
+<script>
+    function DeLange2020aReview_Papers_and_BooksFunction3() {
+      var moreText = document.getElementById("DeLange2020aReview_Papers_and_Books_more3");
+      var moreText1 = document.getElementById("DeLange2020aReview_Papers_and_Books_more");
+      var moreText2 = document.getElementById("DeLange2020aReview_Papers_and_Books_more2");
+      var btnText = document.getElementById("DeLange2020aReview_Papers_and_Books_btt3");
 
       if (moreText.style.display === "none") {
         btnText.innerHTML = "Notes";
@@ -14695,13 +14967,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p><a class="reference external" href="https://gitlab.informatik.hs-fulda.de/ML-Projects/CF_in_DNNs">A comprehensive, application-oriented study of catastrophic forgetting in DNNs</a> by B Pfülb and A Gepperth. <em>ICLR</em>, 2018. <span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
+<li><p><a class="reference external" href="https://openreview.net/pdf?id=BkloRs0qK7">A comprehensive, application-oriented study of catastrophic forgetting in DNNs</a> by B Pfülb and A Gepperth. <em>ICLR</em>, 2018. <span style='background-color:LightGray; padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span> <span style='background-color:MediumAquaMarine; padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Pfulb2018aReview_Papers_and_BooksFunction()" id="Pfulb2018aReview_Papers_and_Books_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Pfulb2018aReview_Papers_and_BooksFunction2()" id="Pfulb2018aReview_Papers_and_Books_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Pfulb2018aReview_Papers_and_BooksFunction3()" id="Pfulb2018aReview_Papers_and_Books_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Pfulb2018aReview_Papers_and_Books_more" style="display: none">
-    @inproceedings{Pfulb2018a,<br> author = {Pfülb, B and Gepperth, A},<br> booktitle = {ICLR},<br> file = {::},<br> keywords = {[fashion],[mnist]},<br> mendeley-tags = {[fashion],[mnist]},<br> month = {sep},<br> title = {A comprehensive, application-oriented study of catastrophic forgetting in DNNs},<br> url = {https://gitlab.informatik.hs-fulda.de/ML-Projects/CF_in_DNNs},<br> year = {2018}<br>}<br>
+    @inproceedings{Pfulb2018a,<br> author = {Pfülb, B and Gepperth, A},<br> booktitle = {ICLR},<br> file = {::},<br> keywords = {[fashion],[mnist]},<br> mendeley-tags = {[fashion],[mnist]},<br> month = {sep},<br> title = {A comprehensive, application-oriented study of catastrophic forgetting in DNNs},<br> url = {https://openreview.net/pdf?id=BkloRs0qK7},<br> year = {2018}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Pfulb2018aReview_Papers_and_Books_more2" style="display: none">
     We present a large-scale empirical study of catastrophic forgetting (CF) in modern Deep Neural Network (DNN) models that perform sequential (or: incremen-tal) learning. A new experimental protocol is proposed that enforces typical constraints encountered in application scenarios. As the investigation is empirical, we evaluate CF behavior on the hitherto largest number of visual classification datasets, from each of which we construct a representative number of Sequential Learning Tasks (SLTs) in close alignment to previous works on CF. Our results clearly indicate that there is no model that avoids CF for all investigated datasets and SLTs under application conditions. We conclude with a discussion of potential solutions and workarounds to CF, notably for the EWC and IMM models.
@@ -14899,13 +15171,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Avoiding Catastrophic Forgetting by  and Michael E. Hasselmo. <em>Trends in Cognitive Sciences</em>, 407–408, 2017.  <br>
+<li><p><a class="reference external" href="https://linkinghub.elsevier.com/retrieve/pii/S1364661317300736">Avoiding Catastrophic Forgetting</a> by  and Michael E. Hasselmo. <em>Trends in Cognitive Sciences</em>, 407–408, 2017.  <br>
 <button style="font-size:75%; line-height:15px" onclick="Hasselmo2017Review_Papers_and_BooksFunction()" id="Hasselmo2017Review_Papers_and_Books_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Hasselmo2017Review_Papers_and_BooksFunction2()" id="Hasselmo2017Review_Papers_and_Books_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Hasselmo2017Review_Papers_and_BooksFunction3()" id="Hasselmo2017Review_Papers_and_Books_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hasselmo2017Review_Papers_and_Books_more" style="display: none">
-    @article{Hasselmo2017,<br> author = {Hasselmo, Michael E.},<br> doi = {10.1016/j.tics.2017.04.001},<br> file = {::},<br> issn = {1879307X},<br> journal = {Trends in Cognitive Sciences},<br> keywords = {hasselmo2017a},<br> month = {jun},<br> number = {6},<br> pages = {407--408},<br> publisher = {Elsevier Ltd},<br> title = {Avoiding Catastrophic Forgetting},<br> volume = {21},<br> year = {2017}<br>}<br>
+    @article{Hasselmo2017,<br> author = {Hasselmo, Michael E.},<br> doi = {10.1016/j.tics.2017.04.001},<br> file = {::},<br> issn = {13646613},<br> journal = {Trends in Cognitive Sciences},<br> keywords = {hasselmo2017a},<br> month = {jun},<br> number = {6},<br> pages = {407--408},<br> publisher = {Elsevier Ltd},<br> title = {Avoiding Catastrophic Forgetting},<br> url = {https://linkinghub.elsevier.com/retrieve/pii/S1364661317300736},<br> volume = {21},<br> year = {2017}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hasselmo2017Review_Papers_and_Books_more2" style="display: none">
     Humans regularly perform new learning without losing memory for previous information, but neural network models suffer from the phenomenon of catastrophic forgetting in which new learning impairs prior function. A recent article presents an algorithm that spares learning at synapses important for previously learned function, reducing catastrophic forgetting.
@@ -15175,9 +15447,77 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 </div>
 <div class="section" id="robotics">
 <h3>Robotics<a class="headerlink" href="#robotics" title="Permalink to this headline">¶</a></h3>
-<p><strong>5 papers</strong></p>
+<p><strong>6 papers</strong></p>
 <p>In this section we maintain a list of all Robotics papers that can be related to continual learning.</p>
 <ul class="simple">
+<li><p><a class="reference external" href="http://arxiv.org/abs/2008.00819">Tell me what this is: Few-Shot Incremental Object Learning by a Robot</a> by Ali Ayub and Alan R. Wagner. <em>arXiv</em>, 2020.  <br>
+<button style="font-size:75%; line-height:15px" onclick="ayub2020cRoboticsFunction()" id="ayub2020cRobotics_btt">Bib</button>
+<button style="font-size:75%; line-height:15px" onclick="ayub2020cRoboticsFunction2()" id="ayub2020cRobotics_btt2">Abstract</button>
+<button style="font-size:75%; line-height:15px" onclick="ayub2020cRoboticsFunction3()" id="ayub2020cRobotics_btt3">Notes</button>
+
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020cRobotics_more" style="display: none">
+    @article{ayub2020c,<br> archiveprefix = {arXiv},<br> arxivid = {2008.00819},<br> author = {Ayub, Ali and Wagner, Alan R.},<br> eprint = {2008.00819},<br> journal = {arXiv},<br> keywords = {catastrophic forgetting,continual learning,few-shot incremenatl learning,robotics},<br> month = {jul},<br> title = {Tell me what this is: Few-Shot Incremental Object Learning by a Robot},<br> url = {http://arxiv.org/abs/2008.00819},<br> year = {2020}<br>}<br>
+</span></p>
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020cRobotics_more2" style="display: none">
+    For many applications, robots will need to be incrementally trained to recognize the specific objects needed for an application. This paper presents a practical system for incrementally training a robot to recognize different object categories using only a small set of visual examples provided by a human. The paper uses a recently developed state-of-the-art method for few-shot incremental learning of objects. After learning the object classes incrementally, the robot performs a table cleaning task organizing objects into categories specified by the human. We also demonstrate the system's ability to learn arrangements of objects and predict missing or incorrectly placed objects. Experimental evaluations demonstrate that our approach achieves nearly the same performance as a system trained with all examples at one time (batch training), which constitutes a theoretical upper bound.
+</span></p>
+<p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020cRobotics_more3" style="display: none">
+    N.A.
+</span></p>
+<script>
+    function ayub2020cRoboticsFunction() {
+      var moreText = document.getElementById("ayub2020cRobotics_more");
+      var moreText2 = document.getElementById("ayub2020cRobotics_more2");
+      var moreText3 = document.getElementById("ayub2020cRobotics_more3");
+      var btnText = document.getElementById("ayub2020cRobotics_btt");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Bib";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Bib";
+        moreText.style.display = "none";
+      }
+      moreText2.style.display = "none";
+      moreText3.style.display = "none";
+    }
+</script>
+<script>
+    function ayub2020cRoboticsFunction2() {
+      var moreText = document.getElementById("ayub2020cRobotics_more2");
+      var moreText1 = document.getElementById("ayub2020cRobotics_more");
+      var moreText3 = document.getElementById("ayub2020cRobotics_more3");
+      var btnText = document.getElementById("ayub2020cRobotics_btt2");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Abstract";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Abstract";
+        moreText.style.display = "none";
+      }
+      moreText1.style.display = "none";
+      moreText3.style.display = "none";
+    }
+</script>
+<script>
+    function ayub2020cRoboticsFunction3() {
+      var moreText = document.getElementById("ayub2020cRobotics_more3");
+      var moreText1 = document.getElementById("ayub2020cRobotics_more");
+      var moreText2 = document.getElementById("ayub2020cRobotics_more2");
+      var btnText = document.getElementById("ayub2020cRobotics_btt3");
+
+      if (moreText.style.display === "none") {
+        btnText.innerHTML = "Notes";
+        moreText.style.display = "inline";
+      } else {
+        btnText.innerHTML = "Notes";
+        moreText.style.display = "none";
+      }
+      moreText1.style.display = "none";
+      moreText2.style.display = "none";
+    }
+</script></p></li>
 <li><p><a class="reference external" href="http://www.sciencedirect.com/science/article/pii/S1566253519307377">Continual learning for robotics: Definition, framework, learning strategies, opportunities and challenges</a> by Timothée Lesort, Vincenzo Lomonaco, Andrei Stoian, Davide Maltoni, David Filliat and Natalia Díaz-Rodrǵuez. <em>Information Fusion</em>, 52–68, 2020. <span style='background-color:Tomato; padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>  <br>
 <button style="font-size:75%; line-height:15px" onclick="Lesort2020cRoboticsFunction()" id="Lesort2020cRobotics_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Lesort2020cRoboticsFunction2()" id="Lesort2020cRobotics_btt2">Abstract</button>
@@ -15450,13 +15790,13 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
       moreText2.style.display = "none";
     }
 </script></p></li>
-<li><p>Explanation-Based Neural Network Learning for Robot Control by Tom M Mitchell and Sebastian B Thrun. <em>Advances in Neural Information Processing Systems 5</em>, 1993.  <br>
+<li><p><a class="reference external" href="https://papers.nips.cc/paper/614-explanation-based-neural-network-learning-for-robot-control.pdf">Explanation-Based Neural Network Learning for Robot Control</a> by Tom M Mitchell and Sebastian B Thrun. <em>Advances in Neural Information Processing Systems 5</em>, 1993.  <br>
 <button style="font-size:75%; line-height:15px" onclick="Mitchell1993aRoboticsFunction()" id="Mitchell1993aRobotics_btt">Bib</button>
 <button style="font-size:75%; line-height:15px" onclick="Mitchell1993aRoboticsFunction2()" id="Mitchell1993aRobotics_btt2">Abstract</button>
 <button style="font-size:75%; line-height:15px" onclick="Mitchell1993aRoboticsFunction3()" id="Mitchell1993aRobotics_btt3">Notes</button>
 
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mitchell1993aRobotics_more" style="display: none">
-    @inproceedings{Mitchell1993a,<br> author = {Mitchell, Tom M and Thrun, Sebastian B},<br> booktitle = {Advances in Neural Information Processing Systems 5},<br> file = {::},<br> title = {Explanation-Based Neural Network Learning for Robot Control},<br> year = {1993}<br>}<br>
+    @inproceedings{Mitchell1993a,<br> author = {Mitchell, Tom M and Thrun, Sebastian B},<br> booktitle = {Advances in Neural Information Processing Systems 5},<br> file = {:home/andrea/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Mitchell, Thrun - 1993 - Explanation-Based Neural Network Learning for Robot Control.pdf:pdf},<br> title = {Explanation-Based Neural Network Learning for Robot Control},<br> url = {https://papers.nips.cc/paper/614-explanation-based-neural-network-learning-for-robot-control.pdf},<br> year = {1993}<br>}<br>
 </span></p>
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mitchell1993aRobotics_more2" style="display: none">
     How can artificial neural nets generalize better from fewer examples? In order to generalize successfully, neural network learning methods typically require large training data sets. We introduce a neural network learning method that generalizes rationally from many fewer data points, relying instead on prior knowledge encoded in previously learned neural networks. For example, in robot control learning tasks reported here, previously learned networks that model the effects of robot actions are used to guide subsequent learning of robot control functions. For each observed training example of the target function (e.g. the robot control policy), the learner explains the observed example in terms of its prior knowledge, then analyzes this explanation to infer additional information about the shape, or slope, of the target function. This shape knowledge is used to bias generalization when learning the target function. Results are presented applying this approach to a simulated robot task based on reinforcement learning.
