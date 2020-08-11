@@ -1,3 +1,11 @@
+@article{sokar2020a,
+abstract = {The continual learning (CL) paradigm aims to enable neural networks to learn tasks continually in a sequential fashion. The fundamental challenge in this learning paradigm is catastrophic forgetting previously learned tasks when the model is optimized for a new task, especially when their data is not accessible. Current architectural-based methods aim at alleviating the catastrophic forgetting problem but at the expense of expanding the capacity of the model. Regularization-based methods maintain a fixed model capacity; however, previous studies showed the huge performance degradation of these methods when the task identity is not available during inference (e.g. class incremental learning scenario). In this work, we propose a novel architectural-based method referred as SpaceNet for class incremental learning scenario where we utilize the available fixed capacity of the model intelligently. SpaceNet trains sparse deep neural networks from scratch in an adaptive way that compresses the sparse connections of each task in a compact number of neurons. The adaptive training of the sparse connections results in sparse representations that reduce the interference between the tasks. Experimental results show the robustness of our proposed method against catastrophic forgetting old tasks and the efficiency of SpaceNet in utilizing the available capacity of the model, leaving space for more tasks to be learned. In particular, when SpaceNet is tested on the well-known benchmarks for CL: split MNIST, split Fashion-MNIST, and CIFAR-10/100, it outperforms regularization-based methods by a big performance gap. Moreover, it achieves better performance than architectural-based methods without model expansion and achieved comparable results with rehearsal-based methods, while offering a huge memory reduction.},
+author = {Sokar, Ghada and Mocanu, Decebal Constantin and Pechenizkiy, Mykola},
+journal = {arXiv},
+title = {{SpaceNet: Make Free Space For Continual Learning}},
+url = {https://arxiv.org/abs/2007.07617},
+year = {2020}
+}
 @inproceedings{Srivastava2019a,
 abstract = {The problem of a deep learning model losing performance on a previously learned task when fine-tuned to a new one is a phenomenon known as Catastrophic forgetting. There are two major ways to mitigate this problem: either preserving activations of the initial network during training with a new task; or restricting the new network activations to remain close to the initial ones. The latter approach falls under the denomination of lifelong learning, where the model is updated in a way that it performs well on both old and new tasks, without having access to the old task's training samples anymore. Recently, approaches like pruning networks for freeing network capacity during sequential learning of tasks have been gaining in popularity. Such approaches allow learning small networks while making redundant parameters available for the next tasks. The common problem encountered with these approaches is that the pruning percentage is hard-coded, irrespective of the number of samples, of the complexity of the learning task and of the number of classes in the dataset. We propose a method based on Bayesian optimization to perform adaptive compression/pruning of the network and show its effectiveness in lifelong learning. Our method learns to perform heavy pruning for small and/or simple datasets while using milder compression rates for large and/or complex data. Experiments on classification and semantic segmentation demonstrate the applicability of learning network compression, where we are able to effectively preserve performances along sequences of tasks of varying complexity.},
 archivePrefix = {arXiv},
@@ -117,6 +125,7 @@ file = {::},
 keywords = {[mnist],[omniglot]},
 mendeley-tags = {[mnist],[omniglot]},
 title = {{Continual Unsupervised Representation Learning}},
+url = {https://papers.nips.cc/paper/8981-continual-unsupervised-representation-learning.pdf},
 year = {2019}
 }
 @inproceedings{xu2018a,
@@ -188,6 +197,7 @@ mendeley-tags = {[nlp]},
 pages = {1279--1284},
 publisher = {Association for Computational Linguistics},
 title = {{A Progressive Model to Enable Continual Learning for Semantic Slot Filling}},
+url = {https://www.aclweb.org/anthology/D19-1126.pdf},
 year = {2019}
 }
 @article{Madrid2018a,
@@ -230,6 +240,7 @@ number = {8-9},
 pages = {1041--1058},
 publisher = {Pergamon},
 title = {{A self-organising network that grows when required}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S0893608002000783},
 volume = {15},
 year = {2002}
 }
@@ -243,6 +254,7 @@ language = {en},
 mendeley-tags = {[cifar],[mnist],[sparsity]},
 pages = {11},
 title = {{Lifelong Learning With Dynamically Expandable Networks}},
+url = {https://arxiv.org/abs/1708.01547},
 year = {2018}
 }
 @article{Rusu2016a,

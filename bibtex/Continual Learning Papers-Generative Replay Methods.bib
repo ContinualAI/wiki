@@ -1,3 +1,17 @@
+@article{ayub2020b,
+abstract = {The two main challenges faced by continual learning approaches are catastrophic forgetting and memory limitations on the storage of data. To cope with these challenges, we propose a novel, cognitively-inspired approach which trains autoencoders with Neural Style Transfer to encode and store images. Reconstructed images from encoded episodes are replayed when training the classifier model on a new task to avoid catastrophic forgetting. The loss function for the reconstructed images is weighted to reduce its effect during classifier training to cope with image degradation. When the system runs out of memory the encoded episodes are converted into centroids and covariance matrices, which are used to generate pseudo-images during classifier training, keeping classifier performance stable with less memory. Our approach increases classification accuracy by 13-17{\%} over state-of-the-art methods on benchmark datasets, while requiring 78{\%} less storage space.},
+archivePrefix = {arXiv},
+arxivId = {2007.06637},
+author = {Ayub, Ali and Wagner, Alan R.},
+eprint = {2007.06637},
+journal = {arXiv},
+keywords = {[generative],[imagenet],[mnist],catastrophic forgetting,continual learning},
+mendeley-tags = {[generative],[imagenet],[mnist]},
+month = {jun},
+title = {{Storing Encoded Episodes as Concepts for Continual Learning}},
+url = {https://arxiv.org/abs/2007.06637 http://arxiv.org/abs/2007.06637},
+year = {2020}
+}
 @article{Rostami2019a,
 abstract = {Despite huge success, deep networks are unable to learn effectively in sequential multitask learning settings as they forget the past learned tasks after learning new tasks. Inspired from complementary learning systems theory, we address this challenge by learning a generative model that couples the current task to the past learned tasks through a discriminative embedding space. We learn an abstract level generative distribution in the embedding that allows the generation of data points to represent the experience. We sample from this distribution and utilize experience replay to avoid forgetting and simultaneously accumulate new knowledge to the abstract distribution in order to couple the current task with past experience. We demonstrate theoretically and empirically that our framework learns a distribution in the embedding that is shared across all task and as a result tackles catastrophic forgetting.},
 archivePrefix = {arXiv},
