@@ -373,7 +373,6 @@ for i, bibfile in enumerate(bib_files):
         if "annote" in item.keys():
             bib_str = bib_str.replace("[NOTE]", item["annote"].replace(
                 "\n", "\n\t\t"))
-            # pprint(item)
         else:
             bib_str = bib_str.replace("[NOTE]", "N.A.")
         bib_str = bib_str.replace("[SECTION]", sec_title.replace(" ", "_"))
