@@ -20,6 +20,8 @@ to add a reference to your paper! Please, remember to follow the (very simple) `
 **Filter list by keyword:** :raw:html:`<input type="text" id="myInput" onkeyup="keyword_filter()" placeholder="Insert keywords here..."><br>`
 **Filter list by regex:** :raw:html:`<input type="text" id="myInputreg" onkeyup="regex_filter()" placeholder="Insert regex here..." style="margin-left:22px">`
 
+<TAGLIST>
+
 <TAG>
 
 Conference Workshops

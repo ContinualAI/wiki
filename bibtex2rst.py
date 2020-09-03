@@ -103,6 +103,25 @@ showbib_template = """
     
 """
 
+def build_tags_string(tag2c):
+    output = ""
+    for tagname, color in tag2c.items():
+        output += create_colored_tag(tagname, color)
+        output += "  "
+        
+    return output
+
+
+def create_colored_tag(tagname, tagcolor):
+    output = ":raw:html:`<span " \
+            "style='background-color:{}; padding: " \
+            "2px; border-radius:4px; border: 1px " \
+            "solid black;'>[{}]" \
+            "</span>` ".format(tagcolor, tagname)
+            
+    return output
+            
+            
 def count_current_papers(bibtex_path, main_bib_path):
     with open(os.path.join(bibtex_path, main_bib_path), 'r') as f:
         papers = bibtexparser.load(f)
@@ -213,6 +232,7 @@ full_bib_db_path = full_bib_db
 template_file_path = "research_template.rst"
 tag2fill = "<TAG>"
 papercount2fill = "<PAPER_COUNT>"
+taglist2fill = "<TAGLIST>"
 output_filename = "research.rst"
 # this respect also the order of the sections
 bib_files = [
@@ -344,11 +364,7 @@ for i, bibfile in enumerate(bib_files):
             # print(cur_tags)
 
             for tag in cur_tags:
-                str2injcet_tags += ":raw:html:`<span " \
-                                   "style='background-color:{}; padding: " \
-                                   "2px; border-radius:4px; border: 1px " \
-                                   "solid black;'>[{}]" \
-                                   "</span>` ".format(tags2color[tag], tag)
+                str2injcet_tags += create_colored_tag(tag, tags2color[tag])
 
         str2injcet += "- " + get_title(item) + \
                       " by " + get_author(item) + \
@@ -387,6 +403,10 @@ for i, bibfile in enumerate(bib_files):
 
 template_str = template_str.replace(papercount2fill, \
         "**Search among " + str(count_current_papers(bibtex_path, full_bib_db_path)) + " papers!**"
+)
+
+template_str = template_str.replace(taglist2fill, \
+        build_tags_string(tags2color)
 )
 
 template_str = template_str.replace(tag2fill, str2injcet) + rst_end_str
