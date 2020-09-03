@@ -56,7 +56,7 @@ How? With few, simple steps!
 
 3. To **annotate** an existing paper
 
-	3.1. Check the list of existing tags in this [shared document](https://docs.google.com/spreadsheets/d/16jXX51HJ1dk0iTrKTPtZQND3jvQU0IjeVV6r2sQRul4/edit?usp=sharing). If you use a new tag, please add it in there.
+	3.1. Check the list of existing tags in `tags.csv` file. If you want to add a new tag, please add it in there and submit a Pull Request.
 
 	3.2. Add your tags in the `Tags` field of paper details. Please, remember to write the tag in square brackets e.g. `[mytag]`
 

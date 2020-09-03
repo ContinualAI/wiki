@@ -21,10 +21,13 @@ from __future__ import division
 from __future__ import absolute_import
 
 import bibtexparser
+import random
 from bibtexparser.customization import convert_to_unicode
 from bibtexparser.bparser import BibTexParser
 import copy
 import os
+
+random.seed(1)
 
 showbib_template = """
 .. |[PAPERID][SECTION]| raw:: html
@@ -283,28 +286,18 @@ sec_descriptions = [
     "that can be related to continual learning."
 ]
 
-# 
-tags2color = {
-    "framework": "Tomato",
-    "som": "Cornsilk",
-    "sparsity": "DarkSalmon",
-    "dual": "green",
-    "spiking": "yellow",
-    "rnn": "AliceBlue",
-    "nlp": "BlueViolet",
-    "mnist": "MediumAquaMarine",
-    "fashion": "LightGray",
-    "cifar": "DarkCyan",
-    "core50": "Chartreuse",
-    "imagenet": "DeepPink",
-    "vision": "#E5E4E2",
-    "audio": "#50EBEC",
-    "hebbian": "#99C68E",
-    "omniglot": "#FDD017",
-    "bayes": "Violet",
-    "generative": "Maroon",
-    "cubs": "#990099"
-}
+
+with open('tags.csv','r') as f:
+    tags_list = [line.split(',')[0].strip() for line in f][1:] # get all tags
+    n_tags = len(tags_list)
+    print("Read " + str(n_tags) + " tags.")
+    
+    colors = [ # generate random HEX colors for tags
+        "#"+''.join([random.choice('0123456789ABCDEF') for _ in range(6)])
+                 for _ in range(n_tags)]
+
+tags2color = dict(zip(tags_list, colors))
+
 # ------------------------------------------------------------------------------
 
 remove_mendeley_notice_from_files(os.path.join(bibtex_path, full_bib_db))
@@ -380,7 +373,6 @@ for i, bibfile in enumerate(bib_files):
         if "annote" in item.keys():
             bib_str = bib_str.replace("[NOTE]", item["annote"].replace(
                 "\n", "\n\t\t"))
-            # pprint(item)
         else:
             bib_str = bib_str.replace("[NOTE]", "N.A.")
         bib_str = bib_str.replace("[SECTION]", sec_title.replace(" ", "_"))
