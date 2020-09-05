@@ -49,7 +49,7 @@ You can give your contribution to the group by **adding new papers** or by helpi
 
 	3.3. Add your notes in the `Notes` tab 
 
-Wiki admins will periodically export the bibtex to keep the list updated. In case we forgot, join the [ContinualAI Slack](https://continualai.herokuapp.com/) and complain about our behavior in the `#wiki` channel :) 
+Wiki admins will periodically export the bibtex to keep the list updated. In case we forgot, join the [ContinualAI Slack](https://continualai.herokuapp.com/) and complain about our behavior in the `#wiki` channel.
 
 #### Advices to add new papers in Mendeley
 
@@ -79,11 +79,11 @@ Adding new papers is not the only way for you to contribute. If you want to incl
 5. Build the html with the command:  
 `make html`
 
-6. open `_build/html/index.html` with your browser to check if everything is correct:
+6. open `_build/html/index.html` with your browser to check if everything is correct.
 
 7. Make a Pull Request (with only the *.rst files), Travis CI will take care of the build!
 
 ## About ContinualAI
 
-**[ContinualAI](https://continualai.org)** is an open research community on the topic of Continual Learning and AI! :-)
-We are a community of CL researchers and enthusiasts! Join us today **[on slack](https://continualai.herokuapp.com)**! :D
+**[ContinualAI](https://continualai.org)** is an open research community on the topic of Continual Learning and AI!
+We are a community of CL researchers and enthusiasts! Join us today **[on slack](https://continualai.herokuapp.com)**!
