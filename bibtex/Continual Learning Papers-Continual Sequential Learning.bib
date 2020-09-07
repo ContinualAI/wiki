@@ -75,6 +75,18 @@ title = {{Task-Free Continual Learning}},
 url = {https://openaccess.thecvf.com/content{\_}CVPR{\_}2019/papers/Aljundi{\_}Task-Free{\_}Continual{\_}Learning{\_}CVPR{\_}2019{\_}paper.pdf},
 year = {2019}
 }
+@inproceedings{Lopez-Paz2017a,
+abstract = {One major obstacle towards AI is the poor ability of models to solve new problems quicker, and without forgetting previously acquired knowledge. To better understand this issue, we study the problem of continual learning, where the model observes, once and one by one, examples concerning a sequence of tasks. First, we propose a set of metrics to evaluate models learning over a continuum of data. These metrics characterize models not only by their test accuracy, but also in terms of their ability to transfer knowledge across tasks. Second, we propose a model for continual learning, called Gradient Episodic Memory (GEM) that alleviates forgetting, while allowing beneficial transfer of knowledge to previous tasks. Our experiments on variants of the MNIST and CIFAR-100 datasets demonstrate the strong performance of GEM when compared to the state-of-the-art.},
+annote = {Comment: Published at NIPS 2017
+arXiv: 1706.08840},
+author = {Lopez-Paz, David and Ranzato, Marc'Aurelio},
+booktitle = {NIPS},
+keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,[cifar],[mnist],gem},
+mendeley-tags = {[cifar],[mnist]},
+title = {{Gradient Episodic Memory for Continual Learning}},
+url = {http://arxiv.org/abs/1706.08840},
+year = {2017}
+}
 @inproceedings{Chaudhry2019a,
 abstract = {In lifelong learning, the learner is presented with a sequence of tasks, incrementally building a data-driven prior which may be leveraged to speed up learning of a new task. In this work, we investigate the efficiency of current lifelong approaches, in terms of sample complexity, computational and memory cost. Towards this end, we first introduce a new and a more realistic evaluation protocol, whereby learners observe each example only once and hyper-parameter selection is done on a small and disjoint set of tasks, which is not used for the actual learning experience and evaluation. Second, we introduce a new metric measuring how quickly a learner acquires a new skill. Third, we propose an improved version of GEM (Lopez-Paz {\&} Ranzato, 2017), dubbed Averaged GEM (A-GEM), which enjoys the same or even better performance as GEM, while being almost as computationally and memory efficient as EWC (Kirkpatrick et al., 2016) and other regularization-based methods. Finally, we show that all algorithms including A-GEM can learn even more quickly if they are provided with task descriptors specifying the classification tasks under consideration. Our experiments on several standard lifelong learning benchmarks demonstrate that A-GEM has the best trade-off between accuracy and efficiency.},
 annote = {Comment: Published as a conference paper at ICLR 2019
@@ -87,18 +99,6 @@ mendeley-tags = {[cifar],[mnist]},
 title = {{Efficient Lifelong Learning with A-GEM}},
 url = {http://arxiv.org/abs/1812.00420},
 year = {2019}
-}
-@inproceedings{Lopez-Paz2017a,
-abstract = {One major obstacle towards AI is the poor ability of models to solve new problems quicker, and without forgetting previously acquired knowledge. To better understand this issue, we study the problem of continual learning, where the model observes, once and one by one, examples concerning a sequence of tasks. First, we propose a set of metrics to evaluate models learning over a continuum of data. These metrics characterize models not only by their test accuracy, but also in terms of their ability to transfer knowledge across tasks. Second, we propose a model for continual learning, called Gradient Episodic Memory (GEM) that alleviates forgetting, while allowing beneficial transfer of knowledge to previous tasks. Our experiments on variants of the MNIST and CIFAR-100 datasets demonstrate the strong performance of GEM when compared to the state-of-the-art.},
-annote = {Comment: Published at NIPS 2017
-arXiv: 1706.08840},
-author = {Lopez-Paz, David and Ranzato, Marc'Aurelio},
-booktitle = {NIPS},
-keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,[cifar],[mnist],gem},
-mendeley-tags = {[cifar],[mnist]},
-title = {{Gradient Episodic Memory for Continual Learning}},
-url = {http://arxiv.org/abs/1706.08840},
-year = {2017}
 }
 @inproceedings{Rebuffi2017a,
 author = {Rebuffi, Sylvestre-Alvise and Kolesnikov, Alexander and Sperl, Georg and Lampert, Christoph H},
