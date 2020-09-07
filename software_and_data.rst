@@ -6,6 +6,7 @@ One of the most important objective of the Continual AI project is to provide an
 Software
 --------------------------------
 
+- `Continuum CL library <https://github.com/Continvvm/continuum>`_: Continuum is a Python library (written with PyTorch) for Continual Learning. It supports many datasets and most CL scenarios (NC, NI, NIC and others).
 - `NORB sequencer <https://github.com/vlomonaco/norb-creator>`_: Java application (with GUI) to make small videos out of the NORB dataset.
 - `GEM implementation <https://github.com/facebookresearch/GradientEpisodicMemory>`_: Implementation of the CL strategy “Gradient Episodic Memory”.
 - `OpenAI Gym <https://gym.openai.com/>`_: Open source interface that provides a ready-to-use suite of reinforcement learning tasks for evaluating performance of your algorithm.
