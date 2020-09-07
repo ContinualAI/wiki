@@ -1,10 +1,15 @@
-@article{sokar2020a,
-abstract = {The continual learning (CL) paradigm aims to enable neural networks to learn tasks continually in a sequential fashion. The fundamental challenge in this learning paradigm is catastrophic forgetting previously learned tasks when the model is optimized for a new task, especially when their data is not accessible. Current architectural-based methods aim at alleviating the catastrophic forgetting problem but at the expense of expanding the capacity of the model. Regularization-based methods maintain a fixed model capacity; however, previous studies showed the huge performance degradation of these methods when the task identity is not available during inference (e.g. class incremental learning scenario). In this work, we propose a novel architectural-based method referred as SpaceNet for class incremental learning scenario where we utilize the available fixed capacity of the model intelligently. SpaceNet trains sparse deep neural networks from scratch in an adaptive way that compresses the sparse connections of each task in a compact number of neurons. The adaptive training of the sparse connections results in sparse representations that reduce the interference between the tasks. Experimental results show the robustness of our proposed method against catastrophic forgetting old tasks and the efficiency of SpaceNet in utilizing the available capacity of the model, leaving space for more tasks to be learned. In particular, when SpaceNet is tested on the well-known benchmarks for CL: split MNIST, split Fashion-MNIST, and CIFAR-10/100, it outperforms regularization-based methods by a big performance gap. Moreover, it achieves better performance than architectural-based methods without model expansion and achieved comparable results with rehearsal-based methods, while offering a huge memory reduction.},
-author = {Sokar, Ghada and Mocanu, Decebal Constantin and Pechenizkiy, Mykola},
-journal = {arXiv},
-title = {{SpaceNet: Make Free Space For Continual Learning}},
-url = {https://arxiv.org/abs/2007.07617},
-year = {2020}
+@inproceedings{Aljundi2016a,
+abstract = {In this paper we introduce a model of lifelong learning, based on a Network of Experts. New tasks / experts are learned and added to the model sequentially, building on what was learned before. To ensure scalability of this process, data from previous tasks cannot be stored and hence is not available when learning a new task. A critical issue in such context, not addressed in the literature so far, relates to the decision of which expert to deploy at test time. We introduce a gating autoencoder that learns a representation for the task at hand, and is used at test time to automatically forward the test sample to the relevant expert. This has the added advantage of being memory efficient as only one expert network has to be loaded into memory at any given time. Further, the autoencoders inherently capture the relatedness of one task to another, based on which the most relevant prior model to be used for training a new expert with fine-tuning or learning-without-forgetting can be selected. We evaluate our system on image classification and video prediction problems.},
+archivePrefix = {arXiv},
+arxivId = {1611.06194},
+author = {Aljundi, Rahaf and Chakravarty, Punarjay and Tuytelaars, Tinne},
+booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+eprint = {1611.06194},
+keywords = {[vision]},
+mendeley-tags = {[vision]},
+title = {{Expert Gate: Lifelong Learning with a Network of Experts}},
+url = {http://arxiv.org/abs/1611.06194},
+year = {2017}
 }
 @inproceedings{Srivastava2019a,
 abstract = {The problem of a deep learning model losing performance on a previously learned task when fine-tuned to a new one is a phenomenon known as Catastrophic forgetting. There are two major ways to mitigate this problem: either preserving activations of the initial network during training with a new task; or restricting the new network activations to remain close to the initial ones. The latter approach falls under the denomination of lifelong learning, where the model is updated in a way that it performs well on both old and new tasks, without having access to the old task's training samples anymore. Recently, approaches like pruning networks for freeing network capacity during sequential learning of tasks have been gaining in popularity. Such approaches allow learning small networks while making redundant parameters available for the next tasks. The common problem encountered with these approaches is that the pruning percentage is hard-coded, irrespective of the number of samples, of the complexity of the learning task and of the number of classes in the dataset. We propose a method based on Bayesian optimization to perform adaptive compression/pruning of the network and show its effectiveness in lifelong learning. Our method learns to perform heavy pruning for small and/or simple datasets while using milder compression rates for large and/or complex data. Experiments on classification and semantic segmentation demonstrate the applicability of learning network compression, where we are able to effectively preserve performances along sequences of tasks of varying complexity.},
@@ -281,19 +286,6 @@ mendeley-tags = {[mnist]},
 title = {{Neurogenesis Deep Learning}},
 url = {https://www.osti.gov/biblio/1424868},
 year = {2017}
-}
-@article{Golkar2019a,
-abstract = {We introduce Continual Learning via Neural Pruning (CLNP), a new method aimed at lifelong learning in fixed capacity models based on neuronal model sparsification. In this method, subsequent tasks are trained using the inactive neurons and filters of the sparsified network and cause zero deterioration to the performance of previous tasks. In order to deal with the possible compromise between model sparsity and performance, we formalize and incorporate the concept of graceful forgetting: the idea that it is preferable to suffer a small amount of forgetting in a controlled manner if it helps regain network capacity and prevents uncontrolled loss of performance during the training of future tasks. CLNP also provides simple continual learning diagnostic tools in terms of the number of free neurons left for the training of future tasks as well as the number of neurons that are being reused. In particular, we see in experiments that CLNP verifies and automatically takes advantage of the fact that the features of earlier layers are more transferable. We show empirically that CLNP leads to significantly improved results over current weight elasticity based methods.},
-annote = {Comment: 12 pages, 5 figures, 3 tables
-arXiv: 1903.04476},
-author = {Golkar, Siavash and Kagan, Michael and Cho, Kyunghyun},
-journal = {arXiv},
-keywords = {Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Quantitative Biology - Neurons and Cognition,Statistics - Machine Learning,[cifar],[mnist],[sparsity]},
-mendeley-tags = {[cifar],[mnist],[sparsity]},
-month = {mar},
-title = {{Continual Learning via Neural Pruning}},
-url = {http://arxiv.org/abs/1903.04476},
-year = {2019}
 }
 @inproceedings{Asghar2019a,
 abstract = {This paper addresses the problem of incremental domain adaptation (IDA) in natural language processing (NLP). We assume each domain comes one after another, and that we could only access data in...},
