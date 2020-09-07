@@ -3,6 +3,7 @@ Media Articles
 
 While not yet in its peak of media attention, Continual Learning has repeatedly appeared in multiple sources. In this page we try to cover the most relevant press articles on the subject.
 
+- `Continuum: A Data Loader for Continual Learning <https://medium.com/continual-ai/continuum-a-data-loader-for-continual-learning-bb45ce9ef0ef>`_
 - `Why Continual Learning is the key towards Machine Intelligence <https://medium.com/@vlomonaco/why-continuous-learning-is-the-key-towards-machine-intelligence-1851cb57c308>`_
 - `Why continuous learning is key to AI <https://www.oreilly.com/ideas/why-continuous-learning-is-key-to-ai>`_
 - `DARPA Seeking AI That Learns All the Time <https://spectrum.ieee.org/cars-that-think/robotics/artificial-intelligence/darpa-seeking-ai-that-can-learn-all-the-time>`_
