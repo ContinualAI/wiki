@@ -21,7 +21,7 @@ ContinualAI wiki provides a [Research section](https://wiki.continualai.org/rese
 
 If you don't want to join the group, you can simply open a Github issue to suggest us a new paper (or even more than one). We will take care of adding it to the wiki as soon as possible. 
 
-1. Open a Github issue
+1. Open a Github issue. You can use `new paper` or `new conference` tags to specify which kind of issue you are submitting.
 
 2. Attach your bib file containing the paper you want to include in the wiki. If you don't have a bib file, just provide us with the link to the paper. The link should point to a location where paper metadata can be appropriately retrieved by common reference managers.
 
