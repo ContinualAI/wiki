@@ -107,7 +107,7 @@ showbib_template = """
 def generate_hsl():
     H = random.randint(0, 359)
     S = random.randint(60, 100)
-    L = random.randint(50, 100)
+    L = random.randint(40, 80)
     color_string = "HSL({}, {}%, {}%)".format(H,S,L)
     
     return color_string
