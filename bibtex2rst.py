@@ -103,6 +103,15 @@ showbib_template = """
     
 """
 
+
+def generate_hsl():
+    H = random.randint(0, 359)
+    S = random.randint(60, 100)
+    L = random.randint(50, 100)
+    color_string = "HSL({}, {}%, {}%)".format(H,S,L)
+    
+    return color_string
+
 def build_tags_string(tag2c):
     output = ""
     for tagname, color in tag2c.items():
@@ -312,9 +321,8 @@ with open('tags.csv','r') as f:
     n_tags = len(tags_list)
     print("Read " + str(n_tags) + " tags.")
     
-    colors = [ # generate random HEX colors for tags
-        "#"+''.join([random.choice('0123456789ABCDEF') for _ in range(6)])
-                 for _ in range(n_tags)]
+    # generate random HSL colors for tags (light colors only)    
+    colors = [ generate_hsl() for _ in range(n_tags)]
 
 tags2color = dict(zip(tags_list, colors))
 
