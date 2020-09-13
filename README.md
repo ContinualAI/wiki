@@ -1,7 +1,7 @@
 # ContinualAI Wiki: a collaborative wiki on Continual/Lifelong Machine Learning
-<div style="text-align:center">
-	<img src="https://www.continualai.org/images/continualai_logo_name_black.png" width="160" height="100">
-</div>
+<p align="center">
+  <img src="https://www.continualai.org/images/continualai_logo_name_black.png" alt="ContinualAI logo"/ width="550px" height="350px" align="center">
+</p>
 
 The aim of the project is to create an open-source, collaborative wiki to provide a starting point for researchers, developers and AI enthusiasts who share an interest in Continual Learning and are willing to learn more or contribute to this field.  
 You can find info about CL workshops, media articles, companies using CL and much more.  
