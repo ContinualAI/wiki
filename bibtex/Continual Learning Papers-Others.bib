@@ -1,3 +1,26 @@
+@inproceedings{farquhar2018a,
+annote = {The authors distinguish between prior-focused and likelihood-focused bayesian methods and then combine the two. They carefully analyze the difference between multi-head and single-head approach.},
+author = {Farquhar, Sebastian and Gal, Yarin},
+booktitle = {NeurIPS Bayesian Deep Learning Workshop},
+file = {:home/andrea/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Farquhar, Gal - 2018 - A Unifying Bayesian View of Continual Learning.pdf:pdf},
+keywords = {[bayes],[cifar],[mnist]},
+mendeley-tags = {[bayes],[cifar],[mnist]},
+title = {{A Unifying Bayesian View of Continual Learning}},
+url = {http://bayesiandeeplearning.org/2018/papers/74.pdf},
+year = {2018}
+}
+@inproceedings{zeno2018a,
+abstract = {Catastrophic forgetting is the notorious vulnerability of neural networks to the change of the data distribution while learning. This phenomena has long been considered a major obstacle for allowing the use of learning agents in realistic continual learning settings. Although this vulnerability of neural networks is widely investigated, it is currently only mitigated by explicitly reacting to the change of task. We suggest a novel approach for overcoming catastrophic forgetting in neural networks, using an online version of the variational Bayes method. Having a confidence measure of the weights alleviates catastrophic forgetting and, for the first time, succeeds in this even without the knowledge of when the tasks are being switched. 2},
+annote = {Bayesian Gradient Descent allows for Task Agnostic Continual Learning. The posterior on the parameters is updated at every batch, without needing task boundaries or task labels at training time. Experiments are performed with multi-head for Split scenarios.},
+author = {Zeno, Chen and Golan, Itay and Hoffer, Elad and Soudry, Daniel},
+booktitle = {NeurIPS Bayesian Deep Learning Workshop},
+file = {:home/andrea/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Zeno et al. - 2018 - Task Agnostic Continual Learning Using Online Variational Bayes.pdf:pdf},
+keywords = {[bayes],[cifar],[mnist]},
+mendeley-tags = {[bayes],[cifar],[mnist]},
+title = {{Task Agnostic Continual Learning Using Online Variational Bayes}},
+url = {http://bayesiandeeplearning.org/2018/papers/58.pdf},
+year = {2018}
+}
 @article{mundt2019a,
 abstract = {We introduce a probabilistic approach to unify open set recognition with the prevention of catastrophic forgetting in deep continual learning, based on variational Bayesian inference. Our single model combines a joint probabilistic encoder with a generative model and a linear classifier that get shared across sequentially arriving tasks. In order to successfully distinguish unseen unknown data from trained known tasks, we propose to bound the class specific approximate posterior by fitting regions of high density on the basis of correctly classified data points. These bounds are further used to significantly alleviate catastrophic forgetting by avoiding samples from low density areas in generative replay. Our approach requires neither storing of old, nor upfront knowledge of future data, and is empirically validated on visual and audio tasks in class incremental, as well as cross-dataset scenarios across modalities.},
 archivePrefix = {arXiv},
@@ -64,16 +87,6 @@ month = {feb},
 title = {{Variational Continual Learning}},
 url = {https://openreview.net/forum?id=BkQqq0gRb},
 year = {2018}
-}
-@article{sokar2020a,
-abstract = {The continual learning (CL) paradigm aims to enable neural networks to learn tasks continually in a sequential fashion. The fundamental challenge in this learning paradigm is catastrophic forgetting previously learned tasks when the model is optimized for a new task, especially when their data is not accessible. Current architectural-based methods aim at alleviating the catastrophic forgetting problem but at the expense of expanding the capacity of the model. Regularization-based methods maintain a fixed model capacity; however, previous studies showed the huge performance degradation of these methods when the task identity is not available during inference (e.g. class incremental learning scenario). In this work, we propose a novel architectural-based method referred as SpaceNet for class incremental learning scenario where we utilize the available fixed capacity of the model intelligently. SpaceNet trains sparse deep neural networks from scratch in an adaptive way that compresses the sparse connections of each task in a compact number of neurons. The adaptive training of the sparse connections results in sparse representations that reduce the interference between the tasks. Experimental results show the robustness of our proposed method against catastrophic forgetting old tasks and the efficiency of SpaceNet in utilizing the available capacity of the model, leaving space for more tasks to be learned. In particular, when SpaceNet is tested on the well-known benchmarks for CL: split MNIST, split Fashion-MNIST, and CIFAR-10/100, it outperforms regularization-based methods by a big performance gap. Moreover, it achieves better performance than architectural-based methods without model expansion and achieved comparable results with rehearsal-based methods, while offering a huge memory reduction.},
-author = {Sokar, Ghada and Mocanu, Decebal Constantin and Pechenizkiy, Mykola},
-journal = {arXiv},
-keywords = {[cifar],[fashion],[mnist],[sparsity]},
-mendeley-tags = {[cifar],[fashion],[mnist],[sparsity]},
-title = {{SpaceNet: Make Free Space For Continual Learning}},
-url = {https://arxiv.org/abs/2007.07617},
-year = {2020}
 }
 @inproceedings{Lee2019a,
 abstract = {Lifelong learning with deep neural networks is well-known to suffer from catastrophic forgetting: The performance on previous tasks drastically degrades when learning a new task. To alleviate this effect, we propose to leverage a large stream of unlabeled data easily obtainable in the wild. In particular, we design a novel class-incremental learning scheme with (a) a new distillation loss, termed global distillation, (b) a learning strategy to avoid overfitting to the most recent task, and (c) a confidence-based sampling method to effectively leverage unlabeled external data. Our experimental results on various datasets, including CIFAR and ImageNet, demonstrate the superiority of the proposed methods over prior methods, particularly when a stream of unlabeled data is accessible: Our method shows up to 15.8{\%} higher accuracy and 46.5{\%} less forgetting compared to the state-of-the-art method. The code is available at https://github.com/kibok90/iccv2019-inc.},
