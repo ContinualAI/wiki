@@ -124,14 +124,16 @@ year = {2020}
 }
 @inproceedings{Lee2017a,
 abstract = {Catastrophic forgetting is a problem of neural networks that loses the information of the first task after training the second task. Here, we propose a method, i.e. incremental moment matching (IMM), to resolve this problem. IMM incrementally matches the moment of the posterior distribution of the neural network which is trained on the first and the second task, respectively. To make the search space of posterior parameter smooth, the IMM procedure is complemented by various transfer learning techniques including weight transfer, L2-norm of the old and the new parameter, and a variant of dropout with the old parameter. We analyze our approach on a variety of datasets including the MNIST, CIFAR-10, Caltech-UCSD-Birds, and Lifelog datasets. The experimental results show that IMM achieves state-of-the-art performance by balancing the information between an old and a new network.},
+annote = {IMM is tested on Disjoint MNIST (2 tasks only), and Shuffled (i.e. permuted) MNIST (3 tasks only). 
+The authors show that EWC does not work in Split (Disjoint) settings.},
 archivePrefix = {arXiv},
 arxivId = {1703.08475},
 author = {Lee, Sang-Woo and Kim, Jin-Hwa and Jun, Jaehyun and Ha, Jung-Woo and Zhang, Byoung-Tak},
 booktitle = {Advances in Neural Information Processing Systems},
 eprint = {1703.08475},
 file = {::},
-keywords = {[cifar],[mnist]},
-mendeley-tags = {[cifar],[mnist]},
+keywords = {[bayes],[cifar],[mnist]},
+mendeley-tags = {[bayes],[cifar],[mnist]},
 month = {mar},
 pages = {4653--4663},
 publisher = {Neural information processing systems foundation},

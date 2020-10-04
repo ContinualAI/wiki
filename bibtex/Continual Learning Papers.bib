@@ -1,3 +1,42 @@
+@inproceedings{joseph2020a,
+abstract = {The ability to continuously learn and adapt itself to new tasks, without losing grasp of already acquired knowledge is a hallmark of biological learning systems, which current deep learning systems fall short of. In this work, we present a novel methodology for continual learning called MERLIN: Meta-Consolidation for Continual Learning. We assume that weights of a neural network {\$}\backslashboldsymbol \backslashpsi{\$}, for solving task {\$}\backslashboldsymbol t{\$}, come from a meta-distribution {\$}p(\backslashboldsymbol{\{}\backslashpsi|t{\}}){\$}. This meta-distribution is learned and consolidated incrementally. We operate in the challenging online continual learning setting, where a data point is seen by the model only once. Our experiments with continual learning benchmarks of MNIST, CIFAR-10, CIFAR-100 and Mini-ImageNet datasets show consistent improvement over five baselines, including a recent state-of-the-art, corroborating the promise of MERLIN.},
+annote = {The authors leverage a bayesian framework in which the parameters of a model are sampled from a generating distribution. This distribution, parameterized by a task label, is used together with a VAE to consolidate online previous and current knowledge. Inference does not require task labels and exploit an ensemble of model, sampled from the generating distribution.},
+archivePrefix = {arXiv},
+arxivId = {2010.00352},
+author = {Joseph, K J and Balasubramanian, Vineeth N},
+booktitle = {NeurIPS},
+eprint = {2010.00352},
+file = {::},
+keywords = {[bayes],[cifar],[imagenet],[mnist]},
+mendeley-tags = {[bayes],[cifar],[imagenet],[mnist]},
+month = {oct},
+title = {{Meta-Consolidation for Continual Learning}},
+url = {http://arxiv.org/abs/2010.00352},
+year = {2020}
+}
+@inproceedings{farquhar2018a,
+annote = {The authors distinguish between prior-focused and likelihood-focused bayesian methods and then combine the two. They carefully analyze the difference between multi-head and single-head approach.},
+author = {Farquhar, Sebastian and Gal, Yarin},
+booktitle = {NeurIPS Bayesian Deep Learning Workshop},
+file = {:home/andrea/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Farquhar, Gal - 2018 - A Unifying Bayesian View of Continual Learning.pdf:pdf},
+keywords = {[bayes],[cifar],[mnist]},
+mendeley-tags = {[bayes],[cifar],[mnist]},
+title = {{A Unifying Bayesian View of Continual Learning}},
+url = {http://bayesiandeeplearning.org/2018/papers/74.pdf},
+year = {2018}
+}
+@inproceedings{zeno2018a,
+abstract = {Catastrophic forgetting is the notorious vulnerability of neural networks to the change of the data distribution while learning. This phenomena has long been considered a major obstacle for allowing the use of learning agents in realistic continual learning settings. Although this vulnerability of neural networks is widely investigated, it is currently only mitigated by explicitly reacting to the change of task. We suggest a novel approach for overcoming catastrophic forgetting in neural networks, using an online version of the variational Bayes method. Having a confidence measure of the weights alleviates catastrophic forgetting and, for the first time, succeeds in this even without the knowledge of when the tasks are being switched. 2},
+annote = {Bayesian Gradient Descent allows for Task Agnostic Continual Learning. The posterior on the parameters is updated at every batch, without needing task boundaries or task labels at training time. Experiments are performed with multi-head for Split scenarios.},
+author = {Zeno, Chen and Golan, Itay and Hoffer, Elad and Soudry, Daniel},
+booktitle = {NeurIPS Bayesian Deep Learning Workshop},
+file = {:home/andrea/.local/share/data/Mendeley Ltd./Mendeley Desktop/Downloaded/Zeno et al. - 2018 - Task Agnostic Continual Learning Using Online Variational Bayes.pdf:pdf},
+keywords = {[bayes],[cifar],[mnist]},
+mendeley-tags = {[bayes],[cifar],[mnist]},
+title = {{Task Agnostic Continual Learning Using Online Variational Bayes}},
+url = {http://bayesiandeeplearning.org/2018/papers/58.pdf},
+year = {2018}
+}
 @article{hayes2019a,
 abstract = {In supervised machine learning, an agent is typically trained once and then deployed. While this works well for static settings, robots often operate in changing environments and must quickly learn new things from data streams. In this paradigm, known as streaming learning, a learner is trained online, in a single pass, from a data stream that cannot be assumed to be independent and identically distributed (iid). Streaming learning will cause conventional deep neural networks (DNNs) to fail for two reasons: 1) they need multiple passes through the entire dataset; and 2) non-iid data will cause catastrophic forgetting. An old fix to both of these issues is rehearsal. To learn a new example, rehearsal mixes it with previous examples, and then this mixture is used to update the DNN. Full rehearsal is slow and memory intensive because it stores all previously observed examples, and its effectiveness for preventing catastrophic forgetting has not been studied in modern DNNs. Here, we describe the ExStream algorithm for memory efficient rehearsal and compare it to alternatives. We find that full rehearsal can eliminate catastrophic forgetting in a variety of streaming learning settings, with ExStream performing well using far less memory and computation.},
 annote = {The replay memory is of very small size due to the online update of class-representative centroids.},
@@ -253,12 +292,15 @@ year = {2020}
 }
 @article{sokar2020a,
 abstract = {The continual learning (CL) paradigm aims to enable neural networks to learn tasks continually in a sequential fashion. The fundamental challenge in this learning paradigm is catastrophic forgetting previously learned tasks when the model is optimized for a new task, especially when their data is not accessible. Current architectural-based methods aim at alleviating the catastrophic forgetting problem but at the expense of expanding the capacity of the model. Regularization-based methods maintain a fixed model capacity; however, previous studies showed the huge performance degradation of these methods when the task identity is not available during inference (e.g. class incremental learning scenario). In this work, we propose a novel architectural-based method referred as SpaceNet for class incremental learning scenario where we utilize the available fixed capacity of the model intelligently. SpaceNet trains sparse deep neural networks from scratch in an adaptive way that compresses the sparse connections of each task in a compact number of neurons. The adaptive training of the sparse connections results in sparse representations that reduce the interference between the tasks. Experimental results show the robustness of our proposed method against catastrophic forgetting old tasks and the efficiency of SpaceNet in utilizing the available capacity of the model, leaving space for more tasks to be learned. In particular, when SpaceNet is tested on the well-known benchmarks for CL: split MNIST, split Fashion-MNIST, and CIFAR-10/100, it outperforms regularization-based methods by a big performance gap. Moreover, it achieves better performance than architectural-based methods without model expansion and achieved comparable results with rehearsal-based methods, while offering a huge memory reduction.},
+archivePrefix = {arXiv},
+arxivId = {2007.07617},
 author = {Sokar, Ghada and Mocanu, Decebal Constantin and Pechenizkiy, Mykola},
+eprint = {2007.07617},
 journal = {arXiv},
 keywords = {[cifar],[fashion],[mnist],[sparsity]},
 mendeley-tags = {[cifar],[fashion],[mnist],[sparsity]},
 title = {{SpaceNet: Make Free Space For Continual Learning}},
-url = {https://arxiv.org/abs/2007.07617},
+url = {http://arxiv.org/abs/2007.07617},
 year = {2020}
 }
 @article{ayub2020b,
@@ -986,19 +1028,6 @@ title = {{Continual Learning in Practice}},
 url = {http://arxiv.org/abs/1903.05202},
 year = {2019}
 }
-@article{Kuzina2019a,
-abstract = {Variational Auto Encoders (VAE) are capable of generating realistic images, sounds and video sequences. From practitioners point of view, we are usually interested in solving problems where tasks are learned sequentially, in a way that avoids revisiting all previous data at each stage. We address this problem by introducing a conceptually simple and scalable end-to-end approach of incorporating past knowledge by learning prior directly from the data. We consider scalable boosting-like approximation for intractable theoretical optimal prior. We provide empirical studies on two commonly used benchmarks, namely MNIST and Fashion MNIST on disjoint sequential image generation tasks. For each dataset proposed method delivers the best results or comparable to SOTA, avoiding catastrophic forgetting in a fully automatic way.},
-archivePrefix = {arXiv},
-arxivId = {1908.11853},
-author = {Kuzina, Anna and Egorov, Evgenii and Burnaev, Evgeny},
-eprint = {1908.11853},
-journal = {arXiv},
-keywords = {[bayes],[fashion],[mnist]},
-mendeley-tags = {[bayes],[fashion],[mnist]},
-title = {{BooVAE: A scalable framework for continual VAE learning under boosting approach}},
-url = {http://arxiv.org/abs/1908.11853},
-year = {2019}
-}
 @article{Lee2020a,
 author = {Lee, Cecilia S and Lee, Aaron Y},
 doi = {10.1016/S2589-7500(20)30102-3},
@@ -1011,6 +1040,19 @@ title = {{Clinical applications of continual learning machine learning}},
 url = {https://linkinghub.elsevier.com/retrieve/pii/S2589750020301023},
 volume = {2},
 year = {2020}
+}
+@article{Kuzina2019a,
+abstract = {Variational Auto Encoders (VAE) are capable of generating realistic images, sounds and video sequences. From practitioners point of view, we are usually interested in solving problems where tasks are learned sequentially, in a way that avoids revisiting all previous data at each stage. We address this problem by introducing a conceptually simple and scalable end-to-end approach of incorporating past knowledge by learning prior directly from the data. We consider scalable boosting-like approximation for intractable theoretical optimal prior. We provide empirical studies on two commonly used benchmarks, namely MNIST and Fashion MNIST on disjoint sequential image generation tasks. For each dataset proposed method delivers the best results or comparable to SOTA, avoiding catastrophic forgetting in a fully automatic way.},
+archivePrefix = {arXiv},
+arxivId = {1908.11853},
+author = {Kuzina, Anna and Egorov, Evgenii and Burnaev, Evgeny},
+eprint = {1908.11853},
+journal = {arXiv},
+keywords = {[bayes],[fashion],[mnist]},
+mendeley-tags = {[bayes],[fashion],[mnist]},
+title = {{BooVAE: A scalable framework for continual VAE learning under boosting approach}},
+url = {http://arxiv.org/abs/1908.11853},
+year = {2019}
 }
 @inproceedings{Terekhov2015a,
 abstract = {Although deep neural networks (DNNs) have demonstrated impressive results during the last decade, they remain highly specialized tools, which are trained – often from scratch – to solve each particular task. The human brain, in contrast, significantly re-uses existing capacities when learning to solve new tasks. In the current study we explore a block-modular architecture for DNNs, which allows parts of the existing network to be re-used to solve a new task without a decrease in performance when solving the original task. We show that networks with such architectures can outperform networks trained from scratch, or perform comparably, while having to learn nearly 10 times fewer weights than the networks trained from scratch.},
@@ -1788,14 +1830,16 @@ year = {2019}
 }
 @inproceedings{Lee2017a,
 abstract = {Catastrophic forgetting is a problem of neural networks that loses the information of the first task after training the second task. Here, we propose a method, i.e. incremental moment matching (IMM), to resolve this problem. IMM incrementally matches the moment of the posterior distribution of the neural network which is trained on the first and the second task, respectively. To make the search space of posterior parameter smooth, the IMM procedure is complemented by various transfer learning techniques including weight transfer, L2-norm of the old and the new parameter, and a variant of dropout with the old parameter. We analyze our approach on a variety of datasets including the MNIST, CIFAR-10, Caltech-UCSD-Birds, and Lifelog datasets. The experimental results show that IMM achieves state-of-the-art performance by balancing the information between an old and a new network.},
+annote = {IMM is tested on Disjoint MNIST (2 tasks only), and Shuffled (i.e. permuted) MNIST (3 tasks only). 
+The authors show that EWC does not work in Split (Disjoint) settings.},
 archivePrefix = {arXiv},
 arxivId = {1703.08475},
 author = {Lee, Sang-Woo and Kim, Jin-Hwa and Jun, Jaehyun and Ha, Jung-Woo and Zhang, Byoung-Tak},
 booktitle = {Advances in Neural Information Processing Systems},
 eprint = {1703.08475},
 file = {::},
-keywords = {[cifar],[mnist]},
-mendeley-tags = {[cifar],[mnist]},
+keywords = {[bayes],[cifar],[mnist]},
+mendeley-tags = {[bayes],[cifar],[mnist]},
 month = {mar},
 pages = {4653--4663},
 publisher = {Neural information processing systems foundation},
@@ -1889,6 +1933,17 @@ title = {{A Progressive Model to Enable Continual Learning for Semantic Slot Fil
 url = {https://www.aclweb.org/anthology/D19-1126.pdf},
 year = {2019}
 }
+@article{Kiyasseh2020,
+abstract = {Deep learning algorithms are known to experience destructive interference when instances violate the assumption of being independent and identically distributed (i.i.d). This violation, however, is ubiquitous in clinical settings where data are streamed temporally and from a multitude of physiological sensors. To overcome this obstacle, we propose CLOPS, a healthcare-specific replay-based continual learning strategy. In three continual learning scenarios based on three publically-available datasets, we show that CLOPS can outperform its multi-task learning counterpart. Moreover, we propose end-to-end trainable parameters, which we term task-instance parameters, that can be used to quantify task difficulty and similarity. This quantification yields insights into both network interpretability and clinical applications, where task difficulty is poorly quantified.},
+archivePrefix = {arXiv},
+arxivId = {2004.09578},
+author = {Kiyasseh, Dani and Zhu, Tingting and Clifton, David A},
+eprint = {2004.09578},
+journal = {arXiv},
+title = {{CLOPS: Continual Learning of Physiological Signals}},
+url = {http://arxiv.org/abs/2004.09578},
+year = {2020}
+}
 @article{Saha2020a,
 abstract = {Humans are skilled at learning adaptively and efficiently throughout their lives, but learning tasks incrementally causes artificial neural networks to overwrite relevant information learned about older tasks, resulting in 'Catastrophic Forgetting'. Efforts to overcome this phenomenon suffer from poor utilization of resources in many ways, such as through the need to save older data or parametric importance scores, or to grow the network architecture. We propose an algorithm that enables a network to learn continually and efficiently by partitioning the representational space into a Core space, that contains the condensed information from previously learned tasks, and a Residual space, which is akin to a scratch space for learning the current task. The information in the Residual space is then compressed using Principal Component Analysis and added to the Core space, freeing up parameters for the next task. We evaluate our algorithm on P-MNIST, CIFAR-10 and CIFAR-100 datasets. We achieve comparable accuracy to state-of-the-art methods while overcoming the problem of catastrophic forgetting completely. Additionally, we get up to 4.5x improvement in energy efficiency during inference due to the structured nature of the resulting architecture.},
 archivePrefix = {arXiv},
@@ -1900,17 +1955,6 @@ keywords = {[cifar],[mnist]},
 mendeley-tags = {[cifar],[mnist]},
 title = {{Structured Compression and Sharing of Representational Space for Continual Learning}},
 url = {http://arxiv.org/abs/2001.08650},
-year = {2020}
-}
-@article{Kiyasseh2020,
-abstract = {Deep learning algorithms are known to experience destructive interference when instances violate the assumption of being independent and identically distributed (i.i.d). This violation, however, is ubiquitous in clinical settings where data are streamed temporally and from a multitude of physiological sensors. To overcome this obstacle, we propose CLOPS, a healthcare-specific replay-based continual learning strategy. In three continual learning scenarios based on three publically-available datasets, we show that CLOPS can outperform its multi-task learning counterpart. Moreover, we propose end-to-end trainable parameters, which we term task-instance parameters, that can be used to quantify task difficulty and similarity. This quantification yields insights into both network interpretability and clinical applications, where task difficulty is poorly quantified.},
-archivePrefix = {arXiv},
-arxivId = {2004.09578},
-author = {Kiyasseh, Dani and Zhu, Tingting and Clifton, David A},
-eprint = {2004.09578},
-journal = {arXiv},
-title = {{CLOPS: Continual Learning of Physiological Signals}},
-url = {http://arxiv.org/abs/2004.09578},
 year = {2020}
 }
 @inproceedings{Hayes2019b,
@@ -2553,18 +2597,6 @@ title = {{Task-Free Continual Learning}},
 url = {https://openaccess.thecvf.com/content{\_}CVPR{\_}2019/papers/Aljundi{\_}Task-Free{\_}Continual{\_}Learning{\_}CVPR{\_}2019{\_}paper.pdf},
 year = {2019}
 }
-@inproceedings{Lopez-Paz2017a,
-abstract = {One major obstacle towards AI is the poor ability of models to solve new problems quicker, and without forgetting previously acquired knowledge. To better understand this issue, we study the problem of continual learning, where the model observes, once and one by one, examples concerning a sequence of tasks. First, we propose a set of metrics to evaluate models learning over a continuum of data. These metrics characterize models not only by their test accuracy, but also in terms of their ability to transfer knowledge across tasks. Second, we propose a model for continual learning, called Gradient Episodic Memory (GEM) that alleviates forgetting, while allowing beneficial transfer of knowledge to previous tasks. Our experiments on variants of the MNIST and CIFAR-100 datasets demonstrate the strong performance of GEM when compared to the state-of-the-art.},
-annote = {Comment: Published at NIPS 2017
-arXiv: 1706.08840},
-author = {Lopez-Paz, David and Ranzato, Marc'Aurelio},
-booktitle = {NIPS},
-keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,[cifar],[mnist],gem},
-mendeley-tags = {[cifar],[mnist]},
-title = {{Gradient Episodic Memory for Continual Learning}},
-url = {http://arxiv.org/abs/1706.08840},
-year = {2017}
-}
 @inproceedings{Chaudhry2019a,
 abstract = {In lifelong learning, the learner is presented with a sequence of tasks, incrementally building a data-driven prior which may be leveraged to speed up learning of a new task. In this work, we investigate the efficiency of current lifelong approaches, in terms of sample complexity, computational and memory cost. Towards this end, we first introduce a new and a more realistic evaluation protocol, whereby learners observe each example only once and hyper-parameter selection is done on a small and disjoint set of tasks, which is not used for the actual learning experience and evaluation. Second, we introduce a new metric measuring how quickly a learner acquires a new skill. Third, we propose an improved version of GEM (Lopez-Paz {\&} Ranzato, 2017), dubbed Averaged GEM (A-GEM), which enjoys the same or even better performance as GEM, while being almost as computationally and memory efficient as EWC (Kirkpatrick et al., 2016) and other regularization-based methods. Finally, we show that all algorithms including A-GEM can learn even more quickly if they are provided with task descriptors specifying the classification tasks under consideration. Our experiments on several standard lifelong learning benchmarks demonstrate that A-GEM has the best trade-off between accuracy and efficiency.},
 annote = {Comment: Published as a conference paper at ICLR 2019
@@ -2577,6 +2609,18 @@ mendeley-tags = {[cifar],[mnist]},
 title = {{Efficient Lifelong Learning with A-GEM}},
 url = {http://arxiv.org/abs/1812.00420},
 year = {2019}
+}
+@inproceedings{Lopez-Paz2017a,
+abstract = {One major obstacle towards AI is the poor ability of models to solve new problems quicker, and without forgetting previously acquired knowledge. To better understand this issue, we study the problem of continual learning, where the model observes, once and one by one, examples concerning a sequence of tasks. First, we propose a set of metrics to evaluate models learning over a continuum of data. These metrics characterize models not only by their test accuracy, but also in terms of their ability to transfer knowledge across tasks. Second, we propose a model for continual learning, called Gradient Episodic Memory (GEM) that alleviates forgetting, while allowing beneficial transfer of knowledge to previous tasks. Our experiments on variants of the MNIST and CIFAR-100 datasets demonstrate the strong performance of GEM when compared to the state-of-the-art.},
+annote = {Comment: Published at NIPS 2017
+arXiv: 1706.08840},
+author = {Lopez-Paz, David and Ranzato, Marc'Aurelio},
+booktitle = {NIPS},
+keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,[cifar],[mnist],gem},
+mendeley-tags = {[cifar],[mnist]},
+title = {{Gradient Episodic Memory for Continual Learning}},
+url = {http://arxiv.org/abs/1706.08840},
+year = {2017}
 }
 @inproceedings{Rebuffi2017a,
 author = {Rebuffi, Sylvestre-Alvise and Kolesnikov, Alexander and Sperl, Georg and Lampert, Christoph H},
