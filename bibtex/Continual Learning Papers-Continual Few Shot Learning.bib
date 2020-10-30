@@ -1,3 +1,25 @@
+@article{gupta2020a,
+abstract = {The continual learning problem involves training models with limited capacity to perform well on a set of an unknown number of sequentially arriving tasks. While meta-learning shows great potential for reducing interference between old and new tasks, the current training procedures tend to be either slow or offline, and sensitive to many hyper-parameters. In this work, we propose Look-ahead MAML (La-MAML), a fast optimisation-based meta-learning algorithm for online-continual learning, aided by a small episodic memory. Our proposed modulation of per-parameter learning rates in our meta-learning update allows us to draw connections to prior work on hypergradients and meta-descent. This provides a more flexible and efficient way to mitigate catastrophic forgetting compared to conventional prior-based methods. La-MAML achieves performance superior to other replay-based, prior-based and meta-learning based approaches for continual learning on real-world visual classification benchmarks.},
+archivePrefix = {arXiv},
+arxivId = {2007.13904},
+author = {Gupta, Gunshi and Yadav, Karmesh and Paull, Liam},
+eprint = {2007.13904},
+journal = {arXiv},
+title = {{La-MAML: Look-ahead Meta Learning for Continual Learning}},
+url = {https://arxiv.org/abs/2007.13904},
+year = {2020}
+}
+@inproceedings{rajasegaran2020a,
+abstract = {Humans can continuously learn new knowledge as their experience grows. In contrast, previous learning in deep neural networks can quickly fade out when they are trained on a new task. In this paper, we hypothesize this problem can be avoided by learning a set of generalized parameters, that are neither specific to old nor new tasks. In this pursuit, we introduce a novel meta-learning approach that seeks to maintain an equilibrium between all the encountered tasks. This is ensured by a new meta-update rule which avoids catastrophic forgetting. In comparison to previous meta-learning techniques, our approach is task-agnostic. When presented with a continuum of data, our model automatically identifies the task and quickly adapts to it with just a single update. We perform extensive experiments on five datasets in a class-incremental setting, leading to significant improvements over the state of the art methods (e.g., a 21.3{\%} boost on CIFAR100 with 10 incremental tasks). Specifically, on large-scale datasets that generally prove difficult cases for incremental learning, our approach delivers absolute gains as high as 19.1{\%} and 7.4{\%} on ImageNet and MS-Celeb datasets, respectively.},
+author = {Rajasegaran, Jathushan and Khan, Salman and Hayat, Munawar and Khan, Fahad Shahbaz and Shah, Mubarak},
+booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+keywords = {[cifar],[imagenet]},
+mendeley-tags = {[cifar],[imagenet]},
+pages = {13588----13597},
+title = {{iTAML: An Incremental Task-Agnostic Meta-learning Approach}},
+url = {https://openaccess.thecvf.com/content{\_}CVPR{\_}2020/html/Rajasegaran{\_}iTAML{\_}An{\_}Incremental{\_}Task-Agnostic{\_}Meta-learning{\_}Approach{\_}CVPR{\_}2020{\_}paper.html},
+year = {2020}
+}
 @article{Ren2020a,
 abstract = {We aim to bridge the gap between typical human and machine-learning environments by extending the standard framework of few-shot learning to an online, continual setting. In this setting, episodes do not have separate training and testing phases, and instead models are evaluated online while learning novel classes. As in real world, where the presence of spatiotemporal context helps us retrieve learned skills in the past, our online few-shot learning setting also features an underlying context that changes throughout time. Object classes are correlated within a context and inferring the correct context can lead to better performance. Building upon this setting, we propose a new few-shot learning dataset based on large scale indoor imagery that mimics the visual experience of an agent wandering within a world. Furthermore, we convert popular few-shot learning approaches into online versions and we also propose a new model named contextual prototypical memory that can make use of spatiotemporal contextual information from the recent past.},
 archivePrefix = {arXiv},

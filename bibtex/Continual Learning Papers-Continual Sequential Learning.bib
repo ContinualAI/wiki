@@ -1,3 +1,16 @@
+@article{delange2020c,
+abstract = {Attaining prototypical features to represent class distributions is well established in representation learning. However, learning prototypes online from streams of data proves a challenging endeavor as they rapidly become outdated, caused by an ever-changing parameter space in the learning process. Additionally, continual learning does not assume the data stream to be stationary, typically resulting in catastrophic forgetting of previous knowledge. As a first, we introduce a system addressing both problems, where prototypes evolve continually in a shared latent space, enabling learning and prediction at any point in time. In contrast to the major body of work in continual learning, data streams are processed in an online fashion, without additional task-information, and an efficient memory scheme provides robustness to imbalanced data streams. Besides nearest neighbor based prediction, learning is facilitated by a novel objective function, encouraging cluster density about the class prototype and increased inter-class variance. Furthermore, the latent space quality is elevated by pseudo-prototypes in each batch, constituted by replay of exemplars from memory. We generalize the existing paradigms in continual learning to incorporate data incremental learning from data streams by formalizing a two-agent learner-evaluator framework, and obtain state-of-the-art performance by a significant margin on eight benchmarks, including three highly imbalanced data streams.},
+archivePrefix = {arXiv},
+arxivId = {2009.00919},
+author = {{De Lange}, Matthias and Tuytelaars, Tinne},
+eprint = {2009.00919},
+journal = {arXiv},
+keywords = {[cifar],[framework],[mnist],[vision]},
+mendeley-tags = {[cifar],[framework],[mnist],[vision]},
+title = {{Continual Prototype Evolution: Learning Online from Non-Stationary Data Streams}},
+url = {https://arxiv.org/abs/2009.00919},
+year = {2020}
+}
 @inproceedings{joseph2020a,
 abstract = {The ability to continuously learn and adapt itself to new tasks, without losing grasp of already acquired knowledge is a hallmark of biological learning systems, which current deep learning systems fall short of. In this work, we present a novel methodology for continual learning called MERLIN: Meta-Consolidation for Continual Learning. We assume that weights of a neural network {\$}\backslashboldsymbol \backslashpsi{\$}, for solving task {\$}\backslashboldsymbol t{\$}, come from a meta-distribution {\$}p(\backslashboldsymbol{\{}\backslashpsi|t{\}}){\$}. This meta-distribution is learned and consolidated incrementally. We operate in the challenging online continual learning setting, where a data point is seen by the model only once. Our experiments with continual learning benchmarks of MNIST, CIFAR-10, CIFAR-100 and Mini-ImageNet datasets show consistent improvement over five baselines, including a recent state-of-the-art, corroborating the promise of MERLIN.},
 annote = {The authors leverage a bayesian framework in which the parameters of a model are sampled from a generating distribution. This distribution, parameterized by a task label, is used together with a VAE to consolidate online previous and current knowledge. Inference does not require task labels and exploit an ensemble of model, sampled from the generating distribution.},
@@ -75,8 +88,8 @@ abstract = {Catastrophic interference has been a major roadblock in the research
 author = {He, Xu and Jaeger, Herbert},
 booktitle = {ICLR},
 file = {::},
-keywords = {[mnist],[rnn]},
-mendeley-tags = {[mnist],[rnn]},
+keywords = {[mnist]},
+mendeley-tags = {[mnist]},
 title = {{Overcoming Catastrophic interference using conceptor-aided backpropagation}},
 url = {https://openreview.net/pdf?id=B1al7jg0b},
 year = {2018}
