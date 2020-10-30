@@ -34,9 +34,11 @@ Here we list the main contributors (alphabetical order):
 
 - Ali Ayub
 - Fabio Cermelli
+- Matthias De Lange
 - Timothée Lesort
 - Vincenzo Lomonaco
+- Martin Mundt
 - Simon Ouellette
 - German Parisi
 - Lorenzo Pellegrini
-
+- Gido Van de Ven
