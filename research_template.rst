@@ -18,7 +18,8 @@ to add a reference to your paper! Please, remember to follow the (very simple) `
 <PAPER_COUNT>
 
 **Filter list by keyword:** :raw:html:`<input type="text" id="myInput" onkeyup="keyword_filter()" placeholder="Insert keywords here..."><br>`
-**Filter list by regex:** :raw:html:`<input type="text" id="myInputreg" onkeyup="regex_filter()" placeholder="Insert regex here..." style="margin-left:22px">`
+**Filter list by regex:** :raw:html:`<input type="text" id="myInputreg" onkeyup="regex_filter()" placeholder="Insert regex here..." style="margin-left:22px"><br>`
+**Filter list by year:** :raw:html:`<input type="text" id="filterStartYearInput" onkeyup="year_filter()" placeholder="Insert start year here..." style="margin-left:31px"><input type="text" id="filterEndYearInput" onkeyup="year_filter()" placeholder="Insert end year here..." style="margin-left:10px">`
 
 <TAGLIST>
 
@@ -90,4 +91,35 @@ Lifelong/Continual Learning.:
         }
     </script>
 
+    <script>
+        function year_filter() {
+          // Declare variables
+          var input, filter, ul, li, a, i, txtValue;
+          start_year_input = document.getElementById('filterStartYearInput');
+          filter_start_year_string = start_year_input.value;
+          filter_start_year = parseInt(filter_start_year_string);
+          end_year_input = document.getElementById('filterEndYearInput');
+          filter_end_year_string = end_year_input.value;
+          filter_end_year = parseInt(filter_end_year_string);
+          // check for Not a Number:
+          if (filter_start_year != filter_start_year) {
+            filter_start_year = Number.MIN_VALUE;
+          }
+          if (filter_end_year != filter_end_year) {
+            filter_end_year = Number.MAX_VALUE;
+          }
 
+          sec = document.getElementById("publications");
+          li = sec.getElementsByTagName("li");
+          // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < li.length; i++) {
+            year_string = li[i].getElementsByClassName("yearSpan")[0].textContent;
+            year = parseInt(year_string)
+            if (year >= filter_start_year && year <= filter_end_year) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+    </script>

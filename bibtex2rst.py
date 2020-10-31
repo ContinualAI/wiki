@@ -46,6 +46,7 @@ showbib_template = """
     <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="[PAPERID][SECTION]_more3" style="display: none">
         [NOTE]
     </span></p>
+    <span id="[PAPERID][SECTION]_year" class="yearSpan" style="display: none">[YEAR]</span></p>
     <script>
         function [PAPERID][SECTION]Function() {
           var moreText = document.getElementById("[PAPERID][SECTION]_more");
@@ -108,29 +109,30 @@ def generate_hsl():
     H = random.randint(0, 359)
     S = random.randint(60, 100)
     L = random.randint(40, 80)
-    color_string = "HSL({}, {}%, {}%)".format(H,S,L)
-    
+    color_string = "HSL({}, {}%, {}%)".format(H, S, L)
+
     return color_string
+
 
 def build_tags_string(tag2c):
     output = ""
     for tagname, color in tag2c.items():
         output += create_colored_tag(tagname, color)
         output += "  "
-        
+
     return output
 
 
 def create_colored_tag(tagname, tagcolor):
     output = ":raw:html:`<span " \
-            "style='background-color:{}; padding: " \
-            "2px; border-radius:4px; border: 1px " \
-            "solid black;'>[{}]" \
-            "</span>` ".format(tagcolor, tagname)
-            
+        "style='background-color:{}; padding: " \
+        "2px; border-radius:4px; border: 1px " \
+        "solid black;'>[{}]" \
+        "</span>` ".format(tagcolor, tagname)
+
     return output
-            
-            
+
+
 def count_current_papers(bibtex_path, main_bib_path):
     with open(os.path.join(bibtex_path, main_bib_path), 'r') as f:
         papers = bibtexparser.load(f)
@@ -144,6 +146,7 @@ def remove_mendeley_notice_from_files(filename):
     if data[0].startswith("Automatically generated"):
         with open(filename, 'w') as fout:
             fout.writelines(data[5:])
+
 
 def extract_bibtex(bib_database, id):
 
@@ -161,6 +164,7 @@ def extract_bibtex(bib_database, id):
     del bib_db.entries[:pos]
     str = bibtexparser.dumps(bib_db)
     return str
+
 
 def bibtex_string2html(str, remove_abstract=True):
 
@@ -184,6 +188,7 @@ def bibtex_string2html(str, remove_abstract=True):
     # print(final_str)
     return final_str
 
+
 def journal_or_booktitle(item):
 
     if "journal" in item.keys():
@@ -196,12 +201,14 @@ def journal_or_booktitle(item):
         print("WARNING: venue missing in '" + str(item["title"]) + "'!!!")
         return ""
 
+
 def pages_or_void(item):
 
     if "pages" in item.keys():
         return ", " + item["pages"]
     else:
         return ""
+
 
 def get_author(item):
 
@@ -214,25 +221,26 @@ def get_author(item):
         except ValueError:
             surname, name = aut.split(" ")
 
-
         authors_list[i] = name + " " + surname
-        if i == len(authors_list) -1:
+        if i == len(authors_list) - 1:
             str += " and " + name + " " + surname
         elif i == 0:
-            str +=  name + " " + surname
+            str += name + " " + surname
         else:
-            str +=  ', ' + name + " " + surname
+            str += ', ' + name + " " + surname
 
     return str
+
 
 def get_title(item):
 
     title = item['title'].replace("{", "").replace("}", "")
 
     if "url" in item.keys():
-        return "`" + title + " <" + item["url"]+ ">`__"
+        return "`" + title + " <" + item["url"] + ">`__"
     else:
         return title
+
 
 # settings ---------------------------------------------------------------------
 bibtex_path = "bibtex"
@@ -316,13 +324,13 @@ sec_descriptions = [
 ]
 
 
-with open('tags.csv','r') as f:
-    tags_list = [line.split(',')[0].strip() for line in f][1:] # get all tags
+with open('tags.csv', 'r') as f:
+    tags_list = [line.split(',')[0].strip() for line in f][1:]  # get all tags
     n_tags = len(tags_list)
     print("Read " + str(n_tags) + " tags.")
-    
-    # generate random HSL colors for tags (light colors only)    
-    colors = [ generate_hsl() for _ in range(n_tags)]
+
+    # generate random HSL colors for tags (light colors only)
+    colors = [generate_hsl() for _ in range(n_tags)]
 
 tags2color = dict(zip(tags_list, colors))
 
@@ -354,9 +362,9 @@ for i, bibfile in enumerate(bib_files):
         template_str = rf.read()
 
     str2injcet += sec_title + \
-                 "\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n" + \
-                  "**" + papers_count[bibfile] + " papers" + "**\n\n" + \
-                  sec_descriptions[i] + "\n\n"
+        "\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n" + \
+        "**" + papers_count[bibfile] + " papers" + "**\n\n" + \
+        sec_descriptions[i] + "\n\n"
 
     for item in sorted(
             bib_database.entries, key=lambda j: j['year'], reverse=True):
@@ -376,11 +384,11 @@ for i, bibfile in enumerate(bib_files):
 
         str2injcet += "- " + get_title(item) + \
                       " by " + get_author(item) + \
-                      ". "+ journal_or_booktitle(item) + \
+                      ". " + journal_or_booktitle(item) + \
                       pages_or_void(item) + \
                       ", " + item['year'] + ". " + \
                       str2injcet_tags + \
-                      " |" + item["ID"].replace("-","")\
+                      " |" + item["ID"].replace("-", "")\
                       + sec_title.replace(" ", "_") + "|" + "\n"
 
         # Add bib file button
@@ -389,7 +397,7 @@ for i, bibfile in enumerate(bib_files):
                 extract_bibtex(full_bib_db, item["ID"])
             )
         )
-        bib_str = bib_str.replace("[PAPERID]", item["ID"].replace("-",""))
+        bib_str = bib_str.replace("[PAPERID]", item["ID"].replace("-", ""))
         if "abstract" in item.keys():
             bib_str = bib_str.replace("[ABSTRACT]", item["abstract"])
         else:
@@ -400,22 +408,25 @@ for i, bibfile in enumerate(bib_files):
         else:
             bib_str = bib_str.replace("[NOTE]", "N.A.")
         bib_str = bib_str.replace("[SECTION]", sec_title.replace(" ", "_"))
+        bib_str = bib_str.replace("[YEAR]", item["year"])
 
         rst_end_str += bib_str
 
-    if i != len(os.listdir(bibtex_path)) -1:
+    if i != len(os.listdir(bibtex_path)) - 1:
         str2injcet += "\n"
     else:
         str2injcet = str2injcet[:-1]
 
 
-template_str = template_str.replace(papercount2fill, \
-        "**Search among " + str(count_current_papers(bibtex_path, full_bib_db_path)) + " papers!**"
-)
+template_str = template_str.replace(papercount2fill,
+                                    "**Search among " +
+                                    str(count_current_papers(bibtex_path,
+                                                             full_bib_db_path)) + " papers!**"
+                                    )
 
-template_str = template_str.replace(taglist2fill, \
-        build_tags_string(tags2color)
-)
+template_str = template_str.replace(taglist2fill,
+                                    build_tags_string(tags2color)
+                                    )
 
 template_str = template_str.replace(tag2fill, str2injcet) + rst_end_str
 
