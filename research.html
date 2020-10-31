@@ -201,7 +201,8 @@ by the ContinualAI community through an open Mendeley group! Join our group <a c
 to add a reference to your paper! Please, remember to follow the (very simple) <a class="reference external" href="https://github.com/ContinualAI/wiki#how-to-contribute-to-the-continualai-database-of-publications">contributions guidelines</a> when adding new papers.</p>
 <p><strong>Search among 231 papers!</strong></p>
 <p><strong>Filter list by keyword:</strong> <input type="text" id="myInput" onkeyup="keyword_filter()" placeholder="Insert keywords here..."><br>
-<strong>Filter list by regex:</strong> <input type="text" id="myInputreg" onkeyup="regex_filter()" placeholder="Insert regex here..." style="margin-left:22px"></p>
+<strong>Filter list by regex:</strong> <input type="text" id="myInputreg" onkeyup="regex_filter()" placeholder="Insert regex here..." style="margin-left:22px"><br>
+<strong>Filter list by year:</strong> <input type="text" id="filterStartYearInput" onkeyup="year_filter()" placeholder="Insert start year here..." style="margin-left:31px"><input type="text" id="filterEndYearInput" onkeyup="year_filter()" placeholder="Insert end year here..." style="margin-left:10px"></p>
 <p><span style='background-color:HSL(68, 96%, 44%); padding: 2px; border-radius:4px; border: 1px solid black;'>[framework]</span>   <span style='background-color:HSL(130, 67%, 71%); padding: 2px; border-radius:4px; border: 1px solid black;'>[som]</span>   <span style='background-color:HSL(230, 90%, 64%); padding: 2px; border-radius:4px; border: 1px solid black;'>[sparsity]</span>   <span style='background-color:HSL(107, 66%, 71%); padding: 2px; border-radius:4px; border: 1px solid black;'>[dual]</span>   <span style='background-color:HSL(14, 84%, 67%); padding: 2px; border-radius:4px; border: 1px solid black;'>[spiking]</span>   <span style='background-color:HSL(311, 60%, 68%); padding: 2px; border-radius:4px; border: 1px solid black;'>[rnn]</span>   <span style='background-color:HSL(136, 74%, 77%); padding: 2px; border-radius:4px; border: 1px solid black;'>[nlp]</span>   <span style='background-color:HSL(52, 80%, 41%); padding: 2px; border-radius:4px; border: 1px solid black;'>[graph]</span>   <span style='background-color:HSL(11, 61%, 74%); padding: 2px; border-radius:4px; border: 1px solid black;'>[vision]</span>   <span style='background-color:HSL(4, 84%, 53%); padding: 2px; border-radius:4px; border: 1px solid black;'>[hebbian]</span>   <span style='background-color:HSL(216, 61%, 73%); padding: 2px; border-radius:4px; border: 1px solid black;'>[audio]</span>   <span style='background-color:HSL(113, 88%, 71%); padding: 2px; border-radius:4px; border: 1px solid black;'>[bayes]</span>   <span style='background-color:HSL(283, 74%, 62%); padding: 2px; border-radius:4px; border: 1px solid black;'>[generative]</span>   <span style='background-color:HSL(118, 74%, 69%); padding: 2px; border-radius:4px; border: 1px solid black;'>[mnist]</span>   <span style='background-color:HSL(148, 61%, 66%); padding: 2px; border-radius:4px; border: 1px solid black;'>[fashion]</span>   <span style='background-color:HSL(284, 66%, 51%); padding: 2px; border-radius:4px; border: 1px solid black;'>[cifar]</span>   <span style='background-color:HSL(322, 78%, 47%); padding: 2px; border-radius:4px; border: 1px solid black;'>[core50]</span>   <span style='background-color:HSL(170, 92%, 67%); padding: 2px; border-radius:4px; border: 1px solid black;'>[imagenet]</span>   <span style='background-color:HSL(259, 72%, 59%); padding: 2px; border-radius:4px; border: 1px solid black;'>[omniglot]</span>   <span style='background-color:HSL(145, 97%, 71%); padding: 2px; border-radius:4px; border: 1px solid black;'>[cubs]</span>   <span style='background-color:HSL(258, 85%, 77%); padding: 2px; border-radius:4px; border: 1px solid black;'>[experimental]</span>   <span style='background-color:HSL(17, 90%, 55%); padding: 2px; border-radius:4px; border: 1px solid black;'>[theoretical]</span></p>
 <div class="section" id="applications">
 <h3>Applications<a class="headerlink" href="#applications" title="Permalink to this headline">¶</a></h3>
@@ -222,6 +223,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="delange2020bApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="delange2020bApplications_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function delange2020bApplicationsFunction() {
       var moreText = document.getElementById("delange2020bApplications_more");
@@ -290,6 +292,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ozgun2020aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Ozgun2020aApplications_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Ozgun2020aApplicationsFunction() {
       var moreText = document.getElementById("Ozgun2020aApplications_more");
@@ -358,6 +361,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Lee2020aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Lee2020aApplications_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Lee2020aApplicationsFunction() {
       var moreText = document.getElementById("Lee2020aApplications_more");
@@ -426,6 +430,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Lenga2020aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Lenga2020aApplications_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Lenga2020aApplicationsFunction() {
       var moreText = document.getElementById("Lenga2020aApplications_more");
@@ -494,6 +499,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Pankaj2020aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Pankaj2020aApplications_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Pankaj2020aApplicationsFunction() {
       var moreText = document.getElementById("Pankaj2020aApplications_more");
@@ -562,6 +568,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Kiyasseh2020Applications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Kiyasseh2020Applications_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Kiyasseh2020ApplicationsFunction() {
       var moreText = document.getElementById("Kiyasseh2020Applications_more");
@@ -630,6 +637,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Campo2020aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Campo2020aApplications_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Campo2020aApplicationsFunction() {
       var moreText = document.getElementById("Campo2020aApplications_more");
@@ -698,6 +706,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Fu2020aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Fu2020aApplications_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Fu2020aApplicationsFunction() {
       var moreText = document.getElementById("Fu2020aApplications_more");
@@ -766,6 +775,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="kruszewski2020aApplications_more3" style="display: none">
     arXiv: 2004.03340
 </span></p>
+<span id="kruszewski2020aApplications_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function kruszewski2020aApplicationsFunction() {
       var moreText = document.getElementById("kruszewski2020aApplications_more");
@@ -834,6 +844,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="sun2019aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="sun2019aApplications_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function sun2019aApplicationsFunction() {
       var moreText = document.getElementById("sun2019aApplications_more");
@@ -902,6 +913,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mazumder2019aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Mazumder2019aApplications_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Mazumder2019aApplicationsFunction() {
       var moreText = document.getElementById("Mazumder2019aApplications_more");
@@ -970,6 +982,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hawkins2019bApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Hawkins2019bApplications_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Hawkins2019bApplicationsFunction() {
       var moreText = document.getElementById("Hawkins2019bApplications_more");
@@ -1038,6 +1051,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Zhai2019aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Zhai2019aApplications_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Zhai2019aApplicationsFunction() {
       var moreText = document.getElementById("Zhai2019aApplications_more");
@@ -1106,6 +1120,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DAutume2019aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="DAutume2019aApplications_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function DAutume2019aApplicationsFunction() {
       var moreText = document.getElementById("DAutume2019aApplications_more");
@@ -1174,6 +1189,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Liu2019aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Liu2019aApplications_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Liu2019aApplicationsFunction() {
       var moreText = document.getElementById("Liu2019aApplications_more");
@@ -1242,6 +1258,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Thompson2019aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Thompson2019aApplications_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Thompson2019aApplicationsFunction() {
       var moreText = document.getElementById("Thompson2019aApplications_more");
@@ -1310,6 +1327,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Bapna2019aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Bapna2019aApplications_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Bapna2019aApplicationsFunction() {
       var moreText = document.getElementById("Bapna2019aApplications_more");
@@ -1378,6 +1396,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Xue2019aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Xue2019aApplications_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Xue2019aApplicationsFunction() {
       var moreText = document.getElementById("Xue2019aApplications_more");
@@ -1446,6 +1465,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Baweja2018aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Baweja2018aApplications_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Baweja2018aApplicationsFunction() {
       var moreText = document.getElementById("Baweja2018aApplications_more");
@@ -1514,6 +1534,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="lee2018aApplications_more3" style="display: none">
     arXiv: 1712.09943
 </span></p>
+<span id="lee2018aApplications_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function lee2018aApplicationsFunction() {
       var moreText = document.getElementById("lee2018aApplications_more");
@@ -1582,6 +1603,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Kapoor2009aApplications_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Kapoor2009aApplications_year" class="yearSpan" style="display: none">2009</span></p>
 <script>
     function Kapoor2009aApplicationsFunction() {
       var moreText = document.getElementById("Kapoor2009aApplications_more");
@@ -1657,6 +1679,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="sokar2020aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="sokar2020aArchitectural_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function sokar2020aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("sokar2020aArchitectural_Methods_more");
@@ -1725,6 +1748,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="adel2020aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="adel2020aArchitectural_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function adel2020aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("adel2020aArchitectural_Methods_more");
@@ -1793,6 +1817,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mehta2020aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Mehta2020aArchitectural_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Mehta2020aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Mehta2020aArchitectural_Methods_more");
@@ -1861,6 +1886,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Cossu2020aArchitectural_Methods_more3" style="display: none">
     An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading to the Gated Incremental Memory approach to overcome catastrophic forgetting.
 </span></p>
+<span id="Cossu2020aArchitectural_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Cossu2020aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Cossu2020aArchitectural_Methods_more");
@@ -1929,6 +1955,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Srivastava2019aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Srivastava2019aArchitectural_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Srivastava2019aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Srivastava2019aArchitectural_Methods_more");
@@ -1997,6 +2024,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ashfahani2019aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Ashfahani2019aArchitectural_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Ashfahani2019aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Ashfahani2019aArchitectural_Methods_more");
@@ -2065,6 +2093,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Zhu2020aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Zhu2020aArchitectural_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Zhu2020aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Zhu2020aArchitectural_Methods_more");
@@ -2133,6 +2162,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hung2019aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Hung2019aArchitectural_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Hung2019aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Hung2019aArchitectural_Methods_more");
@@ -2201,6 +2231,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="rao2019aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="rao2019aArchitectural_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function rao2019aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("rao2019aArchitectural_Methods_more");
@@ -2269,6 +2300,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="li2019aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="li2019aArchitectural_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function li2019aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("li2019aArchitectural_Methods_more");
@@ -2337,6 +2369,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Shen2019aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Shen2019aArchitectural_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Shen2019aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Shen2019aArchitectural_Methods_more");
@@ -2405,6 +2438,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Madrid2018aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Madrid2018aArchitectural_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Madrid2018aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Madrid2018aArchitectural_Methods_more");
@@ -2473,6 +2507,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Asghar2019aArchitectural_Methods_more3" style="display: none">
     The authors leverage a Recurrent Neural Network with an explicit memory (memory banks) which grows when new computational capabilities are needed. Attention mechanisms are exploited in order to focus on specific component of previous memories.
 </span></p>
+<span id="Asghar2019aArchitectural_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Asghar2019aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Asghar2019aArchitectural_Methods_more");
@@ -2541,6 +2576,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Valkov2018aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Valkov2018aArchitectural_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Valkov2018aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Valkov2018aArchitectural_Methods_more");
@@ -2609,6 +2645,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="xu2018aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="xu2018aArchitectural_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function xu2018aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("xu2018aArchitectural_Methods_more");
@@ -2677,6 +2714,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Gidaris2018aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Gidaris2018aArchitectural_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Gidaris2018aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Gidaris2018aArchitectural_Methods_more");
@@ -2745,6 +2783,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Yoon2018Architectural_Methods_more3" style="display: none">
     The authors propose a method to evaluate the importance of each neuron in the network through the use of sparse connections. The network is then expanded based on the neuron importance for each task.
 </span></p>
+<span id="Yoon2018Architectural_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Yoon2018Architectural_MethodsFunction() {
       var moreText = document.getElementById("Yoon2018Architectural_Methods_more");
@@ -2813,6 +2852,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2016aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Aljundi2016aArchitectural_Methods_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Aljundi2016aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Aljundi2016aArchitectural_Methods_more");
@@ -2881,6 +2921,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Garg2017aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Garg2017aArchitectural_Methods_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Garg2017aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Garg2017aArchitectural_Methods_more");
@@ -2949,6 +2990,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Draelos2017aArchitectural_Methods_more3" style="display: none">
     The neurogenesis algorithm selectively expand the original multi-layer autoencoder at the neuron level depending on its reconstruction performance measured at each layer. The model is capable of maintaining plasticity while mitigating forgetting through replay of old samples.
 </span></p>
+<span id="Draelos2017aArchitectural_Methods_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Draelos2017aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Draelos2017aArchitectural_Methods_more");
@@ -3017,6 +3059,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Luders2016aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Luders2016aArchitectural_Methods_year" class="yearSpan" style="display: none">2016</span></p>
 <script>
     function Luders2016aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Luders2016aArchitectural_Methods_more");
@@ -3085,6 +3128,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Rusu2016aArchitectural_Methods_more3" style="display: none">
     The authors rely on a separate feedforward network (column) for each task the model is trained on. Each column is connected through adaptive connections to all the previous ones. The weights of previous columns are frozen once trained. At inference time, given a known task label, the network choose the appropriate column to produce the output, thus preventing forgetting by design.
 </span></p>
+<span id="Rusu2016aArchitectural_Methods_year" class="yearSpan" style="display: none">2016</span></p>
 <script>
     function Rusu2016aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Rusu2016aArchitectural_Methods_more");
@@ -3153,6 +3197,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Terekhov2015aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Terekhov2015aArchitectural_Methods_year" class="yearSpan" style="display: none">2015</span></p>
 <script>
     function Terekhov2015aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("Terekhov2015aArchitectural_Methods_more");
@@ -3221,6 +3266,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="marsland2002aArchitectural_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="marsland2002aArchitectural_Methods_year" class="yearSpan" style="display: none">2002</span></p>
 <script>
     function marsland2002aArchitectural_MethodsFunction() {
       var moreText = document.getElementById("marsland2002aArchitectural_Methods_more");
@@ -3296,6 +3342,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="lomonaco2020bBenchmarks_more3" style="display: none">
     N.A.
 </span></p>
+<span id="lomonaco2020bBenchmarks_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function lomonaco2020bBenchmarksFunction() {
       var moreText = document.getElementById("lomonaco2020bBenchmarks_more");
@@ -3364,6 +3411,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Antoniou2020aBenchmarks_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Antoniou2020aBenchmarks_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Antoniou2020aBenchmarksFunction() {
       var moreText = document.getElementById("Antoniou2020aBenchmarks_more");
@@ -3432,6 +3480,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="She19aBenchmarks_more3" style="display: none">
     N.A.
 </span></p>
+<span id="She19aBenchmarks_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function She19aBenchmarksFunction() {
       var moreText = document.getElementById("She19aBenchmarks_more");
@@ -3500,6 +3549,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="lomonaco2017aBenchmarks_more3" style="display: none">
     N.A.
 </span></p>
+<span id="lomonaco2017aBenchmarks_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function lomonaco2017aBenchmarksFunction() {
       var moreText = document.getElementById("lomonaco2017aBenchmarks_more");
@@ -3575,6 +3625,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020bBioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="ayub2020bBioinspired_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function ayub2020bBioinspired_MethodsFunction() {
       var moreText = document.getElementById("ayub2020bBioinspired_Methods_more");
@@ -3643,6 +3694,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020aBioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="ayub2020aBioinspired_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function ayub2020aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("ayub2020aBioinspired_Methods_more");
@@ -3711,6 +3763,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ven2020aBioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="ven2020aBioinspired_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function ven2020aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("ven2020aBioinspired_Methods_more");
@@ -3779,6 +3832,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Allred2020aBioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Allred2020aBioinspired_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Allred2020aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("Allred2020aBioinspired_Methods_more");
@@ -3848,6 +3902,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
     Comment: Revised version of manuscript – includes updated experimental results
             arXiv: 1908.08655
 </span></p>
+<span id="Ororbia2020aBioinspired_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Ororbia2020aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("Ororbia2020aBioinspired_Methods_more");
@@ -3916,6 +3971,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ororbia2019bBioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Ororbia2019bBioinspired_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Ororbia2019bBioinspired_MethodsFunction() {
       var moreText = document.getElementById("Ororbia2019bBioinspired_Methods_more");
@@ -3984,6 +4040,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019cBioinspired_Methods_more3" style="display: none">
     The authors combine multiple penalizations to (1) induce sparse activations through lateral inhibitions between neurons and to (2) penalize changes in most important weights in order to prevent forgetting.
 </span></p>
+<span id="Aljundi2019cBioinspired_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Aljundi2019cBioinspired_MethodsFunction() {
       var moreText = document.getElementById("Aljundi2019cBioinspired_Methods_more");
@@ -4053,6 +4110,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
     Comment: Important revisions made throughout (additional items/results added, including a complexity analysis)
             arXiv: 1810.07411
 </span></p>
+<span id="Ororbia2019aBioinspired_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Ororbia2019aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("Ororbia2019aBioinspired_Methods_more");
@@ -4121,6 +4179,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="kemker2018bBioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="kemker2018bBioinspired_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function kemker2018bBioinspired_MethodsFunction() {
       var moreText = document.getElementById("kemker2018bBioinspired_Methods_more");
@@ -4189,6 +4248,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Parisi2018aBioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Parisi2018aBioinspired_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Parisi2018aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("Parisi2018aBioinspired_Methods_more");
@@ -4257,6 +4317,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Velez2017aBioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Velez2017aBioinspired_Methods_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Velez2017aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("Velez2017aBioinspired_Methods_more");
@@ -4325,6 +4386,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Garg2017aBioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Garg2017aBioinspired_Methods_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Garg2017aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("Garg2017aBioinspired_Methods_more");
@@ -4393,6 +4455,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ahmad2016Bioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Ahmad2016Bioinspired_Methods_year" class="yearSpan" style="display: none">2016</span></p>
 <script>
     function Ahmad2016Bioinspired_MethodsFunction() {
       var moreText = document.getElementById("Ahmad2016Bioinspired_Methods_more");
@@ -4461,6 +4524,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Cui2016aBioinspired_Methods_more3" style="display: none">
     Publisher: MIT Press
 </span></p>
+<span id="Cui2016aBioinspired_Methods_year" class="yearSpan" style="display: none">2016</span></p>
 <script>
     function Cui2016aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("Cui2016aBioinspired_Methods_more");
@@ -4529,6 +4593,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="srivastava2013aBioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="srivastava2013aBioinspired_Methods_year" class="yearSpan" style="display: none">2013</span></p>
 <script>
     function srivastava2013aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("srivastava2013aBioinspired_Methods_more");
@@ -4597,6 +4662,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Coop2013aBioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Coop2013aBioinspired_Methods_year" class="yearSpan" style="display: none">2013</span></p>
 <script>
     function Coop2013aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("Coop2013aBioinspired_Methods_more");
@@ -4665,6 +4731,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Coop2012aBioinspired_Methods_more3" style="display: none">
     ISSN: 1548-3746
 </span></p>
+<span id="Coop2012aBioinspired_Methods_year" class="yearSpan" style="display: none">2012</span></p>
 <script>
     function Coop2012aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("Coop2012aBioinspired_Methods_more");
@@ -4733,6 +4800,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Abbott2000aBioinspired_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Abbott2000aBioinspired_Methods_year" class="yearSpan" style="display: none">2000</span></p>
 <script>
     function Abbott2000aBioinspired_MethodsFunction() {
       var moreText = document.getElementById("Abbott2000aBioinspired_Methods_more");
@@ -4808,6 +4876,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="davidson2020aCatastrophic_Forgetting_Studies_more3" style="display: none">
     N.A.
 </span></p>
+<span id="davidson2020aCatastrophic_Forgetting_Studies_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function davidson2020aCatastrophic_Forgetting_StudiesFunction() {
       var moreText = document.getElementById("davidson2020aCatastrophic_Forgetting_Studies_more");
@@ -4876,6 +4945,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Nguyen2020aCatastrophic_Forgetting_Studies_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Nguyen2020aCatastrophic_Forgetting_Studies_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Nguyen2020aCatastrophic_Forgetting_StudiesFunction() {
       var moreText = document.getElementById("Nguyen2020aCatastrophic_Forgetting_Studies_more");
@@ -4944,6 +5014,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Nguyen2019aCatastrophic_Forgetting_Studies_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Nguyen2019aCatastrophic_Forgetting_Studies_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Nguyen2019aCatastrophic_Forgetting_StudiesFunction() {
       var moreText = document.getElementById("Nguyen2019aCatastrophic_Forgetting_Studies_more");
@@ -5012,6 +5083,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Wiewel2019aCatastrophic_Forgetting_Studies_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Wiewel2019aCatastrophic_Forgetting_Studies_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Wiewel2019aCatastrophic_Forgetting_StudiesFunction() {
       var moreText = document.getElementById("Wiewel2019aCatastrophic_Forgetting_Studies_more");
@@ -5080,6 +5152,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Toneva2018aCatastrophic_Forgetting_Studies_more3" style="display: none">
     An interesting aspect of this paper is related to the study of unforgettable patterns and how they influence performance in terms of forgetting.
 </span></p>
+<span id="Toneva2018aCatastrophic_Forgetting_Studies_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Toneva2018aCatastrophic_Forgetting_StudiesFunction() {
       var moreText = document.getElementById("Toneva2018aCatastrophic_Forgetting_Studies_more");
@@ -5148,6 +5221,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Pfulb2018aCatastrophic_Forgetting_Studies_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Pfulb2018aCatastrophic_Forgetting_Studies_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Pfulb2018aCatastrophic_Forgetting_StudiesFunction() {
       var moreText = document.getElementById("Pfulb2018aCatastrophic_Forgetting_Studies_more");
@@ -5216,6 +5290,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Kemker2018aCatastrophic_Forgetting_Studies_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Kemker2018aCatastrophic_Forgetting_Studies_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Kemker2018aCatastrophic_Forgetting_StudiesFunction() {
       var moreText = document.getElementById("Kemker2018aCatastrophic_Forgetting_Studies_more");
@@ -5284,6 +5359,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_more3" style="display: none">
     arXiv: 1810.13166
 </span></p>
+<span id="DiazRodriguez2018aCatastrophic_Forgetting_Studies_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function DiazRodriguez2018aCatastrophic_Forgetting_StudiesFunction() {
       var moreText = document.getElementById("DiazRodriguez2018aCatastrophic_Forgetting_Studies_more");
@@ -5352,6 +5428,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mermillod2013aCatastrophic_Forgetting_Studies_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Mermillod2013aCatastrophic_Forgetting_Studies_year" class="yearSpan" style="display: none">2013</span></p>
 <script>
     function Mermillod2013aCatastrophic_Forgetting_StudiesFunction() {
       var moreText = document.getElementById("Mermillod2013aCatastrophic_Forgetting_Studies_more");
@@ -5420,6 +5497,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="French1999aCatastrophic_Forgetting_Studies_more3" style="display: none">
     N.A.
 </span></p>
+<span id="French1999aCatastrophic_Forgetting_Studies_year" class="yearSpan" style="display: none">1999</span></p>
 <script>
     function French1999aCatastrophic_Forgetting_StudiesFunction() {
       var moreText = document.getElementById("French1999aCatastrophic_Forgetting_Studies_more");
@@ -5488,6 +5566,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Robins1995aCatastrophic_Forgetting_Studies_more3" style="display: none">
     An in-depth overview of rehearsal techniques, including pseudo-rehearsal. Useful to combine these ideas in dual systems, in which one system learns a task while the other provides rehearsal of previous patterns.
 </span></p>
+<span id="Robins1995aCatastrophic_Forgetting_Studies_year" class="yearSpan" style="display: none">1995</span></p>
 <script>
     function Robins1995aCatastrophic_Forgetting_StudiesFunction() {
       var moreText = document.getElementById("Robins1995aCatastrophic_Forgetting_Studies_more");
@@ -5563,6 +5642,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hebb2005aClassics_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Hebb2005aClassics_year" class="yearSpan" style="display: none">2002</span></p>
 <script>
     function Hebb2005aClassicsFunction() {
       var moreText = document.getElementById("Hebb2005aClassics_more");
@@ -5631,6 +5711,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="French1997aClassics_more3" style="display: none">
     In this seminal paper the author introduces many different forms of rehearsal in order to mitigate the catastrophic forgetting phenomenon
 </span></p>
+<span id="French1997aClassics_year" class="yearSpan" style="display: none">1997</span></p>
 <script>
     function French1997aClassicsFunction() {
       var moreText = document.getElementById("French1997aClassics_more");
@@ -5699,6 +5780,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ring1997aClassics_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Ring1997aClassics_year" class="yearSpan" style="display: none">1997</span></p>
 <script>
     function Ring1997aClassicsFunction() {
       var moreText = document.getElementById("Ring1997aClassics_more");
@@ -5767,6 +5849,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Widmer1996aClassics_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Widmer1996aClassics_year" class="yearSpan" style="display: none">1996</span></p>
 <script>
     function Widmer1996aClassicsFunction() {
       var moreText = document.getElementById("Widmer1996aClassics_more");
@@ -5835,6 +5918,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Thrun1996cClassics_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Thrun1996cClassics_year" class="yearSpan" style="display: none">1996</span></p>
 <script>
     function Thrun1996cClassicsFunction() {
       var moreText = document.getElementById("Thrun1996cClassics_more");
@@ -5903,6 +5987,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Robins1995aClassics_more3" style="display: none">
     An in-depth overview of rehearsal techniques, including pseudo-rehearsal. Useful to combine these ideas in dual systems, in which one system learns a task while the other provides rehearsal of previous patterns.
 </span></p>
+<span id="Robins1995aClassics_year" class="yearSpan" style="display: none">1995</span></p>
 <script>
     function Robins1995aClassicsFunction() {
       var moreText = document.getElementById("Robins1995aClassics_more");
@@ -5971,6 +6056,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="French1991aClassics_more3" style="display: none">
     N.A.
 </span></p>
+<span id="French1991aClassics_year" class="yearSpan" style="display: none">1991</span></p>
 <script>
     function French1991aClassicsFunction() {
       var moreText = document.getElementById("French1991aClassics_more");
@@ -6039,6 +6125,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="carpenter1988aClassics_more3" style="display: none">
     Seminal paper on the stability-plasticity dilemma.
 </span></p>
+<span id="carpenter1988aClassics_year" class="yearSpan" style="display: none">1988</span></p>
 <script>
     function carpenter1988aClassicsFunction() {
       var moreText = document.getElementById("carpenter1988aClassics_more");
@@ -6114,6 +6201,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="gupta2020aContinual_Few_Shot_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="gupta2020aContinual_Few_Shot_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function gupta2020aContinual_Few_Shot_LearningFunction() {
       var moreText = document.getElementById("gupta2020aContinual_Few_Shot_Learning_more");
@@ -6182,6 +6270,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="rajasegaran2020aContinual_Few_Shot_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="rajasegaran2020aContinual_Few_Shot_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function rajasegaran2020aContinual_Few_Shot_LearningFunction() {
       var moreText = document.getElementById("rajasegaran2020aContinual_Few_Shot_Learning_more");
@@ -6250,6 +6339,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ren2020aContinual_Few_Shot_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Ren2020aContinual_Few_Shot_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Ren2020aContinual_Few_Shot_LearningFunction() {
       var moreText = document.getElementById("Ren2020aContinual_Few_Shot_Learning_more");
@@ -6318,6 +6408,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020cContinual_Few_Shot_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="ayub2020cContinual_Few_Shot_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function ayub2020cContinual_Few_Shot_LearningFunction() {
       var moreText = document.getElementById("ayub2020cContinual_Few_Shot_Learning_more");
@@ -6386,6 +6477,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="zhao2020aContinual_Few_Shot_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="zhao2020aContinual_Few_Shot_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function zhao2020aContinual_Few_Shot_LearningFunction() {
       var moreText = document.getElementById("zhao2020aContinual_Few_Shot_Learning_more");
@@ -6454,6 +6546,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="tao2020aContinual_Few_Shot_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="tao2020aContinual_Few_Shot_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function tao2020aContinual_Few_Shot_LearningFunction() {
       var moreText = document.getElementById("tao2020aContinual_Few_Shot_Learning_more");
@@ -6522,6 +6615,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020aContinual_Few_Shot_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="ayub2020aContinual_Few_Shot_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function ayub2020aContinual_Few_Shot_LearningFunction() {
       var moreText = document.getElementById("ayub2020aContinual_Few_Shot_Learning_more");
@@ -6590,6 +6684,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Antoniou2020aContinual_Few_Shot_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Antoniou2020aContinual_Few_Shot_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Antoniou2020aContinual_Few_Shot_LearningFunction() {
       var moreText = document.getElementById("Antoniou2020aContinual_Few_Shot_Learning_more");
@@ -6665,6 +6760,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="caccia2020aContinual_Meta_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="caccia2020aContinual_Meta_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function caccia2020aContinual_Meta_LearningFunction() {
       var moreText = document.getElementById("caccia2020aContinual_Meta_Learning_more");
@@ -6733,6 +6829,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="harrison2019aContinual_Meta_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="harrison2019aContinual_Meta_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function harrison2019aContinual_Meta_LearningFunction() {
       var moreText = document.getElementById("harrison2019aContinual_Meta_Learning_more");
@@ -6801,6 +6898,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="jerfel2019aContinual_Meta_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="jerfel2019aContinual_Meta_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function jerfel2019aContinual_Meta_LearningFunction() {
       var moreText = document.getElementById("jerfel2019aContinual_Meta_Learning_more");
@@ -6869,6 +6967,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="finn2019aContinual_Meta_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="finn2019aContinual_Meta_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function finn2019aContinual_Meta_LearningFunction() {
       var moreText = document.getElementById("finn2019aContinual_Meta_Learning_more");
@@ -6937,6 +7036,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="He2019aContinual_Meta_Learning_more3" style="display: none">
     arXiv: 1906.05201
 </span></p>
+<span id="He2019aContinual_Meta_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function He2019aContinual_Meta_LearningFunction() {
       var moreText = document.getElementById("He2019aContinual_Meta_Learning_more");
@@ -7012,6 +7112,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Early2019aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Early2019aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Early2019aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Early2019aContinual_Reinforcement_Learning_more");
@@ -7080,6 +7181,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="garcia2019aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="garcia2019aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function garcia2019aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("garcia2019aContinual_Reinforcement_Learning_more");
@@ -7148,6 +7250,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="rolnick2019aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="rolnick2019aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function rolnick2019aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("rolnick2019aContinual_Reinforcement_Learning_more");
@@ -7216,6 +7319,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="kaplanis2019aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="kaplanis2019aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function kaplanis2019aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("kaplanis2019aContinual_Reinforcement_Learning_more");
@@ -7284,6 +7388,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="nagabandi2019aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="nagabandi2019aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function nagabandi2019aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("nagabandi2019aContinual_Reinforcement_Learning_more");
@@ -7352,6 +7457,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Pan2019aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Pan2019aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Pan2019aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Pan2019aContinual_Reinforcement_Learning_more");
@@ -7420,6 +7526,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="riemer2019aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function riemer2019aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("riemer2019aContinual_Reinforcement_Learning_more");
@@ -7488,6 +7595,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Kobayashi2019aContinual_Reinforcement_Learning_more3" style="display: none">
     A reservoir computing approach with Echo State Networks is implemented in order to learn multiple tasks in reinforcement learning environments.
 </span></p>
+<span id="Kobayashi2019aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Kobayashi2019aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Kobayashi2019aContinual_Reinforcement_Learning_more");
@@ -7556,6 +7664,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mankowitz2018aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Mankowitz2018aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Mankowitz2018aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Mankowitz2018aContinual_Reinforcement_Learning_more");
@@ -7624,6 +7733,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Kaplanis2018bContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Kaplanis2018bContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Kaplanis2018bContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Kaplanis2018bContinual_Reinforcement_Learning_more");
@@ -7692,6 +7802,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Isele2018aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Isele2018aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Isele2018aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Isele2018aContinual_Reinforcement_Learning_more");
@@ -7760,6 +7871,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mendez2018aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Mendez2018aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Mendez2018aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Mendez2018aContinual_Reinforcement_Learning_more");
@@ -7828,6 +7940,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Schwarz2018aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Schwarz2018aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Schwarz2018aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Schwarz2018aContinual_Reinforcement_Learning_more");
@@ -7896,6 +8009,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="schlegel2017aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="schlegel2017aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function schlegel2017aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("schlegel2017aContinual_Reinforcement_Learning_more");
@@ -7964,6 +8078,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Kirkpatrick2017aContinual_Reinforcement_Learning_more3" style="display: none">
     arXiv: 1612.00796
 </span></p>
+<span id="Kirkpatrick2017aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Kirkpatrick2017aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Kirkpatrick2017aContinual_Reinforcement_Learning_more");
@@ -8032,6 +8147,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Civelek2014aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Civelek2014aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2016</span></p>
 <script>
     function Civelek2014aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Civelek2014aContinual_Reinforcement_Learning_more");
@@ -8100,6 +8216,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Luders2016aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Luders2016aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2016</span></p>
 <script>
     function Luders2016aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Luders2016aContinual_Reinforcement_Learning_more");
@@ -8168,6 +8285,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Rusu2016aContinual_Reinforcement_Learning_more3" style="display: none">
     The authors rely on a separate feedforward network (column) for each task the model is trained on. Each column is connected through adaptive connections to all the previous ones. The weights of previous columns are frozen once trained. At inference time, given a known task label, the network choose the appropriate column to produce the output, thus preventing forgetting by design.
 </span></p>
+<span id="Rusu2016aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">2016</span></p>
 <script>
     function Rusu2016aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Rusu2016aContinual_Reinforcement_Learning_more");
@@ -8236,6 +8354,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ring1997aContinual_Reinforcement_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Ring1997aContinual_Reinforcement_Learning_year" class="yearSpan" style="display: none">1997</span></p>
 <script>
     function Ring1997aContinual_Reinforcement_LearningFunction() {
       var moreText = document.getElementById("Ring1997aContinual_Reinforcement_Learning_more");
@@ -8311,6 +8430,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="delange2020cContinual_Sequential_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="delange2020cContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function delange2020cContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("delange2020cContinual_Sequential_Learning_more");
@@ -8379,6 +8499,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="joseph2020aContinual_Sequential_Learning_more3" style="display: none">
     The authors leverage a bayesian framework in which the parameters of a model are sampled from a generating distribution. This distribution, parameterized by a task label, is used together with a VAE to consolidate online previous and current knowledge. Inference does not require task labels and exploit an ensemble of model, sampled from the generating distribution.
 </span></p>
+<span id="joseph2020aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function joseph2020aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("joseph2020aContinual_Sequential_Learning_more");
@@ -8447,6 +8568,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ehret2020aContinual_Sequential_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="ehret2020aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function ehret2020aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("ehret2020aContinual_Sequential_Learning_more");
@@ -8515,6 +8637,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hayes2019bContinual_Sequential_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Hayes2019bContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Hayes2019bContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("Hayes2019bContinual_Sequential_Learning_more");
@@ -8584,6 +8707,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
     Comment: L. Oneto et al. (eds.), Recent Trends in Learning From Data, Studies in Computational Intelligence 896
             arXiv: 2003.09114
 </span></p>
+<span id="Parisi2020aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Parisi2020aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("Parisi2020aContinual_Sequential_Learning_more");
@@ -8652,6 +8776,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Cossu2020aContinual_Sequential_Learning_more3" style="display: none">
     An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading to the Gated Incremental Memory approach to overcome catastrophic forgetting.
 </span></p>
+<span id="Cossu2020aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Cossu2020aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("Cossu2020aContinual_Sequential_Learning_more");
@@ -8720,6 +8845,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="smith2020aContinual_Sequential_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="smith2020aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function smith2020aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("smith2020aContinual_Sequential_Learning_more");
@@ -8788,6 +8914,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019Continual_Sequential_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Aljundi2019Continual_Sequential_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Aljundi2019Continual_Sequential_LearningFunction() {
       var moreText = document.getElementById("Aljundi2019Continual_Sequential_Learning_more");
@@ -8857,6 +8984,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
     Comment: Published as a conference paper at ICLR 2019
             arXiv: 1812.00420
 </span></p>
+<span id="Chaudhry2019aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Chaudhry2019aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("Chaudhry2019aContinual_Sequential_Learning_more");
@@ -8925,6 +9053,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019dContinual_Sequential_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Aljundi2019dContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Aljundi2019dContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("Aljundi2019dContinual_Sequential_Learning_more");
@@ -8993,6 +9122,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019aContinual_Sequential_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Aljundi2019aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Aljundi2019aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("Aljundi2019aContinual_Sequential_Learning_more");
@@ -9061,6 +9191,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="He2019aContinual_Sequential_Learning_more3" style="display: none">
     arXiv: 1906.05201
 </span></p>
+<span id="He2019aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function He2019aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("He2019aContinual_Sequential_Learning_more");
@@ -9129,6 +9260,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Schak2019aContinual_Sequential_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Schak2019aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Schak2019aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("Schak2019aContinual_Sequential_Learning_more");
@@ -9197,6 +9329,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="kemker2018bContinual_Sequential_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="kemker2018bContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function kemker2018bContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("kemker2018bContinual_Sequential_Learning_more");
@@ -9265,6 +9398,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="xu2018aContinual_Sequential_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="xu2018aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function xu2018aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("xu2018aContinual_Sequential_Learning_more");
@@ -9333,6 +9467,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Chaudhry2018aContinual_Sequential_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Chaudhry2018aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Chaudhry2018aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("Chaudhry2018aContinual_Sequential_Learning_more");
@@ -9402,6 +9537,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
     Comment: Published at NIPS 2017
             arXiv: 1706.08840
 </span></p>
+<span id="LopezPaz2017aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function LopezPaz2017aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("LopezPaz2017aContinual_Sequential_Learning_more");
@@ -9470,6 +9606,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Rebuffi2017aContinual_Sequential_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Rebuffi2017aContinual_Sequential_Learning_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Rebuffi2017aContinual_Sequential_LearningFunction() {
       var moreText = document.getElementById("Rebuffi2017aContinual_Sequential_Learning_more");
@@ -9545,6 +9682,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Lesort2020aDissertation_and_Theses_more3" style="display: none">
     This dissertation constitutes a valid summary of the latest effort in the use of generative models for continual learning and vice-versa.
 </span></p>
+<span id="Lesort2020aDissertation_and_Theses_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Lesort2020aDissertation_and_ThesesFunction() {
       var moreText = document.getElementById("Lesort2020aDissertation_and_Theses_more");
@@ -9613,6 +9751,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2020Dissertation_and_Theses_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Aljundi2020Dissertation_and_Theses_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Aljundi2020Dissertation_and_ThesesFunction() {
       var moreText = document.getElementById("Aljundi2020Dissertation_and_Theses_more");
@@ -9681,6 +9820,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="fayek2019aDissertation_and_Theses_more3" style="display: none">
     N.A.
 </span></p>
+<span id="fayek2019aDissertation_and_Theses_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function fayek2019aDissertation_and_ThesesFunction() {
       var moreText = document.getElementById("fayek2019aDissertation_and_Theses_more");
@@ -9749,6 +9889,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="lomonaco2019aDissertation_and_Theses_more3" style="display: none">
     N.A.
 </span></p>
+<span id="lomonaco2019aDissertation_and_Theses_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function lomonaco2019aDissertation_and_ThesesFunction() {
       var moreText = document.getElementById("lomonaco2019aDissertation_and_Theses_more");
@@ -9817,6 +9958,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Thrun1996aDissertation_and_Theses_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Thrun1996aDissertation_and_Theses_year" class="yearSpan" style="display: none">1996</span></p>
 <script>
     function Thrun1996aDissertation_and_ThesesFunction() {
       var moreText = document.getElementById("Thrun1996aDissertation_and_Theses_more");
@@ -9885,6 +10027,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ring94aDissertation_and_Theses_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Ring94aDissertation_and_Theses_year" class="yearSpan" style="display: none">1994</span></p>
 <script>
     function Ring94aDissertation_and_ThesesFunction() {
       var moreText = document.getElementById("Ring94aDissertation_and_Theses_more");
@@ -9960,6 +10103,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ven2020aGenerative_Replay_Methods_more3" style="display: none">
     The paper shows a generative form of replay in which a VAE, conditioned on the current task, is able to generate pseudosamples and, when used as a classifier, to address new tasks. The idea is that the generative model is inspired by the hyppocampus, which sits hierarchically on top of the cortex (often thought as the classifier). In this way, replay is fed-back by the same model used to predict the class. Forgetting is prevented both on VAE and on the classification component through replay. It also shows that regularization approaches fail in class-incremental setting.
 </span></p>
+<span id="Ven2020aGenerative_Replay_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Ven2020aGenerative_Replay_MethodsFunction() {
       var moreText = document.getElementById("Ven2020aGenerative_Replay_Methods_more");
@@ -10028,6 +10172,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020bGenerative_Replay_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="ayub2020bGenerative_Replay_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function ayub2020bGenerative_Replay_MethodsFunction() {
       var moreText = document.getElementById("ayub2020bGenerative_Replay_Methods_more");
@@ -10096,6 +10241,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Rostami2019aGenerative_Replay_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Rostami2019aGenerative_Replay_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Rostami2019aGenerative_Replay_MethodsFunction() {
       var moreText = document.getElementById("Rostami2019aGenerative_Replay_Methods_more");
@@ -10164,6 +10310,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Wang2019aGenerative_Replay_Methods_more3" style="display: none">
     arXiv: 1906.00654
 </span></p>
+<span id="Wang2019aGenerative_Replay_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Wang2019aGenerative_Replay_MethodsFunction() {
       var moreText = document.getElementById("Wang2019aGenerative_Replay_Methods_more");
@@ -10232,6 +10379,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="vandenven2018aGenerative_Replay_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="vandenven2018aGenerative_Replay_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function vandenven2018aGenerative_Replay_MethodsFunction() {
       var moreText = document.getElementById("vandenven2018aGenerative_Replay_Methods_more");
@@ -10300,6 +10448,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Parisi2018aGenerative_Replay_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Parisi2018aGenerative_Replay_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Parisi2018aGenerative_Replay_MethodsFunction() {
       var moreText = document.getElementById("Parisi2018aGenerative_Replay_Methods_more");
@@ -10368,6 +10517,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Shin2017aGenerative_Replay_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Shin2017aGenerative_Replay_Methods_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Shin2017aGenerative_Replay_MethodsFunction() {
       var moreText = document.getElementById("Shin2017aGenerative_Replay_Methods_more");
@@ -10443,6 +10593,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="lomonaco2020aHybrid_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="lomonaco2020aHybrid_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function lomonaco2020aHybrid_MethodsFunction() {
       var moreText = document.getElementById("lomonaco2020aHybrid_Methods_more");
@@ -10511,6 +10662,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Du2019aHybrid_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Du2019aHybrid_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Du2019aHybrid_MethodsFunction() {
       var moreText = document.getElementById("Du2019aHybrid_Methods_more");
@@ -10579,6 +10731,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Wang2019aHybrid_Methods_more3" style="display: none">
     arXiv: 1906.00654
 </span></p>
+<span id="Wang2019aHybrid_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Wang2019aHybrid_MethodsFunction() {
       var moreText = document.getElementById("Wang2019aHybrid_Methods_more");
@@ -10647,6 +10800,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hou2018aHybrid_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Hou2018aHybrid_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Hou2018aHybrid_MethodsFunction() {
       var moreText = document.getElementById("Hou2018aHybrid_Methods_more");
@@ -10716,6 +10870,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
     Comment: 26 pages, 13 figures; v3: major revision (e.g. added Sec. 4.4), several typos and minor mistakes corrected
             arXiv: 1806.08568
 </span></p>
+<span id="Maltoni2018aHybrid_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Maltoni2018aHybrid_MethodsFunction() {
       var moreText = document.getElementById("Maltoni2018aHybrid_Methods_more");
@@ -10784,6 +10939,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Schwarz2018aHybrid_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Schwarz2018aHybrid_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Schwarz2018aHybrid_MethodsFunction() {
       var moreText = document.getElementById("Schwarz2018aHybrid_Methods_more");
@@ -10859,6 +11015,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="joseph2020aMeta_Continual_Learning_more3" style="display: none">
     The authors leverage a bayesian framework in which the parameters of a model are sampled from a generating distribution. This distribution, parameterized by a task label, is used together with a VAE to consolidate online previous and current knowledge. Inference does not require task labels and exploit an ensemble of model, sampled from the generating distribution.
 </span></p>
+<span id="joseph2020aMeta_Continual_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function joseph2020aMeta_Continual_LearningFunction() {
       var moreText = document.getElementById("joseph2020aMeta_Continual_Learning_more");
@@ -10927,6 +11084,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Krishnan2020aMeta_Continual_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Krishnan2020aMeta_Continual_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Krishnan2020aMeta_Continual_LearningFunction() {
       var moreText = document.getElementById("Krishnan2020aMeta_Continual_Learning_more");
@@ -10995,6 +11153,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="beaulieu2020aMeta_Continual_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="beaulieu2020aMeta_Continual_Learning_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function beaulieu2020aMeta_Continual_LearningFunction() {
       var moreText = document.getElementById("beaulieu2020aMeta_Continual_Learning_more");
@@ -11063,6 +11222,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="riemer2019aMeta_Continual_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="riemer2019aMeta_Continual_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function riemer2019aMeta_Continual_LearningFunction() {
       var moreText = document.getElementById("riemer2019aMeta_Continual_Learning_more");
@@ -11131,6 +11291,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="khurram2019aMeta_Continual_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="khurram2019aMeta_Continual_Learning_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function khurram2019aMeta_Continual_LearningFunction() {
       var moreText = document.getElementById("khurram2019aMeta_Continual_Learning_more");
@@ -11199,6 +11360,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="vuorio2018aMeta_Continual_Learning_more3" style="display: none">
     N.A.
 </span></p>
+<span id="vuorio2018aMeta_Continual_Learning_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function vuorio2018aMeta_Continual_LearningFunction() {
       var moreText = document.getElementById("vuorio2018aMeta_Continual_Learning_more");
@@ -11274,6 +11436,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Caccia2020aMetrics_and_Evaluations_more3" style="display: none">
     arXiv: 2003.05856
 </span></p>
+<span id="Caccia2020aMetrics_and_Evaluations_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Caccia2020aMetrics_and_EvaluationsFunction() {
       var moreText = document.getElementById("Caccia2020aMetrics_and_Evaluations_more");
@@ -11342,6 +11505,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Lesort2020bMetrics_and_Evaluations_more3" style="display: none">
     arXiv: 1912.03049
 </span></p>
+<span id="Lesort2020bMetrics_and_Evaluations_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Lesort2020bMetrics_and_EvaluationsFunction() {
       var moreText = document.getElementById("Lesort2020bMetrics_and_Evaluations_more");
@@ -11410,6 +11574,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Lesort2020cMetrics_and_Evaluations_more3" style="display: none">
     Overview of a CL framework for applications in robotic, together with discussion of existing CL strategies and techniques.
 </span></p>
+<span id="Lesort2020cMetrics_and_Evaluations_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Lesort2020cMetrics_and_EvaluationsFunction() {
       var moreText = document.getElementById("Lesort2020cMetrics_and_Evaluations_more");
@@ -11478,6 +11643,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="khatib2019aMetrics_and_Evaluations_more3" style="display: none">
     N.A.
 </span></p>
+<span id="khatib2019aMetrics_and_Evaluations_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function khatib2019aMetrics_and_EvaluationsFunction() {
       var moreText = document.getElementById("khatib2019aMetrics_and_Evaluations_more");
@@ -11546,6 +11712,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Farquhar2019aMetrics_and_Evaluations_more3" style="display: none">
     arXiv: 1805.09733
 </span></p>
+<span id="Farquhar2019aMetrics_and_Evaluations_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Farquhar2019aMetrics_and_EvaluationsFunction() {
       var moreText = document.getElementById("Farquhar2019aMetrics_and_Evaluations_more");
@@ -11614,6 +11781,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Parisi2019aMetrics_and_Evaluations_more3" style="display: none">
     A general survey of the most important and used CL techniques, with a characterisation of the catastrophic forgetting phenomenon.
 </span></p>
+<span id="Parisi2019aMetrics_and_Evaluations_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Parisi2019aMetrics_and_EvaluationsFunction() {
       var moreText = document.getElementById("Parisi2019aMetrics_and_Evaluations_more");
@@ -11683,6 +11851,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
     The authors clearly show how regularization approaches fail to perform well on Class-IL scenarios.
             They used a MLP for all experiments.
 </span></p>
+<span id="vandeven2018bMetrics_and_Evaluations_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function vandeven2018bMetrics_and_EvaluationsFunction() {
       var moreText = document.getElementById("vandeven2018bMetrics_and_Evaluations_more");
@@ -11758,6 +11927,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Gonzalez2019aNeuroscience_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Gonzalez2019aNeuroscience_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Gonzalez2019aNeuroscienceFunction() {
       var moreText = document.getElementById("Gonzalez2019aNeuroscience_more");
@@ -11826,6 +11996,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hasselmo2017Neuroscience_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Hasselmo2017Neuroscience_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Hasselmo2017NeuroscienceFunction() {
       var moreText = document.getElementById("Hasselmo2017Neuroscience_more");
@@ -11894,6 +12065,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Clopath2012aNeuroscience_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Clopath2012aNeuroscience_year" class="yearSpan" style="display: none">2012</span></p>
 <script>
     function Clopath2012aNeuroscienceFunction() {
       var moreText = document.getElementById("Clopath2012aNeuroscience_more");
@@ -11962,6 +12134,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hebb2005aNeuroscience_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Hebb2005aNeuroscience_year" class="yearSpan" style="display: none">2002</span></p>
 <script>
     function Hebb2005aNeuroscienceFunction() {
       var moreText = document.getElementById("Hebb2005aNeuroscience_more");
@@ -12030,6 +12203,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Dan2000aNeuroscience_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Dan2000aNeuroscience_year" class="yearSpan" style="display: none">2000</span></p>
 <script>
     function Dan2000aNeuroscienceFunction() {
       var moreText = document.getElementById("Dan2000aNeuroscience_more");
@@ -12098,6 +12272,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Abbott2000aNeuroscience_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Abbott2000aNeuroscience_year" class="yearSpan" style="display: none">2000</span></p>
 <script>
     function Abbott2000aNeuroscienceFunction() {
       var moreText = document.getElementById("Abbott2000aNeuroscience_more");
@@ -12166,6 +12341,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ratcliff1990aNeuroscience_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Ratcliff1990aNeuroscience_year" class="yearSpan" style="display: none">1990</span></p>
 <script>
     function Ratcliff1990aNeuroscienceFunction() {
       var moreText = document.getElementById("Ratcliff1990aNeuroscience_more");
@@ -12241,6 +12417,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="wang2020aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="wang2020aOthers_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function wang2020aOthersFunction() {
       var moreText = document.getElementById("wang2020aOthers_more");
@@ -12309,6 +12486,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Liu2020aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Liu2020aOthers_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Liu2020aOthersFunction() {
       var moreText = document.getElementById("Liu2020aOthers_more");
@@ -12377,6 +12555,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Liu2020aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Liu2020aOthers_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Liu2020aOthersFunction() {
       var moreText = document.getElementById("Liu2020aOthers_more");
@@ -12445,6 +12624,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Saha2020aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Saha2020aOthers_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Saha2020aOthersFunction() {
       var moreText = document.getElementById("Saha2020aOthers_more");
@@ -12513,6 +12693,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Li2020aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Li2020aOthers_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Li2020aOthersFunction() {
       var moreText = document.getElementById("Li2020aOthers_more");
@@ -12581,6 +12762,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="mundt2019aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="mundt2019aOthers_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function mundt2019aOthersFunction() {
       var moreText = document.getElementById("mundt2019aOthers_more");
@@ -12649,6 +12831,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="li2019bOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="li2019bOthers_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function li2019bOthersFunction() {
       var moreText = document.getElementById("li2019bOthers_more");
@@ -12717,6 +12900,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Lee2019aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Lee2019aOthers_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Lee2019aOthersFunction() {
       var moreText = document.getElementById("Lee2019aOthers_more");
@@ -12785,6 +12969,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Nguyen2019bOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Nguyen2019bOthers_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Nguyen2019bOthersFunction() {
       var moreText = document.getElementById("Nguyen2019bOthers_more");
@@ -12853,6 +13038,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Diethe2019aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Diethe2019aOthers_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Diethe2019aOthersFunction() {
       var moreText = document.getElementById("Diethe2019aOthers_more");
@@ -12921,6 +13107,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Kuzina2019aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Kuzina2019aOthers_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Kuzina2019aOthersFunction() {
       var moreText = document.getElementById("Kuzina2019aOthers_more");
@@ -12989,6 +13176,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Cheung2019aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Cheung2019aOthers_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Cheung2019aOthersFunction() {
       var moreText = document.getElementById("Cheung2019aOthers_more");
@@ -13057,6 +13245,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Rajasegaran2019aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Rajasegaran2019aOthers_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Rajasegaran2019aOthersFunction() {
       var moreText = document.getElementById("Rajasegaran2019aOthers_more");
@@ -13125,6 +13314,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Teng2019aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Teng2019aOthers_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Teng2019aOthersFunction() {
       var moreText = document.getElementById("Teng2019aOthers_more");
@@ -13193,6 +13383,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Swaroop2018aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Swaroop2018aOthers_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Swaroop2018aOthersFunction() {
       var moreText = document.getElementById("Swaroop2018aOthers_more");
@@ -13261,6 +13452,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ye2019aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Ye2019aOthers_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Ye2019aOthersFunction() {
       var moreText = document.getElementById("Ye2019aOthers_more");
@@ -13330,6 +13522,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
     Comment: 12 pages, 5 figures, 3 tables
             arXiv: 1903.04476
 </span></p>
+<span id="Golkar2019aOthers_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Golkar2019aOthersFunction() {
       var moreText = document.getElementById("Golkar2019aOthers_more");
@@ -13398,6 +13591,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="farquhar2018aOthers_more3" style="display: none">
     The authors distinguish between prior-focused and likelihood-focused bayesian methods and then combine the two. They carefully analyze the difference between multi-head and single-head approach.
 </span></p>
+<span id="farquhar2018aOthers_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function farquhar2018aOthersFunction() {
       var moreText = document.getElementById("farquhar2018aOthers_more");
@@ -13466,6 +13660,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="zeno2018aOthers_more3" style="display: none">
     Bayesian Gradient Descent allows for Task Agnostic Continual Learning. The posterior on the parameters is updated at every batch, without needing task boundaries or task labels at training time. Experiments are performed with multi-head for Split scenarios.
 </span></p>
+<span id="zeno2018aOthers_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function zeno2018aOthersFunction() {
       var moreText = document.getElementById("zeno2018aOthers_more");
@@ -13534,6 +13729,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Achille2018aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Achille2018aOthers_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Achille2018aOthersFunction() {
       var moreText = document.getElementById("Achille2018aOthers_more");
@@ -13602,6 +13798,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="nguyen2018aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="nguyen2018aOthers_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function nguyen2018aOthersFunction() {
       var moreText = document.getElementById("nguyen2018aOthers_more");
@@ -13670,6 +13867,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mallya2018aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Mallya2018aOthers_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Mallya2018aOthersFunction() {
       var moreText = document.getElementById("Mallya2018aOthers_more");
@@ -13738,6 +13936,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mancini2019aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Mancini2019aOthers_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Mancini2019aOthersFunction() {
       var moreText = document.getElementById("Mancini2019aOthers_more");
@@ -13806,6 +14005,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="amal2017aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="amal2017aOthers_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function amal2017aOthersFunction() {
       var moreText = document.getElementById("amal2017aOthers_more");
@@ -13874,6 +14074,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Kading2017aOthers_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Kading2017aOthers_year" class="yearSpan" style="display: none">2016</span></p>
 <script>
     function Kading2017aOthersFunction() {
       var moreText = document.getElementById("Kading2017aOthers_more");
@@ -13949,6 +14150,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="mirzadeh2020aRegularization_Methods_more3" style="display: none">
     The authors observe how minima of CL and Multitask algorithms lie in a linear subspace (when sharing initialization). They use this argumento to build a CL strategy which forces minima to stay on the same subspace, using also small replay memories.
 </span></p>
+<span id="mirzadeh2020aRegularization_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function mirzadeh2020aRegularization_MethodsFunction() {
       var moreText = document.getElementById("mirzadeh2020aRegularization_Methods_more");
@@ -14017,6 +14219,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ebrahimi2020aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="ebrahimi2020aRegularization_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function ebrahimi2020aRegularization_MethodsFunction() {
       var moreText = document.getElementById("ebrahimi2020aRegularization_Methods_more");
@@ -14085,6 +14288,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="cermelli2020aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="cermelli2020aRegularization_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function cermelli2020aRegularization_MethodsFunction() {
       var moreText = document.getElementById("cermelli2020aRegularization_Methods_more");
@@ -14153,6 +14357,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Parshotam2020aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Parshotam2020aRegularization_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Parshotam2020aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Parshotam2020aRegularization_Methods_more");
@@ -14221,6 +14426,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Pomponi2020aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Pomponi2020aRegularization_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Pomponi2020aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Pomponi2020aRegularization_Methods_more");
@@ -14289,6 +14495,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Oswal2019aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Oswal2019aRegularization_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Oswal2019aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Oswal2019aRegularization_Methods_more");
@@ -14357,6 +14564,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="michieli2019aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="michieli2019aRegularization_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function michieli2019aRegularization_MethodsFunction() {
       var moreText = document.getElementById("michieli2019aRegularization_Methods_more");
@@ -14425,6 +14633,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Titsias2019aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Titsias2019aRegularization_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Titsias2019aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Titsias2019aRegularization_Methods_more");
@@ -14493,6 +14702,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ahn2019aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="ahn2019aRegularization_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function ahn2019aRegularization_MethodsFunction() {
       var moreText = document.getElementById("ahn2019aRegularization_Methods_more");
@@ -14561,6 +14771,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="dhar2019aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="dhar2019aRegularization_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function dhar2019aRegularization_MethodsFunction() {
       var moreText = document.getElementById("dhar2019aRegularization_Methods_more");
@@ -14629,6 +14840,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ritter2018aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Ritter2018aRegularization_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Ritter2018aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Ritter2018aRegularization_Methods_more");
@@ -14697,6 +14909,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Serra2018aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Serra2018aRegularization_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Serra2018aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Serra2018aRegularization_Methods_more");
@@ -14765,6 +14978,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2018aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Aljundi2018aRegularization_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Aljundi2018aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Aljundi2018aRegularization_Methods_more");
@@ -14833,6 +15047,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Liu2018aRegularization_Methods_more3" style="display: none">
     ISSN: 1051-4651
 </span></p>
+<span id="Liu2018aRegularization_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Liu2018aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Liu2018aRegularization_Methods_more");
@@ -14901,6 +15116,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Shmelkov2017aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Shmelkov2017aRegularization_Methods_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Shmelkov2017aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Shmelkov2017aRegularization_Methods_more");
@@ -14969,6 +15185,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Seff2017aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Seff2017aRegularization_Methods_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Seff2017aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Seff2017aRegularization_Methods_more");
@@ -15038,6 +15255,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
     IMM is tested on Disjoint MNIST (2 tasks only), and Shuffled (i.e. permuted) MNIST (3 tasks only).
             The authors show that EWC does not work in Split (Disjoint) settings.
 </span></p>
+<span id="Lee2017aRegularization_Methods_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Lee2017aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Lee2017aRegularization_Methods_more");
@@ -15106,6 +15324,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Ramapuram2017aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Ramapuram2017aRegularization_Methods_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Ramapuram2017aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Ramapuram2017aRegularization_Methods_more");
@@ -15174,6 +15393,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Kirkpatrick2017aRegularization_Methods_more3" style="display: none">
     arXiv: 1612.00796
 </span></p>
+<span id="Kirkpatrick2017aRegularization_Methods_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Kirkpatrick2017aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Kirkpatrick2017aRegularization_Methods_more");
@@ -15242,6 +15462,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Zenke2017aRegularization_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Zenke2017aRegularization_Methods_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Zenke2017aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Zenke2017aRegularization_Methods_more");
@@ -15311,6 +15532,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
     Comment: Conference version appears in ECCV 2016; updated with journal version
             arXiv: 1606.09282
 </span></p>
+<span id="Li2016aRegularization_Methods_year" class="yearSpan" style="display: none">2016</span></p>
 <script>
     function Li2016aRegularization_MethodsFunction() {
       var moreText = document.getElementById("Li2016aRegularization_Methods_more");
@@ -15386,6 +15608,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="mirzadeh2020aRehearsal_Methods_more3" style="display: none">
     The authors observe how minima of CL and Multitask algorithms lie in a linear subspace (when sharing initialization). They use this argumento to build a CL strategy which forces minima to stay on the same subspace, using also small replay memories.
 </span></p>
+<span id="mirzadeh2020aRehearsal_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function mirzadeh2020aRehearsal_MethodsFunction() {
       var moreText = document.getElementById("mirzadeh2020aRehearsal_Methods_more");
@@ -15454,6 +15677,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="vandeven2020aRehearsal_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="vandeven2020aRehearsal_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function vandeven2020aRehearsal_MethodsFunction() {
       var moreText = document.getElementById("vandeven2020aRehearsal_Methods_more");
@@ -15522,6 +15746,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Arumae2020aRehearsal_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Arumae2020aRehearsal_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Arumae2020aRehearsal_MethodsFunction() {
       var moreText = document.getElementById("Arumae2020aRehearsal_Methods_more");
@@ -15590,6 +15815,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Kiyasseh2020Rehearsal_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Kiyasseh2020Rehearsal_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Kiyasseh2020Rehearsal_MethodsFunction() {
       var moreText = document.getElementById("Kiyasseh2020Rehearsal_Methods_more");
@@ -15658,6 +15884,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Oswal2019aRehearsal_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Oswal2019aRehearsal_Methods_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Oswal2019aRehearsal_MethodsFunction() {
       var moreText = document.getElementById("Oswal2019aRehearsal_Methods_more");
@@ -15726,6 +15953,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="chaudhry2019bRehearsal_Methods_more3" style="display: none">
     Training directly on past examples with very small replay memories enhances performances beyond the size of the replay memory.
 </span></p>
+<span id="chaudhry2019bRehearsal_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function chaudhry2019bRehearsal_MethodsFunction() {
       var moreText = document.getElementById("chaudhry2019bRehearsal_Methods_more");
@@ -15794,6 +16022,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Zhang2019aRehearsal_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Zhang2019aRehearsal_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Zhang2019aRehearsal_MethodsFunction() {
       var moreText = document.getElementById("Zhang2019aRehearsal_Methods_more");
@@ -15862,6 +16091,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Chen2018aRehearsal_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Chen2018aRehearsal_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Chen2018aRehearsal_MethodsFunction() {
       var moreText = document.getElementById("Chen2018aRehearsal_Methods_more");
@@ -15930,6 +16160,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="rolnick2019aRehearsal_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="rolnick2019aRehearsal_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function rolnick2019aRehearsal_MethodsFunction() {
       var moreText = document.getElementById("rolnick2019aRehearsal_Methods_more");
@@ -15998,6 +16229,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Aljundi2019aRehearsal_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Aljundi2019aRehearsal_Methods_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Aljundi2019aRehearsal_MethodsFunction() {
       var moreText = document.getElementById("Aljundi2019aRehearsal_Methods_more");
@@ -16066,6 +16298,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="hayes2019aRehearsal_Methods_more3" style="display: none">
     The replay memory is of very small size due to the online update of class-representative centroids.
 </span></p>
+<span id="hayes2019aRehearsal_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function hayes2019aRehearsal_MethodsFunction() {
       var moreText = document.getElementById("hayes2019aRehearsal_Methods_more");
@@ -16134,6 +16367,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Isele2018aRehearsal_Methods_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Isele2018aRehearsal_Methods_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Isele2018aRehearsal_MethodsFunction() {
       var moreText = document.getElementById("Isele2018aRehearsal_Methods_more");
@@ -16209,6 +16443,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="mundt2020aReview_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="mundt2020aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function mundt2020aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("mundt2020aReview_Papers_and_Books_more");
@@ -16277,6 +16512,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="takahashi2020aReview_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="takahashi2020aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function takahashi2020aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("takahashi2020aReview_Papers_and_Books_more");
@@ -16345,6 +16581,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Lesort2020cReview_Papers_and_Books_more3" style="display: none">
     Overview of a CL framework for applications in robotic, together with discussion of existing CL strategies and techniques.
 </span></p>
+<span id="Lesort2020cReview_Papers_and_Books_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Lesort2020cReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("Lesort2020cReview_Papers_and_Books_more");
@@ -16413,6 +16650,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="awasthi2019aReview_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="awasthi2019aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function awasthi2019aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("awasthi2019aReview_Papers_and_Books_more");
@@ -16481,6 +16719,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="DeLange2020aReview_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="DeLange2020aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function DeLange2020aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("DeLange2020aReview_Papers_and_Books_more");
@@ -16549,6 +16788,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Parisi2019aReview_Papers_and_Books_more3" style="display: none">
     A general survey of the most important and used CL techniques, with a characterisation of the catastrophic forgetting phenomenon.
 </span></p>
+<span id="Parisi2019aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function Parisi2019aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("Parisi2019aReview_Papers_and_Books_more");
@@ -16617,6 +16857,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="chen2018aReview_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="chen2018aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function chen2018aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("chen2018aReview_Papers_and_Books_more");
@@ -16685,6 +16926,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Losing2018aReview_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Losing2018aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Losing2018aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("Losing2018aReview_Papers_and_Books_more");
@@ -16753,6 +16995,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Lesort2019aReview_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Lesort2019aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Lesort2019aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("Lesort2019aReview_Papers_and_Books_more");
@@ -16821,6 +17064,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Pfulb2018aReview_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Pfulb2018aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Pfulb2018aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("Pfulb2018aReview_Papers_and_Books_more");
@@ -16889,6 +17133,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Kemker2018aReview_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Kemker2018aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2018</span></p>
 <script>
     function Kemker2018aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("Kemker2018aReview_Papers_and_Books_more");
@@ -16957,6 +17202,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="liu2017aReview_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="liu2017aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function liu2017aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("liu2017aReview_Papers_and_Books_more");
@@ -17025,6 +17271,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Hasselmo2017Review_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Hasselmo2017Review_Papers_and_Books_year" class="yearSpan" style="display: none">2017</span></p>
 <script>
     function Hasselmo2017Review_Papers_and_BooksFunction() {
       var moreText = document.getElementById("Hasselmo2017Review_Papers_and_Books_more");
@@ -17093,6 +17340,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ditzler2015aReview_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="ditzler2015aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2015</span></p>
 <script>
     function ditzler2015aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("ditzler2015aReview_Papers_and_Books_more");
@@ -17161,6 +17409,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mitchell2015aReview_Papers_and_Books_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Mitchell2015aReview_Papers_and_Books_year" class="yearSpan" style="display: none">2015</span></p>
 <script>
     function Mitchell2015aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("Mitchell2015aReview_Papers_and_Books_more");
@@ -17229,6 +17478,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Robins1995aReview_Papers_and_Books_more3" style="display: none">
     An in-depth overview of rehearsal techniques, including pseudo-rehearsal. Useful to combine these ideas in dual systems, in which one system learns a task while the other provides rehearsal of previous patterns.
 </span></p>
+<span id="Robins1995aReview_Papers_and_Books_year" class="yearSpan" style="display: none">1995</span></p>
 <script>
     function Robins1995aReview_Papers_and_BooksFunction() {
       var moreText = document.getElementById("Robins1995aReview_Papers_and_Books_more");
@@ -17304,6 +17554,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="ayub2020cRobotics_more3" style="display: none">
     N.A.
 </span></p>
+<span id="ayub2020cRobotics_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function ayub2020cRoboticsFunction() {
       var moreText = document.getElementById("ayub2020cRobotics_more");
@@ -17372,6 +17623,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Lesort2020cRobotics_more3" style="display: none">
     Overview of a CL framework for applications in robotic, together with discussion of existing CL strategies and techniques.
 </span></p>
+<span id="Lesort2020cRobotics_year" class="yearSpan" style="display: none">2020</span></p>
 <script>
     function Lesort2020cRoboticsFunction() {
       var moreText = document.getElementById("Lesort2020cRobotics_more");
@@ -17440,6 +17692,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="dehghan2019aRobotics_more3" style="display: none">
     N.A.
 </span></p>
+<span id="dehghan2019aRobotics_year" class="yearSpan" style="display: none">2019</span></p>
 <script>
     function dehghan2019aRoboticsFunction() {
       var moreText = document.getElementById("dehghan2019aRobotics_more");
@@ -17508,6 +17761,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Wong2016aRobotics_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Wong2016aRobotics_year" class="yearSpan" style="display: none">2016</span></p>
 <script>
     function Wong2016aRoboticsFunction() {
       var moreText = document.getElementById("Wong2016aRobotics_more");
@@ -17576,6 +17830,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="thrun1995bRobotics_more3" style="display: none">
     N.A.
 </span></p>
+<span id="thrun1995bRobotics_year" class="yearSpan" style="display: none">1995</span></p>
 <script>
     function thrun1995bRoboticsFunction() {
       var moreText = document.getElementById("thrun1995bRobotics_more");
@@ -17644,6 +17899,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) <
 <p style="background-color: #2980b929; font-size:75%; line-height:15px"><span id="Mitchell1993aRobotics_more3" style="display: none">
     N.A.
 </span></p>
+<span id="Mitchell1993aRobotics_year" class="yearSpan" style="display: none">1993</span></p>
 <script>
     function Mitchell1993aRoboticsFunction() {
       var moreText = document.getElementById("Mitchell1993aRobotics_more");
@@ -17758,6 +18014,39 @@ Lifelong/Continual Learning.:</p>
       for (i = 0; i < li.length; i++) {
         txtValue = li[i].textContent || li[i].innerText;
         if (txtValue.match(filter)) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+</script>
+
+<script>
+    function year_filter() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      start_year_input = document.getElementById('filterStartYearInput');
+      filter_start_year_string = start_year_input.value;
+      filter_start_year = parseInt(filter_start_year_string);
+      end_year_input = document.getElementById('filterEndYearInput');
+      filter_end_year_string = end_year_input.value;
+      filter_end_year = parseInt(filter_end_year_string);
+      // check for Not a Number:
+      if (filter_start_year != filter_start_year) {
+        filter_start_year = Number.MIN_VALUE;
+      }
+      if (filter_end_year != filter_end_year) {
+        filter_end_year = Number.MAX_VALUE;
+      }
+
+      sec = document.getElementById("publications");
+      li = sec.getElementsByTagName("li");
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        year_string = li[i].getElementsByClassName("yearSpan")[0].textContent;
+        year = parseInt(year_string)
+        if (year >= filter_start_year && year <= filter_end_year) {
           li[i].style.display = "";
         } else {
           li[i].style.display = "none";
