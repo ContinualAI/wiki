@@ -1,0 +1,7 @@
+.collapsable-section h2:before {
+    content: "  +  ";
+}
+
+.collapsable-section.open h2:before{
+    content: "  -  ";
+}
