@@ -108,8 +108,8 @@ Associative pairs require repeated reinforcement to persist. If an organism lear
         $(".collapsable-section").children().not(".collapsable-section-body").click(function() {
             $(".collapsable-section-body").not($(this).parent().children(".collapsable-section-body")).hide(400);
             $(this).parent().children(".collapsable-section-body").toggle(400);
-            $(this).parent().children(".header").toggleClass("open"); 
-            
+            $(this).parent().toggleClass("open"); 
+            $(".collapsable-section").not($(this).parent()).removeClass("open");
         })
     });
     </script>

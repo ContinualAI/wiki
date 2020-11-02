@@ -19,6 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
+from docutils import nodes
 project = 'ContinualAI Wiki'
 copyright = '2018-2021, ContinualAI'
 author = ''
@@ -86,8 +87,8 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 #
 html_theme_options = {
-	#"vcs_pageview_mode": ''
-	'logo_only': True,
+    # "vcs_pageview_mode": ''
+    'logo_only': True,
     'analytics_id': 'UA-165355374-1'
 }
 
@@ -189,7 +190,7 @@ epub_title = project
 epub_exclude_files = ['search.html']
 
 # this below is useful to have hmtl inline in rsts
-from docutils import nodes
+
 
 def generate_rawrole(format):
     def role(typ, rawtext, text, lineno, inliner, options={}, content=[]):
@@ -207,3 +208,4 @@ def on_builder_inited(app):
 def setup(app):
     app.add_config_value('rawrole_formats', ['html', 'latex'], 'env')
     app.connect('builder-inited', on_builder_inited)
+    app.add_css_file('custom.css')
