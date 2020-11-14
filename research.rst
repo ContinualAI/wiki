@@ -493,7 +493,7 @@ Lifelong/Continual Learning.:
     <script>
         function regex_filter(li) {
           // Declare variables
-          var input, filter, ul, li, a, i, txtValue;
+          var input, filter, ul, a, i, txtValue;
           input = document.getElementById('myInputreg');
           // filter = input.value.toUpperCase();
           filter = input.value;
@@ -535,10 +535,8 @@ Lifelong/Continual Learning.:
           remaining_li = []
 
           // Loop through all list items, and hide those who don't match the search query
-          console.log(li.length)
           for (i = 0; i < li.length; i++) {
             year_string = li[i].getElementsByClassName("yearSpan")[0].textContent;
-            console.log(year_string)
             year = parseInt(year_string)
             if (year >= filter_start_year && year <= filter_end_year) {
               li[i].style.display = "";
