@@ -17,9 +17,9 @@ to add a reference to your paper! Please, remember to follow the (very simple) `
 
 <PAPER_COUNT>
 
-**Filter list by keyword:** :raw:html:`<input type="text" id="myInput" onkeyup="keyword_filter()" placeholder="Insert keywords here..."><br>`
-**Filter list by regex:** :raw:html:`<input type="text" id="myInputreg" onkeyup="regex_filter()" placeholder="Insert regex here..." style="margin-left:22px"><br>`
-**Filter list by year:** :raw:html:`<input type="text" id="filterStartYearInput" onkeyup="year_filter()" placeholder="Insert start year here..." style="margin-left:31px"><input type="text" id="filterEndYearInput" onkeyup="year_filter()" placeholder="Insert end year here..." style="margin-left:10px">`
+**Filter list by keyword:** :raw:html:`<input type="text" id="myInput" onkeyup="apply_filters()" placeholder="Insert keywords here..."><br>`
+**Filter list by regex:** :raw:html:`<input type="text" id="myInputreg" onkeyup="apply_filters()" placeholder="Insert regex here..." style="margin-left:22px"><br>`
+**Filter list by year:** :raw:html:`<input type="text" id="filterStartYearInput" onkeyup="apply_filters()" placeholder="Insert start year here..." style="margin-left:31px"><input type="text" id="filterEndYearInput" onkeyup="apply_filters()" placeholder="Insert end year here..." style="margin-left:10px">`
 
 <TAGLIST>
 
@@ -49,52 +49,73 @@ Lifelong/Continual Learning.:
 .. raw:: html
 
     <script>
-        function keyword_filter() {
-          // Declare variables
-          var input, filter, ul, li, a, i, txtValue;
-          input = document.getElementById('myInput');
-          filter = input.value.toUpperCase();
+        function apply_filters() {
+          li = get_papers_li()
+          li = keyword_filter(li);
+          li = regex_filter(li);
+          year_filter(li);
+        }
+    </script>
+
+    <script>
+        function get_papers_li() {
           sec = document.getElementById("publications");
           li = sec.getElementsByTagName('li');
+          return li
+        }
+    </script>
+
+    <script>
+        function keyword_filter(li) {
+          // Declare variables
+          var input, filter, ul, a, i, txtValue;
+          input = document.getElementById('myInput');
+          filter = input.value.toUpperCase();
+          remaining_li = []
 
           // Loop through all list items, and hide those who don't match the search query
           for (i = 0; i < li.length; i++) {
             txtValue = li[i].textContent || li[i].innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
               li[i].style.display = "";
+              remaining_li.push(li[i])
             } else {
               li[i].style.display = "none";
             }
           }
+
+          return remaining_li
         }
     </script>
 
     <script>
-        function regex_filter() {
+        function regex_filter(li) {
           // Declare variables
-          var input, filter, ul, li, a, i, txtValue;
+          var input, filter, ul, a, i, txtValue;
           input = document.getElementById('myInputreg');
           // filter = input.value.toUpperCase();
           filter = input.value;
-          sec = document.getElementById("publications");
-          li = sec.getElementsByTagName('li');
+          remaining_li = []
 
           // Loop through all list items, and hide those who don't match the search query
           for (i = 0; i < li.length; i++) {
             txtValue = li[i].textContent || li[i].innerText;
             if (txtValue.match(filter)) {
               li[i].style.display = "";
+              remaining_li.push(li[i])
             } else {
               li[i].style.display = "none";
             }
           }
+
+          return remaining_li
         }
     </script>
 
     <script>
-        function year_filter() {
+        function year_filter(li) {
           // Declare variables
-          var input, filter, ul, li, a, i, txtValue;
+          var input, filter, ul, a, i, txtValue;
           start_year_input = document.getElementById('filterStartYearInput');
           filter_start_year_string = start_year_input.value;
           filter_start_year = parseInt(filter_start_year_string);
@@ -109,17 +130,20 @@ Lifelong/Continual Learning.:
             filter_end_year = Number.MAX_VALUE;
           }
 
-          sec = document.getElementById("publications");
-          li = sec.getElementsByTagName("li");
+          remaining_li = []
+
           // Loop through all list items, and hide those who don't match the search query
           for (i = 0; i < li.length; i++) {
             year_string = li[i].getElementsByClassName("yearSpan")[0].textContent;
             year = parseInt(year_string)
             if (year >= filter_start_year && year <= filter_end_year) {
               li[i].style.display = "";
+              remaining_li.push(li[i])
             } else {
               li[i].style.display = "none";
             }
           }
+
+          return remaining_li
         }
     </script>
