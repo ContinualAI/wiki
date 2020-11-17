@@ -37,6 +37,7 @@ Here we list the main contributors (alphabetical order):
 - Matthias De Lange
 - Timothée Lesort
 - Vincenzo Lomonaco
+- Michael Milstead
 - Martin Mundt
 - Simon Ouellette
 - German Parisi
