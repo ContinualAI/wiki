@@ -50,7 +50,7 @@ Lifelong/Continual Learning.:
 
     <script>
         function apply_filters() {
-          li = get_papers_li()
+          li = get_papers_li();
           li = keyword_filter(li);
           li = regex_filter(li);
           year_filter(li);
@@ -61,7 +61,7 @@ Lifelong/Continual Learning.:
         function get_papers_li() {
           sec = document.getElementById("publications");
           li = sec.getElementsByTagName('li');
-          return li
+          return li;
         }
     </script>
 
@@ -71,20 +71,20 @@ Lifelong/Continual Learning.:
           var input, filter, ul, a, i, txtValue;
           input = document.getElementById('myInput');
           filter = input.value.toUpperCase();
-          remaining_li = []
+          remaining_li = [];
 
           // Loop through all list items, and hide those who don't match the search query
           for (i = 0; i < li.length; i++) {
             txtValue = li[i].textContent || li[i].innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
               li[i].style.display = "";
-              remaining_li.push(li[i])
+              remaining_li.push(li[i]);
             } else {
               li[i].style.display = "none";
             }
           }
 
-          return remaining_li
+          return remaining_li;
         }
     </script>
 
@@ -95,20 +95,20 @@ Lifelong/Continual Learning.:
           input = document.getElementById('myInputreg');
           // filter = input.value.toUpperCase();
           filter = input.value;
-          remaining_li = []
+          remaining_li = [];
 
           // Loop through all list items, and hide those who don't match the search query
           for (i = 0; i < li.length; i++) {
             txtValue = li[i].textContent || li[i].innerText;
             if (txtValue.match(filter)) {
               li[i].style.display = "";
-              remaining_li.push(li[i])
+              remaining_li.push(li[i]);
             } else {
               li[i].style.display = "none";
             }
           }
 
-          return remaining_li
+          return remaining_li;
         }
     </script>
 
@@ -130,20 +130,20 @@ Lifelong/Continual Learning.:
             filter_end_year = Number.MAX_VALUE;
           }
 
-          remaining_li = []
+          remaining_li = [];
 
           // Loop through all list items, and hide those who don't match the search query
           for (i = 0; i < li.length; i++) {
             year_string = li[i].getElementsByClassName("yearSpan")[0].textContent;
-            year = parseInt(year_string)
+            year = parseInt(year_string);
             if (year >= filter_start_year && year <= filter_end_year) {
               li[i].style.display = "";
-              remaining_li.push(li[i])
+              remaining_li.push(li[i]);
             } else {
               li[i].style.display = "none";
             }
           }
 
-          return remaining_li
+          return remaining_li;
         }
     </script>
