@@ -10,11 +10,11 @@ What is Continual/Lifelong Learning?
 
 .. rst-class:: collapsable-section-body
 
-    Continual Learning (CL), also known as Lifelong learning, is built on the idea of learning continuously about the external world in order to enable the autonomous, incremental development of ever more complex skills and knowledge.
+    Continual Learning, also known as Lifelong learning, is built on the idea of learning continuously about the external world in order to enable the autonomous, incremental development of ever more complex skills and knowledge.
 
     A Continual learning system can be defined as *an adaptive algorithm capable of learning from a continuous stream of information, with such information becoming progressively available over time and where the number of tasks to be learned (e.g. membership classes in a classification task) are not predefined. Critically, the accommodation of new information should occur without catastrophic forgetting or interference* [#f1]_ .
 
-    Hence, in the CL scenario, a learning model is required to incrementally build and dynamically update internal representations as the distribution of tasks dynamically changes across its lifetime. Ideally, part of such internal representations will be general and invariant enough to be reusable across similar tasks, while another part should preserve and encode task-specific representations.
+    Hence, in the Continual Learning scenario, a learning model is required to incrementally build and dynamically update internal representations as the distribution of tasks dynamically changes across its lifetime. Ideally, part of such internal representations will be general and invariant enough to be reusable across similar tasks, while another part should preserve and encode task-specific representations.
 
 .. rst-class:: collapsable-section
 
@@ -23,13 +23,13 @@ The Deep Learning approach to learning
 
 .. rst-class:: collapsable-section-body
 
-    Deep Learning (DL) is a subset of Machine Learning (ML) in which models - artificial neural networks, in most of the cases - learn to map input to output by building an adaptive, internal hierarchical representation. Artificial neural networks are made by units linked together by weighted connections. The learning process is defined by changing the value of the weights in order to minimize a cost function which measures how much the output produced by the model differs from the expected outcome.
+    Deep Learning is a subset of Machine Learning in which models - artificial neural networks, in most of the cases - learn to map input to output by building an adaptive, internal hierarchical representation. Artificial neural networks are made of units linked together by weighted connections. The learning process is defined by changing the value of the weights in order to minimize a cost function which measures how much the output produced by the model differs from the expected outcome.
 
     Such learning process is adaptive, meaning that it only requires a (possibly large) set of data from which to learn and a suitable cost function to specify the type of task to be performed.
 
-    Decades of research showed that DL models are able to accomplish a range of different tasks, often surpassing human-level performance. They are widespread in several fields like language translation, self-driving cars, bio-medical applications, stock prediction in finance``…`` just to name a few!
+    Decades of research showed that Deep Learning models are able to accomplish a range of different tasks, often surpassing human-level performance. They are widespread in several fields like language translation, self-driving cars, bio-medical applications, stock prediction in finance``…`` just to name a few!
 
-    The astonishing accomplishments made by DL are confined to a specific task: without additional training, a DL neural network which is able to beat the (human) world champion at the game of Go will not be able to drive a car or to translate from English to French. However, nothing prevents us from continuing to train the network on new tasks.
+    The astonishing accomplishments made by Deep Learning are confined to a specific task: without additional training, a Deep Learning neural network which is able to beat the (human) world champion at the game of Go will not be able to drive a car or to translate from English to French. However, nothing prevents us from continuing to train the network on new tasks.
 
     What will be the behavior of the network at the end of the new learning phase? This question is at the heart of the Continual Learning field.
 
@@ -40,14 +40,14 @@ The Catastrophic Forgetting phenomenon
 
 .. rst-class:: collapsable-section-body
 
-    When learning in a CL environment, the model is exposed to a streaming of inputs coming from different distributions, representing different tasks. At each learning step, the model will have to adapt in order to meet the expected behavior.
+    When learning in a Continual Learning environment, the model is exposed to a streaming of inputs coming from different distributions, representing different tasks. At each learning step, the model will have to adapt in order to meet the expected behavior.
 
-    A well-known problem in learning multiple tasks sequentially is the *catastrophic forgetting* (CF) phenomenon, which can be concisely summarized in one sentence: * the process of learning new knowledge quickly disrupts previously acquired information*.
-    The catastrophic forgetting (or simply forgetting) is the main problem faced by CL strategies.
+    A well-known problem in learning multiple tasks sequentially is the *catastrophic forgetting* phenomenon, which can be concisely summarized in one sentence: * the process of learning new knowledge quickly disrupts previously acquired information*.
+    The catastrophic forgetting (or simply forgetting) is the main problem faced by Continual Learning algorithms.
 
-    Unfortunately, *all* connectionist models are subject to CF. The consequence being that neural networks are not suitable to learning in CL environments, since their performance on previous tasks will degrade very quickly.
+    Unfortunately, *all* connectionist models are subjected to Catastrophic Forgetting. The consequence being that neural networks are not suitable to learn in Continual Learning environments, since their performance on previous tasks will degrade very quickly.
 
-    CF can be characterized by looking at the *stability-plasticity* dilemma: a learning model has to be plastic enough to learn new information, but it has also to be stable to preserve internal knowledge. 
+    Catastrophic Forgetting can be characterized by looking at the *stability-plasticity* dilemma: a learning model has to be plastic enough to learn new information, but it has also to be stable to preserve internal knowledge. 
     This tradeoff is never satisfied for traditional neural networks, where the plasticity easily overpowers the stability.
 
 .. rst-class:: collapsable-section
@@ -57,11 +57,11 @@ Beyond forgetting
 
 .. rst-class:: collapsable-section-body
 
-    Even if CF is the main focus of CL, there are other aspects that need to be considered when learning continuously.
+    Even if Catastrophic Forgetting is the main focus of Continual Learning, there are other aspects that need to be considered when learning continuously.
 
-    Preserving old knowledge is important not only to perform well on previous tasks. It can also be used to perform better on incoming tasks. This feature, called *transfer learning*, enables CL algorithm to require only few examples of a new tasks to master it.
+    Preserving old knowledge is important not only to perform well on previous tasks. It can also be used to perform better on incoming tasks. This feature, called *transfer learning*, enables Continual Learning algorithms to require only few examples of a new tasks to master it.
 
-    Another interesting opportunity when learning sequentially is the benefit that a previously learned task can receive from subsequently learning new knowledge. Such *backward transfer* can positively affect the performance of a CL algorithm on previuos tasks, without seeing any further examples from it.
+    Another interesting opportunity when learning sequentially is the benefit that a previously learned task can receive from subsequently learning new knowledge. Such *backward transfer* can positively affect the performance of a Continual Learning algorithm on previuos tasks, without seeing any further examples from it.
     It is needless to say that, without a method that properly mitigate forgetting, no backward transfer is possible.
 
 .. rst-class:: collapsable-section
