@@ -22,19 +22,6 @@ title = {{Reconciling meta-learning and continual learning with online mixtures 
 url = {http://papers.nips.cc/paper/9112-reconciling-meta-learning-and-continual-learning-with-online-mixtures-of-tasks},
 year = {2019}
 }
-@article{finn2019a,
-abstract = {A central capability of intelligent systems is the ability to continuously build upon previous experiences to speed up and enhance learning of new tasks. Two distinct research paradigms have studied this question. Meta-learning views this problem as learning a prior over model parameters that is amenable for fast adaptation on a new task, but typically assumes the set of tasks are available together as a batch. In contrast, online (regret based) learning considers a sequential setting in which problems are revealed one after the other, but conventionally train only a single model without any task-specific adaptation. This work introduces an online meta-learning setting, which merges ideas from both the aforementioned paradigms to better capture the spirit and practice of continual lifelong learning. We propose the follow the meta leader (FTML) algorithm which extends the MAML algorithm to this setting. Theoretically, this work provides an O(log T) regret guarantee with one additional higher order smoothness assumption (in comparison to the standard online setting). Our experimental evaluation on three different large-scale tasks suggest that the proposed algorithm significantly outperforms alternatives based on traditional online learning approaches.},
-archivePrefix = {arXiv},
-arxivId = {1902.08438},
-author = {Finn, Chelsea and Rajeswaran, Aravind and Kakade, Sham and Levine, Sergey},
-eprint = {1902.08438},
-journal = {arXiv},
-keywords = {[cifar],[mnist]},
-mendeley-tags = {[cifar],[mnist]},
-title = {{Online meta-learning}},
-url = {https://arxiv.org/abs/1902.08438},
-year = {2019}
-}
 @article{caccia2020a,
 abstract = {Learning from non-stationary data remains a great challenge for machine learning. Continual learning addresses this problem in scenarios where the learning agent faces a stream of changing tasks. In these scenarios, the agent is expected to retain its highest performance on previous tasks without revisiting them while adapting well to the new tasks. Two new recent continual-learning scenarios have been proposed. In meta-continual learning, the model is pre-trained to minimize catastrophic forgetting when trained on a sequence of tasks. In continual-meta learning, the goal is faster remembering, i.e., focusing on how quickly the agent recovers performance rather than measuring the agent's performance without any adaptation. Both scenarios have the potential to propel the field forward. Yet in their original formulations, they each have limitations. As a remedy, we propose a more general scenario where an agent must quickly solve (new) out-of-distribution tasks, while also requiring fast remembering. We show that current continual learning, meta learning, meta-continual learning, and continual-meta learning techniques fail in this new scenario. Accordingly, we propose a strong baseline: Continual-MAML, an online extension of the popular MAML algorithm. In our empirical experiments, we show that our method is better suited to the new scenario than the methodologies mentioned above, as well as standard continual learning and meta learning approaches.},
 archivePrefix = {arXiv},

@@ -1,3 +1,87 @@
+@article{Li2020b,
+abstract = {We motivate Energy-Based Models (EBMs) as a promising model class for continual learning problems. Instead of tackling continual learning via the use of external memory, growing models, or regularization, EBMs have a natural way to support a dynamically-growing number of tasks or classes that causes less interference with previously learned information. We find that EBMs outperform the baseline methods by a large margin on several continual learning benchmarks. We also show that EBMs are adaptable to a more general continual learning setting where the data distribution changes without the notion of explicitly delineated tasks. These observations point towards EBMs as a class of models naturally inclined towards the continual learning regime.},
+annote = {The paper introduces Energy-Based models for classification in single incremental task + new classes (i.e. class incremental) scenarios. The model does not require task labels at test time, nor task boundaries at training time. It does not make use of replay.},
+archivePrefix = {arXiv},
+arxivId = {2011.12216},
+author = {Li, Shuang and Du, Yilun and van de Ven, Gido M. and Torralba, Antonio and Mordatch, Igor},
+eprint = {2011.12216},
+file = {::},
+journal = {arXiv},
+keywords = {[cifar],[experimental],[mnist]},
+mendeley-tags = {[experimental],[mnist],[cifar]},
+month = {nov},
+title = {{Energy-Based Models for Continual Learning}},
+url = {http://arxiv.org/abs/2011.12216},
+year = {2020}
+}
+@inproceedings{duncker2020a,
+abstract = {Biological systems face dynamic environments that require continual learning. It is not well understood how these systems balance the tension between flexibility for learning and robustness for memory of previous behaviors. Continual learning without catastrophic interference also remains a challenging problem in machine learning. Here, we develop a novel learning rule designed to minimize interference between sequentially learned tasks in recurrent networks. Our learning rule preserves network dynamics within activity-defined subspaces used for previously learned tasks. It encourages dynamics associated with new tasks that might otherwise interfere to instead explore orthogonal subspaces, and it allows for reuse of previously established dynamical motifs where possible. Employing a set of tasks used in neuroscience, we demonstrate that our approach successfully eliminates catastrophic interference and offers a substantial improvement over previous continual learning algorithms. Using dynamical systems analysis, we show that networks trained using our approach can reuse similar dynamical structures across similar tasks. This possibility for shared computation allows for faster learning during sequential training. Finally, we identify organizational differences that emerge when training tasks sequentially versus simultaneously.},
+annote = {The hidden state pre-activation and the input are projected during learning in a subspace orthogonal to all the ones of the previous tasks, if new task is dissimilar. Projection on orthogonal subspace avoid interference with previous knowledge.},
+author = {Duncker, Lea and Driscoll, Laura N and Shenoy, Krishna V and Sahani, Maneesh and Sussillo, David},
+booktitle = {Advances in Neural Information Processing Systems},
+file = {::},
+keywords = {[rnn]},
+mendeley-tags = {[rnn]},
+title = {{Organizing recurrent network dynamics by task-computation to enable continual learning}},
+url = {https://proceedings.neurips.cc/paper/2020/file/a576eafbce762079f7d1f77fca1c5cc2-Paper.pdf},
+volume = {33},
+year = {2020}
+}
+@article{camp2020a,
+abstract = {Neurons in real brains are enormously complex computational units. Among other things, they're responsible for transforming inbound electro-chemical vectors into outbound action potentials, updating the strengths of intermediate synapses, regulating their own internal states, and modulating the behavior of other nearby neurons. One could argue that these cells are the only things exhibiting any semblance of real intelligence. It is odd, therefore, that the machine learning community has, for so long, relied upon the assumption that this complexity can be reduced to a simple sum and fire operation. We ask, might there be some benefit to substantially increasing the computational power of individual neurons in artificial systems? To answer this question, we introduce Deep Artificial Neurons (DANs), which are themselves realized as deep neural networks. Conceptually, we embed DANs inside each node of a traditional neural network, and we connect these neurons at multiple synaptic sites, thereby vectorizing the connections between pairs of cells. We demonstrate that it is possible to meta-learn a single parameter vector, which we dub a neuronal phenotype, shared by all DANs in the network, which facilitates a meta-objective during deployment. Here, we isolate continual learning as our meta-objective, and we show that a suitable neuronal phenotype can endow a single network with an innate ability to update its synapses with minimal forgetting, using standard backpropagation, without experience replay, nor separate wake/sleep phases. We demonstrate this ability on sequential non-linear regression tasks.},
+annote = {The authors replace each neuron of a standard feedforward network with a small neural network with its own parameters, meta-learned and shared throughout the whole network.
+They experiment with regression on sine waves.},
+archivePrefix = {arXiv},
+arxivId = {2011.07035},
+author = {Camp, Blake and Mandivarapu, Jaya Krishna and Estrada, Rolando},
+eprint = {2011.07035},
+file = {::},
+journal = {arXiv},
+keywords = {[experimental]},
+mendeley-tags = {[experimental]},
+month = {nov},
+title = {{Continual Learning with Deep Artificial Neurons}},
+url = {http://arxiv.org/abs/2011.07035},
+year = {2020}
+}
+@inproceedings{finn2019a,
+abstract = {A central capability of intelligent systems is the ability to continuously build upon previous experiences to speed up and enhance learning of new tasks. Two distinct research paradigms have studied this question. Meta-learning views this problem as learning a prior over model parameters that is amenable for fast adaptation on a new task, but typically assumes the tasks are available together as a batch. In contrast, online (regret based) learning considers a setting where tasks are revealed one after the other, but conventionally trains a single model without task-specific adaptation. This work introduces an online meta-learning setting, which merges ideas from both paradigms to better capture the spirit and practice of continual lifelong learning. We propose the follow the meta leader (FTML) algorithm which extends the MAML algorithm to this setting. Theoretically, this work provides an O(log T) regret guarantee with one additional higher order smoothness assumption (in comparison to the standard online setting). Our experimental evaluation on three different large-scale problems suggest that the proposed algorithm significantly outperforms alternatives based on traditional online learning approaches.},
+annote = {This paper focuses on meta learning a stream of tasks. As for most of the online learning literature the focus is not on catastrophic forgetting, which is not taken into consideration, but on forward / backward transfer and few-shot learning. It stores a replay buffer for each task in order to meta-optimize in the outer loop.},
+author = {Finn, Chelsea and Rajeswaran, Aravind and Kakade, Sham and Levine, Sergey},
+booktitle = {ICML},
+file = {::},
+keywords = {[experimental],[mnist]},
+mendeley-tags = {[experimental],[mnist]},
+title = {{Online Meta-Learning}},
+url = {http://proceedings.mlr.press/v97/finn19a/finn19a.pdf},
+year = {2019}
+}
+@inproceedings{knoblauch2020a,
+abstract = {Continual Learning (CL) algorithms incremen-tally learn a predictor or representation across multiple sequentially observed tasks. Designing CL algorithms that perform reliably and avoid so-called catastrophic forgetting has proven a persistent challenge. The current paper develops a theoretical approach that explains why. In particular , we derive the computational properties which CL algorithms would have to possess in order to avoid catastrophic forgetting. Our main finding is that such optimal CL algorithms generally solve an NP-HARD problem and will require perfect memory to do so. The findings are of theoretical interest, but also explain the excellent performance of CL algorithms using experience replay, episodic memory and core sets relative to regularization-based approaches.},
+annote = {In this paper optimal continual learning which perfectly solves all tasks without forgetting is proofed to be NP-hard. Also, memorization of previous information is necessary, thus establishing superiority of replay based strategies against regularization based strategies.},
+author = {Knoblauch, Jeremias and Husain, Hisham and Diethe, Tom},
+booktitle = {ICML},
+file = {::},
+keywords = {[theoretical]},
+mendeley-tags = {[theoretical]},
+title = {{Optimal Continual Learning has Perfect Memory and is NP-HARD}},
+url = {https://proceedings.icml.cc/paper/2020/file/274ad4786c3abca69fa097b85867d9a4-Paper.pdf},
+year = {2020}
+}
+@article{hadsell2020a,
+abstract = {Artificial intelligence research has seen enormous progress over the past few decades, but it predominantly relies on fixed datasets and stationary environments. Continual learning is an increasingly relevant area of study that asks how artificial systems might learn sequentially, as biological systems do, from a continuous stream of correlated data. In the present review, we relate continual learning to the learning dynamics of neural networks, highlighting the potential it has to considerably improve data efficiency. We further consider the many new biologically inspired approaches that have emerged in recent years, focusing on those that utilize regularization, modularity, memory, and meta-learning, and highlight some of the most promising and impactful directions.},
+annote = {A CL review which highlights the problem of a tug-of-war dynamics in gradient-based learning and credit assignment. It also points to meta-learning as a valuable solution to continually learn while being data efficient.},
+author = {Hadsell, Raia and Rao, Dushyant and Rusu, Andrei A and Pascanu, Razvan},
+doi = {10.1016/j.tics.2020.09.004},
+file = {::},
+issn = {13646613},
+journal = {Trends in Cognitive Sciences},
+keywords = {artificial intelligence,lifelong,memory,meta-learning,non-stationary},
+month = {nov},
+title = {{Embracing Change: Continual Learning in Deep Neural Networks}},
+url = {https://doi.org/10.1016/j.tics.2020.09.004},
+year = {2020}
+}
 @article{delange2020c,
 abstract = {Attaining prototypical features to represent class distributions is well established in representation learning. However, learning prototypes online from streams of data proves a challenging endeavor as they rapidly become outdated, caused by an ever-changing parameter space in the learning process. Additionally, continual learning does not assume the data stream to be stationary, typically resulting in catastrophic forgetting of previous knowledge. As a first, we introduce a system addressing both problems, where prototypes evolve continually in a shared latent space, enabling learning and prediction at any point in time. In contrast to the major body of work in continual learning, data streams are processed in an online fashion, without additional task-information, and an efficient memory scheme provides robustness to imbalanced data streams. Besides nearest neighbor based prediction, learning is facilitated by a novel objective function, encouraging cluster density about the class prototype and increased inter-class variance. Furthermore, the latent space quality is elevated by pseudo-prototypes in each batch, constituted by replay of exemplars from memory. We generalize the existing paradigms in continual learning to incorporate data incremental learning from data streams by formalizing a two-agent learner-evaluator framework, and obtain state-of-the-art performance by a significant margin on eight benchmarks, including three highly imbalanced data streams.},
 archivePrefix = {arXiv},
@@ -536,7 +620,7 @@ url = {https://arxiv.org/abs/1910.02718},
 year = {2019}
 }
 @article{ehret2020a,
-abstract = {The last decade has seen a surge of interest in continual learning (CL), and a variety of methods have been developed to alleviate catastrophic forgetting. However, most prior work has focused on tasks with static data, while CL on sequential data has remained largely unexplored. Here we address this gap in two ways. First, we evaluate the performance of established CL methods when applied to recurrent neural networks (RNNs). We primarily focus on elastic weight consolidation, which is limited by a stability-plasticity trade-off, and explore the particularities of this trade-off when using sequential data. We show that high working memory requirements, but not necessarily sequence length, lead to an increased need for stability at the cost of decreased performance on subsequent tasks. Second, to overcome this limitation we employ a recent method based on hypernetworks and apply it to RNNs to address catastrophic forgetting on sequential data. By generating the weights of a main RNN in a task-dependent manner, our approach disentangles stability and plasticity, and outperforms alternative methods in a range of experiments. Overall, our work provides several key insights on the differences between CL in feedforward networks and in RNNs, while offering a novel solution to effectively tackle CL on sequential data.},
+abstract = {While a diverse collection of continual learning (CL) methods has been proposed to prevent catastrophic forgetting, a thorough investigation of their effectiveness for processing sequential data with recurrent neural networks (RNNs) is lacking. Here, we provide the first comprehensive evaluation of established CL methods on a variety of sequential data benchmarks. Specifically, we shed light on the particularities that arise when applying weight-importance methods, such as elastic weight consolidation, to RNNs. In contrast to feedforward networks, RNNs iteratively reuse a shared set of weights and require working memory to process input samples. We show that the performance of weight-importance methods is not directly affected by the length of the processed sequences, but rather by high working memory requirements, which lead to an increased need for stability at the cost of decreased plasticity for learning subsequent tasks. We additionally provide theoretical arguments supporting this interpretation by studying linear RNNs. Our study shows that established CL methods can be successfully ported to the recurrent case, and that a recent regularization approach based on hypernetworks outperforms weight-importance methods, thus emerging as a promising candidate for CL in RNNs. Overall, we provide insights on the differences between CL in feedforward networks and RNNs, while guiding towards effective solutions to tackle CL on sequential data.},
 archivePrefix = {arXiv},
 arxivId = {2006.12109},
 author = {Ehret, Benjamin and Henning, Christian and Cervera, Maria R and Meulemans, Alexander and von Oswald, Johannes and Grewe, Benjamin F},
@@ -546,7 +630,7 @@ journal = {arXiv},
 keywords = {[audio],[rnn]},
 mendeley-tags = {[audio],[rnn]},
 month = {jun},
-title = {{Continual Learning in Recurrent Neural Networks with Hypernetworks}},
+title = {{Continual Learning in Recurrent Neural Networks}},
 url = {http://arxiv.org/abs/2006.12109},
 year = {2020}
 }
@@ -1112,19 +1196,6 @@ title = {{Continual Learning in Practice}},
 url = {http://arxiv.org/abs/1903.05202},
 year = {2019}
 }
-@article{Lee2020a,
-author = {Lee, Cecilia S and Lee, Aaron Y},
-doi = {10.1016/S2589-7500(20)30102-3},
-issn = {25897500},
-journal = {The Lancet Digital Health},
-month = {jun},
-number = {6},
-pages = {e279--e281},
-title = {{Clinical applications of continual learning machine learning}},
-url = {https://linkinghub.elsevier.com/retrieve/pii/S2589750020301023},
-volume = {2},
-year = {2020}
-}
 @article{Kuzina2019a,
 abstract = {Variational Auto Encoders (VAE) are capable of generating realistic images, sounds and video sequences. From practitioners point of view, we are usually interested in solving problems where tasks are learned sequentially, in a way that avoids revisiting all previous data at each stage. We address this problem by introducing a conceptually simple and scalable end-to-end approach of incorporating past knowledge by learning prior directly from the data. We consider scalable boosting-like approximation for intractable theoretical optimal prior. We provide empirical studies on two commonly used benchmarks, namely MNIST and Fashion MNIST on disjoint sequential image generation tasks. For each dataset proposed method delivers the best results or comparable to SOTA, avoiding catastrophic forgetting in a fully automatic way.},
 archivePrefix = {arXiv},
@@ -1137,6 +1208,19 @@ mendeley-tags = {[bayes],[fashion],[mnist]},
 title = {{BooVAE: A scalable framework for continual VAE learning under boosting approach}},
 url = {http://arxiv.org/abs/1908.11853},
 year = {2019}
+}
+@article{Lee2020a,
+author = {Lee, Cecilia S and Lee, Aaron Y},
+doi = {10.1016/S2589-7500(20)30102-3},
+issn = {25897500},
+journal = {The Lancet Digital Health},
+month = {jun},
+number = {6},
+pages = {e279--e281},
+title = {{Clinical applications of continual learning machine learning}},
+url = {https://linkinghub.elsevier.com/retrieve/pii/S2589750020301023},
+volume = {2},
+year = {2020}
 }
 @inproceedings{Terekhov2015a,
 abstract = {Although deep neural networks (DNNs) have demonstrated impressive results during the last decade, they remain highly specialized tools, which are trained – often from scratch – to solve each particular task. The human brain, in contrast, significantly re-uses existing capacities when learning to solve new tasks. In the current study we explore a block-modular architecture for DNNs, which allows parts of the existing network to be re-used to solve a new task without a decrease in performance when solving the original task. We show that networks with such architectures can outperform networks trained from scratch, or perform comparably, while having to learn nearly 10 times fewer weights than the networks trained from scratch.},
@@ -1709,19 +1793,6 @@ title = {{Reconciling meta-learning and continual learning with online mixtures 
 url = {http://papers.nips.cc/paper/9112-reconciling-meta-learning-and-continual-learning-with-online-mixtures-of-tasks},
 year = {2019}
 }
-@article{finn2019a,
-abstract = {A central capability of intelligent systems is the ability to continuously build upon previous experiences to speed up and enhance learning of new tasks. Two distinct research paradigms have studied this question. Meta-learning views this problem as learning a prior over model parameters that is amenable for fast adaptation on a new task, but typically assumes the set of tasks are available together as a batch. In contrast, online (regret based) learning considers a sequential setting in which problems are revealed one after the other, but conventionally train only a single model without any task-specific adaptation. This work introduces an online meta-learning setting, which merges ideas from both the aforementioned paradigms to better capture the spirit and practice of continual lifelong learning. We propose the follow the meta leader (FTML) algorithm which extends the MAML algorithm to this setting. Theoretically, this work provides an O(log T) regret guarantee with one additional higher order smoothness assumption (in comparison to the standard online setting). Our experimental evaluation on three different large-scale tasks suggest that the proposed algorithm significantly outperforms alternatives based on traditional online learning approaches.},
-archivePrefix = {arXiv},
-arxivId = {1902.08438},
-author = {Finn, Chelsea and Rajeswaran, Aravind and Kakade, Sham and Levine, Sergey},
-eprint = {1902.08438},
-journal = {arXiv},
-keywords = {[cifar],[mnist]},
-mendeley-tags = {[cifar],[mnist]},
-title = {{Online meta-learning}},
-url = {https://arxiv.org/abs/1902.08438},
-year = {2019}
-}
 @article{vuorio2018a,
 abstract = {Using neural networks in practical settings would benefit from the ability of the networks to learn new tasks throughout their lifetimes without forgetting the previous tasks. This ability is limited in the current deep neural networks by a problem called catastrophic forgetting, where training on new tasks tends to severely degrade performance on previous tasks. One way to lessen the impact of the forgetting problem is to constrain parameters that are important to previous tasks to stay close to the optimal parameters. Recently, multiple competitive approaches for computing the importance of the parameters with respect to the previous tasks have been presented. In this paper, we propose a learning to optimize algorithm for mitigating catastrophic forgetting. Instead of trying to formulate a new constraint function ourselves, we propose to train another neural network to predict parameter update steps that respect the importance of parameters to the previous tasks. In the proposed meta-training scheme, the update predictor is trained to minimize loss on a combination of current and past tasks. We show experimentally that the proposed approach works in the continual learning setting.},
 archivePrefix = {arXiv},
@@ -2017,17 +2088,6 @@ title = {{A Progressive Model to Enable Continual Learning for Semantic Slot Fil
 url = {https://www.aclweb.org/anthology/D19-1126.pdf},
 year = {2019}
 }
-@article{Kiyasseh2020,
-abstract = {Deep learning algorithms are known to experience destructive interference when instances violate the assumption of being independent and identically distributed (i.i.d). This violation, however, is ubiquitous in clinical settings where data are streamed temporally and from a multitude of physiological sensors. To overcome this obstacle, we propose CLOPS, a healthcare-specific replay-based continual learning strategy. In three continual learning scenarios based on three publically-available datasets, we show that CLOPS can outperform its multi-task learning counterpart. Moreover, we propose end-to-end trainable parameters, which we term task-instance parameters, that can be used to quantify task difficulty and similarity. This quantification yields insights into both network interpretability and clinical applications, where task difficulty is poorly quantified.},
-archivePrefix = {arXiv},
-arxivId = {2004.09578},
-author = {Kiyasseh, Dani and Zhu, Tingting and Clifton, David A},
-eprint = {2004.09578},
-journal = {arXiv},
-title = {{CLOPS: Continual Learning of Physiological Signals}},
-url = {http://arxiv.org/abs/2004.09578},
-year = {2020}
-}
 @article{Saha2020a,
 abstract = {Humans are skilled at learning adaptively and efficiently throughout their lives, but learning tasks incrementally causes artificial neural networks to overwrite relevant information learned about older tasks, resulting in 'Catastrophic Forgetting'. Efforts to overcome this phenomenon suffer from poor utilization of resources in many ways, such as through the need to save older data or parametric importance scores, or to grow the network architecture. We propose an algorithm that enables a network to learn continually and efficiently by partitioning the representational space into a Core space, that contains the condensed information from previously learned tasks, and a Residual space, which is akin to a scratch space for learning the current task. The information in the Residual space is then compressed using Principal Component Analysis and added to the Core space, freeing up parameters for the next task. We evaluate our algorithm on P-MNIST, CIFAR-10 and CIFAR-100 datasets. We achieve comparable accuracy to state-of-the-art methods while overcoming the problem of catastrophic forgetting completely. Additionally, we get up to 4.5x improvement in energy efficiency during inference due to the structured nature of the resulting architecture.},
 archivePrefix = {arXiv},
@@ -2039,6 +2099,17 @@ keywords = {[cifar],[mnist]},
 mendeley-tags = {[cifar],[mnist]},
 title = {{Structured Compression and Sharing of Representational Space for Continual Learning}},
 url = {http://arxiv.org/abs/2001.08650},
+year = {2020}
+}
+@article{Kiyasseh2020,
+abstract = {Deep learning algorithms are known to experience destructive interference when instances violate the assumption of being independent and identically distributed (i.i.d). This violation, however, is ubiquitous in clinical settings where data are streamed temporally and from a multitude of physiological sensors. To overcome this obstacle, we propose CLOPS, a healthcare-specific replay-based continual learning strategy. In three continual learning scenarios based on three publically-available datasets, we show that CLOPS can outperform its multi-task learning counterpart. Moreover, we propose end-to-end trainable parameters, which we term task-instance parameters, that can be used to quantify task difficulty and similarity. This quantification yields insights into both network interpretability and clinical applications, where task difficulty is poorly quantified.},
+archivePrefix = {arXiv},
+arxivId = {2004.09578},
+author = {Kiyasseh, Dani and Zhu, Tingting and Clifton, David A},
+eprint = {2004.09578},
+journal = {arXiv},
+title = {{CLOPS: Continual Learning of Physiological Signals}},
+url = {http://arxiv.org/abs/2004.09578},
 year = {2020}
 }
 @inproceedings{Hayes2019b,
@@ -2703,7 +2774,7 @@ booktitle = {NIPS},
 keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,[cifar],[mnist],gem},
 mendeley-tags = {[cifar],[mnist]},
 title = {{Gradient Episodic Memory for Continual Learning}},
-url = {http://arxiv.org/abs/1706.08840},
+url = {https://arxiv.org/abs/1706.08840},
 year = {2017}
 }
 @inproceedings{Rebuffi2017a,

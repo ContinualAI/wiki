@@ -1,3 +1,16 @@
+@inproceedings{duncker2020a,
+abstract = {Biological systems face dynamic environments that require continual learning. It is not well understood how these systems balance the tension between flexibility for learning and robustness for memory of previous behaviors. Continual learning without catastrophic interference also remains a challenging problem in machine learning. Here, we develop a novel learning rule designed to minimize interference between sequentially learned tasks in recurrent networks. Our learning rule preserves network dynamics within activity-defined subspaces used for previously learned tasks. It encourages dynamics associated with new tasks that might otherwise interfere to instead explore orthogonal subspaces, and it allows for reuse of previously established dynamical motifs where possible. Employing a set of tasks used in neuroscience, we demonstrate that our approach successfully eliminates catastrophic interference and offers a substantial improvement over previous continual learning algorithms. Using dynamical systems analysis, we show that networks trained using our approach can reuse similar dynamical structures across similar tasks. This possibility for shared computation allows for faster learning during sequential training. Finally, we identify organizational differences that emerge when training tasks sequentially versus simultaneously.},
+annote = {The hidden state pre-activation and the input are projected during learning in a subspace orthogonal to all the ones of the previous tasks, if new task is dissimilar. Projection on orthogonal subspace avoid interference with previous knowledge.},
+author = {Duncker, Lea and Driscoll, Laura N and Shenoy, Krishna V and Sahani, Maneesh and Sussillo, David},
+booktitle = {Advances in Neural Information Processing Systems},
+file = {::},
+keywords = {[rnn]},
+mendeley-tags = {[rnn]},
+title = {{Organizing recurrent network dynamics by task-computation to enable continual learning}},
+url = {https://proceedings.neurips.cc/paper/2020/file/a576eafbce762079f7d1f77fca1c5cc2-Paper.pdf},
+volume = {33},
+year = {2020}
+}
 @article{delange2020c,
 abstract = {Attaining prototypical features to represent class distributions is well established in representation learning. However, learning prototypes online from streams of data proves a challenging endeavor as they rapidly become outdated, caused by an ever-changing parameter space in the learning process. Additionally, continual learning does not assume the data stream to be stationary, typically resulting in catastrophic forgetting of previous knowledge. As a first, we introduce a system addressing both problems, where prototypes evolve continually in a shared latent space, enabling learning and prediction at any point in time. In contrast to the major body of work in continual learning, data streams are processed in an online fashion, without additional task-information, and an efficient memory scheme provides robustness to imbalanced data streams. Besides nearest neighbor based prediction, learning is facilitated by a novel objective function, encouraging cluster density about the class prototype and increased inter-class variance. Furthermore, the latent space quality is elevated by pseudo-prototypes in each batch, constituted by replay of exemplars from memory. We generalize the existing paradigms in continual learning to incorporate data incremental learning from data streams by formalizing a two-agent learner-evaluator framework, and obtain state-of-the-art performance by a significant margin on eight benchmarks, including three highly imbalanced data streams.},
 archivePrefix = {arXiv},
@@ -28,7 +41,7 @@ url = {http://arxiv.org/abs/2010.00352},
 year = {2020}
 }
 @article{ehret2020a,
-abstract = {The last decade has seen a surge of interest in continual learning (CL), and a variety of methods have been developed to alleviate catastrophic forgetting. However, most prior work has focused on tasks with static data, while CL on sequential data has remained largely unexplored. Here we address this gap in two ways. First, we evaluate the performance of established CL methods when applied to recurrent neural networks (RNNs). We primarily focus on elastic weight consolidation, which is limited by a stability-plasticity trade-off, and explore the particularities of this trade-off when using sequential data. We show that high working memory requirements, but not necessarily sequence length, lead to an increased need for stability at the cost of decreased performance on subsequent tasks. Second, to overcome this limitation we employ a recent method based on hypernetworks and apply it to RNNs to address catastrophic forgetting on sequential data. By generating the weights of a main RNN in a task-dependent manner, our approach disentangles stability and plasticity, and outperforms alternative methods in a range of experiments. Overall, our work provides several key insights on the differences between CL in feedforward networks and in RNNs, while offering a novel solution to effectively tackle CL on sequential data.},
+abstract = {While a diverse collection of continual learning (CL) methods has been proposed to prevent catastrophic forgetting, a thorough investigation of their effectiveness for processing sequential data with recurrent neural networks (RNNs) is lacking. Here, we provide the first comprehensive evaluation of established CL methods on a variety of sequential data benchmarks. Specifically, we shed light on the particularities that arise when applying weight-importance methods, such as elastic weight consolidation, to RNNs. In contrast to feedforward networks, RNNs iteratively reuse a shared set of weights and require working memory to process input samples. We show that the performance of weight-importance methods is not directly affected by the length of the processed sequences, but rather by high working memory requirements, which lead to an increased need for stability at the cost of decreased plasticity for learning subsequent tasks. We additionally provide theoretical arguments supporting this interpretation by studying linear RNNs. Our study shows that established CL methods can be successfully ported to the recurrent case, and that a recent regularization approach based on hypernetworks outperforms weight-importance methods, thus emerging as a promising candidate for CL in RNNs. Overall, we provide insights on the differences between CL in feedforward networks and RNNs, while guiding towards effective solutions to tackle CL on sequential data.},
 archivePrefix = {arXiv},
 arxivId = {2006.12109},
 author = {Ehret, Benjamin and Henning, Christian and Cervera, Maria R and Meulemans, Alexander and von Oswald, Johannes and Grewe, Benjamin F},
@@ -38,7 +51,7 @@ journal = {arXiv},
 keywords = {[audio],[rnn]},
 mendeley-tags = {[audio],[rnn]},
 month = {jun},
-title = {{Continual Learning in Recurrent Neural Networks with Hypernetworks}},
+title = {{Continual Learning in Recurrent Neural Networks}},
 url = {http://arxiv.org/abs/2006.12109},
 year = {2020}
 }
@@ -104,18 +117,6 @@ title = {{Task-Free Continual Learning}},
 url = {https://openaccess.thecvf.com/content{\_}CVPR{\_}2019/papers/Aljundi{\_}Task-Free{\_}Continual{\_}Learning{\_}CVPR{\_}2019{\_}paper.pdf},
 year = {2019}
 }
-@inproceedings{Lopez-Paz2017a,
-abstract = {One major obstacle towards AI is the poor ability of models to solve new problems quicker, and without forgetting previously acquired knowledge. To better understand this issue, we study the problem of continual learning, where the model observes, once and one by one, examples concerning a sequence of tasks. First, we propose a set of metrics to evaluate models learning over a continuum of data. These metrics characterize models not only by their test accuracy, but also in terms of their ability to transfer knowledge across tasks. Second, we propose a model for continual learning, called Gradient Episodic Memory (GEM) that alleviates forgetting, while allowing beneficial transfer of knowledge to previous tasks. Our experiments on variants of the MNIST and CIFAR-100 datasets demonstrate the strong performance of GEM when compared to the state-of-the-art.},
-annote = {Comment: Published at NIPS 2017
-arXiv: 1706.08840},
-author = {Lopez-Paz, David and Ranzato, Marc'Aurelio},
-booktitle = {NIPS},
-keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,[cifar],[mnist],gem},
-mendeley-tags = {[cifar],[mnist]},
-title = {{Gradient Episodic Memory for Continual Learning}},
-url = {http://arxiv.org/abs/1706.08840},
-year = {2017}
-}
 @inproceedings{Chaudhry2019a,
 abstract = {In lifelong learning, the learner is presented with a sequence of tasks, incrementally building a data-driven prior which may be leveraged to speed up learning of a new task. In this work, we investigate the efficiency of current lifelong approaches, in terms of sample complexity, computational and memory cost. Towards this end, we first introduce a new and a more realistic evaluation protocol, whereby learners observe each example only once and hyper-parameter selection is done on a small and disjoint set of tasks, which is not used for the actual learning experience and evaluation. Second, we introduce a new metric measuring how quickly a learner acquires a new skill. Third, we propose an improved version of GEM (Lopez-Paz {\&} Ranzato, 2017), dubbed Averaged GEM (A-GEM), which enjoys the same or even better performance as GEM, while being almost as computationally and memory efficient as EWC (Kirkpatrick et al., 2016) and other regularization-based methods. Finally, we show that all algorithms including A-GEM can learn even more quickly if they are provided with task descriptors specifying the classification tasks under consideration. Our experiments on several standard lifelong learning benchmarks demonstrate that A-GEM has the best trade-off between accuracy and efficiency.},
 annote = {Comment: Published as a conference paper at ICLR 2019
@@ -128,6 +129,18 @@ mendeley-tags = {[cifar],[mnist]},
 title = {{Efficient Lifelong Learning with A-GEM}},
 url = {http://arxiv.org/abs/1812.00420},
 year = {2019}
+}
+@inproceedings{Lopez-Paz2017a,
+abstract = {One major obstacle towards AI is the poor ability of models to solve new problems quicker, and without forgetting previously acquired knowledge. To better understand this issue, we study the problem of continual learning, where the model observes, once and one by one, examples concerning a sequence of tasks. First, we propose a set of metrics to evaluate models learning over a continuum of data. These metrics characterize models not only by their test accuracy, but also in terms of their ability to transfer knowledge across tasks. Second, we propose a model for continual learning, called Gradient Episodic Memory (GEM) that alleviates forgetting, while allowing beneficial transfer of knowledge to previous tasks. Our experiments on variants of the MNIST and CIFAR-100 datasets demonstrate the strong performance of GEM when compared to the state-of-the-art.},
+annote = {Comment: Published at NIPS 2017
+arXiv: 1706.08840},
+author = {Lopez-Paz, David and Ranzato, Marc'Aurelio},
+booktitle = {NIPS},
+keywords = {Computer Science - Artificial Intelligence,Computer Science - Machine Learning,[cifar],[mnist],gem},
+mendeley-tags = {[cifar],[mnist]},
+title = {{Gradient Episodic Memory for Continual Learning}},
+url = {https://arxiv.org/abs/1706.08840},
+year = {2017}
 }
 @inproceedings{Rebuffi2017a,
 author = {Rebuffi, Sylvestre-Alvise and Kolesnikov, Alexander and Sperl, Georg and Lampert, Christoph H},
