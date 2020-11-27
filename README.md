@@ -17,7 +17,7 @@ Below, you can find instructions on **how to contribute to the wiki**!
 ---------------------------------------------------
 
 ## Add a new paper to the Research section
-ContinualAI wiki provides a [Research section](https://wiki.continualai.org/research.html) with a curated list of annotated papers. The list is maintained through a Mendeley group. You can join the group and help us keeping it updated (see next section).  
+ContinualAI wiki provides a [Research section](https://wiki.continualai.org/research.html) with a curated list of annotated papers. The list is maintained through a Zotero group. You can join the group and help us keeping it updated (see next section).  
 
 If you don't want to join the group, you can simply open a Github issue to suggest us a new paper (or even more than one). We will take care of adding it to the wiki as soon as possible. 
 
@@ -26,36 +26,35 @@ If you don't want to join the group, you can simply open a Github issue to sugge
 2. Attach your bib file containing the paper you want to include in the wiki. If you don't have a bib file, just provide us with the link to the paper. The link should point to a location where paper metadata can be appropriately retrieved by common reference managers.
 
 
-## Join the ContinualAI Mendeley group
+## Join the ContinualAI Zotero group
 
 You can give your contribution to the group by **adding new papers** or by helping **annotating the existing ones**.
 
-1. Join our [Mendeley group](https://www.mendeley.com/community/continual-learning-papers/)
+1. Join our [Zotero group](https://www.zotero.org/groups/2623909/continual_learning_papers/)
 
 2. To **add a new paper**
 
-	2.1. Add it to the group folder which best represents the paper contribution. Read some advices below if you are uncertain on this. You can add the paper from your library or directly from the paper webpage through the Mendeley plugin. 
-
-	2.2 Through the Mendeley Desktop app, fill in the `Citation Key` field in the paper details. This must be in the form `[lastname][year][a]` (e.g. `smith2019a`) where `a` has to be replaced with the first available letter in order to make the citation unique. You can look for existing Citation Keys through the Mendeley search bar.
-	*If you can't find the `Citation Key` field, enable it in `Tools -> Options -> Document Details` menu.*
+	2.1. Add it to the group folder which best represents the paper contribution. Read some advices below if you are uncertain on this. You can add the paper from your library or directly from the paper webpage through the Zotero web browser plugin. 
     
-    2.3 Make sure that at least `title`, `authors`, `year`, `publication type` and `venue` are specified.
+    2.2 Make sure that at least `title`, `authors`, `item type` and `publication` are specified. The `year` must be put inside `date` field.
+    
+    2.3 Also put a link to the paper in the `url` field. 
 
 3. To **annotate** an existing paper
 
 	3.1. Check the list of existing tags in `tags.csv` file. If you want to add a new tag, please add it in there and submit a Pull Request (see `Contribute to the wiki` section).
 
-	3.2. Add your tags in the `Tags` field of paper details. Please, remember to write the tag in square brackets e.g. `[mytag]`
+	3.2. Add your tags in the `Tags` tab of Zotero. Please, remember to write the tag in square brackets e.g. `[mytag]`
 
-	3.3. Add your notes in the `Notes` tab 
+	3.3. Add your notes in the `Notes` tab of Zotero.
 
 Wiki admins will periodically export the bibtex to keep the list updated. In case we forgot, join the [ContinualAI Slack](https://continualai.herokuapp.com/) and complain about our behavior in the `#wiki` channel.
 
-#### Advices to add new papers in Mendeley
+#### Advices to add new papers in Zotero
 
-* Check if the paper already exist by using the `Citation Key` or the title in Mendeley search bar.
+* Check if the paper already exist by using the `Citation Key` or the title in Zotero search bar.
 
-* Don't forget to add the publication venue (Journal, Proceedings...). Use `Journal = arXiv` if the paper is a preprint.
+* Don't forget to add the publication venue (Journal, Proceedings...). Use `publication = arXiv` if the paper is a preprint.
 
 * CLAI Wiki uses a system based on categories. This can sometimes be limiting. In general, please consider to add the paper in the category which you consider the most relevant one. You can add the paper in at most **2** categories, if you believe that both are equally relevant.
 
