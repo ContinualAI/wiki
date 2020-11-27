@@ -371,9 +371,9 @@ for i, bibfile in enumerate(bib_files):
         # print(item)
 
         str2injcet_tags = ""
-        if "mendeley-tags" in item.keys():
+        if "keywords" in item.keys():
             # print(item["mendeley-tags"])
-            str_tags = item["mendeley-tags"].replace(";", "").replace("[", "")
+            str_tags = item["keywords"].replace(";", "").replace("[", "")
             str_tags = str_tags.replace(",", "")
             cur_tags = str_tags.replace(" ", "").split("]")
             del cur_tags[-1]
