@@ -19,6 +19,8 @@ Datasets and Benchmarks
 
 - `CORe50 benchmark <https://github.com/vlomonaco/core50>`_: Continual Learning benchmark for object recognition and robotics.
 - `OpenLORIS-Object <https://lifelong-robotic-vision.github.io/dataset/Data_Object-Recognition.html>`_: A Dataset and Benchmark towards Lifelong Object Recognition
+- `Stream-51 <https://tyler-hayes.github.io/stream51>`_: Streaming Classification and Novelty Detection from Videos
+- `CRIB <https://iolfcv.github.io/>`_:  Synthetic, incremental object learning environment that can produce data that models visual imagery produced by object exploration in early infancy
 - `Visual Domain Decathlon <https://www.robots.ox.ac.uk/~vgg/decathlon/>`_: Ten image classification problems representative of very different visual domains.
 - `iCubWord Transformation <https://robotology.github.io/iCubWorld/#icubworld-transformations-modal>`_: a Dataset for Continual Learning and Robotics.
 - `Omniglot <https://github.com/brendenlake/omniglot>`_: A dataset for few shot, meta-learning and continual learning.
