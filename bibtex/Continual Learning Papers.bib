@@ -935,7 +935,7 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
 
 @inproceedings{hawkins2019,
   title = {Continual Adaptation for Efficient Machine Communication},
-  booktitle = {Proceedings of the {{ICML Workshop}} on {{Adaptive}} \{\$\textbackslash backslash\$\&\} {{Multitask Learning}}: {{Algorithms}} \{\$\textbackslash backslash\$\&\} {{Systems}}},
+  booktitle = {Proceedings of the {{ICML Workshop}} on {{Adaptive}} \& {{Multitask Learning}}: {{Algorithms}} \& {{Systems}}},
   author = {Hawkins, Robert D and Kwon, Minae and Sadigh, Dorsa and Goodman, Noah D},
   year = {2019},
   url = {http://arxiv.org/abs/1911.09896},
@@ -1226,6 +1226,18 @@ arXiv: 1612.00796},
   note = {arXiv: 2004.03340}
 }
 
+@inproceedings{kurle2020,
+  title = {Continual {{Learning}} with {{Bayesian Neural Networks}} for {{Non}}-{{Stationary Data}}},
+  booktitle = {Eighth {{International Conference}} on {{Learning Representations}}},
+  author = {Kurle, Richard and Cseke, Botond and Klushyn, Alexej and van der Smagt, Patrick and G{\"u}nnemann, Stephan},
+  year = {2020},
+  url = {https://iclr.cc/virtual_2020/poster_SJlsFpVtDB.html},
+  urldate = {2021-01-01},
+  abstract = {This work addresses continual learning for non-stationary data, using Bayesian neural networks and memory-based online variational Bayes. We represent the posterior approximation of the network weights by a diagonal Gaussian distribution and a complementary memory of raw data. This raw data corresponds to likelihood terms that cannot be well approximated by the Gaussian. We introduce a novel method for sequentially updating both components of the posterior approximation. Furthermore, we propose Bayesian forgetting and a Gaussian diffusion process for adapting to non-stationary data. The experimental results show that our update method improves on existing approaches for streaming data. Additionally, the adaptation methods lead to better predictive performance for non-stationary data.},
+  keywords = {[bayes]},
+  language = {en}
+}
+
 @article{kuzina2019,
   title = {{{BooVAE}}: {{A}} Scalable Framework for Continual {{VAE}} Learning under Boosting Approach},
   author = {Kuzina, Anna and Egorov, Evgenii and Burnaev, Evgeny},
@@ -1416,6 +1428,18 @@ arXiv: 1612.00796},
   journal = {arXiv},
   keywords = {[cifar],[experimental],[mnist]},
   note = {The paper introduces Energy-Based models for classification in single incremental task + new classes (i.e. class incremental) scenarios. The model does not require task labels at test time, nor task boundaries at training time. It does not make use of replay.}
+}
+
+@inproceedings{li2020b,
+  title = {Compositional {{Language Continual Learning}}},
+  booktitle = {Eighth {{International Conference}} on {{Learning Representations}}},
+  author = {Li, Yuanpeng and Zhao, Liang and Church, Kenneth and Elhoseiny, Mohamed},
+  year = {2020},
+  url = {https://iclr.cc/virtual_2020/poster_rklnDgHtDS.html},
+  urldate = {2021-01-01},
+  abstract = {Motivated by the human's ability to continually learn and gain knowledge over time, several research efforts have been pushing the limits of machines to constantly learn while alleviating catastrophic forgetting. Most of the existing methods have been focusing on continual learning of label prediction tasks, which have fixed input and output sizes. In this paper, we propose a new scenario of continual learning which handles sequence-to-sequence tasks common in language learning. We further propose an approach to use label prediction continual learning algorithm for sequence-to-sequence continual learning by leveraging compositionality. Experimental results show that the proposed method has significant improvement over state-of-the-art methods. It enables knowledge transfer and prevents catastrophic forgetting, resulting in more than 85\% accuracy up to 100 stages, compared with less than 50\% accuracy for baselines in instruction learning task. It also shows significant improvement in machine translation task. This is the first work to combine continual learning and compositionality for language learning, and we hope this work will make machines more helpful in various tasks.},
+  keywords = {[nlp],[rnn]},
+  language = {en}
 }
 
 @article{liu2017,
@@ -2610,6 +2634,21 @@ The authors rely on a separate feedforward network (column) for each task the mo
   isbn = {1111111111},
   journal = {PLoS ONE},
   number = {11}
+}
+
+@article{veniat2020,
+  title = {Efficient {{Continual Learning}} with {{Modular Networks}} and {{Task}}-{{Driven Priors}}},
+  author = {Veniat, Tom and Denoyer, Ludovic and Ranzato, Marc'Aurelio},
+  year = {2020},
+  url = {http://arxiv.org/abs/2012.12631},
+  urldate = {2020-12-29},
+  abstract = {Existing literature in Continual Learning (CL) has focused on overcoming catastrophic forgetting, the inability of the learner to recall how to perform tasks observed in the past. There are however other desirable properties of a CL system, such as the ability to transfer knowledge from previous tasks and to scale memory and compute sub-linearly with the number of tasks. Since most current benchmarks focus only on forgetting using short streams of tasks, we first propose a new suite of benchmarks to probe CL algorithms across these new axes. Finally, we introduce a new modular architecture, whose modules represent atomic skills that can be composed to perform a certain task. Learning a task reduces to figuring out which past modules to re-use, and which new modules to instantiate to solve the current task. Our learning algorithm leverages a task-driven prior over the exponential search space of all possible ways to combine modules, enabling efficient learning on long streams of tasks. Our experiments show that this modular architecture and learning algorithm perform competitively on widely used CL benchmarks while yielding superior performance on the more challenging benchmarks we introduce in this work.},
+  archivePrefix = {arXiv},
+  eprint = {2012.12631},
+  eprinttype = {arxiv},
+  journal = {arXiv},
+  keywords = {[experimental],Computer Science - Machine Learning},
+  note = {This paper introduces a new benchmark for CL and evaluate a newly proposed model on different types of task streams. The model is a modular network with a data-driven prior to choose among modules. It uses task labels both at training and test time.}
 }
 
 @inproceedings{vonoswald2020,
