@@ -241,6 +241,21 @@ The authors rely on a separate feedforward network (column) for each task the mo
   abstract = {We present a neurosymbolic framework for the lifelong learning of algorithmic tasks that mix perception and procedural reasoning. Reusing high-level concepts across domains and learning complex procedures are key challenges in lifelong learning. We show that a program synthesis approach that combines gradient descent with combinatorial search over programs can be a more effective response to these challenges than purely neural methods. Our framework, called HOUDINI, represents neural networks as strongly typed, differentiable functional programs that use symbolic higher-order combinators to compose a library of neural functions. Our learning algorithm consists of: (1) a symbolic program synthesizer that performs a type-directed search over parameterized programs, and decides on the library functions to reuse, and the architectures to combine them, while learning a sequence of tasks; and (2) a neural module that trains these programs using stochas-tic gradient descent. We evaluate HOUDINI on three benchmarks that combine perception with the algorithmic tasks of counting, summing, and shortest-path computation. Our experiments show that HOUDINI transfers high-level concepts more effectively than traditional transfer learning and progressive neural networks, and that the typed representation of networks significantly accelerates the search.}
 }
 
+@article{veniat2020,
+  title = {Efficient {{Continual Learning}} with {{Modular Networks}} and {{Task}}-{{Driven Priors}}},
+  author = {Veniat, Tom and Denoyer, Ludovic and Ranzato, Marc'Aurelio},
+  year = {2020},
+  url = {http://arxiv.org/abs/2012.12631},
+  urldate = {2020-12-29},
+  abstract = {Existing literature in Continual Learning (CL) has focused on overcoming catastrophic forgetting, the inability of the learner to recall how to perform tasks observed in the past. There are however other desirable properties of a CL system, such as the ability to transfer knowledge from previous tasks and to scale memory and compute sub-linearly with the number of tasks. Since most current benchmarks focus only on forgetting using short streams of tasks, we first propose a new suite of benchmarks to probe CL algorithms across these new axes. Finally, we introduce a new modular architecture, whose modules represent atomic skills that can be composed to perform a certain task. Learning a task reduces to figuring out which past modules to re-use, and which new modules to instantiate to solve the current task. Our learning algorithm leverages a task-driven prior over the exponential search space of all possible ways to combine modules, enabling efficient learning on long streams of tasks. Our experiments show that this modular architecture and learning algorithm perform competitively on widely used CL benchmarks while yielding superior performance on the more challenging benchmarks we introduce in this work.},
+  archivePrefix = {arXiv},
+  eprint = {2012.12631},
+  eprinttype = {arxiv},
+  journal = {arXiv},
+  keywords = {[experimental],Computer Science - Machine Learning},
+  note = {This paper introduces a new benchmark for CL and evaluate a newly proposed model on different types of task streams. The model is a modular network with a data-driven prior to choose among modules. It uses task labels both at training and test time.}
+}
+
 @inproceedings{xu2018,
   title = {Reinforced Continual Learning},
   booktitle = {Advances in {{Neural Information Processing Systems}}},
