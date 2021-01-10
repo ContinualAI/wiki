@@ -38,13 +38,15 @@
   keywords = {[core50]}
 }
 
-@article{maltoni2018,
+@article{maltoni2019,
   title = {Continuous {{Learning}} in {{Single}}-{{Incremental}}-{{Task Scenarios}}},
   author = {Maltoni, Davide and Lomonaco, Vincenzo},
-  year = {2018},
+  year = {2019},
+  volume = {116},
+  pages = {56--73},
   url = {http://arxiv.org/abs/1806.08568},
   abstract = {It was recently shown that architectural, regularization and rehearsal strategies can be used to train deep models sequentially on a number of disjoint tasks without forgetting previously acquired knowledge. However, these strategies are still unsatisfactory if the tasks are not disjoint but constitute a single incremental task (e.g., class-incremental learning). In this paper we point out the differences between multi-task and single-incremental-task scenarios and show that well-known approaches such as LWF, EWC and SI are not ideal for incremental task scenarios. A new approach, denoted as AR1, combining architectural and regularization strategies is then specifically proposed. AR1 overhead (in terms of memory and computation) is very small thus making it suitable for online learning. When tested on CORe50 and iCIFAR-100, AR1 outperformed existing regularization strategies by a good margin.},
-  journal = {arXiv},
+  journal = {Neural Networks},
   keywords = {[core50],[framework],Computer Science - Artificial Intelligence,Computer Science - Computer Vision and Pattern Rec,Computer Science - Machine Learning,Computer Science - Neural and Evolutionary Computi,Continuous learning,Deep learning,ewc,Incremental class learning,incremental task,Lifelong learning,Object recognition,review,Single-incremental-task,Statistics - Machine Learning},
   language = {en},
   note = {Comment: 26 pages, 13 figures; v3: major revision (e.g. added Sec. 4.4), several typos and minor mistakes corrected arXiv: 1806.08568}
@@ -75,6 +77,23 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   abstract = {We introduce a conceptually simple and scalable framework for continual learning domains where tasks are learned sequentially. Our method is constant in the number of parameters and is designed to ...},
   keywords = {[vision],ewc,normalized ewc,online ewc},
   language = {en}
+}
+
+@article{sodhani2019,
+  title = {Toward {{Training Recurrent Neural Networks}} for {{Lifelong Learning}}},
+  author = {Sodhani, Shagun and Chandar, Sarath and Bengio, Yoshua},
+  year = {2019},
+  volume = {32},
+  pages = {1--35},
+  publisher = {{MIT Press}},
+  issn = {0899-7667},
+  doi = {10.1162/neco_a_01246},
+  url = {https://doi.org/10.1162/neco_a_01246},
+  urldate = {2021-01-06},
+  abstract = {Catastrophic forgetting and capacity saturation are the central challenges of any parametric lifelong learning system. In this work, we study these challenges in the context of sequential supervised learning with an emphasis on recurrent neural networks. To evaluate the models in the lifelong learning setting, we propose a curriculum-based, simple, and intuitive benchmark where the models are trained on tasks with increasing levels of difficulty. To measure the impact of catastrophic forgetting, the model is tested on all the previous tasks as it completes any task. As a step toward developing true lifelong learning systems, we unify gradient episodic memory (a catastrophic forgetting alleviation approach) and Net2Net (a capacity expansion approach). Both models are proposed in the context of feedforward networks, and we evaluate the feasibility of using them for recurrent networks. Evaluation on the proposed benchmark shows that the unified model is more suitable than the constituent models for lifelong learning setting.},
+  journal = {Neural Computation},
+  keywords = {[rnn]},
+  number = {1}
 }
 
 @article{wang2019,
