@@ -16,3 +16,9 @@ Tutorials
   - `[Notebook] Open-Source Frameworks for Deep Learning: an Overview <https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_dl_frameworks.ipynb>`_
   - `[Notebook] A Gentle Introduction to Continual Learning in PyTorch <https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_continual_learning.ipynb>`_
   - `[Notebook] A simple Example of Continual Learning with Generative Replay <https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_generative_replay.ipynb>`_
+
+Courses
+================================
+
+- | `Continual Learning: Towards Broad AI <https://sites.google.com/view/ift6760-b2021/course-description?authuser=0>`_
+  | Mila course [Instructor: Irina Rish; Teaching Assistants: Mojtaba Faramarzi and Touraj Laleh]
