@@ -21,4 +21,4 @@ Courses
 ================================
 
 - | `Continual Learning: Towards Broad AI <https://sites.google.com/view/ift6760-b2021/course-description?authuser=0>`_
-  | Mila course [Instructor: Irina Rish; Teaching Assistants: Mojtaba Faramarzi and Touraj Laleh]
+  | Course @ Mila [Instructor: Irina Rish; Teaching Assistants: Mojtaba Faramarzi and Touraj Laleh]
