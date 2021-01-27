@@ -1,7 +1,7 @@
 Software and Data
 ================================
 
-One of the most important objective of the Continual AI project is to provide an easy access to Continual Learning both in terms of didactic materials and open software/datasets for business/research. In this page we will try to collect every open-source project related to Continual Learning.
+One of the most important objectives of the Continual AI project is to provide easy access to Continual Learning both in terms of didactic materials and open software/datasets for business/research. In this page we will try to collect every open-source project related to Continual Learning.
 
 Software
 --------------------------------
@@ -25,5 +25,3 @@ Datasets and Benchmarks
 - `iCubWord Transformation <https://robotology.github.io/iCubWorld/#icubworld-transformations-modal>`_: a Dataset for Continual Learning and Robotics.
 - `Omniglot <https://github.com/brendenlake/omniglot>`_: A dataset for few shot, meta-learning and continual learning.
 - `NICO <https://www.dropbox.com/sh/8mouawi5guaupyb/AAD4fdySrA6fn3PgSmhKwFgva>`_: Towards Non-i.i.d. Image Classification.
-
-
