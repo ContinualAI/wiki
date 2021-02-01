@@ -25,3 +25,7 @@ Courses
 
 - | `Continual Learning: Towards Broad AI <https://sites.google.com/view/ift6760-b2021/course-description?authuser=0>`_
   | Course @ Mila [Instructor: Irina Rish; Teaching Assistants: Mojtaba Faramarzi and Touraj Laleh]
+
+- | `CPE884 - Aprendizado de Máquina Continuado <http://www.pee.ufrj.br/index.php/en/informacoes-academicas/disciplinas>`_
+  |
+
