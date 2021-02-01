@@ -3,6 +3,7 @@ Media Articles
 
 While not yet in its peak of media attention, Continual Learning has repeatedly appeared in multiple sources. In this page we try to cover the most relevant press articles on the subject.
 
+- `Machine learning is going real-time <https://huyenchip.com/2020/12/27/real-time-machine-learning.html>`_
 - `Lifelong Learning with Bayesian networks <https://argmax.ai/blog/lll/>`_
 - `Continuum: A Data Loader for Continual Learning <https://medium.com/continual-ai/continuum-a-data-loader-for-continual-learning-bb45ce9ef0ef>`_
 - `Why Continual Learning is the key towards Machine Intelligence <https://medium.com/@vlomonaco/why-continuous-learning-is-the-key-towards-machine-intelligence-1851cb57c308>`_
