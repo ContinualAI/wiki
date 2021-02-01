@@ -13,7 +13,7 @@ The aim of **ContinualAI Wiki** is to create an open-source, collaborative wiki 
    research
    industry
    software_and_data
-   tutorials
+   tutorials_and_courses
    news_and_media
    about_us
 
