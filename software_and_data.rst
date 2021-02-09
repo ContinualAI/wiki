@@ -1,4 +1,4 @@
-Software and Data
+Software and Benchmarks
 ================================
 
 One of the most important objectives of the Continual AI project is to provide easy access to Continual Learning both in terms of didactic materials and open software/datasets for business/research. In this page we will try to collect every open-source project related to Continual Learning.
