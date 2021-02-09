@@ -1,5 +1,8 @@
-Tutorials
+Tutorials and Courses
 ================================
+
+Tutorials 
+--------------------------------
 
 - | `Continual Learning with Neural Networks <https://docs.google.com/presentation/d/1Ukatz11S8sjC40VH293uY91rC3wQLPxiT0R-lOpju7k/edit?usp=sharing>`_
   | Tutorial @ INNS Big Data and Deep Learning 2019 [German I. Parisi and Vincenzo Lomonaco]
@@ -18,7 +21,11 @@ Tutorials
   - `[Notebook] A simple Example of Continual Learning with Generative Replay <https://github.com/ContinualAI/colab/blob/master/notebooks/intro_to_generative_replay.ipynb>`_
 
 Courses
-================================
+--------------------------------
 
 - | `Continual Learning: Towards Broad AI <https://sites.google.com/view/ift6760-b2021/course-description?authuser=0>`_
   | Course @ Mila [Instructor: Irina Rish; Teaching Assistants: Mojtaba Faramarzi and Touraj Laleh]
+
+- | `CPE884 - Aprendizado de Máquina Continuado <http://www.pee.ufrj.br/index.php/en/informacoes-academicas/disciplinas>`_
+  |
+
