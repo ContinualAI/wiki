@@ -16,5 +16,5 @@ The aim of **ContinualAI Wiki** is to create an open-source, collaborative wiki 
    tutorials_and_courses
    news_and_media
    about_us
-   GitHub <https://github.com/ContinualAI>
+   GitHub <https://github.com/ContinualAI/wiki>
 
