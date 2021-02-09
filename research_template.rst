@@ -27,6 +27,7 @@ to add a reference to your paper! Please, remember to follow the (very simple) `
 
 Conference Workshops
 ----------------------------------
+- `WMT20 Lifelong Learning for Machine Translation Shared Task <http://www.statmt.org/wmt20/lifelong-learning-task.html>`_
 - `Ro-man 2020 Workshop on Lifelong Learning for Long-term Human-Robot Interaction (LL4LHRI) <https://sites.google.com/view/ll4lhri2020/objectives-and-challenges>`_
 - `ICML 2020 Workshop on Lifelong Learning <https://lifelongml.github.io/>`_
 - `CVPR 2020 Workshop on Continual Learning in Computer Vision <https://sites.google.com/view/clvision2020>`_
