@@ -10,6 +10,20 @@
   keywords = {[nlp]}
 }
 
+@inproceedings{barrault2020,
+  title = {Findings of the {{First Shared Task}} on {{Lifelong Learning Machine Translation}}},
+  booktitle = {Proceedings of the {{Fifth Conference}} on {{Machine Translation}}},
+  author = {Barrault, Lo{\"i}c and Biesialska, Magdalena and {Costa-juss{\`a}}, Marta R. and Bougares, Fethi and Galibert, Olivier},
+  year = {2020},
+  pages = {56--64},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Online}},
+  url = {https://www.aclweb.org/anthology/2020.wmt-1.2},
+  urldate = {2021-02-03},
+  abstract = {A lifelong learning system can adapt to new data without forgetting previously acquired knowledge. In this paper, we introduce the first benchmark for lifelong learning machine translation. For this purpose, we provide training, lifelong and test data sets for two language pairs: English-German and English-French. Additionally, we report the results of our baseline systems, which we make available to the public. The goal of this shared task is to encourage research on the emerging topic of lifelong learning machine translation.},
+  keywords = {[framework],[nlp],Active Learning,Continual Learning,Lifelong Learning,workshop}
+}
+
 @article{baweja2018,
   title = {Towards Continual Learning in Medical Imaging},
   author = {Baweja, Chaitanya and Glocker, Ben and Kamnitsas, Konstantinos},
@@ -114,17 +128,6 @@
   journal = {arXiv}
 }
 
-@article{kruszewski2020,
-  title = {Class-{{Agnostic Continual Learning}} of {{Alternating Languages}} and {{Domains}}},
-  author = {Kruszewski, Germ{\'a}n and Sorodoc, Ionut-Teodor and Mikolov, Tomas},
-  year = {2020},
-  url = {http://arxiv.org/abs/2004.03340},
-  abstract = {Continual Learning has been often framed as the problem of training a model in a sequence of tasks. In this regard, Neural Networks have been attested to forget the solutions to previous task as they learn new ones. Yet, modelling human life-long learning does not necessarily require any crisp notion of tasks. In this work, we propose a benchmark based on language modelling in a multilingual and multidomain setting that prescinds of any explicit delimitation of training examples into distinct tasks, and propose metrics to study continual learning and catastrophic forgetting in this setting. Then, we introduce a simple Product of Experts learning system that performs strongly on this problem while displaying interesting properties, and investigate its merits for avoiding forgetting.},
-  journal = {arXiv},
-  keywords = {[nlp],[rnn],Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning,expert,mixture},
-  note = {arXiv: 2004.03340}
-}
-
 @article{lee2018,
   title = {Toward {{Continual Learning}} for {{Conversational Agents}}},
   author = {Lee, Sungjin},
@@ -179,7 +182,7 @@
   url = {http://arxiv.org/abs/2007.01189},
   urldate = {2021-01-08},
   abstract = {Elastic Weight Consolidation (EWC) is a technique used in overcoming catastrophic forgetting between successive tasks trained on a neural network. We use this phenomenon of information sharing between tasks for domain adaptation. Training data for tasks such as sentiment analysis (SA) may not be fairly represented across multiple domains. Domain Adaptation (DA) aims to build algorithms that leverage information from source domains to facilitate performance on an unseen target domain. We propose a model-independent framework - Sequential Domain Adaptation (SDA). SDA draws on EWC for training on successive source domains to move towards a general domain solution, thereby solving the problem of domain adaptation. We test SDA on convolutional, recurrent, and attention-based architectures. Our experiments show that the proposed framework enables simple architectures such as CNNs to outperform complex state-of-the-art models in domain adaptation of SA. In addition, we observe that the effectiveness of a harder first Anti-Curriculum ordering of source domains leads to maximum performance.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {2007.01189},
   eprinttype = {arxiv},
   journal = {arXiv},
@@ -221,7 +224,7 @@
   url = {http://arxiv.org/abs/1911.04489},
   urldate = {2021-01-08},
   abstract = {LSTMs promise much to financial time-series analysis, temporal and cross-sectional inference, but we find that they do not deliver in a real-world financial management task. We examine an alternative called Continual Learning (CL), a memory-augmented approach, which can provide transparent explanations, i.e. which memory did what and when. This work has implications for many financial applications including credit, time-varying fairness in decision making and more. We make three important new observations. Firstly, as well as being more explainable, time-series CL approaches outperform LSTMs as well as a simple sliding window learner using feed-forward neural networks (FFNN). Secondly, we show that CL based on a sliding window learner (FFNN) is more effective than CL based on a sequential learner (LSTM). Thirdly, we examine how real-world, time-series noise impacts several similarity approaches used in CL memory addressing. We provide these insights using an approach called Continual Learning Augmentation (CLA) tested on a complex real-world problem, emerging market equities investment decision making. CLA provides a test-bed as it can be based on different types of time-series learners, allowing testing of LSTM and FFNN learners side by side. CLA is also used to test several distance approaches used in a memory recall-gate: Euclidean distance (ED), dynamic time warping (DTW), auto-encoders (AE) and a novel hybrid approach, warp-AE. We find that ED under-performs DTW and AE but warp-AE shows the best overall performance in a real-world financial task.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {1911.04489},
   eprinttype = {arxiv},
   journal = {arXiv},
@@ -253,17 +256,6 @@
   urldate = {2021-01-08},
   abstract = {Continued training is an effective method for domain adaptation in neural machine translation. However, in-domain gains from adaptation come at the expense of general-domain performance. In this work, we interpret the drop in general-domain performance as catastrophic forgetting of general-domain knowledge. To mitigate it, we adapt Elastic Weight Consolidation (EWC)\textemdash a machine learning method for learning a new task without forgetting previous tasks. Our method retains the majority of general-domain performance lost in continued training without degrading in-domain performance, outperforming the previous state-of-the-art. We also explore the full range of general-domain performance available when some in-domain degradation is acceptable.},
   keywords = {[nlp],[rnn]}
-}
-
-@article{xue2019,
-  title = {A {{Multi}}-{{Task Learning Framework}} for {{Overcoming}} the {{Catastrophic Forgetting}} in {{Automatic Speech Recognition}}},
-  author = {Xue, Jiabin and Han, Jiqing and Zheng, Tieran and Gao, Xiang and Guo, Jiaxing},
-  year = {2019},
-  url = {http://arxiv.org/abs/1904.08039},
-  abstract = {Recently, data-driven based Automatic Speech Recognition (ASR) systems have achieved state-of-the-art results. And transfer learning is often used when those existing systems are adapted to the target domain, e.g., fine-tuning, retraining. However, in the processes, the system parameters may well deviate too much from the previously learned parameters. Thus, it is difficult for the system training process to learn knowledge from target domains meanwhile not forgetting knowledge from the previous learning process, which is called as catastrophic forgetting (CF). In this paper, we attempt to solve the CF problem with the lifelong learning and propose a novel multi-task learning (MTL) training framework for ASR. It considers reserving original knowledge and learning new knowledge as two independent tasks, respectively. On the one hand, we constrain the new parameters not to deviate too far from the original parameters and punish the new system when forgetting original knowledge. On the other hand, we force the new system to solve new knowledge quickly. Then, a MTL mechanism is employed to get the balance between the two tasks. We applied our method to an End2End ASR task and obtained the best performance in both target and original datasets.},
-  annotation = {\_eprint: 1904.08039},
-  journal = {arXiv},
-  keywords = {[audio],[rnn]}
 }
 
 @article{zhai2019,

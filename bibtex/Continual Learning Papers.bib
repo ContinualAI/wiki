@@ -59,6 +59,21 @@
   keywords = {[bayes],[cifar],[mnist]}
 }
 
+@incollection{aldrich2019,
+  title = {Process {{Fault Diagnosis}} for {{Continuous Dynamic Systems Over Multivariate Time Series}}},
+  booktitle = {Time {{Series Analysis}} - {{Data}}, {{Methods}}, and {{Applications}}},
+  author = {Aldrich, Chris},
+  editor = {Ngan, Chun-Kit},
+  year = {2019},
+  publisher = {{IntechOpen}},
+  doi = {10.5772/intechopen.85456},
+  url = {https://www.intechopen.com/books/time-series-analysis-data-methods-and-applications/process-fault-diagnosis-for-continuous-dynamic-systems-over-multivariate-time-series},
+  urldate = {2020-07-13},
+  abstract = {Fault diagnosis in continuous dynamic systems can be challenging, since the variables in these systems are typically characterized by autocorrelation, as well as time variant parameters, such as mean vectors, covariance matrices, and higher order statistics, which are not handled well by methods designed for steady state systems. In dynamic systems, steady state approaches are extended to deal with these problems, essentially through feature extraction designed to capture the process dynamics from the time series. In this chapter, recent advances in feature extraction from signals or multivariate time series are reviewed. These methods can subsequently be considered in a classical statistical monitoring framework, such as used for steady state systems. In addition, an extension of nonlinear signal processing based on the use of unthresholded or global recurrence quantification analysis is discussed, where two multivariate image methods based on gray level co-occurrence matrices and local binary patterns are used to extract features from time series. When considering the well-known simulated Tennessee Eastman process in chemical engineering, it is shown that time series features obtained with this approach can be an effective means of discriminating between different fault conditions in the system. The approach provides a general framework that can be extended in multiple ways to time series analysis.},
+  isbn = {978-1-78984-778-9 978-1-78984-779-6},
+  language = {en}
+}
+
 @inproceedings{aljundi2017,
   title = {Expert {{Gate}}: {{Lifelong Learning}} with a {{Network}} of {{Experts}}},
   booktitle = {{{IEEE Conference}} on {{Computer Vision}} and {{Pattern Recognition}} ({{CVPR}})},
@@ -284,6 +299,36 @@
   keywords = {[nlp]}
 }
 
+@inproceedings{barrault2020,
+  title = {Findings of the {{First Shared Task}} on {{Lifelong Learning Machine Translation}}},
+  booktitle = {Proceedings of the {{Fifth Conference}} on {{Machine Translation}}},
+  author = {Barrault, Lo{\"i}c and Biesialska, Magdalena and {Costa-juss{\`a}}, Marta R. and Bougares, Fethi and Galibert, Olivier},
+  year = {2020},
+  pages = {56--64},
+  publisher = {{Association for Computational Linguistics}},
+  address = {{Online}},
+  url = {https://www.aclweb.org/anthology/2020.wmt-1.2},
+  urldate = {2021-02-03},
+  abstract = {A lifelong learning system can adapt to new data without forgetting previously acquired knowledge. In this paper, we introduce the first benchmark for lifelong learning machine translation. For this purpose, we provide training, lifelong and test data sets for two language pairs: English-German and English-French. Additionally, we report the results of our baseline systems, which we make available to the public. The goal of this shared task is to encourage research on the emerging topic of lifelong learning machine translation.},
+  keywords = {[framework],[nlp],Active Learning,Continual Learning,Lifelong Learning,workshop}
+}
+
+@article{bartos2019,
+  title = {Rrcf: {{Implementation}} of the {{Robust Random Cut Forest}} Algorithm for Anomaly Detection on Streams},
+  shorttitle = {Rrcf},
+  author = {Bartos, Matthew and Mullapudi, Abhiram and Troutman, Sara},
+  year = {2019},
+  volume = {4},
+  pages = {1336},
+  issn = {2475-9066},
+  doi = {10.21105/joss.01336},
+  url = {http://joss.theoj.org/papers/10.21105/joss.01336},
+  urldate = {2020-12-07},
+  journal = {Journal of Open Source Software},
+  language = {en},
+  number = {35}
+}
+
 @article{baweja2018,
   title = {Towards Continual Learning in Medical Imaging},
   author = {Baweja, Chaitanya and Glocker, Ben and Kamnitsas, Konstantinos},
@@ -306,6 +351,68 @@
   abstract = {Continual lifelong learning requires an agent or model to learn many sequentially ordered tasks, building on previous knowledge without catastrophically forgetting it. Much work has gone towards preventing the default tendency of machine learning models to catastrophically forget, yet virtually all such work involves manually-designed solutions to the problem. We instead advocate meta-learning a solution to catastrophic forgetting, allowing AI to learn to continually learn. Inspired by neuromodulatory processes in the brain, we propose A Neuromodulated Meta-Learning Algorithm (ANML). It differentiates through a sequential learning process to meta-learn an activation-gating function that enables context-dependent selective activation within a deep neural network. Specifically, a neuromodulatory (NM) neural network gates the forward pass of another (otherwise normal) neural network called the prediction learning network (PLN). The NM network also thus indirectly controls selective plasticity (i.e. the backward pass of) the PLN. ANML enables continual learning without catastrophic forgetting at scale: it produces state-of-the-art continual learning performance, sequentially learning as many as 600 classes (over 9,000 SGD updates).},
   annotation = {\_eprint: 2002.09571},
   keywords = {[vision]}
+}
+
+@book{berger-wolf2019,
+  title = {Proceedings of the 2019 {{SIAM International Conference}} on {{Data Mining}}},
+  editor = {{Berger-Wolf}, Tanya and Chawla, Nitesh},
+  year = {2019},
+  publisher = {{Society for Industrial and Applied Mathematics}},
+  address = {{Philadelphia, PA}},
+  doi = {10.1137/1.9781611975673},
+  url = {https://epubs.siam.org/doi/book/10.1137/1.9781611975673},
+  urldate = {2020-07-11},
+  abstract = {In many anomaly mining scenarios, a human expert verifies the anomaly at-the-top (as ranked by an anomaly detector) before they move on to the next. This verification produces a label\textemdash true positive (TP) or false positive (FP). In this work, we show how to leverage this label feedback for the top-1 instance to quickly re-rank the anomalies in an online fashion. In contrast to a detector that ranks once and goes offline, we propose a detector called OJRANK that works alongside the human and continues to learn (how to rank) on-the-job, i.e., from every feedback. The benefits OJRANK provides are two-fold; it reduces (i) the false positive rate by `muting' the anomalies similar to FP instances; as well as (ii) the expert effort by elevating to the top the anomalies similar to a TP instance. We show that OJRANK achieves statistically significant improvement on both detection precision and human effort over the offline detector as well as existing state-of-the-art ranking strategies, while keeping the per feedback response time (to re-rank) well below a second.},
+  isbn = {978-1-61197-567-3},
+  language = {en}
+}
+
+@inproceedings{biesialska2020,
+  title = {Continual {{Lifelong Learning}} in {{Natural Language Processing}}: {{A Survey}}},
+  shorttitle = {Continual {{Lifelong Learning}} in {{Natural Language Processing}}},
+  booktitle = {Proceedings of the 28th {{International Conference}} on {{Computational Linguistics}}},
+  author = {Biesialska, Magdalena and Biesialska, Katarzyna and {Costa-juss{\`a}}, Marta R.},
+  year = {2020},
+  pages = {6523--6541},
+  publisher = {{International Committee on Computational Linguistics}},
+  address = {{Barcelona, Spain (Online)}},
+  doi = {10.18653/v1/2020.coling-main.574},
+  url = {https://www.aclweb.org/anthology/2020.coling-main.574},
+  urldate = {2021-02-09},
+  abstract = {Continual learning (CL) aims to enable information systems to learn from a continuous data stream across time. However, it is difficult for existing deep learning architectures to learn a new task without largely forgetting previously acquired knowledge. Furthermore, CL is particularly challenging for language learning, as natural language is ambiguous: it is discrete, compositional, and its meaning is context-dependent. In this work, we look at the problem of CL through the lens of various NLP tasks. Our survey discusses major challenges in CL and current methods applied in neural network models. We also provide a critical review of the existing CL evaluation methods and datasets in NLP. Finally, we present our outlook on future research directions.},
+  keywords = {[nlp],[survey],Catastrophic Forgetting,Continual Learning,Lifelong Learning,Review}
+}
+
+@inproceedings{bu2018,
+  title = {Rapid {{Deployment}} of {{Anomaly Detection Models}} for {{Large Number}} of {{Emerging KPI Streams}}},
+  booktitle = {2018 {{IEEE}} 37th {{International Performance Computing}} and {{Communications Conference}} ({{IPCCC}})},
+  author = {Bu, Jiahao and Liu, Ying and Zhang, Shenglin and Meng, Weibin and Liu, Qitong and Zhu, Xiaotian and Pei, Dan},
+  year = {2018},
+  pages = {1--8},
+  publisher = {{IEEE}},
+  address = {{Orlando, FL, USA}},
+  doi = {10.1109/PCCC.2018.8711315},
+  url = {https://ieeexplore.ieee.org/document/8711315/},
+  urldate = {2020-07-11},
+  abstract = {Internet-based services monitor and detect anomalies on KPIs (Key Performance Indicators, say CPU utilization, number of queries per second, response latency) of their applications and systems in order to keep their services reliable. This paper identifies a common, important, yet little-studied problem of KPI anomaly detection: rapid deployment of anomaly detection models for large number of emerging KPI streams, without manual algorithm selection, parameter tuning, or new anomaly labeling for any newly emerging KPI streams. We propose the first framework ADS (Anomaly Detection through Self-training) that tackles the above problem, via clustering and semi-supervised learning. Our extensive experiments using real-world data show that, with the labels of only the 5 cluster centroids of 70 historical KPI streams, ADS achieves an averaged best F-score of 0.92 on 81 new KPI streams, almost the same as a state-of-art supervised approach, and greatly outperforming a state-of-art unsupervised approach by 61.40\% on average.},
+  isbn = {978-1-5386-6808-5},
+  language = {en}
+}
+
+@article{burnaev2016,
+  title = {Conformalized Density- and Distance-Based Anomaly Detection in Time-Series Data},
+  author = {Burnaev, Evgeny and Ishimtsev, Vladislav},
+  year = {2016},
+  url = {http://arxiv.org/abs/1608.04585},
+  urldate = {2020-11-24},
+  abstract = {Anomalies (unusual patterns) in time-series data give essential, and often actionable information in critical situations. Examples can be found in such fields as healthcare, intrusion detection, finance, security and flight safety. In this paper we propose new conformalized density- and distance-based anomaly detection algorithms for a one-dimensional time-series data. The algorithms use a combination of a feature extraction method, an approach to assess a score whether a new observation differs significantly from a previously observed data, and a probabilistic interpretation of this score based on the conformal paradigm.},
+  archiveprefix = {arXiv},
+  eprint = {1608.04585},
+  eprinttype = {arxiv},
+  journal = {arXiv:1608.04585 [cs, stat]},
+  keywords = {Computer Science - Machine Learning,Statistics - Applications,Statistics - Machine Learning},
+  note = {Comment: 9 pages, 3 figures, conference proceedings},
+  primaryclass = {cs, stat}
 }
 
 @article{caccia2020,
@@ -413,7 +520,7 @@
   url = {http://arxiv.org/abs/1511.05641},
   urldate = {2021-01-07},
   abstract = {We introduce techniques for rapidly transferring the information stored in one neural net into another neural net. The main purpose is to accelerate the training of a significantly larger neural net. During real-world workflows, one often trains very many different neural networks during the experimentation and design process. This is a wasteful process in which each new model is trained from scratch. Our Net2Net technique accelerates the experimentation process by instantaneously transferring the knowledge from a previous network to each new deeper or wider network. Our techniques are based on the concept of function-preserving transformations between neural network specifications. This differs from previous approaches to pre-training that altered the function represented by a neural net when adding layers to it. Using our knowledge transfer mechanism to add depth to Inception modules, we demonstrate a new state of the art accuracy rating on the ImageNet dataset.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {1511.05641},
   eprinttype = {arxiv},
   keywords = {Computer Science - Machine Learning},
@@ -442,6 +549,52 @@
   annotation = {\_eprint: 1904.10644},
   journal = {arXiv},
   keywords = {[bayes]}
+}
+
+@inproceedings{chen2019a,
+  title = {Unsupervised {{Anomaly Detection}} for {{Intricate KPIs}} via {{Adversarial Training}} of {{VAE}}},
+  booktitle = {{{IEEE INFOCOM}} 2019 - {{IEEE Conference}} on {{Computer Communications}}},
+  author = {Chen, Wenxiao and Xu, Haowen and Li, Zeyan and Pei, Dan and Chen, Jie and Qiao, Honglin and Feng, Yang and Wang, Zhaogang},
+  year = {2019},
+  pages = {1891--1899},
+  publisher = {{IEEE}},
+  address = {{Paris, France}},
+  doi = {10.1109/INFOCOM.2019.8737430},
+  url = {https://ieeexplore.ieee.org/document/8737430/},
+  urldate = {2020-07-11},
+  abstract = {To ensure the reliability of the Internet-based application services, KPIs (Key Performance Monitors) are closely monitored in real time and the anomalies presented in the KPIs must be discovered in time. While anomaly detection for the seasonal smooth service-level KPIs (e.g., number of transactions per minute) have been solved reasonably well in the literature, the intricate KPIs at the machine level (e.g., the number of I/O requests on a server monitored per second) has been little studied. These intricate KPIs are prevalent and important, but exhibit non-Gaussian noises and complex data distribution that are hard to model. In this paper, we propose an adversarial training method in the Bayesian network based on partition analysis with solid theoretical proof. Based on it, we propose the first unsupervised anomaly detection algorithm Buzz for intricate KPIs with high performance. Its best F-scores on the data from a global Internet company range from 0.92 to 0.99, significantly outperforming a state-of-art VAE-based unsupervised approach without adversarial training and a stateof-art supervised approach.},
+  isbn = {978-1-72810-515-4},
+  language = {en}
+}
+
+@inproceedings{chen2020,
+  title = {Long {{Live}} the {{Lottery}}: {{The Existence}} of {{Winning Tickets}} in {{Lifelong Learning}}},
+  shorttitle = {Long {{Live}} the {{Lottery}}},
+  booktitle = {International {{Conference}} on {{Learning Representations}}},
+  author = {Chen, Tianlong and Zhang, Zhenyu and Liu, Sijia and Chang, Shiyu and Wang, Zhangyang},
+  year = {2020},
+  url = {https://openreview.net/forum?id=LXMSvPmsm0g},
+  urldate = {2021-01-17},
+  abstract = {The lottery ticket hypothesis demonstrates that a highly sparsified sub-network can be trained in isolation, given the appropriate weight initialization. This paper extends that hypothesis from...},
+  language = {en}
+}
+
+@incollection{chen2020a,
+  title = {Anomaly {{Detection}} via {{Neighbourhood Contrast}}},
+  booktitle = {Advances in {{Knowledge Discovery}} and {{Data Mining}}},
+  author = {Chen, Bo and Ting, Kai Ming and Chin, Tat-Jun},
+  editor = {Lauw, Hady W. and Wong, Raymond Chi-Wing and Ntoulas, Alexandros and Lim, Ee-Peng and Ng, See-Kiong and Pan, Sinno Jialin},
+  year = {2020},
+  volume = {12085},
+  pages = {647--659},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-030-47436-2_49},
+  url = {http://link.springer.com/10.1007/978-3-030-47436-2_49},
+  urldate = {2020-07-11},
+  abstract = {Relative scores such as Local Outlying Factor and mass ratio have been shown to be better scores than global scores in detecting anomalies. While this is true, our analysis reveals for the first time that these relative scores have a key shortcoming: anomalies have greatly different relative scores if they are located in different regions where the curvatures of the density surface are very different. As a result, the lowscore anomalies could be ranked lower than some normal points. This revelation motivates (i) a new score called Neighbourhood Contrast (NC) which produces approximately the same high scores for all anomalies, regardless of varying curvatures of the density surface in different regions; and (ii) an anomaly detection method based on NC. Our experiments show that the proposed method which employs the new score significantly outperforms methods using the aforementioned relative scores on benchmark datasets.},
+  isbn = {978-3-030-47435-5 978-3-030-47436-2},
+  language = {en}
 }
 
 @article{cheung2019,
@@ -630,6 +783,23 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   journal = {arXiv}
 }
 
+@article{ding2015,
+  title = {{{YADING}}: Fast Clustering of Large-Scale Time Series Data},
+  shorttitle = {{{YADING}}},
+  author = {Ding, Rui and Wang, Qiang and Dang, Yingnong and Fu, Qiang and Zhang, Haidong and Zhang, Dongmei},
+  year = {2015},
+  volume = {8},
+  pages = {473--484},
+  issn = {2150-8097},
+  doi = {10.14778/2735479.2735481},
+  url = {https://dl.acm.org/doi/10.14778/2735479.2735481},
+  urldate = {2021-02-01},
+  abstract = {Fast and scalable analysis techniques are becoming increasingly important in the era of big data, because they are the enabling techniques to create real-time and interactive experiences in data analysis. Time series are widely available in diverse application areas. Due to the large number of time series instances (e.g., millions) and the high dimensionality of each time series instance (e.g., thousands), it is challenging to conduct clustering on largescale time series, and it is even more challenging to do so in realtime to support interactive exploration.},
+  journal = {Proceedings of the VLDB Endowment},
+  language = {en},
+  number = {5}
+}
+
 @article{ditzler2015,
   title = {Learning in {{Nonstationary Environments}}: {{A Survey}}},
   shorttitle = {Learning in {{Nonstationary Environments}}},
@@ -646,6 +816,42 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   number = {4}
 }
 
+@article{douillard2020,
+  title = {{{PLOP}}: {{Learning}} without {{Forgetting}} for {{Continual Semantic Segmentation}}},
+  author = {Douillard, Arthur and Chen, Yifu and Dapogny, Arnaud and Cord, Matthieu},
+  year = {2020},
+  url = {https://arxiv.org/abs/2011.11390},
+  abstract = {Deep learning approaches are nowadays ubiquitously used to tackle computer vision tasks such as semantic segmentation, requiring large datasets and substantial computational power. Continual learning for semantic segmentation (CSS) is an emerging trend that consists in updating an old model by sequentially adding new classes. However, continual learning methods are usually prone to catastrophic forgetting. This issue is further aggravated in CSS where, at each step, old classes from previous iterations are collapsed into the background. In this paper, we propose Local POD, a multi-scale pooling distillation scheme that preserves long- and short-range spatial relationships at feature level. Furthermore, we design an entropy-based pseudo-labelling of the background w.r.t. classes predicted by the old model to deal with background shift and avoid catastrophic forgetting of the old classes. Our approach, called PLOP, significantly outperforms state-of-the-art methods in existing CSS scenarios, as well as in newly proposed challenging benchmarks.},
+  journal = {arXiv}
+}
+
+@article{douillard2020a,
+  title = {Insights from the {{Future}} for {{Continual Learning}}},
+  author = {Douillard, Arthur and Valle, Eduardo and Ollion, Charles and Robert, Thomas and Cord, Matthieu},
+  year = {2020},
+  url = {https://arxiv.org/abs/2006.13748},
+  abstract = {Continual learning aims to learn tasks sequentially, with (often severe) constraints on the storage of old learning samples, without suffering from catastrophic forgetting. In this work, we propose prescient continual learning, a novel experimental setting, to incorporate existing information about the classes, prior to any training data. Usually, each task in a traditional continual learning setting evaluates the model on present and past classes, the latter with a limited number of training samples. Our setting adds future classes, with no training samples at all. We introduce Ghost Model, a representation-learning-based model for continual learning using ideas from zero-shot learning. A generative model of the representation space in concert with a careful adjustment of the losses allows us to exploit insights from future classes to constraint the spatial arrangement of the past and current classes. Quantitative results on the AwA2 and aP\textbackslash\&Y datasets and detailed visualizations showcase the interest of this new setting and the method we propose to address it.},
+  journal = {arXiv}
+}
+
+@article{douillard2020b,
+  title = {{{PODNet}}: {{Pooled Outputs Distillation}} for {{Small}}-{{Tasks Incremental Learning}}},
+  author = {Douillard, Arthur and Cord, Matthieu and Ollion, Charles and Robert, Thomas and Valle, Eduardo},
+  year = {2020},
+  url = {https://arxiv.org/abs/2004.13513},
+  abstract = {Lifelong learning has attracted much attention, but existing works still struggle to fight catastrophic forgetting and accumulate knowledge over long stretches of incremental learning. In this work, we propose PODNet, a model inspired by representation learning. By carefully balancing the compromise between remembering the old classes and learning new ones, PODNet fights catastrophic forgetting, even over very long runs of small incremental tasks --a setting so far unexplored by current works. PODNet innovates on existing art with an efficient spatial-based distillation-loss applied throughout the model and a representation comprising multiple proxy vectors for each class. We validate those innovations thoroughly, comparing PODNet with three state-of-the-art models on three datasets: CIFAR100, ImageNet100, and ImageNet1000. Our results showcase a significant advantage of PODNet over existing art, with accuracy gains of 12.10, 6.51, and 2.85 percentage points, respectively. Code is available at this https URL},
+  journal = {European Conference on Computer Vision (ECCV)}
+}
+
+@article{douillard2021,
+  title = {Continuum: {{Simple Management}} of {{Complex Continual Learning Scenarios}}},
+  author = {Douillard, Arthur and Lesort, Timoth{\'e}e},
+  year = {2021},
+  url = {https://arxiv.org/abs/2102.06253},
+  abstract = {Continual learning is a machine learning sub-field specialized in settings with non-iid data. Hence, the training data distribution is not static and drifts through time. Those drifts might cause interferences in the trained model and knowledge learned on previous states of the data distribution might be forgotten. Continual learning's challenge is to create algorithms able to learn an ever-growing amount of knowledge while dealing with data distribution drifts. One implementation difficulty in these field is to create data loaders that simulate non-iid scenarios. Indeed, data loaders are a key component for continual algorithms. They should be carefully designed and reproducible. Small errors in data loaders have a critical impact on algorithm results, e.g. with bad preprocessing, wrong order of data or bad test set. Continuum is a simple and efficient framework with numerous data loaders that avoid researcher to spend time on designing data loader and eliminate time-consuming errors. Using our proposed framework, it is possible to directly focus on the model design by using the multiple scenarios and evaluation metrics implemented. Furthermore the framework is easily extendable to add novel settings for specific needs.},
+  journal = {arXiv}
+}
+
 @inproceedings{draelos2017,
   title = {Neurogenesis {{Deep Learning}}},
   booktitle = {{{IJCNN}}},
@@ -656,6 +862,15 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   keywords = {[mnist],autoencoder,autoencoders,neurogenesis,reconstruction},
   language = {English},
   note = {The neurogenesis algorithm selectively expand the original multi-layer autoencoder at the neuron level depending on its reconstruction performance measured at each layer. The model is capable of maintaining plasticity while mitigating forgetting through replay of old samples.}
+}
+
+@article{du2017,
+  title = {{{DeepLog}}: {{Anomaly Detection}} and {{Diagnosis}} from {{System Logs}} through {{Deep Learning}}},
+  author = {Du, Min and Li, Feifei and Zheng, Guineng and Srikumar, Vivek},
+  year = {2017},
+  pages = {14},
+  abstract = {Anomaly detection is a critical step towards building a secure and trustworthy system. e primary purpose of a system log is to record system states and signi cant events at various critical points to help debug system failures and perform root cause analysis. Such log data is universally available in nearly all computer systems. Log data is an important and valuable resource for understanding system status and performance issues; therefore, the various system logs are naturally excellent source of information for online monitoring and anomaly detection. We propose DeepLog, a deep neural network model utilizing Long Short-Term Memory (LSTM), to model a system log as a natural language sequence. is allows DeepLog to automatically learn log pa erns from normal execution, and detect anomalies when log pa erns deviate from the model trained from log data under normal execution. In addition, we demonstrate how to incrementally update the DeepLog model in an online fashion so that it can adapt to new log pa erns over time. Furthermore, DeepLog constructs work ows from the underlying system log so that once an anomaly is detected, users can diagnose the detected anomaly and perform root cause analysis e ectively. Extensive experimental evaluations over large log data have shown that DeepLog has outperformed other existing log-based anomaly detection methods based on traditional data mining methodologies.},
+  language = {en}
 }
 
 @article{du2019,
@@ -671,6 +886,22 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   journal = {arXiv},
   keywords = {[cifar]},
   number = {2}
+}
+
+@inproceedings{du2019a,
+  title = {Lifelong {{Anomaly Detection Through Unlearning}}},
+  booktitle = {Proceedings of the 2019 {{ACM SIGSAC Conference}} on {{Computer}} and {{Communications Security}}},
+  author = {Du, Min and Chen, Zhi and Liu, Chang and Oak, Rajvardhan and Song, Dawn},
+  year = {2019},
+  pages = {1283--1297},
+  publisher = {{ACM}},
+  address = {{London United Kingdom}},
+  doi = {10.1145/3319535.3363226},
+  url = {https://dl.acm.org/doi/10.1145/3319535.3363226},
+  urldate = {2020-07-11},
+  abstract = {Anomaly detection is essential towards ensuring system security and reliability. Powered by constantly generated system data, deep learning has been found both effective and flexible to use, with its ability to extract patterns without much domain knowledge. Existing anomaly detection research focuses on a scenario referred to as zero-positive, which means that the detection model is only trained for normal (i.e., negative) data. In a real application scenario, there may be additional manually inspected positive data provided after the system is deployed. We refer to this scenario as lifelong anomaly detection. However, we find that existing approaches are not easy to adopt such new knowledge to improve system performance.},
+  isbn = {978-1-4503-6747-9},
+  language = {en}
 }
 
 @inproceedings{duncker2020,
@@ -705,15 +936,16 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   keywords = {[bayes],[cifar],[fashion],[mnist],capacity,catastrophic forgetting,continual learning,learning rate,pruning,regularization,uncertainty}
 }
 
-@article{ehret2020,
-  title = {Continual {{Learning}} in {{Recurrent Neural Networks}}},
-  author = {Ehret, Benjamin and Henning, Christian and Cervera, Maria R and Meulemans, Alexander and {von Oswald}, Johannes and Grewe, Benjamin F},
+@inproceedings{ehret2020,
+  title = {Continual Learning in Recurrent Neural Networks},
+  booktitle = {International {{Conference}} on {{Learning Representations}}},
+  author = {Ehret, Benjamin and Henning, Christian and Cervera, Maria and Meulemans, Alexander and Oswald, Johannes Von and Grewe, Benjamin F.},
   year = {2020},
-  url = {http://arxiv.org/abs/2006.12109},
-  abstract = {While a diverse collection of continual learning (CL) methods has been proposed to prevent catastrophic forgetting, a thorough investigation of their effectiveness for processing sequential data with recurrent neural networks (RNNs) is lacking. Here, we provide the first comprehensive evaluation of established CL methods on a variety of sequential data benchmarks. Specifically, we shed light on the particularities that arise when applying weight-importance methods, such as elastic weight consolidation, to RNNs. In contrast to feedforward networks, RNNs iteratively reuse a shared set of weights and require working memory to process input samples. We show that the performance of weight-importance methods is not directly affected by the length of the processed sequences, but rather by high working memory requirements, which lead to an increased need for stability at the cost of decreased plasticity for learning subsequent tasks. We additionally provide theoretical arguments supporting this interpretation by studying linear RNNs. Our study shows that established CL methods can be successfully ported to the recurrent case, and that a recent regularization approach based on hypernetworks outperforms weight-importance methods, thus emerging as a promising candidate for CL in RNNs. Overall, we provide insights on the differences between CL in feedforward networks and RNNs, while guiding towards effective solutions to tackle CL on sequential data.},
-  annotation = {\_eprint: 2006.12109},
-  journal = {arXiv},
-  keywords = {[audio],[rnn]}
+  url = {https://openreview.net/forum?id=8xeBUgD8u9},
+  urldate = {2021-01-16},
+  abstract = {While a diverse collection of continual learning (CL) methods has been proposed to prevent catastrophic forgetting, a thorough investigation of their effectiveness for processing sequential data...},
+  keywords = {[audio],[rnn]},
+  language = {en}
 }
 
 @incollection{elkhatib2019,
@@ -730,6 +962,32 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   abstract = {Catastrophic forgetting has long been seen as the main obstacle to building continual learning models. We argue in this paper that an equally challenging characteristic of the continual learning framework is that data are never completely available at the same time, making it difficult to learn joint conditional distributions over them. This is most evident in the usually large gap between single-head and multi-head performance of continual learning models. We propose in this paper two strategies to improve performance of continual learning models, particularly in the single-head framework and for image classification tasks. First, we argue that learning multiple binary classifiers, rather than a single multi-class classifier, for each presentation of data is more consistent with the single-head framework. Moreover, we argue that auxiliary, unlabelled data can be used in tandem with this approach to slow the decay in performance of these binary classifiers over time.},
   isbn = {978-3-030-27201-2},
   keywords = {[cifar],[mnist],Catastrophic forgetting,Continual learning}
+}
+
+@article{ergen,
+  title = {Unsupervised and {{Semi}}-Supervised {{Anomaly Detection}} with {{LSTM Neural Networks}}},
+  author = {Ergen, Tolga and Mirza, Ali H and Kozat, Suleyman S},
+  pages = {12},
+  abstract = {We investigate anomaly detection in an unsupervised framework and introduce Long Short Term Memory (LSTM) neural network based algorithms. In particular, given variable length data sequences, we first pass these sequences through our LSTM based structure and obtain fixed length sequences. We then find a decision function for our anomaly detectors based on the One Class Support Vector Machines (OC-SVM) and Support Vector Data Description (SVDD) algorithms. As the first time in the literature, we jointly train and optimize the parameters of the LSTM architecture and the OC-SVM (or SVDD) algorithm using highly effective gradient and quadratic programming based training methods. To apply the gradient based training method, we modify the original objective criteria of the OCSVM and SVDD algorithms, where we prove the convergence of the modified objective criteria to the original criteria. We also provide extensions of our unsupervised formulation to the semisupervised and fully supervised frameworks. Thus, we obtain anomaly detection algorithms that can process variable length data sequences while providing high performance, especially for time series data. Our approach is generic so that we also apply this approach to the Gated Recurrent Unit (GRU) architecture by directly replacing our LSTM based structure with the GRU based structure. In our experiments, we illustrate significant performance gains achieved by our algorithms with respect to the conventional methods.},
+  language = {en}
+}
+
+@incollection{fan2020,
+  title = {Correlation-{{Aware Deep Generative Model}} for {{Unsupervised Anomaly Detection}}},
+  booktitle = {Advances in {{Knowledge Discovery}} and {{Data Mining}}},
+  author = {Fan, Haoyi and Zhang, Fengbin and Wang, Ruidong and Xi, Liang and Li, Zuoyong},
+  editor = {Lauw, Hady W. and Wong, Raymond Chi-Wing and Ntoulas, Alexandros and Lim, Ee-Peng and Ng, See-Kiong and Pan, Sinno Jialin},
+  year = {2020},
+  volume = {12085},
+  pages = {688--700},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-030-47436-2_52},
+  url = {http://link.springer.com/10.1007/978-3-030-47436-2_52},
+  urldate = {2020-07-11},
+  abstract = {Unsupervised anomaly detection aims to identify anomalous samples from highly complex and unstructured data, which is pervasive in both fundamental research and industrial applications. However, most existing methods neglect the complex correlation among data samples, which is important for capturing normal patterns from which the abnormal ones deviate. In this paper, we propose a method of Correlation aware unsupervised Anomaly detection via Deep Gaussian Mixture Model (CADGMM), which captures the complex correlation among data points for high-quality low-dimensional representation learning. More specifically, the relations among data samples are correlated firstly in forms of a graph structure, in which, the node denotes the sample and the edge denotes the correlation between two samples from the feature space. Then, a dual-encoder that consists of a graph encoder and a feature encoder, is employed to encode both the feature and correlation information of samples into the low-dimensional latent space jointly, followed by a decoder for data reconstruction. Finally, a separate estimation network as a Gaussian Mixture Model is utilized to estimate the density of the learned latent vector, and the anomalies can be detected by measuring the energy of the samples. Extensive experiments on real-world datasets demonstrate the effectiveness of the proposed method.},
+  isbn = {978-3-030-47435-5 978-3-030-47436-2},
+  language = {en}
 }
 
 @inproceedings{farquhar2018,
@@ -763,6 +1021,22 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   keywords = {[audio],[cifar],[imagenet],[sparsity]},
   school = {RMIT University},
   type = {{{PhD Thesis}}}
+}
+
+@article{fernandes2019,
+  title = {A Comprehensive Survey on Network Anomaly Detection},
+  author = {Fernandes, Gilberto and Rodrigues, Joel J. P. C. and Carvalho, Luiz Fernando and {Al-Muhtadi}, Jalal F. and Proen{\c c}a, Mario Lemes},
+  year = {2019},
+  volume = {70},
+  pages = {447--489},
+  issn = {1018-4864, 1572-9451},
+  doi = {10.1007/s11235-018-0475-8},
+  url = {http://link.springer.com/10.1007/s11235-018-0475-8},
+  urldate = {2020-07-11},
+  abstract = {Nowadays, there is a huge and growing concern about security in information and communication technology among the scientific community because any attack or anomaly in the network can greatly affect many domains such as national security, private data storage, social welfare, economic issues, and so on. Therefore, the anomaly detection domain is a broad research area, and many different techniques and approaches for this purpose have emerged through the years. In this study, the main objective is to review the most important aspects pertaining to anomaly detection, covering an overview of a background analysis as well as a core study on the most relevant techniques, methods, and systems within the area. Therefore, in order to ease the understanding of this survey's structure, the anomaly detection domain was reviewed under five dimensions: (1) network traffic anomalies, (2) network data types, (3) intrusion detection systems categories, (4) detection methods and systems, and (5) open issues. The paper concludes with an open issues summary discussing presently unsolved problems, and final remarks.},
+  journal = {Telecommunication Systems},
+  language = {en},
+  number = {3}
 }
 
 @inproceedings{finn2019,
@@ -813,7 +1087,7 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   year = {1997},
   url = {http://leadserv.u-bourgogne.fr/IMG/pdf/psdnet1.pdf},
   abstract = {A major problem facing connectionist models of memory is  how to make them simultaneously sensitive to, but not  disrupted by, new input. This paper describes one solution  to this problem. The resulting connectionist architecture is  capable of sequential learning and exhibits gradual  forgetting where standard connectionist architectures may  forget catastrophically. The proposed architecture relies on  separating previously learned representations from those  that are currently being learned. Crucially, a method is  described in which approximations of the previously  learned data, called pseudopatterns, will be extracted from  the network and mixed in with the new patterns to be  learned, thereby alleviating sudden forgetting caused by  new learning and allowing the network to forget gracefully.  Introduction  One of the most important problems facing connectionist models of memory --- in fact, facing any model of memory --- is how to make them simultaneously sensitive to, but not ...},
-  keywords = {[rnn]}
+  keywords = {[dual]}
 }
 
 @article{french1999,
@@ -899,6 +1173,22 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   keywords = {[imagenet],[vision]}
 }
 
+@article{goldstein2016,
+  title = {A {{Comparative Evaluation}} of {{Unsupervised Anomaly Detection Algorithms}} for {{Multivariate Data}}},
+  author = {Goldstein, Markus and Uchida, Seiichi},
+  editor = {Zhu, Dongxiao},
+  year = {2016},
+  volume = {11},
+  pages = {e0152173},
+  issn = {1932-6203},
+  doi = {10.1371/journal.pone.0152173},
+  url = {https://dx.plos.org/10.1371/journal.pone.0152173},
+  urldate = {2020-07-13},
+  journal = {PLOS ONE},
+  language = {en},
+  number = {4}
+}
+
 @article{golkar2019,
   title = {Continual {{Learning}} via {{Neural Pruning}}},
   author = {Golkar, Siavash and Kagan, Michael and Cho, Kyunghyun},
@@ -938,6 +1228,14 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   keywords = {Attention,Cognitive Processes,Electrical Activity,Expectations,Human Information Storage,Neurophysiology},
   note = {It introduces the stability-plasticity dilemma related to the catastrophic forgetting.},
   number = {1}
+}
+
+@article{guha,
+  title = {Robust {{Random Cut Forest Based Anomaly Detection On Streams}}},
+  author = {Guha, Sudipto and Mishra, Nina and Roy, Gourav and Schrijvers, Okke},
+  pages = {10},
+  abstract = {In this paper we focus on the anomaly detection problem for dynamic data streams through the lens of random cut forests. We investigate a robust random cut data structure that can be used as a sketch or synopsis of the input stream. We provide a plausible definition of non-parametric anomalies based on the influence of an unseen point on the remainder of the data, i.e., the externality imposed by that point. We show how the sketch can be efficiently updated in a dynamic data stream. We demonstrate the viability of the algorithm on publicly available real data.},
+  language = {en}
 }
 
 @inproceedings{gupta2020,
@@ -1051,7 +1349,7 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   year = {2019},
   url = {http://arxiv.org/abs/1906.05201},
   abstract = {While neural networks are powerful function approximators, they suffer from catastrophic forgetting when the data distribution is not stationary. One particular formalism that studies learning under non-stationary distribution is provided by continual learning, where the non-stationarity is imposed by a sequence of distinct tasks. Most methods in this space assume, however, the knowledge of task boundaries, and focus on alleviating catastrophic forgetting. In this work, we depart from this view and move the focus towards faster remembering \textendash{} i.e measuring how quickly the network recovers performance rather than measuring the network's performance without any adaptation. We argue that in many settings this can be more effective and that it opens the door to combining meta-learning and continual learning techniques, leveraging their complementary advantages. We propose a framework specific for the scenario where no information about task boundaries or task identity is given. It relies on a separation of concerns into what task is being solved and how the task should be solved. This framework is implemented by differentiating task specific parameters from task agnostic parameters, where the latter are optimized in a continual meta learning fashion, without access to multiple tasks at the same time. We showcase this framework in a supervised learning scenario and discuss the implication of the proposed formalism.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {1906.05201},
   eprinttype = {arxiv},
   journal = {arXiv:1906.05201 [cs, stat]},
@@ -1059,7 +1357,7 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   note = {arXiv: 1906.05201
 \par
 arXiv: 1906.05201},
-  primaryClass = {cs, stat}
+  primaryclass = {cs, stat}
 }
 
 @book{hebb2002,
@@ -1100,6 +1398,22 @@ arXiv: 1906.05201},
   keywords = {[cifar],[imagenet]}
 }
 
+@inproceedings{hwang2019,
+  title = {Time-{{Series Aware Precision}} and {{Recall}} for {{Anomaly Detection}}: {{Considering Variety}} of {{Detection Result}} and {{Addressing Ambiguous Labeling}}},
+  shorttitle = {Time-{{Series Aware Precision}} and {{Recall}} for {{Anomaly Detection}}},
+  booktitle = {Proceedings of the 28th {{ACM International Conference}} on {{Information}} and {{Knowledge Management}}},
+  author = {Hwang, Won-Seok and Yun, Jeong-Han and Kim, Jonguk and Kim, Hyoung Chun},
+  year = {2019},
+  pages = {2241--2244},
+  publisher = {{ACM}},
+  address = {{Beijing China}},
+  doi = {10.1145/3357384.3358118},
+  url = {https://dl.acm.org/doi/10.1145/3357384.3358118},
+  urldate = {2020-07-11},
+  isbn = {978-1-4503-6976-3},
+  language = {en}
+}
+
 @article{isele2018,
   title = {Selective {{Experience Replay}} for {{Lifelong Learning}}},
   author = {Isele, David and Cosgun, Akansel},
@@ -1120,6 +1434,22 @@ arXiv: 1906.05201},
   url = {http://papers.nips.cc/paper/8458-meta-learning-representations-for-continual-learning},
   abstract = {A continual learning agent should be able to build on top of existing knowledge to learn on new data quickly while minimizing forgetting. Current intelligent systems based on neural network function approximators arguably do the opposite-they are highly prone to forgetting and rarely trained to facilitate future learning. One reason for this poor behavior is that they learn from a representation that is not explicitly trained for these two goals. In this paper, we propose OML, an objective that directly minimizes catastrophic interference by learning representations that accelerate future learning and are robust to forgetting under online updates in continual learning. We show that it is possible to learn naturally sparse representations that are more effective for online updating. Moreover, our algorithm is complementary to existing continual learning strategies, such as MER and GEM. Finally, we demonstrate that a basic online updating strategy on representations learned by OML is competitive with rehearsal based methods for continual learning. 1},
   keywords = {[omniglot]}
+}
+
+@inproceedings{jensen2019,
+  title = {Demonstration of {{ModelarDB}}: {{Model}}-{{Based Management}} of {{Dimensional Time Series}}},
+  shorttitle = {Demonstration of {{ModelarDB}}},
+  booktitle = {Proceedings of the 2019 {{International Conference}} on {{Management}} of {{Data}}  - {{SIGMOD}} '19},
+  author = {Jensen, S{\o}ren Kejser and Pedersen, Torben Bach and Thomsen, Christian},
+  year = {2019},
+  pages = {1933--1936},
+  publisher = {{ACM Press}},
+  address = {{Amsterdam, Netherlands}},
+  doi = {10.1145/3299869.3320216},
+  url = {http://dl.acm.org/citation.cfm?doid=3299869.3320216},
+  urldate = {2020-07-11},
+  isbn = {978-1-4503-5643-5},
+  language = {en}
 }
 
 @inproceedings{jerfel2019,
@@ -1195,6 +1525,31 @@ The authors leverage a bayesian framework in which the parameters of a model are
   pmid = {16717005}
 }
 
+@inproceedings{kathareios2017,
+  title = {Catch {{It If You Can}}: {{Real}}-{{Time Network Anomaly Detection}} with {{Low False Alarm Rates}}},
+  shorttitle = {Catch {{It If You Can}}},
+  booktitle = {2017 16th {{IEEE International Conference}} on {{Machine Learning}} and {{Applications}} ({{ICMLA}})},
+  author = {Kathareios, Georgios and Anghel, Andreea and Mate, Akos and Clauberg, Rolf and Gusat, Mitch},
+  year = {2017},
+  pages = {924--929},
+  publisher = {{IEEE}},
+  address = {{Cancun, Mexico}},
+  doi = {10.1109/ICMLA.2017.00-36},
+  url = {http://ieeexplore.ieee.org/document/8260756/},
+  urldate = {2020-07-11},
+  abstract = {Unsupervised anomaly detection (AD) has shown promise against the frequently new cyberattacks. But, as anomalies are not always malicious, such systems generate prodigious false alarm rates. The resulting manual validation workload often overwhelms the IT operators: it slows down the system reaction by orders of magnitude and ultimately thwarts its applicability. Therefore, we propose a real-time network AD system that reduces the manual workload by coupling 2 learning stages. The first stage performs adaptive unsupervised AD using a shallow autoencoder. The second stage uses a custom nearest-neighbor classifier to filter the false positives by modeling the manual classification. We implement a prototype for 10-50Gbps speeds and evaluate it with traffic from a national network operator: we achieve 98.5\% true and 1.3\% false positive rates, while reducing the human intervention rate by 5x.},
+  isbn = {978-1-5386-1418-1},
+  language = {en}
+}
+
+@article{ke,
+  title = {{{LightGBM}}: {{A Highly Efficient Gradient Boosting Decision Tree}}},
+  author = {Ke, Guolin and Meng, Qi and Finley, Thomas and Wang, Taifeng and Chen, Wei and Ma, Weidong and Ye, Qiwei and Liu, Tie-Yan},
+  pages = {9},
+  abstract = {Gradient Boosting Decision Tree (GBDT) is a popular machine learning algorithm, and has quite a few effective implementations such as XGBoost and pGBRT. Although many engineering optimizations have been adopted in these implementations, the efficiency and scalability are still unsatisfactory when the feature dimension is high and data size is large. A major reason is that for each feature, they need to scan all the data instances to estimate the information gain of all possible split points, which is very time consuming. To tackle this problem, we propose two novel techniques: Gradient-based One-Side Sampling (GOSS) and Exclusive Feature Bundling (EFB). With GOSS, we exclude a significant proportion of data instances with small gradients, and only use the rest to estimate the information gain. We prove that, since the data instances with larger gradients play a more important role in the computation of information gain, GOSS can obtain quite accurate estimation of the information gain with a much smaller data size. With EFB, we bundle mutually exclusive features (i.e., they rarely take nonzero values simultaneously), to reduce the number of features. We prove that finding the optimal bundling of exclusive features is NP-hard, but a greedy algorithm can achieve quite good approximation ratio (and thus can effectively reduce the number of features without hurting the accuracy of split point determination by much). We call our new GBDT implementation with GOSS and EFB LightGBM. Our experiments on multiple public datasets show that, LightGBM speeds up the training process of conventional GBDT by up to over 20 times while achieving almost the same accuracy.},
+  language = {en}
+}
+
 @inproceedings{kemker2018,
   title = {{{FearNet}}: {{Brain}}-{{Inspired Model}} for {{Incremental Learning}}},
   booktitle = {{{ICLR}}},
@@ -1212,7 +1567,7 @@ The authors leverage a bayesian framework in which the parameters of a model are
   year = {2018},
   url = {https://arxiv.org/pdf/1708.02072.pdf},
   abstract = {Deep neural networks are used in many state-of-the-art systems for machine perception. Once a network is trained to do a specific task, e.g., bird classification, it cannot easily be trained to do new tasks, e.g., incrementally learning to recognize additional bird species or learning an entirely different task such as flower recognition. When new tasks are added, typical deep neural networks are prone to catastrophically forgetting previous tasks. Networks that are capable of assimilating new information incrementally, much like how humans form new memories over time, will be more efficient than re-training the model from scratch each time a new task needs to be learned. There have been multiple attempts to develop schemes that mitigate catastrophic forgetting, but these methods have not been directly compared, the tests used to evaluate them vary considerably, and these methods have only been evaluated on small-scale problems (e.g., MNIST). In this paper, we introduce new metrics and benchmarks for directly comparing five different mechanisms designed to mitigate catastrophic forgetting in neural networks: regularization, ensembling, rehearsal, dual-memory, and sparse-coding. Our experiments on real-world images and sounds show that the mechanism(s) that are critical for optimal performance vary based on the incremental training paradigm and type of data being used, but they all demonstrate that the catastrophic forgetting problem is not yet solved.},
-  keywords = {[mnist],audioset,kemker,review,survey},
+  keywords = {[mnist],[survey],audioset,kemker,review},
   language = {en}
 }
 
@@ -1283,15 +1638,16 @@ arXiv: 1612.00796},
   keywords = {[omniglot]}
 }
 
-@article{kruszewski2020,
-  title = {Class-{{Agnostic Continual Learning}} of {{Alternating Languages}} and {{Domains}}},
+@article{kruszewski2020a,
+  title = {Evaluating {{Online Continual Learning}} with {{CALM}}},
   author = {Kruszewski, Germ{\'a}n and Sorodoc, Ionut-Teodor and Mikolov, Tomas},
   year = {2020},
-  url = {http://arxiv.org/abs/2004.03340},
-  abstract = {Continual Learning has been often framed as the problem of training a model in a sequence of tasks. In this regard, Neural Networks have been attested to forget the solutions to previous task as they learn new ones. Yet, modelling human life-long learning does not necessarily require any crisp notion of tasks. In this work, we propose a benchmark based on language modelling in a multilingual and multidomain setting that prescinds of any explicit delimitation of training examples into distinct tasks, and propose metrics to study continual learning and catastrophic forgetting in this setting. Then, we introduce a simple Product of Experts learning system that performs strongly on this problem while displaying interesting properties, and investigate its merits for avoiding forgetting.},
+  url = {https://arxiv.org/abs/2004.03340v2},
+  urldate = {2021-02-05},
+  abstract = {Online Continual Learning (OCL) studies learning over a continuous data stream without observing any single example more than once, a setting that is closer to the experience of humans and systems that must learn "on-the-wild". Yet, commonly available benchmarks are far from these real-world conditions, because they explicitly signal different tasks, lack latent similarity structure or assume temporal independence between different examples. Here, we propose a new benchmark for OCL based on language modelling in which input alternates between different languages and domains without any explicit delimitation. Additionally, we propose new metrics to study catastrophic forgetting in this setting and evaluate multiple baseline models based on compositions of experts. Finally, we introduce a simple gating technique that learns the latent similarities between different inputs, improving the performance of a Products of Experts model.},
   journal = {arXiv},
-  keywords = {[nlp],[rnn],Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Machine Learning,expert,mixture},
-  note = {arXiv: 2004.03340}
+  keywords = {[nlp],[rnn]},
+  language = {en}
 }
 
 @inproceedings{kurle2020,
@@ -1315,6 +1671,22 @@ arXiv: 1612.00796},
   annotation = {\_eprint: 1908.11853},
   journal = {arXiv},
   keywords = {[bayes],[fashion],[mnist]}
+}
+
+@inproceedings{laptev2015,
+  title = {Generic and {{Scalable Framework}} for {{Automated Time}}-Series {{Anomaly Detection}}},
+  booktitle = {Proceedings of the 21th {{ACM SIGKDD International Conference}} on {{Knowledge Discovery}} and {{Data Mining}} - {{KDD}} '15},
+  author = {Laptev, Nikolay and Amizadeh, Saeed and Flint, Ian},
+  year = {2015},
+  pages = {1939--1947},
+  publisher = {{ACM Press}},
+  address = {{Sydney, NSW, Australia}},
+  doi = {10.1145/2783258.2788611},
+  url = {http://dl.acm.org/citation.cfm?doid=2783258.2788611},
+  urldate = {2020-07-11},
+  abstract = {This paper introduces a generic and scalable framework for automated anomaly detection on large scale time-series data. Early detection of anomalies plays a key role in maintaining consistency of person's data and protects corporations against malicious attackers. Current state of the art anomaly detection approaches suffer from scalability, use-case restrictions, difficulty of use and a large number of false positives. Our system at Yahoo, EGADS, uses a collection of anomaly detection and forecasting models with an anomaly filtering layer for accurate and scalable anomaly detection on timeseries. We compare our approach against other anomaly detection systems on real and synthetic data with varying time-series characteristics. We found that our framework allows for 50-60\% improvement in precision and recall for a variety of use-cases. Both the data and the framework are being open-sourced. The open-sourcing of the data, in particular, represents the first of its kind effort to establish the standard benchmark for anomaly detection.},
+  isbn = {978-1-4503-3664-2},
+  language = {en}
 }
 
 @inproceedings{lee2017,
@@ -1475,6 +1847,41 @@ arXiv: 1612.00796},
   keywords = {[cifar],[mnist]}
 }
 
+@inproceedings{li2019b,
+  title = {Online {{Internet Anomaly Detection With High Accuracy}}: {{A Fast Tensor Factorization Solution}}},
+  shorttitle = {Online {{Internet Anomaly Detection With High Accuracy}}},
+  booktitle = {{{IEEE INFOCOM}} 2019 - {{IEEE Conference}} on {{Computer Communications}}},
+  author = {Li, Xiaocan and Xie, Kun and Wang, Xin and Xie, Gaogang and Wen, Jigang and Zhang, Guangxing and Qin, Zheng},
+  year = {2019},
+  pages = {1900--1908},
+  publisher = {{IEEE}},
+  address = {{Paris, France}},
+  doi = {10.1109/INFOCOM.2019.8737562},
+  url = {https://ieeexplore.ieee.org/document/8737562/},
+  urldate = {2020-07-11},
+  abstract = {Traffic anomaly detection is critical for advanced Internet management. Existing detection algorithms usually work off-line and cannot timely detect anomalies. They also suffer from high cost for storage and computation. Although online and accurate traffic anomaly detection is very important, it very difficult to achieve. We propose to utilize tensor model to well exploit the multi-dimensional information hidden in the traffic data for more accurate online Internet anomaly detection. We decouple the tensor recovery problem to iteratively solve two sub problems, a tensor factorization sub-problem and an anomaly detection sub-problem. To reduce the high cost for computation and storage involved in tensor factorization, we propose two lightweight techniques to effectively derive factor matrices of tensor in the current window and iteration, taking advantage of tensor decomposition results of the previous window and iteration. We have done extensive experiments using two real traffic traces to compare with three tensor based algorithms and three matrix based algorithms. The experiment results demonstrate that our online anomaly detection algorithm can achieve the same anomaly detection accuracy as that of the best offline tensor based algorithm, but at 6100 times faster speed and with very low storage cost.},
+  isbn = {978-1-72810-515-4},
+  language = {en}
+}
+
+@article{li2019c,
+  title = {{{MAD}}-{{GAN}}: {{Multivariate Anomaly Detection}} for {{Time Series Data}} with {{Generative Adversarial Networks}}},
+  shorttitle = {{{MAD}}-{{GAN}}},
+  author = {Li, Dan and Chen, Dacheng and Shi, Lei and Jin, Baihong and Goh, Jonathan and Ng, See-Kiong},
+  year = {2019},
+  url = {http://arxiv.org/abs/1901.04997},
+  urldate = {2020-07-11},
+  abstract = {The prevalence of networked sensors and actuators in many real-world systems such as smart buildings, factories, power plants, and data centres generate substantial amounts of multivariate time series data for these systems. Many of these cyber-physical systems (CPSs) are engineered for mission-critical tasks and are thus targets for cyber-attacks. The rich sensor data can be continuously monitored for intrusion events through anomaly detection. However, conventional threshold-based anomaly detection methods are inadequate due to the dynamic complexities of these systems, while supervised machine learning methods are unable to exploit the large amounts of data due to the lack of labeled data. On the other hand, current unsupervised machine learning approaches have not fully exploited the spatial-temporal correlation and other dependencies amongst the multiple variables (sensors/actuators) in the system for detecting anomalies. Most of the current techniques also employed simple comparison between the present states and predicted normal ranges for anomaly detection, which can be inadequate given the highly dynamic behaviors of the systems. In this work, we propose an unsupervised multivariate anomaly detection method based on Generative Adversarial Networks (GANs), using the Long-Short-Term-Memory Recurrent Neural Networks (LSTM-RNN) as the base models (namely, the generator and discriminator) in the GAN framework to capture the temporal correlation of time series distributions. Instead of treating each data stream independently, our proposed Multivariate Anomaly Detection with GAN (MAD-GAN) framework considers the entire variable set concurrently to capture the latent interactions amongst the variables. We also fully exploit both the generator and discriminator produced by the GAN, using a novel anomaly score called DR-score to detect anomalies by discrimination and reconstruction. We have tested our proposed MAD-GAN using two recent datasets collected from real world CPS: the Secure Water Treatment (SWaT) and the Water Distribution (WADI) datasets. Our experimental results showed that the proposed MAD-GAN is effective in reporting anomalies caused by various cyberintrusions compared in these complex real-world systems.},
+  archiveprefix = {arXiv},
+  eprint = {1901.04997},
+  eprinttype = {arxiv},
+  journal = {arXiv:1901.04997 [cs, stat]},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning},
+  language = {en},
+  note = {Comment: This is a pre-print of an on-going work. arXiv admin note: text overlap with arXiv:1809.04758},
+  primaryclass = {cs, stat}
+}
+
 @article{li2020,
   title = {Continual {{Learning Using Task Conditional Neural Networks}}},
   author = {Li, Honglin and Barnaghi, Payam and Enshaeifar, Shirin and Ganz, Frieder},
@@ -1507,6 +1914,39 @@ arXiv: 1612.00796},
   urldate = {2021-01-01},
   abstract = {Motivated by the human's ability to continually learn and gain knowledge over time, several research efforts have been pushing the limits of machines to constantly learn while alleviating catastrophic forgetting. Most of the existing methods have been focusing on continual learning of label prediction tasks, which have fixed input and output sizes. In this paper, we propose a new scenario of continual learning which handles sequence-to-sequence tasks common in language learning. We further propose an approach to use label prediction continual learning algorithm for sequence-to-sequence continual learning by leveraging compositionality. Experimental results show that the proposed method has significant improvement over state-of-the-art methods. It enables knowledge transfer and prevents catastrophic forgetting, resulting in more than 85\% accuracy up to 100 stages, compared with less than 50\% accuracy for baselines in instruction learning task. It also shows significant improvement in machine translation task. This is the first work to combine continual learning and compositionality for language learning, and we hope this work will make machines more helpful in various tasks.},
   keywords = {[nlp],[rnn]},
+  language = {en}
+}
+
+@inproceedings{lin2016,
+  title = {{{iDice}}: Problem Identification for Emerging Issues},
+  shorttitle = {{{iDice}}},
+  booktitle = {Proceedings of the 38th {{International Conference}} on {{Software Engineering}} - {{ICSE}} '16},
+  author = {Lin, Qingwei and Lou, Jian-Guang and Zhang, Hongyu and Zhang, Dongmei},
+  year = {2016},
+  pages = {214--224},
+  publisher = {{ACM Press}},
+  address = {{Austin, Texas}},
+  doi = {10.1145/2884781.2884795},
+  url = {http://dl.acm.org/citation.cfm?doid=2884781.2884795},
+  urldate = {2020-07-11},
+  abstract = {One challenge for maintaining a large-scale software system, especially an online service system, is to quickly respond to customer issues. The issue reports typically have many categorical attributes that reflect the characteristics of the issues. For a commercial system, most of the time the volume of reported issues is relatively constant. Sometimes, there are emerging issues that lead to significant volume increase. It is important for support engineers to efficiently and effectively identify and resolve such emerging issues, since they have impacted a large number of customers. Currently, problem identification for an emerging issue is a tedious and error-prone process, because it requires support engineers to manually identify a particular attribute combination that characterizes the emerging issue among a large number of attribute combinations. We call such an attribute combination effective combination, which is important for issue isolation and diagnosis. In this paper, we propose iDice, an approach that can identify the effective combination for an emerging issue with high quality and performance. We evaluate the effectiveness and efficiency of iDice through experiments. We have also successfully applied iDice to several Microsoft online service systems in production. The results confirm that iDice can help identify emerging issues and reduce maintenance effort.},
+  isbn = {978-1-4503-3900-1},
+  language = {en}
+}
+
+@inproceedings{lin2018,
+  title = {Collaborative {{Alert Ranking}} for {{Anomaly Detection}}},
+  booktitle = {Proceedings of the 27th {{ACM International Conference}} on {{Information}} and {{Knowledge Management}}},
+  author = {Lin, Ying and Chen, Zhengzhang and Cao, Cheng and Tang, Lu-An and Zhang, Kai and Cheng, Wei and Li, Zhichun},
+  year = {2018},
+  pages = {1987--1995},
+  publisher = {{ACM}},
+  address = {{Torino Italy}},
+  doi = {10.1145/3269206.3272013},
+  url = {https://dl.acm.org/doi/10.1145/3269206.3272013},
+  urldate = {2020-07-11},
+  abstract = {Given a large number of low-quality heterogeneous categorical alerts collected from an anomaly detection system, how to characterize the complex relationships between different alerts and deliver trustworthy rankings to end users? While existing techniques focus on either mining alert patterns or filtering out false positive alerts, it can be more advantageous to consider the two perspectives simultaneously in order to improve detection accuracy and better understand abnormal system behaviors. In this paper, we propose CAR, a collaborative alert ranking framework that exploits both temporal and content correlations from heterogeneous categorical alerts. CAR first builds a hierarchical Bayesian model to capture both short-term and long-term dependencies in each alert sequence. Then, an entity embedding-based model is proposed to learn the content correlations between alerts via their heterogeneous categorical attributes. Finally, by incorporating both temporal and content dependencies into a unified optimization framework, CAR ranks both alerts and their corresponding alert patterns. Our experiments \textemdash{} using both synthetic and real-world enterprise security alert data \textemdash{} show that CAR can accurately identify true positive alerts and successfully reconstruct the attack scenarios at the same time.},
+  isbn = {978-1-4503-6014-2},
   language = {en}
 }
 
@@ -1648,6 +2088,25 @@ arXiv: 1612.00796},
   keywords = {Data streams,Hyperparameter optimization,Incremental learning,Model selection,On-line learning}
 }
 
+@incollection{lu2020,
+  title = {{{LoPAD}}: {{A Local Prediction Approach}} to {{Anomaly Detection}}},
+  shorttitle = {{{LoPAD}}},
+  booktitle = {Advances in {{Knowledge Discovery}} and {{Data Mining}}},
+  author = {Lu, Sha and Liu, Lin and Li, Jiuyong and Le, Thuc Duy and Liu, Jixue},
+  editor = {Lauw, Hady W. and Wong, Raymond Chi-Wing and Ntoulas, Alexandros and Lim, Ee-Peng and Ng, See-Kiong and Pan, Sinno Jialin},
+  year = {2020},
+  volume = {12085},
+  pages = {660--673},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-030-47436-2_50},
+  url = {http://link.springer.com/10.1007/978-3-030-47436-2_50},
+  urldate = {2020-07-11},
+  abstract = {Dependency-based anomaly detection methods detect anomalies by looking at the deviations from the normal probabilistic dependency among variables and are able to discover more subtle and meaningful anomalies. However, with high dimensional data, they face two key challenges. One is how to find the right set of relevant variables for a given variable from the large search space to assess dependency deviation. The other is how to use the dependency to estimate the expected value of a variable accurately. In this paper, we propose the Local Prediction approach to Anomaly Detection (LoPAD) framework to deal with the two challenges simultaneously. Through introducing Markov Blanket into dependencybased anomaly detection, LoPAD decomposes the high dimensional unsupervised anomaly detection problem into local feature selection and prediction problems while achieving better performance and interpretability. The framework enables instantiations with off-the-shelf predictive models for anomaly detection. Comprehensive experiments have been done on both synthetic and real-world data. The results show that LoPAD outperforms state-of-the-art anomaly detection methods.},
+  isbn = {978-3-030-47435-5 978-3-030-47436-2},
+  language = {en}
+}
+
 @inproceedings{luders2016,
   title = {Continual Learning through Evolvable Neural Turing Machines},
   booktitle = {{{NIPS}} 2016 {{Workshop}} on {{Continual Learning}} and {{Deep Networks}}},
@@ -1657,6 +2116,31 @@ arXiv: 1612.00796},
   abstract = {Continual learning, i.e. the ability to sequentially learn tasks without catastrophicforgetting of previously learned ones, is an important open challenge in machinelearning. In this paper we take a step in this direction by showing that the recentlyproposedEvolving Neural Turing Machine(ENTM) approach is able to performone-shot learningin a reinforcement learning task without catastrophic forgettingof previously stored associations.}
 }
 
+@article{luo,
+  title = {Multivariate {{Time Series Imputation}} with {{Generative Adversarial Networks}}},
+  author = {Luo, Yonghong and Cai, Xiangrui and Zhang, Ying and Xu, Jun},
+  pages = {12},
+  abstract = {Multivariate time series usually contain a large number of missing values, which hinders the application of advanced analysis methods on multivariate time series data. Conventional approaches to addressing the challenge of missing values, including mean/zero imputation, case deletion, and matrix factorization-based imputation, are all incapable of modeling the temporal dependencies and the nature of complex distribution in multivariate time series. In this paper, we treat the problem of missing value imputation as data generation. Inspired by the success of Generative Adversarial Networks (GAN) in image generation, we propose to learn the overall distribution of a multivariate time series dataset with GAN, which is further used to generate the missing values for each sample. Different from the image data, the time series data are usually incomplete due to the nature of data recording process. A modified Gate Recurrent Unit is employed in GAN to model the temporal irregularity of the incomplete time series. Experiments on two multivariate time series datasets show that the proposed model outperformed the baselines in terms of accuracy of imputation. Experimental results also showed that a simple model on the imputed data can achieve state-of-the-art results on the prediction tasks, demonstrating the benefits of our model in downstream applications.},
+  language = {en}
+}
+
+@inproceedings{luo2019,
+  title = {{{E}}{$^{2}$}{{GAN}}: {{End}}-to-{{End Generative Adversarial Network}} for {{Multivariate Time Series Imputation}}},
+  shorttitle = {{{E}}{$^{2}$}{{GAN}}},
+  booktitle = {Proceedings of the {{Twenty}}-{{Eighth International Joint Conference}} on {{Artificial Intelligence}}},
+  author = {Luo, Yonghong and Zhang, Ying and Cai, Xiangrui and Yuan, Xiaojie},
+  year = {2019},
+  pages = {3094--3100},
+  publisher = {{International Joint Conferences on Artificial Intelligence Organization}},
+  address = {{Macao, China}},
+  doi = {10.24963/ijcai.2019/429},
+  url = {https://www.ijcai.org/proceedings/2019/429},
+  urldate = {2020-07-28},
+  abstract = {The missing values, appear in most of multivariate time series, prevent advanced analysis of multivariate time series data. Existing imputation approaches try to deal with missing values by deletion, statistical imputation, machine learning based imputation and generative imputation. However, these methods are either incapable of dealing with temporal information or multi-stage. This paper proposes an end-to-end generative model E2GAN to impute missing values in multivariate time series. With the help of the discriminative loss and the squared error loss, E2GAN can impute the incomplete time series by the nearest generated complete time series at one stage. Experiments on multiple real-world datasets show that our model outperforms the baselines on the imputation accuracy and achieves state-of-the-art classification/regression results on the downstream applications. Additionally, our method also gains better time efficiency than multi-stage method on the training of neural networks.},
+  isbn = {978-0-9992411-4-1},
+  language = {en}
+}
+
 @article{madasu2020,
   title = {Sequential {{Domain Adaptation}} through {{Elastic Weight Consolidation}} for {{Sentiment Analysis}}},
   author = {Madasu, Avinash and Rao, Vijjini Anvesh},
@@ -1664,7 +2148,7 @@ arXiv: 1612.00796},
   url = {http://arxiv.org/abs/2007.01189},
   urldate = {2021-01-08},
   abstract = {Elastic Weight Consolidation (EWC) is a technique used in overcoming catastrophic forgetting between successive tasks trained on a neural network. We use this phenomenon of information sharing between tasks for domain adaptation. Training data for tasks such as sentiment analysis (SA) may not be fairly represented across multiple domains. Domain Adaptation (DA) aims to build algorithms that leverage information from source domains to facilitate performance on an unseen target domain. We propose a model-independent framework - Sequential Domain Adaptation (SDA). SDA draws on EWC for training on successive source domains to move towards a general domain solution, thereby solving the problem of domain adaptation. We test SDA on convolutional, recurrent, and attention-based architectures. Our experiments show that the proposed framework enables simple architectures such as CNNs to outperform complex state-of-the-art models in domain adaptation of SA. In addition, we observe that the effectiveness of a harder first Anti-Curriculum ordering of source domains leads to maximum performance.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {2007.01189},
   eprinttype = {arxiv},
   journal = {arXiv},
@@ -1739,6 +2223,14 @@ arXiv: 1612.00796},
   journal = {arXiv}
 }
 
+@article{manzoor,
+  title = {{{xStream}}: {{Outlier Dete}}`x'ion in {{Feature}}-{{Evolving Data Streams}}},
+  author = {Manzoor, Emaad and Lamba, Hemank and Akoglu, Leman},
+  pages = {10},
+  abstract = {This work addresses the outlier detection problem for featureevolving streams, which has not been studied before. In this setting both (1) data points may evolve, with feature values changing, as well as (2) feature space may evolve, with newly-emerging features over time. This is notably different from row-streams, where points with fixed features arrive one at a time.},
+  language = {en}
+}
+
 @article{marsland2002,
   title = {A Self-Organising Network That Grows When Required},
   author = {Marsland, Stephen and Shapiro, Jonathan and Nehmzow, Ulrich},
@@ -1790,6 +2282,23 @@ arXiv: 1612.00796},
   pages = {4502--4513},
   url = {http://papers.nips.cc/paper/7702-lifelong-inverse-reinforcement-learning.pdf},
   abstract = {Methods for learning from demonstration (LfD) have shown success in acquiring behavior policies by imitating a user. However, even for a single task, LfD may require numerous demonstrations. For versatile agents that must learn many tasks via demonstration, this process would substantially burden the user if each task were learned in isolation. To address this challenge, we introduce the novel problem of lifelong learning from demonstration, which allows the agent to continually build upon knowledge learned from previously demonstrated tasks to accelerate the learning of new tasks, reducing the amount of demonstrations required. As one solution to this problem, we propose the first lifelong learning approach to inverse reinforcement learning, which learns consecutive tasks via demonstration, continually transferring knowledge between tasks to improve performance.}
+}
+
+@inproceedings{meng2019,
+  title = {{{LogAnomaly}}: {{Unsupervised Detection}} of {{Sequential}} and {{Quantitative Anomalies}} in {{Unstructured Logs}}},
+  shorttitle = {{{LogAnomaly}}},
+  booktitle = {Proceedings of the {{Twenty}}-{{Eighth International Joint Conference}} on {{Artificial Intelligence}}},
+  author = {Meng, Weibin and Liu, Ying and Zhu, Yichen and Zhang, Shenglin and Pei, Dan and Liu, Yuqing and Chen, Yihao and Zhang, Ruizhi and Tao, Shimin and Sun, Pei and Zhou, Rong},
+  year = {2019},
+  pages = {4739--4745},
+  publisher = {{International Joint Conferences on Artificial Intelligence Organization}},
+  address = {{Macao, China}},
+  doi = {10.24963/ijcai.2019/658},
+  url = {https://www.ijcai.org/proceedings/2019/658},
+  urldate = {2020-07-11},
+  abstract = {Recording runtime status via logs is common for almost computer system, and detecting anomalies in logs is crucial for timely identifying malfunctions of systems. However, manually detecting anomalies for logs is time-consuming, error-prone, and infeasible. Existing automatic log anomaly detection approaches, using indexes rather than semantics of log templates, tend to cause false alarms. In this work, we propose LogAnomaly, a framework to model a log stream as a natural language sequence. Empowered by template2vec, a novel, simple yet effective method to extract the semantic information hidden in log templates, LogAnomaly can detect both sequential and quantitive log anomalies simultaneously, which has not been done by any previous work. Moreover, LogAnomaly can avoid the false alarms caused by the newly appearing log templates between periodic model retrainings. Our evaluation on two public production log datasets show that LogAnomaly outperforms existing logbased anomaly detection methods.},
+  isbn = {978-0-9992411-4-1},
+  language = {en}
 }
 
 @article{mermillod2013,
@@ -1856,11 +2365,28 @@ arXiv: 1612.00796},
   keywords = {fashion,mnist,spiking}
 }
 
+@article{mirsky2018,
+  title = {Kitsune: {{An Ensemble}} of {{Autoencoders}} for {{Online Network Intrusion Detection}}},
+  shorttitle = {Kitsune},
+  author = {Mirsky, Yisroel and Doitshman, Tomer and Elovici, Yuval and Shabtai, Asaf},
+  year = {2018},
+  url = {http://arxiv.org/abs/1802.09089},
+  urldate = {2020-12-09},
+  abstract = {Neural networks have become an increasingly popular solution for network intrusion detection systems (NIDS). Their capability of learning complex patterns and behaviors make them a suitable solution for differentiating between normal traffic and network attacks. However, a drawback of neural networks is the amount of resources needed to train them. Many network gateways and routers devices, which could potentially host an NIDS, simply do not have the memory or processing power to train and sometimes even execute such models. More importantly, the existing neural network solutions are trained in a supervised manner. Meaning that an expert must label the network traffic and update the model manually from time to time. In this paper, we present Kitsune: a plug and play NIDS which can learn to detect attacks on the local network, without supervision, and in an efficient online manner. Kitsune's core algorithm (KitNET) uses an ensemble of neural networks called autoencoders to collectively differentiate between normal and abnormal traffic patterns. KitNET is supported by a feature extraction framework which efficiently tracks the patterns of every network channel. Our evaluations show that Kitsune can detect various attacks with a performance comparable to offline anomaly detectors, even on a Raspberry PI. This demonstrates that Kitsune can be a practical and economic NIDS.},
+  archiveprefix = {arXiv},
+  eprint = {1802.09089},
+  eprinttype = {arxiv},
+  journal = {arXiv:1802.09089 [cs]},
+  keywords = {Computer Science - Artificial Intelligence,Computer Science - Cryptography and Security,Computer Science - Machine Learning},
+  note = {Comment: Appears in Network and Distributed Systems Security Symposium (NDSS) 2018},
+  primaryclass = {cs}
+}
+
 @article{mirzadeh2020,
   title = {Linear {{Mode Connectivity}} in {{Multitask}} and {{Continual Learning}}},
   author = {Mirzadeh, Seyed Iman and Farajtabar, Mehrdad and Gorur, Dilan and Pascanu, Razvan and Ghasemzadeh, Hassan},
   year = {2020},
-  url = {https://github.com/imirzadeh/MC-SGD http://arxiv.org/abs/2010.04495},
+  url = {https://arxiv.org/abs/2010.04495},
   abstract = {Continual (sequential) training and multitask (simultaneous) training are often attempting to solve the same overall objective: to find a solution that performs well on all considered tasks. The main difference is in the training regimes, where continual learning can only have access to one task at a time, which for neural networks typically leads to catastrophic forgetting. That is, the solution found for a subsequent task does not perform well on the previous ones anymore. However, the relationship between the different minima that the two training regimes arrive at is not well understood. What sets them apart? Is there a local structure that could explain the difference in performance achieved by the two different schemes? Motivated by recent work showing that different minima of the same task are typically connected by very simple curves of low error, we investigate whether multitask and continual solutions are similarly connected. We empirically find that indeed such connectivity can be reliably achieved and, more interestingly, it can be done by a linear path, conditioned on having the same initialization for both. We thoroughly analyze this observation and discuss its significance for the continual learning process. Furthermore, we exploit this finding to propose an effective algorithm that constrains the sequentially learned minima to behave as the multitask solution. We show that our method outperforms several state of the art continual learning algorithms on various vision benchmarks.},
   annotation = {\_eprint: 2010.04495},
   journal = {arXiv},
@@ -1897,6 +2423,38 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   pmid = {15003161}
 }
 
+@inproceedings{miz2019,
+  title = {Anomaly {{Detection}} in the {{Dynamics}} of {{Web}} and {{Social Networks Using Associative Memory}}},
+  booktitle = {The {{World Wide Web Conference}} on   - {{WWW}} '19},
+  author = {Miz, Volodymyr and Ricaud, Benjamin and Benzi, Kirell and Vandergheynst, Pierre},
+  year = {2019},
+  pages = {1290--1299},
+  publisher = {{ACM Press}},
+  address = {{San Francisco, CA, USA}},
+  doi = {10.1145/3308558.3313541},
+  url = {http://dl.acm.org/citation.cfm?doid=3308558.3313541},
+  urldate = {2020-07-11},
+  abstract = {In this work, we propose a new, fast and scalable method for anomaly detection in large time-evolving graphs. It may be a static graph with dynamic node attributes (e.g. time-series), or a graph evolving in time, such as a temporal network. We define an anomaly as a localized increase in temporal activity in a cluster of nodes. The algorithm is unsupervised. It is able to detect and track anomalous activity in a dynamic network despite the noise from multiple interfering sources. We use the Hopfield network model of memory to combine the graph and time information. We show that anomalies can be spotted with good precision using a memory network. The presented approach is scalable and we provide a distributed implementation of the algorithm.},
+  isbn = {978-1-4503-6674-8},
+  language = {en}
+}
+
+@article{moustafa2019,
+  title = {A Holistic Review of {{Network Anomaly Detection Systems}}: {{A}} Comprehensive Survey},
+  shorttitle = {A Holistic Review of {{Network Anomaly Detection Systems}}},
+  author = {Moustafa, Nour and Hu, Jiankun and Slay, Jill},
+  year = {2019},
+  volume = {128},
+  pages = {33--55},
+  issn = {10848045},
+  doi = {10.1016/j.jnca.2018.12.006},
+  url = {https://linkinghub.elsevier.com/retrieve/pii/S1084804518303886},
+  urldate = {2020-07-11},
+  abstract = {Network Anomaly Detection Systems (NADSs) are gaining a more important role in most network defense systems for detecting and preventing potential threats. The paper discusses various aspects of anomaly-based Network Intrusion Detection Systems (NIDSs). The paper explains cyber kill chain models and cyber-attacks that compromise network systems. Moreover, the paper describes various Decision Engine (DE) approaches, including new ensemble learning and deep learning approaches. The paper also provides more details about benchmark datasets for training and validating DE approaches. Most of NADSs' applications, such as Data Centers, Internet of Things (IoT), as well as Fog and Cloud Computing, are also discussed. Finally, we present several experimental explanations which we follow by revealing various promising research directions.},
+  journal = {Journal of Network and Computer Applications},
+  language = {en}
+}
+
 @article{mundt2019,
   title = {Unified {{Probabilistic Deep Continual Learning}} through {{Generative Replay}} and {{Open Set Recognition}}},
   author = {Mundt, Martin and Majumder, Sagnik and Pliushch, Iuliia and Hong, Yong Won and Ramesh, Visvanathan},
@@ -1928,6 +2486,15 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   abstract = {Humans and animals can learn complex predictive models that allow them to accurately and reliably reason about real-world phenomena, and they can adapt such models extremely quickly in the face of unexpected changes. Deep neural network models allow us to represent very complex functions, but lack this capacity for rapid online adaptation. The goal in this paper is to develop a method for continual online learning from an incoming stream of data, using deep neural network models. We formulate an online learning procedure that uses stochastic gradient descent to update model parameters, and an expectation maximization algorithm with a Chinese restaurant process prior to develop and maintain a mixture of models to handle non-stationary task distributions. This allows for all models to be adapted as necessary, with new models instantiated for task changes and old models recalled when previously seen tasks are encountered again. Furthermore, we observe that meta-learning can be used to meta-train a model such that this direct online adaptation with SGD is effective, which is otherwise not the case for large function approximators. In this work, we apply our meta-learning for online learning (MOLe) approach to model-based reinforcement learning, where adapting the predictive model is critical for control; we demonstrate that MOLe outperforms alternative prior methods, and enables effective continuous adaptation in non-stationary task distributions such as varying terrains, motor failures, and unexpected disturbances. Videos available at: https://sites.google.com/Berkeley.edu/onlineviameta.},
   annotation = {\_eprint: 1812.07671},
   journal = {7th International Conference on Learning Representations, ICLR 2019}
+}
+
+@article{nayyar2015,
+  title = {Anomaly {{Detection}} for {{Univariate Time}}-{{Series Data}}},
+  author = {Nayyar, Krati and Vishwasrao, Saket and Chakravarty, Saurabh and Dabiri, Sina},
+  year = {2015},
+  pages = {7},
+  abstract = {Some of the biggest challenges in anomaly based network intrusion detection systems have to do with being able to handle anomaly detection at huge scale, in real time. The incoming data stream is homogeneous, containing different anomalous patterns along with a large amount of normal data. We pose the problem as that of detecting the anomaly in the data stream in realtime. We define an approach to classify the pattern in the sliding window based data stream and attempt to identify the class of anomaly a pattern belongs to. These classes contain the normal class along with the anomalous ones. If the data detected in the sliding window is classified as belonging to one of the anomalous patterns, we dispatch it to the respective algorithmic handler for predicting which data points in the sliding window are anomalous, based on the model that we have trained in the handlers. Experiments show that we are able to get good reasonable accuracy based on our methods. There is always that chance of generating false positives and considering the problem domain, we conclude that it is fine to generate a few false alarms rather than being silent on an actual anomaly. We use the F1 score attributes like precision and recall to measure our experimental results quantitatively.},
+  language = {en}
 }
 
 @inproceedings{nguyen2018,
@@ -1971,6 +2538,22 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   annotation = {\_eprint: 2001.01578},
   journal = {arXiv},
   keywords = {[vision]}
+}
+
+@inproceedings{oh2019,
+  title = {Sequential {{Anomaly Detection}} Using {{Inverse Reinforcement Learning}}},
+  booktitle = {Proceedings of the 25th {{ACM SIGKDD International Conference}} on {{Knowledge Discovery}} \& {{Data Mining}}},
+  author = {Oh, Min-hwan and Iyengar, Garud},
+  year = {2019},
+  pages = {1480--1490},
+  publisher = {{ACM}},
+  address = {{Anchorage AK USA}},
+  doi = {10.1145/3292500.3330932},
+  url = {https://dl.acm.org/doi/10.1145/3292500.3330932},
+  urldate = {2020-07-11},
+  abstract = {One of the most interesting application scenarios in anomaly detection is when sequential data are targeted. For example, in a safety-critical environment, it is crucial to have an automatic detection system to screen the streaming data gathered by monitoring sensors, and to report abnormal observations if detected in realtime. Oftentimes, stakes are much higher when these potential anomalies are intentional or goal-oriented. We propose an endto-end framework for sequential anomaly detection using inverse reinforcement learning (IRL), whose objective is to determine the decision-making agent's underlying function which triggers his/her behavior. The proposed method takes the sequence of actions of a target agent (and possibly other meta information) as input. The agent's normal behavior is then understood by the reward function which is inferred via IRL. We use a neural network to represent a reward function. Using a learned reward function, we evaluate whether a new observation from the target agent follows a normal pattern. In order to construct a reliable anomaly detection method and take into consideration the confidence of the predicted anomaly score, we adopt a Bayesian approach for IRL. The empirical study on publicly available real-world data shows that our proposed method is effective in identifying anomalies.},
+  isbn = {978-1-4503-6201-6},
+  language = {en}
 }
 
 @article{ororbia2019,
@@ -2019,6 +2602,20 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   keywords = {[vision]}
 }
 
+@techreport{ozgur2016,
+  title = {A Review of {{KDD99}} Dataset Usage in Intrusion Detection and Machine Learning between 2010 and 2015},
+  author = {{\"O}zg{\"u}r, Atilla and Erdem, Hamit},
+  year = {2016},
+  institution = {{PeerJ Inc.}},
+  issn = {2167-9843},
+  doi = {10.7287/peerj.preprints.1954v1},
+  url = {https://peerj.com/preprints/1954},
+  urldate = {2020-12-24},
+  abstract = {Although KDD99 dataset is more than 15 years old, it is still widely used in academic research. To investigate wide usage of this dataset in Machine Learning Research (MLR) and Intrusion Detection Systems (IDS); this study reviews 149 research articles from 65 journals indexed in Science Citation In- dex Expanded and Emerging Sources Citation Index during the last six years (2010\textendash 2015). If we include papers presented in other indexes and conferences, number of studies would be tripled. The number of published studies shows that KDD99 is the most used dataset in IDS and machine learning areas, and it is the de facto dataset for these research areas. To show recent usage of KDD99 and the related sub-dataset (NSL-KDD) in IDS and MLR, the following de- scriptive statistics about the reviewed studies are given: main contribution of articles, the applied algorithms, compared classification algorithms, software toolbox usage, the size and type of the used dataset for training and test- ing, and classification output classes (binary, multi-class). In addition to these statistics, a checklist for future researchers that work in this area is provided.},
+  language = {en},
+  number = {e1954v1}
+}
+
 @article{pan2019,
   title = {Leaky {{Tiling Activations}}: {{A Simple Approach}} to {{Learning Sparse Representations Online}}},
   author = {Pan, Yangchen and Banman, Kirby and White, Martha},
@@ -2056,7 +2653,7 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   url = {http://www.sciencedirect.com/science/article/pii/S0893608019300231},
   abstract = {Humans and animals have the ability to continually acquire, fine-tune, and transfer knowledge and skills throughout their lifespan. This ability, referred to as lifelong learning, is mediated by a rich set of neurocognitive mechanisms that together contribute to the development and specialization of our sensorimotor skills as well as to long-term memory consolidation and retrieval. Consequently, lifelong learning capabilities are crucial for computational learning systems and autonomous agents interacting in the real world and processing continuous streams of information. However, lifelong learning remains a long-standing challenge for machine learning and neural network models since the continual acquisition of incrementally available information from non-stationary data distributions generally leads to catastrophic forgetting or interference. This limitation represents a major drawback for state-of-the-art deep neural network models that typically learn representations from stationary batches of training data, thus without accounting for situations in which information becomes incrementally available over time. In this review, we critically summarize the main challenges linked to lifelong learning for artificial learning systems and compare existing neural network approaches that alleviate, to different extents, catastrophic forgetting. Although significant advances have been made in domain-specific learning with neural networks, extensive research efforts are required for the development of robust lifelong learning on autonomous agents and robots. We discuss well-established and emerging research motivated by lifelong learning factors in biological systems such as structural plasticity, memory replay, curriculum and transfer learning, intrinsic motivation, and multisensory integration.},
   journal = {Neural Networks},
-  keywords = {[framework],Catastrophic forgetting,Continual learning,Developmental systems,Lifelong learning,Memory consolidation},
+  keywords = {[framework],Catastrophic forgetting,Continual Learning,Developmental systems,Lifelong Learning,Memory consolidation},
   language = {en},
   note = {A general survey of the most important and used CL techniques, with a characterisation of the catastrophic forgetting phenomenon.}
 }
@@ -2101,7 +2698,7 @@ The authors observe how minima of CL and Multitask algorithms lie in a linear su
   url = {http://arxiv.org/abs/1911.04489},
   urldate = {2021-01-08},
   abstract = {LSTMs promise much to financial time-series analysis, temporal and cross-sectional inference, but we find that they do not deliver in a real-world financial management task. We examine an alternative called Continual Learning (CL), a memory-augmented approach, which can provide transparent explanations, i.e. which memory did what and when. This work has implications for many financial applications including credit, time-varying fairness in decision making and more. We make three important new observations. Firstly, as well as being more explainable, time-series CL approaches outperform LSTMs as well as a simple sliding window learner using feed-forward neural networks (FFNN). Secondly, we show that CL based on a sliding window learner (FFNN) is more effective than CL based on a sequential learner (LSTM). Thirdly, we examine how real-world, time-series noise impacts several similarity approaches used in CL memory addressing. We provide these insights using an approach called Continual Learning Augmentation (CLA) tested on a complex real-world problem, emerging market equities investment decision making. CLA provides a test-bed as it can be based on different types of time-series learners, allowing testing of LSTM and FFNN learners side by side. CLA is also used to test several distance approaches used in a memory recall-gate: Euclidean distance (ED), dynamic time warping (DTW), auto-encoders (AE) and a novel hybrid approach, warp-AE. We find that ED under-performs DTW and AE but warp-AE shows the best overall performance in a real-world financial task.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {1911.04489},
   eprinttype = {arxiv},
   journal = {arXiv},
@@ -2314,6 +2911,34 @@ The authors rely on a separate feedforward network (column) for each task the mo
   keywords = {[cifar],[mnist]}
 }
 
+@inproceedings{saha2020a,
+  title = {Gradient {{Projection Memory}} for {{Continual Learning}}},
+  booktitle = {International {{Conference}} on {{Learning Representations}}},
+  author = {Saha, Gobinda and Roy, Kaushik},
+  year = {2020},
+  url = {https://openreview.net/forum?id=3AOj0RCNC2},
+  urldate = {2021-01-17},
+  abstract = {The ability to learn continually without forgetting the past tasks is a desired attribute for artificial learning systems. Existing approaches to enable such learning in artificial neural networks...},
+  language = {en}
+}
+
+@article{salehi2018,
+  title = {A {{Survey}} on {{Anomaly}} Detection in {{Evolving Data}}: [With {{Application}} to {{Forest Fire Risk Prediction}}]},
+  shorttitle = {A {{Survey}} on {{Anomaly}} Detection in {{Evolving Data}}},
+  author = {Salehi, Mahsa and Rashidi, Lida},
+  year = {2018},
+  volume = {20},
+  pages = {13--23},
+  issn = {1931-0145, 1931-0153},
+  doi = {10.1145/3229329.3229332},
+  url = {https://dl.acm.org/doi/10.1145/3229329.3229332},
+  urldate = {2020-07-11},
+  abstract = {Traditionally most of the anomaly detection algorithms have been designed for `static' datasets, in which all the observations are available at one time. In non-stationary environments on the other hand, the same algorithms cannot be applied as the underlying data distributions change constantly and the same models are not valid. Hence, we need to devise adaptive models that take into account the dynamically changing characteristics of environments and detect anomalies in `evolving' data. Over the last two decades, many algorithms have been proposed to detect anomalies in evolving data. Some of them consider scenarios where a sequence of objects (called data streams) with one or multiple features evolves over time. Whereas the others concentrate on more complex scenarios, where streaming objects with one or multiple features have causal/non-causal relationships with each other. The latter can be represented as evolving graphs. In this paper, we categorize existing strategies for detecting anomalies in both scenarios including the state-of-the-art techniques. Since label information is mostly unavailable in real-world applications when data evolves, we review the unsupervised approaches in this paper. We then present an interesting application example, i.e., forest fire risk prediction, and conclude the paper with future research directions in this field for researchers and industry.},
+  journal = {ACM SIGKDD Explorations Newsletter},
+  language = {en},
+  number = {1}
+}
+
 @incollection{schak2019,
   title = {A {{Study}} on {{Catastrophic Forgetting}} in {{Deep LSTM Networks}}},
   booktitle = {Artificial {{Neural Networks}} and {{Machine Learning}} \textendash{} {{ICANN}} 2019: {{Deep Learning}}},
@@ -2374,6 +2999,14 @@ The authors rely on a separate feedforward network (column) for each task the mo
   url = {https://arxiv.org/pdf/1801.01423.pdf},
   abstract = {Catastrophic forgetting occurs when a neural network loses the information learned in a previous task after training on subsequent tasks. This problem remains a hurdle for artificial intelligence systems with sequential learning capabilities. In this paper, we propose a task-based hard attention mechanism that preserves previous tasks' information without affecting the current task's learning. A hard attention mask is learned concurrently to every task, through stochastic gradient descent, and previous masks are exploited to condition such learning. We show that the proposed mechanism is effective for reducing catastrophic forgetting , cutting current rates by 45 to 80\%. We also show that it is robust to different hyperparameter choices, and that it offers a number of monitoring capabilities. The approach features the possibility to control both the stability and compactness of the learned knowledge, which we believe makes it also attractive for online learning or network compression applications.},
   keywords = {[cifar],[fashion],[mnist],serra2018a}
+}
+
+@article{sharan,
+  title = {Efficient {{Anomaly Detection}} via {{Matrix Sketching}}},
+  author = {Sharan, Vatsal and Gopalan, Parikshit and Wieder, Udi},
+  pages = {12},
+  abstract = {We consider the problem of finding anomalies in high-dimensional data using popular PCA based anomaly scores. The naive algorithms for computing these scores explicitly compute the PCA of the covariance matrix which uses space quadratic in the dimensionality of the data. We give the first streaming algorithms that use space that is linear or sublinear in the dimension. We prove general results showing that any sketch of a matrix that satisfies a certain operator norm guarantee can be used to approximate these scores. We instantiate these results with powerful matrix sketching techniques such as Frequent Directions and random projections to derive efficient and practical algorithms for these problems, which we validate over real-world data sets. Our main technical contribution is to prove matrix perturbation inequalities for operators arising in the computation of these measures.},
+  language = {en}
 }
 
 @article{she2019,
@@ -2457,6 +3090,38 @@ The authors rely on a separate feedforward network (column) for each task the mo
   pmid = {29756130}
 }
 
+@inproceedings{siddiqui2018,
+  title = {Feedback-{{Guided Anomaly Discovery}} via {{Online Optimization}}},
+  booktitle = {Proceedings of the 24th {{ACM SIGKDD International Conference}} on {{Knowledge Discovery}} \& {{Data Mining}}},
+  author = {Siddiqui, Md Amran and Fern, Alan and Dietterich, Thomas G. and Wright, Ryan and Theriault, Alec and Archer, David W.},
+  year = {2018},
+  pages = {2200--2209},
+  publisher = {{ACM}},
+  address = {{London United Kingdom}},
+  doi = {10.1145/3219819.3220083},
+  url = {https://dl.acm.org/doi/10.1145/3219819.3220083},
+  urldate = {2020-07-11},
+  abstract = {Anomaly detectors are often used to produce a ranked list of statistical anomalies, which are examined by human analysts in order to extract the actual anomalies of interest. This can be exceedingly difficult and time consuming when most high-ranking anomalies are false positives and not interesting from an application perspective. In this paper, we study how to reduce the analyst's effort by incorporating their feedback about whether the anomalies they investigate are of interest or not. In particular, the feedback will be used to adjust the anomaly ranking after every analyst interaction, ideally moving anomalies of interest closer to the top. Our main contribution is to formulate this problem within the framework of online convex optimization, which yields an efficient and extremely simple approach to incorporating feedback compared to the prior state-of-the-art. We instantiate this approach for the powerful class of tree-based anomaly detectors and conduct experiments on a range of benchmark datasets. The results demonstrate the utility of incorporating feedback and advantages of our approach over the state-of-the-art. In addition, we present results on a significant cybersecurity application where the goal is to detect red-team attacks in real system audit data. We show that our approach for incorporating feedback is able to significantly reduce the time required to identify malicious system entities across multiple attacks on multiple operating systems.},
+  isbn = {978-1-4503-5552-0},
+  language = {en}
+}
+
+@inproceedings{siffer2017,
+  title = {Anomaly {{Detection}} in {{Streams}} with {{Extreme Value Theory}}},
+  booktitle = {Proceedings of the 23rd {{ACM SIGKDD International Conference}} on {{Knowledge Discovery}} and {{Data Mining}}},
+  author = {Siffer, Alban and Fouque, Pierre-Alain and Termier, Alexandre and Largouet, Christine},
+  year = {2017},
+  pages = {1067--1075},
+  publisher = {{ACM}},
+  address = {{Halifax NS Canada}},
+  doi = {10.1145/3097983.3098144},
+  url = {https://dl.acm.org/doi/10.1145/3097983.3098144},
+  urldate = {2020-12-14},
+  abstract = {Anomaly detection in time series has attracted considerable attention due to its importance in many real-world applications including intrusion detection, energy management and finance. Most approaches for detecting outliers rely on either manually set thresholds or assumptions on the distribution of data according to Chandola, Banerjee and Kumar.},
+  isbn = {978-1-4503-4887-4},
+  language = {en}
+}
+
 @article{smith2019,
   title = {Unsupervised {{Progressive Learning}} and the {{STAM Architecture}}},
   author = {Smith, James and Baer, Seth and Taylor, Cameron and Dovrolis, Constantine},
@@ -2517,6 +3182,48 @@ The authors rely on a separate feedforward network (column) for each task the mo
   keywords = {[imagenet],[sparsity]}
 }
 
+@book{stevens2020,
+  title = {Deep Learning with {{Pytorch}}},
+  author = {Stevens, Eli and Antiga, Luca and Viehmann, Thomas and Chintala, Soumith},
+  year = {2020},
+  annotation = {OCLC: 1224485196},
+  isbn = {978-1-61729-526-3},
+  language = {en}
+}
+
+@inproceedings{su2019,
+  title = {{{CoFlux}}: Robustly Correlating {{KPIs}} by Fluctuations for Service Troubleshooting},
+  shorttitle = {{{CoFlux}}},
+  booktitle = {Proceedings of the {{International Symposium}} on {{Quality}} of {{Service}}},
+  author = {Su, Ya and Zhao, Youjian and Xia, Wentao and Liu, Rong and Bu, Jiahao and Zhu, Jing and Cao, Yuanpu and Li, Haibin and Niu, Chenhao and Zhang, Yiyin and Wang, Zhaogang and Pei, Dan},
+  year = {2019},
+  pages = {1--10},
+  publisher = {{ACM}},
+  address = {{Phoenix Arizona}},
+  doi = {10.1145/3326285.3329048},
+  url = {https://dl.acm.org/doi/10.1145/3326285.3329048},
+  urldate = {2020-07-11},
+  abstract = {Internet-based service companies monitor a large number of KPIs (Key Performance Indicators) to ensure their service quality and reliability. Correlating KPIs by fluctuations reveals interactions between KPIs under anomalous situations and can be extremely useful for service troubleshooting. However, such a KPI fluxcorrelation has been little studied so far in the domain of Internet service operations management. A major challenge is how to automatically and accurately separate fluctuations from normal variations in KPIs with different structural characteristics (such as seasonal, trend and stationary) for a large number of KPIs. In this paper, we propose CoFlux, an unsupervised approach, to automatically (without manual selection of algorithm fitting and parameter tuning) determine whether two KPIs are correlated by fluctuations, in what temporal order they fluctuate, and whether they fluctuate in the same direction. CoFlux's robust feature engineering and robust correlation score computation enable it to work well against the diverse KPI characteristics. Our extensive experiments have demonstrated that CoFlux achieves the best F1Scores of 0.84 (0.90), 0.92 (0.95), 0.95 (0.99), in answering these three questions, in the two real datasets from a top global Internet company, respectively. Moreover, we showed that CoFlux is effective in assisting service troubleshooting through the applications of alert compression, recommending Top N causes, and constructing fluctuation propagation chains.},
+  isbn = {978-1-4503-6778-3},
+  language = {en}
+}
+
+@inproceedings{su2019a,
+  title = {Robust {{Anomaly Detection}} for {{Multivariate Time Series}} through {{Stochastic Recurrent Neural Network}}},
+  booktitle = {Proceedings of the 25th {{ACM SIGKDD International Conference}} on {{Knowledge Discovery}} \& {{Data Mining}}},
+  author = {Su, Ya and Zhao, Youjian and Niu, Chenhao and Liu, Rong and Sun, Wei and Pei, Dan},
+  year = {2019},
+  pages = {2828--2837},
+  publisher = {{ACM}},
+  address = {{Anchorage AK USA}},
+  doi = {10.1145/3292500.3330672},
+  url = {https://dl.acm.org/doi/10.1145/3292500.3330672},
+  urldate = {2020-07-11},
+  abstract = {Industry devices (i.e., entities) such as server machines, spacecrafts, engines, etc., are typically monitored with multivariate time series, whose anomaly detection is critical for an entity's service quality management. However, due to the complex temporal dependence and stochasticity of multivariate time series, their anomaly detection remains a big challenge. This paper proposes OmniAnomaly, a stochastic recurrent neural network for multivariate time series anomaly detection that works well robustly for various devices. Its core idea is to capture the normal patterns of multivariate time series by learning their robust representations with key techniques such as stochastic variable connection and planar normalizing flow, reconstruct input data by the representations, and use the reconstruction probabilities to determine anomalies. Moreover, for a detected entity anomaly, OmniAnomaly can provide interpretations based on the reconstruction probabilities of its constituent univariate time series. The evaluation experiments are conducted on two public datasets from aerospace and a new server machine dataset (collected and released by us) from an Internet company. OmniAnomaly achieves an overall F1-Score of 0.86 in three real-world datasets, significantly outperforming the best performing baseline method by 0.09. The interpretation accuracy for OmniAnomaly is up to 0.89.},
+  isbn = {978-1-4503-6201-6},
+  language = {en}
+}
+
 @inproceedings{sun2020,
   title = {{{LAMOL}}: {{LAnguage MOdeling}} for {{Lifelong Language Learning}}},
   shorttitle = {{{LAMOL}}},
@@ -2553,6 +3260,17 @@ The authors rely on a separate feedforward network (column) for each task the mo
   abstract = {Dataset shifts are present in many real-world applications, since data generation is not always fully controlled and is subject to noise, degradation, and other natural variations. In machine learning, the lack of regularity in data can degrade performance by breaching error constraints. Different methods have been proposed to solve shifting problems; however, shifts in off-line learning mode are not as well examined. Off-line shifts consist of problems where drifts occur only with unlabeled data. Most methods aimed at dataset shifts consider that new labeled data can be received after training, which is not always the case. Here, a review on dataset shift characteristics and causes is presented as a tool for the analysis and implementation of machine learning methods targeting off-line mode dataset shift problems. In this context, a relationship between statistical learning risk functions and error degradation due to variation in data distribution was straightforwardly derived. Moreover, this paper provides a consistent survey of recent popular machine learning methods that address off-line mode dataset shift problems, focusing on the main characteristics of unlabeled data shifts.},
   journal = {IEEE Computational Intelligence Magazine},
   number = {3}
+}
+
+@inproceedings{tang2020,
+  title = {Graph-{{Based Continual Learning}}},
+  booktitle = {International {{Conference}} on {{Learning Representations}}},
+  author = {Tang, Binh and Matteson, David S.},
+  year = {2020},
+  url = {https://openreview.net/forum?id=HHSEKOnPvaO},
+  urldate = {2021-01-16},
+  abstract = {Despite significant advances, continual learning models still suffer from catastrophic forgetting when exposed to incrementally available data from non-stationary distributions. Rehearsal...},
+  language = {en}
 }
 
 @inproceedings{tao2020,
@@ -2669,6 +3387,22 @@ The authors rely on a separate feedforward network (column) for each task the mo
   note = {An interesting aspect of this paper is related to the study of unforgettable patterns and how they influence performance in terms of forgetting.}
 }
 
+@inproceedings{tran2018,
+  title = {Anomaly {{Detection}} in {{POSTFIX}} Mail Log Using {{Principal Component Analysis}}},
+  booktitle = {2018 10th {{International Conference}} on {{Knowledge}} and {{Systems Engineering}} ({{KSE}})},
+  author = {Tran, Cao-Phi and Tran, Duc-Khanh},
+  year = {2018},
+  pages = {107--112},
+  publisher = {{IEEE}},
+  address = {{Ho Chi Minh City}},
+  doi = {10.1109/KSE.2018.8573410},
+  url = {https://ieeexplore.ieee.org/document/8573410/},
+  urldate = {2020-07-23},
+  abstract = {Anomalies in a dataset are the abnormal observations of the data, and they often represent the problems or defectives coming from some changes in the system operation. Detecting the anomalies in a data set is the first step from which further analysis can be done to locate the actual root cause in the data. In this paper, we propose a general method to pinpoint the anomalies from a set of Postfix mail log. This method utilizes the Elastic Stack to collect and process log data, then applies Principal Component Analysis to separate the abnormal data from the normal one. To demonstrate the feasibility of the solution, we test it against a collection of a million Postfix log messages. The result is promising under experimentation as it can detect an anomaly at the time a spam mail attack occurs.},
+  isbn = {978-1-5386-6113-0},
+  language = {en}
+}
+
 @article{triki2017,
   title = {Encoder {{Based Lifelong Learning}}},
   author = {Triki, Amal Rannen and Aljundi, Rahaf and Blaschko, Mathew B. and Tuytelaars, Tinne},
@@ -2764,7 +3498,7 @@ The authors rely on a separate feedforward network (column) for each task the mo
   url = {http://arxiv.org/abs/2012.12631},
   urldate = {2020-12-29},
   abstract = {Existing literature in Continual Learning (CL) has focused on overcoming catastrophic forgetting, the inability of the learner to recall how to perform tasks observed in the past. There are however other desirable properties of a CL system, such as the ability to transfer knowledge from previous tasks and to scale memory and compute sub-linearly with the number of tasks. Since most current benchmarks focus only on forgetting using short streams of tasks, we first propose a new suite of benchmarks to probe CL algorithms across these new axes. Finally, we introduce a new modular architecture, whose modules represent atomic skills that can be composed to perform a certain task. Learning a task reduces to figuring out which past modules to re-use, and which new modules to instantiate to solve the current task. Our learning algorithm leverages a task-driven prior over the exponential search space of all possible ways to combine modules, enabling efficient learning on long streams of tasks. Our experiments show that this modular architecture and learning algorithm perform competitively on widely used CL benchmarks while yielding superior performance on the more challenging benchmarks we introduce in this work.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {2012.12631},
   eprinttype = {arxiv},
   journal = {arXiv},
@@ -2791,6 +3525,22 @@ The authors rely on a separate feedforward network (column) for each task the mo
   annotation = {\_eprint: 1806.06928},
   journal = {arXiv},
   keywords = {[mnist]}
+}
+
+@inproceedings{wang2018,
+  title = {Multi-{{View Group Anomaly Detection}}},
+  booktitle = {Proceedings of the 27th {{ACM International Conference}} on {{Information}} and {{Knowledge Management}}},
+  author = {Wang, Hongtao and Su, Pan and Zhao, Miao and Wang, Hongmei and Li, Gang},
+  year = {2018},
+  pages = {277--286},
+  publisher = {{ACM}},
+  address = {{Torino Italy}},
+  doi = {10.1145/3269206.3271770},
+  url = {https://dl.acm.org/doi/10.1145/3269206.3271770},
+  urldate = {2020-07-11},
+  abstract = {Multi-view anomaly detection is a challenging issue due to diverse data generation mechanisms and inconsistent cluster structures of different views. Existing methods of point anomaly detection are ineffective for scenarios where individual instances are normal, but their collective behavior as a group is abnormal. In this paper, we formalize this group anomaly detection issue, and propose a novel non-parametric bayesian model, named Multi-view Group Anomaly Detection (MGAD). By representing the multi-view data with different latent group and topic structures, MGAD first discovers the distribution of groups or topics in each view, then detects group anomalies effectively. In order to solve the proposed model, we conduct the collapsed Gibbs sampling algorithm for model inference. We evaluate our model on both synthetic and real-world datasets with different anomaly settings. The experimental results demonstrate the effectiveness of the proposed approach on detecting multi-view group anomalies.},
+  isbn = {978-1-4503-6014-2},
+  language = {en}
 }
 
 @article{wang2019,
@@ -2881,6 +3631,25 @@ arXiv: 1906.00654}
   keywords = {autonomy,cognition,deep learning,lifelong learning,robotics}
 }
 
+@incollection{xia2019,
+  title = {{{LogGAN}}: {{A Sequence}}-{{Based Generative Adversarial Network}} for {{Anomaly Detection Based}} on {{System Logs}}},
+  shorttitle = {{{LogGAN}}},
+  booktitle = {Science of {{Cyber Security}}},
+  author = {Xia, Bin and Yin, Junjie and Xu, Jian and Li, Yun},
+  editor = {Liu, Feng and Xu, Jia and Xu, Shouhuai and Yung, Moti},
+  year = {2019},
+  volume = {11933},
+  pages = {61--76},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-030-34637-9_5},
+  url = {http://link.springer.com/10.1007/978-3-030-34637-9_5},
+  urldate = {2020-07-23},
+  abstract = {System logs which trace system states and record valuable events comprise a significant component of any computer system in our daily life. There exist abundant information (i.e., normal and abnormal instances) involved in logs which assist administrators in diagnosing and maintaining the operation of the system. If diverse and complex anomalies (i.e., bugs and failures) cannot be detected and eliminated efficiently, the running workflows and transactions, even the system, would break down. Therefore, anomaly detection has become increasingly significant and attracted a lot of research attention. However, current approaches concentrate on the anomaly detection in a high-level granularity of logs (i.e., session) instead of detecting log-level anomalies which weakens the efficiency of responding anomalies and the diagnosis of system failures. To overcome the limitation, we propose a sequence-based generative adversarial network for anomaly detection based on system logs named LogGAN which detects log-level anomalies based on the patterns (i.e., the combination of latest logs). In addition, the generative adversarial network-based model relieves the effect of imbalance between normal and abnormal instances to improve the performance of capturing anomalies. To evaluate LogGAN, we conduct extensive experiments on two realworld datasets, and the experimental results show the effectiveness of our proposed approach to log-level anomaly detection.},
+  isbn = {978-3-030-34636-2 978-3-030-34637-9},
+  language = {en}
+}
+
 @inproceedings{xu2018,
   title = {Reinforced Continual Learning},
   booktitle = {Advances in {{Neural Information Processing Systems}}},
@@ -2890,17 +3659,6 @@ arXiv: 1906.00654}
   url = {http://papers.nips.cc/paper/7369-reinforced-continual-learning},
   abstract = {Most artificial intelligence models are limited in their ability to solve new tasks faster, without forgetting previously acquired knowledge. The recently emerging paradigm of continual learning aims to solve this issue, in which the model learns various tasks in a sequential fashion. In this work, a novel approach for continual learning is proposed, which searches for the best neural architecture for each coming task via sophisticatedly designed reinforcement learning strategies. We name it as Reinforced Continual Learning. Our method not only has good performance on preventing catastrophic forgetting but also fits new tasks well. The experiments on sequential classification tasks for variants of MNIST and CIFAR-100 datasets demonstrate that the proposed approach outperforms existing continual learning alternatives for deep networks.},
   keywords = {[cifar],[mnist]}
-}
-
-@article{xue2019,
-  title = {A {{Multi}}-{{Task Learning Framework}} for {{Overcoming}} the {{Catastrophic Forgetting}} in {{Automatic Speech Recognition}}},
-  author = {Xue, Jiabin and Han, Jiqing and Zheng, Tieran and Gao, Xiang and Guo, Jiaxing},
-  year = {2019},
-  url = {http://arxiv.org/abs/1904.08039},
-  abstract = {Recently, data-driven based Automatic Speech Recognition (ASR) systems have achieved state-of-the-art results. And transfer learning is often used when those existing systems are adapted to the target domain, e.g., fine-tuning, retraining. However, in the processes, the system parameters may well deviate too much from the previously learned parameters. Thus, it is difficult for the system training process to learn knowledge from target domains meanwhile not forgetting knowledge from the previous learning process, which is called as catastrophic forgetting (CF). In this paper, we attempt to solve the CF problem with the lifelong learning and propose a novel multi-task learning (MTL) training framework for ASR. It considers reserving original knowledge and learning new knowledge as two independent tasks, respectively. On the one hand, we constrain the new parameters not to deviate too far from the original parameters and punish the new system when forgetting original knowledge. On the other hand, we force the new system to solve new knowledge quickly. Then, a MTL mechanism is employed to get the balance between the two tasks. We applied our method to an End2End ASR task and obtained the best performance in both target and original datasets.},
-  annotation = {\_eprint: 1904.08039},
-  journal = {arXiv},
-  keywords = {[audio],[rnn]}
 }
 
 @article{ye2019,
@@ -2929,6 +3687,21 @@ arXiv: 1906.00654}
   keywords = {[cifar],[mnist],[sparsity],disadvantages,lifelong learning,modular,progressive},
   language = {en},
   note = {The authors propose a method to evaluate the importance of each neuron in the network through the use of sparse connections. The network is then expanded based on the neuron importance for each task.}
+}
+
+@inproceedings{yoon2020,
+  title = {Ultrafast {{Local Outlier Detection}} from a {{Data Stream}} with {{Stationary Region Skipping}}},
+  booktitle = {Proceedings of the 26th {{ACM SIGKDD International Conference}} on {{Knowledge Discovery}} \& {{Data Mining}}},
+  author = {Yoon, Susik and Lee, Jae-Gil and Lee, Byung Suk},
+  year = {2020},
+  pages = {1181--1191},
+  publisher = {{ACM}},
+  address = {{Virtual Event CA USA}},
+  doi = {10.1145/3394486.3403171},
+  url = {https://dl.acm.org/doi/10.1145/3394486.3403171},
+  urldate = {2020-12-08},
+  isbn = {978-1-4503-7998-4},
+  language = {en}
 }
 
 @inproceedings{zenke2017,
@@ -2982,6 +3755,38 @@ arXiv: 1906.00654}
   keywords = {[bayes],[cifar],[imagenet],[mnist]}
 }
 
+@article{zhang2019a,
+  title = {A {{Deep Neural Network}} for {{Unsupervised Anomaly Detection}} and {{Diagnosis}} in {{Multivariate Time Series Data}}},
+  author = {Zhang, Chuxu and Song, Dongjin and Chen, Yuncong and Feng, Xinyang and Lumezanu, Cristian and Cheng, Wei and Ni, Jingchao and Zong, Bo and Chen, Haifeng and Chawla, Nitesh V.},
+  year = {2019},
+  volume = {33},
+  pages = {1409--1416},
+  issn = {2374-3468, 2159-5399},
+  doi = {10.1609/aaai.v33i01.33011409},
+  url = {https://aaai.org/ojs/index.php/AAAI/article/view/3942},
+  urldate = {2020-07-11},
+  abstract = {Nowadays, multivariate time series data are increasingly collected in various real world systems, e.g., power plants, wearable devices, etc. Anomaly detection and diagnosis in multivariate time series refer to identifying abnormal status in certain time steps and pinpointing the root causes. Building such a system, however, is challenging since it not only requires to capture the temporal dependency in each time series, but also need encode the inter-correlations between different pairs of time series. In addition, the system should be robust to noise and provide operators with different levels of anomaly scores based upon the severity of different incidents. Despite the fact that a number of unsupervised anomaly detection algorithms have been developed, few of them can jointly address these challenges. In this paper, we propose a Multi-Scale Convolutional Recurrent Encoder-Decoder (MSCRED), to perform anomaly detection and diagnosis in multivariate time series data. Specifically, MSCRED first constructs multi-scale (resolution) signature matrices to characterize multiple levels of the system statuses in different time steps. Subsequently, given the signature matrices, a convolutional encoder is employed to encode the inter-sensor (time series) correlations and an attention based Convolutional Long-Short Term Memory (ConvLSTM) network is developed to capture the temporal patterns. Finally, based upon the feature maps which encode the inter-sensor correlations and temporal information, a convolutional decoder is used to reconstruct the input signature matrices and the residual signature matrices are further utilized to detect and diagnose anomalies. Extensive empirical studies based on a synthetic dataset and a real power plant dataset demonstrate that MSCRED can outperform state-ofthe-art baseline methods.},
+  journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  language = {en}
+}
+
+@inproceedings{zhao2019,
+  title = {Label-{{Less}}: {{A Semi}}-{{Automatic Labelling Tool}} for {{KPI Anomalies}}},
+  shorttitle = {Label-{{Less}}},
+  booktitle = {{{IEEE INFOCOM}} 2019 - {{IEEE Conference}} on {{Computer Communications}}},
+  author = {Zhao, Nengwen and Zhu, Jing and Liu, Rong and Liu, Dapeng and Zhang, Ming and Pei, Dan},
+  year = {2019},
+  pages = {1882--1890},
+  publisher = {{IEEE}},
+  address = {{Paris, France}},
+  doi = {10.1109/INFOCOM.2019.8737429},
+  url = {https://ieeexplore.ieee.org/document/8737429/},
+  urldate = {2020-07-11},
+  abstract = {KPI (Key Performance Indicator) anomaly detection is critical for Internet-based services to ensure the quality and reliability. However, existing algorithms' performance in reality is far from satisfying due to the lack of sufficient KPI anomaly data to help train and evaluate these algorithms. In this paper, we argue that labeling overhead is the main hurdle to obtain such datasets.},
+  isbn = {978-1-72810-515-4},
+  language = {en}
+}
+
 @article{zhao2020,
   title = {Few-{{Shot Class}}-{{Incremental Learning}} via {{Feature Space Composition}}},
   author = {Zhao, H. and Fu, Y. and Li, X. and Li, S. and Omar, B. and Li, X.},
@@ -2990,6 +3795,23 @@ arXiv: 1906.00654}
   abstract = {As a challenging problem in machine learning, few-shot class-incremental learning asynchronously learns a sequence of tasks, acquiring the new knowledge from new tasks (with limited new samples) while keeping the learned knowledge from previous tasks (with old samples discarded). In general, existing approaches resort to one unified feature space for balancing old-knowledge preserving and new-knowledge adaptation. With a limited embedding capacity of feature representation, the unified feature space often makes the learner suffer from semantic drift or overfitting as the number of tasks increases. With this motivation, we propose a novel few-shot class-incremental learning pipeline based on a composite representation space, which makes old-knowledge preserving and new-knowledge adaptation mutually compatible by feature space composition (enlarging the embedding capacity). The composite representation space is generated by integrating two space components (i.e. stable base knowledge space and dynamic lifelong-learning knowledge space) in terms of distance metric construction. With the composite feature space, our method performs remarkably well on the CUB200 and CIFAR100 datasets, outperforming the state-of-the-art algorithms by 10.58\% and 14.65\% respectively.},
   journal = {arXiv},
   keywords = {[cifar],[cubs]}
+}
+
+@inproceedings{zhou2019,
+  title = {{{BeatGAN}}: {{Anomalous Rhythm Detection}} Using {{Adversarially Generated Time Series}}},
+  shorttitle = {{{BeatGAN}}},
+  booktitle = {Proceedings of the {{Twenty}}-{{Eighth International Joint Conference}} on {{Artificial Intelligence}}},
+  author = {Zhou, Bin and Liu, Shenghua and Hooi, Bryan and Cheng, Xueqi and Ye, Jing},
+  year = {2019},
+  pages = {4433--4439},
+  publisher = {{International Joint Conferences on Artificial Intelligence Organization}},
+  address = {{Macao, China}},
+  doi = {10.24963/ijcai.2019/616},
+  url = {https://www.ijcai.org/proceedings/2019/616},
+  urldate = {2020-07-28},
+  abstract = {Given a large-scale rhythmic time series containing mostly normal data segments (or `beats'), can we learn how to detect anomalous beats in an effective yet efficient way? For example, how can we detect anomalous beats from electrocardiogram (ECG) readings? Existing approaches either require excessively high amounts of labeled and balanced data for classification, or rely on less regularized reconstructions, resulting in lower accuracy in anomaly detection. Therefore, we propose BeatGAN, an unsupervised anomaly detection algorithm for time series data. BeatGAN outputs explainable results to pinpoint the anomalous time ticks of an input beat, by comparing them to adversarially generated beats. Its robustness is guaranteed by its regularization of reconstruction error using an adversarial generation approach, as well as data augmentation using time series warping. Experiments show that BeatGAN accurately and efficiently detects anomalous beats in ECG time series, and routes doctors' attention to anomalous time ticks, achieving accuracy of nearly 0.95 AUC, and very fast inference (2.6 ms per beat). In addition, we show that BeatGAN accurately detects unusual motions from multivariate motion-capture time series data, illustrating its generality.},
+  isbn = {978-0-9992411-4-1},
+  language = {en}
 }
 
 @inproceedings{zhu2019,
@@ -3006,6 +3828,18 @@ arXiv: 1906.00654}
   isbn = {978-1-72814-550-1},
   keywords = {[cifar],[mnist]},
   number = {1}
+}
+
+@misc{zotero-2432,
+  title = {The {{Benefits}} of {{Online Learning}}},
+  url = {https://maxhalford.github.io/slides/the-benefits-of-online-learning/#1},
+  urldate = {2020-12-05}
+}
+
+@misc{zotero-2439,
+  title = {Midas: {{Microcluster}}-{{Based Detector}} of {{Anomalies}} in {{Edge Streams}} | {{Proceedings}} of the {{AAAI Conference}} on {{Artificial Intelligence}}},
+  url = {https://ojs.aaai.org//index.php/AAAI/article/view/5724},
+  urldate = {2020-12-08}
 }
 
 

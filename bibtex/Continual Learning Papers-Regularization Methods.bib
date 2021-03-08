@@ -51,6 +51,33 @@
   keywords = {[cifar]}
 }
 
+@article{douillard2020,
+  title = {{{PLOP}}: {{Learning}} without {{Forgetting}} for {{Continual Semantic Segmentation}}},
+  author = {Douillard, Arthur and Chen, Yifu and Dapogny, Arnaud and Cord, Matthieu},
+  year = {2020},
+  url = {https://arxiv.org/abs/2011.11390},
+  abstract = {Deep learning approaches are nowadays ubiquitously used to tackle computer vision tasks such as semantic segmentation, requiring large datasets and substantial computational power. Continual learning for semantic segmentation (CSS) is an emerging trend that consists in updating an old model by sequentially adding new classes. However, continual learning methods are usually prone to catastrophic forgetting. This issue is further aggravated in CSS where, at each step, old classes from previous iterations are collapsed into the background. In this paper, we propose Local POD, a multi-scale pooling distillation scheme that preserves long- and short-range spatial relationships at feature level. Furthermore, we design an entropy-based pseudo-labelling of the background w.r.t. classes predicted by the old model to deal with background shift and avoid catastrophic forgetting of the old classes. Our approach, called PLOP, significantly outperforms state-of-the-art methods in existing CSS scenarios, as well as in newly proposed challenging benchmarks.},
+  journal = {arXiv}
+}
+
+@article{douillard2020a,
+  title = {Insights from the {{Future}} for {{Continual Learning}}},
+  author = {Douillard, Arthur and Valle, Eduardo and Ollion, Charles and Robert, Thomas and Cord, Matthieu},
+  year = {2020},
+  url = {https://arxiv.org/abs/2006.13748},
+  abstract = {Continual learning aims to learn tasks sequentially, with (often severe) constraints on the storage of old learning samples, without suffering from catastrophic forgetting. In this work, we propose prescient continual learning, a novel experimental setting, to incorporate existing information about the classes, prior to any training data. Usually, each task in a traditional continual learning setting evaluates the model on present and past classes, the latter with a limited number of training samples. Our setting adds future classes, with no training samples at all. We introduce Ghost Model, a representation-learning-based model for continual learning using ideas from zero-shot learning. A generative model of the representation space in concert with a careful adjustment of the losses allows us to exploit insights from future classes to constraint the spatial arrangement of the past and current classes. Quantitative results on the AwA2 and aP\textbackslash\&Y datasets and detailed visualizations showcase the interest of this new setting and the method we propose to address it.},
+  journal = {arXiv}
+}
+
+@article{douillard2020b,
+  title = {{{PODNet}}: {{Pooled Outputs Distillation}} for {{Small}}-{{Tasks Incremental Learning}}},
+  author = {Douillard, Arthur and Cord, Matthieu and Ollion, Charles and Robert, Thomas and Valle, Eduardo},
+  year = {2020},
+  url = {https://arxiv.org/abs/2004.13513},
+  abstract = {Lifelong learning has attracted much attention, but existing works still struggle to fight catastrophic forgetting and accumulate knowledge over long stretches of incremental learning. In this work, we propose PODNet, a model inspired by representation learning. By carefully balancing the compromise between remembering the old classes and learning new ones, PODNet fights catastrophic forgetting, even over very long runs of small incremental tasks --a setting so far unexplored by current works. PODNet innovates on existing art with an efficient spatial-based distillation-loss applied throughout the model and a representation comprising multiple proxy vectors for each class. We validate those innovations thoroughly, comparing PODNet with three state-of-the-art models on three datasets: CIFAR100, ImageNet100, and ImageNet1000. Our results showcase a significant advantage of PODNet over existing art, with accuracy gains of 12.10, 6.51, and 2.85 percentage points, respectively. Code is available at this https URL},
+  journal = {European Conference on Computer Vision (ECCV)}
+}
+
 @inproceedings{ebrahimi2020,
   title = {Uncertainty-Guided {{Continual Learning}} with {{Bayesian Neural Networks}}},
   booktitle = {{{ICLR}}},

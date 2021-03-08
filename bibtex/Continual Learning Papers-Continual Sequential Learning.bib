@@ -33,20 +33,23 @@
   keywords = {[vision]}
 }
 
-@unpublished{chaudhry2018,
-  title = {Riemannian {{Walk}} for {{Incremental Learning}}: {{Understanding Forgetting}} and {{Intransigence}}},
-  shorttitle = {Riemannian {{Walk}} for {{Incremental Learning}}},
-  author = {Chaudhry, Arslan and Dokania, Puneet K and Ajanthan, Thalaiyasingam and Torr, Philip H.S.},
-  year = {2018},
-  volume = {11215 LNCS},
-  issn = {16113349},
-  doi = {10.1007/978-3-030-01252-6_33},
-  url = {http://openaccess.thecvf.com/content_ECCV_2018/html/Arslan_Chaudhry__Riemannian_Walk_ECCV_2018_paper.html},
-  abstract = {Incremental learning (il) has received a lot of attention recently, however, the literature lacks a precise problem definition, proper evaluation settings, and metrics tailored specifically for the il problem. One of the main objectives of this work is to fill these gaps so as to provide a common ground for better understanding of il. The main challenge for an il algorithm is to update the classifier whilst preserving existing knowledge. We observe that, in addition to forgetting, a known issue while preserving knowledge, il also suffers from a problem we call intransigence, its inability to update knowledge. We introduce two metrics to quantify forgetting and intransigence that allow us to understand, analyse, and gain better insights into the behaviour of il algorithms. Furthermore, we present RWalk, a generalization of ewc++ (our efficient version of ewc [6]) and Path Integral [25] with a theoretically grounded KL-divergence based perspective. We provide a thorough analysis of various il algorithms on MNIST and CIFAR-100 datasets. In these experiments, RWalk obtains superior results in terms of accuracy, and also provides a better trade-off for forgetting and intransigence.},
-  annotation = {\_eprint: 1801.10112},
-  isbn = {9783030012519},
-  journal = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
-  keywords = {[cifar],[mnist],ewc,ewc++,fisher,forgetting}
+@article{ans2004,
+  title = {Self-Refreshing Memory in Artificial Neural Networks: Learning Temporal Sequences without Catastrophic Forgetting},
+  shorttitle = {Self-Refreshing Memory in Artificial Neural Networks},
+  author = {Ans, Bernard and Rousset, St{\'e}phane and French, Robert M. and Musca, Serban},
+  year = {2004},
+  volume = {16},
+  pages = {71--99},
+  publisher = {{Taylor \& Francis}},
+  issn = {0954-0091},
+  doi = {10.1080/09540090412331271199},
+  url = {https://doi.org/10.1080/09540090412331271199},
+  urldate = {2021-01-08},
+  abstract = {While humans forget gradually, highly distributed connectionist networks forget catastrophically: newly learned information often completely erases previously learned information. This is not just implausible cognitively, but disastrous practically. However, it is not easy in connectionist cognitive modelling to keep away from highly distributed neural networks, if only because of their ability to generalize. A realistic and effective system that solves the problem of catastrophic interference in sequential learning of `static' (i.e. non-temporally ordered) patterns has been proposed recently (Robins 1995, Connection Science, 7: 123\textendash 146, 1996, Connection Science, 8: 259\textendash 275, Ans and Rousset 1997, CR Acad\'emie des Sciences Paris, Life Sciences, 320: 989\textendash 997, French 1997, Connection Science, 9: 353\textendash 379, 1999, Trends in Cognitive Sciences, 3: 128\textendash 135, Ans and Rousset 2000, Connection Science, 12: 1\textendash 19). The basic principle is to learn new external patterns interleaved with internally generated `pseudopatterns' (generated from random activation) that reflect the previously learned information. However, to be credible, this self-refreshing mechanism for static learning has to encompass our human ability to learn serially many temporal sequences of patterns without catastrophic forgetting. Temporal sequence learning is arguably more important than static pattern learning in the real world. In this paper, we develop a dual-network architecture in which self-generated pseudopatterns reflect (non-temporally) all the sequences of temporally ordered items previously learned. Using these pseudopatterns, several self-refreshing mechanisms that eliminate catastrophic forgetting in sequence learning are described and their efficiency is demonstrated through simulations. Finally, an experiment is presented that evidences a close similarity between human and simulated behaviour.},
+  annotation = {\_eprint: https://doi.org/10.1080/09540090412331271199},
+  journal = {Connection Science},
+  keywords = {[rnn],artificial neural networks,catastrophic forgetting,self-refreshing memory,temporal sequence learning},
+  number = {2}
 }
 
 @inproceedings{chaudhry2019,
@@ -97,15 +100,14 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   note = {The hidden state pre-activation and the input are projected during learning in a subspace orthogonal to all the ones of the previous tasks, if new task is dissimilar. Projection on orthogonal subspace avoid interference with previous knowledge.}
 }
 
-@article{ehret2020,
-  title = {Continual {{Learning}} in {{Recurrent Neural Networks}}},
-  author = {Ehret, Benjamin and Henning, Christian and Cervera, Maria R and Meulemans, Alexander and {von Oswald}, Johannes and Grewe, Benjamin F},
-  year = {2020},
-  url = {http://arxiv.org/abs/2006.12109},
-  abstract = {While a diverse collection of continual learning (CL) methods has been proposed to prevent catastrophic forgetting, a thorough investigation of their effectiveness for processing sequential data with recurrent neural networks (RNNs) is lacking. Here, we provide the first comprehensive evaluation of established CL methods on a variety of sequential data benchmarks. Specifically, we shed light on the particularities that arise when applying weight-importance methods, such as elastic weight consolidation, to RNNs. In contrast to feedforward networks, RNNs iteratively reuse a shared set of weights and require working memory to process input samples. We show that the performance of weight-importance methods is not directly affected by the length of the processed sequences, but rather by high working memory requirements, which lead to an increased need for stability at the cost of decreased plasticity for learning subsequent tasks. We additionally provide theoretical arguments supporting this interpretation by studying linear RNNs. Our study shows that established CL methods can be successfully ported to the recurrent case, and that a recent regularization approach based on hypernetworks outperforms weight-importance methods, thus emerging as a promising candidate for CL in RNNs. Overall, we provide insights on the differences between CL in feedforward networks and RNNs, while guiding towards effective solutions to tackle CL on sequential data.},
-  annotation = {\_eprint: 2006.12109},
-  journal = {arXiv},
-  keywords = {[audio],[rnn]}
+@inproceedings{french1997a,
+  title = {Using {{Pseudo}}-{{Recurrent Connectionist Networks}} to {{Solve}} the {{Problem}} of {{Sequential Learning}}},
+  booktitle = {Proceedings of the 19th {{Annual Cognitive Science Society Conference}}},
+  author = {French, Robert},
+  year = {1997},
+  url = {http://leadserv.u-bourgogne.fr/IMG/pdf/psdnet1.pdf},
+  abstract = {A major problem facing connectionist models of memory is  how to make them simultaneously sensitive to, but not  disrupted by, new input. This paper describes one solution  to this problem. The resulting connectionist architecture is  capable of sequential learning and exhibits gradual  forgetting where standard connectionist architectures may  forget catastrophically. The proposed architecture relies on  separating previously learned representations from those  that are currently being learned. Crucially, a method is  described in which approximations of the previously  learned data, called pseudopatterns, will be extracted from  the network and mixed in with the new patterns to be  learned, thereby alleviating sudden forgetting caused by  new learning and allowing the network to forget gracefully.  Introduction  One of the most important problems facing connectionist models of memory --- in fact, facing any model of memory --- is how to make them simultaneously sensitive to, but not ...},
+  keywords = {[dual]}
 }
 
 @inproceedings{hayes2020,
@@ -136,7 +138,7 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   year = {2019},
   url = {http://arxiv.org/abs/1906.05201},
   abstract = {While neural networks are powerful function approximators, they suffer from catastrophic forgetting when the data distribution is not stationary. One particular formalism that studies learning under non-stationary distribution is provided by continual learning, where the non-stationarity is imposed by a sequence of distinct tasks. Most methods in this space assume, however, the knowledge of task boundaries, and focus on alleviating catastrophic forgetting. In this work, we depart from this view and move the focus towards faster remembering \textendash{} i.e measuring how quickly the network recovers performance rather than measuring the network's performance without any adaptation. We argue that in many settings this can be more effective and that it opens the door to combining meta-learning and continual learning techniques, leveraging their complementary advantages. We propose a framework specific for the scenario where no information about task boundaries or task identity is given. It relies on a separation of concerns into what task is being solved and how the task should be solved. This framework is implemented by differentiating task specific parameters from task agnostic parameters, where the latter are optimized in a continual meta learning fashion, without access to multiple tasks at the same time. We showcase this framework in a supervised learning scenario and discuss the implication of the proposed formalism.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {1906.05201},
   eprinttype = {arxiv},
   journal = {arXiv:1906.05201 [cs, stat]},
@@ -144,7 +146,7 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   note = {arXiv: 1906.05201
 \par
 arXiv: 1906.05201},
-  primaryClass = {cs, stat}
+  primaryclass = {cs, stat}
 }
 
 @inproceedings{joseph2020,
@@ -244,6 +246,23 @@ The authors leverage a bayesian framework in which the parameters of a model are
   annotation = {\_eprint: 1904.02021},
   journal = {arXiv},
   keywords = {[mnist]}
+}
+
+@article{sodhani2019,
+  title = {Toward {{Training Recurrent Neural Networks}} for {{Lifelong Learning}}},
+  author = {Sodhani, Shagun and Chandar, Sarath and Bengio, Yoshua},
+  year = {2019},
+  volume = {32},
+  pages = {1--35},
+  publisher = {{MIT Press}},
+  issn = {0899-7667},
+  doi = {10.1162/neco_a_01246},
+  url = {https://doi.org/10.1162/neco_a_01246},
+  urldate = {2021-01-06},
+  abstract = {Catastrophic forgetting and capacity saturation are the central challenges of any parametric lifelong learning system. In this work, we study these challenges in the context of sequential supervised learning with an emphasis on recurrent neural networks. To evaluate the models in the lifelong learning setting, we propose a curriculum-based, simple, and intuitive benchmark where the models are trained on tasks with increasing levels of difficulty. To measure the impact of catastrophic forgetting, the model is tested on all the previous tasks as it completes any task. As a step toward developing true lifelong learning systems, we unify gradient episodic memory (a catastrophic forgetting alleviation approach) and Net2Net (a capacity expansion approach). Both models are proposed in the context of feedforward networks, and we evaluate the feasibility of using them for recurrent networks. Evaluation on the proposed benchmark shows that the unified model is more suitable than the constituent models for lifelong learning setting.},
+  journal = {Neural Computation},
+  keywords = {[rnn]},
+  number = {1}
 }
 
 
