@@ -56,7 +56,7 @@
   url = {http://arxiv.org/abs/1511.05641},
   urldate = {2021-01-07},
   abstract = {We introduce techniques for rapidly transferring the information stored in one neural net into another neural net. The main purpose is to accelerate the training of a significantly larger neural net. During real-world workflows, one often trains very many different neural networks during the experimentation and design process. This is a wasteful process in which each new model is trained from scratch. Our Net2Net technique accelerates the experimentation process by instantaneously transferring the knowledge from a previous network to each new deeper or wider network. Our techniques are based on the concept of function-preserving transformations between neural network specifications. This differs from previous approaches to pre-training that altered the function represented by a neural net when adding layers to it. Using our knowledge transfer mechanism to add depth to Inception modules, we demonstrate a new state of the art accuracy rating on the ImageNet dataset.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {1511.05641},
   eprinttype = {arxiv},
   keywords = {Computer Science - Machine Learning},
@@ -86,6 +86,18 @@ An evaluation of RNNs (LSTM and LMN) inspired by Progressive networks, leading t
   keywords = {[mnist],autoencoder,autoencoders,neurogenesis,reconstruction},
   language = {English},
   note = {The neurogenesis algorithm selectively expand the original multi-layer autoencoder at the neuron level depending on its reconstruction performance measured at each layer. The model is capable of maintaining plasticity while mitigating forgetting through replay of old samples.}
+}
+
+@inproceedings{ehret2020,
+  title = {Continual Learning in Recurrent Neural Networks},
+  booktitle = {International {{Conference}} on {{Learning Representations}}},
+  author = {Ehret, Benjamin and Henning, Christian and Cervera, Maria and Meulemans, Alexander and Oswald, Johannes Von and Grewe, Benjamin F.},
+  year = {2020},
+  url = {https://openreview.net/forum?id=8xeBUgD8u9},
+  urldate = {2021-01-16},
+  abstract = {While a diverse collection of continual learning (CL) methods has been proposed to prevent catastrophic forgetting, a thorough investigation of their effectiveness for processing sequential data...},
+  keywords = {[audio],[rnn]},
+  language = {en}
 }
 
 @inproceedings{gidaris2018,
@@ -264,7 +276,7 @@ The authors rely on a separate feedforward network (column) for each task the mo
   url = {http://arxiv.org/abs/2012.12631},
   urldate = {2020-12-29},
   abstract = {Existing literature in Continual Learning (CL) has focused on overcoming catastrophic forgetting, the inability of the learner to recall how to perform tasks observed in the past. There are however other desirable properties of a CL system, such as the ability to transfer knowledge from previous tasks and to scale memory and compute sub-linearly with the number of tasks. Since most current benchmarks focus only on forgetting using short streams of tasks, we first propose a new suite of benchmarks to probe CL algorithms across these new axes. Finally, we introduce a new modular architecture, whose modules represent atomic skills that can be composed to perform a certain task. Learning a task reduces to figuring out which past modules to re-use, and which new modules to instantiate to solve the current task. Our learning algorithm leverages a task-driven prior over the exponential search space of all possible ways to combine modules, enabling efficient learning on long streams of tasks. Our experiments show that this modular architecture and learning algorithm perform competitively on widely used CL benchmarks while yielding superior performance on the more challenging benchmarks we introduce in this work.},
-  archivePrefix = {arXiv},
+  archiveprefix = {arXiv},
   eprint = {2012.12631},
   eprinttype = {arxiv},
   journal = {arXiv},

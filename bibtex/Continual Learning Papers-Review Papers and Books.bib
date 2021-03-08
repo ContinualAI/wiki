@@ -10,6 +10,22 @@
   abstract = {Continual learning broadly refers to the algorithms which aim to learn continuously over time across varying domains, tasks or data distributions. This is in contrast to algorithms restricted to learning a fixed number of tasks in a given domain, assuming a static data distribution. In this survey we aim to discuss a wide breadth of challenges faced in a continual learning setup and review existing work in the area. We discuss parameter regularization techniques to avoid catastrophic forgetting in neural networks followed by memory based approaches and the role of generative models in assisting continual learning algorithms. We discuss how dynamic neural networks assist continual learning by endowing neural networks with a new capacity to learn further. We conclude by discussing possible future directions.}
 }
 
+@inproceedings{biesialska2020,
+  title = {Continual {{Lifelong Learning}} in {{Natural Language Processing}}: {{A Survey}}},
+  shorttitle = {Continual {{Lifelong Learning}} in {{Natural Language Processing}}},
+  booktitle = {Proceedings of the 28th {{International Conference}} on {{Computational Linguistics}}},
+  author = {Biesialska, Magdalena and Biesialska, Katarzyna and {Costa-juss{\`a}}, Marta R.},
+  year = {2020},
+  pages = {6523--6541},
+  publisher = {{International Committee on Computational Linguistics}},
+  address = {{Barcelona, Spain (Online)}},
+  doi = {10.18653/v1/2020.coling-main.574},
+  url = {https://www.aclweb.org/anthology/2020.coling-main.574},
+  urldate = {2021-02-09},
+  abstract = {Continual learning (CL) aims to enable information systems to learn from a continuous data stream across time. However, it is difficult for existing deep learning architectures to learn a new task without largely forgetting previously acquired knowledge. Furthermore, CL is particularly challenging for language learning, as natural language is ambiguous: it is discrete, compositional, and its meaning is context-dependent. In this work, we look at the problem of CL through the lens of various NLP tasks. Our survey discusses major challenges in CL and current methods applied in neural network models. We also provide a critical review of the existing CL evaluation methods and datasets in NLP. Finally, we present our outlook on future research directions.},
+  keywords = {[nlp],[survey],Catastrophic Forgetting,Continual Learning,Lifelong Learning,Review}
+}
+
 @book{chen2018,
   title = {Lifelong {{Machine Learning}}, {{Second Edition}}},
   author = {Chen, Zhiyuan and Liu, Bing},
@@ -86,7 +102,7 @@
   year = {2018},
   url = {https://arxiv.org/pdf/1708.02072.pdf},
   abstract = {Deep neural networks are used in many state-of-the-art systems for machine perception. Once a network is trained to do a specific task, e.g., bird classification, it cannot easily be trained to do new tasks, e.g., incrementally learning to recognize additional bird species or learning an entirely different task such as flower recognition. When new tasks are added, typical deep neural networks are prone to catastrophically forgetting previous tasks. Networks that are capable of assimilating new information incrementally, much like how humans form new memories over time, will be more efficient than re-training the model from scratch each time a new task needs to be learned. There have been multiple attempts to develop schemes that mitigate catastrophic forgetting, but these methods have not been directly compared, the tests used to evaluate them vary considerably, and these methods have only been evaluated on small-scale problems (e.g., MNIST). In this paper, we introduce new metrics and benchmarks for directly comparing five different mechanisms designed to mitigate catastrophic forgetting in neural networks: regularization, ensembling, rehearsal, dual-memory, and sparse-coding. Our experiments on real-world images and sounds show that the mechanism(s) that are critical for optimal performance vary based on the incremental training paradigm and type of data being used, but they all demonstrate that the catastrophic forgetting problem is not yet solved.},
-  keywords = {[mnist],audioset,kemker,review,survey},
+  keywords = {[mnist],[survey],audioset,kemker,review},
   language = {en}
 }
 
@@ -191,7 +207,7 @@
   url = {http://www.sciencedirect.com/science/article/pii/S0893608019300231},
   abstract = {Humans and animals have the ability to continually acquire, fine-tune, and transfer knowledge and skills throughout their lifespan. This ability, referred to as lifelong learning, is mediated by a rich set of neurocognitive mechanisms that together contribute to the development and specialization of our sensorimotor skills as well as to long-term memory consolidation and retrieval. Consequently, lifelong learning capabilities are crucial for computational learning systems and autonomous agents interacting in the real world and processing continuous streams of information. However, lifelong learning remains a long-standing challenge for machine learning and neural network models since the continual acquisition of incrementally available information from non-stationary data distributions generally leads to catastrophic forgetting or interference. This limitation represents a major drawback for state-of-the-art deep neural network models that typically learn representations from stationary batches of training data, thus without accounting for situations in which information becomes incrementally available over time. In this review, we critically summarize the main challenges linked to lifelong learning for artificial learning systems and compare existing neural network approaches that alleviate, to different extents, catastrophic forgetting. Although significant advances have been made in domain-specific learning with neural networks, extensive research efforts are required for the development of robust lifelong learning on autonomous agents and robots. We discuss well-established and emerging research motivated by lifelong learning factors in biological systems such as structural plasticity, memory replay, curriculum and transfer learning, intrinsic motivation, and multisensory integration.},
   journal = {Neural Networks},
-  keywords = {[framework],Catastrophic forgetting,Continual learning,Developmental systems,Lifelong learning,Memory consolidation},
+  keywords = {[framework],Catastrophic forgetting,Continual Learning,Developmental systems,Lifelong Learning,Memory consolidation},
   language = {en},
   note = {A general survey of the most important and used CL techniques, with a characterisation of the catastrophic forgetting phenomenon.}
 }
