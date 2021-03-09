@@ -6,12 +6,14 @@ One of the most important objectives of the Continual AI project is to provide e
 Software
 --------------------------------
 
-- `Continuum CL library <https://github.com/Continvvm/continuum>`_: Continuum is a Python library (written with PyTorch) for Continual Learning. It supports many datasets and most CL scenarios (NC, NI, NIC and others).
+- `Avalanche <https://avalanche.continualai.org/>`_: an End-to-End Library for Continual Learning, developed and maintained by `ContinualAI <https://www.continualai.org/>`_.
+- `Sequoia Library <https://github.com/lebrice/Sequoia>`_: A Playground for research at the intersection of Continual, Reinforcement, and Self-Supervised Learning.
+- `Continuum <https://github.com/Continvvm/continuum>`_: Continuum is a Python library (written with PyTorch) for loading of datasets in Continual Learning. It supports many datasets and most CL scenarios (NC, NI, NIC...).
 - `NORB sequencer <https://github.com/vlomonaco/norb-creator>`_: Java application (with GUI) to make small videos out of the NORB dataset.
-- `GEM implementation <https://github.com/facebookresearch/GradientEpisodicMemory>`_: Implementation of the CL strategy “Gradient Episodic Memory”.
+- `GEM implementation <https://github.com/facebookresearch/GradientEpisodicMemory>`_: Implementation of the CL strategy "Gradient Episodic Memory".
 - `OpenAI Gym <https://gym.openai.com/>`_: Open source interface that provides a ready-to-use suite of reinforcement learning tasks for evaluating performance of your algorithm.
 - `DeepMind Lab <https://github.com/deepmind/lab>`_: 3D learning environment that provides a suite of challenging 3D navigation and puzzle-solving tasks for learning agents.
-- `DEN <https://github.com/jaehong-yoon93/DEN>`_: TensorFlow implementation of the CL strategy “Dynamically Expandable Networks”.
+- `DEN <https://github.com/jaehong-yoon93/DEN>`_: TensorFlow implementation of the CL strategy "Dynamically Expandable Networks".
 
 
 Datasets and Benchmarks
