@@ -73,6 +73,10 @@ trace = plotly.graph_objs.Scatter(
                 width=2
             )
         ),
+    textfont=dict(
+    	color='black',
+    	size=10,
+    	),
     marker_color=list(map(int, db['sec_title'])),
     text = db['annotation_text'],
     textposition="top center",
