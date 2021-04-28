@@ -1,5 +1,8 @@
 import bibtexparser
-from bibtex2rst import * 
+from bibtexparser.bparser import BibTexParser
+from bibtexparser.customization import convert_to_unicode
+from bibtex2rst import (bibtex_path, bib_files, template_file_path, 
+	str2injcet, papers_count, sec_descriptions)
 from reduce import get_2d_coordinates
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 import numpy as np
