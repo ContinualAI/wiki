@@ -6,12 +6,16 @@ install:
    - pip install sphinx
    - pip install sphinx_rtd_theme
    - pip install bibtexparser
+   - pip install numpy
+   - pip install sklearn
+   - pip install plotly
 #   - pip install pprint
 #   - sudo apt-get install python3-sphinx
 
 script:
   # Update paper list 
   - python bibtex2rst.py
+  - python embeddings.py
   # Use Sphinx to make the html docs
   - make html
   # Tell GitHub not to use jekyll to compile the docs
