@@ -8,6 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 import numpy as np
 import json
 import plotly
+import os
 
 def vectorize_text(text):
 	vect_text = TfidfVectorizer(
