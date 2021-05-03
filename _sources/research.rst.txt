@@ -6,6 +6,8 @@ in the ability to learn continuously from high-dimensional data. In this page,
 we will keep track of recent **Continual/Lifelong** Learning developments in
 the research community.
 
+.. raw:: html
+  :file: embedding-plot.html
 
 Publications
 ----------------------------------
