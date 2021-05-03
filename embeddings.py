@@ -86,4 +86,4 @@ trace = plotly.graph_objs.Scatter(
     textposition="top center",
     hoverinfo="text",
 )
-plotly.offline.plot([trace], filename='embedding-plot.html')
+plotly.offline.plot([trace], filename='embedding-plot.html', auto_open=False)
