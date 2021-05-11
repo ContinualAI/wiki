@@ -3,12 +3,21 @@ from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import convert_to_unicode
 from bibtex2rst import (bibtex_path, bib_files, template_file_path, 
 	str2injcet, papers_count, sec_descriptions)
-from reduce import get_2d_coordinates
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+from sklearn.manifold import TSNE
 import numpy as np
 import json
 import plotly
 import os
+
+
+def get_2d_coordinates(vectorized_text):
+	out = TSNE(
+		n_components=2, 
+		random_state=42
+		).fit_transform(vectorized_text)
+	return out
+
 
 def vectorize_text(text):
 	vect_text = TfidfVectorizer(
