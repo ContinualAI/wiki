@@ -38,6 +38,7 @@ jobs:
         with:
           repository: 'ContinualAI/website'
           ref: main
+          path: website
           token: ${{ secrets.REPORT_TOKEN }}
       - name: commit changes
         run: |
