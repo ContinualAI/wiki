@@ -30,11 +30,10 @@ jobs:
         shell: bash -l {0}
     steps:
       - name: clone website repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
         with:
-          repository: 'ContinualAI/website'
-          ref: main
-          path: website
+          name: ContinualAI/website
+          ref: refs/heads/release
           token: ${{ secrets.REPORT_TOKEN }}
       - name: push changes
         run: |
