@@ -33,10 +33,10 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: 'ContinualAI/website'
-          ref: main
-          path: 'website'
+          ref: master
+          path: /website
           token: ${{ secrets.REPORT_TOKEN }}
-      - name: push changes
+      - name: commit changes
         run: |
           cp embedding-plot.html website/_includes
           cp papers.md website/
@@ -51,5 +51,5 @@ jobs:
         with:
           repository: ContinualAI/website
           branch: main
-          directory: website
+          directory: /website
           github_token: ${{ secrets.REPORT_TOKEN }}
