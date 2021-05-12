@@ -40,12 +40,12 @@ jobs:
 #          path: website
         uses: actions/checkout@master
         with:
-          name: ContinualAI/website
+          repository: ContinualAI/website
       - name: commit changes
         run: |
-          cp embedding-plot.html website/_includes
-          cp papers.md website/
-          cd website/
+          cp /home/runner/work/wiki/wiki/embedding-plot.html /home/runner/work/wiki/wiki/website/_includes
+          cp /home/runner/work/wiki/wiki/papers.md /home/runner/work/wiki/wiki/website/
+          cd /home/runner/work/wiki/wiki/website/
           git config --local user.email ${{ secrets.EMAIL }}
           git config --local user.name ${{ secrets.NAME }}
           git pull
@@ -56,5 +56,5 @@ jobs:
         with:
           repository: ContinualAI/website
           ref: main
-          directory: website
+          directory: /home/runner/work/wiki/wiki/website
           github_token: ${{ secrets.REPORT_TOKEN }}
