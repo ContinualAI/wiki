@@ -38,7 +38,6 @@ jobs:
           repository: 'ContinualAI/website'
           ref: main
           path: website
-          token: ${{ secrets.REPORT_TOKEN }}
       - name: commit changes
         run: |
           cp embedding-plot.html website/_includes
