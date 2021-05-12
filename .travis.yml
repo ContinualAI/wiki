@@ -1,21 +1,21 @@
-language: python
-
-install:
+#language: python
+#
+#install:
 #  - pip install travis-sphinx
 #  - export PATH=$HOME/.local/bin:$PATH
 #   - pip install sphinx
 #   - pip install sphinx_rtd_theme
-   - pip install bibtexparser
-   - pip install numpy
-   - pip install sklearn
-   - pip install plotly
+#   - pip install bibtexparser
+#   - pip install numpy
+#   - pip install sklearn
+#   - pip install plotly
 #   - pip install pprint
 #   - sudo apt-get install python3-sphinx
 
-script:
+#script:
   # Update paper list 
-  - python bibtex2md.py
-  - python embeddings.py
+#  - python bibtex2md.py
+#  - python embeddings.py
   # Use Sphinx to make the html docs
 #  - make html
   # Tell GitHub not to use jekyll to compile the docs
