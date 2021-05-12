@@ -29,12 +29,15 @@ jobs:
       run:
         shell: bash -l {0}
     steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: clone website repository
         uses: actions/checkout@v2
         with:
           repository: 'ContinualAI/website'
-          ref: master
-          path: /website
+          ref: main
+          path: website
           token: ${{ secrets.REPORT_TOKEN }}
       - name: commit changes
         run: |
@@ -50,6 +53,6 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           repository: ContinualAI/website
-          branch: main
-          directory: /website
+          ref: main
+          directory: website
           github_token: ${{ secrets.REPORT_TOKEN }}
