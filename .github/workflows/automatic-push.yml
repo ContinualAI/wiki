@@ -25,7 +25,6 @@ jobs:
   automaticpush:
     name: automaticpush
     runs-on: ubuntu-latest
-    python-version: "3.7"
     defaults:
       run:
         shell: bash -l {0}
