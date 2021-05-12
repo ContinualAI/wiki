@@ -32,7 +32,7 @@ jobs:
       - name: clone website repository
         uses: actions/checkout@master
         with:
-          name: ContinualAI/website
+          repository: ContinualAI/website
           ref: refs/heads/release
           token: ${{ secrets.REPORT_TOKEN }}
       - name: push changes
