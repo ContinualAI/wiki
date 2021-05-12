@@ -33,11 +33,14 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: clone website repository
-        uses: actions/checkout@v2
+#        uses: actions/checkout@v2
+#        with:
+#          repository: 'ContinualAI/website'
+#          ref: main
+#          path: website
+        uses: actions/checkout@master
         with:
-          repository: 'ContinualAI/website'
-          ref: main
-          path: website
+          name: ContinualAI/website
       - name: commit changes
         run: |
           cp embedding-plot.html website/_includes
