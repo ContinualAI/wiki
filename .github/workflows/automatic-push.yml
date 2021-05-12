@@ -30,16 +30,17 @@ jobs:
         shell: bash -l {0}
     steps:
       - name: clone website repository
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
         with:
-          repository: ContinualAI/website
-          ref: refs/heads/release
+          repository: 'ContinualAI/website'
+          ref: main
+          path: 'website'
           token: ${{ secrets.REPORT_TOKEN }}
       - name: push changes
         run: |
-          cp embedding-plot.html /home/runner/work/wiki/wiki/website/_includes
-          cp papers.md /home/runner/work/wiki/wiki/website/
-          cd /home/runner/work/wiki/wiki/website/
+          cp embedding-plot.html website/_includes
+          cp papers.md website/
+          cd website/
           git config --local user.email ${{ secrets.EMAIL }}
           git config --local user.name ${{ secrets.NAME }}
           git pull
@@ -50,5 +51,5 @@ jobs:
         with:
           repository: ContinualAI/website
           branch: main
-          directory: /home/runner/work/wiki/wiki/website
+          directory: website
           github_token: ${{ secrets.REPORT_TOKEN }}
