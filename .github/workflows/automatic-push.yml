@@ -55,6 +55,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           repository: ContinualAI/website
-          ref: main
           directory: /home/runner/work/wiki/wiki/website
           github_token: ${{ secrets.REPORT_TOKEN }}
