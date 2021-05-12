@@ -53,4 +53,4 @@ jobs:
           repository: ContinualAI/website
           branch: master
           directory: website
-          github_token: ${{ secrets.REPORT_TOKEN }}
+          github_token: ${{ secrets.REPORT_TOKEN }} 
