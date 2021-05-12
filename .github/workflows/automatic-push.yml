@@ -35,10 +35,13 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
       - name: clone website repository
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
         with:
           repository: ContinualAI/website
           path: website
+          token: ${{ secrets.REPORT_TOKEN }}
+          persist-credentials: false
+          fetch-depth: 0
       - name: commit changes
         run: |
           cp embedding-plot.html website/_includes
