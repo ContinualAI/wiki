@@ -32,6 +32,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: false
+          fetch-depth: 0
       - name: clone website repository
         uses: actions/checkout@master
         with:
