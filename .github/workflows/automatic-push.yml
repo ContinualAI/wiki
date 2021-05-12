@@ -34,6 +34,12 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: false
           fetch-depth: 0
+      - uses: actions/setup-python@v2
+        with:
+         python-version: '3.7'
+      - run: python -m pip install bibtexparser numpy sklearn plotly
+      - run: python bibtex2md.py
+      - run: python embeddings.py
       - name: clone website repository
         uses: actions/checkout@v2
         with:
