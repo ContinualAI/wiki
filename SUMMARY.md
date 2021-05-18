@@ -16,7 +16,6 @@
 
 * [The People](about-us/the-people.md)
 * [Join us!](about-us/join-us.md)
-* [Github](https://github.com/ContinualAI/wiki)
 * [Slack](https://join.slack.com/t/continualai/shared_invite/enQtNjQxNDYwMzkxNzk0LTBhYjg2MjM0YTM2OWRkNDYzOGE0ZTIzNDQ0ZGMzNDE3ZGUxNTZmNmM1YzJiYzgwMTkyZDQxYTlkMTI3NzZkNjU)
 * [Email](mailto:contact@continualai.org)
 
