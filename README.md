@@ -6,7 +6,7 @@
 The aim of the project is to create an open-source, collaborative wiki to provide a starting point for researchers, developers and AI enthusiasts who share an interest in Continual Learning and are willing to learn more or contribute to this field.  
 You can find info about CL workshops, media articles, companies using CL and much more.  
 
-The wiki also provides a curated list of annotated papers in the [Research section](https://wiki.continualai.org/research.html). Be sure to check it out!
+The wiki also provides a link to a curated list of [annotated papers](https://www.continualai.org/papers/). Be sure to check it out!
 
 [Join our community](https://continualai.herokuapp.com/) on Slack to stay updated with the latest Continual Learning news.
 
@@ -14,10 +14,11 @@ Visit the wiki &rarr; http://wiki.continualai.org/
 
 Below, you can find instructions on **how to contribute to the wiki**!
 
+
 ---------------------------------------------------
 
 ## Add a new paper to the Research section
-ContinualAI wiki provides a [Research section](https://wiki.continualai.org/research.html) with a curated list of annotated papers. The list is maintained through a Zotero group. You can join the group and help us keeping it updated (see next section).  
+ContinualAI a [curated list of CL papers](https://wiki.continualai.org/research.html). The list is maintained through a Zotero group. You can join the group and help us keeping it updated (see next section).  
 
 If you don't want to join the group, you can simply open a Github issue to suggest us a new paper (or even more than one). We will take care of adding it to the wiki as soon as possible. 
 
@@ -62,25 +63,9 @@ Wiki admins will periodically export the bibtex to keep the list updated. In cas
 
 ----------------------------
 
-## Contribute to the wiki
-Adding new papers is not the only way for you to contribute. If you want to include your company in the wiki, add a CL workshop or other information you can submit Pull Requests!
+## Contribute to the wiki - TO BE UPDATED WITH THE NEW WIKI INFO
+Adding new papers is not the only way for you to contribute. Adding new companies, workshops or other information is very easy!
 
-1. [Fork the repo](https://help.github.com/articles/fork-a-repo/) and clone it locally.
-
-2. Enter `wiki` folder
-
-3. Install `sphinx`:  
-`pip install sphinx`  
-`pip install sphinx_rtd_theme`
-
-4. Make your changes to the *.rst files
-
-5. Build the html with the command:  
-`make html`
-
-6. open `_build/html/index.html` with your browser to check if everything is correct.
-
-7. Make a Pull Request (with only the *.rst files), Travis CI will take care of the build!
 
 ## About ContinualAI
 
