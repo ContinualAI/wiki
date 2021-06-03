@@ -1,7 +1,7 @@
 import bibtexparser
 from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import convert_to_unicode
-from bibtex2rst import (bibtex_path, bib_files, template_file_path, 
+from bibtex2md import (bibtex_path, bib_files, template_file_path, 
 	str2injcet, papers_count, sec_descriptions)
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.manifold import TSNE
