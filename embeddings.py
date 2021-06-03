@@ -2,7 +2,7 @@ import bibtexparser
 from bibtexparser.bparser import BibTexParser
 from bibtexparser.customization import convert_to_unicode
 from bibtex2md import (bibtex_path, bib_files, template_file_path, 
-	str2injcet, papers_count, sec_descriptions)
+	str2inject, papers_count, sec_descriptions)
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.manifold import TSNE
 import numpy as np
@@ -41,7 +41,7 @@ for i, bibfile in enumerate(bib_files):
 	with open(template_file_path) as rf:
 		template_str = rf.read()
 
-	str2injcet += sec_title + \
+	str2inject += sec_title + \
 		"\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n" + \
 		"**" + papers_count[bibfile] + " papers" + "**\n\n" + \
 		sec_descriptions[i] + "\n\n"
