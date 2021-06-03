@@ -7,7 +7,6 @@ layout: page
     
 {% include embedding-plot.html %}
 
-<div id="publicationsdiv">
 ## Publications
 
 In this section we maintain an updated list of publications related to Continual Learning.
@@ -126,7 +125,4 @@ by the ContinualAI community through an open Mendeley group! Join our group [her
 <TAGLIST>
 
 <TAG>
-
-</div>
-
 
