@@ -6,7 +6,7 @@ description: >-
 
 # Research
 
-### Conference Workshops
+## Conference Workshops
 
 * [International Workshop on Continual Semi-Supervised Learning \(CSSL\) at IJCAI 2021](https://sites.google.com/view/sscl-workshop-ijcai-2021/)
 * [CLVISION workshop \(2nd edition\) at CVPR 2021](https://sites.google.com/view/clvision2021/)
@@ -21,7 +21,7 @@ description: >-
 * [NeurIPS 2018 Workshop on Meta-Learning](http://metalearning.ml/2018/)
 * [NeurIPS 2018 Workshop on Continual Learning](https://sites.google.com/view/continual2018/home)
 
-### Research Programs
+## Research Programs
 
 * [DARPA Lifelong Learning Machines \(L2M\) program](http://www.darpa.mil/news-events/2017-03-16)
 * [European H2020 DREAM project](http://www.robotsthatdream.eu/) 

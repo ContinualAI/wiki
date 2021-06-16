@@ -4,7 +4,7 @@ Nowadays, more and more companies begin to embrace the power of Machine Learning
 
 Continual Learning enable both scalability and adaptation, two essential factor for many ML and AI systems. In this page you will find everything related to the Industry applications of CL.
 
-### Current Solutions
+## Current Solutions
 
 In this section we provide a list of companies that exploit Continual Learning approaches:
 
@@ -15,7 +15,7 @@ In this section we provide a list of companies that exploit Continual Learning a
 * [Cogitai](https://www.cogitai.com/) is concerned about building artificial intelligences \(AIs\) that learn continually from interaction with the real world. Commerical applications and solutions are designed for learning knowledge and actions from experience by relying on continual-learning AI approaches.
 * [DeepMind](https://deepmind.com/) is one of the world leader in artificial intelligence research. DeepMind reasearch has recently showed how to develop programs that can learn to solve complex problem without needing to be taught how. In this context, continual learning approaches have been applied to Reinforcement Learning methods.
 
-### Future Applications
+## Future Applications
 
 The future AI systems will rely on continual learning as opposed to algorithms that are trained offline. There are many applications and scenarios where continual learning already plays a central role or can be exploited for achieving better results. Here we provide a list of applications where Continual Learning will make the difference:
 

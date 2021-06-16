@@ -6,11 +6,15 @@
 
 * [Introduction to Continual Learning](the-continualai-wiki/introduction-to-continual-learning.md)
 * [Research](the-continualai-wiki/research.md)
-* [Continual Learning papers](https://www.continualai.org/papers/)
 * [Industry](the-continualai-wiki/industry.md)
 * [Software and Benchmarks](the-continualai-wiki/software-and-benchmarks.md)
 * [Tutorials and Courses](the-continualai-wiki/tutorials-and-courses.md)
 * [Media Articles](the-continualai-wiki/media-articles.md)
+
+## Continual Learning papers
+
+* [Browse interactively](https://www.continualai.org/papers/)
+* [Github with bibtex](https://github.com/ContinualAI/continual-learning-papers)
 
 ## ABOUT US
 

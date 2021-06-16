@@ -2,7 +2,7 @@
 
 One of the most important objectives of the Continual AI project is to provide easy access to Continual Learning both in terms of didactic materials and open software/datasets for business/research. In this page we will try to collect every open-source project related to Continual Learning.
 
-### Software
+## Software
 
 * [Avalanche](https://avalanche.continualai.org/): an End-to-End Library for Continual Learning, developed and maintained by [ContinualAI](https://www.continualai.org/).
 * [Sequoia Library](https://github.com/lebrice/Sequoia): A Playground for research at the intersection of Continual, Reinforcement, and Self-Supervised Learning.
@@ -13,7 +13,7 @@ One of the most important objectives of the Continual AI project is to provide e
 * [DeepMind Lab](https://github.com/deepmind/lab): 3D learning environment that provides a suite of challenging 3D navigation and puzzle-solving tasks for learning agents.
 * [DEN](https://github.com/jaehong-yoon93/DEN): TensorFlow implementation of the CL strategy “Dynamically Expandable Networks”.
 
-### Datasets and Benchmarks
+## Datasets and Benchmarks
 
 * [CORe50 benchmark](https://github.com/vlomonaco/core50): Continual Learning benchmark for object recognition and robotics.
 * [OpenLORIS-Object](https://lifelong-robotic-vision.github.io/dataset/Data_Object-Recognition.html): A Dataset and Benchmark towards Lifelong Object Recognition
