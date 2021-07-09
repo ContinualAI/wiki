@@ -2,6 +2,7 @@
 
 While not yet in its peak of media attention, Continual Learning has repeatedly appeared in multiple sources. In this page we try to cover the most relevant press articles on the subject.
 
+* [Toward continual learning systems](https://gantry.io/blog/toward-continual-learning-systems/)
 * [Towards Adaptive AI with Continual Learning](https://ai.kuleuven.be/stories/post/2021-05-10-continual-learning/)
 * [Why Neural Networks Forget, and Lessons from the Brain](https://numenta.com/blog/2021/02/04/why-neural-networks-forget-and-lessons-from-the-brain)
 * [Machine learning is going real-time](https://huyenchip.com/2020/12/27/real-time-machine-learning.html)
