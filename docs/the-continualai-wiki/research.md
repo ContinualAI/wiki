@@ -25,4 +25,7 @@ description: >-
 
 * [DARPA Lifelong Learning Machines \(L2M\) program](http://www.darpa.mil/news-events/2017-03-16)
 * [European H2020 DREAM project](http://www.robotsthatdream.eu/) 
+* [CAREER: Brain-inspired Methods for Continual Learning of Large-scale Vision and Language Tasks](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2047556&HistoricalAwards=false)
+* [Shared-Experience Lifelong Learning \(ShELL\)](https://sam.gov/opp/1afbf600f2e04b26941fad352c08d1f1/view)
+* [ERC Advanced Grant "KeepOnLearning - Beyond solving static datasets: Deep learning from streaming data"](https://www.kuleuven.be/english/research/EU/p/horizon2020/es/erc/keeponlearning)
 
