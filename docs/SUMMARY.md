@@ -2,7 +2,7 @@
 
 * [Welcome to ContinualAI Wiki](README.md)
 
-## Wiki contents <a id="the-continualai-wiki"></a>
+## Wiki contents <a href="#the-continualai-wiki" id="the-continualai-wiki"></a>
 
 * [Introduction to Continual Learning](the-continualai-wiki/introduction-to-continual-learning.md)
 * [Research](the-continualai-wiki/research.md)
@@ -13,13 +13,11 @@
 
 ## Continual Learning papers
 
-* [Browse interactively](https://www.continualai.org/papers/)
-* [Github with bibtex](https://github.com/ContinualAI/continual-learning-papers)
+* [GitHub List + Bibtex](https://github.com/ContinualAI/continual-learning-papers)
 
 ## ABOUT US
 
 * [The People](about-us/the-people.md)
 * [Join us!](about-us/join-us.md)
-* [Slack](https://join.slack.com/t/continualai/shared_invite/enQtNjQxNDYwMzkxNzk0LTBhYjg2MjM0YTM2OWRkNDYzOGE0ZTIzNDQ0ZGMzNDE3ZGUxNTZmNmM1YzJiYzgwMTkyZDQxYTlkMTI3NzZkNjU)
+* [Slack](https://join.slack.com/t/continualai/shared\_invite/enQtNjQxNDYwMzkxNzk0LTBhYjg2MjM0YTM2OWRkNDYzOGE0ZTIzNDQ0ZGMzNDE3ZGUxNTZmNmM1YzJiYzgwMTkyZDQxYTlkMTI3NzZkNjU)
 * [Email](mailto:contact@continualai.org)
-
