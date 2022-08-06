@@ -2,6 +2,7 @@
 
 While not yet in its peak of media attention, Continual Learning has repeatedly appeared in multiple sources. In this page we try to cover the most relevant press articles on the subject.
 
+* [Quanta Magazine - The Computer Scientist Challenging AI to Learn Better](https://www.quantamagazine.org/the-computer-scientist-trying-to-teach-ai-to-learn-like-we-do-20220802/)
 * [Toward continual learning systems](https://gantry.io/blog/toward-continual-learning-systems/)
 * [Towards Adaptive AI with Continual Learning](https://ai.kuleuven.be/stories/post/2021-05-10-continual-learning/)
 * [Why Neural Networks Forget, and Lessons from the Brain](https://numenta.com/blog/2021/02/04/why-neural-networks-forget-and-lessons-from-the-brain)
@@ -19,10 +20,9 @@ While not yet in its peak of media attention, Continual Learning has repeatedly 
 * [Sony wants to push AIs to learn from their own experiences](https://www.engadget.com/2016/05/17/sony-ai-continual-learning/)
 * [Cogitai’s Mark Ring – Going Beyond Reinforcement Learning](https://www.techemergence.com/cogitais-mark-ring-going-beyond-reinforcement-learning/)
 * [Researchers Selected to Develop Novel Approaches to Lifelong Machine Learning](https://www.darpa.mil/news-events/2018-05-03)
-* [Lifelong \(machine\) learning: how automation can help your models get smarter over time](https://www.ibm.com/blogs/bluemix/2017/10/lifelong-machine-learning-automation-can-help-models-get-smarter-time/)
+* [Lifelong (machine) learning: how automation can help your models get smarter over time](https://www.ibm.com/blogs/bluemix/2017/10/lifelong-machine-learning-automation-can-help-models-get-smarter-time/)
 * [The Next-Generation AI Brain: How AI Is Becoming More Human](https://www.forbes.com/sites/forbestechcouncil/2018/04/09/the-next-generation-ai-brain-how-ai-is-becoming-more-human/2/)
-* [AI Edges to Factory Floor \(“…incremental learning by 2022”\)](https://www.eetimes.com/document.asp?doc_id=1333973)
+* [AI Edges to Factory Floor (“…incremental learning by 2022”)](https://www.eetimes.com/document.asp?doc\_id=1333973)
 * [Variational Continual Learning with Generative Replay](https://towardsdatascience.com/variational-continual-learning-with-generative-replay-bfd43464d250)
 * [Guiding Forgetful Machines](https://towardsdatascience.com/guiding-forgetful-machines-72d1b8949138)
 * [IBM’s Quest to Solve the Continual Learning Problem and Build Neural Networks Without Amnesia](https://towardsdatascience.com/ibms-quest-to-solve-the-continual-learning-problem-and-build-neural-networks-without-amnesia-7ca70a41d07f)
-
